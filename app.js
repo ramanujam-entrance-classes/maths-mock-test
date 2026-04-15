@@ -233,10 +233,10 @@ function sendToLeaderboard(name, score, testName, timeTaken) {
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      name: name,
-      score: score,
-      test: testName,
-      time: timeTaken
+      name: "Test", //name,
+      score: "300", //score,
+      test: "Test1", //testName,
+      time: "1:20", //timeTaken
     })
   })
   .then(res => res.text())
