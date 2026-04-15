@@ -227,8 +227,11 @@ function submitQuiz() {
 }
 
 function sendToLeaderboard(name, score, testName, timeTaken) {
-  fetch("https://script.google.com/macros/s/AKfycbxxSqejd3nuZnsQtoi8GR2zFm72sZxYfvqk9WJXp04mcrwgO1cCoZFamV7jRLr_dyff/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbybHrxfFGve-yIBXsIwZkoiEUZ1UdhMOwhwRusd7UGjBuGrnTNuiBhQr2QasPyHY1Hz/exec", {
     method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
     body: JSON.stringify({
       name: name,
       score: score,
@@ -238,7 +241,7 @@ function sendToLeaderboard(name, score, testName, timeTaken) {
   })
   .then(res => res.text())
   .then(data => {
-    console.log("Saved to leaderboard:", data);
+    console.log("Response from server:", data);
   })
   .catch(err => {
     console.log("Error:", err);
