@@ -115,7 +115,7 @@ body {
 
   <!-- 📌 SUB TITLE (TEST NAME) -->
   <div id="testName" class="test-name"></div>
-
+  <br>
   <button onclick="loadLeaderboard()" class="refresh-btn">
     🔄 Refresh
   </button>
@@ -144,48 +144,43 @@ document.getElementById("testName").innerText = currentTestName;
 /* =========================
    🚀 LOAD LEADERBOARD
 ========================= */
+let isLoading = false;
+
 function loadLeaderboard() {
-  fetch(SHEET_URL + "&t=" + new Date().getTime())
+
+  if (isLoading) return;
+  isLoading = true;
+
+  fetch(SHEET_URL + "&t=" + Date.now(), {
+    cache: "no-store"
+  })
     .then(res => res.text())
     .then(data => {
-
-      console.log("RAW DATA:", data); // DEBUG
 
       const rows = data
         .split("\n")
         .slice(1)
         .map(r => r.split(","))
-        .filter(r => r.length >= 3); // safety check
-
-      console.log("ROWS:", rows); // DEBUG
+        .filter(r => r.length >= 3);
 
       const filtered = rows.filter(r =>
         (r[2] || "").trim() === currentTestName.trim()
       );
 
-      console.log("FILTERED:", filtered); // DEBUG
-
       filtered.sort((a, b) => Number(b[1]) - Number(a[1]));
 
       let html = "";
 
-      if (filtered.length === 0) {
-        document.getElementById("leaderboard").innerHTML =
-          "<p style='color:gray'>No submissions yet for this test.</p>";
-        return;
-      }
-
       filtered.slice(0, 20).forEach((row, index) => {
 
         let rankIcon = index + 1;
-        let rankClass = "";
 
         if (index === 0) rankIcon = "🥇";
         else if (index === 1) rankIcon = "🥈";
         else if (index === 2) rankIcon = "🥉";
 
         html += `
-          <div class="card ${rankClass}">
+          <div class="card">
             <div class="rank">${rankIcon}</div>
             <div class="name">${row[0]}</div>
             <div class="score">${row[1]}</div>
@@ -196,9 +191,10 @@ function loadLeaderboard() {
       document.getElementById("leaderboard").innerHTML = html;
     })
     .catch(err => {
-      console.error("FETCH ERROR:", err);
-      document.getElementById("leaderboard").innerHTML =
-        "<p style='color:red'>Failed to load leaderboard</p>";
+      console.error(err);
+    })
+    .finally(() => {
+      isLoading = false;
     });
 }
 
