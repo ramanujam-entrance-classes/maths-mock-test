@@ -265,7 +265,7 @@ function renderLeaderboard() {
 
     <div class="col score-block">
       <div class="score">${row[1]}/${TOTAL_MARKS}</div>
-      <div class="timestamp">🕒 ${row[4]}</div>
+      <div class="timestamp">🕒 ${formatDate(row[4])}</div>
     </div>
 
   </div>
@@ -275,6 +275,14 @@ function renderLeaderboard() {
     html || "<p>No data found</p>";
 }
 
+function formatDate(sheetDate) {
+  if (!sheetDate) return "-";
+
+  const d = new Date(sheetDate);
+
+  return d.toLocaleString(); 
+}
+  
 window.onload = loadLeaderboard;
 </script>
 
