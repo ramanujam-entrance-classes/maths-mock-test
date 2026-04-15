@@ -149,33 +149,40 @@ function loadLeaderboard() {
     .then(res => res.text())
     .then(data => {
 
-      const rows = data.split("\n").slice(1);
+      console.log("RAW DATA:", data); // DEBUG
 
-      let filtered = rows
+      const rows = data
+        .split("\n")
+        .slice(1)
         .map(r => r.split(","))
-        .filter(r => (r[2] || "").trim() === currentTestName);
+        .filter(r => r.length >= 3); // safety check
 
-      filtered.sort((a, b) => b[1] - a[1]);
+      console.log("ROWS:", rows); // DEBUG
+
+      const filtered = rows.filter(r =>
+        (r[2] || "").trim() === currentTestName.trim()
+      );
+
+      console.log("FILTERED:", filtered); // DEBUG
+
+      filtered.sort((a, b) => Number(b[1]) - Number(a[1]));
 
       let html = "";
+
+      if (filtered.length === 0) {
+        document.getElementById("leaderboard").innerHTML =
+          "<p style='color:gray'>No submissions yet for this test.</p>";
+        return;
+      }
 
       filtered.slice(0, 20).forEach((row, index) => {
 
         let rankIcon = index + 1;
         let rankClass = "";
 
-        if (index === 0) {
-          rankIcon = "🥇";
-          rankClass = "gold";
-        } 
-        else if (index === 1) {
-          rankIcon = "🥈";
-          rankClass = "silver";
-        } 
-        else if (index === 2) {
-          rankIcon = "🥉";
-          rankClass = "bronze";
-        }
+        if (index === 0) rankIcon = "🥇";
+        else if (index === 1) rankIcon = "🥈";
+        else if (index === 2) rankIcon = "🥉";
 
         html += `
           <div class="card ${rankClass}">
@@ -187,6 +194,11 @@ function loadLeaderboard() {
       });
 
       document.getElementById("leaderboard").innerHTML = html;
+    })
+    .catch(err => {
+      console.error("FETCH ERROR:", err);
+      document.getElementById("leaderboard").innerHTML =
+        "<p style='color:red'>Failed to load leaderboard</p>";
     });
 }
 
