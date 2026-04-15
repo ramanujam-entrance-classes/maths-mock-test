@@ -343,22 +343,22 @@ body {
 
 <script>
   const params = new URLSearchParams(window.location.search);
-  const testName = params.get("test");
+  const setName = params.get("set");
 
-  if (!testName) {
+  if (!setName) {
     // ❌ No test provided → hide UI
     hideTestUI();
   showMessage("📝 Select a mock test to begin");
   } else {
-    loadTest(testName);
+    loadTest(setName);
   }
 
   function loadTest(testName) {
     const script = document.createElement("script");
-    script.src = `question_data/${testName}.js`;
+    script.src = `question_data/${setName}.js`;
 
     script.onload = () => {
-      initApp(window.TEST_DATA);
+      initApp(window.SET_DATA);
     };
 
     script.onerror = () => {
