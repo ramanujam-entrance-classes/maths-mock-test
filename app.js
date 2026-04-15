@@ -227,6 +227,7 @@ function submitQuiz() {
       	currentTestName,
       	`${timeTakenMinutes}:${timeTakenSecs}`
     	);
+    document.getElementById("leaderboard-btn").classList.remove("hidden");
 }
 
 function sendToLeaderboard(name, score, testName, timeTaken) {
