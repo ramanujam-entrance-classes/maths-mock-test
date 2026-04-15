@@ -1,4 +1,4 @@
-window.TEST_DATA = {
+window.SET_DATA = {
   title: "Mathematics Mock Test 15",
   questions: [
 // Q1
