@@ -242,22 +242,22 @@ function parseSheet(text) {
   );
 }
 
-function isToday(dateValue) {
-    if (!dateValue) return false;
+function isToday(sheetValue) {
+    if (!sheetValue) return false;
 
     let d;
-    if (typeof dateValue === "string") {
-        // Split "MM/DD/YYYY HH:MM:SS" and take only the date part
-        const dateParts = dateValue.split(" ")[0].split("/").map(Number); // [MM, DD, YYYY]
-        if (dateParts.length < 3) return false;
 
-        const month = dateParts[0] - 1; // JS months are 0-based
-        const day = dateParts[1];
-        const year = dateParts[2];
-
-        d = new Date(year, month, day);
+    // If it's already a Date object (Google Sheets JSON format)
+    if (typeof sheetValue === "object" && sheetValue.hasOwnProperty('v')) {
+        d = new Date(sheetValue.v);
+    } else if (typeof sheetValue === "string") {
+        // If it's string like "4/15/2026 22:09:21"
+        const parts = sheetValue.split(" ")[0].split("/").map(Number);
+        if (parts.length < 3) return false;
+        d = new Date(parts[2], parts[0]-1, parts[1]); // year, month-1, day
     } else {
-        d = new Date(dateValue);
+        // fallback
+        d = new Date(sheetValue);
     }
 
     if (isNaN(d)) return false;
