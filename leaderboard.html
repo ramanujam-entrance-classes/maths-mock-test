@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
 <title>Leaderboard</title>
 
 <style>
@@ -20,11 +19,20 @@ body {
   text-align: center;
 }
 
+/* TITLE */
 .title {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: #2c3e50;
 }
 
+/* SUB TITLE (TEST NAME) */
+.subtitle {
+  margin-bottom: 15px;
+  color: #555;
+  font-size: 15px;
+}
+
+/* BUTTON */
 .refresh-btn {
   background: #3498db;
   color: white;
@@ -57,7 +65,6 @@ body {
   transform: scale(1.02);
 }
 
-/* RANK */
 .rank {
   font-size: 18px;
   font-weight: bold;
@@ -75,24 +82,13 @@ body {
   color: #2c3e50;
 }
 
-/* TOP 3 COLORS */
-.gold {
-  background: linear-gradient(90deg, #fff3b0, #ffd700);
-}
+/* TOP 3 */
+.gold { background: linear-gradient(90deg, #fff3b0, #ffd700); }
+.silver { background: linear-gradient(90deg, #f0f0f0, #c0c0c0); }
+.bronze { background: linear-gradient(90deg, #f7d7b5, #cd7f32); }
 
-.silver {
-  background: linear-gradient(90deg, #f0f0f0, #c0c0c0);
-}
-
-.bronze {
-  background: linear-gradient(90deg, #f7d7b5, #cd7f32);
-}
-
-/* MOBILE */
 @media (max-width: 600px) {
-  .card {
-    font-size: 14px;
-  }
+  .card { font-size: 14px; }
 }
 </style>
 </head>
@@ -101,10 +97,14 @@ body {
 
 <div class="leaderboard-container">
 
+  <!-- 🏆 MAIN TITLE -->
   <h2 class="title">🏆 Leaderboard</h2>
 
+  <!-- 📌 SUB TITLE (TEST NAME) -->
+  <div id="testName" class="subtitle"></div>
+
   <button onclick="loadLeaderboard()" class="refresh-btn">
-    🔄 Refresh Leaderboard
+    🔄 Refresh
   </button>
 
   <div id="leaderboard"></div>
@@ -112,71 +112,72 @@ body {
 </div>
 
 <script>
-    const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvxJWMg0KPIRZCA8nK3tiHoz3xF62mB11gFCbFW4hyhXiOpHozfLYjD45FG-SgWR4dL0gKTe9WW-mk/pub?gid=0&single=true&output=csv";
-    
-    /* =========================
-       📌 GET SET NUMBER
-    ========================= */
-    const params = new URLSearchParams(window.location.search);
-    const setNo = params.get("set");
-    
-    /* =========================
-       📌 CONVERT TO FULL TEST NAME
-    ========================= */
-    const currentTestName = setNo 
-      ? `Mathematics Mock Test ${setNo}` 
-      : "";
-    
-    /* =========================
-       🚀 LOAD LEADERBOARD
-    ========================= */
-    function loadLeaderboard() {
-      fetch(SHEET_URL + "&t=" + new Date().getTime())
-        .then(res => res.text())
-        .then(data => {
-    
-          const rows = data.split("\n").slice(1);
-    
-          let filtered = rows
-            .map(r => r.split(","))
-            .filter(r => (r[2] || "").trim() === currentTestName);
-    
-          filtered.sort((a, b) => b[1] - a[1]);
-    
-          let html = "";
-    
-          filtered.slice(0, 20).forEach((row, index) => {
-    
-            let rankIcon = index + 1;
-            let rankClass = "";
-    
-            if (index === 0) {
-              rankIcon = "🥇";
-              rankClass = "gold";
-            } 
-            else if (index === 1) {
-              rankIcon = "🥈";
-              rankClass = "silver";
-            } 
-            else if (index === 2) {
-              rankIcon = "🥉";
-              rankClass = "bronze";
-            }
-    
-            html += `
-              <div class="card ${rankClass}">
-                <div class="rank">${rankIcon}</div>
-                <div class="name">${row[0]}</div>
-                <div class="score">${row[1]}</div>
-              </div>
-            `;
-          });
-    
-          document.getElementById("leaderboard").innerHTML = html;
-        });
-    }
-    
-    window.onload = loadLeaderboard;
+const SHEET_URL = "YOUR_GOOGLE_SHEET_CSV_URL";
+
+/* =========================
+   📌 GET SET NUMBER
+========================= */
+const params = new URLSearchParams(window.location.search);
+const setNo = params.get("set");
+
+/* 📌 FULL TEST NAME */
+const currentTestName = setNo 
+  ? `Mathematics Mock Test ${setNo}` 
+  : "Unknown Test";
+
+/* show subtitle */
+document.getElementById("testName").innerText = currentTestName;
+
+/* =========================
+   🚀 LOAD LEADERBOARD
+========================= */
+function loadLeaderboard() {
+  fetch(SHEET_URL + "&t=" + new Date().getTime())
+    .then(res => res.text())
+    .then(data => {
+
+      const rows = data.split("\n").slice(1);
+
+      let filtered = rows
+        .map(r => r.split(","))
+        .filter(r => (r[2] || "").trim() === currentTestName);
+
+      filtered.sort((a, b) => b[1] - a[1]);
+
+      let html = "";
+
+      filtered.slice(0, 20).forEach((row, index) => {
+
+        let rankIcon = index + 1;
+        let rankClass = "";
+
+        if (index === 0) {
+          rankIcon = "🥇";
+          rankClass = "gold";
+        } 
+        else if (index === 1) {
+          rankIcon = "🥈";
+          rankClass = "silver";
+        } 
+        else if (index === 2) {
+          rankIcon = "🥉";
+          rankClass = "bronze";
+        }
+
+        html += `
+          <div class="card ${rankClass}">
+            <div class="rank">${rankIcon}</div>
+            <div class="name">${row[0]}</div>
+            <div class="score">${row[1]}</div>
+          </div>
+        `;
+      });
+
+      document.getElementById("leaderboard").innerHTML = html;
+    });
+}
+
+window.onload = loadLeaderboard;
 </script>
 
 </body>
