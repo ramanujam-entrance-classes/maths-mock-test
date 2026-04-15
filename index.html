@@ -126,6 +126,7 @@
         .btn-start { background: var(--primary); color: white; margin: 20px auto; display: block; }
         .btn-submit { background: var(--success); color: white; width: 100%; margin-top: 20px; }
         .btn-restart { background: var(--dark); color: white; width: 100%; margin-top: 20px; }
+		.btn-leaderboard { background: var(--dark); color: white; width: 100%; margin-top: 20px; }
         .btn:hover { opacity: 0.9; transform: translateY(-2px); }
 
         #score-display {
@@ -343,9 +344,7 @@ body {
 	</form>
         <button id="submit-btn" class="btn btn-submit">Submit</button>
 	<div id="score-display"></div>
-		<button id="leaderboard-btn" onclick="goToLeaderboard()" class="btn btn-leaderboard hidden">
-		  🏆 View Leaderboard
-		</button>
+		<button id="leaderboard-btn" class="btn btn-restart hidden" onclick="goToLeaderboard()">🏆 View Leaderboard</button>
         <button id="restart-btn" class="btn btn-restart hidden" onclick="window.location.reload()">ReAttempt Test</button>
     </div>
 </div>
