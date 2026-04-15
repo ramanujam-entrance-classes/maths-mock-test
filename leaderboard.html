@@ -244,8 +244,24 @@ function parseSheet(text) {
 
 function isToday(dateValue) {
     if (!dateValue) return false;
-    const d = new Date(dateValue);
+
+    let d;
+    if (typeof dateValue === "string") {
+        // Split "MM/DD/YYYY HH:MM:SS" and take only the date part
+        const dateParts = dateValue.split(" ")[0].split("/").map(Number); // [MM, DD, YYYY]
+        if (dateParts.length < 3) return false;
+
+        const month = dateParts[0] - 1; // JS months are 0-based
+        const day = dateParts[1];
+        const year = dateParts[2];
+
+        d = new Date(year, month, day);
+    } else {
+        d = new Date(dateValue);
+    }
+
     if (isNaN(d)) return false;
+
     const today = new Date();
     return d.getFullYear() === today.getFullYear() &&
            d.getMonth() === today.getMonth() &&
