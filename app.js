@@ -213,7 +213,8 @@ function submitQuiz() {
     scoreDisplay.style.display = 'block';
     submitBtn.classList.add('hidden');
     restartBtn.classList.remove('hidden');
-
+    leaderboardBtn.classList.remove('hidden');
+    
     restartBtn.scrollIntoView({
         behavior: "smooth",
         block: "end"
@@ -227,7 +228,6 @@ function submitQuiz() {
       	currentTestName,
       	`${timeTakenMinutes}:${timeTakenSecs}`
     	);
-    document.getElementById("leaderboard-btn").classList.remove("hidden");
 }
 
 function sendToLeaderboard(name, score, testName, timeTaken) {
