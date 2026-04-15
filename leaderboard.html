@@ -85,10 +85,14 @@ document.getElementById("title").innerText = currentTestName;
 
 const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvxJWMg0KPIRZCA8nK3tiHoz3xF62mB11gFCbFW4hyhXiOpHozfLYjD45FG-SgWR4dL0gKTe9WW-mk/pub?gid=0&single=true&output=csv"; // paste here
 
-let lastHTML = "";
-  
+let isLoading = false;
+
 function loadLeaderboard() {
-  fetch(SHEET_URL)
+  if (isLoading) return; // 🚨 block multiple calls
+
+  isLoading = true;
+
+  fetch(SHEET_URL + "&t=" + new Date().getTime())
     .then(res => res.text())
     .then(data => {
 
@@ -97,8 +101,6 @@ function loadLeaderboard() {
       let filtered = rows
         .map(r => r.split(","))
         .filter(r => r[2] === currentTestName);
-
-      if (filtered.length === 0) return; // prevents blank UI
 
       // Sort by score DESC
       filtered.sort((a, b) => {
@@ -135,11 +137,10 @@ function loadLeaderboard() {
         `;
       });
 
-      // 🚨 prevent unnecessary UI refresh
-      if (html === lastHTML) return;
-
-      lastHTML = html;
       document.getElementById("leaderboard").innerHTML = html;
+    })
+    .finally(() => {
+      isLoading = false;
     });
 }
   
@@ -147,7 +148,7 @@ function loadLeaderboard() {
 loadLeaderboard();
 
 // Auto refresh every 5 sec
-setInterval(loadLeaderboard, 5000);
+setInterval(loadLeaderboard, 10000);
 </script>
 
 </body>
