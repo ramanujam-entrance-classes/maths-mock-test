@@ -217,6 +217,38 @@ function parseSheet(text) {
     r.c.map(c => (c ? c.v : ""))
   );
 }
+
+function formatDate(value) {
+  if (!value) return "-";
+
+  // If it's already a readable string
+  if (typeof value === "string" && !value.includes("Date(")) {
+    const d = new Date(value);
+    return isNaN(d) ? value : d.toLocaleString();
+  }
+
+  // If it's Google Sheets Date(...) format
+  if (typeof value === "string" && value.includes("Date(")) {
+    const match = value.match(/\d+/g);
+
+    if (!match || match.length < 3) return "-";
+
+    const year = Number(match[0]);
+    const month = Number(match[1]);
+    const day = Number(match[2]);
+    const hour = Number(match[3] || 0);
+    const min = Number(match[4] || 0);
+    const sec = Number(match[5] || 0);
+
+    const d = new Date(year, month, day, hour, min, sec);
+    return d.toLocaleString();
+  }
+
+  // fallback
+  const d = new Date(value);
+  return isNaN(d) ? "-" : d.toLocaleString();
+}
+  
 /* =========================
    🚀 LOAD LEADERBOARD
 ========================= */
@@ -275,14 +307,6 @@ function renderLeaderboard() {
     html || "<p>No data found</p>";
 }
 
-function formatDate(sheetDate) {
-  if (!sheetDate) return "-";
-
-  const d = new Date(sheetDate);
-
-  return d.toLocaleString(); 
-}
-  
 window.onload = loadLeaderboard;
 </script>
 
