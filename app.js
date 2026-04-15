@@ -27,7 +27,7 @@ const quizForm = document.getElementById('quiz-form');
 const submitBtn = document.getElementById('submit-btn');
 const restartBtn = document.getElementById('restart-btn');
 const scoreDisplay = document.getElementById('score-display');
-const currentTestName = "mocktest";
+//const currentTestName = "mocktest";
 
 let totalTime = 70 * 60;
 let timeLeft = totalTime;
