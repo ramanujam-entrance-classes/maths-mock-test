@@ -112,69 +112,71 @@ body {
 </div>
 
 <script>
-const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvxJWMg0KPIRZCA8nK3tiHoz3xF62mB11gFCbFW4hyhXiOpHozfLYjD45FG-SgWR4dL0gKTe9WW-mk/pub?gid=0&single=true&output=csv";
-
-/* =========================
-   📌 GET SET NUMBER
-========================= */
-const params = new URLSearchParams(window.location.search);
-const setNo = params.get("set");
-
-/* 📌 DISPLAY NAME (UI ONLY) */
-const currentTestName = setNo 
-  ? `Mathematics Mock Test ${setNo}` 
-  : "Select a Test";
-
-/* =========================
-   🚀 LOAD LEADERBOARD
-========================= */
-function loadLeaderboard() {
-  fetch(SHEET_URL + "&t=" + new Date().getTime())
-    .then(res => res.text())
-    .then(data => {
-
-      const rows = data.split("\n").slice(1);
-
-      let filtered = rows
-        .map(r => r.split(","))
-        .filter(r => String(r[2]).trim() === String(setNo).trim());
-
-      filtered.sort((a, b) => b[1] - a[1]);
-
-      let html = "";
-
-      filtered.slice(0, 20).forEach((row, index) => {
-
-        let rankIcon = index + 1;
-        let rankClass = "";
-
-        if (index === 0) {
-          rankIcon = "🥇";
-          rankClass = "gold";
-        } 
-        else if (index === 1) {
-          rankIcon = "🥈";
-          rankClass = "silver";
-        } 
-        else if (index === 2) {
-          rankIcon = "🥉";
-          rankClass = "bronze";
-        }
-
-        html += `
-          <div class="card ${rankClass}">
-            <div class="rank">${rankIcon}</div>
-            <div class="name">${row[0]}</div>
-            <div class="score">${row[1]}</div>
-          </div>
-        `;
-      });
-
-      document.getElementById("leaderboard").innerHTML = html;
-    });
-}
-
-window.onload = loadLeaderboard;
+    const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvxJWMg0KPIRZCA8nK3tiHoz3xF62mB11gFCbFW4hyhXiOpHozfLYjD45FG-SgWR4dL0gKTe9WW-mk/pub?gid=0&single=true&output=csv";
+    
+    /* =========================
+       📌 GET SET NUMBER
+    ========================= */
+    const params = new URLSearchParams(window.location.search);
+    const setNo = params.get("set");
+    
+    /* =========================
+       📌 CONVERT TO FULL TEST NAME
+    ========================= */
+    const currentTestName = setNo 
+      ? `Mathematics Mock Test ${setNo}` 
+      : "";
+    
+    /* =========================
+       🚀 LOAD LEADERBOARD
+    ========================= */
+    function loadLeaderboard() {
+      fetch(SHEET_URL + "&t=" + new Date().getTime())
+        .then(res => res.text())
+        .then(data => {
+    
+          const rows = data.split("\n").slice(1);
+    
+          let filtered = rows
+            .map(r => r.split(","))
+            .filter(r => (r[2] || "").trim() === currentTestName);
+    
+          filtered.sort((a, b) => b[1] - a[1]);
+    
+          let html = "";
+    
+          filtered.slice(0, 20).forEach((row, index) => {
+    
+            let rankIcon = index + 1;
+            let rankClass = "";
+    
+            if (index === 0) {
+              rankIcon = "🥇";
+              rankClass = "gold";
+            } 
+            else if (index === 1) {
+              rankIcon = "🥈";
+              rankClass = "silver";
+            } 
+            else if (index === 2) {
+              rankIcon = "🥉";
+              rankClass = "bronze";
+            }
+    
+            html += `
+              <div class="card ${rankClass}">
+                <div class="rank">${rankIcon}</div>
+                <div class="name">${row[0]}</div>
+                <div class="score">${row[1]}</div>
+              </div>
+            `;
+          });
+    
+          document.getElementById("leaderboard").innerHTML = html;
+        });
+    }
+    
+    window.onload = loadLeaderboard;
 </script>
 
 </body>
