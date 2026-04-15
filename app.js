@@ -133,7 +133,9 @@ function submitQuiz() {
 
     const studentName = document.getElementById('student-name').value;
     const labels = ["(A)", "(B)", "(C)", "(D)"];    
-    console.log(setNo);
+    console.log("Set No:", setNo);
+    console.log("URL:", window.location.href);
+    console.log("Search:", window.location.search);
     const currentTestName = "Mathematics Mock Test " || setNo;
 
     questions.forEach((qObj, index) => {
