@@ -139,6 +139,10 @@ body {
   font-weight: bold;
   color: #1f3c88;
   font-size: 16px;
+  background: #eef3ff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
 }
 
 .timestamp {
@@ -238,7 +242,7 @@ function loadLeaderboard() {
 }
 
 function renderLeaderboard() {
-
+  const TOTAL_MARKS = 600;
   const sorted = [...leaderboardData].sort((a, b) =>
     Number(b[1] || 0) - Number(a[1] || 0)
   );
@@ -260,8 +264,8 @@ function renderLeaderboard() {
     <div class="col name">${row[0]}</div>
 
     <div class="col score-block">
-      <div class="score">${row[1]}</div>
-      <div class="timestamp">🕒 ${row[3]}</div>
+      <div class="score">${row[1]}/${TOTAL_MARKS}</div>
+      <div class="timestamp">🕒 ${row[4]}</div>
     </div>
 
   </div>
@@ -270,6 +274,7 @@ function renderLeaderboard() {
   document.getElementById("leaderboard").innerHTML =
     html || "<p>No data found</p>";
 }
+
 window.onload = loadLeaderboard;
 </script>
 
