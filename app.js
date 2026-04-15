@@ -229,21 +229,15 @@ function submitQuiz() {
 function sendToLeaderboard(name, score, testName, timeTaken) {
   fetch("https://script.google.com/macros/s/AKfycbybHrxfFGve-yIBXsIwZkoiEUZ1UdhMOwhwRusd7UGjBuGrnTNuiBhQr2QasPyHY1Hz/exec", {
     method: "POST",
+    mode: "no-cors",
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/x-www-form-urlencoded"
     },
-    body: JSON.stringify({
-      name: "Test", //name,
-      score: "300", //score,
-      test: "Test1", //testName,
-      time: "1:20", //timeTaken
+    body: new URLSearchParams({
+      name: name,
+      score: score,
+      test: testName,
+      time: timeTaken
     })
-  })
-  .then(res => res.text())
-  .then(data => {
-    console.log("Response from server:", data);
-  })
-  .catch(err => {
-    console.log("Error:", err);
   });
 }
