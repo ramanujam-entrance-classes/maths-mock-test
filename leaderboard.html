@@ -1,97 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 <title>Leaderboard</title>
 
 <style>
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f4f7f6;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
   margin: 0;
-  padding: 15px;
+  padding: 20px;
 }
 
-.container {
-  max-width: 700px;
+.leaderboard-container {
+  max-width: 600px;
   margin: auto;
+  text-align: center;
 }
 
 .title {
-  text-align: center;
-  color: #0033cc;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  color: #2c3e50;
 }
 
+.refresh-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.refresh-btn:hover {
+  background: #217dbb;
+}
+
+/* CARD */
 .card {
-  background: white;
-  padding: 15px;
-  border-radius: 12px;
-  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  background: white;
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: 0.2s;
 }
 
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* RANK */
 .rank {
-  font-weight: bold;
   font-size: 18px;
-  width: 40px;
+  font-weight: bold;
+  width: 50px;
 }
 
 .name {
   flex: 1;
-  font-weight: 500;
+  text-align: left;
+  font-weight: bold;
 }
 
 .score {
   font-weight: bold;
-  color: green;
+  color: #2c3e50;
 }
 
-.time {
-  font-size: 12px;
-  color: #666;
+/* TOP 3 COLORS */
+.gold {
+  background: linear-gradient(90deg, #fff3b0, #ffd700);
 }
 
-.top1 { background: #fff8dc; }
-.top2 { background: #f0f0f0; }
-.top3 { background: #ffe4e1; }
+.silver {
+  background: linear-gradient(90deg, #f0f0f0, #c0c0c0);
+}
 
-.footer {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 12px;
-  color: #777;
+.bronze {
+  background: linear-gradient(90deg, #f7d7b5, #cd7f32);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .card {
+    font-size: 14px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
-  <h2 class="title" id="title"></h2>
+<div class="leaderboard-container">
+
+  <h2 class="title">🏆 Leaderboard</h2>
+
+  <button onclick="loadLeaderboard()" class="refresh-btn">
+    🔄 Refresh Leaderboard
+  </button>
+
   <div id="leaderboard"></div>
-  <div class="footer">Auto-refresh every 5 seconds ⟳</div>
+
 </div>
 
 <script>
+const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvxJWMg0KPIRZCA8nK3tiHoz3xF62mB11gFCbFW4hyhXiOpHozfLYjD45FG-SgWR4dL0gKTe9WW-mk/pub?gid=0&single=true&output=csv";
+
+/* =========================
+   📌 GET SET NUMBER
+========================= */
 const params = new URLSearchParams(window.location.search);
-const setNo = params.get("set") || "1";
+const setNo = params.get("set");
 
-const currentTestName = `Mathematics Mock Test ${setNo}`;
-document.getElementById("title").innerText = currentTestName;
+/* 📌 DISPLAY NAME (UI ONLY) */
+const currentTestName = setNo 
+  ? `Mathematics Mock Test ${setNo}` 
+  : "Select a Test";
 
-const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvxJWMg0KPIRZCA8nK3tiHoz3xF62mB11gFCbFW4hyhXiOpHozfLYjD45FG-SgWR4dL0gKTe9WW-mk/pub?gid=0&single=true&output=csv"; // paste here
-
-let isLoading = false;
-
+/* =========================
+   🚀 LOAD LEADERBOARD
+========================= */
 function loadLeaderboard() {
-  if (isLoading) return; // 🚨 block multiple calls
-
-  isLoading = true;
-
   fetch(SHEET_URL + "&t=" + new Date().getTime())
     .then(res => res.text())
     .then(data => {
@@ -100,55 +137,44 @@ function loadLeaderboard() {
 
       let filtered = rows
         .map(r => r.split(","))
-        .filter(r => r[2] === currentTestName);
+        .filter(r => String(r[2]).trim() === String(setNo).trim());
 
-      // Sort by score DESC
-      filtered.sort((a, b) => {
-        const scoreA = parseInt(a[1]);
-        const scoreB = parseInt(b[1]);
-      
-        // 1. Sort by score (descending)
-        if (scoreB !== scoreA) {
-          return scoreB - scoreA;
-        }
-      
-        // 2. Tie-breaker: lower time wins
-        const timeA = a[3];
-        const timeB = b[3];
-      
-        const [minA, secA] = timeA.split(":").map(Number);
-        const [minB, secB] = timeB.split(":").map(Number);
-      
-        const totalA = minA * 60 + secA;
-        const totalB = minB * 60 + secB;
-      
-        return totalA - totalB;
-      });
+      filtered.sort((a, b) => b[1] - a[1]);
 
       let html = "";
 
       filtered.slice(0, 20).forEach((row, index) => {
+
+        let rankIcon = index + 1;
+        let rankClass = "";
+
+        if (index === 0) {
+          rankIcon = "🥇";
+          rankClass = "gold";
+        } 
+        else if (index === 1) {
+          rankIcon = "🥈";
+          rankClass = "silver";
+        } 
+        else if (index === 2) {
+          rankIcon = "🥉";
+          rankClass = "bronze";
+        }
+
         html += `
-          <div class="card">
-            <div>${index + 1}</div>
-            <div>${row[0]}</div>
-            <div>${row[1]}</div>
+          <div class="card ${rankClass}">
+            <div class="rank">${rankIcon}</div>
+            <div class="name">${row[0]}</div>
+            <div class="score">${row[1]}</div>
           </div>
         `;
       });
 
       document.getElementById("leaderboard").innerHTML = html;
-    })
-    .finally(() => {
-      isLoading = false;
     });
 }
-  
-// Initial load
-loadLeaderboard();
 
-// Auto refresh every 5 sec
-setInterval(loadLeaderboard, 10000);
+window.onload = loadLeaderboard;
 </script>
 
 </body>
