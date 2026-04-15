@@ -1,5 +1,80 @@
-<h2 id="title"></h2>
-<div id="leaderboard"></div>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leaderboard</title>
+
+<style>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f7f6;
+  margin: 0;
+  padding: 15px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  color: #0033cc;
+  margin-bottom: 15px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.rank {
+  font-weight: bold;
+  font-size: 18px;
+  width: 40px;
+}
+
+.name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.score {
+  font-weight: bold;
+  color: green;
+}
+
+.time {
+  font-size: 12px;
+  color: #666;
+}
+
+.top1 { background: #fff8dc; }
+.top2 { background: #f0f0f0; }
+.top3 { background: #ffe4e1; }
+
+.footer {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2 class="title" id="title"></h2>
+  <div id="leaderboard"></div>
+  <div class="footer">Auto-refresh every 5 seconds ⟳</div>
+</div>
 
 <script>
 const params = new URLSearchParams(window.location.search);
@@ -8,24 +83,53 @@ const setNo = params.get("set") || "1";
 const currentTestName = `Mathematics Mock Test ${setNo}`;
 document.getElementById("title").innerText = currentTestName;
 
-fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQvxJWMg0KPIRZCA8nK3tiHoz3xF62mB11gFCbFW4hyhXiOpHozfLYjD45FG-SgWR4dL0gKTe9WW-mk/pub?gid=0&single=true&output=csv")
-  .then(res => res.text())
-  .then(data => {
-    const rows = data.split("\n").slice(1); // skip header
+const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvxJWMg0KPIRZCA8nK3tiHoz3xF62mB11gFCbFW4hyhXiOpHozfLYjD45FG-SgWR4dL0gKTe9WW-mk/pub?gid=0&single=true&output=csv"; // paste here
 
-    const filtered = rows
-      .map(r => r.split(","))
-      .filter(r => r[2] === currentTestName); // filter by test
+function loadLeaderboard() {
+  fetch(SHEET_URL)
+    .then(res => res.text())
+    .then(data => {
+      const rows = data.split("\n").slice(1);
 
-    // sort by score DESC
-    filtered.sort((a, b) => b[1] - a[1]);
+      let filtered = rows
+        .map(r => r.split(","))
+        .filter(r => r[2] === currentTestName);
 
-    let html = "<ol>";
-    filtered.slice(0, 10).forEach(row => {
-      html += `<li>${row[0]} - ${row[1]}</li>`;
+      // Sort by score DESC
+      filtered.sort((a, b) => b[1] - a[1]);
+
+      let html = "";
+
+      filtered.slice(0, 20).forEach((row, index) => {
+        let medal = "";
+        let className = "";
+
+        if (index === 0) { medal = "🥇"; className = "top1"; }
+        else if (index === 1) { medal = "🥈"; className = "top2"; }
+        else if (index === 2) { medal = "🥉"; className = "top3"; }
+
+        html += `
+          <div class="card ${className}">
+            <div class="rank">${medal || index + 1}</div>
+            <div class="name">${row[0]}</div>
+            <div>
+              <div class="score">${row[1]}</div>
+              <div class="time">${row[3]}</div>
+            </div>
+          </div>
+        `;
+      });
+
+      document.getElementById("leaderboard").innerHTML = html;
     });
-    html += "</ol>";
+}
 
-    document.getElementById("leaderboard").innerHTML = html;
-  });
+// Initial load
+loadLeaderboard();
+
+// Auto refresh every 5 sec
+setInterval(loadLeaderboard, 5000);
 </script>
+
+</body>
+</html>
