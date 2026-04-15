@@ -131,6 +131,7 @@ function submitQuiz() {
 
     const studentName = document.getElementById('student-name').value;
     const labels = ["(A)", "(B)", "(C)", "(D)"];
+    const currentTestName = "mocktest";
 
     questions.forEach((qObj, index) => {
         const selected = document.querySelector(`input[name="q${index}"]:checked`);
