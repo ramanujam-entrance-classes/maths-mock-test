@@ -185,6 +185,13 @@ function submitQuiz() {
         }
     });
 
+    sendToLeaderboard(
+      	studentName,
+      	scoredMarks,
+      	currentTestName,
+      	`${timeTakenMinutes}:${timeTakenSecs}`
+    	);
+
     scoreDisplay.innerHTML = `
         <div class="scoreBoard" style="font-size:18px; line-height:1.8; font-weight:normal">
             👤 Student: <b>${studentName}</b><br><br>
@@ -217,4 +224,23 @@ function submitQuiz() {
     });
 
     MathJax.typeset();
+}
+
+function sendToLeaderboard(name, score, testName, timeTaken) {
+  fetch("https://script.google.com/macros/s/AKfycbxxSqejd3nuZnsQtoi8GR2zFm72sZxYfvqk9WJXp04mcrwgO1cCoZFamV7jRLr_dyff/exec", {
+    method: "POST",
+    body: JSON.stringify({
+      name: name,
+      score: score,
+      test: testName,
+      time: timeTaken
+    })
+  })
+  .then(res => res.text())
+  .then(data => {
+    console.log("Saved to leaderboard:", data);
+  })
+  .catch(err => {
+    console.log("Error:", err);
+  });
 }
