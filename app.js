@@ -132,9 +132,6 @@ function submitQuiz() {
     const labels = ["(A)", "(B)", "(C)", "(D)"];   
     const params = new URLSearchParams(window.location.search);
     const setNo = params.get("set");
-    console.log("Set No:", setNo);
-    console.log("URL:", window.location.href);
-    console.log("Search:", window.location.search);
     const currentTestName = `Mathematics Mock Test ${setNo}`;
 
     questions.forEach((qObj, index) => {
