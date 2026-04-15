@@ -231,23 +231,22 @@ function submitQuiz() {
 
 function sendToLeaderboard(name, score, testName, timeTaken) {
 
-  console.log("Sending leaderboard data...");
+  const url = "https://script.google.com/macros/s/AKfycbybHrxfFGve-yIBXsIwZkoiEUZ1UdhMOwhwRusd7UGjBuGrnTNuiBhQr2QasPyHY1Hz/exec";
 
-  fetch("https://script.google.com/macros/s/AKfycbybHrxfFGve-yIBXsIwZkoiEUZ1UdhMOwhwRusd7UGjBuGrnTNuiBhQr2QasPyHY1Hz/exec", {
+  const payload = {
+    name: name,
+    score: score,
+    test: testName,
+    time: timeTaken
+  };
+
+  console.log("Sending:", payload);
+
+  fetch(url, {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      name,
-      score,
-      test: testName,
-      time: timeTaken
-    })
+    body: JSON.stringify(payload)
   })
   .then(res => res.text())
-  .then(data => console.log("Server response:", data))
-  .catch(err => console.error("Leaderboard error:", err));
-
-  console.log("Leaderboard request sent");
+  .then(data => console.log("Response:", data))
+  .catch(err => console.error("Fetch error:", err));
 }
