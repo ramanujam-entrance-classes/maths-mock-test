@@ -245,27 +245,31 @@ function parseSheet(text) {
 function isToday(sheetValue) {
     if (!sheetValue) return false;
 
-    let d;
+    let dateObj;
 
-    // If it's already a Date object (Google Sheets JSON format)
-    if (typeof sheetValue === "object" && sheetValue.hasOwnProperty('v')) {
-        d = new Date(sheetValue.v);
-    } else if (typeof sheetValue === "string") {
-        // If it's string like "4/15/2026 22:09:21"
-        const parts = sheetValue.split(" ")[0].split("/").map(Number);
-        if (parts.length < 3) return false;
-        d = new Date(parts[2], parts[0]-1, parts[1]); // year, month-1, day
-    } else {
-        // fallback
-        d = new Date(sheetValue);
+    // If it's an object from Google Sheets JSON
+    if (typeof sheetValue === "object" && sheetValue.v) {
+        sheetValue = sheetValue.v;
     }
 
-    if (isNaN(d)) return false;
+    // Parse Google Sheets Date(...) string
+    if (typeof sheetValue === "string" && sheetValue.startsWith("Date(")) {
+        const match = sheetValue.match(/\d+/g); // extract all numbers
+        if (!match || match.length < 3) return false;
+        const year = Number(match[0]);
+        const month = Number(match[1]); // 0-based
+        const day = Number(match[2]);
+        dateObj = new Date(year, month, day);
+    } else {
+        dateObj = new Date(sheetValue); // fallback
+    }
+
+    if (isNaN(dateObj)) return false;
 
     const today = new Date();
-    return d.getFullYear() === today.getFullYear() &&
-           d.getMonth() === today.getMonth() &&
-           d.getDate() === today.getDate();
+    return dateObj.getFullYear() === today.getFullYear() &&
+           dateObj.getMonth() === today.getMonth() &&
+           dateObj.getDate() === today.getDate();
 }
   
 function formatDate(value) {
