@@ -135,7 +135,7 @@ function submitQuiz() {
     console.log("Set No:", setNo);
     console.log("URL:", window.location.href);
     console.log("Search:", window.location.search);
-    const currentTestName = "Mathematics Mock Test " || setNo;
+    const currentTestName = `Mathematics Mock Test ${setNo}`;
 
     questions.forEach((qObj, index) => {
         const selected = document.querySelector(`input[name="q${index}"]:checked`);
