@@ -96,7 +96,27 @@ function loadLeaderboard() {
         .filter(r => r[2] === currentTestName);
 
       // Sort by score DESC
-      filtered.sort((a, b) => b[1] - a[1]);
+      filtered.sort((a, b) => {
+        const scoreA = parseInt(a[1]);
+        const scoreB = parseInt(b[1]);
+      
+        // 1. Sort by score (descending)
+        if (scoreB !== scoreA) {
+          return scoreB - scoreA;
+        }
+      
+        // 2. Tie-breaker: lower time wins
+        const timeA = a[3];
+        const timeB = b[3];
+      
+        const [minA, secA] = timeA.split(":").map(Number);
+        const [minB, secB] = timeB.split(":").map(Number);
+      
+        const totalA = minA * 60 + secA;
+        const totalB = minB * 60 + secB;
+      
+        return totalA - totalB;
+      });
 
       let html = "";
 
