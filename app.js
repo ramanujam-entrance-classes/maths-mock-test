@@ -227,21 +227,20 @@ function submitQuiz() {
 }
 
 function sendToLeaderboard(name, score, testName, timeTaken) {
-  try {
-    fetch("https://script.google.com/macros/s/AKfycbybHrxfFGve-yIBXsIwZkoiEUZ1UdhMOwhwRusd7UGjBuGrnTNuiBhQr2QasPyHY1Hz/exec", {
-      method: "POST",
-      mode: "no-cors",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded"
-      },
-      body: new URLSearchParams({
-        name: name,
-        score: score,
-        test: testName,
-        time: timeTaken
-      })
-    });
-  } catch (err) {
+  console.log("Leaderboard function called");
+
+  fetch("https://script.google.com/macros/s/AKfycbybHrxfFGve-yIBXsIwZkoiEUZ1UdhMOwhwRusd7UGjBuGrnTNuiBhQr2QasPyHY1Hz/exec", {
+    method: "POST",
+    mode: "no-cors", // IMPORTANT
+    body: new URLSearchParams({
+      name: name,
+      score: score,
+      test: testName,
+      time: timeTaken
+    })
+  }).catch(err => {
     console.log("Leaderboard error:", err);
-  }
+  });
+
+  console.log("Leaderboard request sent (non-blocking)");
 }
