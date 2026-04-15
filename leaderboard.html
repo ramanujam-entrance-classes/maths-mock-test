@@ -115,9 +115,9 @@ body {
 
   <!-- 📌 SUB TITLE (TEST NAME) -->
   <div id="testName" class="test-name"></div>
-  <br>
+  <br><br>
   <button onclick="loadLeaderboard()" class="refresh-btn">
-    🔄 Refresh
+    🔄
   </button>
 
   <div id="leaderboard"></div>
@@ -144,12 +144,7 @@ document.getElementById("testName").innerText = currentTestName;
 /* =========================
    🚀 LOAD LEADERBOARD
 ========================= */
-let isLoading = false;
-
 function loadLeaderboard() {
-
-  if (isLoading) return;
-  isLoading = true;
 
   fetch(SHEET_URL + "&t=" + Date.now(), {
     cache: "no-store"
@@ -161,13 +156,15 @@ function loadLeaderboard() {
         .split("\n")
         .slice(1)
         .map(r => r.split(","))
-        .filter(r => r.length >= 3);
+        .filter(r => r.length >= 4);
 
       const filtered = rows.filter(r =>
-        (r[2] || "").trim() === currentTestName.trim()
+        (r[2] || "").trim() === currentTestName
       );
 
-      filtered.sort((a, b) => Number(b[1]) - Number(a[1]));
+      filtered.sort((a, b) =>
+        Number(b[1] || 0) - Number(a[1] || 0)
+      );
 
       let html = "";
 
@@ -179,22 +176,41 @@ function loadLeaderboard() {
         else if (index === 1) rankIcon = "🥈";
         else if (index === 2) rankIcon = "🥉";
 
+        const name = row[0];
+        const score = row[1];
+        const timeTaken = row[3] || "-";
+        const timestampRaw = row[4] || "-";
+
+        const timestamp = timestampRaw !== "-"
+          ? new Date(timestampRaw).toLocaleString()
+          : "-";
+
         html += `
           <div class="card">
+
             <div class="rank">${rankIcon}</div>
-            <div class="name">${row[0]}</div>
-            <div class="score">${row[1]}</div>
+
+            <div class="info">
+
+              <div class="name">${name}</div>
+
+              <div class="meta">
+                🏆 Score: <b>${score}</b> |
+                ⏱ Time: ${timeTaken}
+              </div>
+
+              <div class="timestamp">
+                🕒 ${timestamp}
+              </div>
+
+            </div>
+
           </div>
         `;
       });
 
-      document.getElementById("leaderboard").innerHTML = html;
-    })
-    .catch(err => {
-      console.error(err);
-    })
-    .finally(() => {
-      isLoading = false;
+      document.getElementById("leaderboard").innerHTML =
+        html || "<p>No data found</p>";
     });
 }
 
