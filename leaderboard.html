@@ -108,57 +108,61 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: white;
   padding: 12px 15px;
-  margin: 8px 0;
+  margin: 10px 0;
   border-radius: 10px;
+  background: white;
   box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-  gap: 10px;
 }
 
-/* rank column */
 .rank {
   width: 40px;
+  text-align: center;
   font-size: 18px;
-  font-weight: bold;
-  text-align: center;
 }
 
-/* common column style */
-.col {
-  flex: 1;
-  font-size: 14px;
-  text-align: center;
-  color: #2c3e50;
-}
-
-/* make name slightly bold */
 .name {
-  font-weight: bold;
-  text-align: left;
+  flex: 2;
+  font-weight: 600;
 }
 
-/* score highlight */
+/* 🔥 stacked score + time */
+.score-block {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .score {
   font-weight: bold;
   color: #1f3c88;
+  font-size: 16px;
 }
 
-/* timestamp smaller */
 .timestamp {
   font-size: 12px;
   color: #777;
+  margin-top: 2px;
 }
 
-/* mobile responsiveness */
+/* 📱 mobile fix */
 @media (max-width: 600px) {
   .card {
-    font-size: 12px;
     padding: 10px;
   }
 
-  .rank {
-    width: 30px;
+  .name {
+    font-size: 13px;
+  }
+
+  .score {
+    font-size: 14px;
+  }
+
+  .timestamp {
+    font-size: 11px;
   }
 }
 </style>
@@ -253,14 +257,16 @@ function renderLeaderboard() {
 
     <div class="rank">${rankIcon}</div>
 
-    <div class="col name">${name}</div>
+    <div class="col name">${row[0]}</div>
 
-    <div class="col score">${score}</div>
-
-    <div class="col timestamp">${timestamp}</div>
+    <div class="col score-block">
+      <div class="score">${row[1]}</div>
+      <div class="timestamp">🕒 ${row[3]}</div>
+    </div>
 
   </div>
 `;
+     });
   document.getElementById("leaderboard").innerHTML =
     html || "<p>No data found</p>";
 }
