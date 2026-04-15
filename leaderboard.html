@@ -307,8 +307,12 @@ function renderLeaderboard() {
 
   sorted.forEach((row, index) => {
 
-   let extraClass = "";
+  let rankIcon = index + 1;
+  if (index === 0) rankIcon = "🥇";
+  else if (index === 1) rankIcon = "🥈";
+  else if (index === 2) rankIcon = "🥉";
 
+  let extraClass = "";
   if (index === 0) extraClass = "gold";
   else if (index === 1) extraClass = "silver";
   else if (index === 2) extraClass = "bronze";
