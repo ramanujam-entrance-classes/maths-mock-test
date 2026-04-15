@@ -184,7 +184,9 @@ body {
 
 <script>
 const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvxJWMg0KPIRZCA8nK3tiHoz3xF62mB11gFCbFW4hyhXiOpHozfLYjD45FG-SgWR4dL0gKTe9WW-mk/pub?gid=0&single=true&output=csv";
-
+let latestRequestId = 0;
+let leaderboardData = [];
+  
 /* =========================
    📌 GET SET NUMBER
 ========================= */
@@ -204,67 +206,60 @@ document.getElementById("testName").innerText = currentTestName;
 ========================= */
 function loadLeaderboard() {
 
+  const requestId = ++latestRequestId;
+
   fetch(SHEET_URL + "&t=" + Date.now(), {
     cache: "no-store"
   })
     .then(res => res.text())
     .then(data => {
 
+      // 🚨 ignore old responses
+      if (requestId !== latestRequestId) return;
+
       const rows = data
         .split("\n")
         .slice(1)
         .map(r => r.split(","))
-        .filter(r => r.length >= 4);
+        .filter(r => r.length >= 3);
 
-      const filtered = rows.filter(r =>
-        (r[2] || "").trim() === currentTestName
+      leaderboardData = rows.filter(r =>
+        (r[2] || "").trim() === currentTestName.trim()
       );
 
-      filtered.sort((a, b) =>
-        Number(b[1] || 0) - Number(a[1] || 0)
-      );
-
-      let html = "";
-
-      filtered.slice(0, 20).forEach((row, index) => {
-
-        let rankIcon = index + 1;
-
-        if (index === 0) rankIcon = "🥇";
-        else if (index === 1) rankIcon = "🥈";
-        else if (index === 2) rankIcon = "🥉";
-
-        const name = row[0];
-        const score = row[1];
-        const timeTaken = row[3] || "-";
-        const timestampRaw = row[4] || "-";
-
-        const timestamp = timestampRaw !== "-"
-          ? new Date(timestampRaw).toLocaleString()
-          : "-";
-
-        html += `
-  <div class="card">
-
-    <div class="rank">${rankIcon}</div>
-
-    <div class="col name">${name}</div>
-
-    <div class="col score">${score}</div>
-
-    <div class="col time">${timeTaken}</div>
-
-    <div class="col timestamp">${timestamp}</div>
-
-  </div>
-`;
-      });
-
-      document.getElementById("leaderboard").innerHTML =
-        html || "<p>No data found</p>";
+      renderLeaderboard();
     });
 }
 
+function renderLeaderboard() {
+
+  const sorted = [...leaderboardData].sort((a, b) =>
+    Number(b[1] || 0) - Number(a[1] || 0)
+  );
+
+  let html = "";
+
+  sorted.forEach((row, index) => {
+
+    let rankIcon = index + 1;
+    if (index === 0) rankIcon = "🥇";
+    else if (index === 1) rankIcon = "🥈";
+    else if (index === 2) rankIcon = "🥉";
+
+    html += `
+      <div class="card">
+        <div class="rank">${rankIcon}</div>
+        <div class="col name">${row[0]}</div>
+        <div class="col score">${row[1]}</div>
+        <div class="col time">${row[3]}</div>
+        <div class="col timestamp">${row[4]}</div>
+      </div>
+    `;
+  });
+
+  document.getElementById("leaderboard").innerHTML =
+    html || "<p>No data found</p>";
+}
 window.onload = loadLeaderboard;
 </script>
 
