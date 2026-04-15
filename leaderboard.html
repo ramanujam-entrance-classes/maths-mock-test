@@ -242,6 +242,16 @@ function parseSheet(text) {
   );
 }
 
+function isToday(dateValue) {
+    if (!dateValue) return false;
+    const d = new Date(dateValue);
+    if (isNaN(d)) return false;
+    const today = new Date();
+    return d.getFullYear() === today.getFullYear() &&
+           d.getMonth() === today.getMonth() &&
+           d.getDate() === today.getDate();
+}
+  
 function formatDate(value) {
   if (!value) return "-";
 
@@ -277,24 +287,18 @@ function formatDate(value) {
    🚀 LOAD LEADERBOARD
 ========================= */
 function loadLeaderboard() {
-
-  fetch(SHEET_URL + "&t=" + Date.now(), {
-    cache: "no-store"
-  })
-    .then(res => res.text())
-    .then(data => {
-
-      const rows = parseSheet(data);
-
-      console.log("TOTAL ROWS:", rows.length);
-
-      leaderboardData = rows.filter(r =>
-        (r[2] || "").toString().trim().toLowerCase()
-        === currentTestName.trim().toLowerCase()
-      );
-
-      renderLeaderboard();
-    });
+    fetch(SHEET_URL + "&t=" + Date.now(), { cache: "no-store" })
+        .then(res => res.text())
+        .then(data => {
+            const rows = parseSheet(data);
+            console.log("TOTAL ROWS:", rows.length);
+            leaderboardData = rows.filter(r => {
+                const testNameMatch = (r[2] || "").toString().trim().toLowerCase() === currentTestName.trim().toLowerCase();
+                const todayMatch = isToday(r[4]);
+                return testNameMatch && todayMatch;
+            });
+            renderLeaderboard();
+        });
 }
 
 function renderLeaderboard() {
