@@ -185,14 +185,7 @@ function submitQuiz() {
             feedback.style.color = "var(--danger)";
         }
     });
-    console.log("Before leaderboard");
-    sendToLeaderboard(
-      	studentName,
-      	scoredMarks,
-      	currentTestName,
-      	`${timeTakenMinutes}:${timeTakenSecs}`
-    	);
-    console.log("After leaderboard");
+        
     scoreDisplay.innerHTML = `
         <div class="scoreBoard" style="font-size:18px; line-height:1.8; font-weight:normal">
             👤 Student: <b>${studentName}</b><br><br>
@@ -225,6 +218,13 @@ function submitQuiz() {
     });
 
     MathJax.typeset();
+
+    sendToLeaderboard(
+      	studentName,
+      	scoredMarks,
+      	currentTestName,
+      	`${timeTakenMinutes}:${timeTakenSecs}`
+    	);
 }
 
 function sendToLeaderboard(name, score, testName, timeTaken) {
