@@ -1,6 +1,9 @@
 let questions = [];
 let quizTitle = "";
 
+const params = new URLSearchParams(window.location.search);
+const setNo = params.get("set");
+
 function initApp(data) {
     questions = data.questions;
 
@@ -129,9 +132,8 @@ function submitQuiz() {
     let scoredMarks = 0;
 
     const studentName = document.getElementById('student-name').value;
-    const labels = ["(A)", "(B)", "(C)", "(D)"];
-    const params = new URLSearchParams(window.location.search);
-    const setNo = params.get("set");
+    const labels = ["(A)", "(B)", "(C)", "(D)"];    
+    console.log(setNo);
     const currentTestName = "Mathematics Mock Test " || setNo;
 
     questions.forEach((qObj, index) => {
