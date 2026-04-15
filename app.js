@@ -130,7 +130,9 @@ function submitQuiz() {
 
     const studentName = document.getElementById('student-name').value;
     const labels = ["(A)", "(B)", "(C)", "(D)"];
-    const currentTestName = "mocktest";
+    const params = new URLSearchParams(window.location.search);
+    const setNo = params.get("set");
+    const currentTestName = "Mathematics Mock Test " || setNo;
 
     questions.forEach((qObj, index) => {
         const selected = document.querySelector(`input[name="q${index}"]:checked`);
