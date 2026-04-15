@@ -230,20 +230,24 @@ function submitQuiz() {
 }
 
 function sendToLeaderboard(name, score, testName, timeTaken) {
-  console.log("Leaderboard function called");
+
+  console.log("Sending leaderboard data...");
 
   fetch("https://script.google.com/macros/s/AKfycbybHrxfFGve-yIBXsIwZkoiEUZ1UdhMOwhwRusd7UGjBuGrnTNuiBhQr2QasPyHY1Hz/exec", {
     method: "POST",
-    mode: "no-cors", // IMPORTANT
-    body: new URLSearchParams({
-      name: name,
-      score: score,
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      name,
+      score,
       test: testName,
       time: timeTaken
     })
-  }).catch(err => {
-    console.log("Leaderboard error:", err);
-  });
+  })
+  .then(res => res.text())
+  .then(data => console.log("Server response:", data))
+  .catch(err => console.error("Leaderboard error:", err));
 
-  console.log("Leaderboard request sent (non-blocking)");
+  console.log("Leaderboard request sent");
 }
