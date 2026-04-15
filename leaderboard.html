@@ -183,9 +183,10 @@ body {
 </div>
 
 <script>
-const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvxJWMg0KPIRZCA8nK3tiHoz3xF62mB11gFCbFW4hyhXiOpHozfLYjD45FG-SgWR4dL0gKTe9WW-mk/pub?gid=0&single=true&output=csv";
-let latestRequestId = 0;
+const SHEET_URL = "https://docs.google.com/spreadsheets/d/1q1i6uIL9uuGI_UXBzNAGcgrdk_lRIm9AVJhkzW8fNR0/gviz/tq?tqx=out:json";
+
 let leaderboardData = [];
+let latestRequestId = 0;
   
 /* =========================
    📌 GET SET NUMBER
@@ -201,12 +202,17 @@ const currentTestName = setNo
 /* show subtitle */
 document.getElementById("testName").innerText = currentTestName;
 
+function parseSheet(text) {
+  const json = JSON.parse(text.substring(47).slice(0, -2));
+
+  return json.table.rows.map(r =>
+    r.c.map(c => (c ? c.v : ""))
+  );
+}
 /* =========================
    🚀 LOAD LEADERBOARD
 ========================= */
 function loadLeaderboard() {
-
-  const requestId = ++latestRequestId;
 
   fetch(SHEET_URL + "&t=" + Date.now(), {
     cache: "no-store"
@@ -214,17 +220,13 @@ function loadLeaderboard() {
     .then(res => res.text())
     .then(data => {
 
-      // 🚨 ignore old responses
-      if (requestId !== latestRequestId) return;
+      const rows = parseSheet(data);
 
-      const rows = data
-        .split("\n")
-        .slice(1)
-        .map(r => r.split(","))
-        .filter(r => r.length >= 3);
+      console.log("TOTAL ROWS:", rows.length);
 
       leaderboardData = rows.filter(r =>
-        (r[2] || "").trim() === currentTestName.trim()
+        (r[2] || "").toString().trim().toLowerCase()
+        === currentTestName.trim().toLowerCase()
       );
 
       renderLeaderboard();
