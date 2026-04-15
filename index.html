@@ -337,6 +337,7 @@ body {
 	</form>
         <button id="submit-btn" class="btn btn-submit">Submit</button>
 	<div id="score-display"></div>
+		<button id="restart-btn" class="btn btn-restart hidden" onclick="goToLeaderboard()">View Leaderboard</button>
         <button id="restart-btn" class="btn btn-restart hidden" onclick="window.location.reload()">ReAttempt Test</button>
     </div>
 </div>
@@ -387,6 +388,10 @@ body {
     container.innerHTML = `<h3>${msg}</h3>`;
     document.querySelector(".quiz-card").appendChild(container);
   }
+
+	function goToLeaderboard() {
+	  window.open(`leaderboard.html?set=${setName}`, "_blank");
+	}
 </script>
 
 <script src="app.js"></script>
