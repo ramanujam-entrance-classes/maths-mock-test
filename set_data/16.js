@@ -493,7 +493,7 @@ options: [
 correct: "(A)"
 },
 {
-q: "Let \\(A = (3, -4), B = (1, 2), P = (2k - 1, 2k + 1)\\) is a variable point such that \\(PA + PB\\) is the minimum. Then \\(k\\) is",
+q: "Let \\(A = (3, -4), B = (1, 2),\\) \\( P = (2k - 1, 2k + 1)\\) is a variable point such that \\(PA + PB\\) is the minimum. Then \\(k\\) is",
 options: [
 "(A). \\(\\frac{7}{9}\\)",
 "(B). 0",
