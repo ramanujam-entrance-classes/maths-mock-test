@@ -11,13 +11,7 @@ function initApp(data) {
 
     // update title
     document.title = data.title;
-    document.querySelector("#test-heading span").innerText = `
-      <a href="leaderboard.html?set=${setName}" 
-         target="_blank" 
-         style="text-decoration:none;">
-         ${data.title}
-      </a>
-    `;
+    document.querySelector("#test-heading span").innerHTML = `<a href="leaderboard.html?set=${setName}" target="_blank" style="color:#0033cc; text-decoration:none;">${data.title}</a>`;
 
     attachEvents();
 }
