@@ -448,7 +448,7 @@ options: [
 "(A). \\((3, 1)\\)",
 "(B). \\((-2, 3)\\)",
 "(C). \\(\\left(\\frac{\\sqrt{2} - \\sqrt{5}}{\\sqrt{2}}, \\frac{2\\sqrt{2} - \\sqrt{5}}{\\sqrt{2}}\\right)\\)",
-"(D). \\(\\left(\\frac{\\sqrt{5} + \\sqrt{2}}{\\sqrt{2}}, \\frac{2\\sqrt{2} + \\sqrt{5}}{\\sqrt{2}}\\right)\\)"
+"(D). \\(\\left(\\frac{\\sqrt{5} + \\sqrt{2}}{\\sqrt{2}}, -\\frac{2\\sqrt{2} + \\sqrt{5}}{\\sqrt{2}}\\right)\\)"
 ],
 correct: "(D)"
 },
