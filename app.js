@@ -3,14 +3,21 @@ let quizTitle = "";
 
 function initApp(data) {
     questions = data.questions;
-
+    const setName = new URLSearchParams(window.location.search).get("set");
+    
     // show heading again (in case hidden before)
     const heading = document.getElementById("test-heading");
     if (heading) heading.style.display = "block";
 
     // update title
     document.title = data.title;
-    document.querySelector("#test-heading span").innerText = data.title;
+    document.querySelector("#test-heading span").innerText = `
+      <a href="leaderboard.html?set=${setName}" 
+         target="_blank" 
+         style="text-decoration:none;">
+         ${data.title}
+      </a>
+    `;
 
     attachEvents();
 }
