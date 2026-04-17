@@ -183,7 +183,7 @@ window.SET_DATA = {
 
   // Q16
   {
-    q: "If \\((1 + x)^n = C_0 + C_1 x + C_2 x^2 \\) \\(+ \\dots + C_n x^n\\), then \\(C_0 C_1 + C_1 C_2 + C_2 C_3 + \\dots + C_{n-1} C_n\\) will be equal to",
+    q: "If \\((1 + x)^n = C_0 + C_1 x + C_2 x^2 \\) \\(+ \\dots + C_n x^n\\), then \\(C_0 C_1 + C_1 C_2 + C_2 C_3 + \\dots +\\)\\( C_{n-1} C_n\\) will be equal to",
     options: [
       "(A). \\(\\frac{(2n)!}{(n+1)!(n-1)!}\\)",
       "(B). \\(\\frac{2(n)!}{(n^2 - 1)!}\\)",
