@@ -244,7 +244,7 @@ correct: "(A)"
 
 /* Question 17 */
 {
-q: `If \\(A \\begin{bmatrix} 0 \\\\ 1 \\\\ 0 \\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 0 \\\\ 1 \\end{bmatrix}, \\quad A \\begin{bmatrix} 4 \\\\ 1 \\\\ 3 \\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 1 \\\\ 0 \\end{bmatrix}, \\quad A \\begin{bmatrix} 2 \\\\ 1 \\\\ 2 \\end{bmatrix} = \\begin{bmatrix} 1 \\\\ 0 \\\\ 0 \\end{bmatrix}.\\)
+q: `If \\(A \\begin{bmatrix} 0 \\\\ 1 \\\\ 0 \\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 0 \\\\ 1 \\end{bmatrix}, \\quad A \\begin{bmatrix} 4 \\\\ 1 \\\\ 3 \\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 1 \\\\ 0 \\end{bmatrix},\\)\\( \\quad A \\begin{bmatrix} 2 \\\\ 1 \\\\ 2 \\end{bmatrix} = \\begin{bmatrix} 1 \\\\ 0 \\\\ 0 \\end{bmatrix}.\\)
 Then \\(a_{23}\\) equals to`,
 options: [
 "(A). \\(3\\)",
@@ -316,7 +316,7 @@ correct: "(A)"
 
 /* Question 23 */
 {
-q: "The product of all real roots of equation \\((x^2 - 9x + 11)^2 - (x - 4)(x - 5) = 2\\) is",
+q: "The product of all real roots of equation \\((x^2 - 9x + 11)^2 - (x - 4)(x - 5)\\)\\( = 2\\) is",
 options: [
 "(A). \\(99\\)",
 "(B). \\(121\\)",
@@ -352,7 +352,7 @@ correct: "(B)"
 
 /* Question 26 */
 {
-q: "If \\(S\\) be the set of \\(10\\) distinct primes and let \\(A\\) be the set of products of two or more elements from the set \\(S\\). If \\(P = \\{(x, y) : x \\in S \\text{ and } y \\in A \\text{ and } y \\text{ is divided by } x\\}\\). Then \\(n(P)\\) is equal to",
+q: "If \\(S\\) be the set of \\(10\\) distinct primes and let \\(A\\) be the set of products of two or more elements from the set \\(S\\). If \\(P = \\{(x, y) : x \\in S \\text{ and } y \\in A \\text{ and } y is divided by x\\}\\). Then \\(n(P)\\) is equal to",
 options: [
 "(A). \\(5110\\)",
 "(B). \\(5000\\)",
@@ -388,7 +388,7 @@ correct: "(B)"
 
 /* Question 29 */
 {
-q: "The area of the region bounded by S(x, y) such that \\(S = \\{(x, y) : x^2 + 4x + 2 \\leq y \\leq |x + 2|\\}\\) is (in sq. units)",
+q: "The area of the region bounded by S(x, y) such that \\(S = \\{(x, y) : x^2 + 4x + 2 \\leq y \\leq \\)\\( |x + 2|\\}\\) is (in sq. units)",
 options: [
 "(A). \\(\\frac{24}{5}\\)",
 "(B). \\(5\\)",
