@@ -65,7 +65,7 @@ correct: "(D)"
 {
 q: `If \\(f(x)\\) is continuous at \\(x = 0\\), where
 \\(
-f(x) = \\) <span style='font-size:14px'> \\(
+f(x) = \\) <span style='font-size:13px'> \\(
 \\begin{cases}
 \\frac{2}{x}(\\sin((k_1 + 1)x) + \\sin((k_2 + 1)x)), & x < 0 \\\\
 4, & x = 0 \\\\
@@ -85,8 +85,8 @@ correct: "(B)"
 /* Question 7 */
 {
 q: `The mode for the following frequency distribution:
-  <br>
-  <span style="font-size:12px">
+  <br><center>
+  <span style="font-size:13px">
   <table>
     <tr>
       <td>Size of items:</td>
@@ -124,7 +124,7 @@ q: `The mode for the following frequency distribution:
     <td>36-40</td>
     <td>0</td>
   </tr>
-  </table> </span> <br> is
+  </table> </span></center> <br> is
   `,
 options: [
 "(A). \\(32.66\\)",
