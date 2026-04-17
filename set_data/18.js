@@ -65,13 +65,13 @@ correct: "(D)"
 {
 q: `If \\(f(x)\\) is continuous at \\(x = 0\\), where
 \\(
-f(x) =\\)\\( <span stype="font-size:2px;">
+f(x) = \\) <span stype='font-size:2px'> \\(
 \\begin{cases}
 \\frac{2}{x}(\\sin((k_1 + 1)x) + \\sin((k_2 + 1)x)), & x < 0 \\\\
 4, & x = 0 \\\\
 \\frac{2}{x} \\log\\left(\\frac{k_2 x + 1}{k_1 x + 1}\\right), & x > 0
-\\end{cases} </span>
-\\)
+\\end{cases}
+\\)  </span>
 Then \\(k_1^2 + k_2^2\\) is`,
 options: [
 "(A). \\(1\\)",
