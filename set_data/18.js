@@ -1,5 +1,5 @@
 window.SET_DATA = {
-  title: "Mathematics Mock Test 17",
+  title: "Mathematics Mock Test 18",
   questions: [
     /* Question 1 */
 {
