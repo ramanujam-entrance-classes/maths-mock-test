@@ -65,7 +65,7 @@ correct: "(D)"
 {
 q: `If \\(f(x)\\) is continuous at \\(x = 0\\), where
 \\(
-f(x) = \\) <span style='font-size:12px'> \\(
+f(x) = \\) <span style='font-size:14px'> \\(
 \\begin{cases}
 \\frac{2}{x}(\\sin((k_1 + 1)x) + \\sin((k_2 + 1)x)), & x < 0 \\\\
 4, & x = 0 \\\\
@@ -84,7 +84,48 @@ correct: "(B)"
 
 /* Question 7 */
 {
-q: "The mode for the following frequency distribution:",
+q: `The mode for the following frequency distribution:
+  <br>
+  <span style="font-size:12px">
+  <table>
+    <tr>
+      <td>Size of items:</td>
+      <td>Frequency:</td>
+      <td>Size of items:</td>
+      <td>Frequency:</td>
+  </tr>
+  <tr>
+    <td>0-4</td>
+    <td>5</td>
+    <td>20-24</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>4-8</td>
+    <td>7</td>
+    <td>24-28</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>8-12</td>
+    <td>9</td>
+    <td>28-32</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>12-16</td>
+    <td>17</td>
+    <td>32-36</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>16-20</td>
+    <td>12</td>
+    <td>36-40</td>
+    <td>0</td>
+  </tr>
+  </table> </span> <br> is
+  `,
 options: [
 "(A). \\(32.66\\)",
 "(B). \\(12\\)",
