@@ -75,7 +75,7 @@ window.SET_DATA = {
 
   // Q7
   {
-    q: "Value of the series \\(\\log_e 2 + \\frac{(\\log_e 2)^2}{2!} + \\frac{(\\log_e 2)^3}{3!} + \\frac{(\\log_e 2)^4}{4!} + \\dots\\) to infinity is",
+    q: "Value of the series \\(\\log_e 2 + \\frac{(\\log_e 2)^2}{2!} + \\frac{(\\log_e 2)^3}{3!} + \\frac{(\\log_e 2)^4}{4!}\\) \\( + \\dots\\) to infinity is",
     options: [
       "(A). \\(2\\)",
       "(B). \\(1\\)",
@@ -183,7 +183,7 @@ window.SET_DATA = {
 
   // Q16
   {
-    q: "If \\((1 + x)^n = C_0 + C_1 x + C_2 x^2 + \\dots + C_n x^n\\), then \\(C_0 C_1 + C_1 C_2 + C_2 C_3 + \\dots + C_{n-1} C_n\\) will be equal to",
+    q: "If \\((1 + x)^n = C_0 + C_1 x + C_2 x^2 \\) \\(+ \\dots + C_n x^n\\), then \\(C_0 C_1 + C_1 C_2 + C_2 C_3 + \\dots + C_{n-1} C_n\\) will be equal to",
     options: [
       "(A). \\(\\frac{(2n)!}{(n+1)!(n-1)!}\\)",
       "(B). \\(\\frac{2(n)!}{(n^2 - 1)!}\\)",
@@ -207,7 +207,7 @@ window.SET_DATA = {
 
   // Q18
   {
-    q: "The sum of the series \\(\\log_e 5 - \\frac{\\log_e(25)}{2^2} + \\frac{\\log_e(125)}{3^2} + \\frac{\\log_e(625)}{4^2} + \\dots\\) to infinity is",
+    q: "The sum of the series \\(\\log_e 5 - \\frac{\\log_e(25)}{2^2} + \\frac{\\log_e(125)}{3^2} + \\frac{\\log_e(625)}{4^2} \\) \\( + \\dots\\) to infinity is",
     options: [
       "(A). \\(\\log_e 2\\)",
       "(B). \\(\\log_e 5\\)",
@@ -531,7 +531,7 @@ window.SET_DATA = {
 
   // Q45
   {
-    q: "If ∫ \\(x \\tan^{-1} x\\, dx = \\frac{1}{2}(x^2 + \\lambda) \\tan^{-1} x - \\mu x + C\\), then the values of \\(\\lambda\\) and \\(\\mu\\) are",
+    q: "If ∫ \\(x \\tan^{-1} x\\, dx = \\frac{1}{2}(x^2 + \\lambda) \\tan^{-1} x \\)\\(- \\mu x + C\\), then the values of \\(\\lambda\\) and \\(\\mu\\) are",
     options: [
       "(A). \\(\\lambda = 0, \\mu = 1\\)",
       "(B). \\(\\lambda = 1, \\mu = -\\frac{1}{2}\\)",
