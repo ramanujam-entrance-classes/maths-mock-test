@@ -89,40 +89,40 @@ q: `The mode for the following frequency distribution:
   <span style="font-size:13px">
   <table stype="text-align:center;">
     <tr>
-      <td>Size of items:</td>
-      <td>Frequency:</td>
-      <td>Size of items:</td>
-      <td>Frequency:</td>
+      <td stype="text-align:center;">Size of items:</td>
+      <td stype="text-align:center;">Frequency:</td>
+      <td stype="text-align:center;">Size of items:</td>
+      <td stype="text-align:center;">Frequency:</td>
   </tr>
   <tr>
-    <td>0-4</td>
-    <td>5</td>
-    <td>20-24</td>
-    <td>10</td>
+    <td stype="text-align:center;">0-4</td>
+    <td stype="text-align:center;">5</td>
+    <td stype="text-align:center;">20-24</td>
+    <td stype="text-align:center;">10</td>
   </tr>
   <tr>
-    <td>4-8</td>
-    <td>7</td>
-    <td>24-28</td>
-    <td>6</td>
+    <td stype="text-align:center;">4-8</td>
+    <td stype="text-align:center;">7</td>
+    <td stype="text-align:center;">24-28</td>
+    <td stype="text-align:center;">6</td>
   </tr>
   <tr>
-    <td>8-12</td>
-    <td>9</td>
-    <td>28-32</td>
-    <td>3</td>
+    <td stype="text-align:center;">8-12</td>
+    <td stype="text-align:center;">9</td>
+    <td stype="text-align:center;">28-32</td>
+    <td stype="text-align:center;">3</td>
   </tr>
   <tr>
-    <td>12-16</td>
-    <td>17</td>
-    <td>32-36</td>
-    <td>1</td>
+    <td stype="text-align:center;">12-16</td>
+    <td stype="text-align:center;">17</td>
+    <td stype="text-align:center;">32-36</td>
+    <td stype="text-align:center;">1</td>
   </tr>
   <tr>
-    <td>16-20</td>
-    <td>12</td>
-    <td>36-40</td>
-    <td>0</td>
+    <td stype="text-align:center;">16-20</td>
+    <td stype="text-align:center;">12</td>
+    <td stype="text-align:center;">36-40</td>
+    <td stype="text-align:center;">0</td>
   </tr>
   </table> </span></center> <br> is
   `,
