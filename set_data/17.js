@@ -103,7 +103,7 @@ window.SET_DATA = {
     options: [
       "(A). a, b, c are positive",
       "(B). a, b, c are negative",
-      "(C). a + b + c < 0",
+      "(C). (a + b + c) < 0",
       "(D). (a + b + c) > 0"
     ],
     correct: "(D)"
@@ -113,22 +113,22 @@ window.SET_DATA = {
   {
     q: "The value of the determinant \\(\\begin{vmatrix} b-a & a & a+b \\\\ c-a & b & b+c \\\\ a-b & c & c+a \\end{vmatrix}\\) is",
     options: [
-      "(A). (a + b + c)",
-      "(B). (a + b + c)^3",
-      "(C). a^2 + b^2 + c^2 - ab - bc - ca",
-      "(D). a^3 + b^3 + c^3 - 3abc"
+      "(A). \\((a + b + c)\\)",
+      "(B). \\((a + b + c)^3\\)",
+      "(C). \\(a^2 + b^2 + c^2 - ab - bc - ca\\)",
+      "(D). \\(a^3 + b^3 + c^3 - 3abc\\)"
     ],
-    correct: ""
+    correct: "(D)"
   },
 
   // Q11
   {
     q: "The value of the determinant \\(\\begin{vmatrix} 1 & a & b+c \\\\ 1 & b & c+a \\\\ 1 & c & a+b \\end{vmatrix}\\)",
     options: [
-      "(A). 0",
-      "(B). 1",
-      "(C). (a + b + c)",
-      "(D). (1 + a + b + c)"
+      "(A). \\(0\\)",
+      "(B). \\(1\\)",
+      "(C). \\((a + b + c)\\)",
+      "(D). \\((1 + a + b + c)\\)"
     ],
     correct: "(A)"
   },
@@ -137,17 +137,17 @@ window.SET_DATA = {
   {
     q: "If one root of the equation \\(\\begin{vmatrix} x & 3 & 7 \\\\ 2 & x & 2 \\\\ 7 & 6 & x \\end{vmatrix} = 0\\) is (-9), then other roots are",
     options: [
-      "(A). -2, -7",
-      "(B). 2, 7",
-      "(C). -2, 7",
-      "(D). 2, -7"
+      "(A). \\(-2, -7\\)",
+      "(B). \\(2, 7\\)",
+      "(C). \\(-2, 7\\)",
+      "(D). \\(2, -7\\)"
     ],
     correct: "(B)"
   },
 
   // Q13
   {
-    q: "If \\(\\begin{bmatrix} 5 & 4 \\\\ 1 & 1 \\end{bmatrix} \\begin{bmatrix} a & -14 \\\\ b & 17 \\end{bmatrix} = \\begin{bmatrix} 1 & -2 \\\\ 1 & 3 \\end{bmatrix}\\), then a and b will be equal to",
+    q: "If \\(\\begin{bmatrix} 5 & 4 \\\\ 1 & 1 \\end{bmatrix} \\begin{bmatrix} a & -14 \\\\ b & 17 \\end{bmatrix} = \\begin{bmatrix} 1 & -2 \\\\ 1 & 3 \\end{bmatrix}\\), then \\(a\\) and \\(b\\) will be equal to",
     options: [
       "(A). a = \\(\\frac{1}{5}\\), b = 1",
       "(B). a = -3, b = 4",
@@ -173,10 +173,10 @@ window.SET_DATA = {
   {
     q: "If the expression of \\((1 + x + x^2)^{-3}\\) the coefficient of \\(x^6\\) will be",
     options: [
-      "(A). 9",
-      "(B). 3",
-      "(C). 1",
-      "(D). -3"
+      "(A). \\(9\\)",
+      "(B). \\(3\\)",
+      "(C). \\(1\\)",
+      "(D). \\(-3\\)"
     ],
     correct: "(B)"
   },
@@ -195,7 +195,7 @@ window.SET_DATA = {
 
   // Q17
   {
-    q: "In the expansion of \\(\\left(x + \\frac{1}{x^2}\\right)^{3n}\\), the term independent of x will be",
+    q: "In the expansion of \\(\\left(x + \\frac{1}{x^2}\\right)^{3n}\\), the term independent of \\(x\\) will be",
     options: [
       "(A). \\(\\frac{(3n)!}{n!(2n)!}\\)",
       "(B). \\(\\frac{3(n)!}{n!(2n)!}\\)",
@@ -223,8 +223,8 @@ window.SET_DATA = {
     options: [
       "(A). \\(\\frac{1}{120}\\)",
       "(B). \\(\\frac{1}{60}\\)",
-      "(C). -\\(\\frac{1}{120}\\)",
-      "(D). -\\(\\frac{1}{60}\\)"
+      "(C). \\(-\\frac{1}{120}\\)",
+      "(D). \\(-\\frac{1}{60}\\)"
     ],
     correct: "(D)"
   },
@@ -279,7 +279,7 @@ window.SET_DATA = {
 
   // Q24
   {
-    q: "Equation of the circle concentric to the circle \\(x^2 + y^2 - x + 2y + 7 = 0\\) and passing through (-1, -2) will be",
+    q: "Equation of the circle concentric to the circle \\(x^2 + y^2 - x + 2y + 7 = 0\\) and passing through \\((-1, -2)\\) will be",
     options: [
       "(A). \\(x^2 + y^2 + x + 2y = 0\\)",
       "(B). \\(x^2 + y^2 - x + 2y + 2 = 0\\)",
@@ -315,7 +315,7 @@ window.SET_DATA = {
 
   // Q27
   {
-    q: "The circles \\(x^2 + y^2 + 2g_1x + f_1y + c_1 = 0\\) and \\(x^2 + y^2 + 2g_2x + f_2y + c_2 = 0\\) cut each other orthogonally, then",
+    q: "The circles \\(x^2 + y^2 + 2g_1x + f_1y + c_1 = 0\\) and \\(x^2 + y^2 + 2g_2x + 2f_2y + c_2 = 0\\) cut each other orthogonally, then",
     options: [
       "(A). \\(2g_1g_2 + 2f_1f_2 = c_1 + c_2\\)",
       "(B). \\(g_1g_2 + f_1f_2 = c_1 + c_2\\)",
@@ -471,7 +471,7 @@ window.SET_DATA = {
 
     // Q40 (continued)
   {
-    q: "If \\(\\sin x (1 + \\cos x)\\) is maximum, when x equals",
+    q: "If \\(\\sin x (1 + \\cos x)\\) is maximum, when \\(x\\) equals",
     options: [
       "(A). \\(\\frac{\\pi}{6}\\)",
       "(B). \\(\\frac{\\pi}{4}\\)",
@@ -519,7 +519,7 @@ window.SET_DATA = {
 
   // Q44
   {
-    q: "∫ \\(e^x \\sin x\\, dx\\) equals",
+    q: "\\(\\int e^x \\sin x\\, dx\\) equals",
     options: [
       "(A). \\(e^x(\\sin x - \\cos x) + C\\)",
       "(B). \\(e^x(\\cos x - \\sin x) + C\\)",
@@ -531,7 +531,7 @@ window.SET_DATA = {
 
   // Q45
   {
-    q: "If ∫ \\(x \\tan^{-1} x\\, dx = \\frac{1}{2}(x^2 + \\lambda) \\tan^{-1} x \\)\\(- \\mu x + C\\), then the values of \\(\\lambda\\) and \\(\\mu\\) are",
+    q: "If \\(\\int x \\tan^{-1} x\\, dx = \\frac{1}{2}(x^2 + \\lambda) \\tan^{-1} x \\)\\(- \\mu x + C\\), then the values of \\(\\lambda\\) and \\(\\mu\\) are",
     options: [
       "(A). \\(\\lambda = 0, \\mu = 1\\)",
       "(B). \\(\\lambda = 1, \\mu = -\\frac{1}{2}\\)",
@@ -543,7 +543,7 @@ window.SET_DATA = {
 
   // Q46
   {
-    q: "∫₀^{\\pi/2} \\(\\frac{\\sqrt{\\cot x}}{1 + \\sqrt{\\cot x}} dx\\) equals",
+    q: "\\(\\int_{0}^{\\pi/2}\\frac{\\sqrt{\\cot x}}{1 + \\sqrt{\\cot x}} dx\\) equals",
     options: [
       "(A). \\(\\frac{\\pi}{6}\\)",
       "(B). \\(\\frac{\\pi}{4}\\)",
@@ -555,7 +555,7 @@ window.SET_DATA = {
 
   // Q47
   {
-    q: "∫₀^{\\pi/2} \\(\\sin 2x \\log(\\tan x) dx\\) equals",
+    q: "\\(\\int_{0}^{\\pi/2}\\sin 2x \\log(\\tan x) dx\\) equals",
     options: [
       "(A). \\(1\\)",
       "(B). \\(\\frac{1}{2}\\)",
@@ -567,7 +567,7 @@ window.SET_DATA = {
 
   // Q48
   {
-    q: "∫₋ₐ^{ₐ} \\(\\frac{x^5 \\cos(1 + x^4)}{1 + x^4} dx\\) equals",
+    q: "\\(\\int_{-a}^{a}\\frac{x^5 \\cos(1 + x^4)}{1 + x^4} dx\\) equals",
     options: [
       "(A). \\(0\\)",
       "(B). \\(1\\)",
@@ -591,7 +591,7 @@ window.SET_DATA = {
 
   // Q50
   {
-    q: "∫₀^{\\pi/4} \\(\\frac{\\sqrt{\\tan x}}{\\sin x \\cos x} dx\\) equals",
+    q: "\\(\\int_{0}^{\\pi/4}\\frac{\\sqrt{\\tan x}}{\\sin x \\cos x} dx\\) equals",
     options: [
       "(A). \\(0\\)",
       "(B). \\(\\frac{1}{2}\\)",
