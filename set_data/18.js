@@ -87,7 +87,7 @@ correct: "(B)"
 q: `The mode for the following frequency distribution:
   <br><center>
   <span style="font-size:13px">
-  <table>
+  <table stype="text-align:center;">
     <tr>
       <td>Size of items:</td>
       <td>Frequency:</td>
