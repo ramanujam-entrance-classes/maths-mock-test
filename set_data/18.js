@@ -87,42 +87,42 @@ correct: "(B)"
 q: `The mode for the following frequency distribution:
   <br><center>
   <span style="font-size:13px">
-  <table stype="text-align:center;">
+  <table style="text-align:center;">
     <tr>
-      <td stype="text-align:center;">Size of items:</td>
-      <td stype="text-align:center;">Frequency:</td>
-      <td stype="text-align:center;">Size of items:</td>
-      <td stype="text-align:center;">Frequency:</td>
+      <td style="text-align:center;">Size of items:</td>
+      <td style="text-align:center;">Frequency:</td>
+      <td style="text-align:center;">Size of items:</td>
+      <td style="text-align:center;">Frequency:</td>
   </tr>
   <tr>
-    <td stype="text-align:center;">0-4</td>
-    <td stype="text-align:center;">5</td>
-    <td stype="text-align:center;">20-24</td>
-    <td stype="text-align:center;">10</td>
+    <td style="text-align:center;">0-4</td>
+    <td style="text-align:center;">5</td>
+    <td style="text-align:center;">20-24</td>
+    <td style="text-align:center;">10</td>
   </tr>
   <tr>
-    <td stype="text-align:center;">4-8</td>
-    <td stype="text-align:center;">7</td>
-    <td stype="text-align:center;">24-28</td>
-    <td stype="text-align:center;">6</td>
+    <td style="text-align:center;">4-8</td>
+    <td style="text-align:center;">7</td>
+    <td style="text-align:center;">24-28</td>
+    <td style="text-align:center;">6</td>
   </tr>
   <tr>
-    <td stype="text-align:center;">8-12</td>
-    <td stype="text-align:center;">9</td>
-    <td stype="text-align:center;">28-32</td>
-    <td stype="text-align:center;">3</td>
+    <td style="text-align:center;">8-12</td>
+    <td style="text-align:center;">9</td>
+    <td style="text-align:center;">28-32</td>
+    <td style="text-align:center;">3</td>
   </tr>
   <tr>
-    <td stype="text-align:center;">12-16</td>
-    <td stype="text-align:center;">17</td>
-    <td stype="text-align:center;">32-36</td>
-    <td stype="text-align:center;">1</td>
+    <td style="text-align:center;">12-16</td>
+    <td style="text-align:center;">17</td>
+    <td style="text-align:center;">32-36</td>
+    <td style="text-align:center;">1</td>
   </tr>
   <tr>
-    <td stype="text-align:center;">16-20</td>
-    <td stype="text-align:center;">12</td>
-    <td stype="text-align:center;">36-40</td>
-    <td stype="text-align:center;">0</td>
+    <td style="text-align:center;">16-20</td>
+    <td style="text-align:center;">12</td>
+    <td style="text-align:center;">36-40</td>
+    <td style="text-align:center;">0</td>
   </tr>
   </table> </span></center> <br> is
   `,
