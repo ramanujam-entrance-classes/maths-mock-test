@@ -65,7 +65,7 @@ correct: "(D)"
 {
 q: `If \\(f(x)\\) is continuous at \\(x = 0\\), where
 \\(
-f(x) = \\) <span style='font-size:2px'> \\(
+f(x) = \\) <span style='font-size:12px'> \\(
 \\begin{cases}
 \\frac{2}{x}(\\sin((k_1 + 1)x) + \\sin((k_2 + 1)x)), & x < 0 \\\\
 4, & x = 0 \\\\
