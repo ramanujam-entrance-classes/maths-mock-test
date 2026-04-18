@@ -69,7 +69,7 @@ correct: "(B)"
 },
 {
 // Q7
-q: "If \\(\\sin^{-1}\\left(x - \\frac{x^2}{2} + \\frac{x^3}{4} - \\ldots\\right) + \\cos^{-1}\\left(x^2 - \\frac{x^4}{2} + \\frac{x^6}{4} - \\ldots\\right) = \\frac{\\pi}{2}\\) for \\(0 < |x| < \\sqrt{2}\\), then x equals",
+q: "If \\(\\sin^{-1}\\left(x - \\frac{x^2}{2} + \\frac{x^3}{4} - \\ldots\\right) +\\)\\( \\cos^{-1}\\left(x^2 - \\frac{x^4}{2} + \\frac{x^6}{4} - \\ldots\\right) = \\frac{\\pi}{2}\\) for \\(0 < |x| < \\sqrt{2}\\), then x equals",
 options: [
 "(A). \\(\\frac{1}{2}\\)",
 "(B). 1",
@@ -190,7 +190,7 @@ correct: "(B)"
 },
 {
 // Q18
-q: "The function \\(f(x) = (x^2 - 1)|x^2 - 3x + 2| + \\cos(|x|)\\) is not differentiable at",
+q: "The function \\(f(x) = (x^2 - 1)|x^2 - 3x + 2| +\\)\\( \\cos(|x|)\\) is not differentiable at",
 options: [
 "(A). \\(-1\\)",
 "(B). \\(0\\)",
@@ -256,7 +256,7 @@ correct: "(B)"
 },
 {
 // Q24
-q: " \\(\\lim_{n \\to \\infty} \\left[(1 + \\frac{1}{n^2})(1 + \\frac{2^2}{n^2}) \\cdots (1 + \\frac{n^2}{n^2})\\right]^{1/n}\\)",
+q: " \\(\\lim_{n \\to \\infty} [(1 + \\frac{1}{n^2})(1 + \\frac{2^2}{n^2}) \\cdots \\)\\( (1 + \\frac{n^2}{n^2})]^{1/n}\\)",
 options: [
 "(A). \\(2e^{(\\pi - 4)/2}\\)",
 "(B). \\(e^{(\\pi - 2)/4}\\)",
@@ -333,7 +333,7 @@ correct: "(D)"
 },
 {
 // Q31
-q: "If the system of equations \\(x - ky - z = 0, kx - y - x = 0, x + y - z = 0\\) has a non zero solution, then the possible values of \\(k\\) are",
+q: "If the system of equations \\(x - ky - z = 0, kx - y - x = 0, \\)\\(x + y - z = 0\\) has a non zero solution, then the possible values of \\(k\\) are",
 options: [
 "(A). \\((-1, 2)\\)",
 "(B). \\((1, 2)\\)",
