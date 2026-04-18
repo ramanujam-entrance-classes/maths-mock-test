@@ -1,8 +1,6 @@
 window.SET_DATA = {
   title: "Mathematics Mock Test 19",
   questions: [
-const questions = [
-
 /* Q1 */
 {
 q: "A coin and a die are thrown simultaneously. The probability that a head appears on coin and '3' on the die is",
