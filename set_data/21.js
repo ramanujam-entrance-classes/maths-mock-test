@@ -237,20 +237,20 @@ window.SET_DATA = {
   q: `For the probability distribution <br>
   <table style="width:80%">
   	<tr>
-		<tb style="text-align:center">\\(x:\\)</td>
-		<tb style="text-align:center">\\(8\\)</td>
-		<tb style="text-align:center">\\(12\\)</td>
-		<tb style="text-align:center">\\(16\\)</td>
-		<tb style="text-align:center">\\(20\\)</td>
-		<tb style="text-align:center">\\(24\\)</td>
+		<td style="text-align:center">\\(x:\\)</td>
+		<td style="text-align:center">\\(8\\)</td>
+		<td style="text-align:center">\\(12\\)</td>
+		<td style="text-align:center">\\(16\\)</td>
+		<td style="text-align:center">\\(20\\)</td>
+		<td style="text-align:center">\\(24\\)</td>
 	</tr>
 	<tr>
-		<tb style="text-align:center">\\(P(x):\\)</td>
-		<tb style="text-align:center">\\(\\frac{1}{8}\\)</td>
-		<tb style="text-align:center">\\(\\frac{1}{6}\\)</td>
-		<tb style="text-align:center">\\(\\frac{3}{8}\\)</td>
-		<tb style="text-align:center">\\(\\frac{1}{4}\\)</td>
-		<tb style="text-align:center">\\(\\frac{1}{12}\\)</td>
+		<td style="text-align:center">\\(P(x):\\)</td>
+		<td style="text-align:center">\\(\\frac{1}{8}\\)</td>
+		<td style="text-align:center">\\(\\frac{1}{6}\\)</td>
+		<td style="text-align:center">\\(\\frac{3}{8}\\)</td>
+		<td style="text-align:center">\\(\\frac{1}{4}\\)</td>
+		<td style="text-align:center">\\(\\frac{1}{12}\\)</td>
 	</tr>
 	</table><br>, the value of \\(E(x)\\) is`,
   options: [
