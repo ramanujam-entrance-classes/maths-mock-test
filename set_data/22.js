@@ -80,7 +80,7 @@ correct: "(B)"
 },
 {
 // Q8
-q: "In a triangle ABC, \\(\\angle B = \\frac{\\pi}{3}\\) and \\(\\angle C = \\frac{\\pi}{4}\\). Let D divide BC internally in the ratio 1 : 3. Then \\(\\frac{\\sin \\angle BAD}{\\sin \\angle CAD}\\) equals",
+q: "In a triangle ABC, \\(\\angle B = \\frac{\\pi}{3}\\) and \\(\\angle C = \\frac{\\pi}{4}\\). Let D divide BC internally in the ratio \\(1 : 3\\). Then \\(\\frac{\\sin \\angle BAD}{\\sin \\angle CAD}\\) equals",
 options: [
 "(A). \\(\\frac{1}{\\sqrt{6}}\\)",
 "(B). \\(\\frac{1}{3}\\)",
