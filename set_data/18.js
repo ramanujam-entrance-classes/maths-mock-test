@@ -487,7 +487,7 @@ correct: "(D)"
 
 /* Question 37 */
 {
-q: "If \\(\\alpha > \\beta > \\gamma > 0\\) then find \\(\\cot^{-1} \\left( \\frac{1 + \\alpha \\beta}{\\alpha - \\beta} \\right) + \\cot^{-1} \\left( \\frac{1 + \\beta \\gamma}{\\beta - \\gamma} \\right) + \\cot^{-1} \\left( \\frac{1 + \\gamma \\alpha}{\\gamma - \\alpha} \\right)\\)",
+q: "If \\(\\alpha > \\beta > \\gamma > 0\\) then find \\(\\cot^{-1} \\left( \\frac{1 + \\alpha \\beta}{\\alpha - \\beta} \\right) + \\cot^{-1} \\left( \\frac{1 + \\beta \\gamma}{\\beta - \\gamma} \\right) +\\)\\( \\cot^{-1} \\left( \\frac{1 + \\gamma \\alpha}{\\gamma - \\alpha} \\right)\\)",
 options: [
 "(A). \\(\\pi\\)",
 "(B). \\(0\\)",
@@ -498,7 +498,7 @@ correct: "(A)"
 },
 /* Question 38 */
 {
-q: `If \\( \\int \\frac{2x^2 + 5x + 9}{x^2 + x + 1} \\, dx = x\\sqrt{x^2 + x + 1} + \\alpha \\sqrt{x^2 + x + 1} + \\beta \\ln\\left(x + \\frac{1}{2} + \\sqrt{x^2 + x + 1}\\right) + C \\), then \\(\\alpha + 2\\beta\\) equals to`,
+q: `If \\( \\int \\frac{2x^2 + 5x + 9}{x^2 + x + 1} \\, dx = x\\sqrt{x^2 + x + 1} +\\)\\( \\alpha \\sqrt{x^2 + x + 1} + \\beta \\ln\\left(x + \\frac{1}{2} + \\sqrt{x^2 + x + 1}\\right) + C \\), then \\(\\alpha + 2\\beta\\) equals to`,
 options: [
 "(A). \\(14\\)",
 "(B). \\(15\\)",
