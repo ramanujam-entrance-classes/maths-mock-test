@@ -15,7 +15,7 @@ correct: "(A)"
 
 /* Q2 */
 {
-q: "If a variable takes the discrete values \\(\\alpha + 4, \\alpha - \\frac{7}{2}, \\alpha - \\frac{5}{2}, \\alpha - 3, \\alpha - 2, \\alpha + \\frac{1}{2}, \\alpha - \\frac{1}{2}, \\alpha + 5\\) (\\(\\alpha > 0\\)), then the median is",
+q: "If a variable takes the discrete values \\(\\alpha + 4, \\alpha - \\frac{7}{2}, \\alpha - \\frac{5}{2}, \\alpha - 3, \\alpha - 2,\\)\\( \\alpha + \\frac{1}{2}, \\alpha - \\frac{1}{2}, \\alpha + 5\\) (\\(\\alpha > 0\\)), then the median is",
 options: [
 "(A). \\(\\alpha - \\frac{5}{4}\\)",
 "(B). \\(\\alpha - \\frac{1}{2}\\)",
@@ -91,11 +91,11 @@ correct: "(D)"
 
 /* Q8 */
 {
-q: `If \\(f(x) = \\begin{vmatrix}
+q: `If \\(f(x) =\\) <span style="font-size:13px">\\( \\begin{vmatrix}
 1 & x & x+1 \\\\
 2x & x(x-1) & x(x+1) \\\\
 3x(x-1) & x(x-1)(x-2) & x(x-1)(x+1)
-\\end{vmatrix}\\), then \\(f(100)\\) is equal to`,
+\\end{vmatrix}\\) </span>, then \\(f(100)\\) is equal to`,
 options: [
 "(A). \\(0\\)",
 "(B). \\(1\\)",
@@ -190,7 +190,7 @@ correct: "(A)"
 
 /* Q16 */
 {
-q: "The equation \\((4x + 3y + 1) dx + (3x + 2y + 1) dy = 0\\) represents a family of",
+q: "The equation \\((4x + 3y + 1) dx + (3x + 2y + 1) dy\\)\\( = 0\\) represents a family of",
 options: [
 "(A). circles",
 "(B). parabolas",
@@ -250,13 +250,13 @@ correct: "(A)"
 /* Q21 */
 {
 q: `If \\(\\omega (\\ne 1)\\) is a cube root of unity, then
-\\[
+\\(
 \\begin{vmatrix}
 1 & 1+i+\\omega^2 & \\omega^2 \\\\
 1-i & -1 & \\omega^2 - 1 \\\\
 -i & -i + \\omega - 1 & -1
 \\end{vmatrix}
-\\]
+\\)
 equals to`,
 options: [
 "(A). \\(0\\)",
@@ -460,7 +460,7 @@ correct: "(C)"
 
 /* Q38 */
 {
-q: "The angle between a pair of tangents drawn from a point \\(P\\) to the circle \\(x^2 + y^2 + 4x - 6y + 9\\sin^2 \\alpha + 13\\cos^2 \\alpha = 0\\) is \\(2\\alpha\\). The equation of the locus of the point \\(P\\) is",
+q: "The angle between a pair of tangents drawn from a point \\(P\\) to the circle \\(x^2 + y^2 + 4x - 6y + 9\\sin^2 \\alpha +\\)\\( 13\\cos^2 \\alpha = 0\\) is \\(2\\alpha\\). The equation of the locus of the point \\(P\\) is",
 options: [
 "(A). \\(x^2 + y^2 + 4x - 6y + 4 = 0\\)",
 "(B). \\(x^2 + y^2 + 4x - 6y - 9 = 0\\)",
@@ -474,10 +474,10 @@ correct: "(D)"
 {
 q: "The equation of the circle on the chord \\(x \\cos \\alpha + y \\sin \\alpha - p = 0\\), of the circle \\(x^2 + y^2 - a^2 = 0\\), \\((0 < p < a)\\) as diameter, is",
 options: [
-"(A). \\(x^2 + y^2 - a^2 + 2p(x \\cos \\alpha + y \\sin \\alpha - p) = 0\\)",
-"(B). \\(x^2 + y^2 - a^2 - 2p(x \\cos \\alpha + y \\sin \\alpha - p) = 0\\)",
-"(C). \\(x^2 + y^2 + a^2 - 4p(x \\cos \\alpha + y \\sin \\alpha + p) = 0\\)",
-"(D). \\(x^2 + y^2 - a^2 + 4p(x \\cos \\alpha + y \\sin \\alpha - p) = 0\\)"
+"(A). \\(x^2 + y^2 - a^2 + 2p(x \\cos \\alpha +\\)\\( y \\sin \\alpha - p) = 0\\)",
+"(B). \\(x^2 + y^2 - a^2 - 2p(x \\cos \\alpha +\\)\\( y \\sin \\alpha - p) = 0\\)",
+"(C). \\(x^2 + y^2 + a^2 - 4p(x \\cos \\alpha +\\)\\( y \\sin \\alpha + p) = 0\\)",
+"(D). \\(x^2 + y^2 - a^2 + 4p(x \\cos \\alpha +\\)\\( y \\sin \\alpha - p) = 0\\)"
 ],
 correct: "(B)"
 },
@@ -567,7 +567,7 @@ correct: "(D)"
 
 /* Q47 */
 {
-q: "The value of \\(\\frac{1}{\\cos^2 10^\\circ} + \\frac{1}{\\cos^2 20^\\circ} + \\frac{1}{\\cos^2 30^\\circ} + \\frac{1}{\\cos^2 40^\\circ} + \\frac{1}{\\cos^2 50^\\circ}\\) is",
+q: "The value of \\(\\frac{1}{\\cos^2 10^\\circ} + \\frac{1}{\\cos^2 20^\\circ} + \\frac{1}{\\cos^2 30^\\circ} + \\frac{1}{\\cos^2 40^\\circ} \\)\\(+ \\frac{1}{\\cos^2 50^\\circ}\\) is",
 options: [
 "(A). 15",
 "(B). 16",
