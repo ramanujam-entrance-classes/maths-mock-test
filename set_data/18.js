@@ -411,7 +411,7 @@ correct: "(B)"
 
 /* Question 31 */
 {
-q: "Evaluate the sum \\( f(1/100)+f(2/100)+...+f(99/100) \\) where \\(f(x)=\\frac{4^x}{4^x+2}\\)",
+q: "Evaluate the sum \\( f(1/100)+f(2/100)+...+\\)\\(f(99/100) \\) where \\(f(x)=\\frac{4^x}{4^x+2}\\)",
 options: [
 "(A). \\(49.5\\)",
 "(B). \\(100\\)",
