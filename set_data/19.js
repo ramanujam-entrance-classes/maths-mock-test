@@ -27,7 +27,7 @@ correct: "(C)"
 
 /* Q3 */
 {
-q: "Find \\(\\lim_{n \\to \\infty} \\left[ \\frac{1}{1+n^3} + \\frac{4}{8+n^3} + \\cdots + \\frac{n^2}{n^3+n^3} + \\cdots + \\frac{1}{2n} \\right]\\)",
+q: "Find \\(\\lim_{n \\to \\infty} [ \\frac{1}{1+n^3} + \\frac{4}{8+n^3} + \\cdots + \\frac{n^2}{n^3+n^3} \\)\\(+ \\cdots + \\frac{1}{2n}]\\)",
 options: [
 "(A). \\(\\frac{1}{2} \\log 2\\)",
 "(B). \\(\\frac{1}{3} \\log 2\\)",
@@ -541,7 +541,7 @@ correct: "(D)"
 
 /* Q46 */
 {
-q: "If \\(a_1, a_2, a_3, \\ldots, a_n\\) are in A.P., where \\(a_i > 0\\) for all \\(i\\), then the value of \\(\\frac{1}{\\sqrt{a_1}+\\sqrt{a_2}} + \\frac{1}{\\sqrt{a_2}+\\sqrt{a_3}} + \\ldots + \\frac{1}{\\sqrt{a_{n-1}}+\\sqrt{a_n}}\\) is",
+q: "If \\(a_1, a_2, a_3, \\ldots, a_n\\) are in A.P., where \\(a_i > 0\\) for all \\(i\\), then the value of \\(\\frac{1}{\\sqrt{a_1}+\\sqrt{a_2}} + \\frac{1}{\\sqrt{a_2}+\\sqrt{a_3}} +\\)\\( \\ldots + \\frac{1}{\\sqrt{a_{n-1}}+\\sqrt{a_n}}\\) is",
 options: [
 "(A). \\(\\frac{1}{\\sqrt{a_1}+\\sqrt{a_n}}\\)",
 "(B). \\(\\frac{1}{\\sqrt{a_1}-\\sqrt{a_n}}\\)",
