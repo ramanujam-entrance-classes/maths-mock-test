@@ -3,12 +3,12 @@ window.SET_DATA = {
   questions: [
 	// Q1
   {
-    q: "The equation \\(x[(\\log_3 x)^2 - (9/2)\\log_3 x + 5] = 3\\sqrt{3}\\) has",
+    q: "The equation \\(x[(\\log_3 x)^2 - (9/2)\\log_3 x + 5] = \\)\\(3\\sqrt{3}\\) has",
     options: [
-      "(A). \\(\\text{at most one real solution}\\)",
-      "(B). \\(\\text{exactly three real and exactly one irrational solution}\\)",
-      "(C). \\(\\text{at least three real and exactly one irrational solution}\\)",
-      "(D). \\(\\text{at least three real and exactly one rational solution}\\)"
+      "(A). at most one real solution",
+      "(B). exactly three real and exactly one irrational solution",
+      "(C). at least three real and exactly one irrational solution",
+      "(D). at least three real and exactly one rational solution"
     ],
     correct: "(B)"
   },
@@ -36,7 +36,7 @@ window.SET_DATA = {
   },
   // Q4
   {
-    q: "The harmonic mean of the roots of the equation \\((5 + \\sqrt{2})x^2 - (4 + \\sqrt{5})x + (8 + 2\\sqrt{5}) = 0\\) is",
+    q: "The harmonic mean of the roots of the equation \\((5 + \\sqrt{2})x^2 - (4 + \\sqrt{5})x + (8 +\\)\\( 2\\sqrt{5}) = 0\\) is",
     options: [
       "(A). \\(2\\)",
       "(B). \\(4\\)",
@@ -190,7 +190,7 @@ window.SET_DATA = {
 },
   // Q18
 {
-  q: "If \\(z_1, z_2, z_3\\) are complex numbers such that \\(|z_1| = |z_2| = |z_3| = \\left|\\frac{1}{z_1} + \\frac{1}{z_2} + \\frac{1}{z_3}\\right| = 1\\), then \\(|z_1 + z_2 + z_3|\\) is",
+  q: "If \\(z_1, z_2, z_3\\) are complex numbers such that \\(|z_1| = |z_2| = |z_3| = \\left|\\frac{1}{z_1} + \\frac{1}{z_2} + \\frac{1}{z_3}\\right| \\)\\(= 1\\), then \\(|z_1 + z_2 + z_3|\\) is",
   options: [
     "(A). \\(\\text{equal to } 1\\)",
     "(B). \\(\\text{less than } 1\\)",
@@ -245,7 +245,7 @@ window.SET_DATA = {
 },
 // Q23
 {
-  q: "For a positive integer \\(n\\), let \\(f_n(\\theta) = \\left( \\tan \\frac{\\theta}{2} \\right) (1 + \\sec \\theta)(1 + \\sec 2\\theta)(1 + \\sec 4\\theta) \\ldots (1 + \\sec 2^n \\theta)\\). Then",
+  q: "For a positive integer \\(n\\), let \\(f_n(\\theta) = \\left( \\tan \\frac{\\theta}{2} \\right) (1 + \\sec \\theta)(1 +\\)\\( \\sec 2\\theta)(1 + \\sec 4\\theta) \\ldots (1 + \\sec 2^n \\theta)\\). Then",
   options: [
     "(A). \\(f_2(\\pi/16) = 1\\)",
     "(B). \\(f_3(\\pi/16) = 11\\)",
@@ -278,7 +278,7 @@ window.SET_DATA = {
 },
 // Q26
 {
-  q: "If \\(x_1, x_2, x_3, x_4\\) are roots of the equation \\(x^4 - x^3 \\sin 2\\beta + x^2 \\cos 2\\beta - x \\cos \\beta - \\sin \\beta = 0\\), then \\(\\tan^{-1} x_1 + \\tan^{-1} x_2 + \\tan^{-1} x_3 + \\tan^{-1} x_4\\) is equal to",
+  q: "If \\(x_1, x_2, x_3, x_4\\) are roots of the equation \\(x^4 - x^3 \\sin 2\\beta + x^2 \\cos 2\\beta - x \\cos \\beta\\)\\( - \\sin \\beta = 0\\), then \\(\\tan^{-1} x_1 + \\tan^{-1} x_2 + \\tan^{-1} x_3 +\\)\\( \\tan^{-1} x_4\\) is equal to",
   options: [
     "(A). \\(\\beta\\)",
     "(B). \\(\\frac{\\pi}{2} - \\beta\\)",
@@ -498,7 +498,7 @@ correct: "(A)"
 },
 // Q46
 {
-q: "If \\(\\int \\frac{2x^2 + 3}{(x^2 - 1)(x^2 + 4)} dx = A \\log \\left( \\frac{x+1}{x-1} \\right) + B \\tan^{-1} \\left( \\frac{x}{2} \\right)\\), then (A, B) is",
+q: "If \\(\\int \\frac{2x^2 + 3}{(x^2 - 1)(x^2 + 4)} dx = A \\log \\left( \\frac{x+1}{x-1} \\right) + \\)\\(B \\tan^{-1} \\left( \\frac{x}{2} \\right)\\), then (A, B) is",
 options: [
 "(A). \\((-\\frac{1}{2}, \\frac{1}{2})\\)",
 "(B). \\((\\frac{1}{2}, -\\frac{1}{2})\\)",
