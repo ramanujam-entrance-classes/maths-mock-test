@@ -27,7 +27,12 @@ correct: "(C)"
 
 /* Question 3 */
 {
-q: "Mean deviation about mean from the following data: \\(x_i: 3, 9, 17, 23, 27\\); \\(f_i: 8, 10, 12, 9, 5\\), is",
+q: `Mean deviation about mean from the following data: <br>
+  <table><tr>
+  <td>\\(x_i:\\)</td><td>3</td><td>9</td><td>17</td><td>23</td><td>27</td>
+  </tr>\\
+  <td>\\(f_i:\\)</td><td>8</td><td>10</td><td>12</td><td>9</td><td>5</td>
+  </tr></table>, is`,
 options: [
 "(A). \\(6\\)",
 "(B). \\(7\\)",
@@ -51,7 +56,7 @@ correct: "(D)"
 
 /* Question 5 */
 {
-q: "If for the system of linear equations having infinite solutions\n\\((\\lambda - 4)x + (\\lambda - 2)y + \\lambda z = 0\\)\n\\(2x + 3y + 5z = 0\\)\n\\(x + 2y + 6z = 0\\)\nthen \\(\\lambda^2 + \\lambda\\) is",
+q: "If for the system of linear equations having infinite solutions\n\\((\\lambda - 4)x + (\\lambda - 2)y + \\lambda z = 0,\\)\n\\(2x + 3y + 5z = 0,\\)\n\\(x + 2y + 6z = 0\\)\nthen \\(\\lambda^2 + \\lambda\\) is",
 options: [
 "(A). \\(30\\)",
 "(B). \\(56\\)",
@@ -67,7 +72,7 @@ q: `If \\(f(x)\\) is continuous at \\(x = 0\\), where
 \\(
 f(x) = \\) <span style='font-size:13px'> \\(
 \\begin{cases}
-\\frac{2}{x}(\\sin((k_1 + 1)x) + \\sin((k_2 + 1)x)), & x < 0 \\\\
+\\frac{2}{x}(\\sin(k_1 + 1)x + \\sin(k_2 + 1)x), & x < 0 \\\\
 4, & x = 0 \\\\
 \\frac{2}{x} \\log\\left(\\frac{k_2 x + 1}{k_1 x + 1}\\right), & x > 0
 \\end{cases}
@@ -198,12 +203,12 @@ correct: "(A)"
 {
 q: "If system of linear equations \\(x + y + z = 6\\), \\(x + 2y + 5z = 9\\), \\(x + 5y + \\lambda z = \\mu\\) has no solutions. Then value of \\(\\lambda\\) equals to",
 options: [
-"(A). \\(1\\)",
-"(B). \\(2\\)",
-"(C). \\(3\\)",
-"(D). \\(4\\)"
+"(A). \\(17\\)",
+"(B). \\(20\\)",
+"(C). \\(31\\)",
+"(D). \\(41\\)"
 ],
-correct: ""
+correct: "(A)"
 },
 
 /* Question 14 */
@@ -280,7 +285,7 @@ correct: "(C)"
 },
 /* Question 20 */
 {
-q: "If \\(I = \\int_{0}^{\\frac{\\pi}{2}} \\frac{\\sin^3 x}{\\sin^3 x + \\cos^3 x} \\, dx\\), then the value of definite integration \\(\\int_{0}^{2I} \\frac{x \\sin x \\cos x}{\\sin^4 x + \\cos^4 x} \\, dx\\) is",
+q: "If \\(I = \\int_{0}^{\\frac{\\pi}{2}} \\frac{\\sin^\\frac{3}{2} x}{\\sin^\\frac{3}{2} x + \\cos^\\frac{3}{2} x} \\, dx\\), then the value of definite integration \\(\\int_{0}^{2I} \\frac{x \\sin x \\cos x}{\\sin^4 x + \\cos^4 x} \\, dx\\) is",
 options: [
 "(A). \\(\\frac{\\pi}{16}\\)",
 "(B). \\(\\frac{\\pi^2}{16}\\)",
@@ -340,7 +345,7 @@ correct: "(C)"
 
 /* Question 25 */
 {
-q: "If a square is divided in \\(4 \\times 4\\) squares. If two squares are chosen randomly then the probability that the squares does not share common side is",
+q: `If a square is divided in \\(4 \\times 4\\) squares.<br> <img src="images/mocktest18_q25.png" alt="Question 20 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;"> <br>If two squares are chosen randomly then the probability that the squares does not share common side is`,
 options: [
 "(A). \\(\\frac{3}{5}\\)",
 "(B). \\(\\frac{4}{5}\\)",
@@ -459,7 +464,7 @@ correct: "(A)"
 
 /* Question 35 */
 {
-q: "Evaluate \\(\\lim_{x \\to 0} \\csc x ( \\sqrt{2\\cos^2 x + 3\\cos x} -\\)\\( \\sqrt{\\cos^2 x + \\sin x + 4} )\\)",
+q: "Evaluate \\(\\lim_{x \\to 0} \\cos ec x. ( \\sqrt{2\\cos^2 x + 3\\cos x} -\\)\\( \\sqrt{\\cos^2 x + \\sin x + 4} )\\)",
 options: [
 "(A). \\(0\\)",
 "(B). \\(1\\)",
