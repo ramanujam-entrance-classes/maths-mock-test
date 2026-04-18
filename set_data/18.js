@@ -27,25 +27,25 @@ correct: "(C)"
 
 /* Question 3 */
 {
-q: `Mean deviation about mean from the following data: <br><center>
-  <table style="text-align:center;>
+q: `Mean deviation about mean from the following data: <br>
+  <table style="text-align:center;">
   <tr>
-  <td style="text-align:center;>\\(x_i:\\)</td>
-  <td style="text-align:center;>3</td>
-  <td style="text-align:center;>9</td>
-  <td style="text-align:center;>17</td>
-  <td style="text-align:center;>23</td>
-  <td style="text-align:center;>27</td>
+  <td style="text-align:center;">\\(x_i:\\)</td>
+  <td style="text-align:center;">3</td>
+  <td style="text-align:center;">9</td>
+  <td style="text-align:center;">17</td>
+  <td style="text-align:center;">23</td>
+  <td style="text-align:center;">27</td>
   </tr>
   <tr>
-  <td style="text-align:center;>\\(f_i:\\)</td>
-  <td style="text-align:center;>8</td>
-  <td style="text-align:center;>10</td>
-  <td style="text-align:center;>12</td>
-  <td style="text-align:center;>9</td>
-  <td style="text-align:center;>5</td>
+  <td style="text-align:center;">\\(f_i:\\)</td>
+  <td style="text-align:center;">8</td>
+  <td style="text-align:center;">10</td>
+  <td style="text-align:center;">12</td>
+  <td style="text-align:center;">9</td>
+  <td style="text-align:center;">5</td>
   </tr>
-  </table></center><br>, is`,
+  </table><br> is`,
 options: [
 "(A). \\(6\\)",
 "(B). \\(7\\)",
