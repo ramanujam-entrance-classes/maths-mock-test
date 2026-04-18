@@ -486,7 +486,7 @@ correct: "(C)"
 },
 {
 // Q45
-q: "If the mean of the distribution\nVariate \\(x:\\) 1, 2, 3, 4, 5\nFrequency f of \\(x:\\) 4, 5, k, 1, 2\nis 2.6, then the value of k is",
+q: "If the mean of the distribution\nVariate \\(x \\colon \\) 1, 2, 3, 4, 5\nFrequency f of \\(x \\colon \\) 4, 5, k, 1, 2\nis 2.6, then the value of k is",
 options: [
 "(A). \\(8\\)",
 "(B). \\(10\\)",
