@@ -358,7 +358,7 @@ correct: "(C)"
 
 /* Question 25 */
 {
-q: `If a square is divided in \\(4 \\times 4\\) squares.<br> <img src="images/mocktest18_q25.png" alt="Question 20 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;"> <br>If two squares are chosen randomly then the probability that the squares does not share common side is`,
+q: `If a square is divided in \\(4 \\times 4\\) squares.<br> <img src="images/mocktest18_q25.png" alt="Question 25 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;"> <br>If two squares are chosen randomly then the probability that the squares does not share common side is`,
 options: [
 "(A). \\(\\frac{3}{5}\\)",
 "(B). \\(\\frac{4}{5}\\)",
