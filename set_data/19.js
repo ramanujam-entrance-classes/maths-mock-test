@@ -27,7 +27,7 @@ correct: "(C)"
 
 /* Q3 */
 {
-q: "Find \\(\\lim_{n \\to \\infty} [ \\frac{1}{1+n^3} + \\frac{4}{8+n^3} + \\cdots + \\frac{n^2}{n^3+n^3} \\)\\(+ \\cdots + \\frac{1}{2n}]\\)",
+q: "Find \\(\\lim_{n \\to \\infty} [ \\frac{1}{1+n^3} + \\frac{4}{8+n^3} + \\cdots + \\frac{r^2}{r^3+n^3} \\)\\(+ \\cdots + \\frac{1}{2n}]\\)",
 options: [
 "(A). \\(\\frac{1}{2} \\log 2\\)",
 "(B). \\(\\frac{1}{3} \\log 2\\)",
@@ -46,7 +46,7 @@ options: [
 "(C). \\(6\\pi\\)",
 "(D). \\(9\\pi\\)"
 ],
-correct: ""
+correct: "(A)"
 },
 
 /* Q5 */
@@ -58,7 +58,7 @@ options: [
 "(C). \\(\\frac{1}{3}\\left(\\frac{\\sqrt{3}}{2} + \\frac{\\pi}{3}\\right)\\)",
 "(D). none"
 ],
-correct: ""
+correct: "(C)"
 },
 
 /* Q6 */
@@ -201,7 +201,7 @@ options: [
 "(C). \\(2\\)",
 "(D). infinite"
 ],
-correct: "(C)"
+correct: "(B)"
 },
 
 /* Q18 */
@@ -351,9 +351,9 @@ correct: "(D)"
 {
 q: " \\(\\int |x| dx\\) is equal to",
 options: [
-"(A). \\(\\frac{x^2}{2}\\)",
-"(B). \\(-\\frac{x^2}{2}\\)",
-"(C). \\(\\frac{|x|^2}{2}\\)",
+"(A). \\(\\frac{x^4}{4}\\)",
+"(B). \\(-\\frac{x^4}{4}\\)",
+"(C). \\(\\frac{|x|^4}{4}\\)",
 "(D). none of these"
 ],
 correct: "(D)"
@@ -500,7 +500,7 @@ options: [
 "(C). lie on a circle",
 "(D). are vertices of a triangle"
 ],
-correct: ""
+correct: "(A)"
 },
 
 /* Q43 */
