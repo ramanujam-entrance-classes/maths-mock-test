@@ -45,7 +45,7 @@ q: `Mean deviation about mean from the following data: <br><center>
   <td style="text-align:center;>9</td>
   <td style="text-align:center;>5</td>
   </tr>
-  </table></center>, is`,
+  </table></center><br>, is`,
 options: [
 "(A). \\(6\\)",
 "(B). \\(7\\)",
