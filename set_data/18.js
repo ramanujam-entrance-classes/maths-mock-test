@@ -498,7 +498,7 @@ correct: "(A)"
 },
 /* Question 38 */
 {
-q: `If \\( \\int \\frac{2x^2 + 5x + 9}{x^2 + x + 1} \\, dx = x\\sqrt{x^2 + x + 1} +\\)\\( \\alpha \\sqrt{x^2 + x + 1} + \\beta \\ln\\left(x + \\frac{1}{2} + \\sqrt{x^2 + x + 1}\\right) + C \\), then \\(\\alpha + 2\\beta\\) equals to`,
+q: `If \\( \\int \\frac{2x^2 + 5x + 9}{x^2 + x + 1} \\, dx = x\\sqrt{x^2 + x + 1} +\\)\\( \\alpha \\sqrt{x^2 + x + 1} + \\beta \\ln(x + \\frac{1}{2} + \\)\\( \\sqrt{x^2 + x + 1}) + C \\), then \\(\\alpha + 2\\beta\\) equals to`,
 options: [
 "(A). \\(14\\)",
 "(B). \\(15\\)",
@@ -546,7 +546,7 @@ correct: "(B)"
 
 /* Question 42 */
 {
-q: "If \\(7 = 5 + \\frac{1}{7}(5 + \\alpha) + \\frac{1}{7^2}(5 + 2\\alpha) + \\ldots \\infty\\) terms, then \\(\\alpha\\) is equal to",
+q: "If \\(7 = 5 + \\frac{1}{7}(5 + \\alpha) + \\frac{1}{7^2}(5 + 2\\alpha) + \\)\\( \\ldots \\infty\\) terms, then \\(\\alpha\\) is equal to",
 options: [
 "(A). \\(6\\)",
 "(B). \\(\\frac{6}{7}\\)",
