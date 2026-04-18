@@ -111,7 +111,7 @@ window.SET_DATA = {
 
   // Q10
   {
-    q: "Let \\( g(x) = 1 + x - [x] \\) and \\( f(x) = \\begin{cases} -1, & x < 0 \\ 0, & x = 0 \\ 1, & x > 0 \\end{cases} \\), then for all \\( x \\), f(g(x)) is equal to",
+    q: "Let \\( g(x) = 1 + x - [x] \\) and \\( f(x) = \\begin{cases} -1, & x < 0 \\\\ 0, & x = 0 \\\\ 1, & x > 0 \\end{cases} \\), then for all \\( x \\), f(g(x)) is equal to",
     options: [
       "(A). \\( x \\)",
       "(B). 1",
@@ -456,7 +456,7 @@ window.SET_DATA = {
 
 // Q39
 {
-  q: "The value of the determinant \\( \\begin{vmatrix} 2 & 4 & 6 \\ 3 & 6 & 9 \\ 1 & 2 & 3 \end{vmatrix} \\) is",
+  q: "The value of the determinant \\( \\begin{vmatrix} 2 & 4 & 6 \\ 3 & 6 & 9 \\ 1 & 2 & 3 \\end{vmatrix} \\) is",
   options: [
     "(A). 0",
     "(B). 1",
@@ -508,7 +508,7 @@ window.SET_DATA = {
     "(A). \\( r^2 \\theta \\)",
     "(B). \\( \\frac{r^2 \\theta}{2} \\)",
     "(C). \\( r^2 \\sin \\theta \\)",
-    "(D). \\( \frac{r^2 \\sin \\theta}{2} \\)"
+    "(D). \\( \\frac{r^2 \\sin \\theta}{2} \\)"
   ],
   correct: "(B)"
 },
