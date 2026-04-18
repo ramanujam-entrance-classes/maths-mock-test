@@ -28,7 +28,7 @@ correct: "(C)"
 /* Question 3 */
 {
 q: `Mean deviation about mean from the following data: <br>
-  <table style="text-align:center;width:40%">
+  <table style="text-align:center;width:80%">
   <tr>
   <td style="text-align:center;">\\(x_i:\\)</td>
   <td style="text-align:center;">3</td>
