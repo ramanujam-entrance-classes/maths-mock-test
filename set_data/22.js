@@ -166,7 +166,8 @@ options: [
 ],
 correct: "(D)"
 },
-// Q16
+{
+	// Q16
 q: "Let \\(f(x) = \\int e^x (x - 1)(x - 2) \\, dx\\). Then \\(f\\) decreases in the interval",
 options: [
 "(A). \\((-\\infty, -2)\\)",
