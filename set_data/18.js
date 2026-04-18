@@ -352,7 +352,7 @@ correct: "(B)"
 
 /* Question 26 */
 {
-q: "If \\(S\\) be the set of \\(10\\) distinct primes and let \\(A\\) be the set of products of two or more elements from the set \\(S\\). If \\(P = {(x, y) : x \\in S \\text{ and } y \\in A \\text{ and }\\)\\( y \\text{ is divided by } x}\\). Then \\(n(P)\\) is equal to",
+q: "If \\(S\\) be the set of \\(10\\) distinct primes and let \\(A\\) be the set of products of two or more elements from the set \\(S\\). If \\(P = \\{(x, y) : x \\in S \\text{ and } y \\in A \\text{ and } y \\text{ is divided by } x\\}\\). Then \\(n(P)\\) is equal to",
 options: [
 "(A). \\(5110\\)",
 "(B). \\(5000\\)",
