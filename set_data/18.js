@@ -459,7 +459,7 @@ correct: "(A)"
 
 /* Question 35 */
 {
-q: "Evaluate \\(\\lim_{x \\to 0} \\csc x \\left( \\sqrt{2\\cos^2 x + 3\\cos x} - \\sqrt{\\cos^2 x + \\sin x + 4} \\right)\\)",
+q: "Evaluate \\(\\lim_{x \\to 0} \\csc x ( \\sqrt{2\\cos^2 x + 3\\cos x} -\\)\\( \\sqrt{\\cos^2 x + \\sin x + 4} )\\)",
 options: [
 "(A). \\(0\\)",
 "(B). \\(1\\)",
@@ -471,11 +471,11 @@ correct: "(D)"
 
 /* Question 36 */
 {
-q: `If \\(\\lim_{x \\to 0} \\begin{vmatrix}
+q: `If <span style="font-size:13px;">\\(\\lim_{x \\to 0} \\begin{vmatrix}
 a + \\frac{\\sin x}{x} & 1 & 1 \\\\
 a & 1 + \\frac{\\sin x}{x} & 1 \\\\
 a & 1 & a + \\frac{\\sin x}{x}
-\\end{vmatrix} = \\mu a^2 + \\lambda a + \\alpha\\), then \\(\\mu + \\lambda + \\alpha\\) is`,
+\\end{vmatrix}\\) </span> \\(= \\mu a^2 + \\lambda a + \\alpha\\), then \\(\\mu + \\lambda + \\alpha\\) is`,
 options: [
 "(A). \\(1\\)",
 "(B). \\(2\\)",
