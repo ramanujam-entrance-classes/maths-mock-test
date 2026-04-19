@@ -69,7 +69,7 @@ window.SET_DATA = {
   },
   // Q7
   {
-    q: "If \\(\\omega \\ne 1\\) be a cube root of unity and \\((1 + \\omega)^7 = A + B\\omega\\), then \\(A\\) and \\(B\\) are respectively the numbers \\((A, B \\in \\mathbb{R})\\)",
+    q: "If \\(\\omega(\\ne 1\\)) be a cube root of unity and \\((1 + \\omega)^7 = A + B\\omega\\), then \\(A\\) and \\(B\\) are respectively the numbers \\((A, B \\in \\mathbb{R})\\)",
     options: [
       "(A). \\((0,1)\\)",
       "(B). \\((1,1)\\)",
@@ -336,16 +336,16 @@ options: [
 "(C). \\(\\frac{AB \\cot \\alpha \\cot \\beta}{\\sqrt{\\cot^2 \\beta - \\cot^2 \\alpha}}\\)",
 "(D). \\(\\frac{AB \\cot \\alpha \\cot \\beta}{\\sqrt{\\cot^2 \\beta + \\cot^2 \\alpha}}\\)"
 ],
-correct: "(C)"
+correct: "(A)"
 },
 // Q30
 {
 q: "If \\((0, 1), (1, 1)\\) and \\((1, 0)\\) be the middle points of the sides of triangle, its incentre is",
 options: [
 "(A). \\((2 + \\sqrt{2}, 2 + \\sqrt{2})\\)",
-"(B). \\((2 + \\sqrt{2}, -(2 + \\sqrt{2}))\\)",
+"(B). \\([2 + \\sqrt{2}, -(2 + \\sqrt{2})]\\)",
 "(C). \\((2 - \\sqrt{2}, 2 - \\sqrt{2})\\)",
-"(D). \\((2 - \\sqrt{2}, -(2 - \\sqrt{2}))\\)"
+"(D). \\([2 - \\sqrt{2}, -(2 - \\sqrt{2})]\\)"
 ],
 correct: "(C)"
 },
@@ -483,10 +483,10 @@ correct: "(B)"
 },
 // Q43
 {
-q: "If \\(f(x) = \\frac{x^2 - 1}{x^2 + 1}\\) for every real number x, then the minimum value of f",
+q: "If \\(f(x) = \\frac{x^2 - 1}{x^2 + 1}\\) for every real number \\(x\\), then the minimum value of \\(f\\)",
 options: [
-"(A). does not exist because f is bounded",
-"(B). is not attained even though f is bounded",
+"(A). does not exist because \\(f\\) is bounded",
+"(B). is not attained even though \\(f\\) is bounded",
 "(C). is equal to 1",
 "(D). is equal to -1"
 ],
@@ -494,7 +494,7 @@ correct: "(D)"
 },
 // Q44
 {
-q: "The sum of the perimeters of a circle and a square is l. If the sum of the areas is least, then",
+q: "The sum of the perimeters of a circle and a square is \\(l\\). If the sum of the areas is least, then",
 options: [
 "(A). side of the square is double the radius of the circle.",
 "(B). side of the square is \\(\\frac{1}{2}\\) of the radius of the circle.",
@@ -505,7 +505,7 @@ correct: "(A)"
 },
 // Q45
 {
-q: "Let f be the quadratic function defined on [a, b] by \\(f(x) = \\alpha x^2 + \\beta x + \\gamma, \\alpha \\ne 0\\), then the real 'c' guaranteed by the Lagranges mean value theorem is equal to",
+q: "Let \\(f\\) be the quadratic function defined on \\([a, b]\\) by \\(f(x) = \\alpha x^2 + \\beta x + \\gamma, \\alpha \\ne 0\\), then the real \\('c'\\) guaranteed by the Lagranges mean value theorem is equal to",
 options: [
 "(A). \\(\\frac{a + b}{2}\\)",
 "(B). \\(\\sqrt{ab}\\)",
@@ -558,7 +558,7 @@ options: [
 ],
 correct: "(A)"
 },
-// Q49
+// Q50
 {
     q: "Let \\( A = \\{ x : -1 \\leq x \\leq 1 \\} \\) and \\( S \\) be a subset of \\( A \\times B \\) defined by \\( S = \\{ (x, y) \\in A \\times B : x^2 + y^2 = 1 \\} \\). This defines:",
     options: [
