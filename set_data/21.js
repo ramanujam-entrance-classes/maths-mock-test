@@ -25,7 +25,8 @@ window.SET_DATA = {
   },
   // Q3
   {
-    q: "The adjoining figure shows the graph of \\(y = ax^2 + bx + c\\). Then",
+    q: `The adjoining figure shows the graph of \\(y = ax^2 + bx + c\\). Then 
+	<br> <img src="images/mocktest21_q3.png" alt="Question 3 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
       "(A). \\(a < 0 \\text{ and } b > 0\\)",
       "(B). \\(b^2 < 4ac\\)",
