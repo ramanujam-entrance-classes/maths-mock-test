@@ -303,6 +303,63 @@ body {
   display: none;
 }
 
+/* Modern Select Wrapper */
+.custom-select {
+    position: relative;
+    width: 100%;
+    max-width: 280px;
+}
+
+/* Hide default arrow */
+.custom-select select {
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 2px solid #dcdcdc;
+    background: #fff;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover + focus effect */
+.custom-select select:hover {
+    border-color: #3498db;
+}
+
+.custom-select select:focus {
+    border-color: #0033cc;
+    box-shadow: 0 0 0 3px rgba(0,51,204,0.1);
+}
+
+/* Custom arrow */
+.custom-select::after {
+    content: "▼";
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #555;
+    pointer-events: none;
+}
+
+/* Button polish */
+#go-btn {
+    margin-top: 12px;
+    padding: 12px;
+    background: linear-gradient(135deg, #0033cc, #3498db);
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#go-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
     </style>
 
 </head>
@@ -326,7 +383,21 @@ body {
     </header>
 
     <div id="timer-box" class="hidden timer-green">🕒70:00</div>
-
+	
+	<div id="set-selection" class="name-container">
+	    <div class="name-box">
+	        <h3>Select Mock Test</h3>
+	
+	        <div class="custom-select">
+	            <select id="set-dropdown">
+	                <option value="">Select Test Set</option>
+	            </select>
+	        </div>
+	
+	        <button id="go-btn">Go</button>
+	    </div>
+	</div>
+	
     <div id="name-section" class="name-container">
     	<div class="name-box">
         	<h3>Enter Your Name</h3>
@@ -350,17 +421,89 @@ body {
 </div>
 
 <script>
+  // ✅ CONTROLLED SET LIST
+  const AVAILABLE_SETS = [
+    1,2,3,4,5,6,7,8,9,10,11,12,13,
+    14,15,16,17,18,19,20,21,22,23
+  ];
+
+  // ✅ MS FORM LINKS (ONLY 1–13)
+  const MS_FORM_LINKS = {
+    1: "https://forms.cloud.microsoft/r/7hBrDha4iX",
+    2: "https://forms.cloud.microsoft/r/JKDJnwhK4u",
+    3: "https://forms.cloud.microsoft/r/D5TeM8n4h7",
+    4: "https://forms.cloud.microsoft/r/2b3PGan8nY",
+    5: "https://forms.cloud.microsoft/r/miGhij7YFQ",
+    6: "https://forms.cloud.microsoft/r/d9kSJ2azXv",
+    7: "https://forms.cloud.microsoft/r/ZXjaz29Jgk",
+    8: "https://forms.cloud.microsoft/r/U2b3imSNep",
+    9: "https://forms.cloud.microsoft/r/YKMZeYBjq4",
+    10: "https://forms.cloud.microsoft/r/9SC09RvYP7",
+    11: "https://forms.cloud.microsoft/r/zGE0actR5M",
+    12: "https://forms.cloud.microsoft/r/Nqig8ybJ8t",
+    13: "https://forms.cloud.microsoft/r/hbLRdumJXN"
+  };
+	
   const params = new URLSearchParams(window.location.search);
   const setName = params.get("set");
+  const dropdown = document.getElementById("set-dropdown");
+  const goBtn = document.getElementById("go-btn");
 
-  if (!setName) {
+  dropdown.addEventListener("change", () => {
+	    if (dropdown.value) {
+	        dropdown.style.color = "#000";
+	    } else {
+	        dropdown.style.color = "#999";
+	    }
+	});
+	
+  // 🎯 Populate dropdown
+  AVAILABLE_SETS.forEach(set => {
+    const option = document.createElement("option");
+    option.value = set;
+    option.textContent = `Mock Test Set ${set}`;
+    dropdown.appendChild(option);
+  });
+
+  // 🎯 Handle GO click
+  goBtn.addEventListener("click", () => {
+    const selectedSet = dropdown.value;
+
+    if (!selectedSet) {
+      alert("Please select a test set");
+      return;
+    }
+	const setNumber = parseInt(selectedSet);
+
+    // 👉 Case 1: MS FORM
+    if (setNumber <= 13) {
+      window.location.href = MS_FORM_LINKS[setNumber];
+    } 
+    // 👉 Case 2: WEBSITE TEST
+    else {
+      window.location.href = `?set=${setNumber}`;
+    }
+  });
+
+  // 🚀 INITIAL LOAD LOGIC
+  if (!setName || !AVAILABLE_SETS.includes(parseInt(setName))) {
+    // show dropdown
+    document.getElementById("set-selection").style.display = "flex";
+    hideTestUI();
+  } else {
+    // hide dropdown
+    document.getElementById("set-selection").style.display = "none";
+    loadTest(setName);
+  }
+  
+  /*if (!setName) {
     // ❌ No test provided → hide UI
     hideTestUI();
   showMessage("📝 Select a mock test to begin");
   } else {
     loadTest(setName);
-  }
-
+  }*/
+	
   function loadTest(testName) {
     const script = document.createElement("script");
     script.src = `set_data/${setName}.js`;
@@ -371,8 +514,9 @@ body {
 
     script.onerror = () => {
       // ❌ File not found → hide UI
-      hideTestUI();
-      showMessage("📝 Select a mock test to begin");
+      //hideTestUI();
+      showMessage("📝 Invalid set selected");
+	  location.href = window.location.pathname;
     };
 
     document.head.appendChild(script);
