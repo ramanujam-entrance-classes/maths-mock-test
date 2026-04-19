@@ -134,7 +134,7 @@ correct: "(C)"
 {
 q: "If \\(2\\sin\\theta - 1 = 0\\) and \\(2\\cos\\theta + \\sqrt{3} = 0\\), then the general values of \\(\\theta\\) are given by:",
 options: ["(A). \\( 2nπ + \\frac{π}{6} \\)", "(B). \\( 2nπ + \\frac{π}{4} \\)", "(C). \\( 2nπ + \\frac{7π}{6} \\)", "(D). \\( 2nπ + \\frac{5π}{6} \\)"],
-correct: "(C)"
+correct: "(D)"
 },
 {
 q: "If \\(x \\cos\\alpha + y \\sin\\alpha = p\\) is a tangent to the circle \\(x^2 + y^2 = 2q(x \\cos\\alpha + y \\sin\\alpha)\\), then the set of possible values of p is:",
