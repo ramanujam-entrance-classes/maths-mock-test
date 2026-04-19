@@ -488,22 +488,22 @@ correct: "(C)"
 {
 // Q45
 q: `If the mean of the distribution:<br>
-	<table border="1" style="text-align:center;width:80%;">
+	<table style="text-align:center;width:80%;border:1px solid black; border-collapse: collapse;">
 	<tr>
-	<td style="text-align:left">Variate \\(x\\)</td>
-	<td style="text-align:center">1</td> 
-	<td style="text-align:center">2</td> 
-	<td style="text-align:center">3</td>
-	<td style="text-align:center">4</td> 
-	<td style="text-align:center">5</td>
+	<td style="text-align:left;border:1px solid black; border-collapse: collapse;">Variate \\(x\\)</td>
+	<td style="text-align:center;border:1px solid black; border-collapse: collapse;">1</td> 
+	<td style="text-align:center;border:1px solid black; border-collapse: collapse;">2</td> 
+	<td style="text-align:center;border:1px solid black; border-collapse: collapse;">3</td>
+	<td style="text-align:center;border:1px solid black; border-collapse: collapse;">4</td> 
+	<td style="text-align:center;border:1px solid black; border-collapse: collapse;">5</td>
 	</tr>
 	<tr>
-	<td style="text-align:left">Frequency \\(f\\) of \\(x\\)</td>
-	<td style="text-align:center">4</td> 
-	<td style="text-align:center">5</td> 
-	<td style="text-align:center">\\(k\\)</td> 
-	<td style="text-align:center">1</td> 
-	<td style="text-align:center">2</td>
+	<td style="text-align:left;border:1px solid black; border-collapse: collapse;">Frequency \\(f\\) of \\(x\\)</td>
+	<td style="text-align:center;border:1px solid black; border-collapse: collapse;">4</td> 
+	<td style="text-align:center;border:1px solid black; border-collapse: collapse;">5</td> 
+	<td style="text-align:center;border:1px solid black; border-collapse: collapse;">\\(k\\)</td> 
+	<td style="text-align:center;border:1px solid black; border-collapse: collapse;">1</td> 
+	<td style="text-align:center;border:1px solid black; border-collapse: collapse;">2</td>
 	</tr>
 	</table><br>is 2.6, then the value of \\(k\\) is`,
 options: [
