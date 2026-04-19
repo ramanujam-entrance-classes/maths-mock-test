@@ -506,6 +506,9 @@ body {
   }*/
 	
   function loadTest(testName) {
+	const heading = document.getElementById("test-heading");
+    if (heading) heading.style.display = "block";
+	  
     const script = document.createElement("script");
     script.src = `set_data/${setName}.js`;
 
