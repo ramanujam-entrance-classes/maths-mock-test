@@ -113,7 +113,7 @@ correct: "(B)"
 },
 {
 // Q11
-q: "Domain of the function \\(f(x) = \\arc \\sin[\\log_2 (x^2/2)]\\) is",
+q: "Domain of the function \\(f(x) = arc \\sin[\\log_2 (x^2/2)]\\) is",
 options: [
 "(A). \\([-2, 2]\\)",
 "(B). \\((-1, 1)\\)",
