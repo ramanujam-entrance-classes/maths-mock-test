@@ -375,8 +375,8 @@ body {
 			    Prayagraj, Uttar Pradesh – 211002</p>
 
         </div>
-	<center><h3 id="test-heading"><span style="color:#0033cc"> </span></h3></center>
-	<span id="note-marks" style="font-size:14px; color:#555;">
+	<center><h3 id="test-heading" class="hidden"><span style="color:#0033cc"> </span></h3></center>
+	<span id="note-marks"  class="hidden" style="font-size:14px; color:#555;">
        			Note: Each correct answer carries <span style="font-size:14px; color:green;font-weight:bold"> +12 </span>marks and each incorrect answer carries <span style="font-size:14px; color:red;font-weight:bold">−3</span> marks.
     		 </span>
 	<div id="student-display" class="hidden"></div>
@@ -398,7 +398,7 @@ body {
 	    </div>
 	</div>
 	
-    <div id="name-section" class="name-container">
+    <div id="name-section" class="name-container hidden">
     	<div class="name-box">
         	<h3>Enter Your Name</h3>
 		<span id="student-name-required">Required *</span>
@@ -531,9 +531,13 @@ body {
   const nameSection = document.getElementById("name-section");
   const note = document.getElementById("note-marks");
 
-  if (heading) heading.style.display = "none";
+  if (heading) heading.classList.add("hidden");
+  if (nameSection) nameSection.classList.add("hidden");
+  if (note) note.classList.add("hidden");
+	 
+  /*if (heading) heading.style.display = "none";
   if (nameSection) nameSection.style.display = "none";
-  if (note) note.style.display = "none";
+  if (note) note.style.display = "none";*/
 }
 
   function showMessage(msg) {
