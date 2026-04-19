@@ -6,8 +6,18 @@ function initApp(data) {
     const setName = new URLSearchParams(window.location.search).get("set");
     
     // show heading again (in case hidden before)
+    /*const heading = document.getElementById("test-heading");
+    if (heading) {
+        heading.style.display = "block";   // ensure visible
+        heading.style.visibility = "visible"; // extra safety
+    }*/
     const heading = document.getElementById("test-heading");
-    if (heading) heading.style.display = "block";
+    const nameSection = document.getElementById("name-section");
+    const note = document.getElementById("note-marks");
+
+    if (heading) heading.classList.remove("hidden");
+    if (nameSection) nameSection.classList.remove("hidden");
+    if (note) note.classList.remove("hidden");
 
     // update title
     document.title = data.title;
