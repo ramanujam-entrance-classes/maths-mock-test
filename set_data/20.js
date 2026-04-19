@@ -34,7 +34,7 @@ options: [
 "(C). \\(M = M_d \\cdot M_0\\)",
 "(D). \\(M = M_d = M_0\\)"
 ],
-correct: "(D)"
+correct: "(A)"
 },
 
 /* Q4 */
@@ -126,7 +126,7 @@ options: [
 "(C). transitive",
 "(D). none of these"
 ],
-correct: "(C)"
+correct: "(A)"
 },
 /* Q11 */
 {
@@ -495,122 +495,113 @@ correct: "(B)"
 },
 /* Q41 */
 {
-q: "The coordinates of the centroid of the triangle whose vertices are the points of intersection of the line \\(x + y + z = 1\\) with the coordinate planes are",
+q: "Let \\(f(x) = \\cos px + \\sin x\\) be periodic. Then \\(p\\) must be",
 options: [
-"(A). \\((\\frac{1}{3}, \\frac{1}{3}, \\frac{1}{3})\\)",
-"(B). \\((\\frac{1}{2}, \\frac{1}{2}, 0)\\)",
-"(C). \\((1, 1, 1)\\)",
-"(D). \\((\\frac{1}{2}, \\frac{1}{4}, \\frac{1}{4})\\)"
+"(A). rational",
+"(B). irrational",
+"(C). positive real number",
+"(D). none of these"
 ],
 correct: "(A)"
 },
-
-/* Q42 */
+/* Q42 */	  
 {
-q: "If \\(x^2 + y^2 = a^2\\) and \\(x^2 + y^2 - 2ax = 0\\) intersect at points \\(A\\) and \\(B\\), then the line AB passes through",
+q: "If \\(f(x) = \\int_{-1}^{x} |t| \\, dt, \\; x \\ge -1\\), then",
 options: [
-"(A). origin",
-"(B). \\((a, 0)\\)",
-"(C). \\((\\frac{a}{2}, 0)\\)",
-"(D). \\((a, a)\\)"
-],
-correct: "(C)"
-},
-
-/* Q43 */
-{
-q: "The angle between the tangents drawn from \\((h, k)\\) to the parabola \\(y^2 = 4ax\\) is",
-options: [
-"(A). \\(\\sin^{-1}(\\frac{2a}{h})\\)",
-"(B). \\(\\sin^{-1}(\\frac{4a^2}{h^2})\\)",
-"(C). \\(\\sin^{-1}(\\frac{2\\sqrt{a(h-k)}}{h})\\)",
-"(D). \\(\\cos^{-1}(\\frac{2a}{h})\\)"
+"(A). \\(f\\) and \\(f'\\) are continuous for \\(x + 1 > 0\\)",
+"(B). \\(f\\) is continuous but \\(f'\\) is not so for \\(x + 1 > 0\\)",
+"(C). \\(f\\) and \\(f'\\) are not continuous at \\(x = 0\\)",
+"(D). \\(f\\) is continuous at \\(x = 0\\) but \\(f'\\) is not so"
 ],
 correct: "(A)"
 },
-
-/* Q44 */
+/* Q43 */	  
 {
-q: "If \\(a, b, c\\) are the sides of a triangle in A.P., then the triangle is",
+q: "If \\(y = (\\sin x)^{(\\sin x)^{(\\sin x)^{\\cdots \\infty}}}\\), then \\(\\frac{dy}{dx}\\) is",
 options: [
-"(A). acute angled",
-"(B). obtuse angled",
-"(C). right angled",
-"(D). cannot be determined"
+"(A). \\(\\frac{y^2 \\cot x}{1 - y \\log \\sin x}\\)",
+"(B). \\(\\frac{y^2 \\cot x}{1 + y \\log x}\\)",
+"(C). \\(\\frac{y^2 \\cot x}{1 + y \\log \\sin x}\\)",
+"(D). none of these"
 ],
-correct: "(C)"
+correct: "(A)"
 },
-
+/* Q44 */	  
+{
+q: "The length of the subtangent to the curve \\(\\sqrt{x} + \\sqrt{y} = 3\\) at the point \\((4, 1)\\) is",
+options: [
+"(A). \\(2\\)",
+"(B). \\(\\frac{1}{2}\\)",
+"(C). \\(-3\\)",
+"(D). \\(4\\)"
+],
+correct: "(A)"
+}
 /* Q45 */
 {
-q: "If \\(x^2 + y^2 - 6x - 8y + c = 0\\) touches the line \\(3x + 4y = 24\\), then \\(c\\) is equal to",
+q: "If \\(y = 4x - 5\\) is tangent to the curve \\(y^2 = px^3 + q\\) at \\((2, 3)\\), then",
 options: [
-"(A). 0",
-"(B). 48",
-"(C). 50",
-"(D). 64"
-],
-correct: "(C)"
-},
-
-/* Q46 */
-{
-q: "The coordinates of the foot of the perpendicular drawn from \\((2, 3)\\) to the line \\(3x - 4y + 5 = 0\\) are",
-options: [
-"(A). \\((2, 1)\\)",
-"(B). \\((6, 5)\\)",
-"(C). \\((1, 2)\\)",
-"(D). \\((2, 4)\\)"
-],
-correct: "(D)"
-},
-
-/* Q47 */
-{
-q: "The value of \\(\\frac{1}{\\cos^2 10^\\circ} + \\frac{1}{\\cos^2 20^\\circ} + \\frac{1}{\\cos^2 30^\\circ} + \\frac{1}{\\cos^2 40^\\circ} \\)\\(+ \\frac{1}{\\cos^2 50^\\circ}\\) is",
-options: [
-"(A). 15",
-"(B). 16",
-"(C). 17",
-"(D). 18"
-],
-correct: "(B)"
-},
-
-/* Q48 */
-{
-q: "If \\(x = r \\cos \\theta\\) and \\(y = r \\sin \\theta\\), then \\(x^2 + y^2\\) equals",
-options: [
-"(A). \\(r\\)",
-"(B). \\(r^2\\)",
-"(C). \\(2r^2\\)",
-"(D). \\(\\frac{r^2}{2}\\)"
-],
-correct: "(B)"
-},
-
-/* Q49 */
-{
-q: "If the sum of the first \\(n\\) terms of an AP is 45 and the sum of the first \\(2n\\) terms is 180, then the first term is",
-options: [
-"(A). 5",
-"(B). 6",
-"(C). 7",
-"(D). 8"
+"(A). \\(p = 2, q = -7\\)",
+"(B). \\(p = -2, q = 7\\)",
+"(C). \\(p = -2, q = -7\\)",
+"(D). \\(p = 2, q = 7\\)"
 ],
 correct: "(A)"
 },
-
-/* Q50 */
+/* Q46 */
 {
-q: "If \\(x = 2 + \\cos t\\) and \\(y = 1 + \\sin t\\) represent a curve, then the curve is",
+q: "The maximum and minimum values of \\(x^4 - \\frac{2}{3}x^3 - 2x^2 + 2x\\) in the interval \\([0, 3]\\) are respectively",
 options: [
-"(A). ellipse",
-"(B). parabola",
-"(C). hyperbola",
-"(D). circle"
+"(A). \\(51\\) and \\(0\\)",
+"(B). \\(\\frac{23}{48}\\) and \\(0\\)",
+"(C). \\(\\frac{1}{3}\\) and \\(0\\)",
+"(D). \\(\\frac{23}{48}\\) and \\(\\frac{1}{3}\\)"
+],
+correct: "(A)"
+},
+/* Q47 */
+{
+q: "Using Rolle’s theorem, the equation \\(a_0 x^n + a_1 x^{n-1} + \\ldots + a_n = 0\\) has atleast one root between \\(0\\) and \\(1\\) if",
+options: [
+"(A). \\(\\frac{a_0}{n} - \\frac{a_1}{n-1} + \\ldots + a_{n-1} = 0\\)",
+"(B). \\(\\frac{a_0}{n-1} + \\frac{a_1}{n-2} + \\ldots + a_{n-2} = 0\\)",
+"(C). \\(n a_0 + (n-1)a_1 + \\ldots + a_{n-1} = 0\\)",
+"(D). \\(\\frac{a_0}{n+1} + \\frac{a_1}{n} + \\ldots + a_n = 0\\)"
 ],
 correct: "(D)"
-}
+},
+/* Q48 */
+{
+q: "If \\((n - m)\\) is odd, and \\(|m| \\ne |n|\\), then \\(\\int_0^\\pi \\cos mx \\sin nx \\, dx\\) is",
+options: [
+"(A). \\(\\frac{2n}{n^2 - m^2}\\)",
+"(B). \\(0\\)",
+"(C). \\(\\frac{2n}{m^2 - n^2}\\)",
+"(D). \\(\\frac{2m}{n^2 - m^2}\\)"
+],
+correct: "(A)"
+},
+/* Q49 */
+{
+q: "The value of \\(\\int_{-1}^{3/2} |x \\sin \\pi x| \\, dx\\) is",
+options: [
+"(A). \\(\\frac{3\\pi - 1}{\\pi^2}\\)",
+"(B). \\(\\frac{3}{\\pi - \\pi^2}\\)",
+"(C). \\(\\frac{3\\pi + 1}{\\pi^2}\\)",
+"(D). none of these"
+],
+correct: "(C)"
+},
+/* Q50 */
+{
+q: "If \\(g(x) = \\int_0^x \\cos^4 t \\, dt\\), then \\(g(x + \\pi)\\) equals",
+options: [
+"(A). \\(g(x) + g(\\pi)\\)",
+"(B). \\(g(x) - g(\\pi)\\)",
+"(C). \\(g(x) g(\\pi)\\)",
+"(D). \\(g(x)/g(\\pi)\\)"
+],
+correct: "(A)"
+}	  
   ]
 };
