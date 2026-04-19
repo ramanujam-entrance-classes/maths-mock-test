@@ -69,7 +69,7 @@ correct: "(B)"
 },
 {
 // Q7
-q: "If \\(\\sin^{-1}\\left(x - \\frac{x^2}{2} + \\frac{x^3}{4} - \\ldots\\right) +\\)\\( \\cos^{-1}\\left(x^2 - \\frac{x^4}{2} + \\frac{x^6}{4} - \\ldots\\right) = \\frac{\\pi}{2}\\) for \\(0 < |x| < \\sqrt{2}\\), then x equals",
+q: "If \\(\\sin^{-1}\\left(x - \\frac{x^2}{2} + \\frac{x^3}{4} - \\ldots\\right) +\\)\\( \\cos^{-1}\\left(x^2 - \\frac{x^4}{2} + \\frac{x^6}{4} - \\ldots\\right) = \\frac{\\pi}{2}\\) for \\(0 < |x| < \\sqrt{2}\\), then \\(x\\) equals",
 options: [
 "(A). \\(\\frac{1}{2}\\)",
 "(B). 1",
@@ -85,7 +85,7 @@ options: [
 "(A). \\(\\frac{1}{\\sqrt{6}}\\)",
 "(B). \\(\\frac{1}{3}\\)",
 "(C). \\(\\frac{1}{\\sqrt{3}}\\)",
-"(D). \\(\\frac{\\sqrt{2}}{3}\\)"
+"(D). \\(\\sqrt{\\frac{2}{3}}\\)"
 ],
 correct: "(A)"
 },
@@ -113,7 +113,7 @@ correct: "(B)"
 },
 {
 // Q11
-q: "Domain of the function \\(f(x) = \\sin^{-1}[\\log_2 (x^2/2)]\\) is",
+q: "Domain of the function \\(f(x) = \\arc \\sin[\\log_2 (x^2/2)]\\) is",
 options: [
 "(A). \\([-2, 2]\\)",
 "(B). \\((-1, 1)\\)",
@@ -146,11 +146,11 @@ correct: "(A)"
 },
 {
 // Q14
-q: "Let f be an injective map with domain {x, y, z} and range {1, 2, 3} such that exactly one of the following statements is correct and the remaining are false: \\(f(x) = 1, f(y) \\ne 1, f(z) = 2\\). The value of \\(f^{-1}(1)\\) is",
+q: "Let \\(f\\) be an injective map with domain \\({x, y, z}\\) and range \\({1, 2, 3}\\) such that exactly one of the following statements is correct and the remaining are false: \\(f(x) = 1, f(y) \\ne 1, f(z) = 2\\). The value of \\(f^{-1}(1)\\) is",
 options: [
-"(A). x",
-"(B). y",
-"(C). z",
+"(A). \\(x\\)",
+"(B). \\(y\\)",
+"(C). \\(z\\)",
 "(D). none of these"
 ],
 correct: "(B)"
@@ -344,14 +344,14 @@ correct: "(D)"
 },
 {
 // Q32
-q: "The point with position vectors \\(60\\hat{i} + 3\\hat{j}, 40\\hat{i} - 8\\hat{j}, a\\hat{i} - 52\\hat{j}\\) are collinear is:",
+q: "The maximum value of \\(y = a \\cos x + b \\sin x\\) is",
 options: [
-"(A). \\(1\\)",
-"(B). \\(0\\)",
-"(C). \\(\\frac{1}{2}\\)",
-"(D). \\(\\frac{3}{2}\\)"
+"(A). \\(a^2 + b^2\\)",
+"(B). \\(\\frac{ab}{\\sqrt{a^2 + b^2}}\\)",
+"(C). \\(\\sqrt{a^2 + b^2}\\)",
+"(D). \\(\\frac{1}{\\sqrt{a^2 + b^2}}\\)"
 ],
-correct: "(B)"
+correct: "(C)"
 },
 {
 // Q33
@@ -399,7 +399,7 @@ correct: "(D)"
 },
 {
 // Q37
-q: "Let PS be the median of the triangle with vertices P (2, 2), Q (6, -1) and R (7, 3). The equation of the line passing through (1, -1) and parallel to PS is",
+q: "Let \\(PS\\) be the median of the triangle with vertices \\(P (2, 2)\\), \\(Q (6, -1)\\) and \\(R (7, 3)\\). The equation of the line passing through \\((1, -1)\\) and parallel to \\(PS\\) is",
 options: [
 "(A). \\(2x - 9y - 7 = 0\\)",
 "(B). \\(2x - 9y - 11 = 0\\)",
@@ -487,7 +487,25 @@ correct: "(C)"
 },
 {
 // Q45
-q: "If the mean of the distribution\nVariate \\(x \\colon \\) 1, 2, 3, 4, 5\nFrequency f of \\(x \\colon \\) 4, 5, k, 1, 2\nis 2.6, then the value of k is",
+q: "If the mean of the distribution:<br>
+	<table style="text-align:center;width:80%;border:1px">
+	<tr>
+	<td style="text-align:center">Variate \\(x\\)</td>
+	<td style="text-align:center">1</td> 
+	<td style="text-align:center">2</td> 
+	<td style="text-align:center">3</td>
+	<td style="text-align:center">4</td> 
+	<td style="text-align:center">5</td>
+	<\tr>
+	<tr>
+	<td style="text-align:center">Frequency \\(f\\) of \\(x\\)</td>
+	<td style="text-align:center">4</td> 
+	<td style="text-align:center">5</td> 
+	<td style="text-align:center">\\(k\\)</td> 
+	<td style="text-align:center">1</td> 
+	<td style="text-align:center">2</td>
+	</tr>
+	</table><br>is 2.6, then the value of \\(k\\) is",
 options: [
 "(A). \\(8\\)",
 "(B). \\(10\\)",
