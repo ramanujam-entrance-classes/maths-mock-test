@@ -536,7 +536,7 @@ options: [
 "(D). \\(4\\)"
 ],
 correct: "(A)"
-}
+},
 /* Q45 */
 {
 q: "If \\(y = 4x - 5\\) is tangent to the curve \\(y^2 = px^3 + q\\) at \\((2, 3)\\), then",
