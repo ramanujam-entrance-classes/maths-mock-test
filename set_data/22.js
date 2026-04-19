@@ -488,17 +488,17 @@ correct: "(C)"
 {
 // Q45
 q: `If the mean of the distribution:<br>
-	<table style="text-align:center;width:80%;border:1px">
+	<table border="1" style="text-align:center;width:80%;">
 	<tr>
-	<td style="text-align:center">Variate \\(x\\)</td>
+	<td style="text-align:left">Variate \\(x\\)</td>
 	<td style="text-align:center">1</td> 
 	<td style="text-align:center">2</td> 
 	<td style="text-align:center">3</td>
 	<td style="text-align:center">4</td> 
 	<td style="text-align:center">5</td>
-	<\tr>
+	</tr>
 	<tr>
-	<td style="text-align:center">Frequency \\(f\\) of \\(x\\)</td>
+	<td style="text-align:left">Frequency \\(f\\) of \\(x\\)</td>
 	<td style="text-align:center">4</td> 
 	<td style="text-align:center">5</td> 
 	<td style="text-align:center">\\(k\\)</td> 
