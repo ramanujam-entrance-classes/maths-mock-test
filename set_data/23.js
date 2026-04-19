@@ -46,7 +46,7 @@ window.SET_DATA = {
       "(C). \\( a \\sin 2\\alpha \\)",
       "(D). \\( a \\sin 3\\alpha \\)"
     ],
-    correct: "(A)"
+    correct: "(C)"
   },
 
   // Q5
@@ -63,7 +63,7 @@ window.SET_DATA = {
 
   // Q6
   {
-    q: "In a triangle \\( ABC \\), 2ac \\( \\sin \\frac{1}{2} (A - B + C) \\) is equal to",
+    q: "In a triangle \\( ABC \\), \\(2ac\\) \\( \\sin \\frac{1}{2} (A - B + C) \\) is equal to",
     options: [
       "(A). \\( a^2 + b^2 - c^2 \\)",
       "(B). \\( c^2 + a^2 - b^2 \\)",
@@ -82,12 +82,12 @@ window.SET_DATA = {
       "(C). \\( C^2 \\)",
       "(D). none of these"
     ],
-    correct: "(A)"
+    correct: "(B)"
   },
 
   // Q8
   {
-    q: "If \\( y^2 = ae^{-2x} \\) (\\( \cos x - 2 \\sin x \\)) then \\( y \\frac{dy}{dx} + y^2 + \\sin x \\) is equal to",
+    q: "If \\( y^2 = ae^{-2x} \\)+\\((\\frac{2}{5})\\) (\\( \cos x - 2 \\sin x \\)) then \\( y \\frac{dy}{dx} + y^2 + \\sin x \\) is equal to",
     options: [
       "(A). -1",
       "(B). 1",
@@ -106,7 +106,7 @@ window.SET_DATA = {
       "(C). 1",
       "(D). -1"
     ],
-    correct: "(B)"
+    correct: "(D)"
   },
 
   // Q10
@@ -124,9 +124,9 @@ window.SET_DATA = {
 {
   q: "If \\( f : [1, \\infty) \\to [2, \\infty) \\) is given by \\( f(x) = x + \\frac{1}{x} \\), then \\( f^{-1}(x) \\) equals",
   options: [
-    "(A). \\( x + \\sqrt{x^2 - 4} \\)",
+    "(A). \\( \\frac{x + \\sqrt{x^2 - 4}}{2} \\)",
     "(B). \\( \\frac{x}{1 + x^2} \\)",
-    "(C). \\( x - \\sqrt{x^2 - 4} \\)",
+    "(C). \\( \\frac{x - \\sqrt{x^2 - 4}}{2} \\)",
     "(D). \\( 1 + \\sqrt{x^2 - 4} \\)"
   ],
   correct: "(A)"
@@ -134,14 +134,14 @@ window.SET_DATA = {
 
 // Q12
 {
-  q: "lim \\( x \\to \\infty \\) \\( \\frac{x + 1}{x + 1} \\) is",
+  q: "\\( \\lim_{x \\to \\infty}\\left(x+\\frac{1}{x + 1})^{2x+1} \\) is",
   options: [
     "(A). \\( e \\)",
     "(B). \\( e^{-2} \\)",
-    "(C). \\( e^2 \\)",
+    "(C). \\( e^{-1} \\)",
     "(D). 1"
   ],
-  correct: "(D)"
+  correct: "(B)"
 },
 
 // Q13
@@ -149,23 +149,23 @@ window.SET_DATA = {
   q: "The left hand derivative of \\( f(x) = [x] \\sin (\\pi x) \\) at \\( x = k, k \\) is an integer, is",
   options: [
     "(A). \\( (-1)^k (k - 1) \\pi \\)",
-    "(B). \\( (-1)^k (k - 1) \\pi \\)",
+    "(B). \\( (-1)^{k-1} (k - 1) \\pi \\)",
     "(C). \\( (-1)^k k \\pi \\)",
     "(D). \\( (-1)^{k-1} k \\pi \\)"
   ],
-  correct: "(C)"
+  correct: "(A)"
 },
 
 // Q14
 {
-  q: "The triangle formed by the tangent to the curve \\( f(x) = x^2 + bx - b \\) at the point (1, 1) and the co-ordinate axes, lies in the first quadrant. If its area is 2, then the value of b is",
+  q: "The triangle formed by the tangent to the curve \\( f(x) = x^2 + bx - b \\) at the point \\((1, 1)\\) and the co-ordinate axes, lies in the first quadrant. If its area is \\(2\\), then the value of \\(b\\) is",
   options: [
     "(A). -1",
     "(B). 3",
     "(C). -3",
     "(D). 1"
   ],
-  correct: "(A)"
+  correct: "(C)"
 },
 
 // Q15
@@ -177,29 +177,29 @@ window.SET_DATA = {
     "(C). 2",
     "(D). 4"
   ],
-  correct: "(C)"
+  correct: "(D)"
 },
 
 // Q16
 {
-  q: "The integral \\( \\int_0^1 \\tan^{-1} x dx \\) is equal to",
+  q: "\\(\\int_0^1 \\tan^{-1} x dx \\) is equal to",
   options: [
     "(A). \\( \\frac{\\pi}{4} \\)",
-    "(B). \\( \\frac{\\pi}{4} + \\frac{1}{2} \\log 2 \\)",
-    "(C). \\( \\frac{\\pi}{4} + \\log 2 \\)",
+    "(B). \\( \\frac{\\pi}{4} + \\frac{1}{2}\\log 2 \\)",
+    "(C). \\( \\frac{\\pi}{4} - \\frac{1}{2} \\log 2 \\)",
     "(D). \\( \\frac{\\pi}{4} + \\log 2 \\)"
   ],
-  correct: "(B)"
+  correct: "(C)"
 },
 
 // Q17
 {
-  q: "The value of the integral \\( \\int_1^2 \\log x \\cdot \\log x \\ dx \\) is",
+  q: "The value of the integral \\( \\int_{e^{-1}}^{e^2} |\\frac{\\log x}{x}|\\ dx \\) is",
   options: [
-    "(A). 0",
-    "(B). 3/2",
-    "(C). 5/2",
-    "(D). 3"
+    "(A). 3/2",
+    "(B). 5/2",
+    "(C). 3",
+    "(D). none of these"
   ],
   correct: "(B)"
 },
@@ -218,78 +218,78 @@ window.SET_DATA = {
 
 // Q19
 {
-  q: "The differential equation representing the family of curves \\( y^2 = 2c (x + \\sqrt{c}) \\), where c is a positive parameter, is of",
+  q: "The differential equation representing the family of curves \\( y^2 = 2c (x + \\sqrt{c}) \\), where \\(c\\) is a positive parameter, is of",
   options: [
     "(A). order 1, degree 2",
     "(B). order 2, degree 3",
     "(C). order 1, degree 3",
     "(D). order 2, degree 2"
   ],
-  correct: "(C)"
+  correct: "(A)"
 },
 
 // Q20
 {
-  q: "Two finite sets have m and n elements. The total number of subsets of the first set is 56 more than the total number of subsets of the second set. The values of m and n are",
+  q: "Two finite sets have \\(m\\) and \\(n\\) elements. The total number of subsets of the first set is 56 more than the total number of subsets of the second set. The values of \\(m\\) and \\(n\\) are",
   options: [
     "(A). 7,6",
     "(B). 6,3",
     "(C). 5,1",
     "(D). 8,7"
   ],
-  correct: "(A)"
+  correct: "(C)"
 },
 // Q21
 {
   q: "Let \\( f : R \\to R \\) is defined by \\( f(x) = x^2 + 1 \\), then values of \\( f^{-1}(17) \\) and \\( f^{-1}(-3) \\) respectively are",
   options: [
-    "(A). \\( \\varnothing, (4, -4) \\)",
-    "(B). \\( (3, -3), \\varnothing \\)",
-    "(C). \\( (3, -3), \\varnothing \\)",
-    "(D). \\( (4, -4), \\varnothing \\)"
+    "(A). \\( \\varnothing, {4, -4} \\)",
+    "(B). \\( {3, -3}, \\varnothing \\)",
+    "(C). \\( \\varnothing, {3, -3} \\)",
+    "(D). \\( {4, -4}, \\varnothing \\)"
   ],
-  correct: "(A)"
+  correct: "(D)"
 },
 
 // Q22
 {
-  q: "Sum to infinity the series \\( 1 + \\frac{12}{2!} + \\frac{12^2}{3!} + \\frac{12^3}{4!} + ....... \\) is equal to",
+  q: "Sum to infinity the series \\( 1 + \\frac{1^2+2^2}{2!} + \\frac{1^2+2^2+3^2}{3!} + ....... \\) is equal to",
   options: [
-    "(A). 11e",
-    "(B). 13e",
+    "(A). \\(11e\\)",
+    "(B). \\(13e\\)",
     "(C). \\( \\frac{17}{6} e \\)",
     "(D). \\( \\frac{5}{3} e \\)"
   ],
-  correct: "(B)"
+  correct: "(C)"
 },
 
 // Q23
 {
   q: "The number of integer values of \\( m \\), for which the \\( x \\)-coordinate of the point of intersection of the lines \\( 3x + 4y = 9 \\) and \\( y = mx + 1 \\) is also an integer, is",
   options: [
-    "(A). \\( 0 \\)",
-    "(B). \\( 1 \\)",
-    "(C). \\( 2 \\)",
-    "(D). \\( 4 \\)"
+    "(A). \\( 2 \\)",
+    "(B). \\( 0 \\)",
+    "(C). \\( 4 \\)",
+    "(D). \\( 1 \\)"
   ],
-  correct: "(C)"
+  correct: "(A)"
 },
 
 // Q24
 {
-  q: "If the slope of one line is double of the slope of another line and the combined equation of the pair of lines \\( \\frac{x^2}{a} + \\frac{2xy}{h} + \\frac{y^2}{b} = 0 \\) then \\( ab \\neq h^2 \\) is equal to",
+  q: "If the slope of one line is double of the slope of another line and the combined equation of the pair of lines \\( \\frac{x^2}{a} + \\frac{2xy}{h} + \\frac{y^2}{b} = 0 \\) then \\( ab = h^2 \\) is equal to",
   options: [
     "(A). \\( 9 : 8 \\)",
     "(B). \\( 3 : 2 \\)",
     "(C). \\( 8 : 3 \\)",
     "(D). none of these"
   ],
-  correct: "(B)"
+  correct: "(A)"
 },
 
 // Q25
 {
-  q: "Let AB be a chord of the circle \\( x^2 + y^2 = r^2 \\) subtending a right angle at the centre. Then the locus of the centroid of the triangle PAB as P moves on the circle is",
+  q: "Let \\(AB\\) be a chord of the circle \\( x^2 + y^2 = r^2 \\) subtending a right angle at the centre. Then the locus of the centroid of the triangle \\(PAB\\) as \\(P\\) moves on the circle is",
   options: [
     "(A). a parabola",
     "(B). a circle",
@@ -301,14 +301,14 @@ window.SET_DATA = {
 
 // Q26
 {
-  q: "If two distinct chords, drawn from the point \\( (p, q) \\) on the circle \\( x^2 + y^2 = px + qy \\) are bisected by the x-axis, then",
+  q: "If two distinct chords, drawn from the point \\( (p, q) \\) on the circle \\( x^2 + y^2 = px + qy \\) (where \\(pq \\neq 0\\)) are bisected by the \\(x\\)-axis, then",
   options: [
     "(A). \\( p^2 = q^2 \\)",
     "(B). \\( p^2 = 8q^2 \\)",
     "(C). \\( p^2 < 8q^2 \\)",
     "(D). \\( p^2 > 8q^2 \\)"
   ],
-  correct: "(C)"
+  correct: "(D)"
 },
 
 // Q27
@@ -320,7 +320,7 @@ window.SET_DATA = {
     "(C). \\( \\frac{1}{p} + \\frac{1}{q} = 0 \\)",
     "(D). \\( \\frac{1}{p} - \\frac{1}{q} = 0 \\)"
   ],
-  correct: "(B)"
+  correct: "(A)"
 },
 
 // Q28
@@ -337,7 +337,7 @@ window.SET_DATA = {
 
 // Q29
 {
-  q: "The number of solutions of \\( \log(x - 1) = \log(x - 3) \\) is",
+  q: "The number of solutions of \\( \\log_4(x - 1) = \\log_2(x - 3) \\) is",
   options: [
     "(A). \\( 3 \\)",
     "(B). \\( 1 \\)",
@@ -349,14 +349,14 @@ window.SET_DATA = {
 
 // Q30
 {
-  q: "The domain of the function \\( \\sqrt{\\log_6 x} \\) is",
+  q: "The domain of the function \\( \\sqrt{\\log_{0.5} x} \\) is",
   options: [
     "(A). \\( (1, \\infty) \\)",
     "(B). \\( (0, \\infty) \\)",
     "(C). \\( (0, 1) \\)",
     "(D). \\( (0.5, 1) \\)"
   ],
-  correct: "(A)"
+  correct: "(C)"
 },
 // Q31
 {
