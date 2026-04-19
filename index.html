@@ -474,6 +474,7 @@ body {
 	  showMessage("📝 Select a mock test to begin");
       return;
     }
+	clearMessage();
 	const setNumber = parseInt(selectedSet);
 
     // 👉 Case 1: MS FORM
@@ -487,15 +488,15 @@ body {
   });
 
   // 🚀 INITIAL LOAD LOGIC
-  if (!setName || !AVAILABLE_SETS.includes(parseInt(setName))) {
-    // show dropdown
-    document.getElementById("set-selection").style.display = "flex";
-    hideTestUI();
-  } else {
-    // hide dropdown
-    document.getElementById("set-selection").style.display = "none";
-    loadTest(setName);
-  }
+  	if (!isValidSet(setName)) {
+		document.getElementById("set-selection").style.display = "flex";
+		hideTestUI();
+		showMessage("📝 Select a valid mock test to begin");
+	} else {
+		clearMessage();
+		document.getElementById("set-selection").style.display = "none";
+		loadTest(setName);
+	}
   
   /*if (!setName) {
     // ❌ No test provided → hide UI
@@ -556,6 +557,17 @@ body {
 
 	function goToLeaderboard() {
 	  window.open(`leaderboard.html?set=${setName}`, "_blank");
+	}
+
+	function clearMessage() {
+	    const container = document.getElementById("custom-message");
+	    if (container) container.innerHTML = "";
+	}
+
+	function isValidSet(setName) {
+	    const setNumber = parseInt(setName);
+	    // must be a number + must exist in your allowed list
+	    return !isNaN(setNumber) && AVAILABLE_SETS.includes(setNumber);
 	}
 </script>
 
