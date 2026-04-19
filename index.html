@@ -487,15 +487,23 @@ body {
     }
   });
 
-  // 🚀 INITIAL LOAD LOGIC
-  	if (!isValidSet(setName)) {
-		document.getElementById("set-selection").style.display = "flex";
-		hideTestUI();
-		showMessage("📝 Select a valid mock test to begin");
-	} else {
-		clearMessage();
-		document.getElementById("set-selection").style.display = "none";
-		loadTest(setName);
+  	if (!setName) {
+	    // 👉 No set provided (normal case)
+	    document.getElementById("set-selection").style.display = "flex";
+	    hideTestUI();
+	    clearMessage(); // ❌ no error message
+	} 
+	else if (!isValidSet(setName)) {
+	    // 👉 Invalid set provided (tampered URL)
+	    document.getElementById("set-selection").style.display = "flex";
+	    hideTestUI();
+	    showMessage("📝 Select a valid mock test to begin");
+	} 
+	else {
+	    // 👉 Valid set → load test
+	    clearMessage();
+	    document.getElementById("set-selection").style.display = "none";
+	    loadTest(setName);
 	}
   
   /*if (!setName) {
