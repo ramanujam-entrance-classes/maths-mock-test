@@ -534,12 +534,18 @@ body {
 }
 
   function showMessage(msg) {
-    const container = document.createElement("div");
-    container.style.textAlign = "center";
-    container.style.marginTop = "50px";
+    let container = document.getElementById("custom-message");
+    // 👉 If not created yet, create once
+    if (!container) {
+        container = document.createElement("div");
+        container.id = "custom-message";
+        container.style.textAlign = "center";
+        container.style.marginTop = "50px";
+        document.querySelector(".quiz-card").appendChild(container);
+    }
+    // 👉 Just update text (no duplication)
     container.innerHTML = `<h3>${msg}</h3>`;
-    document.querySelector(".quiz-card").appendChild(container);
-  }
+}
 
 	function goToLeaderboard() {
 	  window.open(`leaderboard.html?set=${setName}`, "_blank");
