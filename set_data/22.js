@@ -487,7 +487,7 @@ correct: "(C)"
 },
 {
 // Q45
-q: "If the mean of the distribution:<br>
+q: `If the mean of the distribution:<br>
 	<table style="text-align:center;width:80%;border:1px">
 	<tr>
 	<td style="text-align:center">Variate \\(x\\)</td>
@@ -505,7 +505,7 @@ q: "If the mean of the distribution:<br>
 	<td style="text-align:center">1</td> 
 	<td style="text-align:center">2</td>
 	</tr>
-	</table><br>is 2.6, then the value of \\(k\\) is",
+	</table><br>is 2.6, then the value of \\(k\\) is`,
 options: [
 "(A). \\(8\\)",
 "(B). \\(10\\)",
