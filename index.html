@@ -514,20 +514,6 @@ body {
     loadTest(setName);
   }*/
 
-  let CONFIG = null;
-  async function loadConfig() {
-	    const params = new URLSearchParams(window.location.search);
-	    const cmd = params.get("cmd");  
-	
-	    let url = "https://script.google.com/macros/s/AKfycbybHrxfFGve-yIBXsIwZkoiEUZ1UdhMOwhwRusd7UGjBuGrnTNuiBhQr2QasPyHY1Hz/exec?type=sets";  
-	    if (cmd) {
-	        url += `&cmd=${cmd}`;  // Add 'cmd' to the request URL if present
-	    }
-	
-	    const res = await fetch(url);
-	    CONFIG = await res.json();
-	}
-	
   function loadTest(testName) {
 	const heading = document.getElementById("test-heading");
     if (heading) heading.style.display = "block";
@@ -557,10 +543,6 @@ body {
   if (heading) heading.classList.add("hidden");
   if (nameSection) nameSection.classList.add("hidden");
   if (note) note.classList.add("hidden");
-	 
-  /*if (heading) heading.style.display = "none";
-  if (nameSection) nameSection.style.display = "none";
-  if (note) note.style.display = "none";*/
 }
 
   function showMessage(msg) {
