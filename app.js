@@ -136,8 +136,13 @@ function handleGo() {
 }
 
 function loadTest(testName) {
-    const heading = document.getElementById("test-heading");
-    if (heading) heading.style.display = "block";
+    // 🔥 RESET UI PROPERLY FIRST
+    document.getElementById("set-selection").classList.add("hidden");
+    document.getElementById("name-section").classList.remove("hidden");
+    document.getElementById("quiz-content").classList.add("hidden");
+
+    document.getElementById("test-heading")?.classList.remove("hidden");
+    document.getElementById("note-marks")?.classList.remove("hidden");
       
     const script = document.createElement("script");
     script.src = `set_data/${testName}.js`;
