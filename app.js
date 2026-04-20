@@ -10,16 +10,37 @@
 
 let CONFIG = null;
 async function loadConfig() {
-    const params = new URLSearchParams(window.location.search);
-    const cmd = params.get("cmd");  
-    
-    let url = "https://script.google.com/macros/s/AKfycbybHrxfFGve-yIBXsIwZkoiEUZ1UdhMOwhwRusd7UGjBuGrnTNuiBhQr2QasPyHY1Hz/exec?type=sets";  
-    if (cmd) {
-        url += `&cmd=${cmd}`;  // Add 'cmd' to the request URL if present
-    }
+    const SHEET_URL = "https://docs.google.com/spreadsheets/d/1q1i6uIL9uuGI_UXBzNAGcgrdk_lRIm9AVJhkzW8fNR0/gviz/tq?tqx=out:json";
 
-    const res = await fetch(url);
-    CONFIG = await res.json();
+    const res = await fetch(SHEET_URL + "&t=" + Date.now(), { cache: "no-store" });
+    const text = await res.text();
+
+    const json = JSON.parse(text.substring(47).slice(0, -2));
+
+    let rows = json.table.rows.map(r =>
+        r.c.map(c => (c ? c.v : ""))
+    );
+
+    // 👉 remove header row
+    rows.shift();
+
+    const openSets = [];
+    const allSets = [];
+    
+    rows.forEach(r => {
+        const setNum = parseInt(r[0]);
+        const isOpen = String(r[1]).toLowerCase() === "true";
+
+        if (!isNaN(setNum)) {
+            allSets.push(setNum);
+            if (isOpen) openSets.push(setNum);
+        }
+    });
+    CONFIG = {
+        openSets,
+        allSets,
+        isAdmin: false
+    };
     console.log("CONFIG:", CONFIG);
 }
 
@@ -65,6 +86,7 @@ function startAppFlow() {
 }
 
 function renderSets() {
+    const dropdown = document.getElementById("set-dropdown");
     if (!CONFIG || !CONFIG.openSets) {
         console.warn("CONFIG not ready");
         return;
@@ -83,7 +105,15 @@ function renderSets() {
     });
 }
 
+document.getElementById("go-btn").addEventListener("click", handleGo);
+document.addEventListener("DOMContentLoaded", () => {
+    const goBtn = document.getElementById("go-btn");
+    if (goBtn) {
+        goBtn.addEventListener("click", handleGo);
+    }
+});
 function handleGo() {
+    const dropdown = document.getElementById("set-dropdown");
     const selectedSet = dropdown.value;
 
     if (!selectedSet) {
