@@ -14,15 +14,15 @@ async function loadConfig() {
 
     const res = await fetch(SHEET_URL + "&t=" + Date.now(), { cache: "no-store" });
     const text = await res.text();
-
+    const rows = parseSheet(text);
     const json = JSON.parse(text.substring(47).slice(0, -2));
 
-    let rows = json.table.rows.map(r =>
+    /*let rows = json.table.rows.map(r =>
         r.c.map(c => (c ? c.v : ""))
-    );
+    );*/
 
     // 👉 remove header row
-    rows.shift();
+    //rows.shift();
 
     const openSets = [];
     const allSets = [];
@@ -44,6 +44,17 @@ async function loadConfig() {
         isAdmin: false
     };
     console.log("CONFIG:", CONFIG);
+}
+
+function parseSheet(text) {
+    const json = JSON.parse(text.substring(47).slice(0, -2));
+
+    return json.table.rows.map(r => {
+        return {
+            set: r.c[0]?.v,
+            open: r.c[1]?.v
+        };
+    });
 }
 
 function startAppFlow() {
