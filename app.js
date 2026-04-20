@@ -10,7 +10,7 @@
 
 let CONFIG = null;
 async function loadConfig() {
-    const SHEET_URL = "https://docs.google.com/spreadsheets/d/1q1i6uIL9uuGI_UXBzNAGcgrdk_lRIm9AVJhkzW8fNR0/gviz/tq?tqx=out:json";
+    const SHEET_URL = "https://docs.google.com/spreadsheets/d/1q1i6uIL9uuGI_UXBzNAGcgrdk_lRIm9AVJhkzW8fNR0/gviz/tq?sheet=Config&tqx=out:json";
 
     const res = await fetch(SHEET_URL + "&t=" + Date.now(), { cache: "no-store" });
     const text = await res.text();
@@ -86,7 +86,6 @@ function startAppFlow() {
 }
 
 function renderSets() {
-    const dropdown = document.getElementById("set-dropdown");
     if (!CONFIG || !CONFIG.openSets) {
         console.warn("CONFIG not ready");
         return;
