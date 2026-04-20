@@ -448,6 +448,7 @@ body {
   const setName = params.get("set");
   const dropdown = document.getElementById("set-dropdown");
   const goBtn = document.getElementById("go-btn");
+  const cmd = params.get("cmd");
 
   dropdown.addEventListener("change", () => {
 	    if (dropdown.value) {
@@ -571,7 +572,14 @@ body {
 	function isValidSet(setName) {
 	    const setNumber = parseInt(setName);
 	    // must be a number + must exist in your allowed list
-	    return !isNaN(setNumber) && AVAILABLE_SETS.includes(setNumber);
+	    //return !isNaN(setNumber) && AVAILABLE_SETS.includes(setNumber);
+		// must be a number
+    if (isNaN(setNumber)) return false;
+    // ✅ NORMAL MODE → must be in AVAILABLE_SETS
+    if (AVAILABLE_SETS.includes(setNumber)) return true;
+    // ✅ OVERRIDE MODE → allow any set if cmd=xyz
+    if (cmd === "h7BrAhRefi7P") return true;
+    return false;
 	}
 </script>
 
