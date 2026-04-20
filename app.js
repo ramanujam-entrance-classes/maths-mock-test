@@ -29,7 +29,7 @@ async function loadConfig() {
     
     rows.forEach(r => {
         const setNum = parseInt(r[0]);
-        const isOpen = String(r[1]).toLowerCase() === "true";
+        const isOpen = String(r[1]).trim().toLowerCase() === "true";
 
         if (!isNaN(setNum)) {
             allSets.push(setNum);
