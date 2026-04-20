@@ -421,13 +421,6 @@ body {
 </div>
 
 <script>
-  // ✅ CONTROLLED SET LIST
-  const AVAILABLE_SETS = [
-    1,2,3,4,5,6,7,8,9,10,11,12,13,
-    14,15,16
-  ];
-
-  // ✅ MS FORM LINKS (ONLY 1–13)
   const MS_FORM_LINKS = {
     1: "https://forms.cloud.microsoft/r/7hBrDha4iX",
     2: "https://forms.cloud.microsoft/r/JKDJnwhK4u",
@@ -456,102 +449,9 @@ body {
 	        dropdown.style.color = "#999";
 	    }
 	});
+
+  goBtn.addEventListener("click", handleGo);
 	
-  // 🎯 Populate dropdown
-  AVAILABLE_SETS.forEach(set => {
-    const option = document.createElement("option");
-    option.value = set;
-    option.textContent = `Mock Test Set ${set}`;
-    dropdown.appendChild(option);
-  });
-
-  // 🎯 Handle GO click
-  goBtn.addEventListener("click", () => {
-    const selectedSet = dropdown.value;
-
-    if (!selectedSet) {
-      //alert("Please select a test set");
-	  showMessage("📝 Select a mock test to begin");
-      return;
-    }
-	clearMessage();
-	const setNumber = parseInt(selectedSet);
-
-    // 👉 Case 1: MS FORM
-    if (setNumber <= 13) {
-      window.location.href = MS_FORM_LINKS[setNumber];
-    } 
-    // 👉 Case 2: WEBSITE TEST
-    else {
-      window.location.href = `?set=${setNumber}`;
-    }
-  });
-
-  (async function () {
-	    await loadConfig(); 
-	    const setName = new URLSearchParams(window.location.search).get("set");
-	    if (!setName) {
-	        document.getElementById("set-selection").style.display = "flex";
-	        hideTestUI();
-	        clearMessage();
-	        return;
-	    }
-	    const setNum = parseInt(setName);
-	    const exists = CONFIG.allSets.includes(setNum);
-	    if (!exists) {
-	        document.getElementById("set-selection").style.display = "flex";
-	        hideTestUI();
-	        showMessage("📝 Select a valid mock test to begin");
-	        return;
-	    }
-	    const allowed =
-	        CONFIG.isAdmin || CONFIG.openSets.includes(setNum);
-	    if (!allowed) {
-	        document.getElementById("set-selection").style.display = "flex";
-	        hideTestUI();
-	        showMessage("📝 Select a valid mock test to begin");
-	        return;
-	    }
-	    document.getElementById("set-selection").style.display = "none";
-	    clearMessage();
-	    loadTest(setNum);
-	})();
- 
-  let CONFIG = null;
-  async function loadConfig() {
-	    const params = new URLSearchParams(window.location.search);
-	    const cmd = params.get("cmd");  
-	
-	    let url = "https://script.google.com/macros/s/AKfycbybHrxfFGve-yIBXsIwZkoiEUZ1UdhMOwhwRusd7UGjBuGrnTNuiBhQr2QasPyHY1Hz/exec?type=sets";  
-	    if (cmd) {
-	        url += `&cmd=${cmd}`;  // Add 'cmd' to the request URL if present
-	    }
-	
-	    const res = await fetch(url);
-	    CONFIG = await res.json();
-	}
-	
-  function loadTest(testName) {
-	const heading = document.getElementById("test-heading");
-    if (heading) heading.style.display = "block";
-	  
-    const script = document.createElement("script");
-    script.src = `set_data/${testName}.js`;
-
-    script.onload = () => {
-      initApp(window.SET_DATA);
-    };
-
-    script.onerror = () => {
-      // ❌ File not found → hide UI
-      //hideTestUI();
-      showMessage("📝 Invalid set selected");
-	  location.href = window.location.pathname;
-    };
-
-    document.head.appendChild(script);
-  }
-
  function hideTestUI() {
   const heading = document.getElementById("test-heading");
   const nameSection = document.getElementById("name-section");
@@ -560,40 +460,7 @@ body {
   if (heading) heading.classList.add("hidden");
   if (nameSection) nameSection.classList.add("hidden");
   if (note) note.classList.add("hidden");
-	 
-  /*if (heading) heading.style.display = "none";
-  if (nameSection) nameSection.style.display = "none";
-  if (note) note.style.display = "none";*/
 }
-
-  function showMessage(msg) {
-    let container = document.getElementById("custom-message");
-    // 👉 If not created yet, create once
-    if (!container) {
-        container = document.createElement("div");
-        container.id = "custom-message";
-        container.style.textAlign = "center";
-        container.style.marginTop = "30px";
-        document.querySelector(".quiz-card").appendChild(container);
-    }
-    // 👉 Just update text (no duplication)
-    container.innerHTML = `<h3>${msg}</h3>`;
-}
-
-	function goToLeaderboard() {
-	  window.open(`leaderboard.html?set=${setName}`, "_blank");
-	}
-
-	function clearMessage() {
-	    const container = document.getElementById("custom-message");
-	    if (container) container.innerHTML = "";
-	}
-
-	function isValidSet(setName) {
-	    const setNumber = parseInt(setName);
-	    // must be a number + must exist in your allowed list
-	    return !isNaN(setNumber) && AVAILABLE_SETS.includes(setNumber);
-	}
 </script>
 
 <script src="app.js"></script>
