@@ -453,13 +453,17 @@ body {
   goBtn.addEventListener("click", handleGo);*/
 	
  function hideTestUI() {
-  const heading = document.getElementById("test-heading");
+  /*const heading = document.getElementById("test-heading");
   const nameSection = document.getElementById("name-section");
   const note = document.getElementById("note-marks");
 
   if (heading) heading.classList.add("hidden");
   if (nameSection) nameSection.classList.add("hidden");
-  if (note) note.classList.add("hidden");
+  if (note) note.classList.add("hidden");*/
+
+  document.getElementById("test-heading")?.classList.add("hidden");
+  document.getElementById("note-marks")?.classList.add("hidden");
+  document.getElementById("student-display")?.classList.add("hidden");	 
 }
 </script>
 
