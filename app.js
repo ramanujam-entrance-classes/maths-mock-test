@@ -63,6 +63,7 @@ function startAppFlow() {
         document.getElementById("set-selection").style.display = "flex";
         renderSets();
         hideTestUI();
+        document.getElementById("name-section").classList.remove("hidden");
         showMessage("📝 Select a valid mock test to begin");
         return;
     }
@@ -75,6 +76,7 @@ function startAppFlow() {
         document.getElementById("set-selection").style.display = "flex";
         renderSets();
         hideTestUI();
+        document.getElementById("name-section").classList.remove("hidden");
         showMessage("📝 Select a valid mock test to begin");
         return;
     }
