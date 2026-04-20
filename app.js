@@ -12,7 +12,7 @@ let CONFIG = null;
 async function loadConfig() {
     const params = new URLSearchParams(window.location.search);
     const cmd = params.get("cmd");  
-
+    
     let url = "https://script.google.com/macros/s/AKfycbybHrxfFGve-yIBXsIwZkoiEUZ1UdhMOwhwRusd7UGjBuGrnTNuiBhQr2QasPyHY1Hz/exec?type=sets";  
     if (cmd) {
         url += `&cmd=${cmd}`;  // Add 'cmd' to the request URL if present
@@ -20,6 +20,7 @@ async function loadConfig() {
 
     const res = await fetch(url);
     CONFIG = await res.json();
+    console.log("CONFIG:", CONFIG);
 }
 
 function startAppFlow() {
