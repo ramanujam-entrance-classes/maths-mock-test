@@ -128,7 +128,29 @@ function attachEvents() {
     submitBtn.addEventListener('click', submitQuiz);
 }
 
+function showMessage(msg) {
+    let container = document.getElementById("custom-message");
+    // 👉 If not created yet, create once
+    if (!container) {
+        container = document.createElement("div");
+        container.id = "custom-message";
+        container.style.textAlign = "center";
+        container.style.marginTop = "30px";
+        document.querySelector(".quiz-card").appendChild(container);
+    }
+    // 👉 Just update text (no duplication)
+    container.innerHTML = `<h3>${msg}</h3>`;
+}
 
+function goToLeaderboard() {
+  const setName = new URLSearchParams(window.location.search).get("set");
+  window.open(`leaderboard.html?set=${setName}`, "_blank");
+}
+
+function clearMessage() {
+    const container = document.getElementById("custom-message");
+    if (container) container.innerHTML = "";
+}
 
 
 const startBtn = document.getElementById('start-btn');
