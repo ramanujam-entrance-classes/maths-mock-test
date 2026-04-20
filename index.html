@@ -487,33 +487,36 @@ body {
     }
   });
 
-  	if (!setName) {
-	    // 👉 No set provided (normal case)
-	    document.getElementById("set-selection").style.display = "flex";
-	    hideTestUI();
-	    clearMessage(); // ❌ no error message
-	} 
-	else if (!isValidSet(setName)) {
-	    // 👉 Invalid set provided (tampered URL)
-	    document.getElementById("set-selection").style.display = "flex";
-	    hideTestUI();
-	    showMessage("📝 Select a valid mock test to begin");
-	} 
-	else {
-	    // 👉 Valid set → load test
-	    clearMessage();
+  (async function () {
+	    await loadConfig(); 
+	    const setName = new URLSearchParams(window.location.search).get("set");
+	    if (!setName) {
+	        document.getElementById("set-selection").style.display = "flex";
+	        hideTestUI();
+	        clearMessage();
+	        return;
+	    }
+	    const setNum = parseInt(setName);
+	    const exists = CONFIG.allSets.includes(setNum);
+	    if (!exists) {
+	        document.getElementById("set-selection").style.display = "flex";
+	        hideTestUI();
+	        showMessage("📝 Select a valid mock test to begin");
+	        return;
+	    }
+	    const allowed =
+	        CONFIG.isAdmin || CONFIG.openSets.includes(setNum);
+	    if (!allowed) {
+	        document.getElementById("set-selection").style.display = "flex";
+	        hideTestUI();
+	        showMessage("📝 Select a valid mock test to begin");
+	        return;
+	    }
 	    document.getElementById("set-selection").style.display = "none";
-	    loadTest(setName);
-	}
-  
-  /*if (!setName) {
-    // ❌ No test provided → hide UI
-    hideTestUI();
-  showMessage("📝 Select a mock test to begin");
-  } else {
-    loadTest(setName);
-  }*/
-
+	    clearMessage();
+	    loadTest(setNum);
+	})();
+ 
   let CONFIG = null;
   async function loadConfig() {
 	    const params = new URLSearchParams(window.location.search);
@@ -533,7 +536,7 @@ body {
     if (heading) heading.style.display = "block";
 	  
     const script = document.createElement("script");
-    script.src = `set_data/${setName}.js`;
+    script.src = `set_data/${testName}.js`;
 
     script.onload = () => {
       initApp(window.SET_DATA);
