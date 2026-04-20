@@ -1,8 +1,3 @@
-(async function () {
-    await loadConfig();
-    initAppFlow();
-})();
-
 let questions = [];
 let quizTitle = "";
 
