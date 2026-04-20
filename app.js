@@ -27,10 +27,12 @@ async function loadConfig() {
     const openSets = [];
     const allSets = [];
     
-    rows.forEach(r => {
+    rows.forEach((r, i) => {
         const setNum = parseInt(r[0]);
         const isOpen = String(r[1]).trim().toLowerCase() === "true";
-
+    
+        console.log(`Row ${i}:`, r, "=> set:", setNum, "open:", isOpen);
+    
         if (!isNaN(setNum)) {
             allSets.push(setNum);
             if (isOpen) openSets.push(setNum);
