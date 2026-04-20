@@ -1,6 +1,11 @@
 (async function () {
     await loadConfig();
-    startAppFlow();
+    // safety check
+    if (!CONFIG || !CONFIG.openSets) {
+        showMessage("Config failed to load");
+        return;
+    }
+    startAppFlow()
 })();
 
 let CONFIG = null;
@@ -21,8 +26,9 @@ function startAppFlow() {
     const setName = new URLSearchParams(window.location.search).get("set");
     // 👉 No set → show selection screen
     if (!setName) {
+        const dropdown = document.getElementById("set-dropdown");
+        if (dropdown) renderSets();
         document.getElementById("set-selection").style.display = "flex";
-        renderSets();
         hideTestUI();
         clearMessage();
         return;
@@ -58,8 +64,16 @@ function startAppFlow() {
 }
 
 function renderSets() {
+    if (!CONFIG || !CONFIG.openSets) {
+        console.warn("CONFIG not ready");
+        return;
+    }
+    const dropdown = document.getElementById("set-dropdown");
+    if (!dropdown) {
+        console.warn("Dropdown not found");
+        return;
+    }
     dropdown.innerHTML = `<option value="">Select Mock Test</option>`;
-
     CONFIG.openSets.forEach(set => {
         const option = document.createElement("option");
         option.value = set;
