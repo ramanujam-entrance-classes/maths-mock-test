@@ -1,40 +1,135 @@
 (async function () {
     await loadConfig();
-    initAppFlow();
+    startAppFlow();
 })();
+
+let CONFIG = null;
+async function loadConfig() {
+    const params = new URLSearchParams(window.location.search);
+    const cmd = params.get("cmd");  
+
+    let url = "https://script.google.com/macros/s/AKfycbybHrxfFGve-yIBXsIwZkoiEUZ1UdhMOwhwRusd7UGjBuGrnTNuiBhQr2QasPyHY1Hz/exec?type=sets";  
+    if (cmd) {
+        url += `&cmd=${cmd}`;  // Add 'cmd' to the request URL if present
+    }
+
+    const res = await fetch(url);
+    CONFIG = await res.json();
+}
+
+function startAppFlow() {
+    const setName = new URLSearchParams(window.location.search).get("set");
+    // 👉 No set → show selection screen
+    if (!setName) {
+        document.getElementById("set-selection").style.display = "flex";
+        renderSets();
+        hideTestUI();
+        clearMessage();
+        return;
+    }
+    const setNum = parseInt(setName);
+    // 👉 Check if set exists in system
+    const exists = CONFIG.allSets.includes(setNum);
+    if (!exists) {
+        document.getElementById("set-selection").style.display = "flex";
+        renderSets();
+        hideTestUI();
+        showMessage("📝 Select a valid mock test to begin");
+        return;
+    }
+
+    // 👉 Access rule (admin override included)
+    const allowed =
+        CONFIG.isAdmin || CONFIG.openSets.includes(setNum);
+
+    if (!allowed) {
+        document.getElementById("set-selection").style.display = "flex";
+        renderSets();
+        hideTestUI();
+        showMessage("📝 Select a valid mock test to begin");
+        return;
+    }
+
+    // 👉 VALID → now load test data
+    document.getElementById("set-selection").style.display = "none";
+    clearMessage();
+
+    loadTest(setNum); // IMPORTANT: your existing function
+}
+
+function renderSets() {
+    dropdown.innerHTML = `<option value="">Select Mock Test</option>`;
+
+    CONFIG.openSets.forEach(set => {
+        const option = document.createElement("option");
+        option.value = set;
+        option.textContent = `Mock Test Set ${set}`;
+        dropdown.appendChild(option);
+    });
+}
+
+function handleGo() {
+    const selectedSet = dropdown.value;
+
+    if (!selectedSet) {
+        showMessage("📝 Select a mock test to begin");
+        return;
+    }
+
+    const setNumber = parseInt(selectedSet);
+
+    // MS FORM route
+    if (setNumber <= 13 && MS_FORM_LINKS[setNumber]) {
+        window.location.href = MS_FORM_LINKS[setNumber];
+        return;
+    }
+
+    // Web test route
+    window.location.href = `?set=${setNumber}`;
+}
+
+function loadTest(testName) {
+    const heading = document.getElementById("test-heading");
+    if (heading) heading.style.display = "block";
+      
+    const script = document.createElement("script");
+    script.src = `set_data/${testName}.js`;
+    
+    script.onload = () => {
+      initApp(window.SET_DATA);
+    };
+    
+    script.onerror = () => {
+      // ❌ File not found → hide UI
+      //hideTestUI();
+      showMessage("📝 Invalid set selected");
+      location.href = window.location.pathname;
+    };
+    
+    document.head.appendChild(script);
+}
 
 let questions = [];
 let quizTitle = "";
 
 function initApp(data) {
     questions = data.questions;
-    const setName = new URLSearchParams(window.location.search).get("set");
-    
-    // show heading again (in case hidden before)
-    /*const heading = document.getElementById("test-heading");
-    if (heading) {
-        heading.style.display = "block";   // ensure visible
-        heading.style.visibility = "visible"; // extra safety
-    }*/
-    const heading = document.getElementById("test-heading");
-    const nameSection = document.getElementById("name-section");
-    const note = document.getElementById("note-marks");
-
-    if (heading) heading.classList.remove("hidden");
-    if (nameSection) nameSection.classList.remove("hidden");
-    if (note) note.classList.remove("hidden");
-
-    // update title
-    document.title = data.title;
-    document.querySelector("#test-heading span").innerHTML = `<a href="leaderboard.html?set=${setName}" target="_blank" style="color:#0033cc; text-decoration:none;">${data.title}</a>`;
-
     attachEvents();
+    const setName = new URLSearchParams(window.location.search).get("set");
+    document.title = data.title;
+    document.querySelector("#test-heading span").innerHTML =
+        `<a href="leaderboard.html?set=${setName}" target="_blank" style="color:#0033cc; text-decoration:none;">
+        ${data.title}</a>`;
+    
 }
 
 function attachEvents() {
     startBtn.addEventListener('click', startQuiz);
     submitBtn.addEventListener('click', submitQuiz);
 }
+
+
+
 
 const startBtn = document.getElementById('start-btn');
 const quizContent = document.getElementById('quiz-content');
