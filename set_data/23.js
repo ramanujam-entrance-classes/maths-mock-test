@@ -402,9 +402,9 @@ correct: "(D)"
 },
 { //Q35
 q: `If \\(U_n = \\begin{vmatrix}
-n & 1 & 5 \\\\
-n^2 & 2n+1 & 2n+1 \\\\
-n^3 & 3n^2 & 3n
+N & 1 & 5 \\\\
+N^2 & 2N+1 & 2N+1 \\\\
+N^3 & 3N^2 & 3N
 \\end{vmatrix}\\), then \\(\\sum_{n=1}^{N} U_n\\) is equal to`,
 options: [
 "(A). \\(N\\)",
