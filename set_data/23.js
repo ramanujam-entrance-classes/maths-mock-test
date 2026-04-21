@@ -134,7 +134,7 @@ window.SET_DATA = {
 
 // Q12
 {
-  q: "\\( \\lim_{x \\to \\infty}\\left(x+\\frac{1}{x + 1})^{2x+1} \\) is",
+  q: "\\( \\lim_{x \\to \\infty}\\left(x+\\frac{1}{x + 1} \\right)^{2x+1} \\) is",
   options: [
     "(A). \\( e \\)",
     "(B). \\( e^{-2} \\)",
@@ -360,241 +360,225 @@ window.SET_DATA = {
 },
 // Q31
 {
-  q: "The number of distinct real solutions of the equation \\( |2x - 5| + |x + 2| = 11 \\) is",
-  options: [
-    "(A). 1",
-    "(B). 2",
-    "(C). 3",
-    "(D). 4"
-  ],
-  correct: "(B)"
+q: "The values of \\(x\\) and \\(y\\) in the simultaneous equations \\(xy = 3y^2 - x + 4y - 7 = 0\\) and \\(2xy + y^2 - 2x - 2y + 1 = 0\\) are",
+options: [
+"(A). \\((3, 4)\\)",
+"(B). \\((2, -3)\\)",
+"(C). \\((1, 5)\\)",
+"(D). \\((2, 3)\\)"
+],
+correct: "(B)"
 },
-
-// Q32
+	  //Q32
 {
-  q: "The equation \\( x^2 + 2kx + 3 = 0 \\) has two distinct real roots. Then the value of \\( k \\) lies in the range",
-  options: [
-    "(A). \\( k < 0 \\)",
-    "(B). \\( k > 0 \\)",
-    "(C). \\( k > 2 \\)",
-    "(D). \\( -3 < k < 3 \\)"
-  ],
-  correct: "(D)"
+q: "Let \\(T_n\\) denote the number of triangles which can be formed using the vertices of a regular polygon of \\(n\\) sides. If \\(T_{n+1} - T_n = 21\\), then \\(n\\) equals",
+options: [
+"(A). \\(5\\)",
+"(B). \\(7\\)",
+"(C). \\(6\\)",
+"(D). \\(14\\)"
+],
+correct: "(B)"
 },
-
-// Q33
-{
-  q: "If \\( x = 0, 1, 2 \\) are the roots of the cubic equation \\( x^3 + 2x^2 + 3x + 4 = 0 \\), then the value of \\( p + q + r \\) is",
-  options: [
-    "(A). 1",
-    "(B). 0",
-    "(C). -1",
-    "(D). -2"
-  ],
-  correct: "(B)"
+{ //Q33
+q: "Number of divisors of the form \\(4n + 2\\) \\((n \\ge 0)\\) of the integer \\(240\\) is",
+options: [
+"(A). \\(4\\)",
+"(B). \\(8\\)",
+"(C). \\(10\\)",
+"(D). \\(3\\)"
+],
+correct: "(A)"
 },
-
-// Q34
-{
-  q: "If the area of the triangle with vertices at the points \\( (0,0), (1, 1) \\) and \\( (a, b) \\) is 1, then the value of \\( a + b \\) is",
-  options: [
-    "(A). 1",
-    "(B). 2",
-    "(C). 0",
-    "(D). -1"
-  ],
-  correct: "(C)"
+{	//Q34
+q: "For \\(2 \\le r \\le n\\), \\(\\binom{n}{r} + 2\\binom{n}{r-1} + \\binom{n+2}{r}\\) is equal to",
+options: [
+"(A). \\(\\binom{n+1}{r-1}\\)",
+"(B). \\(2\\binom{n+1}{r+1}\\)",
+"(C). \\(2\\binom{n+2}{r}\\)",
+"(D). \\(\\binom{n+2}{r}\\)"
+],
+correct: "(D)"
 },
-
-// Q35
-{
-  q: "The equation of a hyperbola is \\( \\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1 \\). The asymptotes of the hyperbola are given by",
-  options: [
-    "(A). \\( y = \\pm \\frac{b}{a} x \\)",
-    "(B). \\( y = \\pm \\frac{a}{b} x \\)",
-    "(C). \\( y = \\pm x \\)",
-    "(D). None of these"
-  ],
-  correct: "(A)"
+{ //Q35
+q: `If \\(U_n = \\begin{vmatrix}
+n & 1 & 5 \\\\
+n^2 & 2n+1 & 2n+1 \\\\
+n^3 & 3n^2 & 3n
+\\end{vmatrix}\\), then \\(\\sum_{n=1}^{N} U_n\\) is equal to`,
+options: [
+"(A). \\(N\\)",
+"(B). \\(N+1\\)",
+"(C). \\(N+2\\)",
+"(D). \\(0\\)"
+],
+correct: "(D)"
 },
-
-// Q36
-{
-  q: "The value of \\( \\log_3 (81) + \\log_3 (3) \\) is",
-  options: [
-    "(A). 3",
-    "(B). 4",
-    "(C). 5",
-    "(D). 6"
-  ],
-  correct: "(B)"
+{	//Q36
+q: `The value of the determinant \\(\\begin{vmatrix}
+1+a & 1 & 1 \\\\
+1 & 1+a & 1 \\\\
+1 & 1 & 1+a
+\\end{vmatrix}\\) is`,
+options: [
+"(A). \\(a^3\\left(1 - \\frac{2}{a}\\right)\\)",
+"(B). \\(a^3\\left(1 + \\frac{3}{a}\\right)\\)",
+"(C). \\(a^3\\left(1 - \\frac{3}{a}\\right)\\)",
+"(D). \\(a^3\\left(1 + \\frac{2}{a}\\right)\\)"
+],
+correct: "(B)"
 },
-
 // Q37
 {
-  q: "If the roots of the quadratic equation \\( ax^2 + bx + c = 0 \\) are real and distinct, then the discriminant of the equation is",
-  options: [
-    "(A). \\( b^2 - 4ac > 0 \\)",
-    "(B). \\( b^2 - 4ac = 0 \\)",
-    "(C). \\( b^2 - 4ac < 0 \\)",
-    "(D). None of the above"
-  ],
-  correct: "(A)"
+q: "If mean = \\((3 \\times \\text{median} - \\text{mode})\\) k then k is equal to",
+options: [
+"(A). \\(1\\)",
+"(B). \\(2\\)",
+"(C). \\(\\frac{1}{2}\\)",
+"(D). \\(\\frac{3}{2}\\)"
+],
+correct: "(C)"
 },
-
-// Q38
+	  // Q38
 {
-  q: "If \\( x = 2 \\) is a root of the equation \\( 3x^2 - 7x + 4 = 0 \\), then the other root of the equation is",
-  options: [
-    "(A). \\( \\frac{4}{3} \\)",
-    "(B). \\( \\frac{3}{4} \\)",
-    "(C). 1",
-    "(D). 2"
-  ],
-  correct: "(C)"
+q: "If \\(\\alpha + \\beta = \\frac{\\pi}{2}\\) and \\(\\beta + \\gamma = \\alpha\\), then \\(\\tan \\alpha\\) equals",
+options: [
+"(A). \\(2(\\tan \\beta + \\tan \\gamma)\\)",
+"(B). \\(\\tan \\beta + \\tan \\gamma\\)",
+"(C). \\(\\tan \\beta + 2 \\tan \\gamma\\)",
+"(D). \\(2 \\tan \\beta + \\tan \\gamma\\)"
+],
+correct: "(C)"
 },
-
-// Q39
+	  // Q39
 {
-  q: "The value of the determinant \\( \\begin{vmatrix} 2 & 4 & 6 \\ 3 & 6 & 9 \\ 1 & 2 & 3 \\end{vmatrix} \\) is",
-  options: [
-    "(A). 0",
-    "(B). 1",
-    "(C). 2",
-    "(D). 3"
-  ],
-  correct: "(A)"
+q: "In a triangle \\(ABC\\), the angle \\(B\\) is greater than angle \\(A\\). If the values of the angles \\(A\\) and \\(B\\) satisfy the equation \\(3 \\sin x - 4 \\sin^3 x - k = 0\\), \\(0 < k < 1\\), then value of \\(C\\) is",
+options: [
+"(A). \\(\\frac{\\pi}{3}\\)",
+"(B). \\(\\frac{\\pi}{2}\\)",
+"(C). \\(\\frac{2\\pi}{3}\\)",
+"(D). \\(\\frac{5\\pi}{6}\\)"
+],
+correct: "(C)"
 },
-
-// Q40
+	  //Q40
 {
-  q: "The area of the triangle with vertices at the points \\( (1,2), (2,3), (3,4) \\) is",
-  options: [
-    "(A). 0",
-    "(B). 1",
-    "(C). 2",
-    "(D). 3"
-  ],
-  correct: "(A)"
+q: "The A.M. of \\(n\\) numbers of a series is \\(\\overline{X}\\). If the sum of first \\((n - 1)\\) terms is \\(k\\), then nth number is",
+options: [
+"(A). \\(\\overline{X} - k\\)",
+"(B). \\(n\\overline{X} - k\\)",
+"(C). \\(\\overline{X} - nk\\)",
+"(D). \\(n\\overline{X} - nk\\)"
+],
+correct: "(B)"
 },
-// Q41
-{
-  q: "If the roots of the equation \\( x^2 + px + q = 0 \\) are real and equal, then the value of \\( p^2 - 4q \\) is",
-  options: [
-    "(A). 0",
-    "(B). 1",
-    "(C). -1",
-    "(D). None of these"
-  ],
-  correct: "(A)"
+{	//Q41
+q: "The mean of a set of numbers is \\(\\overline{X}\\). If each number is divided by \\(3\\), then the new mean is",
+options: [
+"(A). \\(\\overline{X}\\)",
+"(B). \\(\\overline{X} + 3\\)",
+"(C). \\(3\\overline{X}\\)",
+"(D). \\(\\frac{\\overline{X}}{3}\\)"
+],
+correct: "(D)"
 },
-
-// Q42
-{
-  q: "The sum of the first \\( n \\) terms of the arithmetic series \\( 2, 5, 8, 11, \\dots \\) is",
-  options: [
-    "(A). \\( 3n \\)",
-    "(B). \\( 3n - 1 \\)",
-    "(C). \\( 3n + 1 \\)",
-    "(D). None of these"
-  ],
-  correct: "(B)"
+{	//Q42
+q: "Karl-Pearson’s coefficient of skewness of a distribution is \\(0.32\\). Its S.D. is \\(6.5\\) and mean \\(39.6\\). The median of the distribution is given by",
+options: [
+"(A). \\(28.61\\)",
+"(B). \\(38.91\\)",
+"(C). \\(29.13\\)",
+"(D). \\(28.31\\)"
+],
+correct: "(B)"
 },
-
-// Q43
+	  // Q43
 {
-  q: "The area of a sector of a circle with radius \\( r \\) and angle \\( \\theta \\) is",
-  options: [
-    "(A). \\( r^2 \\theta \\)",
-    "(B). \\( \\frac{r^2 \\theta}{2} \\)",
-    "(C). \\( r^2 \\sin \\theta \\)",
-    "(D). \\( \\frac{r^2 \\sin \\theta}{2} \\)"
-  ],
-  correct: "(B)"
+q: "An unbiased die with faces 1, 2, 3, 4, 5 and 6 is round 4 times. Out of four face values obtained the probability that the minimum face value is not less than 2 and the maximum face value is not greater than 5 is",
+options: [
+"(A). \\(\\frac{16}{81}\\)",
+"(B). \\(\\frac{1}{81}\\)",
+"(C). \\(\\frac{80}{81}\\)",
+"(D). \\(\\frac{65}{81}\\)"
+],
+correct: "(A)"
 },
-
-// Q44
+	  //Q44
 {
-  q: "If the equation \\( x^2 + 4x + 5 = 0 \\) has complex roots, then the value of the discriminant is",
-  options: [
-    "(A). 16",
-    "(B). -16",
-    "(C). 9",
-    "(D). 0"
-  ],
-  correct: "(B)"
+q: "Three of the six vertices of a regular hexagon are chosen at random. The possibility that the triangle with three vertices is equilateral, equals",
+options: [
+"(A). \\(\\frac{1}{2}\\)",
+"(B). \\(\\frac{1}{5}\\)",
+"(C). \\(\\frac{1}{10}\\)",
+"(D). \\(\\frac{1}{20}\\)"
+],
+correct: "(C)"
 },
-
-// Q45
+	  //Q45
 {
-  q: "The inverse of the matrix \\( A = \\begin{pmatrix} 1 & 2 \\ 3 & 4 \\end{pmatrix} \\) is",
-  options: [
-    "(A). \\( \\begin{pmatrix} -2 & 1 \\ 1.5 & -0.5 \\end{pmatrix} \\)",
-    "(B). \\( \\begin{pmatrix} 1 & -2 \\ -3 & 4 \\end{pmatrix} \\)",
-    "(C). \\( \\begin{pmatrix} 2 & -1 \\ -1.5 & 0.5 \\end{pmatrix} \\)",
-    "(D). None of these"
-  ],
-  correct: "(A)"
+q: "The probability of 'INFOSYS' winning a test match against 'WIPRO' is \\(\\frac{1}{2}\\). Assuming independence from match to match, the probability that in a 5 match series 'INFOSYS's second win occurs at third test is",
+options: [
+"(A). \\(\\frac{1}{8}\\)",
+"(B). \\(\\frac{1}{4}\\)",
+"(C). \\(\\frac{1}{2}\\)",
+"(D). \\(\\frac{2}{3}\\)"
+],
+correct: "(C)"
 },
-
-// Q46
+	  //Q46
 {
-  q: "The sum of the angles of a quadrilateral is",
-  options: [
-    "(A). 180\\degree",
-    "(B). 360\\degree",
-    "(C). 270\\degree",
-    "(D). 90\\degree"
-  ],
-  correct: "(B)"
+q: "Let \\(T_r\\) be the \\(r^{th}\\) term of an A.P., for \\(r = 1, 2, 3, \\ldots\\). If for some positive integers \\(m, n\\) we have \\(T_m = \\frac{1}{n}\\) and \\(T_n = \\frac{1}{m}\\) then \\(T_{mn}\\) equals",
+options: [
+"(A). \\(\\frac{1}{mn}\\)",
+"(B). \\(\\frac{1}{m} + \\frac{1}{n}\\)",
+"(C). \\(1\\)",
+"(D). \\(0\\)"
+],
+correct: "(C)"
 },
-
-// Q47
+	  //Q47
 {
-  q: "If the perimeter of a circle is \\( 2\\pi r \\), then the area of the circle is",
-  options: [
-    "(A). \\( r^2 \\)",
-    "(B). \\( \\pi r^2 \\)",
-    "(C). \\( 2 \\pi r \\)",
-    "(D). \\( 4 \\pi r^2 \\)"
-  ],
-  correct: "(B)"
+q: "The value of \\(0.\\overline{423}\\) is",
+options: [
+"(A). \\(\\frac{419}{999}\\)",
+"(B). \\(\\frac{419}{990}\\)",
+"(C). \\(\\frac{423}{1000}\\)",
+"(D). none of these"
+],
+correct: "(B)"
 },
-
-// Q48
+	  //Q48
 {
-  q: "In a right-angled triangle, the hypotenuse is 10 units and one of the legs is 6 units. The other leg is",
-  options: [
-    "(A). 6",
-    "(B). 8",
-    "(C). 7",
-    "(D). 4"
-  ],
-  correct: "(B)"
+q: "The value of the sum \\(\\sum_{n=1}^{13} (i^n + i^{n+1})\\), where \\(i = \\sqrt{-1}\\), equals",
+options: [
+"(A). \\(i\\)",
+"(B). \\(i - 1\\)",
+"(C). \\(-i\\)",
+"(D). \\(0\\)"
+],
+correct: "(B)"
 },
-
-// Q49
+	  //Q49
 {
-  q: "The value of \\( \\int_0^1 e^x dx \\) is",
-  options: [
-    "(A). 1",
-    "(B). \\( e - 1 \\)",
-    "(C). \\( e + 1 \\)",
-    "(D). 0"
-  ],
-  correct: "(B)"
-},
-
-// Q50
+q: "For the equation \\(3x^2 + px + 3 = 0\\), \\(p > 0\\) if one of the roots is square of the other, then \\(p\\) is equal to",
+options: [
+"(A). \\(\\frac{1}{3}\\)",
+"(B). \\(1\\)",
+"(C). \\(3\\)",
+"(D). \\(\\frac{2}{3}\\)"
+],
+correct: "(C)"
+}
+	  //Q50
 {
-  q: "The integral \\( \\int_0^1 x^2 dx \\) equals",
-  options: [
-    "(A). \\( \\frac{1}{3} \\)",
-    "(B). \\( \\frac{1}{2} \\)",
-    "(C). 1",
-    "(D). \\( \\frac{1}{4} \\)"
-  ],
-  correct: "(A)"
+q: "If \\(f(x) = \\begin{cases} e^{\\cos x} \\cdot \\sin x & \\text{for } |x| \\le 2 \\\\ 2 & \\text{otherwise} \\end{cases}\\), then \\(\\int_{-2}^{3} f(x) \\, dx\\) is equal to",
+options: [
+"(A). \\(0\\)",
+"(B). \\(1\\)",
+"(C). \\(2\\)",
+"(D). \\(3\\)"
+],
+correct: "(C)"
 }
  ]
 };
