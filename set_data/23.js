@@ -430,7 +430,7 @@ correct: "(B)"
 },
 // Q37
 {
-q: "If mean = \\((3 \\times \\text{median} - \\text{mode})\\) k then k is equal to",
+q: "If mean = \\((3 \\times \\text{median} - \\text{mode})\\)\\(k\\) then \\(k\\) is equal to",
 options: [
 "(A). \\(1\\)",
 "(B). \\(2\\)",
