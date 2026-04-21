@@ -568,7 +568,7 @@ options: [
 "(D). \\(\\frac{2}{3}\\)"
 ],
 correct: "(C)"
-}
+},
 	  //Q50
 {
 q: "If \\(f(x) = \\begin{cases} e^{\\cos x} \\cdot \\sin x & \\text{for } |x| \\le 2 \\\\ 2 & \\text{otherwise} \\end{cases}\\), then \\(\\int_{-2}^{3} f(x) \\, dx\\) is equal to",
