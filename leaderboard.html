@@ -367,7 +367,7 @@ function renderLeaderboard() {
     <div class="rank">${rankIcon}</div>
 
     <div class="col name">${row[0]}
-      <div class="timestamp">🕒 ${(row[3] || "").replace("T-", "")}</div>
+      <div class="timestamp">🕒 ${((row[3] || "").toString()).replace("T-", "")}</div>
     </div>
 
     <div class="col score-block">
