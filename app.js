@@ -236,7 +236,7 @@ function submitQuiz() {
       	studentName,
       	scoredMarks,
       	currentTestName,
-      	`${timeTakenMinutes}:${timeTakenSecs}`
+      	`${timeTakenMinutes}:${timeTakenSecs < 10 ? '0' : ''}${timeTakenSecs}`
     	);
     document.getElementById("leaderboard-btn").classList.remove("hidden");
 }
