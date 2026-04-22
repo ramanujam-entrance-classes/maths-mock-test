@@ -273,23 +273,18 @@ function isToday(sheetValue) {
 }
 
 
-  function formatTime(value) {
-  if (!value) return "-";
+  function formatTimeShort(val) {
+  if (!val) return "-";
 
-  if (typeof value === "string" && value.includes("Date(")) {
-    const parts = value.match(/\d+/g);
+  // remove T- prefix if present
+  val = val.toString().replace("T-", "");
 
-    const hour = parseInt(parts[3] || 0);
-    const min = parseInt(parts[4] || 0);
-    const sec = parseInt(parts[5] || 0);
+  let [min, sec] = val.split(":");
 
-    // convert to mm:ss
-    const totalMinutes = hour * 60 + min;
+  // fix missing seconds / single digit
+  sec = (sec || "0").padStart(2, "0");
 
-    return `${totalMinutes}:${sec < 10 ? '0' : ''}${sec}`;
-  }
-
-  return value;
+  return `${min}m ${sec}s`;
 }
 
 function formatDate(value) {
@@ -367,11 +362,13 @@ function renderLeaderboard() {
     <div class="rank">${rankIcon}</div>
 
     <div class="col name">${row[0]}
-      <div class="timestamp">🕒 ${((row[3]).toString()).replace("T-", "")}</div>
+      <div class="timestamp">🕒 ${formatTimeShort(row[3])}</div>
     </div>
 
     <div class="col score-block">
       <div class="score">${row[1]}/${TOTAL_MARKS}</div>
+      <div class="timestamp">🕒 ${formatTimeShort(row[3])}</div>
+    </div>
       <div class="timestamp"> ${formatDate(row[4])}</div>
     </div>
 
