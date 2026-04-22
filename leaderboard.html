@@ -293,7 +293,9 @@ function formatDate(value) {
   // If it's already a readable string
   if (typeof value === "string" && !value.includes("Date(")) {
     const d = new Date(value);
-    return isNaN(d) ? value : d.toLocaleString();
+    return isNaN(d)
+      ? value
+      : d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
   }
 
   // If it's Google Sheets Date(...) format
@@ -310,12 +312,9 @@ function formatDate(value) {
     const sec = Number(match[5] || 0);
 
     const d = new Date(year, month, day, hour, min, sec);
-    return d.toLocaleString();
-  }
 
-  // fallback
-  const d = new Date(value);
-  return isNaN(d) ? "-" : d.toLocaleString();
+    return d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  }
 }
   
 /* =========================
