@@ -236,7 +236,7 @@ function submitQuiz() {
       	studentName,
       	scoredMarks,
       	currentTestName,
-      	`${timeTakenMinutes}:${timeTakenSecs}`
+      	`T-${timeTakenMinutes}:${timeTakenSecs.toString().padStart(2,'0')}`
     	);
     document.getElementById("leaderboard-btn").classList.remove("hidden");
 }
