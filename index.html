@@ -504,7 +504,20 @@ body {
 	    // 👉 Valid set → load test
 	    clearMessage();
 	    document.getElementById("set-selection").style.display = "none";
-	    loadTest(setName);
+	    const seed = params.get("seed");
+
+    // ✅ HANDLE RANDOM MODE FIRST
+    if (setName === "random") {
+        if (!seed) {
+            showMessage("⚠️ Seed missing for random test");
+            return;
+        }
+
+    generateRandomTestWithSeed(parseInt(seed));
+    } 
+    else {
+        loadTest(setName);
+    }
 	}
   
   /*if (!setName) {
