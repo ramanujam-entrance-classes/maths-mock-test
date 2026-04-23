@@ -17,7 +17,7 @@ window.SET_DATA = {
   {
     q: "If \\(X\\) and \\(Y\\) are two sets, then \\(X \\cap (X \\cup Y)\\) equals",
     options: [
-      "(A). \\emptyset",
+      "(A). \\(\\emptyset\\)",
       "(B). X",
       "(C). Y",
       "(D). None"
