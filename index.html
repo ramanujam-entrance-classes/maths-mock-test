@@ -573,6 +573,8 @@ body {
 	    const setNumber = parseInt(setName);
 	    // must be a number + must exist in your allowed list
 	    //return !isNaN(setNumber) && AVAILABLE_SETS.includes(setNumber);
+
+    if (setName === "random") return true;
 		// must be a number
     if (isNaN(setNumber)) return false;
     // ✅ NORMAL MODE → must be in AVAILABLE_SETS
