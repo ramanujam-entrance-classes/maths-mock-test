@@ -34,7 +34,7 @@ window.SET_DATA = {
       "(C). \\(\\frac{49}{150}\\)",
       "(D). \\(\\frac{56}{150}\\)"
     ],
-    correct: "(A)"
+    correct: "(B)"
   },
   
   // Q4
@@ -50,24 +50,14 @@ window.SET_DATA = {
   },
 
   // Q5
-  {
-    q: "A body starts from rest with a uniform acceleration of 8 m/s². Then the time it will take to travel 64 meters is",
-    options: [
-      "(A). 4 seconds",
-      "(B). 8 seconds",
-      "(C). 10 seconds",
-      "(D). 12 seconds"
-    ],
-    correct: "(A)"
-  },
-
+  
   // Q6
   {
-    q: "In a triangle ABC, \\(\\frac{2 \\cos A}{a} + \\frac{2 \\cos B}{b} + \\frac{2 \\cos C}{c} = \\frac{a}{bc} + \\frac{b}{ca} \\)\\(+ \\frac{c}{ab}\\) then the value of angle A in degrees is",
+    q: "In a triangle ABC, \\(\\frac{2 \\cos A}{a} + \\frac{2 \\cos B}{b} + \\frac{2 \\cos C}{c} = \\frac{a}{bc} + \\frac{b}{ca}\\) then the value of angle A in degrees is",
     options: [
-      "(A). \\(135^{\\circ}\\)",
-      "(B). \\(45^{\\circ}\\)",
-      "(C). \\(135^{\\circ}\\)",
+      "(A). \\(90^{\\circ}\\)",
+      "(B). \\(135^{\\circ}\\)",
+      "(C). \\(45^{\\circ}\\)",
       "(D). none of these"
     ],
     correct: "(A)"
@@ -75,7 +65,7 @@ window.SET_DATA = {
 
   // Q7
   {
-    q: "If \\( (a-b) (s-c) = (b-c) (s-a) \\), then \\) r_1, r_2, r_3 \\) are in",
+    q: "If \\( (a-b) (s-c) = (b-c) (s-a) \\), then \\( r_1, r_2, r_3 \\) are in",
     options: [
       "(A). H.P.",
       "(B). G.P.",
@@ -87,9 +77,9 @@ window.SET_DATA = {
 
   // Q8
   {
-    q: "If \\( y = \\sec^{-1} x \\), then \\( \\frac{dy}{dx} \\) is equal to",
+    q: "If \\( y = \\sec^{\\tan^{-1}} x \\), then \\( \\frac{dy}{dx} \\) is equal to",
     options: [
-      "(A). \\( \\frac{x}{\\sqrt{1+x^2}} \\)",
+      "(A). \\( \\frac{x}{1+x^2} \\)",
       "(B). \\( \\frac{1}{\\sqrt{1+x^2}} \\)",
       "(C). \\( \\frac{1}{\\sqrt{1+x^2}} \\)",
       "(D). \\( x / (1 + x^2) \\)"
