@@ -63,7 +63,7 @@ window.SET_DATA = {
 
   // Q6
   {
-    q: "In a triangle ABC, \\(\\frac{2 \\cos A}{a} + \\frac{2 \\cos B}{b} + \\frac{2 \\cos C}{c} = \\frac{a}{bc} + \\frac{b}{ca} + \\frac{c}{ab}\\) then the value of angle A in degrees is",
+    q: "In a triangle ABC, \\(\\frac{2 \\cos A}{a} + \\frac{2 \\cos B}{b} + \\frac{2 \\cos C}{c} = \\frac{a}{bc} + \\frac{b}{ca} \\)\\(+ \\frac{c}{ab}\\) then the value of angle A in degrees is",
     options: [
       "(A). \\(135^{\\circ}\\)",
       "(B). \\(45^{\\circ}\\)",
@@ -241,7 +241,7 @@ window.SET_DATA = {
   },
   // Q21
   {
-    q: "If \\( y + \\frac{y^3}{5} + \\frac{y^5}{5} + \\dots = 2 \\left( x + \\frac{x^3}{3} + \\frac{x^5}{5} + \\dots \\right) \\) then",
+    q: "If \\( y + \\frac{y^3}{5} + \\frac{y^5}{5} + \\dots = 2 ( x + \\frac{x^3}{3} + \\)\\( \\frac{x^5}{5} + \\dots ) \\) then",
     options: [
       "(A). \\( y = 2x \\)",
       "(B). \\( \\log y = 2 \\log x \\)",
@@ -396,7 +396,7 @@ window.SET_DATA = {
 
   // Q34
   {
-    q: "The matrix \\( \\begin{bmatrix} 1 & 2 & 3 \\ 0 & 1 & 4 \\ 0 & 0 & 1 \\end{bmatrix} \\) is",
+    q: "The matrix \\( \\begin{bmatrix} 1 & 2 & 3 \\\\ 0 & 1 & 4 \\\\ 0 & 0 & 1 \\end{bmatrix} \\) is",
     options: [
       "(A). singular",
       "(B). non-singular",
@@ -408,7 +408,7 @@ window.SET_DATA = {
 
   // Q35
   {
-    q: "The determinant of the matrix \\( \\begin{bmatrix} 1 & 1 \\ 1 & 1 \\end{bmatrix} \\\) is",
+    q: "The determinant of the matrix \\( \\begin{bmatrix} 1 & 1 \\\\ 1 & 1 \\end{bmatrix} \\\) is",
     options: [
       "(A). 0",
       "(B). 1",
@@ -420,7 +420,7 @@ window.SET_DATA = {
 
   // Q36
   {
-    q: "The eigenvalues of the matrix \\( \\begin{bmatrix} 4 & 1 \\ 2 & 3 \\end{bmatrix} \\) are",
+    q: "The eigenvalues of the matrix \\( \\begin{bmatrix} 4 & 1 \\\\ 2 & 3 \\end{bmatrix} \\) are",
     options: [
       "(A). 5, 2",
       "(B). 3, 4",
@@ -434,10 +434,10 @@ window.SET_DATA = {
   {
     q: "The Fourier series of a function \\( f(x) \\) defined on \\( [-\\pi, \\pi] \\) can be written as",
     options: [
-      "(A). \\( a_0 + \\sum_{n=1}^{\\infty} a_n \\cos(nx) + b_n \\sin(nx) \\)",
-      "(B). \\( a_0 + \\sum_{n=1}^{\\infty} a_n \\sin(nx) + b_n \\cos(nx) \\)",
-      "(C). \\( a_0 + \\sum_{n=1}^{\\infty} b_n \\cos(nx) + a_n \\sin(nx) \\)",
-      "(D). \\( a_0 + \\sum_{n=1}^{\\infty} b_n \\sin(nx) + a_n \\cos(nx) \\)"
+      "(A). \\( a_0 + \\sum_{n=1}^{\\infty} a_n \\cos(nx) +\\)\\( b_n \\sin(nx) \\)",
+      "(B). \\( a_0 + \\sum_{n=1}^{\\infty} a_n \\sin(nx) + \\)\\(b_n \\cos(nx) \\)",
+      "(C). \\( a_0 + \\sum_{n=1}^{\\infty} b_n \\cos(nx) +\\)\\( a_n \\sin(nx) \\)",
+      "(D). \\( a_0 + \\sum_{n=1}^{\\infty} b_n \\sin(nx) + \\)\\(a_n \\cos(nx) \\)"
     ],
     correct: "(A)"
   },
@@ -481,9 +481,9 @@ window.SET_DATA = {
   {
     q: "The value of \\( \int_{0}^{1} (1 - x^2)^{1/2} dx \\) is",
     options: [
-      "(A). \\( \frac{\pi}{4} \\)",
-      "(B). \\( \frac{\pi}{2} \\)",
-      "(C). \\( \frac{1}{2} \\)",
+      "(A). \\( \\frac{\pi}{4} \\)",
+      "(B). \\( \\frac{\pi}{2} \\)",
+      "(C). \\( \\frac{1}{2} \\)",
       "(D). \\( 1 \\)"
     ],
     correct: "(A)"
@@ -530,9 +530,9 @@ window.SET_DATA = {
     q: "The value of \\( \int_0^1 x^2 \, dx \\) is",
     options: [
       "(A). \\( 1 \\)",
-      "(B). \\( \frac{1}{3} \\)",
-      "(C). \\( \frac{1}{2} \\)",
-      "(D). \\( \frac{1}{4} \\)"
+      "(B). \\( \\frac{1}{3} \\)",
+      "(C). \\( \\frac{1}{2} \\)",
+      "(D). \\( \\frac{1}{4} \\)"
     ],
     correct: "(B)"
   },
@@ -563,7 +563,7 @@ window.SET_DATA = {
 
   // Q48
   {
-    q: "The integral \\( \int_{1}^{2} \frac{dx}{x(x + 1)} \\) can be computed by",
+    q: "The integral \\( \\int_{1}^{2} \\frac{dx}{x(x + 1)} \\) can be computed by",
     options: [
       "(A). substitution method",
       "(B). partial fraction decomposition",
@@ -587,7 +587,7 @@ window.SET_DATA = {
 
   // Q50
   {
-    q: "The solution to the equation //( \log_2(x+3) - \log_2(x-2) = 3 //) is",
+    q: "The solution to the equation \\( \log_2(x+3) - \log_2(x-2) = 3 \\) is",
     options: [
       "(A). \\( x = 5 \\)",
       "(B). \\( x = 7 \\)",
