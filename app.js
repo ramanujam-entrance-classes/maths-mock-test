@@ -289,7 +289,11 @@ function loadSetFile(setNumber) {
         const script = document.createElement("script");
         script.src = `set_data/${setNumber}.js`;
 
-        script.onload = () => resolve(window.SET_DATA);
+        script.onload = () => {
+            const dataCopy = JSON.parse(JSON.stringify(window.SET_DATA)); // ✅ clone
+            resolve(dataCopy);
+        };
+
         script.onerror = () => resolve(null);
 
         document.head.appendChild(script);
@@ -298,9 +302,17 @@ function loadSetFile(setNumber) {
 
 async function generateRandomTestWithSeed(seed) {
 
+    // ✅ SHOW UI FIRST (same as loadTest flow)
+    const heading = document.getElementById("test-heading");
+    const nameSection = document.getElementById("name-section");
+    const note = document.getElementById("note-marks");
+
+    if (heading) heading.classList.remove("hidden");
+    if (nameSection) nameSection.classList.remove("hidden");
+    if (note) note.classList.remove("hidden");
+
     let allQuestions = [];
 
-    // 👉 Load all sets (use your AVAILABLE_SETS)
     for (let set of AVAILABLE_SETS) {
         const data = await loadSetFile(set);
         if (data?.questions) {
@@ -308,13 +320,11 @@ async function generateRandomTestWithSeed(seed) {
         }
     }
 
-    // 👉 Shuffle using seed
     shuffleWithSeed(allQuestions, seed);
 
-    // 👉 Pick 50 questions
     const selected = allQuestions.slice(0, 50);
 
-    // 👉 Start quiz directly
+    // ✅ Now initialize app
     initApp({
         title: `Random Mock Test (${seed})`,
         questions: selected
