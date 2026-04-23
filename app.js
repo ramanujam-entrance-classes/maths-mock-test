@@ -262,3 +262,61 @@ function sendToLeaderboard(name, score, testName, timeTaken) {
   .then(data => console.log("Response:", data))
   .catch(err => console.error("Fetch error:", err));
 }
+
+function seededRandom(seed) {
+    let x = Math.sin(seed++) * 10000;
+    return x - Math.floor(x);
+}
+
+function shuffleWithSeed(array, seed) {
+    let currentIndex = array.length, randomIndex;
+
+    while (currentIndex !== 0) {
+        randomIndex = Math.floor(seededRandom(seed) * currentIndex);
+        seed++;
+
+        currentIndex--;
+
+        [array[currentIndex], array[randomIndex]] =
+        [array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
+}
+
+function loadSetFile(setNumber) {
+    return new Promise((resolve) => {
+        const script = document.createElement("script");
+        script.src = `set_data/${setNumber}.js`;
+
+        script.onload = () => resolve(window.SET_DATA);
+        script.onerror = () => resolve(null);
+
+        document.head.appendChild(script);
+    });
+}
+
+async function generateRandomTestWithSeed(seed) {
+
+    let allQuestions = [];
+
+    // 👉 Load all sets (use your AVAILABLE_SETS)
+    for (let set of AVAILABLE_SETS) {
+        const data = await loadSetFile(set);
+        if (data?.questions) {
+            allQuestions = allQuestions.concat(data.questions);
+        }
+    }
+
+    // 👉 Shuffle using seed
+    shuffleWithSeed(allQuestions, seed);
+
+    // 👉 Pick 50 questions
+    const selected = allQuestions.slice(0, 50);
+
+    // 👉 Start quiz directly
+    initApp({
+        title: `Random Mock Test (${seed})`,
+        questions: selected
+    });
+}
