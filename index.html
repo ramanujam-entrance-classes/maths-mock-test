@@ -420,7 +420,7 @@ body {
     </div>
 </div>
 
-<script>
+<script>/*
   // ✅ CONTROLLED SET LIST
   const AVAILABLE_SETS = [
     1,2,3,4,5,6,7,8,9,10,11,12,13,
@@ -430,13 +430,13 @@ body {
   const NOTALLOWED_SETS = [
     19,20,21,22,23,24
   ];
-  /*
-  fetch('./set.json')
+  */
+  fetch('set.json')
   .then(response => response.json())
   .then(data => {
     const AVAILABLE_SETS = data.AVAILABLE_SETS;
     const NOTALLOWED_SETS = data.NOTALLOWED_SETS;
-  });*/
+  });
 
   // ✅ MS FORM LINKS (ONLY 1–13)
   const MS_FORM_LINKS = {
