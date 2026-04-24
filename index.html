@@ -427,6 +427,10 @@ body {
     14,15,16,17
   ];
 
+  const NOTALLOWED_SETS = [
+    19,20,21,22,23,24
+  ];
+
   // ✅ MS FORM LINKS (ONLY 1–13)
   const MS_FORM_LINKS = {
     1: "https://forms.cloud.microsoft/r/7hBrDha4iX",
@@ -593,7 +597,7 @@ body {
     // ✅ NORMAL MODE → must be in AVAILABLE_SETS
     if (AVAILABLE_SETS.includes(setNumber)) return true;
     // ✅ OVERRIDE MODE → allow any set if cmd=xyz
-    if (cmd === "vXh7xXAhRefxi7P") return true;
+    if (cmd === "vXh7xXAhRefxi7P" && !NOTALLOWED_SETS.includes(setNumber)) return true;
     return false;
 	}
 </script>
