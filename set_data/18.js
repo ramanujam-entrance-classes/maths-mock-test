@@ -324,7 +324,7 @@ correct: "(A)"
 {
 q: "The number of \\(3\\) digit numbers which is divisible by \\(2\\) and \\(3\\) but not divisible by \\(4\\) and \\(9\\)?",
 options: [
-"(A). \\(125\\)",
+"(A). \\(50\\)",
 "(B). \\(150\\)",
 "(C). \\(100\\)",
 "(D). \\(75\\)"
