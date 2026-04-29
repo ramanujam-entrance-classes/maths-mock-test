@@ -609,13 +609,14 @@ body {
 	    // 👉 Valid set → load test
 	    clearMessage();
 	    document.getElementById("set-selection").style.display = "none";
-	    const seed = params.get("seed");
+	    const seedStr = params.get("seed"); 
+		const seedNum = seedStr ? stringToSeed(seedStr) : null;
 		
 		if (setName === "random") {
-		    if (!seed) {
+		    if (!seedStr) {
 			    showMessage("⚠️ Seed missing for random test");
 			} else {
-			    generateRandomTestWithSeed(seed);
+			    generateRandomTestWithSeed(seedNum, seedStr);
 			}
 		} 
 		else {
@@ -624,8 +625,13 @@ body {
 	}
   
   function loadTest(testName) {
+	//const heading = document.getElementById("test-heading");
+    //if (heading) heading.style.display = "block";
 	const heading = document.getElementById("test-heading");
-    if (heading) heading.style.display = "block";
+	if (heading) {
+	    heading.classList.remove("hidden");
+	    heading.innerHTML = `Mathematics Mock Test ${testName}`;
+	}
 	  
     const script = document.createElement("script");
     script.src = `set_data/${setName}.js`;
