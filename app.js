@@ -21,7 +21,12 @@ function initApp(data) {
 
     // update title
     document.title = data.title;
-    document.querySelector("#test-heading span").innerHTML = `<a href="leaderboard.html?set=${setName}" target="_blank" style="color:#0033cc; text-decoration:none;">${data.title}</a>`;
+    if (setName === "random"){
+        document.querySelector("#test-heading span").innerHTML = `<a href="leaderboard.html?set=${window.TEST_SEED_DATE}" target="_blank" style="color:#0033cc; text-decoration:none;">${data.title}</a>`;
+    }
+    else{
+        document.querySelector("#test-heading span").innerHTML = `<a href="leaderboard.html?set=${setName}" target="_blank" style="color:#0033cc; text-decoration:none;">${data.title}</a>`;
+    }
     attachEvents();
 }
 
@@ -324,12 +329,7 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
     const note = document.getElementById("note-marks");
 
     if (heading) {
-         heading.innerHTML = `
-        <a href="leaderboard.html?set=random&seed=${seedStr}" target="_blank" style="text-decoration:none;">
-            📅 Mathematics Mock Test <br>
-            <span style="font-size:18px;">${seedStr}</span>
-        </a>
-    `;
+        heading.classList.remove("hidden");
     }
     if (nameSection) nameSection.classList.remove("hidden");
     if (note) note.classList.remove("hidden");
