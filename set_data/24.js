@@ -218,7 +218,7 @@ window.SET_DATA = {
 
   // Q19
   {
-    q: "Solution of the differential equation \\( 2y \\sin x (dy/dx) = 2 \\sin x \\cos x - y^2 \\cos x \\), \\( x = \\pi/2, y = 1 \\) is given by",
+    q: "Solution of the differential equation \\( 2y \\sin x (\\frac{dy}{dx}) = 2 \\sin x \\cos x - y^2 \\cos x \\), \\( x = \\pi/2, y = 1 \\) is given by",
     options: [
       "(A). \\( y^2 = \\sin x \\)",
       "(B). \\( y = \\sin^2 x \\)",
@@ -536,7 +536,7 @@ correct: "(C)"
 },
 	// Q47
 {
-q: "The harmonic mean of the roots of the equation \\((5+\\sqrt{2})x^2 - (4+\\sqrt{5})x + (8+2\\sqrt{5}) = 0\\) is",
+q: "The harmonic mean of the roots of the equation \\((5+\\sqrt{2})x^2 - (4+\\sqrt{5})x +\\)\\( (8+2\\sqrt{5}) = 0\\) is",
 options: [
 "(A). \\(2\\)",
 "(B). \\(4\\)",
