@@ -330,19 +330,20 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
 
     if (heading) {
         heading.classList.remove("hidden");
-        heading.innerHTML += `<div style="font-size:14px; color:#888;">Loading...</div>`;
+        heading.innerHTML = `<div style="font-size:14px; color:#888;">Loading...</div>`;
     }
     if (nameSection) nameSection.classList.remove("hidden");
     if (note) note.classList.remove("hidden");
 
     let allQuestions = [];
-
-    for (let set of AVAILABLE_SETS) {
-        const data = await loadSetFile(set);
+    const promises = AVAILABLE_SETS.map(set => loadSetFile(set));
+    const results = await Promise.all(promises);
+    
+    results.forEach(data => {
         if (data?.questions) {
             allQuestions = allQuestions.concat(data.questions);
         }
-    }
+    });
 
     shuffleWithSeed(allQuestions, numericSeed);
 
