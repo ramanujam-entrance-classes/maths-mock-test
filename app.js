@@ -143,8 +143,12 @@ function submitQuiz() {
     const labels = ["(A)", "(B)", "(C)", "(D)"];   
     const params = new URLSearchParams(window.location.search);
     const setNo = params.get("set");
-    const currentTestName = `Mathematics Mock Test ${setNo}`;
-
+    let currentTestName;
+    if (setNo === "random") {
+        currentTestName = `Mathematics Mock Test ${window.TEST_SEED_DATE}`;
+    } else {
+        currentTestName = `Mathematics Mock Test ${setNo}`;
+    }
     questions.forEach((qObj, index) => {
         const selected = document.querySelector(`input[name="q${index}"]:checked`);
         const feedback = document.getElementById(`feedback-${index}`);
@@ -308,18 +312,23 @@ function loadSetFile(setNumber) {
     });
 }
 
-async function generateRandomTestWithSeed(seed) {
-    const numericSeed = stringToSeed(seed);
-
-    console.log("Original Seed:", seed);
-    console.log("Numeric Seed:", numericSeed);
+async function generateRandomTestWithSeed(seedNum, seedStr) {
+    //const numericSeed = stringToSeed(seed);
+    const numericSeed = mulberry32(seedNum);
+    window.TEST_SEED_DATE = seedStr;
+    //console.log("Original Seed:", seed);
+    //console.log("Numeric Seed:", numericSeed);
     
     // ✅ SHOW UI FIRST (same as loadTest flow)
     const heading = document.getElementById("test-heading");
     const nameSection = document.getElementById("name-section");
     const note = document.getElementById("note-marks");
 
-    if (heading) heading.classList.remove("hidden");
+    if (heading) {
+        heading.classList.remove("hidden");
+         heading.innerHTML = `📅 Mathematics Mock Test <br>
+        <span style="font-size:18px;">${seedStr}</span>`;
+    }
     if (nameSection) nameSection.classList.remove("hidden");
     if (note) note.classList.remove("hidden");
 
@@ -338,7 +347,7 @@ async function generateRandomTestWithSeed(seed) {
 
     // ✅ Now initialize app
     initApp({
-        title: `Mock Test (${seed})`,
+        title: `📅 Mathematics Mock Test (${seedStr})`,
         questions: selected
     });
 }
