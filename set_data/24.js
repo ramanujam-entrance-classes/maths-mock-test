@@ -50,7 +50,17 @@ window.SET_DATA = {
   },
 
   // Q5
-  
+  {
+	q: "The number of different words that can be formed from the letters of the word 'TRIANGLE' so that no vowels are together is",
+	options: [
+	"(A). \\(7200\\)",
+	"(B). \\(36000\\)",
+	"(C). \\(14400\\)",
+	"(D). \\(1240\\)"
+	],
+	correct: "(C)"
+  },
+	  
   // Q6
   {
     q: "In a triangle ABC, \\(\\frac{2 \\cos A}{a} + \\frac{2 \\cos B}{b} + \\frac{2 \\cos C}{c} = \\frac{a}{bc} + \\frac{b}{ca}\\) then the value of angle A in degrees is",
@@ -77,19 +87,19 @@ window.SET_DATA = {
 
   // Q8
   {
-    q: "If \\( y = \\sec^{\\tan^{-1}} x \\), then \\( \\frac{dy}{dx} \\) is equal to",
+    q: "If \\( y = \\sec{\\tan^{-1}{x}} \\), then \\( \\frac{dy}{dx} \\) is equal to",
     options: [
       "(A). \\( \\frac{x}{1+x^2} \\)",
-      "(B). \\( \\frac{1}{\\sqrt{1+x^2}} \\)",
+      "(B). \\( \\frac{x}{\\sqrt{1+x^2}} \\)",
       "(C). \\( \\frac{1}{\\sqrt{1+x^2}} \\)",
       "(D). \\( x / (1 + x^2) \\)"
     ],
-    correct: "(A)"
+    correct: "(B)"
   },
 
   // Q9
   {
-    q: "If \\( y = e^x \\), then \\( x(1 - y \\log x \\times \\log y) \\frac{dy}{dx} \\) is equal to",
+    q: "If \\( y = a^{x^{a^{x.....\\infty}}} \\), then \\( x(1 - y \\log x \\log y) \\frac{dy}{dx} \\) is equal to",
     options: [
       "(A). \\( y^2 \\log y \\)",
       "(B). \\( y \\log y \\)",
@@ -101,7 +111,7 @@ window.SET_DATA = {
 
   // Q10
   {
-    q: "The value of the parameter \\( \\alpha \\) for which the function \\( f(x) = x \\cdot e^{(1-x)} \\) is",
+    q: "The value of the parameter \\( \\alpha \\) for which the function \\( f(x) = 1 + \\alpha x, \\alpha \\neq 0 \\) is the inverse of itself, is",
     options: [
       "(A). \\( -2 \\)",
       "(B). \\( -1 \\)",
@@ -119,31 +129,31 @@ window.SET_DATA = {
       "(C). increasing on \\( R \\)",
       "(D). decreasing on \\( \\left[ -\\frac{1}{2}, 1 \\right] \\)"
     ],
-    correct: "(C)"
+    correct: "(A)"
   },
 
   // Q12
   {
-    q: "\\( \\lim_{x \\to 0} \\frac{x \\tan 2x - 2x \\tan x}{1 - \\cos 2x} \\) is",
+    q: "\\( \\lim_{x \\to 0} \\frac{x \\tan 2x - 2x \\tan x}{(1 - \\cos 2x)^2} \\) is",
     options: [
       "(A). 2",
       "(B). -2",
       "(C). 1/2",
       "(D). -1/2"
     ],
-    correct: "(C)"
+    correct: "(D)"
   },
 
   // Q13
   {
-    q: "Let \\( f: R \\to R \\) be a function defined by \\( f(x) = \\text{maximum} \\{x, x^2\\} \\), the set of all points where \\( f(x) \\) is not differentiable is",
+    q: "Let \\( f: R \\to R \\) be a function defined by \\( f(x) = \\text{maximum} \\{x, x^3\\} \\). The set of all points where \\( f(x) \\) is not differentiable is",
     options: [
-      "(A). \\( (-1,1) \\)",
-      "(B). \\( (1,0) \\)",
-      "(C). \\( (0,1) \\)",
-      "(D). \\( (-1,0,1) \\)"
+      "(A). \\( {-1,1} \\)",
+      "(B). \\( {1,0} \\)",
+      "(C). \\( {0,1} \\)",
+      "(D). \\( {-1,0,1} \\)"
     ],
-    correct: "(A)"
+    correct: "(C)"
   },
 
   // Q14
@@ -160,7 +170,7 @@ window.SET_DATA = {
 
   // Q15
   {
-    q: "If \\( y = a log x + b x^2 \\) has extremum values at \\( x = -1 \\) and \\( x = 2 \\), then",
+    q: "If \\( y = a log|x| + b x^2 + x \\) has extremum values at \\( x = -1 \\) and \\( x = 2 \\), then",
     options: [
       "(A). \\( a = 2, b = -1/2 \\)",
       "(B). \\( a = 2, b = 1/2 \\)",
@@ -179,7 +189,7 @@ window.SET_DATA = {
       "(C). \\( 1/3 \\)",
       "(D). \\( 1/4 \\)"
     ],
-    correct: "(B)"
+    correct: "(A)"
   },
 
   // Q17
@@ -187,9 +197,9 @@ window.SET_DATA = {
     q: "The value of the integral \\( \\int_{0}^{\\pi} \\frac{1}{a^2 - 2a \\cos x + 1} dx (a < 1) \\) is",
     options: [
       "(A). \\( \\frac{\\pi}{(1 - a^2)} \\)",
-      "(B). \\( \\frac{\\pi}{(a^2 - a)} \\)",
-      "(C). \\( 2\\pi (a^2 - 1) \\)",
-      "(D). \\( \\frac{\\pi}{(a^2 - 1)} \\)"
+      "(B). \\( \\frac{\\pi}{(a^2 - 1)} \\)",
+      "(C). \\( \\frac{2\\pi}{(a^2 - 1)} \\)",
+      "(D). \\( \\frac{3\\pi}{4} \\)"
     ],
     correct: "(A)"
   },
@@ -198,19 +208,19 @@ window.SET_DATA = {
   {
     q: "The area of the loop between the curve \\( y = a \\sin x \\) and the x-axis is",
     options: [
-      "(A). \\( 2a \\)",
+      "(A). \\( a \\)",
       "(B). \\( 2a \\)",
       "(C). \\( 3a \\)",
       "(D). none of these"
     ],
-    correct: "(A)"
+    correct: "(B)"
   },
 
   // Q19
   {
-    q: "Solution of the differential equation \\( 2y \\sin x \\frac{dy}{dx} = 2 \\sin x \\cos x - y^2 \\cos x \\), given \\( x = \\pi/2, y = 1 \\) is",
+    q: "Solution of the differential equation \\( 2y \\sin x (dy/dx) = 2 \\sin x \\cos x - y^2 \\cos x \\), \\( x = \\pi/2, y = 1 \\) is given by",
     options: [
-      "(A). \\( y = \\sin x \\)",
+      "(A). \\( y^2 = \\sin x \\)",
       "(B). \\( y = \\sin^2 x \\)",
       "(C). \\( y^2 = \\cos x + 1 \\)",
       "(D). none of these"
@@ -220,25 +230,25 @@ window.SET_DATA = {
 
   // Q20
   {
-    q: "Let \\( R \\) be a relation defined by \\( R = \\{(a, b), a \\ge b \\} \\) where a and b are real numbers then \\( R \\) is",
+    q: "Let \\( R \\) be a relation defined by \\( R = \\{(a, b), a \\ge b \\} \\) where \\(a\\) and \\(b\\) are real numbers then \\( R \\) is",
     options: [
       "(A). reflexive, symmetric and transitive",
       "(B). reflexive, transitive but not symmetric",
       "(C). symmetric, transitive but not reflexive",
       "(D). neither transitive nor reflexive but symmetric"
     ],
-    correct: "(A)"
+    correct: "(B)"
   },
   // Q21
   {
-    q: "If \\( y + \\frac{y^3}{5} + \\frac{y^5}{5} + \\dots = 2 ( x + \\frac{x^3}{3} + \\)\\( \\frac{x^5}{5} + \\dots ) \\) then",
+    q: "If \\( y + \\frac{y^3}{3} + \\frac{y^5}{5} + \\dots \\infty = 2 ( x + \\frac{x^3}{3} + \\)\\( \\frac{x^5}{5} + \\dots \\infty ) \\) then",
     options: [
       "(A). \\( y = 2x \\)",
       "(B). \\( \\log y = 2 \\log x \\)",
-      "(C). \\( x^3 y = 2x - y \\)",
+      "(C). \\( x^2 y = 2x - y \\)",
       "(D). none of these"
     ],
-    correct: "(A)"
+    correct: "(C)"
   },
 
   // Q22
@@ -250,19 +260,19 @@ window.SET_DATA = {
       "(C). \\( \\mu = 2, \\sigma^2 = 2/3\\)",
       "(D). none of these"
     ],
-    correct: "(C)"
+    correct: "(A)"
   },
 
   // Q23
   {
     q: "A class consists of 80 students. 25 of them are girls and 55 are boys. If 10 of them are rich and the remaining poor and also 20 of them are intelligent then the probability of selecting an intelligent rich girl is",
     options: [
-      "(A). \\( \\frac{5}{128} \\)",
+      "(A). \\( 5/128 \\)",
       "(B). \\( 25/128 \\)",
       "(C). \\( 5/512 \\)",
       "(D). none of these"
     ],
-    correct: "(A)"
+    correct: "(C)"
   },
 
   // Q24
@@ -282,11 +292,11 @@ window.SET_DATA = {
     q: "The incentre of the triangle with vertices \\( (1, \\sqrt{3}), (0, 0), (2, 0) \\) is",
     options: [
       "(A). \\( \\left( 1, \\frac{\\sqrt{3}}{2} \\right) \\)",
-      "(B). \\( \\left( \\frac{2}{3}, \\frac{\\sqrt{3}}{3} \\right) \\)",
-      "(C). \\( \\left( 2/3, \\frac{\\sqrt{3}}{2} \\right) \\)",
-      "(D). \\( (1, -\\frac{1}{\\sqrt{3}}) \\)"
+      "(B). \\( \\left( \\frac{2}{3}, \\frac{1}{\\sqrt{3}} \\right) \\)",
+      "(C). \\( \\left( \\frac{2}{3}, \\frac{\\sqrt{3}}{2} \\right) \\)",
+      "(D). \\( (1, \\frac{1}{\\sqrt{3}}) \\)"
     ],
-    correct: "(B)"
+    correct: "(D)"
   },
 
   // Q26
@@ -298,19 +308,19 @@ window.SET_DATA = {
       "(C). straight line",
       "(D). two intersecting lines"
     ],
-    correct: "(B)"
+    correct: "(A)"
   },
 
   // Q27
   {
-    q: "If \\( \\int \\frac{x^5}{\\sqrt{1 + x^2}} \\ dx \\) is equal to",
+    q: "\\( \\int \\frac{x^5}{\\sqrt{1 + x^3}} \\ dx \\) is equal to",
     options: [
-      "(A). \\( \\frac{2}{3} \\left(1 + x^2 \\right) \\left( x^2 + 2 \\right) \\)",
-      "(B). \\( \\frac{2}{9} \\left(1 + x^2 \\right) \\left( x^3 - 4 \\right) \\)",
-      "(C). \\( \\frac{2}{3} \\left(1 + x^2 \\right) \\left( x^3 - 2 \\right) \\)",
-      "(D). \\( \\frac{2}{9} \\left(1 + x^2 \\right) \\left( x^3 - 2 \\right) \\)"
+      "(A). \\( \\frac{2}{3} \\sqrt{\\left(1 + x^3 \\right) \\left( x^2 + 2 \\right)} \\)",
+      "(B). \\( \\frac{2}{9} \\sqrt{\\left(1 + x^3 \\right) \\left( x^3 - 4 \\right)} \\)",
+      "(C). \\( \\frac{2}{9} \\sqrt{\\left(1 + x^3 \\right) \\left( x^3 + 4 \\right)} \\)",
+      "(D). \\( \\frac{2}{3} \\sqrt{\\left(1 + x^3 \\right)} \\left( x^3 - 2 \\right) \\)"
     ],
-    correct: "(C)"
+    correct: "(D)"
   },
 
   // Q28
@@ -322,269 +332,251 @@ window.SET_DATA = {
       "(C). \\( \\sqrt{3} \\)",
       "(D). \\( \\sqrt{2} \\)"
     ],
-    correct: "(B)"
+    correct: "(D)"
   },
 
   // Q29
   {
-    q: "\\( \\int_{\\pi/2}^{\\pi} \\frac{dx}{2 + \\cos x} \\) is equal to",
+    q: "\\( \\int_{0}^{\\pi/2} \\frac{dx}{2 + \\cos x} \\) is equal to",
     options: [
       "(A). \\( \\frac{1}{\\sqrt{3}} \\tan^{-1} \\left( \\frac{1}{\\sqrt{3}} \\right) \\)",
       "(B). \\( \\frac{2}{\\sqrt{3}} \\tan^{-1} \\left( \\frac{1}{\\sqrt{3}} \\right) \\)",
-      "(C). \\( \\frac{3}{\\sqrt{3}} \\tan^{-1} \\left( \\frac{1}{\\sqrt{3}} \\right) \\)",
-      "(D). \\( \\frac{1}{\\sqrt{3}} \\tan^{-1} (\\sqrt{3}) \\)"
+      "(C). \\( \\sqrt{3} \\tan^{\\sqrt{3}} \\left( \\frac{1}{\\sqrt{3}} \\right) \\)",
+      "(D). \\( 2\\sqrt{3} \\tan^{-1} (\\sqrt{3}) \\)"
     ],
-    correct: "(A)"
+    correct: "(B)"
   },
 
   // Q30
-  {
-    q: "Let \\( R \\) be a relation defined by \\( R = \\{ (a, b), a \\ge b \\} \\) where \\( a \\) and \\( b \\) are real numbers than \\( R \\) is",
-    options: [
-      "(A). reflexive, symmetric and transitive",
-      "(B). reflexive, transitive but not symmetric",
-      "(C). symmetric, transitive but not reflexive",
-      "(D). neither transitive nor reflexive but symmetric"
-    ],
-    correct: "(A)"
-  },
-  // Q31
-  {
-    q: "The number of solutions to the equation \\( |x - 2| + |x - 3| + |x - 5| = 5 \\) is",
-    options: [
-      "(A). 1",
-      "(B). 2",
-      "(C). 3",
-      "(D). 4"
-    ],
-    correct: "(C)"
-  },
-
-  // Q32
-  {
-    q: "If \\( f(x) = x^3 + 3x^2 + 3x + 1 \\), then \\( f'(x) \\) is",
-    options: [
-      "(A). \\( 3x^2 + 6x + 3 \\)",
-      "(B). \\( 3x^2 + 6x \\)",
-      "(C). \\( 6x + 3 \\)",
-      "(D). \\( 3x^2 + 3 \\)"
-    ],
-    correct: "(A)"
-  },
-
-  // Q33
-  {
-    q: "The limit \\( \\lim_{x \\to 0} \\frac{\\sin 3x}{x} \\) is",
-    options: [
-      "(A). \\( 3 \\)",
-      "(B). \\( 1 \\)",
-      "(C). \\( 0 \\)",
-      "(D). undefined"
-    ],
-    correct: "(A)"
-  },
-
-  // Q34
-  {
-    q: "The matrix \\( \\begin{bmatrix} 1 & 2 & 3 \\\\ 0 & 1 & 4 \\\\ 0 & 0 & 1 \\end{bmatrix} \\) is",
-    options: [
-      "(A). singular",
-      "(B). non-singular",
-      "(C). orthogonal",
-      "(D). none of these"
-    ],
-    correct: "(B)"
-  },
-
-  // Q35
-  {
-    q: "The determinant of the matrix \\( \\begin{bmatrix} 1 & 1 \\\\ 1 & 1 \\end{bmatrix} \\\) is",
-    options: [
-      "(A). 0",
-      "(B). 1",
-      "(C). -1",
-      "(D). undefined"
-    ],
-    correct: "(A)"
-  },
-
-  // Q36
-  {
-    q: "The eigenvalues of the matrix \\( \\begin{bmatrix} 4 & 1 \\\\ 2 & 3 \\end{bmatrix} \\) are",
-    options: [
-      "(A). 5, 2",
-      "(B). 3, 4",
-      "(C). 6, 1",
-      "(D). 4, 3"
-    ],
-    correct: "(A)"
-  },
-
-  // Q37
-  {
-    q: "The Fourier series of a function \\( f(x) \\) defined on \\( [-\\pi, \\pi] \\) can be written as",
-    options: [
-      "(A). \\( a_0 + \\sum_{n=1}^{\\infty} a_n \\cos(nx) +\\)\\( b_n \\sin(nx) \\)",
-      "(B). \\( a_0 + \\sum_{n=1}^{\\infty} a_n \\sin(nx) + \\)\\(b_n \\cos(nx) \\)",
-      "(C). \\( a_0 + \\sum_{n=1}^{\\infty} b_n \\cos(nx) +\\)\\( a_n \\sin(nx) \\)",
-      "(D). \\( a_0 + \\sum_{n=1}^{\\infty} b_n \\sin(nx) + \\)\\(a_n \\cos(nx) \\)"
-    ],
-    correct: "(A)"
-  },
-
-  // Q38
-  {
-    q: "The area of the triangle with vertices at \\( (0, 0), (1, 1), (2, 3) \\) is",
-    options: [
-      "(A). 1",
-      "(B). 2",
-      "(C). 3",
-      "(D). 4"
-    ],
-    correct: "(B)"
-  },
-
-  // Q39
-  {
-    q: "The solution to the differential equation \\( y'' + 4y = 0 \\) is",
-    options: [
-      "(A). \\( y = A \\cos 2x + B \\sin 2x \\)",
-      "(B). \\( y = A e^{2x} + B e^{-2x} \\)",
-      "(C). \\( y = A \\cos x + B \\sin x \\)",
-      "(D). \\( y = A \\cos 2x + B \\sin x \\)"
-    ],
-    correct: "(A)"
-  },
-
-  // Q40
-  {
-    q: "The integral \\( \\int e^x \\sin x \\, dx \\) is equal to",
-    options: [
-      "(A). \\( e^x(\\sin x - \\cos x) \\)",
-      "(B). \\( e^x(\\sin x + \\cos x) \\)",
-      "(C). \\( e^x(\\cos x - \\sin x) \\)",
-      "(D). \\( e^x(\\cos x + \\sin x) \\)"
-    ],
-    correct: "(B)"
-  },
-  // Q41
-  {
-    q: "The value of \\( \int_{0}^{1} (1 - x^2)^{1/2} dx \\) is",
-    options: [
-      "(A). \\( \\frac{\pi}{4} \\)",
-      "(B). \\( \\frac{\pi}{2} \\)",
-      "(C). \\( \\frac{1}{2} \\)",
-      "(D). \\( 1 \\)"
-    ],
-    correct: "(A)"
-  },
-
-  // Q42
-  {
-    q: "The solution to the equation \\( \log_3(4x) = 2 \\) is",
-    options: [
-      "(A). \\( x = 9 \\)",
-      "(B). \\( x = 3 \\)",
-      "(C). \\( x = 4 \\)",
-      "(D). \\( x = 5 \\)"
-    ],
-    correct: "(A)"
-  },
-
-  // Q43
-  {
-    q: "If \\( a + b + c = 1 \\), then the value of \\( a^2 + b^2 + c^2 \\) is",
-    options: [
-      "(A). \\( 1 \\)",
-      "(B). \\( 3 \\)",
-      "(C). \\( 0 \\)",
-      "(D). \\( 2 \\)"
-    ],
-    correct: "(D)"
-  },
-
-  // Q44
-  {
-    q: "The sum of the first 10 terms of the series \\( 2 + 6 + 18 + 54 + ... \\) is",
-    options: [
-      "(A). \\( 2(1 - 3^{10})/(1 - 3) \\)",
-      "(B). \\( 2(3^{10} - 1)/2 \\)",
-      "(C). \\( 2(1 - 3^{10})/3 \\)",
-      "(D). \\( 2(3^{10} - 1)/3 \\)"
-    ],
-    correct: "(C)"
-  },
-
-  // Q45
-  {
-    q: "The value of \\( \int_0^1 x^2 \, dx \\) is",
-    options: [
-      "(A). \\( 1 \\)",
-      "(B). \\( \\frac{1}{3} \\)",
-      "(C). \\( \\frac{1}{2} \\)",
-      "(D). \\( \\frac{1}{4} \\)"
-    ],
-    correct: "(B)"
-  },
-
-  // Q46
-  {
-    q: "The number of distinct roots of the equation \\( x^3 - 2x^2 + x - 2 = 0 \\) is",
-    options: [
-      "(A). 1",
-      "(B). 2",
-      "(C). 3",
-      "(D). 0"
-    ],
-    correct: "(C)"
-  },
-
-  // Q47
-  {
-    q: "The sum of the series \\(1 + 2 + 3 + ... + 100 \\) is",
-    options: [
-      "(A). \\( 5050 \\)",
-      "(B). \\( 5000 \\)",
-      "(C). \\( 100 \\)",
-      "(D). \\( 4500 \\)"
-    ],
-    correct: "(A)"
-  },
-
-  // Q48
-  {
-    q: "The integral \\( \\int_{1}^{2} \\frac{dx}{x(x + 1)} \\) can be computed by",
-    options: [
-      "(A). substitution method",
-      "(B). partial fraction decomposition",
-      "(C). integration by parts",
-      "(D). direct computation"
-    ],
-    correct: "(B)"
-  },
-
-  // Q49
-  {
-    q: "The sum of the first 50 natural numbers is",
-    options: [
-      "(A). \\( 1225 \\)",
-      "(B). \\( 2550 \\)",
-      "(C). \\( 2500 \\)",
-      "(D). \\( 5050 \\)"
-    ],
-    correct: "(B)"
-  },
-
-  // Q50
-  {
-    q: "The solution to the equation \\( \log_2(x+3) - \log_2(x-2) = 3 \\) is",
-    options: [
-      "(A). \\( x = 5 \\)",
-      "(B). \\( x = 7 \\)",
-      "(C). \\( x = 9 \\)",
-      "(D). \\( x = 10 \\)"
-    ],
-    correct: "(B)"
-  }
+{
+q: "There are 10 lamps in a hall. Each one of them can be switched on independently. The number of ways in which the hall can be illuminated is",
+options: [
+"(A). \\(10^2\\)",
+"(B). \\(1023\\)",
+"(C). \\(2^{10}\\)",
+"(D). \\((10)!\\)"
+],
+correct: "(B)"
+},
+	  // Q31
+{
+q: "The coefficient of \\(x^4\\) in the expansion of \\((1 + x + x^2 + x^3)^n\\) is",
+options: [
+"(A). \\(^nC_4\\)",
+"(B). \\(^nC_4 + ^nC_2\\)",
+"(C). \\(^nC_4 + ^nC_1 + ^nC_4 \\cdot ^nC_2\\)",
+"(D). \\(^nC_4 + ^nC_2 + ^nC_1 \\cdot ^nC_2\\)"
+],
+correct: "(D)"
+},
+	  // Q32
+{
+q: "The largest term in the expansion of \\((3 + 2x)^{50}\\) where \\(x = \\frac{1}{5}\\), is",
+options: [
+"(A). \\(5^{th}\\)",
+"(B). \\(51^{st}\\)",
+"(C). \\(7^{th}\\)",
+"(D). \\(6^{th}\\)"
+],
+correct: "(C)"
+},
+	  // Q33
+{
+q: "If \\(p + q + r = a + b + c = 0\\), then the value of \\(\\begin{vmatrix} pa & qb & rc \\\\ qc & ra & pb \\\\ rb & pc & qa \\end{vmatrix}\\) is",
+options: [
+"(A). \\(0\\)",
+"(B). \\(ap + bq + cr\\)",
+"(C). \\(1\\)",
+"(D). none of these"
+],
+correct: "(A)"
+},
+	  // Q34
+{
+q: "The system of equations \\(\\lambda x + y + z = 1\\), \\(x + \\lambda y + z = \\lambda\\) and \\(x + y + \\lambda z = \\lambda^2\\) have no solution if \\(\\lambda\\) equals",
+options: [
+"(A). \\(0\\)",
+"(B). \\(1\\)",
+"(C). \\(-1\\)",
+"(D). \\(-2\\)"
+],
+correct: "(D)"
+},
+	  // Q35
+{
+q: "The locus of the centre of a circle which touches externally the circle \\(x^2 + y^2 - 6x + 14 = 0\\) and also touches the y-axis is given by the equation",
+options: [
+"(A). \\(x^2 + y^2 - 10x - 6y + 14 = 0\\)",
+"(B). \\(x^2 - 10x - 6y + 14 = 0\\)",
+"(C). \\(y^2 - 6x - 10y + 14 = 0\\)",
+"(D). \\(y^2 - 10x - 6y + 14 = 0\\)"
+],
+correct: "(D)"
+},
+	  // Q36
+{
+q: "The locus of the mid point of the chords of the circle \\(x^2 + y^2 - 2x - 2y - 2 = 0\\) which makes an angle of \\(120^\\circ\\) at the centre is",
+options: [
+"(A). \\(x^2 + y^2 - 2x - 2y + 1 = 0\\)",
+"(B). \\(x^2 + y^2 + x + y - 1 = 0\\)",
+"(C). \\(x^2 + y^2 - 2x - 2y - 1 = 0\\)",
+"(D). none of these"
+],
+correct: "(A)"
+},
+	  // Q37
+{
+q: "The point of intersection of two lines given by \\(2x^2 - 5xy + 2y^2 - 3x + 3y + 1 = 0\\) is",
+options: [
+"(A). \\(\\left(\\frac{1}{2}, \\frac{1}{3}\\right)\\)",
+"(B). \\(\\left(-\\frac{1}{7}, \\frac{-1}{7}\\right)\\)",
+"(C). \\(\\left(-\\frac{1}{3}, \\frac{1}{3}\\right)\\)",
+"(D). \\(\\left(\\frac{1}{3}, \\frac{-1}{3}\\right)\\)"
+],
+correct: "(D)"
+},
+	  // Q38
+{
+q: "The equation of the common tangent touching the circle \\((x - 3)^2 + y^2 = 9\\) and the parabola \\(y^2 = 4x\\) above the x axis is",
+options: [
+"(A). \\(\\sqrt{3}y = 3x + 1\\)",
+"(B). \\(\\sqrt{3}y = -(x + 3)\\)",
+"(C). \\(\\sqrt{3}y = x + 3\\)",
+"(D). \\(\\sqrt{3}y = -(3x + 1)\\)"
+],
+correct: "(C)"
+},
+	  // Q39
+{
+q: "Let \\(P\\) be a variable point on the ellipse \\(\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1\\) with foci \\(S_1\\) and \\(S_2\\). If \\(A\\) be the area of the triangle \\(PS_1S_2\\), then the maximum value of \\(A\\) is",
+options: [
+"(A). \\(abe\\)",
+"(B). \\(2abe\\)",
+"(C). \\(\\pi ab\\)",
+"(D). \\(2\\pi ab\\)"
+],
+correct: "(A)"
+},
+	  // Q40
+{
+q: "The principal value of \\(\\sin^{-1}(\\sin \\frac{2\\pi}{3})\\) is",
+options: [
+"(A). \\(-\\frac{2\\pi}{3}\\)",
+"(B). \\(\\frac{2\\pi}{3}\\)",
+"(C). \\(\\frac{4\\pi}{3}\\)",
+"(D). \\(\\frac{\\pi}{3}\\)"
+],
+correct: "(D)"
+},
+	  // Q41
+{
+q: "\\(\\sqrt{2 + \\sqrt{2 + 2\\cos 4\\theta}}\\) is equal to",
+options: [
+"(A). \\(\\cos \\theta\\)",
+"(B). \\(\\cos 2\\theta\\)",
+"(C). \\(2\\cos \\theta\\)",
+"(D). \\(2\\cos 2\\theta\\)"
+],
+correct: "(C)"
+},
+	  // Q42
+{
+q: "The number of the solutions of the equations \\(\\tan^{-1}\\frac{1}{2x+1} + \\tan^{-1}\\frac{1}{4x+1} = \\tan^{-1}\\frac{2}{x^2}\\) is",
+options: [
+"(A). \\(1\\)",
+"(B). \\(2\\)",
+"(C). \\(3\\)",
+"(D). \\(4\\)"
+],
+correct: "(C)"
+},
+	  // Q43
+{
+q: "An aeroplane flying at a height 300 metres above the ground passes vertically above another plane at an instant when the angles of elevation of the two planes from the same point on the ground are \\(60^\\circ\\) and \\(45^\\circ\\) respectively. Then the height of the lower plane from the ground in metres is",
+options: [
+"(A). \\(100\\sqrt{3}\\)",
+"(B). \\(\\frac{100}{\\sqrt{3}}\\)",
+"(C). \\(50\\)",
+"(D). \\(150(\\sqrt{3} + 1)\\)"
+],
+correct: "(A)"
+},
+	  // Q44
+{
+q: "The number of the positive integral solutions of \\(\\tan^{-1} x + \\cos^{-1} \\frac{y}{\\sqrt{1 + y^2}} = \\sin^{-1} \\frac{3}{\\sqrt{10}}\\) or \\(\\tan^{-1} x + \\cot^{-1} y = \\tan^{-1} 3\\) is",
+options: [
+"(A). \\(1\\)",
+"(B). \\(2\\)",
+"(C). \\(3\\)",
+"(D). \\(4\\)"
+],
+correct: "(B)"
+},
+	  // Q45
+{
+q: "Let A and B be two disjoint subsets of a universal set U. Then \\((A \\cup B) \\cap B'\\) is equal to",
+options: [
+"(A). \\(\\phi\\)",
+"(B). \\(A\\)",
+"(C). \\(B\\)",
+"(D). none of these"
+],
+correct: "(B)"
+},
+	  // Q46
+{
+q: "The mean number of heads in three tosses of a coin is",
+options: [
+"(A). \\(\\frac{1}{8}\\)",
+"(B). \\(\\frac{1}{2}\\)",
+"(C). \\(\\frac{3}{2}\\)",
+"(D). \\(\\frac{5}{2}\\)"
+],
+correct: "(C)"
+},
+	// Q47
+{
+q: "The harmonic mean of the roots of the equation \\((5+\\sqrt{2})x^2 - (4+\\sqrt{5})x + (8+2\\sqrt{5}) = 0\\) is",
+options: [
+"(A). \\(2\\)",
+"(B). \\(4\\)",
+"(C). \\(6\\)",
+"(D). \\(8\\)"
+],
+correct: "(C)"
+},
+	  // Q48
+{
+q: "Let the positive numbers \\(a, b, c, d\\) be in A.P. then \\(abc, abd, acd, bcd\\) are",
+options: [
+"(A). not in A.P. / G.P. / H.P.",
+"(B). in A.P.",
+"(C). in G.P.",
+"(D). in H.P."
+],
+correct: "(D)"
+},
+	  // Q49
+{
+q: "If \\(b > a\\), then the equation \\((x - a)(x - b) - 1 = 0\\), has",
+options: [
+"(A). both roots in \\([a, b]\\)",
+"(B). both roots in \\((-\\infty, a)\\)",
+"(C). both roots in \\((b, +\\infty)\\)",
+"(D). one root in \\((-\\infty, a)\\) and other in \\((b, +\\infty)\\)"
+],
+correct: "(D)"
+},
+	  // Q50
+{
+q: "If \\(7^{\\log_7 (x^2 - 4x + 5)} = (x - 1)\\), then \\(x\\) may have values",
+options: [
+"(A). \\((2, 3)\\)",
+"(B). \\(7\\)",
+"(C). \\((-2, -3)\\)",
+"(D). \\((2, -3)\\)"
+],
+correct: "(A)"
+} 
  ]
 };
