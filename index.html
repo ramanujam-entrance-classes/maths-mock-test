@@ -440,6 +440,9 @@ body {
     font-size: 12px;
     display: none;
     margin-top: 5px;
+    width: 100%;
+    text-align: left;
+    align-self: flex-start;
 }
  </style>
 </head>
@@ -476,13 +479,12 @@ body {
 	<div id="set-selection" class="name-container">
 	    <div class="name-box">
 	        <h3>Select Mock Test</h3>
-	
+			<span id="set-required">Select valid mock test *</span>
 	        <div class="custom-select">
 	            <select id="set-dropdown">
 	                <option value="">Select Mock Test</option>
 	            </select>
 	        </div>
-			<span id="set-required">Select valid mock test *</span>
 			
 	        <button id="go-btn">Go</button>
 			<button id="random-btn">
