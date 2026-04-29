@@ -263,6 +263,14 @@ function sendToLeaderboard(name, score, testName, timeTaken) {
   .catch(err => console.error("Fetch error:", err));
 }
 
+function stringToSeed(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+        hash = (hash * 31 + str.charCodeAt(i)) % 1000000007;
+    }
+    return hash;
+}
+
 function seededRandom(seed) {
     let x = Math.sin(seed++) * 10000;
     return x - Math.floor(x);
@@ -301,7 +309,11 @@ function loadSetFile(setNumber) {
 }
 
 async function generateRandomTestWithSeed(seed) {
+    const numericSeed = stringToSeed(seed);
 
+    console.log("Original Seed:", seed);
+    console.log("Numeric Seed:", numericSeed);
+    
     // ✅ SHOW UI FIRST (same as loadTest flow)
     const heading = document.getElementById("test-heading");
     const nameSection = document.getElementById("name-section");
@@ -320,7 +332,7 @@ async function generateRandomTestWithSeed(seed) {
         }
     }
 
-    shuffleWithSeed(allQuestions, seed);
+    shuffleWithSeed(allQuestions, numericSeed);
 
     const selected = allQuestions.slice(0, 50);
 
