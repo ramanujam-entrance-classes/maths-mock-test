@@ -621,7 +621,9 @@ body {
 	    // 👉 Invalid set provided (tampered URL)
 	    document.getElementById("set-selection").style.display = "flex";
 	    hideTestUI();
-	    showMessage("📝 Select a valid mock test to begin");
+	    //showMessage("📝 Select a valid mock test to begin");
+		const setError = document.getElementById("set-required");
+		setError.style.display = "block";
 	} 
 	else {
 	    // 👉 Valid set → load test
