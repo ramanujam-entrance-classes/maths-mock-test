@@ -21,11 +21,26 @@ function initApp(data) {
 
     // update title
     document.title = data.title;
-    if (setName === "random"){
+    /*if (setName === "random"){
         document.querySelector("#test-heading span").innerHTML = `<a href="leaderboard.html?set=${window.TEST_SEED_DATE}" target="_blank" style="color:#0033cc; text-decoration:none;">${data.title}</a>`;
     }
     else{
         document.querySelector("#test-heading span").innerHTML = `<a href="leaderboard.html?set=${setName}" target="_blank" style="color:#0033cc; text-decoration:none;">${data.title}</a>`;
+    }*/
+    if (heading) {
+        if (setName === "random") {
+            heading.innerHTML = `
+                <a href="leaderboard.html?set=${window.TEST_SEED_DATE}" target="_blank" style="color:#0033cc; text-decoration:none;">
+                    ${data.title}
+                </a>
+            `;
+        } else {
+            heading.innerHTML = `
+                <a href="leaderboard.html?set=${setName}" target="_blank" style="color:#0033cc; text-decoration:none;">
+                    ${data.title}
+                </a>
+            `;
+        }
     }
     attachEvents();
 }
@@ -330,7 +345,7 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
 
     if (heading) {
         heading.classList.remove("hidden");
-        heading.innerHTML = `<div style="font-size:14px; color:#888;">Loading...</div>`;
+        heading.innerHTML += `<div style="font-size:14px; color:#888;">Loading...</div>`;
     }
     if (nameSection) nameSection.classList.remove("hidden");
     if (note) note.classList.remove("hidden");
