@@ -330,6 +330,7 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
 
     if (heading) {
         heading.classList.remove("hidden");
+        heading.innerHTML += `<div style="font-size:14px; color:#888;">Loading...</div>`;
     }
     if (nameSection) nameSection.classList.remove("hidden");
     if (note) note.classList.remove("hidden");
