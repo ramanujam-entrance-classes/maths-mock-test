@@ -313,7 +313,7 @@ function loadSetFile(setNumber) {
 
 async function generateRandomTestWithSeed(seedNum, seedStr) {
     //const numericSeed = stringToSeed(seed);
-    const numericSeed = mulberry32(seedNum);
+    const numericSeed = seedNum;
     window.TEST_SEED_DATE = seedStr;
     //console.log("Original Seed:", seed);
     //console.log("Numeric Seed:", numericSeed);
