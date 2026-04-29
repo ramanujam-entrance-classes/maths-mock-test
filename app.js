@@ -366,7 +366,7 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
 
     // ✅ Now initialize app
     initApp({
-        title: `📅 Mathematics Mock Test (${seedStr})`,
+        title: `🎯 Mathematics Mock Test (${seedStr})`,
         questions: selected
     });
 }
