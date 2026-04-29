@@ -32,7 +32,7 @@ window.SET_DATA = {
 	"(C). periodic function",
 	"(D). constant function"
 	],
-	correct: ""
+	correct: "(B)"
 	},
 	// Q4
 	{
@@ -373,7 +373,7 @@ window.SET_DATA = {
 	"(C). \\(3 < a \\le 4\\)",
 	"(D). \\(a > 4\\)"
 	],
-	correct: ""
+	correct: "(A)"
 	},
 	// Q35
 	{
