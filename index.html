@@ -564,32 +564,20 @@ body {
 	    // 👉 Valid set → load test
 	    clearMessage();
 	    document.getElementById("set-selection").style.display = "none";
-	   /* const seed = params.get("seed");
-
-if (setName === "random") {
-    if (!seed) {
-        showMessage("⚠️ Seed missing for random test");
-        return;
-    }
-
-    // ✅ DELAY execution to avoid blocking UI
-    setTimeout(() => {
-        generateRandomTestWithSeed(parseInt(seed));
-    }, 0);
-} 
-else {*/
-    loadTest(setName);
-//}
+	    const seed = params.get("seed");
+		
+		if (setName === "random") {
+		    if (!seed) {
+		        showMessage("⚠️ Seed missing for random test");
+		        return;
+		    }
+		    generateRandomTestWithSeed(parseInt(seed));
+		} 
+		else {
+		    loadTest(setName);
+		}
 	}
   
-  /*if (!setName) {
-    // ❌ No test provided → hide UI
-    hideTestUI();
-  showMessage("📝 Select a mock test to begin");
-  } else {
-    loadTest(setName);
-  }*/
-
   function loadTest(testName) {
 	const heading = document.getElementById("test-heading");
     if (heading) heading.style.display = "block";
