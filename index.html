@@ -434,7 +434,13 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-		
+
+#set-required {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+}
  </style>
 </head>
 <body class="tex2jax_ignore">
@@ -476,7 +482,8 @@ body {
 	                <option value="">Select Mock Test</option>
 	            </select>
 	        </div>
-	
+			<span id="set-required">Select valid mock test *</span>
+			
 	        <button id="go-btn">Go</button>
 			<button id="random-btn">
 				📅 Test of the Day<br>
@@ -572,11 +579,14 @@ body {
   goBtn.addEventListener("click", () => {
     const selectedSet = dropdown.value;
 
-    if (!selectedSet) {
-      //alert("Please select a test set");
-	  showMessage("📝 Select a mock test to begin");
-      return;
-    }
+    const setError = document.getElementById("set-required");
+
+	if (!selectedSet) {
+	    setError.style.display = "block";
+	    return;
+	} else {
+	    setError.style.display = "none";
+	}
 	clearMessage();
 	const setNumber = parseInt(selectedSet);
 
