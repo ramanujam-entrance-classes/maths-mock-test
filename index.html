@@ -674,8 +674,16 @@ body {
     container.innerHTML = `<h3>${msg}</h3>`;
 }
 
-	function goToLeaderboard() {
+	/*function goToLeaderboard() {
 	  window.open(`leaderboard.html?set=${setName}`, "_blank");
+	}*/
+
+	function goToLeaderboard() {
+	    if (setName === "random") {
+	        window.open(`leaderboard.html?set=random&seed=${window.TEST_SEED_DATE}`, "_blank");
+	    } else {
+	        window.open(`leaderboard.html?set=${setName}`, "_blank");
+	    }
 	}
 
 	function clearMessage() {
