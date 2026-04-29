@@ -568,10 +568,10 @@ body {
 		
 		if (setName === "random") {
 		    if (!seed) {
-		        showMessage("⚠️ Seed missing for random test");
-		        return;
-		    }
-		    generateRandomTestWithSeed(parseInt(seed));
+			    showMessage("⚠️ Seed missing for random test");
+			} else {
+			    generateRandomTestWithSeed(parseInt(seed));
+			}
 		} 
 		else {
 		    loadTest(setName);
