@@ -135,7 +135,7 @@ window.SET_DATA = {
 	},
 	// Q13
 	{
-	q: "Evaluate \\(2\\sin^2 \\beta + 4\\cos(\\alpha + \\beta) \\sin \\alpha \\sin \\beta + \\cos 2(\\alpha + \\beta)\\)",
+	q: "Evaluate \\(2\\sin^2 \\beta + 4\\cos(\\alpha + \\beta) \\sin \\alpha \\sin \\beta +\\)\\( \\cos 2(\\alpha + \\beta)\\)",
 	options: [
 	"(A). \\(\\sin 2\\alpha\\)",
 	"(B). \\(\\cos 2\\beta\\)",
@@ -432,7 +432,7 @@ window.SET_DATA = {
 	},
 	// Q40
 	{
-	q: "If \\(x, y, z\\) are in A.P., then the value of the determinant \\(A\\) is \\(|\\begin{matrix}4 & 5 & 6 & x \\\\ 5 & 6 & 7 & y \\\\ 6 & 7 & 8 & z \\\\ x & y & z & 0\\end{matrix}|\\)",
+	q: "If \\(x, y, z\\) are in A.P., then the value of the determinant \\(A\\) is \\(\\begin{bmatrix}4 & 5 & 6 & x \\\\ 5 & 6 & 7 & y \\\\ 6 & 7 & 8 & z \\\\ x & y & z & 0\\end{bmatrix}\\)",
 	options: [
 	"(A). \\(0\\)",
 	"(B). \\(1\\)",
@@ -443,7 +443,7 @@ window.SET_DATA = {
 	},
 	// Q41
 	{
-	q: "If \\(|\\begin{matrix} x & y & z \\\\ y & z & x \\\\ z & x & y \\end{matrix}| = -(x + y + z)(x + yk + zk^2)(x + yk^2 + zk)\\) then \\(k\\) equals",
+	q: "If \\(\\begin{bmatrix} x & y & z \\\\ y & z & x \\\\ z & x & y \\end{bmatrix} = -(x + y + z)\\)\\((x + yk + zk^2)(x + yk^2 + zk)\\) then \\(k\\) equals",
 	options: [
 	"(A). \\(-\\omega\\)",
 	"(B). \\(1\\)",
