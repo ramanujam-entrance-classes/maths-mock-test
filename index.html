@@ -401,6 +401,32 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+#random-btn {
+    margin-top: 10px;
+    padding: 14px;
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    line-height: 1.4;
+}
+
+#today-label {
+    font-size: 13px;
+    font-weight: normal;
+    opacity: 0.9;
+}
+
+#random-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+		
  </style>
 </head>
 <body class="tex2jax_ignore">
@@ -444,6 +470,10 @@ body {
 	        </div>
 	
 	        <button id="go-btn">Go</button>
+			<button id="random-btn">
+			    📅 Test of the Day<br>
+			    <span id="today-label"></span>
+			</button>
 	    </div>
 	</div>
 	
@@ -510,6 +540,7 @@ body {
   const setName = params.get("set");
   const dropdown = document.getElementById("set-dropdown");
   const goBtn = document.getElementById("go-btn");
+  const randomBtn = document.getElementById("random-btn");
   const cmd = params.get("cmd");
 
   dropdown.addEventListener("change", () => {
@@ -550,6 +581,18 @@ body {
     }
   });
 
+  const todayLabel = document.getElementById("today-label");
+  const today = new Date();
+  // Format: Wednesday, 29 April 2026
+  const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+  const formattedDate = today.toLocaleDateString('en-IN', options);
+  todayLabel.innerText = formattedDate;
+  randomBtn.addEventListener("click", () => {
+    const today = new Date();
+    const seed = today.getFullYear() + "-" + (today.getMonth()+1) + "-" + today.getDate();
+    window.location.href = `?set=random&seed=${seed}`;
+  });
+
   	if (!setName) {
 	    // 👉 No set provided (normal case)
 	    document.getElementById("set-selection").style.display = "flex";
@@ -572,7 +615,6 @@ body {
 		    if (!seed) {
 			    showMessage("⚠️ Seed missing for random test");
 			} else {
-				
 			    generateRandomTestWithSeed(parseInt(seed));
 			}
 		} 
