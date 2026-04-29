@@ -20,10 +20,8 @@ function initApp(data) {
     if (note) note.classList.remove("hidden");
 
     // update title
-    if(setName != "random"){
-        document.title = data.title;
-        document.querySelector("#test-heading span").innerHTML = `<a href="leaderboard.html?set=${setName}" target="_blank" style="color:#0033cc; text-decoration:none;">${data.title}</a>`;
-    }
+    document.title = data.title;
+    document.querySelector("#test-heading span").innerHTML = `<a href="leaderboard.html?set=${setName}" target="_blank" style="color:#0033cc; text-decoration:none;">${data.title}</a>`;
     attachEvents();
 }
 
