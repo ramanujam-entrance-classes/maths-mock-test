@@ -384,7 +384,7 @@ window.SET_DATA = {
 	},
 	// Q35
 	{
-	q: "6 + \\(\\log_{\\frac{1}{4}} \\frac{1}{\\sqrt{2}} \\left[ \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\cdots}}} \\right]\\) =",
+	q: `6 + <span style='font-size:13px'> \\(\\log_{\\frac{1}{4}} \\frac{1}{\\sqrt{2}} \\left[ \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\cdots}}} \\right]\\) </span> =`,
 	options: [
 	"(A). \\(6\\)",
 	"(B). \\(\\frac{13}{2}\\)",
