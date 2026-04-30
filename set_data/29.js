@@ -124,7 +124,7 @@ window.SET_DATA = {
 	},
 	// Q12
 	{
-	q: "The total number of relations that exist from the set A with m elements into the set A × A is",
+	q: "The total number of relations that exist from the set \\(A\\) with \\(m\\) elements into the set \\(A × A\\) is",
 	options: [
 	"(A). \\(m^2\\)",
 	"(B). \\(m^3\\)",
@@ -135,7 +135,7 @@ window.SET_DATA = {
 	},
 	// Q13
 	{
-	q: "Let A and B be two events such that \\(P(A \\cup B) = \\frac{1}{6},\\ P(A \\cap B) = \\frac{1}{4}\\) and \\(P(\\overline{A}) = \\frac{1}{4}\\). Then events A and B are",
+	q: "Let A and B be two events such that \\(P(\\overline{A \\cup B}) = \\frac{1}{6},\\ P(A \\cap B) = \\frac{1}{4}\\) and \\(P(\\overline{A}) = \\frac{1}{4}\\). Then events A and B are",
 	options: [
 	"(A). independent but not equally likely",
 	"(B). mutually exclusive and independent",
@@ -302,7 +302,7 @@ window.SET_DATA = {
 	{
 	q: "In a box containing \\(100\\) bulbs, \\(10\\) are defective. What is the probability that out of a sample of \\(5\\) bulbs, none is defective?",
 	options: [
-	"(A). \\(\\left(\\frac{9}{10}\\right)^5\\)",
+	"(A). \\(\\left(\\frac{9}{10}\\right)\\)",
 	"(B). \\(\\left(\\frac{1}{2}\\right)^5\\)",
 	"(C). \\(\\left(\\frac{9}{10}\\right)^5\\)",
 	"(D). \\(10^{-5}\\)"
@@ -380,7 +380,7 @@ window.SET_DATA = {
 	q: "If \\(y = x + e^x\\), then \\(\\frac{d^2 x}{dy^2}\\) is",
 	options: [
 	"(A). \\(\\frac{e^x}{(1 + e^x)^3}\\)",
-	"(B). \\(-\\frac{e^x}{(1 + e^x)^2}\\)",
+	"(B). \\(\\frac{-e^x}{(1 + e^x)^2}\\)",
 	"(C). \\(\\frac{1}{(1 + e^x)^2}\\)",
 	"(D). \\(e^x\\)"
 	],
@@ -428,7 +428,7 @@ window.SET_DATA = {
 	"(C). \\(\\frac{5\\pi}{8} < x < \\frac{3\\pi}{4}\\)",
 	"(D). \\(0 < x < \\frac{\\pi}{8}\\)"
 	],
-	correct: "(C)"
+	correct: "(A)"
 	},
 	// Q40
 	{
