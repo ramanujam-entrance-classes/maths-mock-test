@@ -38,7 +38,7 @@ window.SET_DATA = {
 	},
 	// Q4
 	{
-	q: `If \\(U_n = \\begin{vmatrix} 1 & k & k \\\\ 2n & k^2 + k + 1 & k^2 + k \\\\ 2n - 1 & k^2 & k^2 + k + 1 \\end{vmatrix}\\) 
+	q: `If \\(U_n =\\) <span style='font-size:13px'>\\( \\begin{vmatrix} 1 & k & k \\\\ 2n & k^2 + k + 1 & k^2 + k \\\\ 2n - 1 & k^2 & k^2 + k + 1 \\end{vmatrix}\\) </span>
 	and \\(\\sum_{n=1}^{k} U_n = 72\\), then \\(k =\\)`,
 	options: [
 	"(A). \\(8\\)",
@@ -259,7 +259,7 @@ window.SET_DATA = {
 	},
 	// Q24
 	{
-	q: "\\(\\int_0^{\\pi/4}\\) \\((\\cos x - \\sin x)dx\\) + ∫\\(_{\\pi/4}^{5\\pi/4}\\) \\((\\sin x - \\cos x)dx\\) + ∫\\(_{2\\pi}^{\\pi/4}\\) \\((\\cos x - \\sin x)dx\\) is equal to:",
+	q: "\\(\\int_0^{\\pi/4}\\) \\((\\cos x - \\sin x)dx\\) + \\(\\int_{\\pi/4}^{5\\pi/4}\\) \\((\\sin x - \\cos x)dx\\) + \\(\\int_{2\\pi}^{\\pi/4}\\) \\((\\cos x - \\sin x)dx\\) is equal to:",
 	options: [
 	"(A). \\(\\sqrt{2} - 2\\)",
 	"(B). \\(2\\sqrt{2} - 2\\)",
@@ -459,10 +459,10 @@ window.SET_DATA = {
 	{
 	q: "At \\(x = 0\\), the function \\(f(x) = |x|\\) is :",
 	options: [
-	"(A). \\(\\text{continuous but not differentiable}\\)",
-	"(B). \\(\\text{discontinuous and differentiable}\\)",
-	"(C). \\(\\text{discontinuous and not differentiable}\\)",
-	"(D). \\(\\text{continuous and differentiable}\\)"
+	"(A). continuous but not differentiable",
+	"(B). discontinuous and differentiable",
+	"(C). discontinuous and not differentiable",
+	"(D). continuous and differentiable"
 	],
 	correct: "(B)"
 	},
