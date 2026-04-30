@@ -224,13 +224,13 @@ window.SET_DATA = {
 	// Q21
 	{
 	q: `If \\(a,b,c\\) are the roots of the equation \\(x^3 - 3x^2 + 3x + 7 = 0\\), then the value of 
-	\\[
+	\\(
 	\\begin{vmatrix}
 	2bc - a^2 & c^2 & b^2 \\\\
 	c^2 & 2ac - b^2 & a^2 \\\\
 	b^2 & a^2 & 2ab - c^2
 	\\end{vmatrix}
-	\\] is`,
+	\\) is`,
 	options: [
 	"(A). \\(9\\)",
 	"(B). \\(27\\)",
@@ -384,7 +384,7 @@ window.SET_DATA = {
 	},
 	// Q35
 	{
-	q: "6 + \\(\\log_{\\frac{1}{4}} \\left( \\frac{1}{\\sqrt{2}} \\left[ \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\cdots}} \\right] \\right)\\) =",
+	q: "6 + \\(\\log_{\\frac{1}{4}} \\frac{1}{\\sqrt{2}} \\left[ \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\cdots}}} \\right]\\) =",
 	options: [
 	"(A). \\(6\\)",
 	"(B). \\(\\frac{13}{2}\\)",
@@ -450,7 +450,7 @@ window.SET_DATA = {
 	},
 	// Q41
 	{
-	q: "If \\(0 < \\theta < \\frac{\\pi}{2}\\) and \\(\\begin{vmatrix} 1 + \\sin^2 \\theta & \\cos^2 \\theta & 4 \\sin 4\\theta \\\\ \\sin^2 \\theta & 1 + \\cos^2 \\theta & 4 \\sin 4\\theta \\\\ \\sin^2 \\theta & \\cos^2 \\theta & 1 + 4 \\sin 4\\theta \\end{vmatrix} = 0\\), then \\(\\theta\\) is equal to",
+	q: "If \\(0 < \\theta < \\frac{\\pi}{2}\\) and <span style='font-size:13px'>\\(\\begin{vmatrix} 1 + \\sin^2 \\theta & \\cos^2 \\theta & 4 \\sin 4\\theta \\\\ \\sin^2 \\theta & 1 + \\cos^2 \\theta & 4 \\sin 4\\theta \\\\ \\sin^2 \\theta & \\cos^2 \\theta & 1 + 4 \\sin 4\\theta \\end{vmatrix}\\) <span style='font-size:13px'> \\( = 0\\), then \\(\\theta\\) is equal to",
 	options: [
 	"(A). \\(\\frac{\\pi}{24}, \\frac{5\\pi}{24}\\)",
 	"(B). \\(\\frac{5\\pi}{24}, \\frac{7\\pi}{24}\\)",
@@ -472,7 +472,7 @@ window.SET_DATA = {
 	},
 	// Q43
 	{
-	q: "The relation \\(R = \\{(1,1), (2,2), (3,3), (1,2), (2,3), (1,3)\\}\\) on set \\(A = \\{1,2,3\\}\\), is",
+	q: "The relation \\(R = \\{(1,1), (2,2), (3,3), (1,2), (2,3),\\)\\( (1,3)\\}\\) on set \\(A = \\{1,2,3\\}\\), is",
 	options: [
 	"(A). reflexive but not symmetric",
 	"(B). reflexive but not transitive",
