@@ -470,7 +470,7 @@ window.SET_DATA = {
 	},
 	// Q42
 	{
-	q: "lim \\(x \\to 0\\) \\(\\frac{\\sqrt{\\frac{1}{2}(1 - \\cos 2x)}}{x}\\) =",
+	q: "\\( \\lim_{x \\to 0}\\) \\(\\frac{\\sqrt{\\frac{1}{2}(1 - \\cos 2x)}}{x}\\) =",
 	options: [
 	"(A). \\(-1\\)",
 	"(B). \\(0\\)",
