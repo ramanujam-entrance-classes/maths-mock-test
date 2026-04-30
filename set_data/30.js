@@ -40,7 +40,7 @@ window.SET_DATA = {
 	options: [
 	"(A). \\(35\\)",
 	"(B). \\({}^7P_5\\)",
-	"(C). \\(75\\)",
+	"(C). \\(7^5\\)",
 	"(D). None of these"
 	],
 	correct: "(D)"
@@ -84,7 +84,7 @@ window.SET_DATA = {
 	options: [
 	"(A). \\(2^n - n - 1\\)",
 	"(B). \\(1 - 2^{-n}\\)",
-	"(C). \\(n + 2^n - 1\\)",
+	"(C). \\(n + 2^{-n} - 1\\)",
 	"(D). \\(2^n - 1\\)"
 	],
 	correct: "(C)"
@@ -113,7 +113,7 @@ window.SET_DATA = {
 	},
 	// Q11
 	{
-	q: "The coefficient of \\(x^6\\) in the expression of \\((1 + x^2 - x^3)^8\\) is",
+	q: "The coefficient of \\(x^5\\) in the expression of \\((1 + x^2 - x^3)^8\\) is",
 	options: [
 	"(A). \\(80\\)",
 	"(B). \\(84\\)",
@@ -124,7 +124,7 @@ window.SET_DATA = {
 	},
 	// Q12
 	{
-	q: "If \\({}^nC_4, {}^nC_6, {}^nC_8\\) are in AP, then \\(n\\) is equal to",
+	q: "If \\({}^nC_4, {}^nC_5, {}^nC_6\\) are in AP, then \\(n\\) is equal to",
 	options: [
 	"(A). \\(12\\)",
 	"(B). \\(11\\)",
@@ -234,7 +234,7 @@ window.SET_DATA = {
 	},
 	// Q22
 	{
-	q: "P is a variable point on the ellipse \\(\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1\\) with AA' as the major axis. Then, the maximum value of the area of the triangle \\(APA'\\) is",
+	q: "P is a variable point on the ellipse \\(\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1\\) with AA' as the major axis. Then, the maximum value of the area of the \\triangle \\(AP\\) \\(A\\) is",
 	options: [
 	"(A). \\(ab\\)",
 	"(B). \\(2ab\\)",
@@ -256,7 +256,7 @@ window.SET_DATA = {
 	},
 	// Q24
 	{
-	q: "If e and e₁ are the eccentricities of the hyperbolas \\(xy = c^2\\) and \\(x^2 - y^2 = c^2\\), then \\(e^2 + e_1^2\\) is equal to",
+	q: "If \\(e\\) and \\(e_1\\), are the eccentricities of the hyperbolas \\(xy = c^2\\) and \\(x^2 - y^2 = c^2\\), then \\(e^2 + e_1^2\\) is equal to",
 	options: [
 	"(A). \\(1\\)",
 	"(B). \\(4\\)",
@@ -282,8 +282,8 @@ window.SET_DATA = {
 	options: [
 	"(A). is given by \\(\\frac{1}{3x - 5}\\)",
 	"(B). is given by \\(\\frac{x + 5}{3}\\)",
-	"(C). does not exist because f is not one-one",
-	"(D). does not exist because f is not onto"
+	"(C). does not exist because \\(f\\) is not one-one",
+	"(D). does not exist because \\(f\\) is not onto"
 	],
 	correct: "(B)"
 	},
@@ -307,7 +307,7 @@ window.SET_DATA = {
 	"(C). \\(1 + (g(x))^3\\)",
 	"(D). \\(1 + (f(x))^3\\)"
 	],
-	correct: "(B)"
+	correct: "(C)"
 	},
 	// Q29
 	{
@@ -322,7 +322,7 @@ window.SET_DATA = {
 	},
 	// Q30
 	{
-	q: "If \\(f(x) = \\log_x (\\ln x)\\), then \\(f'(x)\\) at \\(x = e\\) is",
+	q: "If \\(f(x) = \\log_x (in x)\\), then \\(f'(x)\\) at \\(x = e\\) is",
 	options: [
 	"(A). \\(e\\)",
 	"(B). \\(-e\\)",
@@ -402,9 +402,9 @@ window.SET_DATA = {
 	q: "If \\(\\log_x a \\cdot a^{x^2}\\) and \\(\\log_b x\\) are in G.P, then \\(x\\) is equal to",
 	options: [
 	"(A). \\(\\log_a (\\log_b a)\\)",
-	"(B). \\(\\log_a (\\log_b a) + \\log_a (\\log_a b)\\)",
-	"(C). \\(-\\log_a (\\log_a b)\\)",
-	"(D). \\(\\log_a (\\log_b b) + \\log_a (\\log_a a)\\)"
+	"(B). \\(\\log_a (\\log_e a) + \\log_a (\\log_e b)\\)",
+	"(C). \\(-\\log_a (\\log_b b)\\)",
+	"(D). \\(\\log_a (\\log_e b) + \\log_a (\\log_e a)\\)"
 	],
 	correct: "(A)"
 	},
@@ -432,7 +432,7 @@ window.SET_DATA = {
 	},
 	// Q40
 	{
-	q: "If \\(a, b, c\\) are in G.P, then the equations \\(ax^2 + 2bx + c = 0\\) and \\(dx^2 + 2ex + f = 0\\) have a common root, if \\(\\frac{d}{a}, \\frac{e}{b}, \\frac{f}{c}\\) are in",
+	q: "If \\(a, b, c\\) are in G.P, then the equations \\(ax^2 + 2bx + c = 0\\) and \\(dx^2 + 2ex + f = 0\\) have a common root, if \\(\\frac{d}{a}, \\frac{e}{f}, \\frac{f}{c}\\) are in",
 	options: [
 	"(A). \\(\\text{AP}\\)",
 	"(B). \\(\\text{GP}\\)",
@@ -443,7 +443,7 @@ window.SET_DATA = {
 	},
 	// Q41
 	{
-	q: "If the product of the roots of the equation \\(x^2 - 2\\sqrt{2}kx + 2e^{2\\log_e k} - 1 = 0\\), then the roots of the equation are real for \\(k\\) equal to",
+	q: "If the product of the roots of the equation \\(x^2 - 2\\sqrt{2}kx + 2e^{2\\log k} - 1 = 0\\), then the roots of the equation are real for \\(k\\) equal to",
 	options: [
 	"(A). \\(1\\)",
 	"(B). \\(2\\)",
@@ -531,7 +531,7 @@ window.SET_DATA = {
 	},
 	// Q49
 	{
-	q: "The value of the integral \\(\\int_0^{\\pi/2} \\log|\\tan x + \\cot x| dx\\) is",
+	q: "The value of the integral \\(\\int_0^{k/2} \\log|\\tan x + \\cot x| dx\\) is",
 	options: [
 	"(A). \\(\\pi \\log 2\\)",
 	"(B). \\(-\\pi \\log 2\\)",
@@ -542,11 +542,11 @@ window.SET_DATA = {
 	},
 	// Q50
 	{
-	q: "If \\(f(x)\\) is a function satisfying \\(f\\left(\\frac{1}{x}\\right) + x^2 f(x) = 0\\) for all non-zero \\(x\\), then \\(\\int_{\\sin \\theta}^{\\csc \\theta} f(x) dx\\) equals",
+	q: "If \\(f(x)\\) is a function satisfying \\(f\\left(\\frac{1}{x}\\right) + x^2 f(x) = 0\\) for all non-zero \\(x\\), then \\(\\int_{\\sin \\theta}^{\\cos ec \\theta} f(x) dx\\) equals",
 	options: [
-	"(A). \\(\\sin \\theta + \\csc \\theta\\)",
+	"(A). \\(\\sin \\theta + \\cos ec \\theta\\)",
 	"(B). \\(\\sin^2 \\theta\\)",
-	"(C). \\(\\csc^2 \\theta\\)",
+	"(C). \\(\\cos ec^2 \\theta\\)",
 	"(D). \\(\\text{None of the above}\\)"
 	],
 	correct: "(D)"
