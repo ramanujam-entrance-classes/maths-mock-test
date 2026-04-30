@@ -69,7 +69,7 @@ window.SET_DATA = {
 	},
 	// Q7
 	{
-	q: "The equation of second degree \\(x^2 + 2\\sqrt{2}xy + 2y^2 + 4x + 4\\sqrt{2}y + 1 = 0\\) represents a pair of straight lines, the distance between them is",
+	q: "The equation of second degree \\(x^2 + 2\\sqrt{2}xy + 2y^2 + 4x + 4\\sqrt{2}y + 1\\)\\( = 0\\) represents a pair of straight lines, the distance between them is",
 	options: [
 	"(A). \\(2\\)",
 	"(B). \\(2\\sqrt{3}\\)",
@@ -289,7 +289,7 @@ window.SET_DATA = {
 	},
 	// Q27
 	{
-	q: "\\(\\log_{10} [\\tan 1^\\circ + \\log_{10} \\tan 2^\\circ + \\ldots + \\log_{10} 89^\\circ]\\) is equal to",
+	q: "\\(\\log_{10} [\\tan 1^\\circ + \\log_{10} \\tan 2^\\circ + \\ldots + \\)\\(\\log_{10} 89^\\circ]\\) is equal to",
 	options: [
 	"(A). \\(3\\)",
 	"(B). \\(2\\)",
@@ -367,13 +367,13 @@ window.SET_DATA = {
 	// Q34
 	{
 	q: `If \\(a \\ne b \\ne c\\), one value of \\(x\\) which satisfies the equation
-	\\[
+	\\(
 	\\begin{vmatrix}
 	0 & x-a & x-b \\\\
 	x+a & 0 & x-c \\\\
 	x+b & x+c & 0
 	\\end{vmatrix} = 0
-	\\]
+	\\)
 	is given by`,
 	options: [
 	"(A). \\(x = 0\\)",
@@ -386,13 +386,13 @@ window.SET_DATA = {
 	// Q35
 	{
 	q: `The value of the determinant
-	\\[
+	\\(
 	\\begin{vmatrix}
 	b^2 - ab & b - c & bc - ac \\\\
 	ab - a^2 & a - b & b^2 - ab \\\\
 	bc - ac & c - a & ab - a^2
 	\\end{vmatrix}
-	\\]
+	\\)
 	without expansion is equal to`,
 	options: [
 	"(A). \\(0\\)",
