@@ -16,10 +16,10 @@ window.SET_DATA = {
 	{
 	q: "A and B throw a die in succession to win a bet with A starting first. Whoever throws ‘1’ first wins an amount of ₹110. What are the respective expectations of A and B?",
 	options: [
-	"(A). \\(₹\\ 70\\ \\text{and}\\ ₹\\ 40\\)",
-	"(B). \\(₹\\ 60\\ \\text{and}\\ ₹\\ 50\\)",
-	"(C). \\(₹\\ 75\\ \\text{and}\\ ₹\\ 35\\)",
-	"(D). \\(\\text{None of these}\\)"
+	"(A). ₹\\(70\\) and ₹\\(40\\)",
+	"(B). ₹\\(60\\) and ₹\\(50\\)",
+	"(C). ₹\\(75\\) and ₹\\(35\\)",
+	"(D). None of these"
 	],
 	correct: "(B)"
 	},
@@ -47,7 +47,7 @@ window.SET_DATA = {
 	},
 	// Q5
 	{
-	q: "If \\((1 + x - 2x^2)^6 = 1 + a_1 x + a_2 x^2 + \\dots + a_{12} x^{12}\\), then the value of \\(a_2 + a_4 + a_6 + \\dots + a_{12}\\) is",
+	q: "If \\((1 + x - 2x^2)^6 = 1 + a_1 x + a_2 x^2 +\\)\\( \\dots + a_{12} x^{12}\\), then the value of \\(a_2 + a_4 + a_6 + \\dots + a_{12}\\) is",
 	options: [
 	"(A). \\(1024\\)",
 	"(B). \\(64\\)",
@@ -137,10 +137,10 @@ window.SET_DATA = {
 	{
 	q: "Let A and B be two events such that \\(P(A \\cup B) = \\frac{1}{6},\\ P(A \\cap B) = \\frac{1}{4}\\) and \\(P(\\overline{A}) = \\frac{1}{4}\\). Then events A and B are",
 	options: [
-	"(A). \\(\\text{independent but not equally likely}\\)",
-	"(B). \\(\\text{mutually exclusive and independent}\\)",
-	"(C). \\(\\text{equally likely and mutually exclusive}\\)",
-	"(D). \\(\\text{equally likely but not independent}\\)"
+	"(A). independent but not equally likely",
+	"(B). mutually exclusive and independent",
+	"(C). equally likely and mutually exclusive",
+	"(D). equally likely but not independent"
 	],
 	correct: "(A)"
 	},
@@ -311,7 +311,7 @@ window.SET_DATA = {
 	},
 	// Q29
 	{
-	q: "If \\(\\theta = \\tan^{-1}\\left(\\frac{1}{1+2}\\right) + \\tan^{-1}\\left(\\frac{1}{1+(2)(3)}\\right) + \\tan^{-1}\\left(\\frac{1}{1+(3)(4)}\\right) + \\dots + \\tan^{-1}\\left(\\frac{1}{1+n(n+1)}\\right)\\), then \\(\\tan \\theta\\) is equal to",
+	q: "If \\(\\theta = \\tan^{-1}\\left(\\frac{1}{1+2}\\right) + \\tan^{-1}\\left(\\frac{1}{1+(2)(3)}\\right)\\)\\( + \\tan^{-1}\\left(\\frac{1}{1+(3)(4)}\\right) + \\dots + \\tan^{-1}\\left(\\frac{1}{1+n(n+1)}\\right)\\), then \\(\\tan \\theta\\) is equal to",
 	options: [
 	"(A). \\(\\frac{n}{n+1}\\)",
 	"(B). \\(\\frac{n+1}{n+2}\\)",
@@ -333,7 +333,7 @@ window.SET_DATA = {
 	},
 	// Q31
 	{
-	q: "The number of solutions for \\(\\tan^{-1}(\\sqrt{x(x+1)}) + \\sin^{-1}(\\sqrt{x^2 + x + 1}) = \\frac{\\pi}{2}\\) is",
+	q: "The number of solutions for \\(\\tan^{-1}(\\sqrt{x(x+1)}) +\\)\\( \\sin^{-1}(\\sqrt{x^2 + x + 1}) = \\frac{\\pi}{2}\\) is",
 	options: [
 	"(A). zero",
 	"(B). one",
