@@ -128,7 +128,7 @@ window.SET_DATA = {
 	options: [
 	"(A). \\(\\frac{2\\pi}{3}, \\frac{\\pi}{3}\\)",
 	"(B). \\(\\frac{\\pi}{3}, \\frac{5\\pi}{3}\\)",
-	"(C). \\(-\\frac{\\pi}{3}, \\frac{2\\pi}{3}\\)",
+	"(C). \\(\\frac{-\\pi}{3}, \\frac{2\\pi}{3}\\)",
 	"(D). \\(\\frac{2\\pi}{3}, \\frac{5\\pi}{3}\\)"
 	],
 	correct: "(B)"
@@ -181,10 +181,10 @@ window.SET_DATA = {
 	{
 	q: "Differentiation of \\(\\sin^{-1}\\left(\\frac{1-x}{1+x}\\right)\\) w.r.t. \\(\\sqrt{x}\\) is equal to",
 	options: [
-	"(A). \\(-\\frac{2}{1+x^2}\\)",
+	"(A). \\(\\frac{-2}{1+x^2}\\)",
 	"(B). \\(\\frac{2}{1+x^2}\\)",
 	"(C). \\(\\frac{2x}{1+x^2}\\)",
-	"(D). \\(-\\frac{2x}{1+x^2}\\)"
+	"(D). \\(\\frac{-2x}{1+x^2}\\)"
 	],
 	correct: "(A)"
 	},
@@ -345,10 +345,10 @@ window.SET_DATA = {
 	{
 	q: `\\(^{n}P_r\\) is equal to`,
 	options: [
-	"(A). \\((n-1)P_r + r^{n+1} P_{r-1}\\)",
+	"(A). \\(^(n-1)P_r + r^{n+1} P_{r-1}\\)",
 	"(B). \\(\\frac{n!}{r!(n-r)!}\\)",
-	"(C). \\(r (n-1)P_r - (n-1)P_{(r-1)}\\)",
-	"(D). \\((n-1)P_r + (n-1)P_{(r-1)}\\)"
+	"(C). \\(r {}^(n-1)P_r - {}^(n-1)P_{(r-1)}\\)",
+	"(D). \\(^(n-1)P_r + {}^(n-1)P_{(r-1)}\\)"
 	],
 	correct: "(A)"
 	},
@@ -530,7 +530,7 @@ window.SET_DATA = {
 	"(C). \\(2mn\\)",
 	"(D). \\(m^n\\)"
 	],
-	correct: "(D)"
+	correct: "(A)"
 	},
 	// Q47
 	{
@@ -545,10 +545,10 @@ window.SET_DATA = {
 	},
 	// Q48
 	{
-	q: "If A and B are two independent events in a sample space, then \\(P(\\overline{A} \\mid \\overline{B})\\) equals",
+	q: "If A and B are two independent events in a sample space, then \\(P(\\overline{A} / \\overline{B})\\) equals",
 	options: [
-	"(A). \\(1 - P(A \\mid \\overline{B})\\)",
-	"(B). \\(1 - P(\\overline{A} \\mid B)\\)",
+	"(A). \\(1 - P(A / \\overline{B})\\)",
+	"(B). \\(1 - P(\\overline{A} / B)\\)",
 	"(C). \\(1 - P(B)\\)",
 	"(D). \\(1 - P(A)\\)"
 	],
