@@ -344,7 +344,7 @@ window.SET_DATA = {
 	},
 	// Q32
 	{
-	q: "If \\((1 - x + x^2)^n = a_0 + a_1x + a_2x^2 + \\ldots + a_{2n}x^{2n}\\) then \\(a_0 + a_2 + a_4 + \\ldots + a_{2n}\\) equals",
+	q: "If \\((1 - x + x^2)^n = a_0 + a_1x + a_2x^2 + \\ldots + \\)\\( a_{2n}x^{2n}\\) then \\(a_0 + a_2 + a_4 + \\ldots + a_{2n}\\) equals",
 	options: [
 	"(A). \\(\\frac{3^n + 1}{2}\\)",
 	"(B). \\(\\frac{3^n - 1}{2}\\)",
@@ -377,7 +377,7 @@ window.SET_DATA = {
 	},
 	// Q35
 	{
-	q: "If the system of linear equations \\(x + 4ay + az = 0, x + 3by + bz = 0, x + 2cy + cz = 0\\) have a non zero solution, then \\(a, b, c\\) are in",
+	q: "If the system of linear equations \\(x + 4ay + az = 0, x + 3by + bz = 0,\\)\\( x + 2cy + cz = 0\\) have a non zero solution, then \\(a, b, c\\) are in",
 	options: [
 	"(A). H.P.",
 	"(B). G.P.",
@@ -511,8 +511,8 @@ window.SET_DATA = {
 	{
 	q: "If \\(R\\) be a relation \\(<\\) from \\(A = \\{1,2,3,4\\}\\) to \\(B = \\{1,3,5\\}\\), i.e. \\((a, b) \\in R\\) iff \\(a < b\\), then \\(R \\circ R^{-1}\\) is",
 	options: [
-	"(A). \\(\\{(1,3),(1,5),(2,3),(2,5),(3,5),(4,5)\\}\\)",
-	"(B). \\(\\{(3,1),(5,1),(3,2),(5,2),(5,3),(5,4)\\}\\)",
+	"(A). \\(\\{(1,3),(1,5),(2,3),(2,5),\\)\\((3,5),(4,5)\\}\\)",
+	"(B). \\(\\{(3,1),(5,1),(3,2),(5,2),\\)\\((5,3),(5,4)\\}\\)",
 	"(C). \\(\\{(3,3),(3,5),(5,3),(5,5)\\}\\)",
 	"(D). \\(\\{(3,3),(3,4),(4,5)\\}\\)"
 	],
