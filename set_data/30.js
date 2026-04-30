@@ -168,7 +168,7 @@ window.SET_DATA = {
 	},
 	// Q16
 	{
-	q: "If \\(0 < \\theta < \\frac{\\pi}{2}\\) and determinant \\(\\begin{vmatrix} 1+\\sin^2\\theta & \\cos^2\\theta & 4\\sin4\\theta \\\\ \\sin^2\\theta & 1+\\cos^2\\theta & 4\\sin4\\theta \\\\ \\sin^2\\theta & \\cos^2\\theta & 1+4\\sin4\\theta \\end{vmatrix} = 0\\), then \\(\\theta\\) is equal to",
+	q: "If \\(0 < \\theta < \\frac{\\pi}{2}\\) and determinant \\(\\begin{vmatrix} 1+\\sin^2\\theta & \\cos^2\\theta & 4\\sin4\\theta \\\\ \\sin^2\\theta & 1+\\cos^2\\theta & 4\\sin4\\theta \\\\ \\sin^2\\theta & \\cos^2\\theta & 1+4\\sin4\\theta \\end{vmatrix}\\)\\( = 0\\), then \\(\\theta\\) is equal to",
 	options: [
 	"(A). \\(\\frac{\\pi}{24}, \\frac{5\\pi}{24}\\)",
 	"(B). \\(\\frac{5\\pi}{24}, \\frac{7\\pi}{24}\\)",
@@ -269,8 +269,8 @@ window.SET_DATA = {
 	{
 	q: "The combined equation of the asymptotes of the hyperbola \\(2x^2 + 5xy + 2y^2 + 4x + 5y = 0\\)",
 	options: [
-	"(A). \\(2x^2 + 5xy + 2y^2 + 4x + 5y + 2 = 0\\)",
-	"(B). \\(2x^2 + 5xy + 2y^2 + 4x + 5y - 2 = 0\\)",
+	"(A). \\(2x^2 + 5xy + 2y^2 + 4x + 5y + 2\\)\\( = 0\\)",
+	"(B). \\(2x^2 + 5xy + 2y^2 + 4x + 5y - 2\\)\\( = 0\\)",
 	"(C). \\(2x^2 + 5xy + 2y^2 = 0\\)",
 	"(D). None of the above"
 	],
@@ -333,12 +333,12 @@ window.SET_DATA = {
 	},
 	// Q31
 	{
-	q: "The relation \\(R = \\{(1,1), (2,2), (3,3), (1,2), (2,3), (1,3)\\}\\) on set \\(A = \\{1,2,3\\}\\), is",
+	q: "The relation \\(R = \\{(1,1), (2,2), (3,3), (1,2), (2,3),\\)\\( (1,3)\\}\\) on set \\(A = \\{1,2,3\\}\\), is",
 	options: [
-	"(A). \\(\\text{reflexive but not symmetric}\\)",
-	"(B). \\(\\text{reflexive but not transitive}\\)",
-	"(C). \\(\\text{symmetric and transitive}\\)",
-	"(D). \\(\\text{neither symmetric nor transitive}\\)"
+	"(A). reflexive but not symmetric",
+	"(B). reflexive but not transitive",
+	"(C). symmetric and transitive",
+	"(D). neither symmetric nor transitive"
 	],
 	correct: "(A)"
 	},
