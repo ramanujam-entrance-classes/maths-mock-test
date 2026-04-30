@@ -311,7 +311,7 @@ window.SET_DATA = {
 	},
 	// Q29
 	{
-	q: "If \\(\\theta = \\tan^{-1}\\left(\\frac{1}{1+2}\\right) + \\tan^{-1}\\left(\\frac{1}{1+(2)(3)}\\right)\\)\\( + \\tan^{-1}\\left(\\frac{1}{1+(3)(4)}\\right) + \\dots + \\tan^{-1}\\left(\\frac{1}{1+n(n+1)}\\right)\\), then \\(\\tan \\theta\\) is equal to",
+	q: "If \\(\\theta = \\tan^{-1}\\left(\\frac{1}{1+2}\\right) + \\tan^{-1}\\left(\\frac{1}{1+(2)(3)}\\right)\\)\\( + \\tan^{-1}\\left(\\frac{1}{1+(3)(4)}\\right) + \\dots + \\)\\(\\tan^{-1}\\left(\\frac{1}{1+n(n+1)}\\right)\\), then \\(\\tan \\theta\\) is equal to",
 	options: [
 	"(A). \\(\\frac{n}{n+1}\\)",
 	"(B). \\(\\frac{n+1}{n+2}\\)",
