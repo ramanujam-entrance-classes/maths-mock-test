@@ -91,7 +91,7 @@ window.SET_DATA = {
 	},
 	// Q9
 	{
-	q: "The value of \\(\\int_{1}^{e^{3\\pi}} \\frac{\\sin(\\pi \\log x)}{x} dx\\) is equal to",
+	q: "The value of \\(\\int_{1}^{e^{37}} \\frac{\\pi\\sin(\\pi \\log x)}{x} dx\\) is equal to",
 	options: [
 	"(A). \\(2\\)",
 	"(B). \\(3\\)",
@@ -131,7 +131,7 @@ window.SET_DATA = {
 	"(C). \\(2mn\\)",
 	"(D). \\(m^n\\)"
 	],
-	correct: "(D)"
+	correct: "(A)"
 	},
 	// Q13
 	{
