@@ -344,7 +344,7 @@ window.SET_DATA = {
 	},
 	// Q32
 	{
-	q: "If \\((1 - x + x^2)^n = a_0 + a_1x + a_2x^2 + \\ldots + \\)\\( a_{2n}x^{2n}\\) then \\(a_0 + a_2 + a_4 + \\ldots + a_{2n}\\) equals",
+	q: "If \\((1 - x + x^2)^n = a_0 + a_1x + a_2x^2 +\\)\\( \\ldots + a_{2n}x^{2n}\\) then \\(a_0 + a_2 + a_4 + \\ldots + a_{2n}\\) equals",
 	options: [
 	"(A). \\(\\frac{3^n + 1}{2}\\)",
 	"(B). \\(\\frac{3^n - 1}{2}\\)",
