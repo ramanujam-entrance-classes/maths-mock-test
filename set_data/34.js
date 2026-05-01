@@ -108,7 +108,7 @@ window.SET_DATA = {
 	},
 	// Q10
 	{
-	q: "The equations \\(x + y + z = 6,\\ x + 2y + 3z = 10,\\ x + 2y + mz = n\\) give infinite number of values of the triplet \\((x, y, z)\\) if",
+	q: "The equations \\(x + y + z = 6,\\ x + 2y + 3z = 10,\\ \\)\\( x + 2y + mz = n\\) give infinite number of values of the triplet \\((x, y, z)\\) if",
 	options: [
 	"(A). \\(m = 3,\\ n \\in R\\)",
 	"(B). \\(m = 3,\\ n \\ne 10\\)",
