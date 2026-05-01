@@ -212,9 +212,9 @@ window.SET_DATA = {
 	},
 	// Q20
 	{
-	q: "Consider the following relations 
+	q: `Consider the following relations 
 		\\(R = {(x, y) \\mid x, y \\) are real numbers and \\(x = wy\\) for some rational number \\(w } \\); 
-		\\(S = {\\left(\\frac{m}{n}, \\frac{p}{q}\\right) \\mid m, n, p, q\\) are integers such that \\(n, q \\ne 0\\) and \\(qm = pn}\\). Then,",
+		\\(S = {\\left(\\frac{m}{n}, \\frac{p}{q}\\right) \\mid m, n, p, q\\) are integers such that \\(n, q \\ne 0\\) and \\(qm = pn}\\). Then,`,
 	options: [
 	"(A). \\(R\\) is an equivalence relation but \\(S\\) is not an equivalence relation",
 	"(B). Neither \\(R\\) nor \\(S\\) is an equivalence relation",
