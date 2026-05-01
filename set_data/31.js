@@ -108,7 +108,7 @@ window.SET_DATA = {
 	q: `If \\(P = \\begin{bmatrix} \\frac{\\sqrt{3}}{2} & -\\frac{1}{2} \\\\ \\frac{1}{2} & \\frac{\\sqrt{3}}{2} \\end{bmatrix}\\), \\(A = \\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix}\\) and \\(Q = PAP^T\\), then \\(P^T Q^{2005} P\\) is:`,
 	options: [
 	"(A). \\(\\begin{bmatrix} 1 & 2005 \\\\ 0 & 1 \\end{bmatrix}\\)",
-	"(B). \\(\\begin{bmatrix} 2005 & 1 \\\\ 2005 & 1 \\end{bmatrix}\\)",
+	"(B). \\(\\begin{bmatrix} 1 & 2005 \\\\ 2005 & 1 \\end{bmatrix}\\)",
 	"(C). \\(\\begin{bmatrix} 1 & 0 \\\\ 2005 & 1 \\end{bmatrix}\\)",
 	"(D). \\(\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}\\)"
 	],
@@ -198,9 +198,9 @@ window.SET_DATA = {
 	"(A). \\( \\tan x = -\\frac{1}{2} \\)",
 	"(B). \\( \\tan x = \\frac{1}{2} \\)",
 	"(C). \\( x = (2n+1)\\frac{\\pi}{2}, n \\in I \\)",
-	"(D). \\( x = \\frac{n\\pi}{2}, n \\in I \\)"
+	"(D). None of these"
 	],
-	correct: "(C)"
+	correct: "(D)"
 	},
 	// Q19
 	{
@@ -209,9 +209,9 @@ window.SET_DATA = {
 	"(A). \\( \\frac{n\\pi}{8} \\)",
 	"(B). \\( \\frac{(2n+1)\\pi}{8} \\)",
 	"(C). \\( \\frac{(2n+1)\\pi}{4} \\)",
-	"(D). \\( \\frac{(2n-1)\\pi}{3} \\)"
+	"(D). None of these"
 	],
-	correct: "(B)"
+	correct: "(D)"
 	},
 	// Q20
 	{
@@ -382,8 +382,8 @@ window.SET_DATA = {
 	{
 	q: "If \\(x = y\\sqrt{1 - y^2}\\), then \\(\\frac{dy}{dx}\\) is equal to :",
 	options: [
-	"(A). \\(\\frac{x}{\\sqrt{1 - y^2}}\\)",
-	"(B). \\(\\frac{\\sqrt{1 - y^2}}{1 + 2y^2}\\)",
+	"(A). \\(x\\)",
+	"(B). \\(\\sqrt{\\frac{1 - y^2}{1 + 2y^2}}\\)",
 	"(C). \\(\\frac{\\sqrt{1 - y^2}}{1 - 2y^2}\\)",
 	"(D). \\(0\\)"
 	],
