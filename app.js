@@ -374,7 +374,11 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
 
         selectedSets.forEach(({ set, questions }) => {
             const shuffledQ = shuffleWithSeed([...questions], numericSeed + set);
-            finalQuestions.push(shuffledQ[0]);
+            //finalQuestions.push(shuffledQ[0]);
+finalQuestions.push({
+    ...shuffledQ[0],
+    _set: set   
+});
         });
     }
 
