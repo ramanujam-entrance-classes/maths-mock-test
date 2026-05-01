@@ -212,7 +212,7 @@ window.SET_DATA = {
 	},
 	// Q20
 	{
-	q: "If \\(f(x)=\\log_x (\\ln x)\\), then \\(f'(x)\\) at \\(x=e\\) is",
+	q: "If \\(f(x)=\\log_x (\\in (x))\\), then \\(f'(x)\\) at \\(x=e\\) is",
 	options: [
 	"(A). \\(e\\)",
 	"(B). \\(-e\\)",
@@ -263,7 +263,7 @@ window.SET_DATA = {
 	},
 	// Q24
 	{
-	q: "The value of \\(\\cot\\left( \\csc^{-1} \\frac{5}{3} + \\tan^{-1} \\frac{2}{3} \\right)\\) is",
+	q: "The value of \\(\\cot\\left( cosec^{-1} \\frac{5}{3} + \\tan^{-1} \\frac{2}{3} \\right)\\) is",
 	options: [
 	"(A). \\(\\frac{6}{17}\\)",
 	"(B). \\(\\frac{3}{17}\\)",
