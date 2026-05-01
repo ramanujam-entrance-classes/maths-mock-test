@@ -438,7 +438,7 @@ window.SET_DATA = {
 	},
 	// Q40
 	{
-	q: "Let \\(f(x) = \\sqrt{1 + x^2}, x < \\sqrt{3}; \\ \\)\\(\\sqrt{3}x - 1, \\sqrt{3} \\le x < 4; \\ \\)\\( [x], 4 \\le x < 5,\\) where \\([x]\\) is the greatest integer \\(\\le x; \\\\)\\( |1 - x|, x \\ge 5\\). The number of points of discontinuity of \\(f(x)\\) in \\(R\\) is",
+	q: "Let \\(f(x) = \\sqrt{1 + x^2}, x < \\sqrt{3}; \\ \\)\\(\\sqrt{3}x - 1, \\sqrt{3} \\le x < 4; \\ \\)\\( [x], 4 \\le x < 5,\\) where \\([x]\\) is the greatest integer \\(\\le x; \\ \\)\\( |1 - x|, x \\ge 5\\). The number of points of discontinuity of \\(f(x)\\) in \\(R\\) is",
 	options: [
 	"(A). \\(3\\)",
 	"(B). \\(0\\)",
