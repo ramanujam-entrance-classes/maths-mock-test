@@ -2,7 +2,7 @@ let questions = [];
 let quizTitle = "";
 const SHOW_SET_DEBUG = false;
 const urlParams = new URLSearchParams(window.location.search);
-const SHOW_CORRECT_MODE = urlParams.get("ans") === "correct";
+const SHOW_REVIEW_MODE = urlParams.get("mode") === "review";
 
 function initApp(data) {
     questions = data.questions;
@@ -119,7 +119,7 @@ function initQuiz() {
                     let disabled = "";
 
                     // ✅ If ans=correct → pre-select correct option
-                    if (SHOW_CORRECT_MODE && qObj.correct) {
+                    if (SHOW_REVIEW_MODE && qObj.correct) {
                         if (labels[i] === qObj.correct) {
                             checked = "checked";
                         }
@@ -134,7 +134,7 @@ function initQuiz() {
                     `;
                 }).join('')}
 
-                ${!SHOW_CORRECT_MODE ? `
+                ${!SHOW_REVIEW_MODE ? `
                 <label onclick="clearSelection(${index})">
                     🔄
                 </label>` : ""}
