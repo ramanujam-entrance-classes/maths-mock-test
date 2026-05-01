@@ -3,7 +3,7 @@ window.SET_DATA = {
   questions: [
 	// Q1
 	{
-	q: "The number of values of \\(x\\) in \\((0, \\pi)\\) satisfying the equation \\((\\sqrt{3} \\sin x + \\cos x)\\sqrt{\\sqrt{3} \\sin 2x - \\cos 2x + 2} = 4\\), is",
+	q: `The number of values of \\(x\\) in \\((0, \\pi)\\) satisfying the equation <span style='font-size:13px'> \\((\\sqrt{3} \\sin x + \\cos x)^{\\sqrt{\\sqrt{3} \\sin 2x - \\cos 2x + 2}}\\)\\( = 4\\) </span>, is`,
 	options: [
 	"(A). \\(0\\)",
 	"(B). \\(1\\)",
@@ -80,9 +80,9 @@ window.SET_DATA = {
 	},
 	// Q8
 	{
-	q: "The equivalent definition of \\(f(x) = \\max\\{-|1 - x^2|, 2|x| - 2, 1 - \\frac{7}{2}|x|\\}\\), is",
+	q: "The equivalent definition of \\(f(x) = \\max\\{-|1 - x^2|, 2|x| - 2, \\)\\(1 - \\frac{7}{2}|x|\\}\\), is",
 	options: [
-	"(A). \\(\\begin{cases}-2x+2, & x \\le -1 \\\\ x^2-1, & -1 \\le x < \\frac{1}{2} \\\\ 1 + \\frac{7x}{2}, & -\\frac{1}{2} \\le x < 0 \\\\ 1 - \\frac{7x}{2}, & 0 \\le x < \\frac{1}{2} \\\\ x^2-1, & \\frac{1}{2} \\le x < 1 \\\\ 2x-2, & x \\ge 1 \\end{cases}\\)",
+	"(A). \\(\\begin{cases}-2x+2, & x < -1 \\\\ x^2-1, & -1 \\le x < \\frac{1}{2} \\\\ 1 + \\frac{7x}{2}, & -\\frac{1}{2} \\le x < 0 \\\\ 1 - \\frac{7x}{2}, & 0 \\le x < \\frac{1}{2} \\\\ x^2-1, & \\frac{1}{2} \\le x < 1 \\\\ 2x-2, & x \\ge 1 \\end{cases}\\)",
 	"(B). \\(\\begin{cases}-2x-2, & x < -1 \\\\ -x^2-1, & -1 \\le x < \\frac{1}{2} \\\\ 1 + \\frac{7x}{2}, & -\\frac{1}{2} \\le x < 0 \\\\ 1 - \\frac{7x}{2}, & 0 \\le x < \\frac{1}{2} \\\\ x^2-1, & \\frac{1}{2} \\le x < 1 \\\\ 2x-2, & x \\ge 1 \\end{cases}\\)",
 	"(C). \\(\\begin{cases}-2x+2, & x \\le -1 \\\\ x^2-1, & -1 \\le x < 0 \\\\ 1 + 7x, & 0 \\le x < 1 \\\\ 2x-2, & x \\ge 1 \\end{cases}\\)",
 	"(D). none of these"
@@ -94,9 +94,9 @@ window.SET_DATA = {
 	q: "If \\(x \\in R\\), then \\(f(x) = \\sin^{-1}\\left(\\frac{2x}{1 + x^2}\\right)\\) is equal to",
 	options: [
 	"(A). \\(2 \\tan^{-1} x\\)",
-	"(B). \\(\\begin{cases}-\\pi - 2\\tan^{-1}x, & -\\infty < x < -1 \\\\ 2\\tan^{-1}x, & -1 \\le x \\le 1 \\\\ \\pi - 2\\tan^{-1}x, & 1 < x < \\infty \\end{cases}\\)",
-	"(C). \\(\\begin{cases}-\\pi - 2\\tan^{-1}x, & -\\infty < x < -1 \\\\ 2\\tan^{-1}x, & -1 \\le x \\le 1 \\\\ \\pi - 2\\tan^{-1}x, & 1 < x < \\infty \\end{cases}\\)",
-	"(D). \\(\\begin{cases}-\\pi + 2\\tan^{-1}x, & -\\infty < x \\le -1 \\\\ 2\\tan^{-1}x, & -1 < x < 1 \\\\ \\pi - 2\\tan^{-1}x, & 1 \\le x < \\infty \\end{cases}\\)"
+	`(B). <span style='font-size:13px'> \\(\\begin{cases}-\\pi - 2\\tan^{-1}x, & -\\infty < x < -1 \\\\ 2\\tan^{-1}x, & -1 \\le x \\le 1 \\\\ \\pi - 2\\tan^{-1}x, & 1 < x < \\infty \\end{cases}\\) </span>`,
+	`(C). <span style='font-size:13px'> \\(\\begin{cases}-\\pi - 2\\tan^{-1}x, & -\\infty < x < -1 \\\\ 2\\tan^{-1}x, & -1 \\le x \\le 1 \\\\ \\pi - 2\\tan^{-1}x, & 1 < x < \\infty \\end{cases}\\) </span>`,
+	`(D). <span style='font-size:13px'> \\(\\begin{cases}-\\pi + 2\\tan^{-1}x, & -\\infty < x \\le -1 \\\\ 2\\tan^{-1}x, & -1 < x < 1 \\\\ \\pi - 2\\tan^{-1}x, & 1 \\le x < \\infty \\end{cases}\\) </span>`
 	],
 	correct: "(B)"
 	},
@@ -192,9 +192,9 @@ window.SET_DATA = {
 	{
 	q: "The equivalent definition of \\(f(x) = \\max \\{x^2, (1 - x)^2, 2x(1 - x)\\}\\), where \\(0 \\le x \\le 1\\),",
 	options: [
-	"(A). \\(f(x) = \\begin{cases} x^2, & 0 \\le x \\le \\frac{1}{3} \\\\ 2x(1-x), & \\frac{1}{3} \\le x \\le \\frac{2}{3} \\\\ (1-x)^2, & \\frac{2}{3} \\le x \\le 1 \\end{cases}\\)",
-	"(B). \\(f(x) = \\begin{cases} (1-x)^2, & 0 \\le x \\le \\frac{1}{3} \\\\ 2x(1-x), & \\frac{1}{3} \\le x \\le \\frac{2}{3} \\\\ x^2, & \\frac{2}{3} \\le x \\le 1 \\end{cases}\\)",
-	"(C). \\(f(x) = \\begin{cases} x^2, & 0 \\le x \\le \\frac{1}{2} \\\\ (1-x)^2, & \\frac{1}{2} \\le x \\le 1 \\end{cases}\\)",
+	`(A). <span style='font-size:13px'> \\(f(x) = \\begin{cases} x^2, & 0 \\le x \\le \\frac{1}{3} \\\\ 2x(1-x), & \\frac{1}{3} \\le x \\le \\frac{2}{3} \\\\ (1-x)^2, & \\frac{2}{3} \\le x \\le 1 \\end{cases}\\) </span>`,
+	`(B). <span style='font-size:13px'> \\(f(x) = \\begin{cases} (1-x)^2, & 0 \\le x \\le \\frac{1}{3} \\\\ 2x(1-x), & \\frac{1}{3} \\le x \\le \\frac{2}{3} \\\\ x^2, & \\frac{2}{3} \\le x \\le 1 \\end{cases}\\) </span>`,
+	`(C). <span style='font-size:13px'> \\(f(x) = \\begin{cases} x^2, & 0 \\le x \\le \\frac{1}{2} \\\\ (1-x)^2, & \\frac{1}{2} \\le x \\le 1 \\end{cases}\\) </span>`,
 	"(D). none of these"
 	],
 	correct: "(B)"
@@ -212,7 +212,7 @@ window.SET_DATA = {
 	},
 	// Q20
 	{
-	q: "Consider the following relations \\(R = \\{(x, y) \\mid x, y \\text{ are real numbers and } x = wy \\text{ for some rational number } w\\}\\); \\(S = \\left\\{\\left(\\frac{m}{n}, \\frac{p}{q}\\right) \\mid m, n, p, q \\text{ are integers such that } n, q \\ne 0 \\text{ and } qm = pn\\right\\}\\). Then,",
+	q: "Consider the following relations \\(R = \\)\\( {(x, y) \\mid x, y \\) are real numbers and \\(x = wy\\) for some rational number \\(w\\) \\( } \\); \\(S =\\)\\( {\\left(\\frac{m}{n}, \\frac{p}{q}\\right) \\mid m, n, p, q\\) are integers such that \\(n, q \\ne 0\\) and \\(qm = pn}\\). Then,",
 	options: [
 	"(A). \\(R\\) is an equivalence relation but \\(S\\) is not an equivalence relation",
 	"(B). Neither \\(R\\) nor \\(S\\) is an equivalence relation",
@@ -366,7 +366,7 @@ window.SET_DATA = {
 	},
 	// Q34
 	{
-	q: "Let \\(y = x^2 e^{-x}\\), then the interval in which y increases with respect to x is",
+	q: "Let \\(y = x^2 e^{-x}\\), then the interval in which \\(y\\) increases with respect to x is",
 	options: [
 	"(A). \\((-\\infty, \\infty)\\)",
 	"(B). \\((-2, 0)\\)",
@@ -465,7 +465,7 @@ window.SET_DATA = {
 	},
 	// Q43
 	{
-	q: "If \\(A\\) is an obtuse angle, then \\(\\frac{\\sin^3 A - \\cos^3 A}{\\sin A - \\cos A} + \\frac{\\sin A}{\\sqrt{1 + \\tan^2 A}} - 2 \\tan A \\cot A\\) is always equal to",
+	q: "If \\(A\\) is an obtuse angle, then \\(\\frac{\\sin^3 A - \\cos^3 A}{\\sin A - \\cos A} + \\frac{\\sin A}{\\sqrt{1 + \\tan^2 A}} - \\)\\(2 \\tan A \\cot A\\) is always equal to",
 	options: [
 	"(A). \\(1\\)",
 	"(B). \\(-1\\)",
