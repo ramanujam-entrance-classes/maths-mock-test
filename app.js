@@ -1,8 +1,8 @@
 let questions = [];
 let quizTitle = "";
-const SHOW_SET_DEBUG = false;
 const urlParams = new URLSearchParams(window.location.search);
 const SHOW_REVIEW_MODE = urlParams.get("mode") === "review";
+const SHOW_SET_DEBUG = urlParams.get("setno") === "show";
 
 function initApp(data) {
     questions = data.questions;
