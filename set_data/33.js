@@ -148,9 +148,9 @@ window.SET_DATA = {
 	{
 	q: "The nth term of the series \\(5 + 7 + 13 + 31 + 85 + \\dots\\) is:",
 	options: [
-	"(A). \\(3^n - 1 + 2\\)",
-	"(B). \\(3 + 3^n - 1\\)",
-	"(C). \\(4 + 3^n - 1\\)",
+	"(A). \\(3^{n - 1} + 2\\)",
+	"(B). \\(3 + 3^{n - 1}\\)",
+	"(C). \\(4 + 3^{n - 1}\\)",
 	"(D). None of these"
 	],
 	correct: "(C)"
@@ -186,7 +186,7 @@ window.SET_DATA = {
 	5 & x & 5 \\\\
 	x & 5 & 5
 	\\end{vmatrix}
-	= 0
+	\\)\\(= 0
 	\\), then \\(x\\) is equal to:`,
 	options: [
 	"(A). \\(0\\)",
@@ -198,7 +198,7 @@ window.SET_DATA = {
 	},
 	// Q17
 	{
-	q: "Let \\(R = \\{(1,1), (1,3), (4,2), (2,4), (2,3), (3,1)\\}\\) be a relation on the set \\(A = \\{1,2,3,4\\}\\). The relation \\(R\\) is:",
+	q: "Let \\(R = \\{(1,1), (1,3), (4,2), (2,4), (2,3)\\)\\(, (3,1)\\}\\) be a relation on the set \\(A = \\{1,2,3,4\\}\\). The relation \\(R\\) is:",
 	options: [
 	"(A). a function",
 	"(B). transitive",
@@ -244,7 +244,7 @@ window.SET_DATA = {
 	{
 	q: "If \\(y = e^{\\log(1 + x + x^2 + x^3 + \\dots)}\\), where \\(|x| < 1\\), then \\(\\frac{dy}{dx}\\) is equal to:",
 	options: [
-	"(A). \\(-\\frac{1}{(1-x)^2}\\)",
+	"(A). \\(\\frac{-1}{(1-x)^2}\\)",
 	"(B). \\(\\frac{1}{(1-x)^2}\\)",
 	"(C). \\(\\frac{1}{(1+x)^2}\\)",
 	"(D). None of these"
@@ -276,9 +276,9 @@ window.SET_DATA = {
 	// Q24
 	{
 	q: `If \\(\\int \\sin^{-1} x \\cos^{-1} x \\, dx = f^{-1}(x)\\)
-	\\[
-	\\left[ \\frac{\\pi}{2} x - x f^{-1}(x) - 2\\sqrt{1-x^2} \\right] \\frac{\\pi}{2} \\sqrt{1-x^2} + 2x + C,
-	\\]
+	\\(
+	\\left[ \\frac{\\pi}{2} x - x f^{-1}(x) - 2\\sqrt{1-x^2} \\right] \\)\\(\\frac{\\pi}{2} \\sqrt{1-x^2} + 2x + C,
+	\\)
 	then:`,
 	options: [
 	"(A). \\(f(x) = \\sin x\\)",
@@ -356,7 +356,7 @@ window.SET_DATA = {
 	},
 	// Q31
 	{
-	q: "If \\(a_1, a_2, a_3, \\ldots\\) are terms of AP such that \\(a_1 + a_5 + a_{10} + a_{15} + a_{20} + a_{24} = 225\\), then the sum of first \\(24\\) terms is :",
+	q: "If \\(a_1, a_2, a_3, \\ldots\\) are terms of AP such that \\(a_1 + a_5 + a_{10} + a_{15} + a_{20} + a_{24} =\\)\\( 225\\), then the sum of first \\(24\\) terms is :",
 	options: [
 	"(A). \\(9 \\times 10^2\\)",
 	"(B). \\(9 \\times 10^3\\)",
@@ -367,7 +367,7 @@ window.SET_DATA = {
 	},
 	// Q32
 	{
-	q: "lim \\(n \\to \\infty\\) \\( \\frac{1}{n} \\left( \\frac{1}{n+1} + \\frac{2}{n+2} + \\cdots + \\frac{3n}{4n} \\right) \\) is equal to:",
+	q: "\\(\\lim_{n \\to \\infty}\\) \\( \\frac{1}{n} \\left( \\frac{1}{n+1} + \\frac{2}{n+2} + \\cdots + \\frac{3n}{4n} \\right) \\) is equal to:",
 	options: [
 	"(A). \\(\\log 4\\)",
 	"(B). \\(-\\log 4\\)",
@@ -378,7 +378,7 @@ window.SET_DATA = {
 	},
 	// Q33
 	{
-	q: "If in a triangle \\(ABC\\), \\(\\sin^3 A + \\sin^3 B + \\sin^3 C = 3 \\sin A \\sin B \\sin C\\), then the value of determinant \\( \\begin{vmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{vmatrix} \\) is equal to:",
+	q: "If in a triangle \\(ABC\\), \\(\\sin^3 A + \\sin^3 B + \\sin^3 C = \\)\\(3 \\sin A \\sin B \\sin C\\), then the value of determinant \\( \\begin{vmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{vmatrix} \\) is equal to:",
 	options: [
 	"(A). \\(0\\)",
 	"(B). \\(1\\)",
@@ -422,12 +422,12 @@ window.SET_DATA = {
 	},
 	// Q37
 	{
-	q: "The value of \\(2 \\tan^{-1} (\\cosec(\\tan^{-1} x) - \\tan(\\cot^{-1} x))\\) is:",
+	q: "The value of \\(2 \\tan^{-1} (cosec(\\tan^{-1} x) -\\)\\( \\tan(\\cot^{-1} x))\\) is:",
 	options: [
 	"(A). \\(\\tan^{-1} x\\)",
 	"(B). \\(\\tan x\\)",
 	"(C). \\(\\cot x\\)",
-	"(D). \\(\\cosec^{-1} x\\)"
+	"(D). \\(cosec^{-1} x\\)"
 	],
 	correct: "(A)"
 	},
