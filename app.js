@@ -1,6 +1,8 @@
 let questions = [];
 let quizTitle = "";
 const SHOW_SET_DEBUG = false;
+const urlParams = new URLSearchParams(window.location.search);
+const SHOW_CORRECT_MODE = urlParams.get("ans") === "correct";
 
 function initApp(data) {
     questions = data.questions;
@@ -63,7 +65,7 @@ let totalTime = 70 * 60;
 let timeLeft = totalTime;
 let timerInterval;
 
-function initQuiz() {
+/*function initQuiz() {
     questions.forEach((qObj, index) => {
         const div = document.createElement('div');
         div.className = 'question-block';
@@ -87,6 +89,55 @@ function initQuiz() {
                 <label onclick="clearSelection(${index})">
                     🔄
                 </label>
+            </div>
+
+            <div id="feedback-${index}" class="feedback"></div>
+        `;
+
+        quizForm.appendChild(div);
+    });
+}*/
+
+function initQuiz() {
+    const labels = ["(A)", "(B)", "(C)", "(D)"];
+
+    questions.forEach((qObj, index) => {
+        const div = document.createElement('div');
+        div.className = 'question-block';
+
+        div.innerHTML = `
+            <div class="question-text">
+                <span class="q-num">${index + 1}.</span>
+                <span class="q-body">${qObj.q}
+                ${SHOW_SET_DEBUG ? `<span style="color:#888; font-size:12px;"> (Set ${qObj._set})</span>` : ""}
+                </span>
+            </div>
+
+            <div class="options-list">
+                ${qObj.options.map((opt, i) => {
+                    let checked = "";
+                    let disabled = "";
+
+                    // ✅ If ans=correct → pre-select correct option
+                    if (SHOW_CORRECT_MODE && qObj.correct) {
+                        if (labels[i] === qObj.correct) {
+                            checked = "checked";
+                        }
+                        disabled = "disabled"; // optional: lock answers
+                    }
+
+                    return `
+                        <label class="option-item ${checked ? 'correct' : ''}" id="L-${index}-${i}">
+                            <input type="radio" name="q${index}" value="${i}" ${checked} ${disabled}>
+                            <span>${opt}</span>
+                        </label>
+                    `;
+                }).join('')}
+
+                ${!SHOW_CORRECT_MODE ? `
+                <label onclick="clearSelection(${index})">
+                    🔄
+                </label>` : ""}
             </div>
 
             <div id="feedback-${index}" class="feedback"></div>
