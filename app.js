@@ -1,5 +1,6 @@
 let questions = [];
 let quizTitle = "";
+const SHOW_SET_DEBUG = false;
 
 function initApp(data) {
     questions = data.questions;
@@ -70,7 +71,10 @@ function initQuiz() {
         div.innerHTML = `
             <div class="question-text">
                 <span class="q-num">${index + 1}.</span>
-                <span class="q-body">${qObj.q}</span>
+              <span class="q-body">${qObj.q}
+<!-- DEBUG: show set -->
+     ${SHOW_SET_DEBUG ? `<span style="color:#888; font-size:12px;"> (Set ${qObj._set})</span>` : ""}
+</span>
             </div>
 
             <div class="options-list">
@@ -331,47 +335,6 @@ function loadSetFile(setNumber) {
     });
 }
 
-/*
-async function generateRandomTestWithSeed(seedNum, seedStr) {
-    //const numericSeed = stringToSeed(seed);
-    const numericSeed = seedNum;
-    window.TEST_SEED_DATE = seedStr;
-    //console.log("Original Seed:", seed);
-    //console.log("Numeric Seed:", numericSeed);
-    
-    // ✅ SHOW UI FIRST (same as loadTest flow)
-    const heading = document.getElementById("test-heading");
-    const nameSection = document.getElementById("name-section");
-    const note = document.getElementById("note-marks");
-
-    if (heading) {
-        heading.classList.remove("hidden");
-        heading.innerHTML += `<div style="font-size:14px; color:#888;">Loading...</div>`;
-    }
-    if (nameSection) nameSection.classList.remove("hidden");
-    if (note) note.classList.remove("hidden");
-
-    let allQuestions = [];
-    const promises = AVAILABLE_SETS.map(set => loadSetFile(set));
-    const results = await Promise.all(promises);
-    
-    results.forEach(data => {
-        if (data?.questions) {
-            allQuestions = allQuestions.concat(data.questions);
-        }
-    });
-
-    shuffleWithSeed(allQuestions, numericSeed);
-
-    const selected = allQuestions.slice(0, 50);
-
-    // ✅ Now initialize app
-    initApp({
-        title: `🎯 Mathematics Mock Test (${seedStr})`,
-        questions: selected
-    });
-}*/
-
 async function generateRandomTestWithSeed(seedNum, seedStr) {
     const numericSeed = seedNum;
     window.TEST_SEED_DATE = seedStr;
@@ -412,7 +375,7 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
 
         selectedSets.forEach(({ set, questions }) => {
             const shuffledQ = shuffleWithSeed([...questions], numericSeed + set);
-            finalQuestions.push(shuffledQ[0]);
+            finalQuestions.push(shuffledQ[0], _set: set);
         });
     }
 
@@ -434,7 +397,13 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
 
             const shuffledQ = shuffleWithSeed([...questions], numericSeed + set);
 
-            finalQuestions.push(...shuffledQ.slice(0, count));
+            //finalQuestions.push(...shuffledQ.slice(0, count));
+finalQuestions.push(
+    ...shuffledQ.slice(0, count).map(q => ({
+        ...q,
+        _set: set   // 👈 add this
+    }))
+);
         });
     }
 
