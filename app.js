@@ -1,6 +1,6 @@
 let questions = [];
 let quizTitle = "";
-const SHOW_SET_DEBUG = false;
+const SHOW_SET_DEBUG = true;
 
 function initApp(data) {
     questions = data.questions;
@@ -368,12 +368,14 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
     // ================================
     if (totalSets >= TOTAL_QUESTIONS) {
 
-        const shuffledSets = shuffleWithSeed([...validSets], numericSeed);
+        const mixedSeed1 = (numericSeed * 9301) % 233280;
+const shuffledSets = shuffleWithSeed([...validSets], mixedSeed1);
 
         const selectedSets = shuffledSets.slice(0, TOTAL_QUESTIONS);
 
         selectedSets.forEach(({ set, questions }) => {
-            const shuffledQ = shuffleWithSeed([...questions], numericSeed + set);
+            const mixedSeed2 = (numericSeed * 9301 + set * 49297) % 233280;
+const shuffledQ = shuffleWithSeed([...questions], mixedSeed2);
             //finalQuestions.push(shuffledQ[0]);
 finalQuestions.push({
     ...shuffledQ[0],
@@ -391,14 +393,16 @@ finalQuestions.push({
         const remainder = TOTAL_QUESTIONS % totalSets;
 
         // Shuffle sets for fair remainder distribution
-        const shuffledSets = shuffleWithSeed([...validSets], numericSeed);
+        const mixedSeed3 = (numericSeed * 9301) % 233280;
+const shuffledSets = shuffleWithSeed([...validSets], mixedSeed3);
 
         shuffledSets.forEach((setObj, index) => {
             const { set, questions } = setObj;
 
             const count = baseCount + (index < remainder ? 1 : 0);
 
-            const shuffledQ = shuffleWithSeed([...questions], numericSeed + set);
+            const mixedSeed4 = (numericSeed * 9301 + set * 49297) % 233280;
+const shuffledQ = shuffleWithSeed([...questions], mixedSeed4);
 
             //finalQuestions.push(...shuffledQ.slice(0, count));
 finalQuestions.push(
@@ -411,7 +415,8 @@ finalQuestions.push(
     }
 
     // ✅ Final shuffle (very important)
-    finalQuestions = shuffleWithSeed(finalQuestions, numericSeed + 9999);
+    const mixedSeed5 = (numericSeed * 9301 + 9999 * 49297) % 233280;
+finalQuestions = shuffleWithSeed(finalQuestions, mixedSeed5);
 
     // ✅ Trim safety (edge-case protection)
     finalQuestions = finalQuestions.slice(0, TOTAL_QUESTIONS);
