@@ -25,7 +25,7 @@ window.SET_DATA = {
 	},
 	// Q3
 	{
-	q: "If \\(\\theta_1, \\theta_2, \\theta_3, \\ldots, \\theta_n\\) are in AP, whose common difference is \\(d\\), then \\(\\sin d (\\sec \\theta_1 \\sec \\theta_2 + \\sec \\theta_2 \\sec \\theta_3 + \\ldots + \\sec \\theta_{n-1} \\sec \\theta_n)\\) is equal to:",
+	q: "If \\(\\theta_1, \\theta_2, \\theta_3, \\ldots, \\theta_n\\) are in AP, whose common difference is \\(d\\), then \\(\\sin d (\\sec \\theta_1 \\sec \\theta_2 + \\sec \\theta_2 \\sec \\theta_3 + \\ldots\\)\\( + \\sec \\theta_{n-1} \\sec \\theta_n)\\) is equal to:",
 	options: [
 	"(A). \\(\\tan \\theta_n - \\tan \\theta_2\\)",
 	"(B). \\(\\tan \\theta_n + \\tan \\theta_1\\)",
@@ -36,7 +36,7 @@ window.SET_DATA = {
 	},
 	// Q4
 	{
-	q: "If \\(\\int_0^{\\pi} x f(\\sin^2 x + \\sec^2 x) \\, dx = k \\int_0^{\\pi/2} f(\\sin^2 x + \\sec^2 x) \\, dx\\), then the value of \\(k\\) is:",
+	q: "If \\(\\int_0^{\\pi} x f(\\sin^2 x + \\sec^2 x) \\, dx =\\)\\( k \\int_0^{\\pi/2} f(\\sin^2 x + \\sec^2 x) \\, dx\\), then the value of \\(k\\) is:",
 	options: [
 	"(A). \\(\\frac{\\pi}{2}\\)",
 	"(B). \\(\\pi\\)",
@@ -69,7 +69,7 @@ window.SET_DATA = {
 	},
 	// Q7
 	{
-	q: "The value of \\(\\cos \\frac{\\pi}{7} + \\cos \\frac{2\\pi}{7} + \\cos \\frac{3\\pi}{7} + \\cos \\frac{4\\pi}{7} + \\cos \\frac{5\\pi}{7} + \\cos \\frac{6\\pi}{7} + \\cos \\frac{7\\pi}{7}\\) is:",
+	q: "The value of \\(\\cos \\frac{\\pi}{7} + \\cos \\frac{2\\pi}{7} + \\cos \\frac{3\\pi}{7} + \\cos \\frac{4\\pi}{7} +\\)\\( \\cos \\frac{5\\pi}{7} + \\cos \\frac{6\\pi}{7} + \\cos \\frac{7\\pi}{7}\\) is:",
 	options: [
 	"(A). \\(0\\)",
 	"(B). \\(-1\\)",
@@ -124,7 +124,7 @@ window.SET_DATA = {
 	},
 	// Q12
 	{
-	q: "The value of \\(4 + 2(1 + 2) \\log 2 + \\frac{2(1 + 2^2)}{2!} (\\log 2)^2 + \\frac{2(1 + 2^3)}{3!} (\\log 2)^3 + \\ldots\\) is:",
+	q: "The value of \\(4 + 2(1 + 2) \\log 2 + \\frac{2(1 + 2^2)}{2!} (\\log 2)^2 +\\)\\( \\frac{2(1 + 2^3)}{3!} (\\log 2)^3 + \\ldots\\) is:",
 	options: [
 	"(A). \\(10\\)",
 	"(B). \\(12\\)",
