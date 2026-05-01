@@ -1,6 +1,6 @@
 let questions = [];
 let quizTitle = "";
-const SHOW_SET_DEBUG = true;
+const SHOW_SET_DEBUG = false;
 
 function initApp(data) {
     questions = data.questions;
@@ -374,7 +374,7 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
 
         selectedSets.forEach(({ set, questions }) => {
             const shuffledQ = shuffleWithSeed([...questions], numericSeed + set);
-            finalQuestions.push(shuffledQ[0], _set: set);
+            finalQuestions.push(shuffledQ[0]);
         });
     }
 
