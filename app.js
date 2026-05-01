@@ -72,7 +72,6 @@ function initQuiz() {
             <div class="question-text">
                 <span class="q-num">${index + 1}.</span>
               <span class="q-body">${qObj.q}
-<!-- DEBUG: show set -->
      ${SHOW_SET_DEBUG ? `<span style="color:#888; font-size:12px;"> (Set ${qObj._set})</span>` : ""}
 </span>
             </div>
