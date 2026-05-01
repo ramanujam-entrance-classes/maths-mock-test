@@ -36,7 +36,7 @@ window.SET_DATA = {
 	},
 	// Q4
 	{
-	q: "If \\(n_1, n_2\\) are positive integers then \\((1+i)^{n_1} + (1+i^3)^{n_1} + (1+i^5)^{n_2} + (1+i^7)^{n_2}\\) is a real number if and only if",
+	q: "If \\(n_1, n_2\\) are positive integers then \\((1+i)^{n_1} + (1+i^3)^{n_1} + (1+i^5)^{n_2} +\\)\\( (1+i^7)^{n_2}\\) is a real number if and only if",
 	options: [
 	"(A). \\(n_1 = n_2 + 1\\)",
 	"(B). \\(n_1 + 1 = n_2\\)",
@@ -75,7 +75,7 @@ window.SET_DATA = {
 	},
 	// Q7
 	{
-	q: "The system of equations \\(ax + 4y + z = 0,\\ bx + 3y + z = 0,\\ cx + 2y + z = 0\\) has nontrivial solutions if \\(a, b, c\\) are in",
+	q: "The system of equations \\(ax + 4y + z = 0,\\ bx + 3y + z = 0,\\ \\)\\( cx + 2y + z = 0\\) has nontrivial solutions if \\(a, b, c\\) are in",
 	options: [
 	"(A). \\(AP\\)",
 	"(B). \\(GP\\)",
@@ -119,7 +119,7 @@ window.SET_DATA = {
 	},
 	// Q11
 	{
-	q: "The system of equations \\(2x + 3y = 8,\\ 7x - 5y + 3 = 0,\\ 4x - 6y + \\lambda = 0\\) is solvable if \\(\\lambda\\) is",
+	q: "The system of equations \\(2x + 3y = 8,\\ 7x - 5y + 3 = 0,\\ \\)\\( 4x - 6y + \\lambda = 0\\) is solvable if \\(\\lambda\\) is",
 	options: [
 	"(A). \\(6\\)",
 	"(B). \\(8\\)",
@@ -383,7 +383,7 @@ window.SET_DATA = {
 	},
 	// Q35
 	{
-	q: "lim \\(x \\to 1\\) \\(\\frac{\\sum_{r=1}^{n} x^r - n}{x - 1}\\) is equal to",
+	q: "\\(\\lim_{x \\to 1}\\) \\(\\frac{\\sum_{r=1}^{n} x^r - n}{x - 1}\\) is equal to",
 	options: [
 	"(A). \\(\\frac{n}{2}\\)",
 	"(B). \\(\\frac{n(n+1)}{2}\\)",
@@ -394,7 +394,7 @@ window.SET_DATA = {
 	},
 	// Q36
 	{
-	q: "lim \\(x \\to 0\\) \\(\\frac{x - \\tan x}{x \\tan x}\\) is equal to",
+	q: "\\(\\lim_{x \\to 0}\\) \\(\\frac{x - \\tan x}{x \\tan x}\\) is equal to",
 	options: [
 	"(A). \\(0\\)",
 	"(B). \\(1\\)",
@@ -405,7 +405,7 @@ window.SET_DATA = {
 	},
 	// Q37
 	{
-	q: "lim \\(x \\to 0\\) \\(\\sqrt{\\frac{x - \\sin x}{x + \\cos^2 x}}\\) is equal to",
+	q: "\\(\\lim_{x \\to 0}\\) \\(\\sqrt{\\frac{x - \\sin x}{x + \\cos^2 x}}\\) is equal to",
 	options: [
 	"(A). \\(1\\)",
 	"(B). \\(0\\)",
@@ -416,7 +416,7 @@ window.SET_DATA = {
 	},
 	// Q38
 	{
-	q: "lim \\(x \\to 0\\) \\(\\frac{\\log_e \\cos x}{x^2}\\) is equal to",
+	q: "\\(\\lim_{x \\to 0}\\) \\(\\frac{\\log_e \\cos x}{x^2}\\) is equal to",
 	options: [
 	"(A). \\(-\\frac{1}{2}\\)",
 	"(B). \\(\\frac{1}{2}\\)",
@@ -427,7 +427,7 @@ window.SET_DATA = {
 	},
 	// Q39
 	{
-	q: "lim \\(x \\to 0\\) \\(\\frac{\\sin^{-1} x - \\tan^{-1} x}{x^2}\\) is equal to",
+	q: "\\(lim_{x \\to 0}\\) \\(\\frac{\\sin^{-1} x - \\tan^{-1} x}{x^2}\\) is equal to",
 	options: [
 	"(A). \\(\\frac{1}{2}\\)",
 	"(B). \\(-\\frac{1}{2}\\)",
@@ -438,7 +438,7 @@ window.SET_DATA = {
 	},
 	// Q40
 	{
-	q: "Let \\(f(x) = \\sqrt{1 + x^2}, x < \\sqrt{3}; \\ \\sqrt{3}x - 1, \\sqrt{3} \\le x < 4; \\ [x], 4 \\le x < 5, where [x] is the greatest integer \\le x; \\ |1 - x|, x \\ge 5\\). The number of points of discontinuity of \\(f(x)\\) in \\(R\\) is",
+	q: "Let \\(f(x) = \\sqrt{1 + x^2}, x < \\sqrt{3}; \\ \\)\\(\\sqrt{3}x - 1, \\sqrt{3} \\le x < 4; \\ \\)\\( [x], 4 \\le x < 5,\\) where \\([x]\\) is the greatest integer \\(\\le x; \\\\)\\( |1 - x|, x \\ge 5\\). The number of points of discontinuity of \\(f(x)\\) in \\(R\\) is",
 	options: [
 	"(A). \\(3\\)",
 	"(B). \\(0\\)",
