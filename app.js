@@ -331,6 +331,7 @@ function loadSetFile(setNumber) {
     });
 }
 
+/*
 async function generateRandomTestWithSeed(seedNum, seedStr) {
     //const numericSeed = stringToSeed(seed);
     const numericSeed = seedNum;
@@ -368,5 +369,83 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
     initApp({
         title: `🎯 Mathematics Mock Test (${seedStr})`,
         questions: selected
+    });
+}*/
+
+async function generateRandomTestWithSeed(seedNum, seedStr) {
+    const numericSeed = seedNum;
+    window.TEST_SEED_DATE = seedStr;
+
+    const TOTAL_QUESTIONS = 50;
+
+    const heading = document.getElementById("test-heading");
+    const nameSection = document.getElementById("name-section");
+    const note = document.getElementById("note-marks");
+
+    if (heading) {
+        heading.classList.remove("hidden");
+        heading.innerHTML += `<div style="font-size:14px; color:#888;">Loading...</div>`;
+    }
+    if (nameSection) nameSection.classList.remove("hidden");
+    if (note) note.classList.remove("hidden");
+
+    // ✅ Load all sets
+    const promises = AVAILABLE_SETS.map(set => loadSetFile(set));
+    const results = await Promise.all(promises);
+
+    const validSets = results
+        .map((data, i) => ({ set: AVAILABLE_SETS[i], questions: data?.questions || [] }))
+        .filter(d => d.questions.length > 0);
+
+    const totalSets = validSets.length;
+
+    let finalQuestions = [];
+
+    // ================================
+    // ✅ CASE A: sets >= 50
+    // ================================
+    if (totalSets >= TOTAL_QUESTIONS) {
+
+        const shuffledSets = shuffleWithSeed([...validSets], numericSeed);
+
+        const selectedSets = shuffledSets.slice(0, TOTAL_QUESTIONS);
+
+        selectedSets.forEach(({ set, questions }) => {
+            const shuffledQ = shuffleWithSeed([...questions], numericSeed + set);
+            finalQuestions.push(shuffledQ[0]);
+        });
+    }
+
+    // ================================
+    // ✅ CASE B: sets < 50
+    // ================================
+    else {
+
+        const baseCount = Math.floor(TOTAL_QUESTIONS / totalSets);
+        const remainder = TOTAL_QUESTIONS % totalSets;
+
+        // Shuffle sets for fair remainder distribution
+        const shuffledSets = shuffleWithSeed([...validSets], numericSeed);
+
+        shuffledSets.forEach((setObj, index) => {
+            const { set, questions } = setObj;
+
+            const count = baseCount + (index < remainder ? 1 : 0);
+
+            const shuffledQ = shuffleWithSeed([...questions], numericSeed + set);
+
+            finalQuestions.push(...shuffledQ.slice(0, count));
+        });
+    }
+
+    // ✅ Final shuffle (very important)
+    finalQuestions = shuffleWithSeed(finalQuestions, numericSeed + 9999);
+
+    // ✅ Trim safety (edge-case protection)
+    finalQuestions = finalQuestions.slice(0, TOTAL_QUESTIONS);
+
+    initApp({
+        title: `🎯 Mathematics Mock Test (${seedStr})`,
+        questions: finalQuestions
     });
 }
