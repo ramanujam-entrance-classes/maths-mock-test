@@ -1,6 +1,6 @@
 let questions = [];
 let quizTitle = "";
-const SHOW_SET_DEBUG = true;
+const SHOW_SET_DEBUG = false;
 
 function initApp(data) {
     questions = data.questions;
