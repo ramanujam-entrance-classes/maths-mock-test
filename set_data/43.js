@@ -53,10 +53,10 @@ window.SET_DATA = {
 	options: [
 	"(A). \\(B \\cap C'\\)",
 	"(B). \\(A \\cap C\\)",
-	"(C). \\(B \\cap C'\\)",
+	"(C). \\(B' \\cap C'\\)",
 	"(D). None of these"
 	],
-	correct: "(B)"
+	correct: "(C)"
 	},
 	// Q6
 	{
@@ -67,7 +67,7 @@ window.SET_DATA = {
 	"(C). \\(A \\cap B \\ne \\phi\\)",
 	"(D). \\(A \\cap B = \\phi\\)"
 	],
-	correct: "(B)"
+	correct: "(D)"
 	},
 	// Q7
 	{
@@ -93,18 +93,18 @@ window.SET_DATA = {
 	},
 	// Q9
 	{
-	q: "If \\((5 + 2\\sqrt{6})^{(x^2-3)} + (5 - 2\\sqrt{6})^{(x^2-3)} = 10\\), then \\(x\\) is equal to:",
+	q: "If \\((5 + 2\\sqrt{6})^{(x^2-3)} + (5 - 2\\sqrt{6})^{(x^2-3)} \\)\\(= 10\\), then \\(x\\) is equal to:",
 	options: [
 	"(A). \\(\\pm 3\\) or \\(\\pm \\sqrt{3}\\)",
 	"(B). \\(\\pm 5\\) or \\(\\sqrt{5}\\)",
-	"(C). \\(\\pm 4\\) or \\(\\pm \\sqrt{4}\\)",
+	"(C). \\(\\pm 4\\) or \\(\\sqrt{4}\\)",
 	"(D). \\(\\pm 2\\) or \\(\\pm \\sqrt{2}\\)"
 	],
 	correct: "(D)"
 	},
 	// Q10
 	{
-	q: "The value of the expression \\((1\\cdot 2 - \\omega)(2 - \\omega^2) + 2(3 - \\omega)(3 - \\omega^2) + \\ldots + (n-1)(n - \\omega)(n - \\omega^2)\\), where \\(\\omega\\) is an imaginary cube root of unity is:",
+	q: "The value of the expression \\(1\\cdot(2 - \\omega)(2 - \\omega^2) + 2\\cdot(3 - \\omega)\\)\\((3 - \\omega^2) + \\ldots + (n-1)(n - \\omega)(n - \\omega^2)\\), where \\(\\omega\\) is an imaginary cube root of unity is:",
 	options: [
 	"(A). \\(\\left(\\frac{n(n+1)}{2}\\right)^2\\)",
 	"(B). \\(\\left(\\frac{n(n+1)}{2}\\right)^2 - n\\)",
@@ -119,14 +119,14 @@ window.SET_DATA = {
 	options: [
 	"(A). \\(\\frac{r(r+1)}{2x} + ry\\)",
 	"(B). \\(\\frac{r(r-1)}{2x}\\)",
-	"(C). \\(\\frac{r(r-1)}{2x} - xy\\)",
+	"(C). \\(\\left(\\frac{r(r-1)}{2x}\\right)^2 - xy\\)",
 	"(D). \\(\\frac{r(r+1)}{2x} - rx\\)"
 	],
 	correct: "(A)"
 	},
 	// Q12
 	{
-	q: "Let \\(S_1, S_2, \\ldots, S_n\\) be squares such that for each \\(n \\ge 1\\), the length of a side of \\(S_n\\) equals the length of the diagonal of \\(S_{n+1}\\). If the length of a side of \\(S_1\\) is 10 cm, then the least value of \\(n\\) for which the area of \\(S_n\\) is less than 1 sq cm is:",
+	q: "Let \\(S_1, S_2, \\ldots, S_n\\) be squares such that for each \\(n \\ge 1\\), the length of a side of \\(S_n\\) equals the length of the diagonal of \\(S_{n+1}\\). If the length of a side of \\(S_1\\) is 10 cm, then the least value of \\(n\\) for which the area of \\(S_n\\) is less than \\(1\\) \\(sq\) \\(cm\\) is:",
 	options: [
 	"(A). 7",
 	"(B). 8",
@@ -148,7 +148,7 @@ window.SET_DATA = {
 	},
 	// Q14
 	{
-	q: "The value of \\(x\\), for which the 6th term in the expansion of \\(\\left\\{2^{\\log_2 \\sqrt{9^{x-1}+7}} + \\frac{1}{2^{5/2}} \\log_2(3^{x-1}+1)\\right\\}^7\\) is 84, is equal to:",
+	q: "The value of \\(x\\), for which the 6th term in the expansion of \\(\\left\\{2^{\\log_2 \\sqrt{9^{x-1}+7}} + \\frac{1}{2^{(1/5)\\log_2(3^{x-1}+1)}}\\right\\}^7\\) is 84, is equal to:",
 	options: [
 	"(A). 4",
 	"(B). 3",
@@ -203,7 +203,7 @@ window.SET_DATA = {
 	},
 	// Q19
 	{
-	q: "If \\(\\lim_{x \\to 0} g(x) = a^3, a \\ne 0\\), then \\(\\lim_{x \\to 0} \\frac{x}{a}\\) is:",
+	q: "If \\(\\lim_{x \\to 0} \\phi(x) = a^3, a \\ne 0\\), then \\(\\lim_{x \\to 0} \\phi\\left(\\frac{x}{a}\\right)\\) is:",
 	options: [
 	"(A). \\(a^2\\)",
 	"(B). \\(\\frac{1}{a^3}\\)",
@@ -218,14 +218,14 @@ window.SET_DATA = {
 	options: [
 	"(A). \\(\\frac{n^2 (y^2 + 4)}{x^2 + 4}\\)",
 	"(B). \\(\\frac{n^2 (y^2 - 4)}{x^2}\\)",
-	"(C). \\(\\frac{n(y^2 - 4)}{x^2 - 4}\\)",
+	"(C). \\(n\\left(\\frac{(y^2 - 4)}{x^2 - 4}\\right)\\)",
 	"(D). \\(\\left(\\frac{ny}{x}\\right)^2 - 4\\)"
 	],
 	correct: "(A)"
 	},
 	// Q21
 	{
-	q: "Let \\(P(x) = a_0 + a_1 x^2 + a_2 x^4 + a_3 x^6 + \\dots + a_n x^{2n}\\) be a polynomial in a real variable \\(x\\) with \\(0 < a_0 < a_1 < a_2 < \\dots < a_n\\). The function \\(P(x)\\) has:",
+	q: "Let \\(P(x) = a_0 + a_1 x^2 + a_2 x^4 + a_3 x^6 +\\)\\( \\dots + a_n x^{2n}\\) be a polynomial in a real variable \\(x\\) with \\(0 < a_0 < a_1 < a_2 < \\dots < a_n\\). The function \\(P(x)\\) has:",
 	options: [
 	"(A). neither a maxima nor a minima",
 	"(B). only one maxima",
@@ -251,14 +251,14 @@ window.SET_DATA = {
 	options: [
 	"(A). \\(\\frac{\\sin x + \\cos x}{x \\sin x + \\cos x} + C\\)",
 	"(B). \\(\\frac{x \\sin x - \\cos x}{x \\sin x + \\cos x} + C\\)",
-	"(C). \\(\\frac{\\sin x - \\cos x}{x \\sin x + \\cos x}\\)",
+	"(C). \\(\\frac{\\sin x - x\\cos x}{x \\sin x + \\cos x}x\\)",
 	"(D). None of these"
 	],
 	correct: "(D)"
 	},
 	// Q24
 	{
-	q: "If \\(f(x) = A \\sin \\left(\\frac{\\pi x}{2}\\right) + B\\), \\(f(\\frac{1}{2}) = \\sqrt{2}\\) and \\(\\int_0^1 f(x) dx = \\frac{2A}{\\pi}\\), then \\(A\\) and \\(B\\) are:",
+	q: "If \\(f(x) = A \\sin \\left(\\frac{\\pi x}{2}\\right) + B\\), \\(f'(\\frac{1}{2}) = \\sqrt{2}\\) and \\(\\int_0^1 f(x) dx = \\frac{2A}{\\pi}\\), then \\(A\\) and \\(B\\) are:",
 	options: [
 	"(A). \\(\\frac{\\pi}{2}, \\frac{\\pi}{2}\\)",
 	"(B). \\(\\frac{2}{\\pi}, \\frac{3}{\\pi}\\)",
@@ -269,7 +269,7 @@ window.SET_DATA = {
 	},
 	// Q25
 	{
-	q: "Let \\(g(x) = \\int_0^x f(t) dt\\), where \\(f\\) is such that \\(\\frac{1}{2} \\le f(x) \\le 1\\) for \\(x \\in [0,1]\\) and \\(0 < f(t) \\le \\frac{1}{2}\\) for \\(t \\in [1,2]\\). Then, \\(g(2)\\) satisfies:",
+	q: "Let \\(g(x) = \\int_0^x f(t) dt\\), where \\(f\\) is such that \\(\\frac{1}{2} \\le f(x) \\le 1\\) for \\(t \\in [0,1]\\) and \\(0 < f(t) \\le \\frac{1}{2}\\) for \\(t \\in [1,2]\\). Then, \\(g(2)\\) satisfies:",
 	options: [
 	"(A). \\(-\\frac{3}{2} \\le g(2) < \\frac{1}{2}\\)",
 	"(B). \\(0 \\le g(2) < 2\\)",
@@ -316,7 +316,7 @@ window.SET_DATA = {
 	q: "A rectangle \\(ABCD\\) has its side \\(AB\\) parallel to line \\(y = x\\) and vertices \\(A, B\\) and \\(D\\) lie on \\(y = 1, x = 2\\) and \\(x = -2\\), respectively. Locus of vertex ‘C’ is:",
 	options: [
 	"(A). \\(x = 5\\)",
-	"(B). \\(x = -5\\)",
+	"(B). \\(x-y = 5\\)",
 	"(C). \\(y = 5\\)",
 	"(D). \\(x + y = 5\\)"
 	],
@@ -324,7 +324,7 @@ window.SET_DATA = {
 	},
 	// Q30
 	{
-	q: "The value of \\(\\lambda\\), for which the equation \\(6x^2 + 11xy - 10y^2 + x + 3 + y + \\lambda = 0\\) represents a pair of straight lines is:",
+	q: "The value of \\(\\lambda\\), for which the equation \\(6x^2 + 11xy - 10y^2 + x + 3 + y + \\lambda \\)\\( = 0\\) represents a pair of straight lines is:",
 	options: [
 	"(A). \\(-15\\)",
 	"(B). \\(0\\)",
@@ -357,7 +357,7 @@ window.SET_DATA = {
 	},
 	// Q33
 	{
-	q: "A line passing through the focus of the parabola \\(y^2 = 4(x - 1)\\), intersect the parabola in two distinct points. If ‘m’ be the slope of the line ‘L’ then:",
+	q: "A line \\(L\\) passing through the focus of the parabola \\(y^2 = 4(x - 1)\\), intersect the parabola in two distinct points. If ‘m’ be the slope of the line \\(‘L’\\) then:",
 	options: [
 	"(A). \\(-1 < m < 1\\)",
 	"(B). \\(m < -1\\) or \\(m > 1\\)",
@@ -390,7 +390,7 @@ window.SET_DATA = {
 	},
 	// Q36
 	{
-	q: "If \\(a \\sin x + b \\sin^2 x + \\sin^3 x = 1\\), then \\(\\cos^6 x - 4 \\cos^4 x + 8 \\cos^2 x\\) is equal to:",
+	q: "If \\(\\sin x + \\sin^2 x + \\sin^3 x = 1\\), then \\(\\cos^6 x - 4 \\cos^4 x + 8 \\cos^2 x\\) is equal to:",
 	options: [
 	"(A). \\(4\\)",
 	"(B). \\(1\\)",
@@ -500,7 +500,7 @@ window.SET_DATA = {
 	},
 	// Q46
 	{
-	q: " \\(\\frac{\\alpha^3}{2} \\cosec^2 \\left( \\frac{1}{2} \\tan^{-1} \\frac{\\alpha}{\\beta} \\right) + \\frac{\\beta^3}{2} \\sec^2 \\left( \\frac{1}{2} \\tan^{-1} \\frac{\\beta}{\\alpha} \\right)\\) is equal to:",
+	q: " \\(\\frac{\\alpha^3}{2} cosec^2 \\frac{1}{2} \\left( \\tan^{-1} \\frac{\\alpha}{\\beta} \\right) +\\)\\( \\frac{\\beta^3}{2} \\sec^2 \\left( \\frac{1}{2} \\tan^{-1} \\frac{\\beta}{\\alpha} \\right)\\) is equal to:",
 	options: [
 	"(A). \\((\\alpha - \\beta)(\\alpha^2 + \\beta^2)\\)",
 	"(B). \\((\\alpha + \\beta)(\\alpha^2 - \\beta^2)\\)",
