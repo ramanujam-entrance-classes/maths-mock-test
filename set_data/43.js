@@ -104,7 +104,7 @@ window.SET_DATA = {
 	},
 	// Q10
 	{
-	q: "The value of the expression \\(1\\cdot(2 - \\omega)(2 - \\omega^2) + 2\\cdot(3 - \\omega)\\)\\((3 - \\omega^2) + \\ldots + (n-1)(n - \\omega)(n - \\omega^2)\\), where \\(\\omega\\) is an imaginary cube root of unity is:",
+	q: "The value of the expression \\(1\\cdot(2 - \\omega)(2 - \\omega^2) + 2\\cdot(3 - \\omega)\\)\\((3 - \\omega^2) + \\ldots + (n-1)(n - \\omega)\\)\\((n - \\omega^2)\\), where \\(\\omega\\) is an imaginary cube root of unity is:",
 	options: [
 	"(A). \\(\\left(\\frac{n(n+1)}{2}\\right)^2\\)",
 	"(B). \\(\\left(\\frac{n(n+1)}{2}\\right)^2 - n\\)",
