@@ -553,16 +553,43 @@ window.SET_DATA = {
 	],
 	correct: "(D)"
 	},
-	// Q50 - Set33:Q18
+	// Q50
 	{
-	q: "If \\(\\alpha = \\sin^{-1}(\\cos(\\sin^{-1} x))\\) and \\(\\beta = \\cos^{-1}(\\sin(\\cos^{-1} x))\\), then \\(\\tan \\alpha \\cdot \\tan \\beta\\) is equal to:",
+	q: `The median for the following frequency distribution is:
+		<span style='font-size:13px'>
+		<table style="text-align:center;width:100%;border:1px solid black;border-collapse:collapse;">
+		<tr>
+		<td style="text-align:center;border:1px solid black"> \\(x:\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(1\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(2\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(3\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(4\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(5\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(6\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(7\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(8\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(9\\) </td>
+		</tr>
+		<tr>
+		<td style="text-align:center;border:1px solid black"> \\(f:\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(8\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(10\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(11\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(16\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(20\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(25\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(15\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(9\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(6\\) </td>
+		</tr>
+		</table></span>`,
 	options: [
-	"(A). \\(1\\)",
-	"(B). \\(-1\\)",
-	"(C). \\(2\\)",
-	"(D). \\(\\frac{1}{2}\\)"
+	"(A). \\(6\\)",
+	"(B). \\(5\\)",
+	"(C). \\(7\\)",
+	"(D). \\(4\\)"
 	],
-	correct: "(A)"
+	correct: "(B)"
 	}
  ]
 };
