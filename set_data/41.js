@@ -10,11 +10,36 @@ window.SET_DATA = {
 	"(C). \\(\\frac{m + n}{x + y}\\)",
 	"(D). \\(\\frac{x + y}{m + n}\\)"
 	],
-	correct: ""
+	correct: "(C)"
 	},
 	// Q2
 	{
-	q: "The median from the following distribution is\nClass: \\(5-10, 10-15, 15-20, 20-25, 25-30, 30-35, 35-40, 40-45\\)\nFrequency: \\(5, 6, 15, 10, 5, 4, 2, 2\\)",
+	q: `The median from the following distribution is <br>
+		<span style='font-size:13px'>
+		<table style="text-align:center;width:100%">
+		<tr>
+		<td style="text-align:center;"> Class: </td>
+		<td style="text-align:center;"> \\(5-10\\) </td>
+		<td style="text-align:center;"> \\(10-15\\) </td>
+		<td style="text-align:center;"> \\(15-20\\) </td>
+		<td style="text-align:center;"> \\(20-25\\) </td>
+		<td style="text-align:center;"> \\(25-30\\) </td>
+		<td style="text-align:center;"> \\(30-35\\) </td>
+		<td style="text-align:center;"> \\(35-40\\) </td>
+		<td style="text-align:center;"> \\(40-45\\) </td>
+		</tr>
+		<tr>
+		<td style="text-align:center;"> Frequency: </td>
+		<td style="text-align:center;"> \\(5\\) </td>
+		<td style="text-align:center;"> \\(6\\) </td>
+		<td style="text-align:center;"> \\(15\\) </td>
+		<td style="text-align:center;"> \\(10\\) </td>
+		<td style="text-align:center;"> \\(5\\) </td>
+		<td style="text-align:center;"> \\(4\\) </td>
+		<td style="text-align:center;"> \\(2\\) </td>
+		<td style="text-align:center;"> \\(2\\) </td>
+		</tr>
+		</table></span>`,
 	options: [
 	"(A). \\(19\\)",
 	"(B). \\(19.5\\)",
