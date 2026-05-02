@@ -378,7 +378,7 @@ window.SET_DATA = {
 	},
 	// Q33
 	{
-	q: `The value of \\(Q_3\\) for the following distribution (Marks group & No. of Student) is<br>: 
+	q: `The value of \\(Q_3\\) for the following distribution (Marks group & No. of Student) is:<br> 
 		<span style='font-size:10px'>
 		<table style="text-align:center;width:100%;border:1px solid black">
 		<tr>
@@ -588,11 +588,10 @@ window.SET_DATA = {
 	},
 	// Q50
 	{
-	q: `Consider the following frequency distribution table.<br>
+	q: `Consider the following frequency distribution table (Class Interval & Frequency).<br>
 		<span style='font-size:10px'>
-		<table style="text-align:center;width:100%;border:1px solid black">
+		<table style="text-align:center;width:100%;border:1px solid black;border-collapse:collapse;">
 		<tr>
-		<td style="text-align:center;border:1px solid black"> Class <br> Interval </td>
 		<td style="text-align:center;border:1px solid black"> \\(10-20\\) </td>
 		<td style="text-align:center;border:1px solid black"> \\(20-30\\) </td>
 		<td style="text-align:center;border:1px solid black"> \\(30-40\\) </td>
@@ -602,7 +601,6 @@ window.SET_DATA = {
 		<td style="text-align:center;border:1px solid black"> \\(70-80\\) </td>
 		</tr>
 		<tr>
-		<td style="text-align:center;border:1px solid black"> Frequency </td>
 		<td style="text-align:center;border:1px solid black"> \\(180\\) </td>
 		<td style="text-align:center;border:1px solid black"> \\(f_1\\) </td>
 		<td style="text-align:center;border:1px solid black"> \\(34\\) </td>
