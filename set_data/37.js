@@ -3,7 +3,7 @@ window.SET_DATA = {
   questions: [
 	// Q1
 	{
-	q: "The value of \\( ^nC_0^2 + 3\\, ^nC_1^2 + 5\\, ^nC_2^2 + \\dots \\) to \\( (n+1) \\) terms, is (given that \\( ^nC_r = C_r \\))",
+	q: "The value of \\( C_0^2 + 3\\, C_1^2 + 5\\, C_2^2 + \\dots \\) to \\( (n+1) \\) terms, is (given that \\( C_r \\equiv {}^nC_r \\))",
 	options: [
 	"(A). \\( ^{2n-1}C_{n-1} \\)",
 	"(B). \\( (2n+1)\\, ^{2n-1}C_n \\)",
@@ -36,7 +36,7 @@ window.SET_DATA = {
 	},
 	// Q4
 	{
-	q: "A − (B \\cap C) is equal to:",
+	q: "\\(A − (B \\cap C)\\) is equal to:",
 	options: [
 	"(A). \\((A - B) \\cap (A - C)\\)",
 	"(B). \\((A - B) \\cup (A - C)\\)",
@@ -97,7 +97,7 @@ window.SET_DATA = {
 	"(A). \\(\\frac{\\sqrt{\\pi}}{6}\\)",
 	"(B). \\(-\\sqrt{\\frac{\\pi}{6}}\\)",
 	"(C). \\(\\frac{1}{\\sqrt{6}}\\)",
-	"(D). \\(-\\frac{\\pi}{\\sqrt{6}}\\)"
+	"(D). \\(\\frac{\\pi}{\\sqrt{6}}\\)"
 	],
 	correct: "(B)"
 	},
@@ -213,7 +213,29 @@ window.SET_DATA = {
 	},
 	// Q20
 	{
-	q: "Consider the sets \\(A = \\{1, 2, 3, 4\\}\\) and \\(B = \\{a, b, c, d, e\\}\\). Column I: (a) \\(f_1 = \\{(1,a), (2,b), (3,d)\\} \\subset A \\times B\\) is a relation from \\(A\\) to \\(B\\) which is. (b) \\(f_2 = \\{(1,a), (2,d), (1,c), (3,e)\\}\\) is a relation from \\(A\\) to \\(B\\) which is. (c) \\(f_3 = \\{(1,d), (2,b), (3,c), (4,e)\\}\\) is a function which is. (d) \\(f_4 = \\{(1,b), (2,b), (3,c), (4,e)\\}\\) is a function which is. Column II: (p) one-one but not onto, (q) one-one and onto, (r) onto but not one-one, (s) not a function. Choose the correct matching.",
+	q: `Consider the sets \\(A = \\{1, 2, 3, 4\\}\\) and \\(B = \\{a, b, c, d, e\\}\\). <br>
+		<span style='font-size:13px'>
+		<table style="text-align:center;width:80%">
+		<tr>
+		<th>Column I </th>
+		<th>Column II </th>
+		</tr>
+		<tr>
+		<td>(a) \\(f_1 = \\{(1,a), (2,b), (3,d)\\} \\subset A \\times B\\) is a relation from \\(A\\) to \\(B\\) which is. </td>
+		<td>(p) one-one but not onto</td>
+		</tr>
+		<tr>
+		<td>(b) \\(f_2 = \\{(1,a), (2,d), (1,c), (3,e)\\}\\) is a relation from \\(A\\) to \\(B\\) which is.</td>
+		<td>(q) one-one and onto</td>
+		</tr>
+		<tr>
+		<td>(c) \\(f_3 = \\{(1,d), (2,b), (3,c), (4,e)\\}\\) is a function which is.</td>
+		<td>(r) onto but not one-one</td>
+		</tr>
+		<tr>
+		<td>(d) \\(f_4 = \\{(1,b), (2,b), (3,c), (4,e)\\}\\) is a function which is.</td>
+		<td>(s) not a function. Choose the correct matching.</td></span>
+	<br> Options:`,
 	options: [
 	"(A). \\(a-s, b-s, c-p, d-r\\)",
 	"(B). \\(a-s, b-p, c-r, d-q\\)",
@@ -235,7 +257,7 @@ window.SET_DATA = {
 	},
 	// Q22
 	{
-	q: "If \\(\\int (x^3 - 2x^2 + 3x - 1) \\cos 2x \\, dx = \\frac{\\sin 2x}{4} u(x) + \\frac{\\cos 2x}{8} v(x)\\), then:",
+	q: "If \\(\\int (x^3 - 2x^2 + 3x - 1) \\cos 2x \\, dx =\\)\\( \\frac{\\sin 2x}{4} u(x) + \\frac{\\cos 2x}{8} v(x)\\), then:",
 	options: [
 	"(A). \\(u(x) = x^2 - 4x^2 + 3x\\)",
 	"(B). \\(u(x) = 2x^3 - 4x^2 + 3x\\)",
@@ -341,7 +363,7 @@ window.SET_DATA = {
 	"(C). \\(\\{x \\in R \\mid x \\ne -1\\}\\)",
 	"(D). \\(\\{x \\in R \\mid x \\ne 1\\}\\)"
 	],
-	correct: ""
+	correct: "(A)"
 	},
 	// Q32
 	{
@@ -411,7 +433,7 @@ window.SET_DATA = {
 	},
 	// Q38
 	{
-	q: `If \\( \\det \\begin{pmatrix} 1 & 1 & 2 \\\\ 2 & 4 & 9 \\\\ t & t^2 & 1 + t^3 \\end{pmatrix} = 0 \\), then the values of \\(t\\) are`,
+	q: `If \\( \\det \\begin{vmatrix} 1 & 1 & 2 \\\\ 2 & 4 & 9 \\\\ t & t^2 & 1 + t^3 \\end{vmatrix} = 0 \\), then the values of \\(t\\) are`,
 	options: [
 	"(A). \\(1, -2, \\frac{1}{2}\\)",
 	"(B). \\(1, 2, -\\frac{1}{2}\\)",
@@ -536,9 +558,9 @@ window.SET_DATA = {
 	{
 	q: "The solution of the differential equation \\(\\frac{dy}{dx} = \\sin(10x + 6y)\\) is:",
 	options: [
-	"(A). \\(5\\tan(5x - 3y) = 4\\tan(4y + k) - 3\\)",
-	"(B). \\(5\\tan(5x + 3y) = 4\\tan(4x + k) - 3\\)",
-	"(C). \\(5\\tan(5x - 3y) = 4\\tan(4x + k) + 3\\)",
+	"(A). \\(5\\tan(5x - 3y) = 4\\tan(4y + k) \\)\\( - 3\\)",
+	"(B). \\(5\\tan(5x + 3y) = 4\\tan(4x + k) \\)\\( - 3\\)",
+	"(C). \\(5\\tan(5x - 3y) = 4\\tan(4x + k) \\)\\( + 3\\)",
 	"(D). None of these"
 	],
 	correct: "(B)"
