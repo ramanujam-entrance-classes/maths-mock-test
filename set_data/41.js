@@ -589,7 +589,7 @@ window.SET_DATA = {
 	// Q50
 	{
 	q: `Consider the following frequency distribution table (Class Interval & Frequency).<br>
-		<span style='font-size:13px'>
+		<span style='font-size:11px'>
 		<table style="text-align:center;width:100%;border:1px solid black;border-collapse:collapse;">
 		<tr>
 		<td style="text-align:center;border:1px solid black"> \\(10-20\\) </td>
@@ -616,44 +616,6 @@ window.SET_DATA = {
 	"(B). \\(82, 24\\)",
 	"(C). \\(83, 23\\)",
 	"(D). \\(84, 22\\)"
-	],
-	correct: "(B)"
-	},
-	// Q51
-	{
-	q: `The median for the following frequency distribution is:
-		<span style='font-size:13px'>
-		<table style="text-align:center;width:100%;border:1px solid black;border-collapse:collapse;">
-		<tr>
-		<td style="text-align:center;border:1px solid black"> \\(x:\\) </td>
-		<td style="text-align:center;border:1px solid black"> \\(1\\) </td>
-		<td style="text-align:center;border:1px solid black"> \\(2\\) </td>
-		<td style="text-align:center;border:1px solid black"> \\(3\\) </td>
-		<td style="text-align:center;border:1px solid black"> \\(4\\) </td>
-		<td style="text-align:center;border:1px solid black"> \\(5\\) </td>
-		<td style="text-align:center;border:1px solid black"> \\(6\\) </td>
-		<td style="text-align:center;border:1px solid black"> \\(7\\) </td>
-		<td style="text-align:center;border:1px solid black"> \\(8\\) </td>
-		<td style="text-align:center;border:1px solid black"> \\(9\\) </td>
-		</tr>
-		<tr>
-		<td style="text-align:center;border:1px solid black"> \\(f:\\) </td>
-		<td style="text-align:center;border:1px solid black"> \\(8\\) </td>
-		<td style="text-align:center;border:1px solid black"> \\(10\\) </td>
-		<td style="text-align:center;border:1px solid black"> \\(11\\) </td>
-		<td style="text-align:center;border:1px solid black"> \\(16\\) </td>
-		<td style="text-align:center;border:1px solid black"> \\(20\\) </td>
-		<td style="text-align:center;border:1px solid black"> \\(25\\) </td>
-		<td style="text-align:center;border:1px solid black"> \\(15\\) </td>
-		<td style="text-align:center;border:1px solid black"> \\(9\\) </td>
-		<td style="text-align:center;border:1px solid black"> \\(6\\) </td>
-		</tr>
-		</table></span>`,
-	options: [
-	"(A). \\(6\\)",
-	"(B). \\(5\\)",
-	"(C). \\(7\\)",
-	"(D). \\(4\\)"
 	],
 	correct: "(B)"
 	}
