@@ -473,7 +473,7 @@ finalQuestions = shuffleWithSeed(finalQuestions, mixedSeed5);
     finalQuestions = finalQuestions.slice(0, TOTAL_QUESTIONS);
 
     initApp({
-        title: `🎯 Mathematics Mock Test (${seedStr})`,
+        title: `🎯 Mathematics Mock Test 🎯<br>(${seedStr})`,
         questions: finalQuestions
     });
 }
