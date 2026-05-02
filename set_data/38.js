@@ -238,7 +238,7 @@ window.SET_DATA = {
 	options: [
 	"(A). \\(\\frac{n^r(n-1)}{n+1}\\)",
 	"(B). \\(\\frac{n^r(n+1)}{n-1}\\)",
-	"(C). \\(\\frac{n^r(n^r-1)}{n-1}\\)",
+	"(C). \\(\\frac{n(n^r-1)}{n-1}\\)",
 	"(D). \\(\\frac{n^r-1}{n-1}\\)"
 	],
 	correct: "(C)"
@@ -356,13 +356,13 @@ window.SET_DATA = {
 	// Q33
 	{
 	q: `If \\(x, y\\) and \\(z\\) are the three cube roots of 27, then the determinant of the matrix
-	\\[
+	\\(
 	\\begin{vmatrix}
 	x & y & z \\\\
 	y & z & x \\\\
 	z & x & y
 	\\end{vmatrix}
-	\\]
+	\\)
 	is`,
 	options: [
 	"(A). \\((x-y)(x-z)(y-z)\\)",
@@ -440,7 +440,7 @@ window.SET_DATA = {
 	},
 	// Q40
 	{
-	q: "If \\(f : R \\to R\\) is defined by \\(f(x) = \\begin{cases} \\frac{x + 2}{x^2 + 3x + 2}, & \\text{if } x \\in R - \\{-1, -2\\} \\\\ -1, & \\text{if } x = -2 \\\\ 0, & \\text{if } x = -1 \\end{cases}\\), then \\(f(x)\\) is continuous on the set",
+	q: `If \\(f : R \\to R\\) is defined by \\(f(x) = \\begin{cases} \\frac{x + 2}{x^2 + 3x + 2}, & \\text{if }<span style='font-size:13px'> x \\in R - \\{-1, -2\\} </span>\\\\ -1, & \\text{if } x = -2 \\\\ 0, & \\text{if } x = -1 \\end{cases}\\), then \\(f(x)\\) is continuous on the set`,
 	options: [
 	"(A). \\(R\\)",
 	"(B). \\(R - \\{-2\\}\\)",
@@ -506,7 +506,7 @@ window.SET_DATA = {
 	},
 	// Q46
 	{
-	q: "If \\(\\int x \\sin x \\sec^3 x \\, dx = \\frac{1}{2} \\left[ f(x) \\sec^2 x + g(x) \\left( \\frac{\\tan x}{x} \\right) \\right] + c\\) then which of the following is true",
+	q: "If \\(\\int x \\sin x \\sec^3 x \\, dx = \\frac{1}{2}\\)\\( \\left[ f(x) \\sec^2 x + g(x) \\left( \\frac{\\tan x}{x} \\right) \\right] + c\\) then which of the following is true",
 	options: [
 	"(A). \\(f(x) - g(x) = 0\\)",
 	"(B). \\(f(x) \\cdot g(x) = 0\\)",
