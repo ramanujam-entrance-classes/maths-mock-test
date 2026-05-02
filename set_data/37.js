@@ -215,7 +215,7 @@ window.SET_DATA = {
 	{
 	q: `Consider the sets \\(A = \\{1, 2, 3, 4\\}\\) and \\(B = \\{a, b, c, d, e\\}\\). <br>
 		<span style='font-size:13px'>
-		<table style="text-align:center;width:90%">
+		<table style="text-align:center;width:100%">
 		<tr>
 		<th>Column I </th>
 		<th>Column II </th>
