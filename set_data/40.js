@@ -182,7 +182,7 @@ window.SET_DATA = {
 	q: "Value of maxima of \\(\\left(\\frac{1}{x}\\right)^x\\) is:",
 	options: [
 	"(A). \\(e\\)",
-	"(B). \\(\\frac{1}{e}\\)",
+	"(B). \\(e^{\\frac{1}{e}}\\)",
 	"(C). \\(\\left(\\frac{1}{e}\\right)^e\\)",
 	"(D). \\(e^e\\)"
 	],
@@ -237,8 +237,8 @@ window.SET_DATA = {
 	q: "Let the equation of a curve is given in implicit form as \\(y = \\tan(x + y)\\). Then \\(\\frac{d^2 y}{dx^2}\\) in terms of \\(y\\) is:",
 	options: [
 	"(A). \\(\\frac{2(1 + y^2)}{y^6}\\)",
-	"(B). \\(-\\frac{2(1 + y^2)}{y^6}\\)",
-	"(C). \\(-\\frac{2(1 + y^2)}{y^5}\\)",
+	"(B). \\(\\frac{-2(1 + y^2)}{y^6}\\)",
+	"(C). \\(\\frac{-2(1 + y^2)}{y^5}\\)",
 	"(D). \\(\\frac{2(1 + y^2)^2}{y^5}\\)"
 	],
 	correct: "(C)"
@@ -333,7 +333,7 @@ window.SET_DATA = {
 	},
 	//Q31
 	{
-	q: "Let \\(f(x) = \\begin{cases} -2\\sin x & \\text{if } x \\le -\\frac{\\pi}{2} \\\\ A\\sin x + B & \\text{if } -\\frac{\\pi}{2} < x < \\frac{\\pi}{2} \\\\ \\cos x & \\text{if } x \\ge \\frac{\\pi}{2} \\end{cases}\\). For what values of \\(A\\) and \\(B\\), the function \\(f(x)\\) is continuous throughout the real line?",
+	q: "Let \\(f(x) = \\begin{cases} -2\\sin x & \\text{if } x \\le -\\frac{\\pi}{2} \\\\ A\\sin x + B \\text{ if } -\\frac{\\pi}{2} < x < \\frac{\\pi}{2} \\\\ \\cos x & \\text{if } x \\ge \\frac{\\pi}{2} \\end{cases}\\). For what values of \\(A\\) and \\(B\\), the function \\(f(x)\\) is continuous throughout the real line?",
 	options: [
 	"(A). \\(A = -1, B = 1\\)",
 	"(B). \\(A = -1, B = -1\\)",
@@ -390,10 +390,10 @@ window.SET_DATA = {
 	{
 	q: "The function \\(y = \\sqrt{2x - x^2}\\)",
 	options: [
-	"(A). \\(\\text{Increases in } (0,1) \\text{ but decreases in } (1,2)\\)",
-	"(B). \\(\\text{Decreases in } (0,2)\\)",
-	"(C). \\(\\text{Increases in } (1,2) \\text{ but decreases in } (0,1)\\)",
-	"(D). \\(\\text{Increases in } (0,2)\\)"
+	"(A). Increases in \\((0,1)\\) but decreases in \\((1,2)\\)",
+	"(B). Decreases in \\((0,2)\\)",
+	"(C). Increases in \\((1,2)\\) but decreases in \\((0,1)\\)",
+	"(D). Increases in \\((0,2)\\)"
 	],
 	correct: "(A)"
 	},
@@ -422,13 +422,13 @@ window.SET_DATA = {
 	//Q39
 	{
 	q: `If \\(\\frac{7}{2}\\) and \\(1\\) are the roots of the equation 
-	\\[
+	\\(
 	\\begin{vmatrix}
 	2x & 3 & 7 \\\\
 	2 & 2x & 2 \\\\
 	7 & 6 & 2x
 	\\end{vmatrix} = 0
-	\\]
+	\\)
 	then the third root is :`,
 	options: [
 	"(A). \\(-\\frac{7}{2}\\)",
@@ -464,10 +464,10 @@ window.SET_DATA = {
 	{
 	q: "The equation of the ellipse, whose focus is the point \\((-1, 1)\\), whose directrix is the straight line \\(x - y + 3 = 0\\) and whose eccentricity is \\(\\frac{1}{2}\\) is :",
 	options: [
-	"(A). \\((x + 1)^2 + (y - 1)^2 = \\frac{1}{8} (x - y + 3)^2\\)",
-	"(B). \\((x + 1)^2 + (y - 1)^2 = \\frac{1}{8} (x - y + 1)^2\\)",
-	"(C). \\((x + 1)^2 + (y - 1)^2 = \\frac{1}{6} (x - y + 3)^2\\)",
-	"(D). \\((x + 1)^2 + (y - 1)^2 = \\frac{1}{2} (x - y + 3)^2\\)"
+	"(A). \\((x + 1)^2 + (y - 1)^2 =\\)\\( \\frac{1}{8} (x - y + 3)^2\\)",
+	"(B). \\((x + 1)^2 + (y - 1)^2 =\\)\\( \\frac{1}{8} (x - y + 1)^2\\)",
+	"(C). \\((x + 1)^2 + (y - 1)^2 =\\)\\( \\frac{1}{6} (x - y + 3)^2\\)",
+	"(D). \\((x + 1)^2 + (y - 1)^2 =\\)\\( \\frac{1}{2} (x - y + 3)^2\\)"
 	],
 	correct: "(A)"
 	},
@@ -538,7 +538,7 @@ window.SET_DATA = {
 	},
 	//Q49
 	{
-	q: "For what interval of variation of \\(x\\), the identity \\(\\arccos \\frac{1 - x^2}{1 + x^2} = -2 \\arctan x\\) is true?",
+	q: "For what interval of variation of \\(x\\), the identity \\(arc \\, \\cos \\frac{1 - x^2}{1 + x^2} = -2 arc \\, \\tan x\\) is true?",
 	options: [
 	"(A). \\(-\\infty < x \\le 0\\)",
 	"(B). \\(1 < x < \\infty\\)",
