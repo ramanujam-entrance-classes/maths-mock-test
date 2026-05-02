@@ -7,14 +7,14 @@ window.SET_DATA = {
 	options: [
 	"(A). \\(\\cot 2\\theta = \\pm \\frac{1}{4}, -\\frac{3}{4}\\)",
 	"(B). \\(\\cot 2\\theta = 4, \\frac{4}{3}\\)",
-	"(C). \\(\\cot 2\\theta = -\\frac{3}{4}, \\frac{1}{4}\\)",
+	"(C). \\(\\cot 2\\theta = -\\frac{3}{4}, -\\frac{1}{4}\\)",
 	"(D). none of these"
 	],
 	correct: "(A)"
 	},
 	// Q2
 	{
-	q: "The value of \\(\\cos x \\cos y \\sin(x - y) + \\cos y \\cos z \\sin(y - z) + \\cos z \\cos x \\sin(z - x) + \\sin(x - y) \\sin(y - z) \\sin(z - x)\\), is",
+	q: "The value of \\(\\cos x \\cos y \\sin(x - y) + \\cos y \\cos z \\)\\( \\sin(y - z) + \\cos z \\cos x \\sin(z - x) +\\)\\( \\sin(x - y) \\sin(y - z) \\sin(z - x)\\), is",
 	options: [
 	"(A). \\(0\\)",
 	"(B). \\(1\\)",
@@ -25,7 +25,7 @@ window.SET_DATA = {
 	},
 	// Q3
 	{
-	q: "If \\(ABCD\\) is a convex quadrilateral such that \\(4 \\sec A + 5 = 0\\) then the quadratic equation whose roots are \\(\\tan A\\) and \\(\\cosec A\\) is",
+	q: "If \\(ABCD\\) is a convex quadrilateral such that \\(4 \\sec A + 5 = 0\\) then the quadratic equation whose roots are \\(\\tan A\\) and \\(cosec A\\) is",
 	options: [
 	"(A). \\(12x^2 - 29x + 15 = 0\\)",
 	"(B). \\(12x^2 - 11x - 15 = 0\\)",
@@ -36,7 +36,7 @@ window.SET_DATA = {
 	},
 	// Q4
 	{
-	q: "If \\(\\frac{\\tan \\alpha + \\tan \\beta}{\\cot \\alpha + \\cot \\beta} + \\{\\cos(\\alpha - \\beta) \\sec(\\alpha + \\beta) + 1\\}^{-1} = 1\\), then \\(\\tan \\alpha \\tan \\beta\\) is equal to",
+	q: "If \\(\\frac{\\tan \\alpha + \\tan \\beta}{\\cot \\alpha + \\cot \\beta} + <span style='font-size:13px'> \\{\\cos(\\alpha - \\beta) \\sec(\\alpha + \\beta) + 1\\}^{-1} \\)\\(= 1\\),</span> then \\(\\tan \\alpha \\tan \\beta\\) is equal to",
 	options: [
 	"(A). \\(1\\)",
 	"(B). \\(-1\\)",
@@ -115,8 +115,8 @@ window.SET_DATA = {
 	{
 	q: "If \\(f : R \\in R\\) is defined by \\(f(x) = \\frac{x^2 - ax + 1}{x^2 + ax + 1}\\), \\(0 < a < 2\\), then which of the following is true:",
 	options: [
-	"(A). \\((2 + a)^2 f''(1) + (2 - a)^2 f''(-1) = 0\\)",
-	"(B). \\((2 - a)^2 f''(1) - (2 + a)^2 f''(-1) = 0\\)",
+	"(A). \\((2 + a)^2 f''(1) + (2 - a)^2 f''(-1)\\)\\( = 0\\)",
+	"(B). \\((2 - a)^2 f''(1) - (2 + a)^2 f''(-1) \\)\\(= 0\\)",
 	"(C). \\(f'(1) f'(-1) = (2 - a)^2\\)",
 	"(D). \\(f'(1) f'(-1) = -(2 + a)^2\\)"
 	],
@@ -135,7 +135,7 @@ window.SET_DATA = {
 	},
 	// Q13
 	{
-	q: "Let \\(f(x) = \\begin{cases} 3\\sin x + a^2 - 10a + 30, & x \\notin \\mathbb{Q} \\\\ 4\\cos x, & x \\in \\mathbb{Q} \\end{cases}\\). Which one of the following statements is correct?",
+	q: "Let \\(f(x) =\\)\\( \\begin{cases} 3\\sin x + a^2 - 10a + 30, & x \\notin \\mathbb{Q} \\\\ 4\\cos x, & x \\in \\mathbb{Q} \\end{cases}\\). Which one of the following statements is correct?",
 	options: [
 	"(A). \\(f(x)\\) is continuous for all \\(x\\) when \\(a = 5\\)",
 	"(B). \\(f(x)\\) must be continuous for all \\(x\\), when \\(a = 5\\)",
@@ -194,7 +194,7 @@ window.SET_DATA = {
 	options: [
 	"(A). ordinate",
 	"(B). \\(\\sqrt{2}\\) ordinate",
-	"(C). \\(\\sqrt{2}\\) (ordinate)",
+	"(C). \\(\\sqrt{2\\text{(ordinate)}}\\)",
 	"(D). none of these"
 	],
 	correct: "(B)"
@@ -267,7 +267,7 @@ window.SET_DATA = {
 	},
 	// Q25
 	{
-	q: "If the function \\(f(x) = 2\\tan x + (2a + 1) \\log_e |\\sec x| + (a - 2)x\\) is increasing on \\(R\\), then",
+	q: "If the function \\(f(x) = 2\\tan x + (2a + 1) \\log_e |\\sec x| \\)\\(+ (a - 2)x\\) is increasing on \\(R\\), then",
 	options: [
 	"(A). \\(a \\in (\\frac{1}{2}, \\infty)\\)",
 	"(B). \\(a \\in (-\\frac{1}{2}, \\frac{1}{2})\\)",
@@ -311,7 +311,7 @@ window.SET_DATA = {
 	},
 	// Q29
 	{
-	q: "Let \\(f(x) = 2\\sin^3 x - 3\\sin^2 x + 12\\sin x + 5\\), \\(0 \\le x \\le \\frac{\\pi}{2}\\). Then, \\(f(x)\\), is",
+	q: "Let \\(f(x) = 2\\sin^3 x - 3\\sin^2 x + 12\\sin x \\)\\(+ 5\\), \\(0 \\le x \\le \\frac{\\pi}{2}\\). Then, \\(f(x)\\), is",
 	options: [
 	"(A). decreasing on \\([0, \\frac{\\pi}{2}]\\)",
 	"(B). increasing on \\([0, \\frac{\\pi}{2}]\\)",
@@ -392,7 +392,7 @@ window.SET_DATA = {
 	options: [
 	"(A). \\(\\frac{\\sqrt{x^2 + 2x + 2}}{x+1} + C\\)",
 	"(B). \\(\\frac{\\sqrt{x^2 + 2x + 2}}{(x+1)^2} + C\\)",
-	"(C). \\(-\\frac{\\sqrt{x^2 + 2x + 2}}{x+1} + C\\)",
+	"(C). \\(\\frac{-\\sqrt{x^2 + 2x + 2}}{x+1} + C\\)",
 	"(D). none of these"
 	],
 	correct: "(C)"
@@ -401,9 +401,9 @@ window.SET_DATA = {
 	{
 	q: "If \\( I(m,n) = \\int_0^1 x^{m-1} (1 - x)^{n-1} \\, dx \\), then",
 	options: [
-	"(A). \\( I(m,n) = \\int_0^\\infty \\frac{x^{m-1}}{(1+x)^{m+n}} \\, dx = \\int_0^\\infty \\frac{x^{n-1}}{(1+x)^{m+n}} \\, dx \\)",
-	"(B). \\( I(m,n) = \\int_0^\\infty \\frac{x^{m}}{(1+x)^{m+n}} \\, dx = \\int_0^\\infty \\frac{x^{n}}{(1+x)^{m+n}} \\, dx \\)",
-	"(C). \\( I(m,n) = \\int_0^\\infty \\frac{x^{n}}{(1+x)^{m+n-1}} \\, dx = \\int_0^\\infty \\frac{x^{m}}{(1+x)^{m+n-1}} \\, dx \\)",
+	"(A). \\( I(m,n) = \\int_0^\\infty \\frac{x^{m-1}}{(1+x)^{m+n}} \\, dx =\\)\\( \\int_0^\\infty \\frac{x^{n-1}}{(1+x)^{m+n}} \\, dx \\)",
+	"(B). \\( I(m,n) = \\int_0^\\infty \\frac{x^{m}}{(1+x)^{m+n}} \\, dx =\\)\\( \\int_0^\\infty \\frac{x^{n}}{(1+x)^{m+n}} \\, dx \\)",
+	"(C). \\( I(m,n) = \\int_0^\\infty \\frac{x^{n}}{(1+x)^{m+n-1}} \\, dx =\\)\\( \\int_0^\\infty \\frac{x^{m}}{(1+x)^{m+n-1}} \\, dx \\)",
 	"(D). none of these"
 	],
 	correct: "(A)"
@@ -498,7 +498,26 @@ window.SET_DATA = {
 	},
 	// Q46
 	{
-	q: "Mean deviation about mean for the following data is: \\(x_i: 3, 9, 17, 23, 27\\); \\(f_i: 8, 10, 12, 9, 5\\)",
+	q: `Mean deviation about mean for the following data is<br>
+		<span style='font-size:13px'>
+		<table style="text-align:center;width:100%;border:1px solid black;border-collapse:collapse;">
+		<tr>
+		<td style="text-align:center;border:1px solid black"> \\(x_i:\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(3\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(9\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(17\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(23\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(26\\) </td>
+		</tr>
+		<tr>
+		<td style="text-align:center;border:1px solid black"> \\(f_i:\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(8\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(10\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(12\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(9\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(5\\) </td>
+		</tr>
+		</table></span>`,
 	options: [
 	"(A). \\(7.15\\)",
 	"(B). \\(7.09\\)",
@@ -509,7 +528,29 @@ window.SET_DATA = {
 	},
 	// Q47
 	{
-	q: "The age distribution of \\(400\\) persons in a colony having median age \\(32\\) is given below: Age (in years): \\(20-25, 25-30, 30-35, 35-40, 40-45, 45-50\\); Frequency: \\(110, x, 75, 55, y, 30\\). Then, \\(x - y\\) is",
+	q: `The age distribution of \\(400\\) persons in a colony having median age \\(32\\) is given below: <br> 
+		<span style='font-size:10px'>
+		<table style="text-align:center;width:100%;border:1px solid black;border-collapse:collapse;">
+		<tr>
+		<td style="text-align:center;border:1px solid black"> Age<br>(in year) </td>
+		<td style="text-align:center;border:1px solid black"> \\(20-25\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(25-30\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(30-35\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(35-40\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(40-45\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(45-50\\) </td>
+		</tr>
+		<tr>
+		<td style="text-align:center;border:1px solid black"> \\(Freq.\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(110\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(x\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(75\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(55\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(y\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(30\\) </td>
+		</tr>
+		</table></span> <br>
+		Then, \\(x - y\\) is`,
 	options: [
 	"(A). \\(10\\)",
 	"(B). \\(20\\)",
@@ -531,7 +572,30 @@ window.SET_DATA = {
 	},
 	// Q49
 	{
-	q: "For the following data the value of \\(Q_1 + Q_3 - Q_2\\), is\nAge in years: 20, 30, 40, 50, 60, 70, 80\nNo. of members: 3, 61, 132, 153, 140, 51, 3",
+	q: `For the following data the value of \\(Q_1 + Q_3 - Q_2\\), is<br>
+		<span style='font-size:12px'>
+		<table style="text-align:center;width:100%;border:1px solid black;border-collapse:collapse;">
+		<tr>
+		<td style="text-align:center;border:1px solid black"> Age <br>in years</td>
+		<td style="text-align:center;border:1px solid black"> \\(20\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(30\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(40\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(50\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(60\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(70\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(80\\) </td>
+		</tr>
+		<tr>
+		<td style="text-align:center;border:1px solid black"> \\(No. of<br>members\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(3\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(61\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(132\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(153\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(140\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(51\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(3\\) </td>
+		</tr>
+		</table></span>`,
 	options: [
 	"(A). \\(Q_1\\)",
 	"(B). \\(Q_2\\)",
@@ -542,7 +606,29 @@ window.SET_DATA = {
 	},
 	// Q50
 	{
-	q: "The value of \\(Q_3\\) for the following distribution is\nMarks group: 5 - 10, 10 - 15, 15 - 20, 20 - 25, 25 - 30, 30 - 35, 35 - 40, 40 - 45\nNo of Student: 5, 6, 15, 10, 5, 4, 2, 1",
+	q: `The value of \\(Q_3\\) for the following distribution (Marks Group & No. of Students) is
+		<span style='font-size:10px'>
+		<table style="text-align:center;width:100%;border:1px solid black;border-collapse:collapse;">
+		<tr>
+		<td style="text-align:center;border:1px solid black"> \\(5-10\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(10-15\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(15-20\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(20-25\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(25-30\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(35-40\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(40-45\\) </td>
+		</tr>
+		<tr>
+		<td style="text-align:center;border:1px solid black"> \\(5\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(6\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(15\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(10\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(5\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(4\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(2\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(1\\) </td>
+		</tr>
+		</table></span>`,
 	options: [
 	"(A). \\(15\\)",
 	"(B). \\(21.5\\)",
