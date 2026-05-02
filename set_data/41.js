@@ -16,7 +16,7 @@ window.SET_DATA = {
 	{
 	q: `The median from the following distribution is <br>
 		<span style='font-size:10px'>
-		<table style="text-align:center;width:100%">
+		<table style="text-align:center;width:100%;border:1px solid black">
 		<tr>
 		<td style="text-align:center;"> \\(5-10\\) </td>
 		<td style="text-align:center;"> \\(10-15\\) </td>
