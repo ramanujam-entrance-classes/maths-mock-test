@@ -333,7 +333,7 @@ window.SET_DATA = {
 	},
 	//Q31
 	{
-	q: "Let \\(f(x) = \\begin{cases} -2\\sin x & \\text{if } x \\le -\\frac{\\pi}{2} \\\\ A\\sin x + B \\text{ if } -\\frac{\\pi}{2} < x < \\frac{\\pi}{2} \\\\ \\cos x & \\text{if } x \\ge \\frac{\\pi}{2} \\end{cases}\\). For what values of \\(A\\) and \\(B\\), the function \\(f(x)\\) is continuous throughout the real line?",
+	q: "Let \\(f(x) =\\)\\( \\begin{cases} -2\\sin x & \\text{if } x \\le -\\frac{\\pi}{2} \\\\ A\\sin x + B & \\text{ if } -\\frac{\\pi}{2} < x < \\frac{\\pi}{2} \\\\ \\cos x & \\text{if } x \\ge \\frac{\\pi}{2} \\end{cases}\\). For what values of \\(A\\) and \\(B\\), the function \\(f(x)\\) is continuous throughout the real line?",
 	options: [
 	"(A). \\(A = -1, B = 1\\)",
 	"(B). \\(A = -1, B = -1\\)",
