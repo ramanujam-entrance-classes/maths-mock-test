@@ -93,10 +93,10 @@ window.SET_DATA = {
 	{
 	q: "If \\(\\alpha\\) and \\(\\beta\\) are the two roots of the equation \\(x^2 + ax + b = 0\\), \\((ab \\ne 0)\\) then the quadratic equation with roots \\(\\frac{1}{\\alpha^3 + \\alpha}\\) and \\(\\frac{1}{\\beta^3 + \\beta}\\) is",
 	options: [
-	"(A). \\(b(b^2 + 1 + a^2 + 2b)x^2 + (a^3 - a - 3ab)x + 1 = 0\\)",
-	"(B). \\(b(b^2 + 1 + a^2 + 2b)x^2 - (a^3 + a - 3ab)x + 1 = 0\\)",
-	"(C). \\(b(b^2 + 1 + a^2 - 2b)x^2 + (a^3 + a - 3ab)x + 1 = 0\\)",
-	"(D). \\(b(b^2 + 1 + a^2 - 2b)x^2 - (a^3 + a - 3ab)x + 1 = 0\\)"
+	"(A). \\(b(b^2 + 1 + a^2 + 2b)x^2 +\\)\\( (a^3 - a - 3ab)x + 1 = 0\\)",
+	"(B). \\(b(b^2 + 1 + a^2 + 2b)x^2 -\\)\\( (a^3 + a - 3ab)x + 1 = 0\\)",
+	"(C). \\(b(b^2 + 1 + a^2 - 2b)x^2 +\\)\\( (a^3 + a - 3ab)x + 1 = 0\\)",
+	"(D). \\(b(b^2 + 1 + a^2 - 2b)x^2 -\\)\\( (a^3 + a - 3ab)x + 1 = 0\\)"
 	],
 	correct: "(C)"
 	},
@@ -201,7 +201,7 @@ window.SET_DATA = {
 	},
 	// Q19
 	{
-	q: "The value of \\(\\frac{d}{dx} \\int \\sin x^2 e^{t^2} dt\\) at \\(t = \\pi\\) is",
+	q: "The value of \\(\\frac{d}{dx} \\int_{\\sin x^2}^{2\\sin x} e^{t^2} dt\\) at \\(t = \\pi\\) is",
 	options: [
 	"(A). \\(1\\)",
 	"(B). \\(-1\\)",
@@ -216,7 +216,7 @@ window.SET_DATA = {
 	options: [
 	"(A). \\(f(x)\\) is differentiable at \\(x = 0\\) for all \\(\\alpha > 0\\) & \\(\\beta > 0\\)",
 	"(B). \\(f(x)\\) is continuous at \\(x = 0\\) for all \\(\\alpha > 0\\) & \\(\\beta \\in \\mathbb{R}\\)",
-	"(C). \\(f(x)\\) is continuous at \\(x = 0\\), for all \\(\\alpha & \\beta \\in \\mathbb{R}\\)",
+	"(C). \\(f(x)\\) is continuous at \\(x = 0\\), for all \\(\\alpha\\) & \\(\\beta \\in \\mathbb{R}\\)",
 	"(D). \\(f(x)\\) is continuous at \\(x = 10\\) for only \\(\\alpha > 0\\) & \\(\\beta > 0\\)"
 	],
 	correct: "(B)"
@@ -256,7 +256,7 @@ window.SET_DATA = {
 	},
 	// Q24
 	{
-	q: "If \\(\\cos^2(10^\\circ) \\cos(20^\\circ) \\cos(40^\\circ) \\cos(50^\\circ) \\cos(70^\\circ) = \\alpha + \\frac{\\sqrt{3}}{16} \\cos(10^\\circ)\\), then \\(3\\alpha^{-1}\\) is equal to",
+	q: "If \\(\\cos^2(10^\\circ) \\cos(20^\\circ) \\cos(40^\\circ) \\cos(50^\\circ) \\)\\( \\cos(70^\\circ) = \\alpha + \\frac{\\sqrt{3}}{16} \\cos(10^\\circ)\\), then \\(3\\alpha^{-1}\\) is equal to",
 	options: [
 	"(A). \\(64\\)",
 	"(B). \\(\\frac{9}{16}\\)",
@@ -344,7 +344,7 @@ window.SET_DATA = {
 	},
 	// Q32
 	{
-	q: "If \\(x, y\\) and \\(z\\) are the three cube roots of \\(27\\), then the determinant of the matrix \\(\\begin{pmatrix} x & y & z \\\\ y & z & x \\\\ z & x & y \\end{pmatrix}\\) is",
+	q: "If \\(x, y\\) and \\(z\\) are the three cube roots of \\(27\\), then the determinant of the matrix \\(\\begin{vmatrix} x & y & z \\\\ y & z & x \\\\ z & x & y \\end{vmatrix}\\) is",
 	options: [
 	"(A). \\(1\\)",
 	"(B). \\((x - y)(x - z)(y - z)\\)",
@@ -377,7 +377,7 @@ window.SET_DATA = {
 	},
 	// Q35
 	{
-	q: "If every even term of a series is a times the term before it and every odd term is c times the term before it, the first term being unity, then the sum to 2n terms is",
+	q: "If every even term of a series is a times the term before it and every odd term is \\(c\\) times the term before it, the first term being unity, then the sum to \\(2n\\) terms is",
 	options: [
 	"(A). \\(\\frac{(1 - a)(1 - c^n a^n)}{1 - ca}\\)",
 	"(B). \\(\\frac{(1 + a)(1 - c^{n-1} a^{n-1})}{1 - ca}\\)",
@@ -434,10 +434,10 @@ window.SET_DATA = {
 	{
 	q: "Rural and urban students are equally likely to get admission in a college. If 100 students get admission, then the probability that more rural students get admission than urban students is",
 	options: [
-	"(A). \\(1 - \\left(\\frac{1}{2}\\right)^{100} \\binom{100}{50}\\)",
-	"(B). \\(\\frac{1}{2}\\left(1 - \\left(\\frac{1}{2}\\right)^{100} \\binom{100}{50}\\right)\\)",
-	"(C). \\(\\left(\\frac{1}{2}\\right)^{100} P_{50}^{100}\\)",
-	"(D). \\(\\left(\\frac{1}{2}\\right)^{100} \\binom{100}{50}\\)"
+	"(A). \\(1 - \\left(\\frac{1}{2}\\right)^{100} {}^{100}C_{50}\\)",
+	"(B). \\(\\frac{1}{2}\\left(1 - \\left(\\frac{1}{2}\\right)^{100} {}^{100}C_{50}\\right)\\)",
+	"(C). \\(\\left(\\frac{1}{2}\\right)^{100} {}^{100}P_{50}\\)",
+	"(D). \\(\\left(\\frac{1}{2}\\right)^{100} {}^{100}C_{50}\\)"
 	],
 	correct: "(B)"
 	},
