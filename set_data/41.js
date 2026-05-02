@@ -18,24 +18,24 @@ window.SET_DATA = {
 		<span style='font-size:10px'>
 		<table style="text-align:center;width:100%;border:1px solid black">
 		<tr>
-		<td style="text-align:center;"> \\(5-10\\) </td>
-		<td style="text-align:center;"> \\(10-15\\) </td>
-		<td style="text-align:center;"> \\(15-20\\) </td>
-		<td style="text-align:center;"> \\(20-25\\) </td>
-		<td style="text-align:center;"> \\(25-30\\) </td>
-		<td style="text-align:center;"> \\(30-35\\) </td>
-		<td style="text-align:center;"> \\(35-40\\) </td>
-		<td style="text-align:center;"> \\(40-45\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(5-10\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(10-15\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(15-20\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(20-25\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(25-30\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(30-35\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(35-40\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(40-45\\) </td>
 		</tr>
 		<tr>
-		<td style="text-align:center;"> \\(5\\) </td>
-		<td style="text-align:center;"> \\(6\\) </td>
-		<td style="text-align:center;"> \\(15\\) </td>
-		<td style="text-align:center;"> \\(10\\) </td>
-		<td style="text-align:center;"> \\(5\\) </td>
-		<td style="text-align:center;"> \\(4\\) </td>
-		<td style="text-align:center;"> \\(2\\) </td>
-		<td style="text-align:center;"> \\(2\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(5\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(6\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(15\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(10\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(5\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(4\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(2\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(2\\) </td>
 		</tr>
 		</table></span>`,
 	options: [
@@ -55,7 +55,7 @@ window.SET_DATA = {
 	"(C). \\(x^2 - y^2 = 32\\)",
 	"(D). \\(x^2 - y^2 = 64\\)"
 	],
-	correct: ""
+	correct: "(C)"
 	},
 	// Q4
 	{
@@ -169,18 +169,18 @@ window.SET_DATA = {
 	},
 	// Q14
 	{
-	q: "sin^2\\theta cos^3\\theta - sin^4\\theta cos\\theta is equal:",
+	q: "\\(sin^2\\theta cos^3\\theta - sin^4\\theta cos\\theta\\) is equal:",
 	options: [
-	"(A). \\(\\frac{1}{2} cos\\theta sin4\\theta\\)",
-	"(B). \\(\\frac{1}{4} cos\\theta sin4\\theta\\)",
-	"(C). \\(\\frac{1}{2} sin^2 2\\theta\\)",
-	"(D). \\(\\frac{1}{4} sin\\theta sin4\\theta\\)"
+	"(A). \\(\\frac{1}{2} \\cos\\theta \\sin4\\theta\\)",
+	"(B). \\(\\frac{1}{4} \\cos\\theta \\sin4\\theta\\)",
+	"(C). \\(\\frac{1}{2} \\sin^2 2\\theta\\)",
+	"(D). \\(\\frac{1}{4} \\sin\\theta sin4\\theta\\)"
 	],
 	correct: "(D)"
 	},
 	// Q15
 	{
-	q: "If 2 sin C cos A = sin B, then \\(\\triangle ABC\\) is:",
+	q: "If \\(2 \\sin C \\cos A = \\sin B\\), then \\(\\triangle ABC\\) is:",
 	options: [
 	"(A). \\(\\text{Isosceles triangle}\\)",
 	"(B). \\(\\text{Equilateral triangle}\\)",
@@ -191,7 +191,7 @@ window.SET_DATA = {
 	},
 	// Q16
 	{
-	q: "Value of the tan \\(\\left[\\frac{1}{2} cos^{-1}\\left(\\frac{2}{3}\\right)\\right]\\) is:",
+	q: "Value of the \\(\\tan \\left[\\frac{1}{2} \\cos^{-1}\\left(\\frac{2}{3}\\right)\\right]\\) is:",
 	options: [
 	"(A). \\(\\sqrt{\\frac{5}{2}}\\)",
 	"(B). \\(1 - \\sqrt{\\frac{5}{2}}\\)",
@@ -202,7 +202,7 @@ window.SET_DATA = {
 	},
 	// Q17
 	{
-	q: "If \\(r^2 = x^2 + y^2 + z^2\\) and \\(tan^{-1}\\left(\\frac{yz}{xr}\\right) + tan^{-1}\\left(\\frac{xz}{yr}\\right) = \\frac{\\pi}{2} - tan^{-1} \\phi\\), then:",
+	q: "If \\(r^2 = x^2 + y^2 + z^2\\) and \\(\\tan^{-1}\\left(\\frac{yz}{xr}\\right) + \\tan^{-1}\\left(\\frac{xz}{yr}\\right) = \\)\\( \\frac{\\pi}{2} - \\tan^{-1} \\phi\\), then:",
 	options: [
 	"(A). \\(\\phi = \\frac{x + y}{zr}\\)",
 	"(B). \\(\\phi = \\frac{yz}{xr} + \\frac{xz}{yr}\\)",
@@ -257,7 +257,7 @@ window.SET_DATA = {
 	},
 	// Q22
 	{
-	q: "\\(log_3 2, log_6 2, log_{12} 2\\) are in:",
+	q: "\\(\\log_3 2, \\log_6 2, \\log_{12} 2\\) are in:",
 	options: [
 	"(A). \\(A.P.\\)",
 	"(B). \\(G.P.\\)",
@@ -268,25 +268,25 @@ window.SET_DATA = {
 	},
 	// Q23
 	{
-	q: "If p, q, r, s, t and u are in A.P. then difference \\((t - r)\\) is equal:",
+	q: "If \\(p, q, r, s, t\\) and \\(u\\) are in A.P. then difference \\((t - r)\\) is equal:",
 	options: [
 	"(A). \\(2(s - p)\\)",
 	"(B). \\(2(u - q)\\)",
 	"(C). \\(2(s - r)\\)",
 	"(D). \\(u - q\\)"
 	],
-	correct: ""
+	correct: "(C)"
 	},
 	// Q24
 	{
-	q: "Value of \\((log_b a)(log_c b)(log_a c)\\) is:",
+	q: "Value of \\([(\\log_b a)(\\log_c b)(\\log_a c)]\\) is:",
 	options: [
 	"(A). \\(0\\)",
 	"(B). \\(1\\)",
 	"(C). \\(abc\\)",
-	"(D). \\(log abc\\)"
+	"(D). \\(\\log abc\\)"
 	],
-	correct: ""
+	correct: "(B)"
 	},
 	// Q25
 	{
@@ -330,11 +330,11 @@ window.SET_DATA = {
 	"(C). \\(a^2 b^2 c^2 (a - b)(b - c)(c - a)\\)",
 	"(D). \\(\\text{None of the above}\\)"
 	],
-	correct: ""
+	correct: "(A)"
 	},
 	// Q29
 	{
-	q: `If \\(\\begin{bmatrix}3 & -1 \\\\ 0 & 6\\end{bmatrix} \\begin{bmatrix}3x \\\\ 1\\end{bmatrix} + \\begin{bmatrix}-2x \\\\ 3\\end{bmatrix} = \\begin{bmatrix}8 \\\\ 9\\end{bmatrix}\\) the value of x is:`,
+	q: `If \\(\\begin{bmatrix}3 & -1 \\\\ 0 & 6\\end{bmatrix} \\begin{bmatrix}3x \\\\ 1\\end{bmatrix} + \\begin{bmatrix}-2x \\\\ 3\\end{bmatrix} = \\begin{bmatrix}8 \\\\ 9\\end{bmatrix}\\) the value of \\(x\\) is:`,
 	options: [
 	"(A). \\(7\\)",
 	"(B). \\(-\\frac{2}{9}\\)",
@@ -378,7 +378,30 @@ window.SET_DATA = {
 	},
 	// Q33
 	{
-	q: "The value of \\(Q_3\\) for the following distribution is: Marks group: 5-10, 10-15, 15-20, 20-25, 25-30, 30-35, 35-40, 40-45; No of Student: 5, 6, 15, 10, 5, 4, 2, 1",
+	q: `The value of \\(Q_3\\) for the following distribution (Marks group & No. of Student) is<br>: 
+		<span style='font-size:10px'>
+		<table style="text-align:center;width:100%;border:1px solid black">
+		<tr>
+		<td style="text-align:center;border:1px solid black"> \\(5-10\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(10-15\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(15-20\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(20-25\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(25-30\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(30-35\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(35-40\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(40-45\\) </td>
+		</tr>
+		<tr>
+		<td style="text-align:center;border:1px solid black"> \\(5\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(6\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(15\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(10\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(5\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(4\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(2\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(1\\) </td>
+		</tr>
+		</table></span>`,
 	options: [
 	"(A). \\(15\\)",
 	"(B). \\(21.5\\)",
@@ -398,7 +421,7 @@ window.SET_DATA = {
 	],
 	correct: "(C)"
 	},
-	// Q36
+	// Q35
 	{
 	q: "The area bounded by the parabola \\(x = 4 - y^2\\) and y-axis, in square units, is",
 	options: [
@@ -409,9 +432,9 @@ window.SET_DATA = {
 	],
 	correct: "(B)"
 	},
-	// Q37
+	// Q36
 	{
-	q: "lim \\(x \\to 0\\) \\(\\frac{2 \\int_{0}^{\\cos x} \\cos^{-1} t \\, dt}{2x - \\sin 2x}\\) is equal to",
+	q: "\\(\\lim_{x \\to 0}\\) \\(\\frac{2 \\int_{0}^{\\cos x} \\cos^{-1} t \\, dt}{2x - \\sin 2x}\\) is equal to",
 	options: [
 	"(A). \\(0\\)",
 	"(B). \\(\\frac{1}{2}\\)",
@@ -420,7 +443,7 @@ window.SET_DATA = {
 	],
 	correct: "(C)"
 	},
-	// Q38
+	// Q37
 	{
 	q: "The average marks of boys in a class is 52 and that of girls is 42. The average marks of boys and girls combined is 50. The percentage of boys in the class is",
 	options: [
@@ -431,7 +454,7 @@ window.SET_DATA = {
 	],
 	correct: "(A)"
 	},
-	// Q39
+	// Q38
 	{
 	q: "The domain of the function \\(f(x) = \\sqrt[4]{\\log_3 \\left( \\frac{1}{|\\cos x|} \\right)}\\) is",
 	options: [
@@ -442,7 +465,7 @@ window.SET_DATA = {
 	],
 	correct: "(C)"
 	},
-	// Q40
+	// Q39
 	{
 	q: "If \\(f(x) = \\cos [\\pi] x + \\cos [\\pi x]\\), where \\([y]\\) is greatest integer less than or equal to \\(y\\), then \\(f(\\pi/2) =\\)",
 	options: [
@@ -453,9 +476,9 @@ window.SET_DATA = {
 	],
 	correct: "(C)"
 	},
-	// Q41
+	// Q40
 	{
-	q: "If \\(\\int \\sec^{4/3} x \\cosec^{8/3} x \\, dx = a (\\tan x)^{-5/3} + b (\\tan x)^{1/3} + C\\), then \\(5a + b =\\)",
+	q: "If \\(\\int \\sec^{4/3} x \\, cosec^{8/3} x \\, dx =\\)\\( a (\\tan x)^{-5/3} + b (\\tan x)^{1/3} + C\\), then \\(5a + b =\\)",
 	options: [
 	"(A). \\(3\\)",
 	"(B). \\(-3\\)",
@@ -464,7 +487,7 @@ window.SET_DATA = {
 	],
 	correct: "(C)"
 	},
-	// Q42
+	// Q41
 	{
 	q: "The angle of elevation of top of a tower from a point on the ground is \\(30^\\circ\\) and it is \\(60^\\circ\\) when it is viewed from a point located \\(40\\) m away from the initial point towards the tower the height of the tower is",
 	options: [
@@ -475,7 +498,7 @@ window.SET_DATA = {
 	],
 	correct: "(A)"
 	},
-	// Q43
+	// Q42
 	{
 	q: "If the equation \\(1 + \\sin^2 ax = \\cos x\\) has infinitely many solutions, then \\(a\\) is",
 	options: [
@@ -486,7 +509,7 @@ window.SET_DATA = {
 	],
 	correct: "(B)"
 	},
-	// Q44
+	// Q43
 	{
 	q: "If one of the root of the equation \\(x^2 + x f(a) + a = 0\\) is the cube of the other for all \\(x \\in R\\), then \\(f(x) =\\)",
 	options: [
@@ -497,7 +520,7 @@ window.SET_DATA = {
 	],
 	correct: "(B)"
 	},
-	// Q45
+	// Q44
 	{
 	q: "If in a \\(\\triangle ABC\\), \\(\\sin A\\), \\(\\sin B\\) and \\(\\sin C\\) are in AP, then",
 	options: [
@@ -508,7 +531,7 @@ window.SET_DATA = {
 	],
 	correct: "(B)"
 	},
-	// Q46
+	// Q45
 	{
 	q: "The value of \\(\\frac{1}{r_1^2} + \\frac{1}{r_2^2} + \\frac{1}{r_3^2} + \\frac{1}{r^2}\\) is",
 	options: [
@@ -519,7 +542,7 @@ window.SET_DATA = {
 	],
 	correct: "(B)"
 	},
-	// Q47
+	// Q46
 	{
 	q: "If \\(\\tan^{-1}\\left(\\frac{n}{\\pi}\\right) > \\frac{\\pi}{4}\\), \\(n \\in N\\), then the minimum value of \\(n\\) is",
 	options: [
@@ -530,7 +553,7 @@ window.SET_DATA = {
 	],
 	correct: "(B)"
 	},
-	// Q49
+	// Q47
 	{
 	q: "The value of \\(\\sin \\frac{\\pi}{n} + \\sin \\frac{3\\pi}{n} + \\sin \\frac{5\\pi}{n} + \\ldots\\) to \\(n\\) terms is equal to",
 	options: [
@@ -541,7 +564,7 @@ window.SET_DATA = {
 	],
 	correct: "(B)"
 	},
-	// Q50
+	// Q48
 	{
 	q: "Minimum value of \\(27^{\\cos x} + 81^{\\sin x}\\) is equal to",
 	options: [
@@ -552,7 +575,7 @@ window.SET_DATA = {
 	],
 	correct: "(B)"
 	},
-	// Q51
+	// Q49
 	{
 	q: "If \\(\\sec 2\\theta = p + \\tan 2\\theta\\), then the value of \\(\\sin^2 \\theta\\) in terms of \\(p\\) is given by",
 	options: [
@@ -563,27 +586,78 @@ window.SET_DATA = {
 	],
 	correct: "(A)"
 	},
-	// Q52
+	// Q50
 	{
-	q: "Consider the following frequency distribution table.\n\nClass Interval: \\(10-20, 20-30, 30-40, 40-50, 50-60, 60-70, 70-80\\)\n\nFrequency: \\(180, f_1, 34, 180, 136, f_2, 50\\)\n\nIf the total frequency is \\(686\\) and median is \\(42.6\\) then the values of \\(f_1\\) and \\(f_2\\) are",
+	q: `Consider the following frequency distribution table.<br>
+		<span style='font-size:10px'>
+		<table style="text-align:center;width:100%;border:1px solid black">
+		<tr>
+		<td style="text-align:center;border:1px solid black"> Class <br> Interval </td>
+		<td style="text-align:center;border:1px solid black"> \\(10-20\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(20-30\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(30-40\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(40-50\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(50-60\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(60-70\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(70-80\\) </td>
+		</tr>
+		<tr>
+		<td style="text-align:center;border:1px solid black"> Frequency </td>
+		<td style="text-align:center;border:1px solid black"> \\(180\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(f_1\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(34\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(180\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(136\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(f_2\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(50\\) </td>
+		</tr>
+		</table></span><br>		
+		If the total frequency is \\(686\\) and median is \\(42.6\\) then the values of \\(f_1\\) and \\(f_2\\) are`,
 	options: [
 	"(A). \\(81, 25\\)",
 	"(B). \\(82, 24\\)",
 	"(C). \\(83, 23\\)",
 	"(D). \\(84, 22\\)"
 	],
-	correct: ""
+	correct: "(B)"
 	},
-	// Q53
+	// Q51
 	{
-	q: "The median for the following frequency distribution is:\n\n\\(x: 1, 2, 3, 4, 5, 6, 7, 8, 9\\)\n\n\\(f: 8, 10, 11, 16, 20, 25, 15, 9, 6\\)",
+	q: `The median for the following frequency distribution is:
+		<span style='font-size:10px'>
+		<table style="text-align:center;width:100%;border:1px solid black">
+		<tr>
+		<td style="text-align:center;border:1px solid black"> \\(x:\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(1\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(2\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(3\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(4\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(5\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(6\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(7\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(8\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(9\\) </td>
+		</tr>
+		<tr>
+		<td style="text-align:center;border:1px solid black"> \\(f:\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(8\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(10\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(11\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(16\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(20\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(25\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(15\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(9\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(6\\) </td>
+		</tr>
+		</table></span>`,
 	options: [
 	"(A). \\(6\\)",
 	"(B). \\(5\\)",
 	"(C). \\(7\\)",
 	"(D). \\(4\\)"
 	],
-	correct: ""
+	correct: "(B)"
 	}
   ]
 };
