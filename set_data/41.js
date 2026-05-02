@@ -15,10 +15,10 @@ window.SET_DATA = {
 	// Q2
 	{
 	q: `The median from the following distribution is <br>
-		<span style='font-size:13px'>
+		<span style='font-size:10px'>
 		<table style="text-align:center;width:100%">
 		<tr>
-		<td style="text-align:center;"> Class: </td>
+		<td style="text-align:center;"> Cls: </td>
 		<td style="text-align:center;"> \\(5-10\\) </td>
 		<td style="text-align:center;"> \\(10-15\\) </td>
 		<td style="text-align:center;"> \\(15-20\\) </td>
@@ -29,7 +29,7 @@ window.SET_DATA = {
 		<td style="text-align:center;"> \\(40-45\\) </td>
 		</tr>
 		<tr>
-		<td style="text-align:center;"> Frequency: </td>
+		<td style="text-align:center;"> Freq: </td>
 		<td style="text-align:center;"> \\(5\\) </td>
 		<td style="text-align:center;"> \\(6\\) </td>
 		<td style="text-align:center;"> \\(15\\) </td>
