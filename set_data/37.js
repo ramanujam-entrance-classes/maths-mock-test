@@ -215,7 +215,7 @@ window.SET_DATA = {
 	{
 	q: `Consider the sets \\(A = \\{1, 2, 3, 4\\}\\) and \\(B = \\{a, b, c, d, e\\}\\). <br>
 		<span style='font-size:13px'>
-		<table style="text-align:center;width:80%">
+		<table style="text-align:center;width:90%">
 		<tr>
 		<th>Column I </th>
 		<th>Column II </th>
@@ -234,7 +234,9 @@ window.SET_DATA = {
 		</tr>
 		<tr>
 		<td>(d) \\(f_4 = \\{(1,b), (2,b), (3,c), (4,e)\\}\\) is a function which is.</td>
-		<td>(s) not a function. Choose the correct matching.</td></span>
+		<td>(s) not a function. Choose the correct matching.</td>
+		</tr>
+		</table></span>
 	<br> Options:`,
 	options: [
 	"(A). \\(a-s, b-s, c-p, d-r\\)",
@@ -268,7 +270,7 @@ window.SET_DATA = {
 	},
 	// Q23
 	{
-	q: "If \\(\\int (2x^3 + 3x^2 - 8x + 1) \\sqrt{2x + 6} \\, dx = \\frac{\\sqrt{2x + 6}}{579} (2x + 6) f(x) + c\\), \\(f(x)\\) is equal to:",
+	q: "If \\(\\int (2x^3 + 3x^2 - 8x + 1) \\sqrt{2x + 6} \\, dx = \\)\\( \\frac{\\sqrt{2x + 6}}{579} (2x + 6) f(x) + c\\), \\(f(x)\\) is equal to:",
 	options: [
 	"(A). \\(x^3 - 6x^2 - 91x + 297\\)",
 	"(B). \\(7x^3 - 3x^2 - 123x + 597\\)",
