@@ -56,9 +56,9 @@ window.SET_DATA = {
 	"(A). \\(b_6 = 27\\)",
 	"(B). \\(b_7 = 27\\)",
 	"(C). \\(b_8 = 81\\)",
-	"(D). \\(b_9 = 81\\)"
+	"(D). None of these"
 	],
-	correct: "(B)"
+	correct: "(D)"
 	},
 	// Q6
 	{
@@ -150,7 +150,7 @@ window.SET_DATA = {
 	},
 	// Q14
 	{
-	q: "If \\(S_1, S_2\\) and \\(S_3\\) denote the sum of first \\(n_1, n_2\\) and \\(n_3\\) terms respectively of an A.P., then \\(\\frac{S_1}{n_1}(n_2 - n_3) + \\frac{S_2}{n_2}(n_3 - n_1) + \\frac{S_3}{n_3}(n_1 - n_2) =\\)",
+	q: "If \\(S_1, S_2\\) and \\(S_3\\) denote the sum of first \\(n_1, n_2\\) and \\(n_3\\) terms respectively of an A.P., then \\(\\frac{S_1}{n_1}(n_2 - n_3) + \\frac{S_2}{n_2}(n_3 - n_1) + \\)\\( \\frac{S_3}{n_3}(n_1 - n_2) =\\)",
 	options: [
 	"(A). \\(0\\)",
 	"(B). \\(1\\)",
@@ -414,7 +414,7 @@ window.SET_DATA = {
 	},
 	// Q38
 	{
-	q: "The value of \\(N\\), satisfying \\(\\log_a[1 + \\log_b\\{1 + \\log_c(1 + \\log_p N)\\}] = 0\\) is:",
+	q: "The value of \\(N\\), satisfying \\(\\log_a[1 + \\log_b\\{1 + \\log_c(1 + \\log_p N)\\}] \\)\\( = 0\\) is:",
 	options: [
 	"(A). \\(4\\)",
 	"(B). \\(3\\)",
@@ -498,7 +498,7 @@ window.SET_DATA = {
 	"(C). \\(5\\)",
 	"(D). \\(4\\)"
 	],
-	correct: ""
+	correct: "(C)"
 	},
 	// Q46
 	{
@@ -546,7 +546,7 @@ window.SET_DATA = {
 	},
 	// Q50
 	{
-	q: "The function \\(f(x)\\) at \\(x = 0\\)",
+	q: "Let \\(f(x) = \\begin{cases} x \\sin \\frac{1}{x}, & \\text{when } x \\ne 0 \\\\ 0, & \\text{when } x = 0 \\end{cases}\\). The function \\(f(x)\\) at \\(x = 0\\)",
 	options: [
 	"(A). \\(\\text{differentiable}\\)",
 	"(B). \\(\\text{not differentiable}\\)",
