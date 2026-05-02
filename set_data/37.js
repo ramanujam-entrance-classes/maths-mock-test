@@ -221,19 +221,19 @@ window.SET_DATA = {
 		<th>Column II </th>
 		</tr>
 		<tr>
-		<td>(a) \\(f_1 =\\) \\({(1,a),\\)\\( (2,b),\\)\\( (3,d)}\\)\\( \\subset A \\times B\\) is a relation from \\(A\\) to \\(B\\) which is. </td>
+		<td>(a) \\(f_1 =\\) {\\((1,a),\\)\\( (2,b),\\)\\( (3,d)\\)}\\( \\subset A \\times B\\) is a relation from \\(A\\) to \\(B\\) which is. </td>
 		<td>(p) one-one but not onto</td>
 		</tr>
 		<tr>
-		<td>(b) \\(f_2 =\\) \\({(1,a),\\)\\( (2,d),\\)\\( (1,c),\\)\\( (3,e)}\\) is a relation from \\(A\\) to \\(B\\) which is.</td>
+		<td>(b) \\(f_2 =\\) {\\((1,a),\\)\\( (2,d),\\)\\( (1,c),\\)\\( (3,e)\\)} is a relation from \\(A\\) to \\(B\\) which is.</td>
 		<td>(q) one-one and onto</td>
 		</tr>
 		<tr>
-		<td>(c) \\(f_3 =\\)\\( {(1,d),\\)\\( (2,b),\\)\\( (3,c),\\)\\( (4,e)}\\) is a function which is.</td>
+		<td>(c) \\(f_3 =\\){\\((1,d),\\)\\( (2,b),\\)\\( (3,c),\\)\\( (4,e)\\)} is a function which is.</td>
 		<td>(r) onto but not one-one</td>
 		</tr>
 		<tr>
-		<td>(d) \\(f_4 =\\)\\( {(1,b),\\)\\( (2,b),\\)\\( (3,c),\\)\\( (4,e)}\\) is a function which is.</td>
+		<td>(d) \\(f_4 =\\){\\((1,b),\\)\\( (2,b),\\)\\( (3,c),\\)\\( (4,e)\\)} is a function which is.</td>
 		<td>(s) not a function. Choose the correct matching.</td>
 		</tr>
 		</table></span>
