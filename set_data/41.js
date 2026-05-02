@@ -14,9 +14,9 @@ window.SET_DATA = {
 	},
 	// Q2
 	{
-	q: `The median from the following distribution is <br>
+	q: `The median from the following distribution (Class & Frequency) is <br>
 		<span style='font-size:10px'>
-		<table style="text-align:center;width:100%;border:1px solid black">
+		<table style="text-align:center;width:100%;border:1px solid black;border-collapse:collapse;">
 		<tr>
 		<td style="text-align:center;border:1px solid black"> \\(5-10\\) </td>
 		<td style="text-align:center;border:1px solid black"> \\(10-15\\) </td>
@@ -380,7 +380,7 @@ window.SET_DATA = {
 	{
 	q: `The value of \\(Q_3\\) for the following distribution (Marks group & No. of Student) is:<br> 
 		<span style='font-size:10px'>
-		<table style="text-align:center;width:100%;border:1px solid black">
+		<table style="text-align:center;width:100%;border:1px solid black;border-collapse:collapse;">
 		<tr>
 		<td style="text-align:center;border:1px solid black"> \\(5-10\\) </td>
 		<td style="text-align:center;border:1px solid black"> \\(10-15\\) </td>
@@ -589,7 +589,7 @@ window.SET_DATA = {
 	// Q50
 	{
 	q: `Consider the following frequency distribution table (Class Interval & Frequency).<br>
-		<span style='font-size:10px'>
+		<span style='font-size:13px'>
 		<table style="text-align:center;width:100%;border:1px solid black;border-collapse:collapse;">
 		<tr>
 		<td style="text-align:center;border:1px solid black"> \\(10-20\\) </td>
@@ -622,8 +622,8 @@ window.SET_DATA = {
 	// Q51
 	{
 	q: `The median for the following frequency distribution is:
-		<span style='font-size:10px'>
-		<table style="text-align:center;width:100%;border:1px solid black">
+		<span style='font-size:13px'>
+		<table style="text-align:center;width:100%;border:1px solid black;border-collapse:collapse;">
 		<tr>
 		<td style="text-align:center;border:1px solid black"> \\(x:\\) </td>
 		<td style="text-align:center;border:1px solid black"> \\(1\\) </td>
