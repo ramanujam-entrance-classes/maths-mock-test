@@ -441,8 +441,8 @@ window.SET_DATA = {
 	// Q40
 	{
 	q: `If \\(f : R \\to R\\) is defined by 
-	\\(f(x) = \\begin{cases} 
-	\\frac{x + 2}{x^2 + 3x + 2}, & \\text{if <span style='font-size:13px'>} x \\in R - \\{-1, -2\\} \\text{</span>}\\\\ 
+	\\(f(x) =\\)\\( \\begin{cases} 
+	\\frac{x + 2}{x^2 + 3x + 2}, & \\text{if } x \\in R - \\{-1, -2\\}\\\\ 
 	-1, & \\text{if } x = -2 \\\\ 
 	0, & \\text{if } x = -1 
 	\\end{cases}\\), then \\(f(x)\\) is continuous on the set`,
