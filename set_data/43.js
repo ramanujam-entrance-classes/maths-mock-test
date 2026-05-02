@@ -3,7 +3,8 @@ window.SET_DATA = {
   questions: [
 	// Q1
 	{
-	q: "The number of ways to fill each of the four cells of the table with a distinct natural number such that the sum of the numbers is 10 and the sums of the numbers placed diagonally are equal, is",
+	q: `The number of ways to fill each of the four cells of the table with a distinct natural number such that the sum of the numbers is 10 and the sums of the numbers placed diagonally are equal, is
+		<br> <img src="images/mocktest13_q1.png" alt="Question 1 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
 	options: [
 	"(A). \\(2! \\times 2!\\)",
 	"(B). \\(4!\\)",
@@ -14,7 +15,8 @@ window.SET_DATA = {
 	},
 	// Q2
 	{
-	q: "In the figure, two 4-digit numbers are to be formed by filling the places with digits. The number of different ways in which the places can be filled by digits so that the sum of the numbers formed is also a 4-digit number and in no place the addition is with carrying, is",
+	q: `In the figure, two 4-digit numbers are to be formed by filling the places with digits. The number of different ways in which the places can be filled by digits so that the sum of the numbers formed is also a 4-digit number and in no place the addition is with carrying, is
+		<br> <img src="images/mocktest13_q2.png" alt="Question 2 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
 	options: [
 	"(A). \\(55^4\\)",
 	"(B). \\(220\\)",
