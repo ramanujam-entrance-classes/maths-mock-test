@@ -36,7 +36,7 @@ window.SET_DATA = {
 	},
 	// Q4
 	{
-	q: "If \\(\\frac{\\tan \\alpha + \\tan \\beta}{\\cot \\alpha + \\cot \\beta} + <span style='font-size:13px'> \\{\\cos(\\alpha - \\beta) \\sec(\\alpha + \\beta) + 1\\}^{-1} \\)\\(= 1\\),</span> then \\(\\tan \\alpha \\tan \\beta\\) is equal to",
+	q: "If \\(\\frac{\\tan \\alpha + \\tan \\beta}{\\cot \\alpha + \\cot \\beta} +\\) <span style='font-size:13px'> \\(\\{\\cos(\\alpha - \\beta) \\sec(\\alpha + \\beta) + 1\\}^{-1} \\)\\(= 1\\),</span> then \\(\\tan \\alpha \\tan \\beta\\) is equal to",
 	options: [
 	"(A). \\(1\\)",
 	"(B). \\(-1\\)",
@@ -586,7 +586,7 @@ window.SET_DATA = {
 		<td style="text-align:center;border:1px solid black"> \\(80\\) </td>
 		</tr>
 		<tr>
-		<td style="text-align:center;border:1px solid black"> \\(No. of<br>members\\) </td>
+		<td style="text-align:center;border:1px solid black"> No. of<br>members </td>
 		<td style="text-align:center;border:1px solid black"> \\(3\\) </td>
 		<td style="text-align:center;border:1px solid black"> \\(61\\) </td>
 		<td style="text-align:center;border:1px solid black"> \\(132\\) </td>
@@ -615,6 +615,7 @@ window.SET_DATA = {
 		<td style="text-align:center;border:1px solid black"> \\(15-20\\) </td>
 		<td style="text-align:center;border:1px solid black"> \\(20-25\\) </td>
 		<td style="text-align:center;border:1px solid black"> \\(25-30\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(30-35\\) </td>
 		<td style="text-align:center;border:1px solid black"> \\(35-40\\) </td>
 		<td style="text-align:center;border:1px solid black"> \\(40-45\\) </td>
 		</tr>
