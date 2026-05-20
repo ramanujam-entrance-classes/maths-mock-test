@@ -599,7 +599,7 @@ body {
     //}
   });
 
-  const todayLabel = document.getElementById("today-label");
+  /*const todayLabel = document.getElementById("today-label");
   const today = new Date();
   // Format: Wednesday, 29 April 2026
   const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
@@ -609,7 +609,110 @@ body {
     const today = new Date();
     const seed = today.getFullYear() + "-" + (today.getMonth()+1) + "-" + today.getDate();
     window.location.href = `?set=random&seed=${seed}`;
-  });
+  });*/
+  const todayLabel = document.getElementById("today-label");
+
+function updateChallengeInfo() {
+
+    const now = new Date();
+
+    // ✅ Current 6-hour slot
+    const challengeSlot = Math.floor(now.getHours() / 6) + 1;
+
+    const slotNames = {
+        1: "🌙 Night Challenge",
+        2: "☀️ Morning Challenge",
+        3: "🌤 Afternoon Challenge",
+        4: "🌆 Evening Challenge"
+    };
+
+    // ✅ Date formatting
+    const options = {
+        weekday: 'long',
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
+    };
+
+    const formattedDate =
+        now.toLocaleDateString('en-IN', options);
+
+    // =========================
+    // ✅ Countdown Logic
+    // =========================
+
+    const currentHour = now.getHours();
+
+    // Next slot starts at:
+    // 6, 12, 18, 24
+
+    let nextBoundaryHour =
+        (Math.floor(currentHour / 6) + 1) * 6;
+
+    // Handle midnight rollover
+    let nextChange = new Date(now);
+
+    if (nextBoundaryHour >= 24) {
+        nextChange.setDate(now.getDate() + 1);
+        nextChange.setHours(0, 0, 0, 0);
+    } else {
+        nextChange.setHours(nextBoundaryHour, 0, 0, 0);
+    }
+
+    const diffMs = nextChange - now;
+
+    const diffHours =
+        Math.floor(diffMs / (1000 * 60 * 60));
+
+    const diffMinutes =
+        Math.floor(
+            (diffMs % (1000 * 60 * 60))
+            / (1000 * 60)
+        );
+
+    // =========================
+    // ✅ Final UI
+    // =========================
+
+    todayLabel.innerHTML = `
+        ${formattedDate}<br>
+        ${slotNames[challengeSlot]}<br>
+        <span style="
+            font-size:11px;
+            opacity:0.85;
+        ">
+            ⏳ Next challenge in
+            ${diffHours}h ${diffMinutes}m
+        </span>
+    `;
+}
+
+// Initial call
+updateChallengeInfo();
+
+// Refresh every minute
+setInterval(updateChallengeInfo, 60000);
+
+// =========================
+// ✅ Random button click
+// =========================
+
+randomBtn.addEventListener("click", () => {
+
+    const now = new Date();
+
+    const slot =
+        Math.floor(now.getHours() / 6) + 1;
+
+    const seed =
+        now.getFullYear() + "-" +
+        (now.getMonth() + 1) + "-" +
+        now.getDate() +
+        "-SLOT-" + slot;
+
+    window.location.href =
+        `?set=random&seed=${seed}`;
+});
 
   	if (!setName) {
 	    // 👉 No set provided (normal case)
