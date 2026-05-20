@@ -499,19 +499,9 @@ finalQuestions = shuffleWithSeed(finalQuestions, mixedSeed5);
         title: `🎯 Mathematics Mock Test 🎯<br>(${seedStr})`,
         questions: finalQuestions
     });*/
-        
-    const match = seedStr.match(/(ALPHA|OMEGA|TITAN|PHOENIX)/);
-    const slotMap = {
-        ALPHA: "Alpha Challenge",
-        OMEGA: "Omega Challenge",
-        TITAN: "Titan Challenge",
-        PHOENIX: "Phoenix Challenge"
-    };
-    
-    const challengeName = match ? slotMap[match[1]] : "Challenge";
-        
+              
     initApp({
-        title: `🎯 ${challengeName} 🎯<br>(${seedStr})`,
+        title: `🎯 Mathematics Mock Test 🎯<br>(${seedStr})`,
         questions: finalQuestions
     });
 }
