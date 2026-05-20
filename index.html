@@ -441,6 +441,18 @@ body {
     display: none;
     margin-left: -150px;
 }
+
+#challenge-status{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#challenge-status b{
+    color: #0033cc;
+}
  </style>
 </head>
 <body class="tex2jax_ignore">
@@ -488,6 +500,7 @@ body {
 				🎯 Today’s Challenge<br>
 				<span id="today-label"></span>
 			</button>
+			<div id="challenge-status"></div>
 	    </div>
 	</div>
 	
@@ -610,80 +623,64 @@ body {
     const seed = today.getFullYear() + "-" + (today.getMonth()+1) + "-" + today.getDate();
     window.location.href = `?set=random&seed=${seed}`;
   });*/
-  const todayLabel = document.getElementById("today-label");
-
-function updateChallengeInfo() {
-
+  function updateChallengeInfo() {
     const now = new Date();
 
-    // ✅ Current 6-hour slot
-    const challengeSlot = Math.floor(now.getHours() / 6) + 1;
+    const slot = Math.floor(now.getHours() / 6) + 1;
 
-    const slotNames = {
-        1: "🌙 Night Challenge",
-        2: "☀️ Morning Challenge",
-        3: "🌤 Afternoon Challenge",
-        4: "🌆 Evening Challenge"
+    const slotMap = {
+        1: "ALPHA",
+        2: "OMEGA",
+        3: "TITAN",
+        4: "PHOENIX"
     };
 
-    // ✅ Date formatting
+    const slotTitleMap = {
+        ALPHA: "Alpha Challenge",
+        OMEGA: "Omega Challenge",
+        TITAN: "Titan Challenge",
+        PHOENIX: "Phoenix Challenge"
+    };
+
+    const currentCode = slotMap[slot];
+
     const options = {
-        weekday: 'long',
-        day: 'numeric',
-        month: 'long',
-        year: 'numeric'
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
     };
 
-    const formattedDate =
-        now.toLocaleDateString('en-IN', options);
+    const formattedDate = now.toLocaleDateString("en-IN", options);
 
-    // =========================
-    // ✅ Countdown Logic
-    // =========================
-
+    // ================= NEXT SLOT =================
     const currentHour = now.getHours();
+    let nextBoundary = (Math.floor(currentHour / 6) + 1) * 6;
 
-    // Next slot starts at:
-    // 6, 12, 18, 24
-
-    let nextBoundaryHour =
-        (Math.floor(currentHour / 6) + 1) * 6;
-
-    // Handle midnight rollover
     let nextChange = new Date(now);
 
-    if (nextBoundaryHour >= 24) {
+    if (nextBoundary >= 24) {
         nextChange.setDate(now.getDate() + 1);
         nextChange.setHours(0, 0, 0, 0);
     } else {
-        nextChange.setHours(nextBoundaryHour, 0, 0, 0);
+        nextChange.setHours(nextBoundary, 0, 0, 0);
     }
 
     const diffMs = nextChange - now;
+    const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
+    const diffMinutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
 
-    const diffHours =
-        Math.floor(diffMs / (1000 * 60 * 60));
+    // ================= BUTTON (ONLY DATE) =================
+    document.getElementById("today-label").innerHTML = `
+        ${formattedDate}
+    `;
 
-    const diffMinutes =
-        Math.floor(
-            (diffMs % (1000 * 60 * 60))
-            / (1000 * 60)
-        );
-
-    // =========================
-    // ✅ Final UI
-    // =========================
-
-    todayLabel.innerHTML = `
-        ${formattedDate}<br>
-        ${slotNames[challengeSlot]}<br>
-        <span style="
-            font-size:11px;
-            opacity:0.85;
-        ">
-            ⏳ Next challenge in
-            ${diffHours}h ${diffMinutes}m
-        </span>
+    // ================= STATUS BOX =================
+    document.getElementById("challenge-status").innerHTML = `
+        <div>
+            Current: <b>${slotTitleMap[currentCode]}</b><br>
+            ⏳ Next in: <b>${diffHours}h ${diffMinutes}m</b>
+        </div>
     `;
 }
 
