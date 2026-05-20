@@ -472,8 +472,29 @@ finalQuestions = shuffleWithSeed(finalQuestions, mixedSeed5);
     // ✅ Trim safety (edge-case protection)
     finalQuestions = finalQuestions.slice(0, TOTAL_QUESTIONS);
 
-    initApp({
+    /*initApp({
         title: `🎯 Mathematics Mock Test 🎯<br>(${seedStr})`,
+        questions: finalQuestions
+    });*/
+    const slotMatch = seedStr.match(/SLOT-(\d+)/);
+
+    let challengeName = "Challenge";
+    
+    if (slotMatch) {
+        const slotNum = parseInt(slotMatch[1]);
+    
+        const slotTitles = {
+            1: "🌙 Night Challenge",
+            2: "☀️ Morning Challenge",
+            3: "🌤 Afternoon Challenge",
+            4: "🌆 Evening Challenge"
+        };
+    
+        challengeName = slotTitles[slotNum];
+    }
+    
+    initApp({
+        title: `🎯 ${challengeName} 🎯<br>(${seedStr})`,
         questions: finalQuestions
     });
 }
