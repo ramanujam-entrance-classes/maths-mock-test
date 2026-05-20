@@ -500,20 +500,15 @@ finalQuestions = shuffleWithSeed(finalQuestions, mixedSeed5);
         questions: finalQuestions
     });*/
         
-    let challengeName = "🎯 Challenge";
+    const match = seedStr.match(/(ALPHA|OMEGA|TITAN|PHOENIX)/);
+    const slotMap = {
+        ALPHA: "Alpha Challenge",
+        OMEGA: "Omega Challenge",
+        TITAN: "Titan Challenge",
+        PHOENIX: "Phoenix Challenge"
+    };
     
-    if (seedStr.includes("ALPHA")) {
-        challengeName = "🌙 Night Challenge";
-    }
-    else if (seedStr.includes("OMEGA")) {
-        challengeName = "☀️ Morning Challenge";
-    }
-    else if (seedStr.includes("TITAN")) {
-        challengeName = "🌤 Afternoon Challenge";
-    }
-    else if (seedStr.includes("PHOENIX")) {
-        challengeName = "🌆 Evening Challenge";
-    }
+    const challengeName = match ? slotMap[match[1]] : "Challenge";
         
     initApp({
         title: `🎯 ${challengeName} 🎯<br>(${seedStr})`,
