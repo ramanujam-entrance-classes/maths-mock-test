@@ -499,23 +499,22 @@ finalQuestions = shuffleWithSeed(finalQuestions, mixedSeed5);
         title: `🎯 Mathematics Mock Test 🎯<br>(${seedStr})`,
         questions: finalQuestions
     });*/
-    const slotMatch = seedStr.match(/SLOT-(\d+)/);
-
-    let challengeName = "Challenge";
+        
+    let challengeName = "🎯 Challenge";
     
-    if (slotMatch) {
-        const slotNum = parseInt(slotMatch[1]);
-    
-        const slotTitles = {
-            1: "🌙 Night Challenge",
-            2: "☀️ Morning Challenge",
-            3: "🌤 Afternoon Challenge",
-            4: "🌆 Evening Challenge"
-        };
-    
-        challengeName = slotTitles[slotNum];
+    if (seedStr.includes("ALPHA")) {
+        challengeName = "🌙 Night Challenge";
     }
-    
+    else if (seedStr.includes("OMEGA")) {
+        challengeName = "☀️ Morning Challenge";
+    }
+    else if (seedStr.includes("TITAN")) {
+        challengeName = "🌤 Afternoon Challenge";
+    }
+    else if (seedStr.includes("PHOENIX")) {
+        challengeName = "🌆 Evening Challenge";
+    }
+        
     initApp({
         title: `🎯 ${challengeName} 🎯<br>(${seedStr})`,
         questions: finalQuestions
