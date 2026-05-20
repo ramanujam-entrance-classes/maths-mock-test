@@ -638,7 +638,23 @@ body {
     const seed = today.getFullYear() + "-" + (today.getMonth()+1) + "-" + today.getDate();
     window.location.href = `?set=random&seed=${seed}`;
   });*/
+  function initChallengeUI() {
+	    document.getElementById("challenge-status").innerHTML = `
+	        <div>
+	            Current: <b id="current-challenge"></b><br>
+	            Next in:
+	            <b>
+	                <span id="cd-h">0</span>h
+	                <span id="cd-m">0</span>m
+	                <span id="cd-s">0</span>s
+	            </b>
+	        </div>
+	    `;
+	}
+	
   function updateChallengeInfo() {
+	const currentTitle = slotTitleMap[currentCode];
+	document.getElementById("current-challenge").textContent = currentTitle;
     const now = new Date();
 
     const slot = Math.floor(now.getHours() / 6) + 1;
@@ -681,8 +697,7 @@ body {
         nextChange.setHours(nextBoundary, 0, 0, 0);
     }
 
-    const diffMs = nextChange - now;
-
+    const diffMs = Math.max(0, nextChange - now);
 	let hours = Math.floor(diffMs / (1000 * 60 * 60));
 	let minutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
 	let seconds = Math.floor((diffMs % (1000 * 60)) / 1000);
@@ -709,21 +724,10 @@ body {
     document.getElementById("today-label").innerHTML = `
         ${formattedDate}
     `;
-
-    // ================= STATUS BOX =================
-    document.getElementById("challenge-status").innerHTML = `
-        <div>
-            Current: <b id="current-challenge"></b><br>
-		    Next in:
-		    <b>
-		        <span id="cd-h">0</span>h
-		        <span id="cd-m">0</span>m
-		        <span id="cd-s">0</span>s
-		    </b>
-        </div>
-    `;
 }
 
+initChallengeUI();
+	
 // Initial call
 updateChallengeInfo();
 
