@@ -653,8 +653,6 @@ body {
 	}
 	
   function updateChallengeInfo() {
-	const currentTitle = slotTitleMap[currentCode];
-	document.getElementById("current-challenge").textContent = currentTitle;
     const now = new Date();
 
     const slot = Math.floor(now.getHours() / 6) + 1;
@@ -674,7 +672,10 @@ body {
     };
 
     const currentCode = slotMap[slot];
-
+	const currentTitle = slotTitleMap[currentCode];
+	const el = document.getElementById("current-challenge");
+	if (el) el.textContent = currentTitle;
+	  
     const options = {
         weekday: "long",
         day: "numeric",
