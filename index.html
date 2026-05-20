@@ -704,11 +704,23 @@ randomBtn.addEventListener("click", () => {
     const slot =
         Math.floor(now.getHours() / 6) + 1;
 
-    const seed =
+    /*const seed =
         now.getFullYear() + "-" +
         (now.getMonth() + 1) + "-" +
         now.getDate() +
-        "-SLOT-" + slot;
+        "-SLOT-" + slot;*/
+	const slotSeeds = {
+	    1: "ALPHA",
+	    2: "OMEGA",
+	    3: "TITAN",
+	    4: "PHOENIX"
+	};
+	
+	const seed =
+	    now.getFullYear() + "-" +
+	    (now.getMonth() + 1) + "-" +
+	    now.getDate() + "-" +
+	    slotSeeds[slot];
 
     window.location.href =
         `?set=random&seed=${seed}`;
