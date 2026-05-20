@@ -387,6 +387,29 @@ function loadSetFile(setNumber) {
 
 async function generateRandomTestWithSeed(seedNum, seedStr) {
     const numericSeed = seedNum;
+    const slotBoost = {
+        1: 111111,
+        2: 222222,
+        3: 333333,
+        4: 444444
+    };
+    
+    const slotMatch = seedStr.match(/(ALPHA|OMEGA|TITAN|PHOENIX)/);
+    
+    if (slotMatch) {
+    
+        const mapping = {
+            ALPHA: 1,
+            OMEGA: 2,
+            TITAN: 3,
+            PHOENIX: 4
+        };
+    
+        const slot =
+            mapping[slotMatch[1]];
+    
+        seedNum += slotBoost[slot];
+    }
     window.TEST_SEED_DATE = seedStr;
 
     const TOTAL_QUESTIONS = 50;
