@@ -246,7 +246,7 @@ function showViolationBanner(message) {
 
         banner.style.display = "none";
 
-    }, 2500);
+    }, 5000);
 }
 
 // ===============================
@@ -258,7 +258,7 @@ function registerViolation(reason) {
     violationCount++;
 
     showViolationBanner(
-        `${reason} (Violation ${violationCount}/3)`
+        `${reason} <br><center> (Violation ${violationCount}/3) </center>`
     );
 
     if (violationCount >= 3) {
