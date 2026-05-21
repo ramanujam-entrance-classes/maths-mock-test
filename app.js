@@ -268,7 +268,7 @@ function registerViolation(reason) {
         `${reason}`
     );
 
-    showViolationBanner((Violation ${violationCount}/3) );
+    showViolationBanner(`(Violation ${violationCount}/3)`);
 
     if (violationCount >= 3) {
 
