@@ -263,8 +263,8 @@ function registerViolation(reason) {
 
     if (violationCount >= 3) {
 
-        alert(
-            "Too many violations.\nSubmitting test..."
+        showViolationBanner(
+            "Too many violations. Submitting test..."
         );
 
         submitQuiz();
