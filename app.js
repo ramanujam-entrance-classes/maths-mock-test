@@ -285,7 +285,7 @@ function registerViolation(reason) {
     if (violationCount > 3) {
 
         showViolationBanner(
-            `🚫 Too many violations<br>
+            `⚠ Too many violations<br>
             <span style="font-size:14px;">
                 Test is being submitted...
             </span>`
