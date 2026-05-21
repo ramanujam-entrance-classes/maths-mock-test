@@ -441,10 +441,10 @@ function submitQuiz() {
     submitBtn.classList.add('hidden');
     restartBtn.classList.remove('hidden');
     
-    /*restartBtn.scrollIntoView({
+    restartBtn.scrollIntoView({
         behavior: "smooth",
         block: "end"
-    });*/
+    });
     setTimeout(() => {
     
         window.scrollTo({
