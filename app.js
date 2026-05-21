@@ -217,19 +217,14 @@ function showViolationBanner(message) {
         banner.style.left = "50%";
         banner.style.transform = "translateX(-50%)";
         
-        banner.style.width = "90%";
+        banner.style.width = "80%";
         banner.style.maxWidth = "500px";
         banner.style.padding = "16px 24px";
         banner.style.borderRadius = "12px";
         banner.style.textAlign = "center";
-        banner.style.fontSize = "17px";
         
         banner.style.background = "#e74c3c";
         banner.style.color = "white";
-
-        banner.style.padding = "14px 22px";
-
-        banner.style.borderRadius = "10px";
 
         banner.style.fontWeight = "bold";
 
@@ -243,7 +238,7 @@ function showViolationBanner(message) {
         document.body.appendChild(banner);
     }
 
-    banner.textContent = message;
+    banner.innerHTML = message;
 
     banner.style.display = "block";
 
@@ -265,7 +260,10 @@ function registerViolation(reason) {
     violationCount++;
 
     showViolationBanner(
-        `${reason}`
+        `${reason} <br> 
+        <span style="font-size:14px; opacity:0.9">
+          (Violation ${violationCount}/3)
+       </span>`
     );
 
     showViolationBanner(`(Violation ${violationCount}/3)`);
