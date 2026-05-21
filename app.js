@@ -68,6 +68,7 @@ let violationCount = 0;
 let wakeLock = null;
 let examSubmitted = false;
 let examStarted = false;
+let lastViolationTime = 0;
 
 /*function initQuiz() {
     questions.forEach((qObj, index) => {
@@ -206,6 +207,15 @@ async function enableWakeLock() {
 // ===============================
 
 function registerViolation(reason) {
+
+    const now = Date.now();
+
+    // Prevent multiple violations within 2 sec
+    if (now - lastViolationTime < 2000) {
+        return;
+    }
+
+    lastViolationTime = now;
 
     violationCount++;
 
@@ -747,22 +757,3 @@ document.addEventListener(
         }
     }
 );
-
-// ===============================
-// PREVENT BACK BUTTON
-// ===============================
-
-history.pushState(null, null, location.href);
-
-window.onpopstate = function () {
-
-    if (!examStarted) return;
-
-    if (examSubmitted) return;
-
-    history.go(1);
-
-    registerViolation(
-        "Back button blocked!"
-    );
-};
