@@ -216,7 +216,10 @@ function showViolationBanner(message) {
         banner.style.top = "20px";
         banner.style.left = "50%";
         banner.style.transform = "translateX(-50%)";
-
+        
+        banner.style.width = "90%";
+        banner.style.maxWidth = "500px";
+        
         banner.style.background = "#e74c3c";
         banner.style.color = "white";
 
@@ -258,8 +261,10 @@ function registerViolation(reason) {
     violationCount++;
 
     showViolationBanner(
-        `${reason} <br><center> (Violation ${violationCount}/3) </center>`
+        `${reason}`
     );
+
+    showViolationBanner((Violation ${violationCount}/3) );
 
     if (violationCount >= 3) {
 
