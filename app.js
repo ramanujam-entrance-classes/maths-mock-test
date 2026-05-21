@@ -280,10 +280,6 @@ function enableNavigationLinks() {
 }
 
 function startQuiz() {
-    disableNavigationLinks();
-    examStarted = true;
-    enterFullscreen();
-    enableWakeLock();
     const nameInput = document.getElementById('student-name');
     const studentDisplay = document.getElementById('student-display');
 
@@ -291,7 +287,11 @@ function startQuiz() {
         document.getElementById("student-name-required").style.display = "inline";
         return;
     }
-
+    disableNavigationLinks();
+    examStarted = true;
+    enterFullscreen();
+    enableWakeLock();
+    
     studentDisplay.textContent = `👤 Student: ${nameInput.value}`;
     document.getElementById('name-section').style.display = 'none';
     document.getElementById('student-display').style.background = '#f4f8ff';
