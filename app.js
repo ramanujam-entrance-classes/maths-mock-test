@@ -67,6 +67,7 @@ let timerInterval;
 let violationCount = 0;
 let wakeLock = null;
 let examSubmitted = false;
+let examStarted = false;
 
 /*function initQuiz() {
     questions.forEach((qObj, index) => {
@@ -225,6 +226,7 @@ Violation ${violationCount}/3`
 }
 
 function startQuiz() {
+    examStarted = true;
     enterFullscreen();
     enableWakeLock();
     const nameInput = document.getElementById('student-name');
@@ -595,7 +597,10 @@ document.addEventListener(
     "fullscreenchange",
     () => {
 
-        // Ignore after exam submission
+        // Ignore before exam starts
+        if (!examStarted) return;
+
+        // Ignore after submission
         if (examSubmitted) return;
 
         if (!document.fullscreenElement) {
@@ -616,6 +621,10 @@ document.addEventListener(
 window.addEventListener(
     "beforeunload",
     function (e) {
+
+        if (!examStarted) return;
+
+        if (examSubmitted) return;
 
         e.preventDefault();
 
@@ -659,6 +668,12 @@ document.addEventListener(
 document.addEventListener(
     "visibilitychange",
     () => {
+
+        // Ignore before exam starts
+        if (!examStarted) return;
+
+        // Ignore after submission
+        if (examSubmitted) return;
 
         if (document.hidden) {
 
