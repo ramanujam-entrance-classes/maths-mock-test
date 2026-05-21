@@ -64,6 +64,9 @@ const scoreDisplay = document.getElementById('score-display');
 let totalTime = 70 * 60;
 let timeLeft = totalTime;
 let timerInterval;
+let violationCount = 0;
+let wakeLock = null;
+let examSubmitted = false;
 
 /*function initQuiz() {
     questions.forEach((qObj, index) => {
@@ -152,7 +155,78 @@ function clearSelection(qIndex) {
     options.forEach(opt => (opt.checked = false));
 }
 
+// ===============================
+// FULLSCREEN
+// ===============================
+
+async function enterFullscreen() {
+
+    const elem = document.documentElement;
+
+    try {
+
+        if (elem.requestFullscreen) {
+            await elem.requestFullscreen();
+        }
+        else if (elem.webkitRequestFullscreen) {
+            await elem.webkitRequestFullscreen();
+        }
+        else if (elem.msRequestFullscreen) {
+            await elem.msRequestFullscreen();
+        }
+
+    } catch (err) {
+
+        console.log(err);
+
+    }
+}
+
+// ===============================
+// WAKE LOCK
+// ===============================
+
+async function enableWakeLock() {
+
+    try {
+
+        wakeLock =
+            await navigator.wakeLock.request("screen");
+
+    } catch (err) {
+
+        console.log("Wake lock failed", err);
+
+    }
+}
+
+// ===============================
+// VIOLATION HANDLER
+// ===============================
+
+function registerViolation(reason) {
+
+    violationCount++;
+
+    alert(
+        `${reason}
+
+Violation ${violationCount}/3`
+    );
+
+    if (violationCount >= 3) {
+
+        alert(
+            "Too many violations.\nTest will be submitted."
+        );
+
+        submitQuiz();
+    }
+}
+
 function startQuiz() {
+    enterFullscreen();
+    enableWakeLock();
     const nameInput = document.getElementById('student-name');
     const studentDisplay = document.getElementById('student-display');
 
@@ -199,6 +273,13 @@ function startTimer() {
 }
 
 function submitQuiz() {
+    examSubmitted = true;
+    // Exit fullscreen after submission
+    if (document.fullscreenElement) {
+    
+        document.exitFullscreen()
+            .catch(err => console.log(err));
+    }
     clearInterval(timerInterval);
     timerBox.classList.add('hidden');
 
@@ -505,3 +586,85 @@ finalQuestions = shuffleWithSeed(finalQuestions, mixedSeed5);
         questions: finalQuestions
     });
 }
+
+// ===============================
+// FULLSCREEN EXIT DETECTION
+// ===============================
+
+document.addEventListener(
+    "fullscreenchange",
+    () => {
+
+        // Ignore after exam submission
+        if (examSubmitted) return;
+
+        if (!document.fullscreenElement) {
+
+            registerViolation(
+                "Fullscreen exited!"
+            );
+
+            enterFullscreen();
+        }
+    }
+);
+
+// ===============================
+// REFRESH / CLOSE WARNING
+// ===============================
+
+window.addEventListener(
+    "beforeunload",
+    function (e) {
+
+        e.preventDefault();
+
+        e.returnValue =
+            "Your test progress will be lost.";
+    }
+);
+
+// ===============================
+// DISABLE RIGHT CLICK
+// ===============================
+
+document.addEventListener(
+    "contextmenu",
+    e => e.preventDefault()
+);
+
+// ===============================
+// DISABLE COPY / PASTE
+// ===============================
+
+document.addEventListener(
+    "copy",
+    e => e.preventDefault()
+);
+
+document.addEventListener(
+    "cut",
+    e => e.preventDefault()
+);
+
+document.addEventListener(
+    "paste",
+    e => e.preventDefault()
+);
+
+// ===============================
+// TAB SWITCH DETECTION
+// ===============================
+
+document.addEventListener(
+    "visibilitychange",
+    () => {
+
+        if (document.hidden) {
+
+            registerViolation(
+                "Tab switching detected!"
+            );
+        }
+    }
+);
