@@ -70,6 +70,7 @@ let examSubmitted = false;
 let examStarted = false;
 let violationBannerTimeout = null;
 let pageHidden = false;
+const VIOLATION_COOLDOWN = 2000;
 
 /*function initQuiz() {
     questions.forEach((qObj, index) => {
@@ -263,25 +264,35 @@ function showViolationBanner(message) {
 // ===============================
 
 function registerViolation(reason) {
+    const now = Date.now();
+
+    // Prevent duplicate violations
+    if (now - lastViolationTime < VIOLATION_COOLDOWN) {
+        return;
+    }
+    lastViolationTime = now;
 
     violationCount++;
 
     showViolationBanner(
-        `${reason} <br> 
+        `⚠ ${reason} <br> 
         <span style="font-size:14px; opacity:0.9">
           (Violation ${violationCount}/3)
        </span>`
     );
 
-    showViolationBanner(`(Violation ${violationCount}/3)`);
-
     if (violationCount > 3) {
 
         showViolationBanner(
-            "Too many violations. Submitting test..."
+            `🚫 Too many violations<br>
+            <span style="font-size:14px;">
+                Test is being submitted...
+            </span>`
         );
 
-        submitQuiz();
+        setTimeout(() => {
+            submitQuiz();
+        }, 2000);
     }
 }
 
@@ -726,11 +737,11 @@ document.addEventListener(
 
         // Ignore after submission
         if (examSubmitted) return;
-        enterFullscreen();
+        
         if (!document.fullscreenElement) {
 
             registerViolation(
-                "⚠ Fullscreen exited!"
+                "Fullscreen exited / Tab switched"
             );
 
             enterFullscreen();
@@ -753,7 +764,7 @@ window.addEventListener(
         e.preventDefault();
 
         e.returnValue =
-            "⚠ Your test progress will be lost.";
+            "Your test progress will be lost.";
     }
 );
 
@@ -802,7 +813,7 @@ document.addEventListener(
         if (document.hidden) {
 
             registerViolation(
-                "⚠ Tab switching detected!"
+                "Fullscreen exited / Tab switched"
             );
         }
     }
@@ -828,7 +839,7 @@ document.addEventListener("visibilitychange", () => {
 
                     banner.style.display = "none";
 
-                }, 3000);
+                }, 5000);
         }
     }
 });
