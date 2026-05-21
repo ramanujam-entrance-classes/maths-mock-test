@@ -219,6 +219,10 @@ function showViolationBanner(message) {
         
         banner.style.width = "90%";
         banner.style.maxWidth = "500px";
+        banner.style.padding = "16px 24px";
+        banner.style.borderRadius = "12px";
+        banner.style.textAlign = "center";
+        banner.style.fontSize = "17px";
         
         banner.style.background = "#e74c3c";
         banner.style.color = "white";
