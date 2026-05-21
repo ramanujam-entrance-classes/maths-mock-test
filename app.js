@@ -70,6 +70,7 @@ let examSubmitted = false;
 let examStarted = false;
 let violationBannerTimeout = null;
 let pageHidden = false;
+let lastViolationTime = 0;
 const VIOLATION_COOLDOWN = 2000;
 
 /*function initQuiz() {
@@ -819,27 +820,45 @@ document.addEventListener(
     }
 );
 // change tab visibility 
-document.addEventListener("visibilitychange", () => {
+document.addEventListener(
+    "visibilitychange",
+    () => {
 
-    pageHidden = document.hidden;
+        if (!examStarted) return;
+        if (examSubmitted) return;
 
-    // User came back
-    if (!pageHidden) {
+        pageHidden = document.hidden;
 
-        const banner =
-            document.getElementById("violation-banner");
+        // ONLY handle when user RETURNS
+        if (!document.hidden) {
 
-        if (banner &&
-            banner.style.display === "block") {
+            // If fullscreen is already exited,
+            // then count violation now
+            if (!document.fullscreenElement) {
 
-            clearTimeout(violationBannerTimeout);
+                registerViolation(
+                    "Fullscreen exited / Tab switched"
+                );
 
-            violationBannerTimeout =
-                setTimeout(() => {
+                enterFullscreen();
+            }
 
-                    banner.style.display = "none";
+            // Show existing banner again
+            const banner =
+                document.getElementById("violation-banner");
 
-                }, 5000);
+            if (banner &&
+                banner.style.display === "block") {
+
+                clearTimeout(violationBannerTimeout);
+
+                violationBannerTimeout =
+                    setTimeout(() => {
+
+                        banner.style.display = "none";
+
+                    }, 5000);
+            }
         }
     }
-});
+);
