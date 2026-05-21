@@ -68,6 +68,8 @@ let violationCount = 0;
 let wakeLock = null;
 let examSubmitted = false;
 let examStarted = false;
+let violationBannerTimeout = null;
+let pageHidden = false;
 
 /*function initQuiz() {
     questions.forEach((qObj, index) => {
@@ -242,13 +244,18 @@ function showViolationBanner(message) {
 
     banner.style.display = "block";
 
-    clearTimeout(banner.hideTimeout);
+    clearTimeout(violationBannerTimeout);
 
-    banner.hideTimeout = setTimeout(() => {
+    // ONLY hide if page visible
+    if (!pageHidden) {
 
-        banner.style.display = "none";
+        violationBannerTimeout =
+            setTimeout(() => {
 
-    }, 5000);
+                banner.style.display = "none";
+
+            }, 5000);
+    }
 }
 
 // ===============================
@@ -800,3 +807,28 @@ document.addEventListener(
         }
     }
 );
+// change tab visibility 
+document.addEventListener("visibilitychange", () => {
+
+    pageHidden = document.hidden;
+
+    // User came back
+    if (!pageHidden) {
+
+        const banner =
+            document.getElementById("violation-banner");
+
+        if (banner &&
+            banner.style.display === "block") {
+
+            clearTimeout(violationBannerTimeout);
+
+            violationBannerTimeout =
+                setTimeout(() => {
+
+                    banner.style.display = "none";
+
+                }, 3000);
+        }
+    }
+});
