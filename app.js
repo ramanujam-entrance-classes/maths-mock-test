@@ -201,6 +201,54 @@ async function enableWakeLock() {
     }
 }
 
+function showViolationBanner(message) {
+
+    let banner =
+        document.getElementById("violation-banner");
+
+    if (!banner) {
+
+        banner = document.createElement("div");
+
+        banner.id = "violation-banner";
+
+        banner.style.position = "fixed";
+        banner.style.top = "20px";
+        banner.style.left = "50%";
+        banner.style.transform = "translateX(-50%)";
+
+        banner.style.background = "#e74c3c";
+        banner.style.color = "white";
+
+        banner.style.padding = "14px 22px";
+
+        banner.style.borderRadius = "10px";
+
+        banner.style.fontWeight = "bold";
+
+        banner.style.zIndex = "999999";
+
+        banner.style.boxShadow =
+            "0 4px 12px rgba(0,0,0,0.3)";
+
+        banner.style.fontSize = "16px";
+
+        document.body.appendChild(banner);
+    }
+
+    banner.textContent = message;
+
+    banner.style.display = "block";
+
+    clearTimeout(banner.hideTimeout);
+
+    banner.hideTimeout = setTimeout(() => {
+
+        banner.style.display = "none";
+
+    }, 2500);
+}
+
 // ===============================
 // VIOLATION HANDLER
 // ===============================
@@ -209,16 +257,14 @@ function registerViolation(reason) {
 
     violationCount++;
 
-    alert(
-        `${reason}
-
-Violation ${violationCount}/3`
+    showViolationBanner(
+        `${reason} (Violation ${violationCount}/3)`
     );
 
     if (violationCount >= 3) {
 
         alert(
-            "Too many violations.\nTest will be submitted."
+            "Too many violations.\nSubmitting test..."
         );
 
         submitQuiz();
@@ -666,11 +712,11 @@ document.addEventListener(
 
         // Ignore after submission
         if (examSubmitted) return;
-
+        enterFullscreen();
         if (!document.fullscreenElement) {
 
             registerViolation(
-                "Fullscreen exited!"
+                "⚠ Fullscreen exited!"
             );
 
             enterFullscreen();
@@ -693,7 +739,7 @@ window.addEventListener(
         e.preventDefault();
 
         e.returnValue =
-            "Your test progress will be lost.";
+            "⚠ Your test progress will be lost.";
     }
 );
 
@@ -742,7 +788,7 @@ document.addEventListener(
         if (document.hidden) {
 
             registerViolation(
-                "Tab switching detected!"
+                "⚠ Tab switching detected!"
             );
         }
     }
