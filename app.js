@@ -33,13 +33,13 @@ function initApp(data) {
     if (heading) {
         if (setName === "random") {
             heading.innerHTML = `
-                <a href="leaderboard.html?set=${window.TEST_SEED_DATE}" target="_blank" style="color:#0033cc; text-decoration:none;">
+                <a id="leaderboard-link" href="leaderboard.html?set=${window.TEST_SEED_DATE}" target="_blank" style="color:#0033cc; text-decoration:none;">
                     ${data.title}
                 </a>
             `;
         } else {
             heading.innerHTML = `
-                <a href="leaderboard.html?set=${setName}" target="_blank" style="color:#0033cc; text-decoration:none;">
+                <a id="leaderboard-link" href="leaderboard.html?set=${setName}" target="_blank" style="color:#0033cc; text-decoration:none;">
                     ${data.title}
                 </a>
             `;
@@ -225,7 +225,62 @@ Violation ${violationCount}/3`
     }
 }
 
+function disableNavigationLinks() {
+
+    const homeLink =
+        document.getElementById("home-link");
+
+    const leaderboardLink =
+        document.getElementById("leaderboard-link");
+
+    if (homeLink) {
+
+        homeLink.style.pointerEvents = "none";
+
+        //homeLink.style.opacity = "0.7";
+
+        homeLink.style.cursor = "default";
+    }
+
+    if (leaderboardLink) {
+
+        leaderboardLink.style.pointerEvents = "none";
+
+        //leaderboardLink.style.opacity = "0.7";
+
+        leaderboardLink.style.cursor = "default";
+    }
+}
+
+function enableNavigationLinks() {
+
+    const homeLink =
+        document.getElementById("home-link");
+
+    const leaderboardLink =
+        document.getElementById("leaderboard-link");
+
+    if (homeLink) {
+
+        homeLink.style.pointerEvents = "auto";
+
+        //homeLink.style.opacity = "1";
+
+        homeLink.style.cursor = "pointer";
+    }
+
+    if (leaderboardLink) {
+
+        leaderboardLink.style.pointerEvents = "auto";
+
+        //leaderboardLink.style.opacity = "1";
+
+        leaderboardLink.style.cursor = "pointer";
+    }
+}
+
 function startQuiz() {
+    disableNavigationLinks();
     examStarted = true;
     enterFullscreen();
     enableWakeLock();
@@ -276,6 +331,7 @@ function startTimer() {
 
 function submitQuiz() {
     examSubmitted = true;
+    enableNavigationLinks();
     // Exit fullscreen after submission
     if (document.fullscreenElement) {
     
@@ -683,3 +739,22 @@ document.addEventListener(
         }
     }
 );
+
+// ===============================
+// PREVENT BACK BUTTON
+// ===============================
+
+history.pushState(null, null, location.href);
+
+window.onpopstate = function () {
+
+    if (!examStarted) return;
+
+    if (examSubmitted) return;
+
+    history.go(1);
+
+    registerViolation(
+        "Back button blocked!"
+    );
+};
