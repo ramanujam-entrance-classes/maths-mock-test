@@ -1,558 +1,597 @@
 window.SET_DATA = {
-  title: "Mathematics Mock Test 1",
+  title: "Mathematics Mock Test 31",
   questions: [
 	// Q1
 	{
-	q: "\\(x(x^{n-1} - n\\alpha^{n-1}) + \\alpha^n (n - 1)\\) is divisible by \\((x - \\alpha)^2\\) for:",
+	q: "The coefficient of \\(x^2\\) in the expansion of \\(\\left(2x^2 + \\frac{1}{x}\\right)^{10}\\), \\(x \\neq 0\\), is:",
 	options: [
-	"(A). \\(n > 1\\)",
-	"(B). \\(n > 2\\)",
-	"(C). \\(\\text{all } n \\in \\mathbb{N}\\)",
-	"(D). \\(\\text{None of these}\\)"
-	],
-	correct: "(A)"
-	},
-	// Q2
-	{
-	q: "If \\(\\alpha, \\beta\\) are the roots of \\(ax^2 - 2bx + c = 0\\) and \\(\\alpha + h, \\beta + h\\) are those of \\(Ax^2 + 2Bx + C = 0\\), then",
-	options: [
-	"(A). \\(h = \\frac{b}{a} - \\frac{B}{A}\\)",
-	"(B). \\(\\frac{1}{2}\\left(\\frac{b}{a} - \\frac{B}{A}\\right)\\)",
-	"(C). \\(\\frac{b^2 - ac}{a^2} = \\frac{B^2 - AC}{A^2}\\)",
-	"(D). \\(\\frac{b^2 - 4ac}{a^2} = \\frac{B^2 - 4AC}{A^2}\\)"
+	"(A). \\(3240\\)",
+	"(B). \\(3360\\)",
+	"(C). \\(3480\\)",
+	"(D). \\(3600\\)"
 	],
 	correct: "(C)"
 	},
-	// Q3
+	// Q2
 	{
-	q: `Let \\(X = \\begin{bmatrix} x_1 \\\\ x_2 \\\\ x_3 \\end{bmatrix}, 
-	A = \\begin{bmatrix} 1 & -1 & 2 \\\\ 2 & 0 & 1 \\\\ 3 & 2 & 1 \\end{bmatrix}\\) 
-	and \\(B = \\begin{bmatrix} 3 \\\\ 1 \\\\ 4 \\end{bmatrix}.\\) If \\(AX = B\\), then \\(X\\) is equal to:`,
+	q: `If \\(f : \\mathbb{N} \\to \\mathbb{Z}\\) is defined by
+	$$
+	f(n)=
+	\\begin{vmatrix}
+	n & -1 & -5 \\\\
+	-2n^2 & 3(2k+1) & 2k+1 \\\\
+	-3n^3 & 3k(2k+1) & 3k(k+2)+1
+	\\end{vmatrix},
+	\\quad k \\in \\mathbb{N},
+	$$
+	and
+	$$
+	\\sum_{n=1}^{k} f(n)=98,
+	$$
+	then \\(k\\) is equal to:`,
 	options: [
-	"(A). \\(\\begin{bmatrix} 1 \\\\ 2 \\\\ 3 \\end{bmatrix}\\)",
-	"(B). \\(\\begin{bmatrix} -1 \\\\ -2 \\\\ 3 \\end{bmatrix}\\)",
-	"(C). \\(\\begin{bmatrix} -1 \\\\ -2 \\\\ -3 \\end{bmatrix}\\)",
-	"(D). \\(\\begin{bmatrix} -1 \\\\ 2 \\\\ 3 \\end{bmatrix}\\)"
-	],
-	correct: "(D)"
-	},
-	// Q4
-	{
-	q: `If \\(U_n =\\) <span style='font-size:13px'>\\( \\begin{vmatrix} 1 & k & k \\\\ 2n & k^2 + k + 1 & k^2 + k \\\\ 2n - 1 & k^2 & k^2 + k + 1 \\end{vmatrix}\\) </span>
-	and \\(\\sum_{n=1}^{k} U_n = 72\\), then \\(k =\\)`,
-	options: [
-	"(A). \\(8\\)",
-	"(B). \\(9\\)",
-	"(C). \\(6\\)",
-	"(D). \\(\\text{None of these}\\)"
+	"(A). \\(3\\)",
+	"(B). \\(4\\)",
+	"(C). \\(5\\)",
+	"(D). \\(6\\)"
 	],
 	correct: "(A)"
 	},
+	// Q3
+	{
+	q: "Let \\(\\alpha, \\beta\\) be the roots of the equation \\(x^2 - x + p = 0\\) and \\(\\gamma, \\delta\\) be the roots of the equation \\(x^2 - 4x + q = 0\\); \\(p, q \\in \\mathbb{Z}\\). If \\(\\alpha, \\beta, \\gamma, \\delta\\) are in G.P., then \\(|p + q|\\) equals:",
+	options: [
+	"(A). \\(16\\)",
+	"(B). \\(32\\)",
+	"(C). \\(34\\)",
+	"(D). \\(38\\)"
+	],
+	correct: "(C)"
+	},
+	// Q4
+	{
+	q: "Let \\(A_1, A_2, A_3, \\ldots, A_{39}\\) be \\(39\\) arithmetic means between the numbers \\(59\\) and \\(159\\). Then the mean of \\(A_{25}, A_{28}, A_{31}\\) and \\(A_{36}\\) is equal to:",
+	options: [
+	"(A). \\(129\\)",
+	"(B). \\(136\\)",
+	"(C). \\(131.50\\)",
+	"(D). \\(134\\)"
+	],
+	correct: "(D)"
+	},
 	// Q5
 	{
-	q: "The value of \\(\\int_0^\\pi |\\sin^3 \\theta| d\\theta\\) is:",
+	q: "The area of the region bounded by the curves \\(x + 3y^2 = 0\\) and \\(x + 4y^2 = 1\\) is equal to:",
 	options: [
-	"(A). \\(0\\)",
-	"(B). \\(\\pi\\)",
+	"(A). \\(\\frac{1}{3}\\)",
+	"(B). \\(\\frac{2}{3}\\)",
 	"(C). \\(\\frac{4}{3}\\)",
-	"(D). \\(\\frac{3}{8}\\)"
+	"(D). \\(\\frac{5}{3}\\)"
 	],
 	correct: "(C)"
 	},
 	// Q6
 	{
-	q: "A square matrix \\(P\\) satisfies \\(P^2 = I - P\\), where \\(I\\) is the identity matrix. If \\(P^n = 5I - 8P\\), then \\(n\\) is equal to:",
+	q: "Let \\(\\alpha = \\frac{1}{4} + \\frac{1}{8} + \\frac{1}{16} + \\ldots \\infty\\) and \\(\\beta = \\frac{1}{3} + \\frac{1}{9} + \\frac{1}{27} + \\ldots \\infty\\). Then the value of \\((0.2)^{\\log_{\\sqrt{5}}(\\alpha)} + (0.04)^{\\log_{5}(\\beta)}\\) is equal to:",
+	options: [
+	"(A). \\(4\\)",
+	"(B). \\(5\\)",
+	"(C). \\(8\\)",
+	"(D). \\(25\\)"
+	],
+	correct: "(C)"
+	},
+	// Q7
+	{
+	q: "Let \\(A = \\{(a,b,c): a,b,c\\text{ are non-negative integers and } a+b+2c=22\\}\\). The \\(n(A)\\) is equal to:",
+	options: [
+	"(A). \\(121\\)",
+	"(B). \\(124\\)",
+	"(C). \\(144\\)",
+	"(D). \\(169\\)"
+	],
+	correct: "(C)"
+	},
+	// Q8
+	{
+	q: "For the function \\(f:[1,\\infty) \\to [1,\\infty)\\) defined by \\(f(x)=(x-1)^4+1\\), among the two statements: (I) The set \\(S=\\{x\\in[1,\\infty): f(x)=f^{-1}(x)\\}\\) contains exactly two elements, and (II) The set \\(S=\\{x\\in[1,\\infty): f(x)=f^{-1}(x+1)\\}\\) is an empty set,",
+	options: [
+	"(A). only (I) is TRUE",
+	"(B). only (II) is TRUE",
+	"(C). both (I) and (II) are TRUE",
+	"(D). neither (I) nor (II) is TRUE"
+	],
+	correct: "(A)"
+	},
+	// Q9
+	{
+	q: "Two players \\(A\\) and \\(B\\) play a series of games of badminton. The player, who wins \\(5\\) games first, wins the series. Assuming that no game ends in a draw, the number of ways, in which player \\(A\\) wins the series is ______.",
+	options: [
+	"(A). \\(70\\)",
+	"(B). \\(126\\)",
+	"(C). \\(252\\)",
+	"(D). \\(210\\)"
+	],
+	correct: "(B)"
+	},
+	// Q10
+	{
+	q: "If the sum of the coefficients of \\(x^7\\) and \\(x^{14}\\) in the expansion of \\(\\left(\\frac{1}{x^3}-x^4\\right)^n\\), \\(x \\neq 0\\), is zero, then the value of \\(n\\) is ______.",
+	options: [
+	"(A). \\(18\\)",
+	"(B). \\(19\\)",
+	"(C). \\(20\\)",
+	"(D). \\(21\\)"
+	],
+	correct: "(D)"
+	},
+	// Q11
+	{
+	q: "If the system of equations: \\(x + y + z = 5\\), \\(x + 2y + 3z = 9\\), \\(x + 3y + \\lambda z = \\mu\\) has infinitely many solutions, then the value of \\(\\lambda + \\mu\\) is:",
+	options: [
+	"(A). \\(16\\)",
+	"(B). \\(18\\)",
+	"(C). \\(19\\)",
+	"(D). \\(21\\)"
+	],
+	correct: "(B)"
+	},
+	// Q12
+	{
+	q: "Let \\(\\alpha, \\alpha + 2, \\alpha \\in \\mathbb{Z}\\), be the roots of the quadratic equation \\(x(x + 2) + (x + 1)(x + 3) + (x + 2)(x + 4) + \\ldots + (x + n - 1)(x + n + 1) = 4n\\) for some \\(n \\in \\mathbb{N}\\). Then \\((n + \\alpha)\\) is equal to:",
+	options: [
+	"(A). \\(0\\)",
+	"(B). \\(1\\)",
+	"(C). \\(2\\)",
+	"(D). \\(3\\)"
+	],
+	correct: "(C)"
+	},
+	// Q13
+	{
+	q: "The sum of all the integral values of \\(p\\) such that the equation \\(3\\sin^2 x + 12\\cos x - 3 = p,\\ x \\in \\mathbb{R}\\), has at least one solution, is:",
+	options: [
+	"(A). \\(-54\\)",
+	"(B). \\(-60\\)",
+	"(C). \\(-75\\)",
+	"(D). \\(-84\\)"
+	],
+	correct: "(C)"
+	},
+	// Q14
+	{
+	q: "In an equilateral triangle PQR, let the vertex P be at \\((3,5)\\) and the side QR be along the line \\(x+y=4\\). If the orthocentre of the triangle PQR is \\((\\alpha,\\beta)\\), then \\(9(\\alpha+\\beta)\\) is equal to:",
+	options: [
+	"(A). \\(16\\)",
+	"(B). \\(27\\)",
+	"(C). \\(36\\)",
+	"(D). \\(48\\)"
+	],
+	correct: "(D)"
+	},
+	// Q15
+	{
+	q: "Let a focus of the ellipse \\(E: \\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\) be \\(S(4,0)\\) and its eccentricity be \\(\\frac{4}{5}\\). If the point \\(P(3,\\alpha)\\) lies on \\(E\\) and \\(O\\) is the origin, then the area of \\(\\triangle POS\\) is equal to:",
+	options: [
+	"(A). \\(\\frac{12}{5}\\)",
+	"(B). \\(\\frac{14}{5}\\)",
+	"(C). \\(\\frac{24}{5}\\)",
+	"(D). \\(\\frac{48}{5}\\)"
+	],
+	correct: "(C)"
+	},
+	// Q16
+	{
+	q: "The mean deviation about the mean for the data\n\\(x_i\\): \\(5,7,9,10,12,15\\)\n\\(f_i\\): \\(8,6,2,2,2,6\\)\nis equal to:",
+	options: [
+	"(A). \\(\\frac{40}{13}\\)",
+	"(B). \\(\\frac{42}{13}\\)",
+	"(C). \\(\\frac{44}{13}\\)",
+	"(D). \\(\\frac{46}{13}\\)"
+	],
+	correct: "(C)"
+	},
+	// Q17
+	{
+	q: "Let \\(P\\) be a moving point on the circle \\(x^2 + y^2 - 6x - 8y + 21 = 0\\). Then, the maximum distance of \\(P\\) from the vertex of the parabola \\(x^2 + 6x + y + 13 = 0\\) is equal to:",
+	options: [
+	"(A). \\(8\\)",
+	"(B). \\(10\\)",
+	"(C). \\(12\\)",
+	"(D). \\(9\\)"
+	],
+	correct: "(C)"
+	},
+	// Q18
+	{
+	q: "Let \\(\\tan A, \\tan B\\), where \\(A, B \\in \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)\\), be the roots of the quadratic equation \\(x^2 - 2x - 5 = 0\\). Then \\(20\\sin^2\\left(\\frac{A+B}{2}\\right)\\) is equal to:",
+	options: [
+	"(A). \\(10 + \\sqrt{10}\\)",
+	"(B). \\(10 - 2\\sqrt{10}\\)",
+	"(C). \\(10 - 3\\sqrt{10}\\)",
+	"(D). \\(10 - \\sqrt{10}\\)"
+	],
+	correct: "(C)"
+	},
+	// Q19
+	{
+	q: "A letter is known to have arrived by post either from KANPUR or from ANANTPUR. On the envelope just two consecutive letters AN are visible. The probability that the letter came from ANANTPUR, is:",
+	options: [
+	"(A). \\(\\frac{7}{10}\\)",
+	"(B). \\(\\frac{10}{17}\\)",
+	"(C). \\(\\frac{12}{19}\\)",
+	"(D). \\(\\frac{7}{19}\\)"
+	],
+	correct: "(B)"
+	},
+	// Q20
+	{
+	q: "\\(\\sum_{n=1}^{10} \\left( \\frac{528}{n(n+1)(n+2)} \\right)\\) is equal to:",
+	options: [
+	"(A). \\(65\\)",
+	"(B). \\(130\\)",
+	"(C). \\(220\\)",
+	"(D). \\(440\\)"
+	],
+	correct: "(B)"
+	},
+	// Q21
+	{
+	q: `Consider the system of linear equations in \\(x, y, z\\):
+	\\[
+	x + 2y + tz = 0,
+	\\]
+	\\[
+	6x + y + 5tz = 0,
+	\\]
+	\\[
+	3x + t^2 y + f(t)z = 0,
+	\\]
+	Where \\(f : R \\to R\\) is a differentiable function. If this system has infinitely many solutions for all \\(t \\in R\\), then \\(f\\)`,
+	options: [
+	"(A). is a constant function",
+	"(B). is strictly increasing on \\(R\\)",
+	"(C). is strictly decreasing on \\(R\\)",
+	"(D). has two critical points"
+	],
+	correct: "(B)"
+	},
+	// Q22
+	{
+	q: "The number of points in the interval \\([2,4]\\), at which the function \\(f(x)=\\left[x^2-x-\\frac{1}{2}\\right]\\), where \\([\\ ]\\) denotes the greatest integer function, is discontinuous, is ________.",
+	options: [
+	"(A). \\(8\\)",
+	"(B). \\(9\\)",
+	"(C). \\(10\\)",
+	"(D). \\(11\\)"
+	],
+	correct: "(C)"
+	},
+	// Q23
+	{
+	q: "Let the sum of the first \\(n\\) terms of an A.P. be \\(3n^2 + 5n\\). Then the sum of squares of the first \\(10\\) terms of the A.P. is :",
+	options: [
+	"(A). \\(10220\\)",
+	"(B). \\(12860\\)",
+	"(C). \\(15220\\)",
+	"(D). \\(19780\\)"
+	],
+	correct: "(C)"
+	},
+	// Q24
+	{
+	q: "Let \\(P = \\{\\theta \\in [0, 4\\pi] : \\tan^2\\theta \\ne 1\\}\\) and \\(S = \\{a \\in \\mathbb{Z} : 2(\\cos^8\\theta - \\sin^8\\theta)\\sec 2\\theta = a^2,\\ \\theta \\in P\\}\\). Then \\(n(S)\\) is :",
+	options: [
+	"(A). \\(0\\)",
+	"(B). \\(1\\)",
+	"(C). \\(2\\)",
+	"(D). \\(3\\)"
+	],
+	correct: "(A)"
+	},
+	// Q25
+	{
+	q: "The value of \\(\\int_{0}^{20\\pi}(\\sin^4 x + \\cos^4 x)\\,dx\\) is equal to:",
+	options: [
+	"(A). \\(\\frac{15\\pi}{2}\\)",
+	"(B). \\(25\\pi\\)",
+	"(C). \\(15\\pi\\)",
+	"(D). \\(\\frac{25\\pi}{2}\\)"
+	],
+	correct: "(C)"
+	},
+	// Q26
+	{
+	q: "Let \\(O\\) be the origin, and \\(P\\) and \\(Q\\) be two points on the rectangular hyperbola \\(xy = 12\\) such that the midpoint of the line segment \\(PQ\\) is \\(\\left(\\frac{1}{2}, -\\frac{1}{2}\\right)\\). Then the area of the triangle \\(OPQ\\) equals:",
+	options: [
+	"(A). \\(\\frac{3}{2}\\)",
+	"(B). \\(\\frac{5}{2}\\)",
+	"(C). \\(\\frac{7}{2}\\)",
+	"(D). \\(\\frac{9}{2}\\)"
+	],
+	correct: "(C)"
+	},
+	// Q27
+	{
+	q: "Let a circle pass through the origin and its centre be the point of intersection of two mutually perpendicular lines \\(x + (k - 1)y + 3 = 0\\) and \\(2x + k^2y - 4 = 0\\). If the line \\(x - y + 2 = 0\\) intersects the circle at the points \\(A\\) and \\(B\\), then \\((AB)^2\\) is equal to:",
+	options: [
+	"(A). \\(10\\)",
+	"(B). \\(27\\)",
+	"(C). \\(18\\)",
+	"(D). \\(34\\)"
+	],
+	correct: "(C)"
+	},
+	// Q28
+	{
+	q: "Let \\(a_1, a_2, a_3, \\ldots\\) be an A.P. and \\(g_1 = a_1, g_2, g_3, \\ldots\\) be an increasing G.P. If \\(a_1 = a_2 + g_2 = 1\\) and \\(a_3 + g_3 = 4\\), then \\(a_{10} + g_5\\) is equal to:",
+	options: [
+	"(A). \\(81\\)",
+	"(B). \\(76\\)",
+	"(C). \\(62\\)",
+	"(D). \\(55\\)"
+	],
+	correct: "(D)"
+	},
+	// Q29
+	{
+	q: "The sum \\(\\frac{1^3}{1} + \\frac{1^3 + 2^3}{1 + 3} + \\frac{1^3 + 2^3 + 3^3}{1 + 3 + 5} + \\ldots\\) up to \\(8\\) terms is:",
+	options: [
+	"(A). \\(70\\)",
+	"(B). \\(71\\)",
+	"(C). \\(72\\)",
+	"(D). \\(73\\)"
+	],
+	correct: "(B)"
+	},
+	// Q30
+	{
+	q: "Let \\(\\alpha, \\beta\\) be the roots of the equation \\(x^2 - 3x + r = 0\\), and \\(\\frac{\\alpha}{2}, 2\\beta\\) be the roots of the equation \\(x^2 + 3x + r = 0\\). If the roots of the equation \\(x^2 + 6x = m\\) are \\(2\\alpha + \\beta + 2r\\) and \\(\\alpha - 2\\beta - \\frac{r}{2}\\), then \\(m\\) is equal to:",
+	options: [
+	"(A). \\(-135\\)",
+	"(B). \\(-567\\)",
+	"(C). \\(135\\)",
+	"(D). \\(567\\)"
+	],
+	correct: "(D)"
+	},
+	// Q31
+	{
+	q: `If the system of equations
+	$$
+	\\begin{aligned}
+	x + 5y + 6z &= 4, \\\\
+	2x + 3y + 4z &= 7, \\\\
+	x + 6y + az &= b
+	\\end{aligned}
+	$$
+	has infinitely many solutions, then the point \\((a, b)\\) lies on the line`,
+	options: [
+	"(A). \\(y - x = 3\\)",
+	"(B). \\(x - y = 3\\)",
+	"(C). \\(x + y = 11\\)",
+	"(D). \\(x + y = 12\\)"
+	],
+	correct: "(B)"
+	},
+	// Q32
+	{
+	q: "If for \\(3 \\leq r \\leq 30\\), \\(\\binom{30}{30-r} + 3\\binom{30}{31-r} + 3\\binom{30}{32-r} + \\binom{30}{33-r} = \\binom{m}{r}\\), then \\(m\\) equals:",
+	options: [
+	"(A). \\(31\\)",
+	"(B). \\(32\\)",
+	"(C). \\(33\\)",
+	"(D). \\(34\\)"
+	],
+	correct: "(C)"
+	},
+	// Q33
+	{
+	q: "Let \\(p_n\\) denote the total number of triangles formed by joining the vertices of a regular \\(n\\)-side polygon. If \\(p_{n+1} - p_n = 66\\), then the sum of all distinct prime divisors of \\(n\\) is:",
+	options: [
+	"(A). \\(7\\)",
+	"(B). \\(8\\)",
+	"(C). \\(5\\)",
+	"(D). \\(6\\)"
+	],
+	correct: "(C)"
+	},
+	// Q34
+	{
+	q: "If \\(\\sum_{k=1}^{n} a_k = 6n^3\\), then \\(\\sum_{k=1}^{6} \\left(\\frac{a_{k+1}-a_k}{36}\\right)^2\\) is equal to ____.",
+	options: [
+	"(A). \\(55\\)",
+	"(B). \\(91\\)",
+	"(C). \\(36\\)",
+	"(D). \\(72\\)"
+	],
+	correct: "(B)"
+	},
+	// Q35
+	{
+	q: "Let a circle \\(C\\) have its centre in the first quadrant, intersect the coordinate axes at exactly three points and cut off equal intercepts from the coordinate axes. If the length of the chord of \\(C\\) on the line \\(x+y=1\\) is \\(\\sqrt{14}\\), then the square of the radius of \\(C\\) is ____.",
+	options: [
+	"(A). \\(4\\)",
+	"(B). \\(6\\)",
+	"(C). \\(8\\)",
+	"(D). \\(10\\)"
+	],
+	correct: "(C)"
+	},
+	// Q36
+	{
+	q: "Let \\(y=y(x)\\) be the solution curve of the differential equation \\((1+\\sin x)\\frac{dy}{dx} + (y+1)\\cos x = 0\\), \\(y(0)=0\\). If the curve \\(y=y(x)\\) passes through the point \\((\\alpha,-\\frac{1}{2})\\), then a value of \\(\\alpha\\) is:",
+	options: [
+	"(A). \\(\\frac{\\pi}{6}\\)",
+	"(B). \\(\\frac{\\pi}{4}\\)",
+	"(C). \\(\\frac{\\pi}{3}\\)",
+	"(D). \\(\\frac{\\pi}{2}\\)"
+	],
+	correct: "(D)"
+	},
+	// Q37
+	{
+	q: "If the domain of the function \\(f(x)=\\sqrt{\\log_{(0.6)}\\left(\\left|\\frac{2x-5}{x^2-4}\\right|\\right)}\\) is \\(( -\\infty,a] \\cup \\{b\\} \\cup [c,d) \\cup (e,\\infty)\\), then the value of \\(a+b+c+d+e\\) is ________.",
+	options: [
+	"(A). \\(2\\)",
+	"(B). \\(4\\)",
+	"(C). \\(6\\)",
+	"(D). \\(8\\)"
+	],
+	correct: "(B)"
+	},
+	// Q38
+	{
+	q: "If the curve \\(y=f(x)\\) passes through the point \\((1,e)\\) and satisfies the differential equation \\(dy=y(2+\\log_e x)\\,dx,\\ x>0\\), then \\(f(e)\\) is equal to:",
+	options: [
+	"(A). \\(e^e\\)",
+	"(B). \\(e^{e^2}\\)",
+	"(C). \\(e^{2e}\\)",
+	"(D). \\(e^{2^e}\\)"
+	],
+	correct: "(C)"
+	},
+	// Q39
+	{
+	q: "If \\(\\lim_{x\\to 2}\\frac{\\sin(x^3-5x^2+ax+b)}{(\\sqrt{x-1}-1)\\log_e(x-1)}=m\\), then \\(a+b+m\\) is equal to:",
+	options: [
+	"(A). \\(5\\)",
+	"(B). \\(6\\)",
+	"(C). \\(8\\)",
+	"(D). \\(10\\)"
+	],
+	correct: "(B)"
+	},
+	// Q40
+	{
+	q: "The number of critical points of the function \\(f(x)=\\begin{cases}\\left|\\dfrac{\\sin x}{x}\\right|, & x\\neq 0\\\\1, & x=0\\end{cases}\\) in the interval \\((-2\\pi,2\\pi)\\) is equal to:",
+	options: [
+	"(A). \\(1\\)",
+	"(B). \\(3\\)",
+	"(C). \\(5\\)",
+	"(D). \\(7\\)"
+	],
+	correct: "(C)"
+	},
+	// Q41
+	{
+	q: "Let \\([\\ ]\\) denote the greatest integer function. Then the value of \\(\\int_0^3 \\left(\\dfrac{e^x+e^{-x}}{[x]!}\\right)dx\\) is:",
+	options: [
+	"(A). \\(e^2+e^3-\\dfrac{1}{e^2}-\\dfrac{1}{e^3}\\)",
+	"(B). \\(\\dfrac{1}{2}\\left(e^2+e^3-\\dfrac{1}{e^2}-\\dfrac{1}{e^3}\\right)\\)",
+	"(C). \\(e^2+e^3-\\dfrac{1}{2e^2}-\\dfrac{1}{2e^3}\\)",
+	"(D). \\(\\dfrac{1}{2}(e^2+e^3)-\\dfrac{1}{e^2}-\\dfrac{1}{e^3}\\)"
+	],
+	correct: "(B)"
+	},
+	// Q42
+	{
+	q: "Let the mid points of the sides of a triangle \\(ABC\\) be \\(\\left(\\dfrac{5}{2},7\\right)\\), \\(\\left(\\dfrac{5}{2},3\\right)\\) and \\((4,5)\\). If its incentre is \\((h,k)\\), then \\(3h+k\\) is equal to:",
+	options: [
+	"(A). \\(11\\)",
+	"(B). \\(12\\)",
+	"(C). \\(13\\)",
+	"(D). \\(14\\)"
+	],
+	correct: "(C)"
+	},
+	// Q43
+	{
+	q: "Let an ellipse \\(\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1\\), \\(a<b\\), pass through the point \\((4,3)\\) and have eccentricity \\(\\dfrac{\\sqrt{5}}{3}\\). Then the length of its latus rectum is:",
+	options: [
+	"(A). \\(\\dfrac{4\\sqrt{5}}{3}\\)",
+	"(B). \\(2\\sqrt{5}\\)",
+	"(C). \\(\\dfrac{7\\sqrt{5}}{3}\\)",
+	"(D). \\(\\dfrac{8\\sqrt{5}}{3}\\)"
+	],
+	correct: "(D)"
+	},
+	// Q44
+	{
+	q: "If \\(\\sin\\left(\\dfrac{\\pi}{18}\\right)\\sin\\left(\\dfrac{5\\pi}{18}\\right)\\sin\\left(\\dfrac{7\\pi}{18}\\right)=K\\), then the value of \\(\\sin\\left(\\dfrac{10K\\pi}{3}\\right)\\) is:",
+	options: [
+	"(A). \\(\\dfrac{\\sqrt{3}+1}{2\\sqrt{2}}\\)",
+	"(B). \\(\\dfrac{\\sqrt{3}-1}{\\sqrt{2}}\\)",
+	"(C). \\(\\dfrac{\\sqrt{3}}{2}\\)",
+	"(D). \\(\\dfrac{1}{2}\\)"
+	],
+	correct: "(A)"
+	},
+	// Q45
+	{
+	q: "Let \\(S=\\{x\\in[-\\pi,\\pi]:\\sin x(\\sin x+\\cos x)=a,\\ a\\in\\mathbb{Z}\\}\\). Then \\(n(S)\\) is equal to:",
+	options: [
+	"(A). \\(3\\)",
+	"(B). \\(6\\)",
+	"(C). \\(7\\)",
+	"(D). \\(9\\)"
+	],
+	correct: "(D)"
+	},
+	// Q46
+	{
+	q: "Let \\(A\\) be the set of first \\(101\\) terms of an A.P., whose first term is \\(1\\) and the common difference is \\(5\\) and let \\(B\\) be the set of first \\(71\\) terms of an A.P., whose first term is \\(9\\) and the common difference is \\(7\\). Then the number of elements in \\(A \\cap B\\), which are divisible by \\(3\\), is :",
 	options: [
 	"(A). \\(4\\)",
 	"(B). \\(5\\)",
 	"(C). \\(6\\)",
 	"(D). \\(7\\)"
 	],
-	correct: "(C)"
-	},
-	// Q7
-	{
-	q: "\\(\\int \\frac{dx}{\\sqrt[4]{(x-1)^3 (x+2)^5}}\\) is equal to:",
-	options: [
-	"(A). \\(\\frac{3}{4} \\sqrt{\\frac{x-1}{x+2}} + C\\)",
-	"(B). \\(\\frac{4}{3} \\sqrt{\\frac{x-1}{x+2}} + C\\)",
-	"(C). \\(\\frac{4}{3} \\sqrt{\\frac{x+2}{x-1}} + C\\)",
-	"(D). \\(\\text{None of these}\\)"
-	],
-	correct: "(D)"
-	},
-	// Q8
-	{
-	q: "The equation \\(\\sin^4 x - 2\\cos^2 x + a^2 = 0\\) is solvable for \\(x \\in R\\) if",
-	options: [
-	"(A). \\(-\\sqrt{2} \\le a \\le \\sqrt{2}\\)",
-	"(B). \\(-\\sqrt{3} \\le a \\le \\sqrt{3}\\)",
-	"(C). \\(-1 \\le a \\le 1\\)",
-	"(D). None of these"
-	],
-	correct: "(A)"
-	},
-	// Q9
-	{
-	q: "The values of \\(x\\) which satisfy the trigonometric equation \\(\\tan^{-1}\\left(\\frac{x-1}{x-2}\\right) + \\tan^{-1}\\left(\\frac{x+1}{x+2}\\right) = \\frac{\\pi}{4}\\) are:",
-	options: [
-	"(A). \\(\\pm \\frac{1}{\\sqrt{2}}\\)",
-	"(B). \\(\\pm \\sqrt{2}\\)",
-	"(C). \\(\\pm \\frac{1}{2}\\)",
-	"(D). \\(\\pm 2\\)"
-	],
-	correct: "(A)"
-	},
-	// Q10
-	{
-	q: `If \\(P = \\begin{bmatrix} \\frac{\\sqrt{3}}{2} & -\\frac{1}{2} \\\\ \\frac{1}{2} & \\frac{\\sqrt{3}}{2} \\end{bmatrix}\\), \\(A = \\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix}\\) and \\(Q = PAP^T\\), then \\(P^T Q^{2005} P\\) is:`,
-	options: [
-	"(A). \\(\\begin{bmatrix} 1 & 2005 \\\\ 0 & 1 \\end{bmatrix}\\)",
-	"(B). \\(\\begin{bmatrix} 1 & 2005 \\\\ 2005 & 1 \\end{bmatrix}\\)",
-	"(C). \\(\\begin{bmatrix} 1 & 0 \\\\ 2005 & 1 \\end{bmatrix}\\)",
-	"(D). \\(\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}\\)"
-	],
-	correct: "(A)"
-	},
-	// Q11
-	{
-	q: "The general solution of the equation \\(2 \\sum_{r=1}^{n} \\cos(r^2 x) \\sin(rx) = 1\\) is:",
-	options: [
-	"(A). \\(\\frac{4p+1}{n(n+1)} \\cdot \\frac{\\pi}{2}, \\; \\forall p \\in I\\)",
-	"(B). \\(\\frac{4p-1}{n(n+1)} \\cdot \\frac{\\pi}{2}, \\; \\forall p \\in I\\)",
-	"(C). \\(2p\\pi + \\frac{\\pi}{6}, \\; \\forall p \\in I\\)",
-	"(D). None of these"
-	],
-	correct: "(A)"
-	},
-	// Q12
-	{
-	q: "The number of solutions of the equation \\(1 + 2\\cos\\left(\\frac{x}{4}\\right) \\sin^3\\left(\\frac{x}{4}\\right) = 0\\), \\(\\forall x \\in [-\\pi, \\pi]\\) is:",
-	options: [
-	"(A). \\(3\\)",
-	"(B). \\(2\\)",
-	"(C). \\(1\\)",
-	"(D). \\(0\\)"
-	],
-	correct: "(D)"
-	},
-	// Q13
-	{
-	q: "The least value of \\(|a|\\) for which \\(\\tan \\theta\\) and \\(\\cot \\theta\\) are roots of the equation \\(x^2 + ax + b = 0\\) is:",
-	options: [
-	"(A). \\(3\\)",
-	"(B). \\(2\\)",
-	"(C). \\(1\\)",
-	"(D). \\(0\\)"
-	],
 	correct: "(B)"
-	},
-	// Q14
-	{
-	q: "The graph of \\( f(x) = \\frac{x^5}{20} - \\frac{x^4}{12} + 5 \\) has:",
-	options: [
-	"(A). no relative extreme, and has only one point of inflexion",
-	"(B). two relative maximas, one relative minimum, and two points of inflexion",
-	"(C). one relative maximas, one relative minimum, and only one point of inflexion",
-	"(D). one relative maximas, one relative minima, and two points of inflexions"
-	],
-	correct: "(C)"
-	},
-	// Q15
-	{
-	q: "Let \\( f(x) = ax^7 + bx^3 + cx - 5 \\), where \\( a, b \\) and \\( c \\) are constants. If \\( f(-7) = 7 \\), the \\( f(7) \\) equals:",
-	options: [
-	"(A). \\(-17\\)",
-	"(B). \\(-7\\)",
-	"(C). \\(14\\)",
-	"(D). \\(21\\)"
-	],
-	correct: "(A)"
-	},
-	// Q16
-	{
-	q: "The value of \\( \\cos^{-1}(\\cos \\frac{5\\pi}{3}) + \\sin^{-1}(\\cos \\frac{5\\pi}{3}) \\) is:",
-	options: [
-	"(A). \\(\\frac{10\\pi}{3}\\)",
-	"(B). \\(0\\)",
-	"(C). \\(\\frac{\\pi}{2}\\)",
-	"(D). \\(\\frac{5\\pi}{3}\\)"
-	],
-	correct: "(C)"
-	},
-	// Q17
-	{
-	q: "Number of integral values of \\( x \\) for which the inequality \\( \\log_{10} \\left( \\frac{2x - 2007}{x + 1} \\right) \\leq 0 \\) holds true, are:",
-	options: [
-	"(A). \\(1004\\)",
-	"(B). \\(1005\\)",
-	"(C). \\(2007\\)",
-	"(D). \\(2008\\)"
-	],
-	correct: "(D)"
-	},
-	// Q18
-	{
-	q: " \\( 2 \\sin^2 \\left( \\frac{\\pi}{2} \\cos^2 x \\right) = 1 - \\cos (\\pi \\sin 2x) \\) if:",
-	options: [
-	"(A). \\( \\tan x = -\\frac{1}{2} \\)",
-	"(B). \\( \\tan x = \\frac{1}{2} \\)",
-	"(C). \\( x = (2n+1)\\frac{\\pi}{2}, n \\in I \\)",
-	"(D). None of these"
-	],
-	correct: "(D)"
-	},
-	// Q19
-	{
-	q: "Which of the following solutions of the equation \\( \\sin x \\cos x \\cos 2x \\cos 8x = 0.25 \\sin 12x \\) are correct.",
-	options: [
-	"(A). \\( \\frac{n\\pi}{8} \\)",
-	"(B). \\( \\frac{(2n+1)\\pi}{8} \\)",
-	"(C). \\( \\frac{(2n+1)\\pi}{4} \\)",
-	"(D). None of these"
-	],
-	correct: "(D)"
-	},
-	// Q20
-	{
-	q: "The number of integral values of \\( k \\) for which the equation \\( 7 \\cos x + 5 \\sin x = 2k + 1 \\) has a solution is:",
-	options: [
-	"(A). \\(4\\)",
-	"(B). \\(8\\)",
-	"(C). \\(10\\)",
-	"(D). \\(12\\)"
-	],
-	correct: "(B)"
-	},
-	// Q21
-	{
-	q: "If \\( \\cos(\\sin x) = \\frac{1}{\\sqrt{2}} \\), then \\( x \\) must lie in the interval:",
-	options: [
-	"(A). \\(\\left(-\\frac{\\pi}{2}, 0\\right)\\)",
-	"(B). \\(\\left(\\frac{\\pi}{4}, \\frac{\\pi}{2}\\right)\\)",
-	"(C). \\(\\left(\\frac{\\pi}{2}, \\pi\\right)\\)",
-	"(D). \\(\\left(\\pi, \\frac{3\\pi}{2}\\right)\\)"
-	],
-	correct: "(B)"
-	},
-	// Q22
-	{
-	q: "Let \\( 2 \\sin^2 x + 3 \\sin x - 2 > 0 \\) and \\( x^2 - x - 2 < 0 \\) (\\( x \\) measured in radians) then \\( x \\) lies in the interval:",
-	options: [
-	"(A). \\(\\left(\\frac{\\pi}{6}, \\frac{5\\pi}{6}\\right)\\)",
-	"(B). \\(\\left(-1, \\frac{5\\pi}{6}\\right)\\)",
-	"(C). \\(\\left(-1, 2\\right)\\)",
-	"(D). \\(\\left(\\frac{\\pi}{6}, 2\\right)\\)"
-	],
-	correct: "(D)"
-	},
-	// Q23
-	{
-	q: "\\(\\int \\frac{dx}{x^2 + 4x + 13}\\) is equal to:",
-	options: [
-	"(A). \\(\\log(x^2 + 4x + 13) + c\\)",
-	"(B). \\(\\frac{1}{3} \\tan^{-1}\\left(\\frac{x + 2}{3}\\right) + c\\)",
-	"(C). \\(\\log(2x + 4) + c\\)",
-	"(D). \\(\\frac{2x + 4}{(x^2 + 4x + 13)^2} + c\\)"
-	],
-	correct: "(B)"
-	},
-	// Q24
-	{
-	q: "\\(\\int_0^{\\pi/4}\\) \\((\\cos x - \\sin x)dx\\) + \\(\\int_{\\pi/4}^{5\\pi/4}\\) \\((\\sin x - \\cos x)dx\\) + \\(\\int_{2\\pi}^{\\pi/4}\\) \\((\\cos x - \\sin x)dx\\) is equal to:",
-	options: [
-	"(A). \\(\\sqrt{2} - 2\\)",
-	"(B). \\(2\\sqrt{2} - 2\\)",
-	"(C). \\(3\\sqrt{2} - 2\\)",
-	"(D). \\(4\\sqrt{2} - 2\\)"
-	],
-	correct: "(D)"
-	},
-	// Q25
-	{
-	q: "The distance between the lines \\(3x + 4y = 9\\) and \\(6x + 8y = 15\\) is:",
-	options: [
-	"(A). \\(\\frac{3}{2}\\)",
-	"(B). \\(\\frac{3}{10}\\)",
-	"(C). \\(6\\)",
-	"(D). None of these"
-	],
-	correct: "(B)"
-	},
-	// Q26
-	{
-	q: "If \\(\\tan x = \\left(\\frac{b}{a}\\right)\\), then the value of \\(a \\cos 2x + b \\sin 2x\\) is:",
-	options: [
-	"(A). \\(a\\)",
-	"(B). \\(a - b\\)",
-	"(C). \\(a + b\\)",
-	"(D). \\(b\\)"
-	],
-	correct: "(A)"
-	},
-	// Q27
-	{
-	q: "The maximum value of \\(3 \\cos \\theta + 4 \\sin \\theta\\) is :",
-	options: [
-	"(A). \\(3\\)",
-	"(B). \\(4\\)",
-	"(C). \\(5\\)",
-	"(D). None of these"
-	],
-	correct: "(C)"
-	},
-	// Q28
-	{
-	q: "In a triangle \\(ABC\\), right angled at \\(C\\), the value of \\(\\cot A + \\cot B\\) is :",
-	options: [
-	"(A). \\(\\frac{c^2}{ab}\\)",
-	"(B). \\(a + b\\)",
-	"(C). \\(\\frac{a^2}{bc}\\)",
-	"(D). \\(\\frac{b^2}{ac}\\)"
-	],
-	correct: "(A)"
-	},
-	// Q29
-	{
-	q: "The value of \\(2^{1/4} \\cdot 4^{1/8} \\cdot 8^{1/16} \\cdot 16^{1/32} \\ldots\\) is :",
-	options: [
-	"(A). \\(\\frac{3}{2}\\)",
-	"(B). \\(\\frac{5}{2}\\)",
-	"(C). \\(2\\)",
-	"(D). \\(1\\)"
-	],
-	correct: "(C)"
-	},
-	// Q30
-	{
-	q: "The domain of the function \\(\\sin^{-1}(\\log_2(x^2/2))\\) is :",
-	options: [
-	"(A). \\([-1, 2] - \\{0\\}\\)",
-	"(B). \\([-2, 2] - (-1, 1)\\)",
-	"(C). \\([-2, 2] - \\{0\\}\\)",
-	"(D). \\([1, 2]\\)"
-	],
-	correct: "(B)"
-	},
-	// Q31
-	{
-	q: "Evaluate \\(\\lim_{x \\to \\infty} \\frac{(2x - 3)(3x - 4)}{(4x - 5)(5x - 6)}\\) :",
-	options: [
-	"(A). \\(\\frac{1}{10}\\)",
-	"(B). \\(0\\)",
-	"(C). \\(\\frac{1}{5}\\)",
-	"(D). \\(\\frac{3}{10}\\)"
-	],
-	correct: "(D)"
-	},
-	// Q32
-	{
-	q: "Function \\(f(x) = \\begin{cases} x - 1, & x < 2 \\\\ 2x - 3, & x \\geq 2 \\end{cases}\\) is a continuous function :",
-	options: [
-	"(A). for \\(x = 2\\) only",
-	"(B). for all real values of \\(x\\) such that \\(x \\ne 2\\)",
-	"(C). for all real values of \\(x\\)",
-	"(D). for all integral values of \\(x\\) only"
-	],
-	correct: "(C)"
-	},
-	// Q33
-	{
-	q: "Differential coefficient of \\(\\sqrt{\\sec \\sqrt{x}}\\) is :",
-	options: [
-	"(A). \\(\\frac{1}{4\\sqrt{x}} \\sec \\sqrt{x} \\sin \\sqrt{x}\\)",
-	"(B). \\(\\frac{1}{4\\sqrt{x}} (\\sec \\sqrt{x})^{3/2} \\sin \\sqrt{x}\\)",
-	"(C). \\(\\frac{1}{2} \\sqrt{x} \\sec \\sqrt{x} \\sin \\sqrt{x}\\)",
-	"(D). \\(\\frac{1}{2} \\sqrt{x} (\\sec \\sqrt{x})^{3/2} \\sin \\sqrt{x}\\)"
-	],
-	correct: "(B)"
-	},
-	// Q34
-	{
-	q: "The function \\(x^5 - 5x^4 + 5x^3 - 1\\) is :",
-	options: [
-	"(A). neither maximum nor minimum at \\(x = 0\\)",
-	"(B). maximum at \\(x = 0\\)",
-	"(C). maximum at \\(x = 1\\) and minimum at \\(x = 3\\)",
-	"(D). minimum at \\(x = 0\\)"
-	],
-	correct: "(C)"
-	},
-	// Q35
-	{
-	q: "If \\(x = y\\sqrt{1 - y^2}\\), then \\(\\frac{dy}{dx}\\) is equal to :",
-	options: [
-	"(A). \\(x\\)",
-	"(B). \\(\\sqrt{\\frac{1 - y^2}{1 + 2y^2}}\\)",
-	"(C). \\(\\frac{\\sqrt{1 - y^2}}{1 - 2y^2}\\)",
-	"(D). \\(0\\)"
-	],
-	correct: "(C)"
-	},
-	// Q36
-	{
-	q: "The value of: \\(1 - \\log 2 + \\frac{(\\log 2)^2}{2!} - \\frac{(\\log 2)^3}{3!} + \\ldots\\) is:",
-	options: [
-	"(A). \\(\\log 3\\)",
-	"(B). \\(\\log 2\\)",
-	"(C). \\(\\frac{1}{2}\\)",
-	"(D). None of these"
-	],
-	correct: "(C)"
-	},
-	// Q37
-	{
-	q: "The maximum value of \\(f(x) = \\frac{x}{4 + x + x^2}\\) on \\([-1,1]\\) is:",
-	options: [
-	"(A). \\(-\\frac{1}{3}\\)",
-	"(B). \\(-\\frac{1}{4}\\)",
-	"(C). \\(\\frac{1}{5}\\)",
-	"(D). \\(\\frac{1}{6}\\)"
-	],
-	correct: "(D)"
-	},
-	// Q38
-	{
-	q: "\\(\\int \\frac{e^x}{(2 + e^x)(e^x + 1)}\\, dx\\) is equal to:",
-	options: [
-	"(A). \\(\\log\\left(\\frac{e^x + 1}{e^x + 2}\\right) + c\\)",
-	"(B). \\(\\log\\left(\\frac{e^x + 2}{e^x + 1}\\right) + c\\)",
-	"(C). \\(\\frac{e^x + 1}{e^x + 2} + c\\)",
-	"(D). \\(\\frac{e^x + 2}{e^x + 1} + c\\)"
-	],
-	correct: "(A)"
-	},
-	// Q39
-	{
-	q: "If \\(\\sin \\alpha\\) and \\(\\cos \\alpha\\) are the roots of the equation \\(px^2 + qx + r = 0\\), then:",
-	options: [
-	"(A). \\(p^2 + q^2 - 2pr = 0\\)",
-	"(B). \\(p^2 - q^2 + 2pr = 0\\)",
-	"(C). \\(p^2 - q^2 - 2pr = 0\\)",
-	"(D). \\(p^2 + q^2 + 2pr = 0\\)"
-	],
-	correct: "(C)"
-	},
-	// Q40
-	{
-	q: "The general value of \\(\\theta\\) in the equation \\(\\cos \\theta = \\frac{1}{\\sqrt{2}},\\ \\tan \\theta = -1\\) is:",
-	options: [
-	"(A). \\(2n\\pi \\pm \\frac{\\pi}{6},\\ n \\in I\\)",
-	"(B). \\(2n\\pi \\pm \\frac{7\\pi}{4},\\ n \\in I\\)",
-	"(C). \\(n\\pi + (-1)^n \\frac{\\pi}{3},\\ n \\in I\\)",
-	"(D). \\(n\\pi + (-1)^n \\frac{\\pi}{4},\\ n \\in I\\)"
-	],
-	correct: "(B)"
-	},
-	// Q41
-	{
-	q: "In a \\(\\Delta ABC\\), if \\(r_1 = 2r_2 = 3r_3\\), then:",
-	options: [
-	"(A). \\(\\frac{a}{b} = \\frac{4}{5}\\)",
-	"(B). \\(\\frac{a}{b} = \\frac{5}{4}\\)",
-	"(C). \\(a + b - 2c = 0\\)",
-	"(D). \\(2a = b + c\\)"
-	],
-	correct: "(C)"
-	},
-	// Q42
-	{
-	q: "At \\(x = 0\\), the function \\(f(x) = |x|\\) is :",
-	options: [
-	"(A). continuous but not differentiable",
-	"(B). discontinuous and differentiable",
-	"(C). discontinuous and not differentiable",
-	"(D). continuous and differentiable"
-	],
-	correct: "(B)"
-	},
-	// Q43
-	{
-	q: "The range of \\(f(x) = \\cos x - \\sin x\\) is :",
-	options: [
-	"(A). \\([-1, 1]\\)",
-	"(B). \\((-1, 2)\\)",
-	"(C). \\([-(\\pi/2), (\\pi/2)]\\)",
-	"(D). \\([-\\sqrt{2}, \\sqrt{2}]\\)"
-	],
-	correct: "(D)"
-	},
-	// Q44
-	{
-	q: "The value of \\(\\lim_{x \\to \\infty} \\frac{x^2 + bx + 4}{x^2 + ax + 5}\\) is :",
-	options: [
-	"(A). \\(\\frac{b}{a}\\)",
-	"(B). \\(0\\)",
-	"(C). \\(1\\)",
-	"(D). \\(\\frac{4}{5}\\)"
-	],
-	correct: "(B)"
-	},
-	// Q45
-	{
-	q: "Let \\(f(x) = \\begin{cases} \\frac{\\sin(\\pi x)}{5x}, & x \\ne 0 \\\\ k, & x = 0 \\end{cases}\\). If \\(f(x)\\) is continuous at \\(x = 0\\), then \\(k\\) is equal to :",
-	options: [
-	"(A). \\(\\frac{\\pi}{5}\\)",
-	"(B). \\(\\frac{5}{\\pi}\\)",
-	"(C). \\(1\\)",
-	"(D). \\(0\\)"
-	],
-	correct: "(A)"
-	},
-	// Q46
-	{
-	q: "Let the functions \\(f, g, h\\) are defined from the set of real numbers \\(\\mathbb{R}\\) to \\(\\mathbb{R}\\) such that \\(f(x) = x^2 - 1\\), \\(g(x) = \\sqrt{x^2 + 1}\\) and \\(h(x) = \\begin{cases} 0, & x < 0 \\\\ x, & x \\ge 0 \\end{cases}\\) then \\(h \\circ (f \\circ g)(x)\\) is defined by :",
-	options: [
-	"(A). \\(x\\)",
-	"(B). \\(x^2\\)",
-	"(C). \\(0\\)",
-	"(D). \\(\\text{None of these}\\)"
-	],
-	correct: "(A)"
 	},
 	// Q47
 	{
-	q: "The angle of elevation of the sun, if the length of the shadow of a tower is \\(\\sqrt{3}\\) times the height of the pole, is :",
+	q: `Let \\(\\alpha, \\beta \\in \\mathbb{R}\\) be such that the system of linear equations
+	$$
+	x + 2y + z = 5
+	$$
+	$$
+	2x + y + \\alpha z = 5
+	$$
+	$$
+	8x + 4y + \\beta z = 18
+	$$
+	has no solution. Then \\(\\frac{\\beta}{\\alpha}\\) is equal to :`,
 	options: [
-	"(A). \\(150^\\circ\\)",
-	"(B). \\(30^\\circ\\)",
-	"(C). \\(60^\\circ\\)",
-	"(D). \\(45^\\circ\\)"
+	"(A). \\(-4\\)",
+	"(B). \\(4\\)",
+	"(C). \\(8\\)",
+	"(D). \\(-8\\)"
 	],
-	correct: "(C)"
+	correct: "(B)"
 	},
 	// Q48
 	{
-	q: "If the function \\(y = \\frac{ax + b}{(x - 4)(x - 1)}\\) has an extremum at \\(P(2, -1)\\), then the values of \\(a\\) and \\(b\\) are:",
+	q: "The number of seven-digit numbers, that can be formed by using the digits \\(1, 2, 3, 5\\) and \\(7\\) such that each digit is used at least once, is :",
 	options: [
-	"(A). \\(a = 0, b = 1\\)",
-	"(B). \\(a = 0, b = -1\\)",
-	"(C). \\(a = 1, b = 0\\)",
-	"(D). \\(a = -1, b = 0\\)"
+	"(A). \\(15400\\)",
+	"(B). \\(17800\\)",
+	"(C). \\(16800\\)",
+	"(D). \\(29400\\)"
 	],
 	correct: "(C)"
 	},
 	// Q49
 	{
-	q: "The limit \\(\\lim_{x \\to 0} \\left[ \\frac{e^x - e^{\\sin x}}{x - \\sin x} \\right]\\) is equal to:",
+	q: "The number of elements in the set \\(S = \\{(r, k) : k \\in \\mathbb{Z} \\text{ and } {}^{36}C_{r+1} = \\frac{6({}^{35}C_r)}{(k^2 - 3)}\\}\\), is",
 	options: [
-	"(A). \\(-1\\)",
-	"(B). \\(0\\)",
-	"(C). \\(1\\)",
-	"(D). None of these"
+	"(A). \\(2\\)",
+	"(B). \\(4\\)",
+	"(C). \\(8\\)",
+	"(D). \\(16\\)"
 	],
-	correct: "(C)"
+	correct: "(B)"
 	},
 	// Q50
 	{
-	q: "If function \\(f(x)\\) is continuous at \\(x = 0\\), then the value of \\(a\\) is: \n\\(f(x) = \\begin{cases} a \\sin\\left(\\frac{\\pi}{2} + x\\right), & \\text{when } x \\ne 0 \\\\ 8, & \\text{when } x = 0 \\end{cases}\\)",
+	q: "If the mean of the data is \\(21\\), then \\(k\\) is one of the roots of the equation :",
 	options: [
-	"(A). \\(8\\)",
-	"(B). \\(\\frac{1}{8}\\)",
-	"(C). \\(0\\)",
-	"(D). None of these"
+	"(A). \\(2x^2 - 23x - 10 = 0\\)",
+	"(B). \\(4x^2 - 35x + 24 = 0\\)",
+	"(C). \\(2x^2 - 19x - 10 = 0\\)",
+	"(D). \\(2x^2 - 35x + 98 = 0\\)"
 	],
-	correct: "(A)"
+	correct: "(C)"
 	}
  ]
 };
