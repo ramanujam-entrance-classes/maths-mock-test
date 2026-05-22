@@ -399,7 +399,7 @@ window.SET_DATA = {
 	},
 	// Q32
 	{
-	q: "If for \\(3 \\leq r \\leq 30\\), \\(({}^{30}C_{30-r}) + 3({}^{30}C_{31-r}) + 3({}^{30}C_{32-r}) + ({}^{30}C_{33-r})\\)\\( = {}^{m}C_{r}\\), then \\(m\\) equals:",
+	q: "If for \\(3 \\leq r \\leq 30\\), \\(({}^{30}C_{30-r}) + 3({}^{30}C_{31-r}) + 3({}^{30}C_{32-r}) \\)\\(+ ({}^{30}C_{33-r})\\)\\( = {}^{m}C_{r}\\), then \\(m\\) equals:",
 	options: [
 	"(A). \\(31\\)",
 	"(B). \\(32\\)",
@@ -608,7 +608,7 @@ window.SET_DATA = {
 	// Q50
 	{
 	q: `If the mean of the data<br>
-		<span style='font-size:13px'>
+		<span style='font-size:12px'>
 		<table style="text-align:center;width:100%;border:1px solid black;border-collapse:collapse;">
 		<tr>
 		<td style="text-align:center;border:1px solid black"> \\(Class\\) </td>
