@@ -15,7 +15,7 @@ window.SET_DATA = {
 	// Q2
 	{
 	q: `If \\(f : \\mathbb{N} \\to \\mathbb{Z}\\) is defined by
-	<span style='font-size:13px'>
+	<span style='font-size:12px'>
 	$$
 	f(n)=
 	\\begin{vmatrix}
@@ -240,15 +240,15 @@ window.SET_DATA = {
 	// Q21
 	{
 	q: `Consider the system of linear equations in \\(x, y, z\\):
-	\\[
+	\\(
 	x + 2y + tz = 0,
-	\\]
-	\\[
+	\\) 
+	\\(
 	6x + y + 5tz = 0,
-	\\]
-	\\[
+	\\) 
+	\\(
 	3x + t^2 y + f(t)z = 0,
-	\\]
+	\\) 
 	Where \\(f : R \\to R\\) is a differentiable function. If this system has infinitely many solutions for all \\(t \\in R\\), then \\(f\\)`,
 	options: [
 	"(A). is a constant function",
