@@ -1,562 +1,563 @@
 window.SET_DATA = {
-  title: "Mathematics Mock Test 2",
+  title: "Mathematics Mock Test 32",
   questions: [
 	// Q1
 	{
-	q: "The point of intersection of circle \\(x^2 + y^2 + 10x - 12y + 51 = 0\\) and the line \\(3y + x = 3\\) is",
-	options: [
-	"(A). \\((-6, 3)\\)",
-	"(B). \\((3, -6)\\)",
-	"(C). \\((6, -3)\\)",
-	"(D). \\((-3, 6)\\)"
-	],
-	correct: "(A)"
-	},
-	// Q2
-	{
-	q: "The number of solutions of the equation \\(\\sin x + \\sin 5x = \\sin 3x\\) lying in the interval \\([0, \\pi]\\) is",
-	options: [
-	"(A). \\(4\\)",
-	"(B). \\(6\\)",
-	"(C). \\(5\\)",
-	"(D). \\(2\\)"
-	],
-	correct: "(B)"
-	},
-	// Q3
-	{
-	q: "In an acute angled \\(\\triangle ABC\\) the least value of \\(\\sec A + \\sec B + \\sec C\\) is",
-	options: [
-	"(A). \\(6\\)",
-	"(B). \\(8\\)",
-	"(C). \\(3\\)",
-	"(D). \\(2\\)"
-	],
-	correct: "(A)"
-	},
-	// Q4
-	{
-	q: "Let \\(P = \\{\\theta : \\sin \\theta - \\cos \\theta = \\sqrt{2} \\cos \\theta\\}\\) and \\(Q = \\{\\theta : \\sin \\theta + \\cos \\theta = \\sqrt{2} \\sin \\theta\\}\\) be two sets. Then",
-	options: [
-	"(A). \\(P \\subset Q\\) and \\(Q - P \\neq \\phi\\)",
-	"(B). \\(P \\nsubseteq Q\\)",
-	"(C). \\(Q \\nsubseteq P\\)",
-	"(D). \\(P = Q\\)"
-	],
-	correct: "(D)"
-	},
-	// Q5
-	{
-	q: "If \\(\\frac{\\tan x}{2} = \\frac{\\tan y}{3} = \\frac{\\tan z}{5}\\) and \\(x + y + z = \\pi\\), then the value of \\(\\tan^2 x + \\tan^2 y + \\tan^2 z\\) is",
-	options: [
-	"(A). \\(\\frac{38}{3}\\)",
-	"(B). \\(38\\)",
-	"(C). \\(114\\)",
-	"(D). None of these"
-	],
-	correct: "(A)"
-	},
-	// Q6
-	{
-	q: "If \\(\\lim_{x \\to \\infty} \\left(1 + \\frac{a}{x} + \\frac{b}{x^2}\\right)^{2x} = e^2\\), then the value of \\(a\\) and \\(b\\) are",
-	options: [
-	"(A). \\(a \\in \\mathbb{R}, b = 2\\)",
-	"(B). \\(a = 1, b \\in \\mathbb{R}\\)",
-	"(C). \\(a \\in \\mathbb{R}, b \\in \\mathbb{R}\\)",
-	"(D). \\(a = 1, b = 2\\)"
-	],
-	correct: "(B)"
-	},
-	// Q7
-	{
-	q: "If \\(f(x) = \\sin^5 x + \\sin^3 x\\) and \\(g(x) = \\cos^5 x + \\sin^3 x\\), then the value of \\(\\int_0^{\\frac{\\pi}{2}} [f(x) + f(-x)][g(x) + g(-x)] dx\\) is",
-	options: [
-	"(A). \\(0\\)",
-	"(B). \\(>1\\)",
-	"(C). \\(0 \\text{ and } 1\\)",
-	"(D). less than \\(0\\)"
-	],
-	correct: "(A)"
-	},
-	// Q8
-	{
-	q: " \\(\\frac{d^2 x}{dy^2}\\) equals",
-	options: [
-	"(A). \\(\\left(\\frac{d^2 y}{dx^2}\\right)^{-1}\\)",
-	"(B). \\(-\\left(\\frac{d^2 y}{dx^2}\\right)^{-1} \\left(\\frac{dy}{dx}\\right)^{-3}\\)",
-	"(C). \\(\\left(\\frac{d^2 y}{dx^2}\\right) \\left(\\frac{dy}{dx}\\right)^{-2}\\)",
-	"(D). \\(-\\left(\\frac{d^2 y}{dx^2}\\right) \\left(\\frac{dy}{dx}\\right)^{-3}\\)"
-	],
-	correct: "(D)"
-	},
-	// Q9
-	{
-	q: "Differential coefficient of \\(\\log_{10} x\\) w.r.t. \\(\\log_x 10\\) is",
-	options: [
-	"(A). \\(-\\frac{(\\log x)^2}{(\\log 10)^2}\\)",
-	"(B). \\(\\frac{(\\log_{10} x)^2}{(\\log 10)^2}\\)",
-	"(C). \\(\\frac{(\\log_x 10)^2}{(\\log 10)^2}\\)",
-	"(D). \\(-\\frac{(\\log 10)^2}{(\\log x)^2}\\)"
-	],
-	correct: "(A)"
-	},
-	// Q10
-	{
-	q: "\\(f(x) = x + |x|\\) is continuous for",
-	options: [
-	"(A). \\(x \\in (-\\infty, \\infty)\\)",
-	"(B). \\(x \\in (-\\infty, \\infty) - \\{0\\}\\)",
-	"(C). Only \\(x > 0\\)",
-	"(D). No value of \\(x\\)"
-	],
-	correct: "(A)"
-	},
-	// Q11
-	{
-	q: "The value of \\(1^2 \\cdot C_1 + 3^2 \\cdot C_3 + 5^2 \\cdot C_5 + \\ldots\\) is",
-	options: [
-	"(A). \\(n(n-1)2^{n-2} + n \\cdot 2^{n-1}\\)",
-	"(B). \\(n(n-1)2^{n-2}\\)",
-	"(C). \\(n(n-1) \\cdot 2^{n-3}\\)",
-	"(D). None of these"
-	],
-	correct: "(A)"
-	},
-	// Q12
-	{
-	q: "If \\(A\\) is an invertible skew symmetric matrix, then \\(A^{-1}\\) is a",
-	options: [
-	"(A). symmetric matrix",
-	"(B). skew-symmetric matrix",
-	"(C). zero matrix",
-	"(D). identity matrix"
-	],
-	correct: "(B)"
-	},
-	// Q13
-	{
-	q: "The quadratic equation whose roots are \\(\\sin^2 18^\\circ\\) and \\(\\cos^2 36^\\circ\\) is",
-	options: [
-	"(A). \\(16x^2 - 12x + 1 = 0\\)",
-	"(B). \\(16x^2 + 12x + 1 = 0\\)",
-	"(C). \\(16x^2 - 12x - 1 = 0\\)",
-	"(D). \\(16x^2 + 10x + 1 = 0\\)"
-	],
-	correct: "(A)"
-	},
-	// Q14
-	{
-	q: "The two circles \\(x^2 + y^2 - 2x - 3 = 0\\) and \\(x^2 + y^2 - 4x - 6y - 8 = 0\\) are such that",
-	options: [
-	"(A). they touch each other",
-	"(B). they intersect each other",
-	"(C). one lies inside the other",
-	"(D). each lies outside the other"
-	],
-	correct: "(B)"
-	},
-	// Q15
-	{
-	q: "The equation of the normal to the parabola \\(y^2 = 8x\\) having slope \\(1\\) is",
-	options: [
-	"(A). \\(x + y + 6 = 0\\)",
-	"(B). \\(x - y - 6 = 0\\)",
-	"(C). \\(x - y + 6 = 0\\)",
-	"(D). \\(x + y - 6 = 0\\)"
-	],
-	correct: "(B)"
-	},
-	// Q16
-	{
-	q: "The line \\(y = mx + 1\\) is a tangent to the parabola \\(y^2 = 4x\\), if \\(m = 1\\).",
+	q: "Suppose \\(t_1, t_2, \\ldots, t_5\\) are in AP such that $$\\sum_{\\ell=0}^{18} t_{3\\ell+1} = 1197$$ and \\(t_7 + 3t_{22} = 174\\). If $$\\sum_{\\ell=1}^{9} t_\\ell^2 = 947b,$$ then the value of \\(b\\) is:",
 	options: [
 	"(A). \\(1\\)",
 	"(B). \\(2\\)",
 	"(C). \\(3\\)",
 	"(D). \\(4\\)"
 	],
-	correct: "(A)"
+	correct: "(C)"
 	},
-	// Q17
+	// Q2
 	{
-	q: "Let \\(f(x)=\\begin{cases} x^n \\sin\\frac{1}{x}, & x \\ne 0 \\\\ 0, & x=0 \\end{cases}\\). Then, \\(f(x)\\) is continuous but not differentiable at \\(x=0\\), if",
+	q: "Let \\(F_1, F_2\\) be the foci of the hyperbola $$\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1,$$ \\(a>0, b>0\\), and let \\(O\\) be the origin. Let \\(M\\) be an arbitrary point on the curve above the \\(X\\)-axis and \\(H\\) be a point on \\(MF_1\\) such that \\(MF_2 \\perp F_1F_2\\), \\(MF_1 \\perp OH\\), and \\(|OH| = \\lambda |OF_2|\\) with \\(\\lambda \\in \\left(\\frac{2}{5}, \\frac{3}{5}\\right)\\). Then the range of the eccentricity \\(e\\) is:",
 	options: [
-	"(A). \\(n \\in (0,1)\\)",
-	"(B). \\(n \\in [1,\\infty)\\)",
-	"(C). \\(n \\in (-\\infty,0)\\)",
-	"(D). \\(n = 0\\)"
+	"(A). \\(\\left(\\sqrt{\\frac{7}{3}}, 2\\right)\\)",
+	"(B). \\(\\left(\\sqrt{2}, \\sqrt{3}\\right)\\)",
+	"(C). \\(\\left(1, \\sqrt{\\frac{7}{3}}\\right)\\)",
+	"(D). \\(\\left(\\sqrt{3}, 2\\right)\\)"
 	],
 	correct: "(A)"
 	},
-	// Q18
+	// Q3
 	{
-	q: "Let \\(g(x)\\) be the inverse of the function \\(f(x)\\) and \\(f'(x)=\\frac{1}{1+x^3}\\). Then, \\(g'(x)\\) is equal to",
+	q: "Let \\(x\\) be a positive real number such that \\(x^{(8\\log_5 x - 24)} = 5^{-4}\\). Then the product of all possible values of \\(x\\) is:",
 	options: [
-	"(A). \\(\\frac{1}{1+(g(x))^3}\\)",
-	"(B). \\(\\frac{1}{1+(f(x))^3}\\)",
-	"(C). \\(1+(g(x))^3\\)",
-	"(D). \\(1+(f(x))^3\\)"
+	"(A). \\(5\\)",
+	"(B). \\(125\\)",
+	"(C). \\(165\\)",
+	"(D). \\(25\\)"
+	],
+	correct: "(B)"
+	},
+	// Q4
+	{
+	q: "Let \\(A\\) and \\(B\\) be two square matrices of the same order satisfying \\(A^2 + 5A + 5I = 0\\) and \\(B^2 + 3B + I = 0\\) respectively, where \\(I\\) is the identity matrix. Then the inverse of the matrix \\(C = BA + 2B + 2A + 4I\\) is:",
+	options: [
+	"(A). \\(BA - 3B + A - 3I\\)",
+	"(B). \\(AB + A + 3B + 3I\\)",
+	"(C). \\(BA + 3B + A + 3I\\)",
+	"(D). \\(AB - A + 3B - 3I\\)"
+	],
+	correct: "(B)"
+	},
+	// Q5
+	{
+	q: "A six faced die is a biased one. It is thrice more likely to show an odd number than to show an even number. It is thrown twice. The probability that the sum of the numbers in the two throws is even, is",
+	options: [
+	"(A). \\(\\frac{4}{8}\\)",
+	"(B). \\(\\frac{5}{8}\\)",
+	"(C). \\(\\frac{6}{8}\\)",
+	"(D). \\(\\frac{7}{8}\\)"
+	],
+	correct: "(B)"
+	},
+	// Q6
+	{
+	q: "A letter is known to have come from either TATANAGAR or CALCUTTA. On the envelope, just two consecutive letters, TA, are visible. The probability that the letter has come from CALCUTTA is",
+	options: [
+	"(A). \\(\\frac{4}{11}\\)",
+	"(B). \\(\\frac{1}{3}\\)",
+	"(C). \\(\\frac{5}{12}\\)",
+	"(D). None of these"
+	],
+	correct: "(A)"
+	},
+	// Q7
+	{
+	q: "If \\(\\cos \\alpha + \\cos \\beta = a\\), and \\(\\sin \\alpha + \\sin \\beta = b\\) and \\(\\theta\\) is the arithmetic mean between \\(\\alpha\\) and \\(\\beta\\), then \\(\\sin 2\\theta + \\cos 2\\theta\\) is equal to",
+	options: [
+	"(A). \\(\\frac{(a+b)^2}{a^2+b^2}\\)",
+	"(B). \\(\\frac{(a-b)^2}{a^2+b^2}\\)",
+	"(C). \\(\\frac{a^2-b^2}{a^2+b^2}\\)",
+	"(D). None of these"
+	],
+	correct: "(D)"
+	},
+	// Q8
+	{
+	q: "If \\((1 + \\tan 1^\\circ)(1 + \\tan 2^\\circ) \\cdots (1 + \\tan 45^\\circ) = 2^n\\), then the value of \\(n\\) is",
+	options: [
+	"(A). \\(21\\)",
+	"(B). \\(22\\)",
+	"(C). \\(23\\)",
+	"(D). \\(24\\)"
 	],
 	correct: "(C)"
 	},
-	// Q19
+	// Q9
 	{
-	q: "If \\(f(x)=\\cot^{-1}\\left(\\frac{x^x - x^{-x}}{2}\\right)\\), then \\(f'(1)\\) equals",
+	q: "The circle \\(x^2 + y^2 + \\alpha x + \\beta y + \\gamma = 0\\) is the image of the circle \\(x^2 + y^2 - 6x - 10y + 30 = 0\\) across the line \\(3x + y = 2\\). The value of \\([\\alpha + \\beta + \\gamma]\\) is: (where \\([\\cdot]\\) represents the floor function)",
 	options: [
-	"(A). \\(-1\\)",
-	"(B). \\(1\\)",
-	"(C). \\(\\log 2\\)",
-	"(D). \\(-\\log 2\\)"
+	"(A). \\(23\\)",
+	"(B). \\(20\\)",
+	"(C). \\(21\\)",
+	"(D). \\(22\\)"
 	],
 	correct: "(A)"
 	},
+	// Q10
+	{
+	q: "A tower subtends an angle of \\(30^\\circ\\) at a point on the same level as the foot of the tower. At a second point \\(h\\) meters above the first, the depression of the foot of the tower is \\(60^\\circ\\). What is the horizontal distance of the tower from the point?",
+	options: [
+	"(A). \\(2h \\cot 60^\\circ\\)",
+	"(B). \\(h \\cot 60^\\circ\\)",
+	"(C). \\(h \\tan 60^\\circ\\)",
+	"(D). \\(2h \\tan 60^\\circ\\)"
+	],
+	correct: "(B)"
+	},
+	// Q11
+	{
+	q: "The scores of students in a national level examination are normally distributed with a mean of \\(500\\) and a standard deviation of \\(100\\). If the value of the cumulative distribution of the standard normal random variable at \\(0.5\\) is \\(0.691\\), then the probability that a randomly selected student scored between \\(450\\) and \\(500\\) is:",
+	options: [
+	"(A). \\(0.591\\)",
+	"(B). \\(0.091\\)",
+	"(C). \\(0.191\\)",
+	"(D). \\(0.391\\)"
+	],
+	correct: "(C)"
+	},
+	// Q12
+	{
+	q: `Let \\(f(x)=\\begin{cases}x^3+8, & x<0\\\\x^2-4, & x\\geq0\\end{cases}\\) and \\(g(x)=\\begin{cases}(x-8)^{1/3}, & x<0\\\\(x+4)^{1/2}, & x\\geq0\\end{cases}\\). Then the number of points, where the function \\(g \\circ f\\) is discontinuous, is ________.`,
+	options: [
+	"(A). \\(1\\)",
+	"(B). \\(2\\)",
+	"(C). \\(3\\)",
+	"(D). \\(4\\)"
+	],
+	correct: "(C)"
+	},
+	// Q13
+	{
+	q: "An eight digit number divisible by \\(9\\) is to be formed by using \\(8\\) digits out of the digits \\(0,1,\\ldots,9\\) without replacement. The number of ways in which this can be done is",
+	options: [
+	"(A). \\(9!\\)",
+	"(B). \\(2(7!)\\)",
+	"(C). \\(4(7!)\\)",
+	"(D). \\(36(7!)\\)"
+	],
+	correct: "(D)"
+	},
+	// Q14
+	{
+	q: "The number of ordered pairs \\((m,n)\\), \\(m,n \\in \\{1,2,\\ldots,100\\}\\) such that \\(7^m + 7^n\\) is divisible by \\(5\\) is",
+	options: [
+	"(A). \\(1250\\)",
+	"(B). \\(2000\\)",
+	"(C). \\(2500\\)",
+	"(D). \\(5000\\)"
+	],
+	correct: "(C)"
+	},
+	// Q15
+	{
+	q: "If \\(a,b,c\\) are the roots of the equation \\(x^3 - 3px^2 + 3qx - 1 = 0\\), then the centroid of the triangle with vertices \\((a,\\frac{1}{a})\\), \\((b,\\frac{1}{b})\\) and \\((c,\\frac{1}{c})\\) is at the point",
+	options: [
+	"(A). \\((p,q)\\)",
+	"(B). \\((\\frac{p}{3},\\frac{q}{3})\\)",
+	"(C). \\((p+q,p-q)\\)",
+	"(D). \\((3p,3q)\\)"
+	],
+	correct: "(A)"
+	},
+	// Q16
+	{
+	q: "Equation of the common tangent touching the circle \\((x-3)^2 + y^2 = 9\\) and the parabola \\(y^2 = 4x\\) above the \\(x\\)-axis is",
+	options: [
+	"(A). \\(\\sqrt{3}y = 3x + 1\\)",
+	"(B). \\(\\sqrt{3}y = -(x+3)\\)",
+	"(C). \\(\\sqrt{3}y = x + 3\\)",
+	"(D). \\(\\sqrt{3}y = -(3x+1)\\)"
+	],
+	correct: "(C)"
+	},
+	// Q17
+	{
+	q: "The number of roots of the equation \\(|x^2 - x - 6| = x + 2\\) is",
+	options: [
+	"(A). \\(2\\)",
+	"(B). \\(3\\)",
+	"(C). \\(4\\)",
+	"(D). None of these"
+	],
+	correct: "(B)"
+	},
+	// Q18
+	{
+	q: "A pair of unbiased dice is rolled together till a sum of either \\(5\\) or \\(7\\) is obtained. The probability that \\(5\\) comes before \\(7\\) is",
+	options: [
+	"(A). \\(\\frac{3}{5}\\)",
+	"(B). \\(\\frac{2}{5}\\)",
+	"(C). \\(\\frac{4}{5}\\)",
+	"(D). None of these"
+	],
+	correct: "(B)"
+	},
+	// Q19
+	{
+	q: "A letter is taken at random from the letters of the word 'STATISTICS' and another letter is taken at random from the letters of the word 'ASSISTANT'. The probability that they are the same letter is",
+	options: [
+	"(A). \\(\\frac{1}{45}\\)",
+	"(B). \\(\\frac{13}{90}\\)",
+	"(C). \\(\\frac{19}{90}\\)",
+	"(D). \\(\\frac{5}{8}\\)"
+	],
+	correct: "(C)"
+	},
 	// Q20
 	{
-	q: "If \\(f(x)=\\log_x (\\in (x))\\), then \\(f'(x)\\) at \\(x=e\\) is",
+	q: "A bag contains \\(6\\) red and \\(4\\) green balls. A fair dice is rolled and a number of balls equal to that appearing on the dice is chosen from the urn at random. The probability that all the balls selected are red is",
 	options: [
-	"(A). \\(e\\)",
-	"(B). \\(-e\\)",
-	"(C). \\(e^2\\)",
-	"(D). \\(e^{-1}\\)"
+	"(A). \\(\\frac{1}{5}\\)",
+	"(B). \\(\\frac{3}{10}\\)",
+	"(C). \\(\\frac{1}{8}\\)",
+	"(D). None of these"
 	],
 	correct: "(D)"
 	},
 	// Q21
 	{
-	q: `If \\(a,b,c\\) are the roots of the equation \\(x^3 - 3x^2 + 3x + 7 = 0\\), then the value of 
-	\\(
-	\\begin{vmatrix}
-	2bc - a^2 & c^2 & b^2 \\\\
-	c^2 & 2ac - b^2 & a^2 \\\\
-	b^2 & a^2 & 2ab - c^2
-	\\end{vmatrix}
-	\\) is`,
+	q: "A bag contains \\(6\\) blue and \\(6\\) green balls. Pairs of balls are drawn without replacement until the bag is empty. The probability that each drawn pair consists of one blue and one green ball is",
 	options: [
-	"(A). \\(9\\)",
-	"(B). \\(27\\)",
-	"(C). \\(81\\)",
-	"(D). \\(0\\)"
+	"(A). \\(\\frac{63}{925}\\)",
+	"(B). \\(\\frac{17}{231}\\)",
+	"(C). \\(\\frac{16}{231}\\)",
+	"(D). \\(\\frac{64}{925}\\)"
 	],
-	correct: "(D)"
+	correct: "(C)"
 	},
 	// Q22
 	{
-	q: "The coefficient of \\(x^n\\) in the expansion of \\((1 - 2x + 3x^2 - 4x^3 + \\ldots \\text{ to } \\infty)^{-n}\\) is",
+	q: "If \\(\\sin(\\tan^{-1}(x\\sqrt{2})) = \\cot(\\sin^{-1}(\\sqrt{1-x^2}))\\), \\(x \\in (0,1)\\), then the value of \\(x\\) is",
 	options: [
-	"(A). \\(\\frac{(2n)!}{n!(n-1)!}\\)",
-	"(B). \\(\\frac{(2n)!}{[(n-1)!]^2}\\)",
-	"(C). \\(\\frac{(2n)!}{(n!)^2}\\)",
-	"(D). None of these"
-	],
-	correct: "(C)"
-	},
-	// Q23
-	{
-	q: "Let \\(\\alpha, \\beta\\) be the roots of the equation \\(x^2 - px + r = 0\\) and \\(\\frac{\\alpha}{2}, 2\\beta\\) be the roots of the equation \\(x^2 - qx + r = 0\\). Then, the value of \\(r\\) is",
-	options: [
-	"(A). \\(\\frac{2}{9}(p - q)(2q - p)\\)",
-	"(B). \\(\\frac{2}{9}(q - p)(2q - p)\\)",
-	"(C). \\(\\frac{2}{9}(q - 2p)(2q - p)\\)",
-	"(D). \\(\\frac{2}{9}(2p - q)(2q - p)\\)"
-	],
-	correct: "(D)"
-	},
-	// Q24
-	{
-	q: "The value of \\(\\cot\\left( cosec^{-1} \\frac{5}{3} + \\tan^{-1} \\frac{2}{3} \\right)\\) is",
-	options: [
-	"(A). \\(\\frac{6}{17}\\)",
-	"(B). \\(\\frac{3}{17}\\)",
-	"(C). \\(\\frac{4}{17}\\)",
-	"(D). \\(\\frac{5}{17}\\)"
+	"(A). \\(\\frac{1}{2}\\)",
+	"(B). \\(\\frac{1}{3}\\)",
+	"(C). \\(\\frac{2}{3}\\)",
+	"(D). \\(\\frac{5}{8}\\)"
 	],
 	correct: "(A)"
 	},
-	// Q25
+	// Q23
 	{
-	q: "If \\(\\sin \\theta = 3 \\sin(\\theta + 2\\alpha)\\), then the value of \\(\\tan(\\theta + \\alpha) + 2 \\tan \\alpha\\) is",
+	q: "The sum \\(1 + \\frac{1}{2}(1^2 + 2^2) + \\frac{1}{3}(1^2 + 2^2 + 3^2) + \\ldots\\) upto \\(10\\) terms is equal to :",
 	options: [
-	"(A). \\(3\\)",
-	"(B). \\(2\\)",
-	"(C). \\(-1\\)",
-	"(D). \\(0\\)"
+	"(A). \\(130\\)",
+	"(B). \\(155\\)",
+	"(C). \\(\\frac{315}{2}\\)",
+	"(D). \\(\\frac{325}{2}\\)"
+	],
+	correct: "(C)"
+	},
+	// Q24
+	{
+	q: `The sum of all possible values of \\(\\theta \\in [0, 2\\pi]\\), for which the system of equations :
+	$$
+	\\begin{aligned}
+	x\\cos 3\\theta - 8y - 12z &= 0 \\\\
+	x\\cos 2\\theta + 3y + 3z &= 0 \\\\
+	x + y + 3z &= 0
+	\\end{aligned}
+	$$
+	has a non-trivial solution, is equal to :`,
+	options: [
+	"(A). \\(\\pi\\)",
+	"(B). \\(2\\pi\\)",
+	"(C). \\(3\\pi\\)",
+	"(D). \\(4\\pi\\)"
 	],
 	correct: "(D)"
 	},
+	// Q25
+	{
+	q: "Let the mean and the variance of seven observations \\(2, 4, \\alpha, 8, \\beta, 12, 14, \\alpha < \\beta\\), be \\(8\\) and \\(16\\) respectively. Then the quadratic equation whose roots are \\(3\\alpha + 2\\) and \\(2\\beta + 1\\) is :",
+	options: [
+	"(A). \\(x^2 - 35x + 306 = 0\\)",
+	"(B). \\(x^2 - 41x + 420 = 0\\)",
+	"(C). \\(x^2 - 45x + 506 = 0\\)",
+	"(D). \\(x^2 - 37x + 342 = 0\\)"
+	],
+	correct: "(B)"
+	},
 	// Q26
 	{
-	q: "In a \\(\\triangle ABC\\), \\(\\angle A = 90^\\circ\\) and \\(D\\) is mid-point of \\(AC\\). The value of \\(BC^2 - BD^2\\) is equal to",
+	q: "If \\(A = \\frac{\\sin 3^\\circ}{\\cos 9^\\circ} + \\frac{\\sin 9^\\circ}{\\cos 27^\\circ} + \\frac{\\sin 27^\\circ}{\\cos 81^\\circ}\\) and \\(B = \\tan 81^\\circ - \\tan 3^\\circ\\), then \\(\\frac{B}{A}\\) is equal to _____.",
 	options: [
-	"(A). \\(AD^2\\)",
-	"(B). \\(2AD^2\\)",
-	"(C). \\(3AD^2\\)",
-	"(D). \\(4AD^2\\)"
+	"(A). \\(1\\)",
+	"(B). \\(2\\)",
+	"(C). \\(3\\)",
+	"(D). \\(4\\)"
 	],
-	correct: "(C)"
+	correct: "(B)"
 	},
 	// Q27
 	{
-	q: "The area enclosed between the curves \\(y^2 = x\\) and \\(y = |x|\\) is",
+	q: "Let \\(f : \\mathbb{R} \\to \\mathbb{R}\\) be defined as \\(f(x) = \\frac{2x^2 - 3x + 2}{3x^2 + x + 3}\\). Then \\(f\\) is :",
 	options: [
-	"(A). \\(\\frac{2}{3}\\) sq. unit",
-	"(B). \\(1\\) sq. unit",
-	"(C). \\(\\frac{1}{6}\\) sq. unit",
-	"(D). \\(\\frac{1}{3}\\) sq. unit"
+	"(A). both one-one and onto",
+	"(B). one-one but not onto",
+	"(C). onto but not one-one",
+	"(D). neither one-one nor onto"
 	],
-	correct: "(C)"
+	correct: "(D)"
 	},
 	// Q28
 	{
-	q: "Equation of the line perpendicular to \\(x - 2y = 1\\) and passing through \\((1,1)\\) is",
+	q: "Suppose that the mean and median of the non-negative numbers \\(21, 8, 17, a, 51, 103, b, 13, 67\\), \\((a > b)\\), are \\(40\\) and \\(21\\), respectively. If the mean deviation about the median is \\(26\\), then \\(2a\\) is equal to :",
 	options: [
-	"(A). \\(x + 2y = 3\\)",
-	"(B). \\(x + y = 2\\)",
-	"(C). \\(y = 2x + 3\\)",
-	"(D). \\(y = -2x + 3\\)"
+	"(A). \\(109\\)",
+	"(B). \\(117\\)",
+	"(C). \\(161\\)",
+	"(D). \\(131\\)"
 	],
 	correct: "(D)"
 	},
 	// Q29
 	{
-	q: "If \\(A = \\begin{bmatrix} 0 & 5 \\\\ 0 & 0 \\end{bmatrix}\\) and \\(f(x) = 1 + x + x^2 + \\ldots + x^{16}\\), then \\(f(A)\\) is",
+	q: "The number of ways of forming a queue of \\(4\\) boys and \\(3\\) girls such that all the girls are not together, is:",
 	options: [
-	"(A). \\(0\\)",
-	"(B). \\(\\begin{bmatrix} 1 & 5 \\\\ 0 & 1 \\end{bmatrix}\\)",
-	"(C). \\(\\begin{bmatrix} 1 & 5 \\\\ 0 & 0 \\end{bmatrix}\\)",
-	"(D). \\(\\begin{bmatrix} 0 & 5 \\\\ 1 & 1 \\end{bmatrix}\\)"
+	"(A). \\(5040\\)",
+	"(B). \\(3050\\)",
+	"(C). \\(3410\\)",
+	"(D). \\(4320\\)"
 	],
-	correct: "(B)"
+	correct: "(D)"
 	},
 	// Q30
 	{
-	q: "If \\(F(x) = \\frac{1}{x^2} \\int_{4}^{x} (4t^2 - 2F'(t)) \\, dt\\), then \\(F'(4)\\) equals",
+	q: "If \\(y = \\tan^{-1}\\left(\\frac{3\\cos x - 4\\sin x}{4\\cos x + 3\\sin x}\\right) + 2\\tan^{-1}\\left(\\frac{x}{1+\\sqrt{1-x^2}}\\right)\\), then \\(\\frac{dy}{dx}\\) at \\(x = \\frac{\\sqrt{3}}{2}\\) is equal to:",
 	options: [
-	"(A). \\(\\frac{32}{9}\\)",
-	"(B). \\(\\frac{64}{3}\\)",
-	"(C). \\(\\frac{64}{9}\\)",
-	"(D). None of these"
+	"(A). \\(3\\)",
+	"(B). \\(-1\\)",
+	"(C). \\(1\\)",
+	"(D). \\(2\\)"
 	],
-	correct: "(A)"
+	correct: "(C)"
 	},
 	// Q31
 	{
-	q: "If \\(x^p y^q = (x + y)^{p + q}\\), then \\(\\frac{dy}{dx}\\) is equal to",
+	q: "Let \\(z\\) be a complex number such that \\(|z+2| = |z-2|\\) and \\(\\arg\\left(\\frac{z+3}{z-i}\\right) = \\frac{\\pi}{4}\\). Then \\(|z|^2\\) is equal to:",
 	options: [
-	"(A). \\(\\frac{y}{x}\\)",
-	"(B). \\(\\frac{py}{qx}\\)",
-	"(C). \\(\\frac{x}{y}\\)",
-	"(D). \\(\\frac{qy}{px}\\)"
+	"(A). \\(9\\)",
+	"(B). \\(4\\)",
+	"(C). \\(5\\)",
+	"(D). \\(1\\)"
 	],
 	correct: "(A)"
 	},
 	// Q32
 	{
-	q: "If \\(y = \\sec^{-1}\\left(\\frac{x + 1}{x - 1}\\right) + \\sin^{-1}\\left(\\frac{x - 1}{x + 1}\\right)\\), then \\(\\frac{dy}{dx}\\) is",
+	q: "The number of functions \\(f : \\{1,2,3,4\\} \\to \\{a,b,c\\}\\), which are not onto is:",
 	options: [
-	"(A). \\(1\\)",
-	"(B). \\(\\frac{x - 1}{x + 1}\\)",
-	"(C). \\(0\\)",
-	"(D). \\(\\frac{x + 1}{x - 1}\\)"
+	"(A). \\(48\\)",
+	"(B). \\(45\\)",
+	"(C). \\(51\\)",
+	"(D). \\(35\\)"
 	],
-	correct: "(C)"
+	correct: "(B)"
 	},
 	// Q33
 	{
-	q: "Let \\(f(x) = x - [x]\\), for every real number \\(x\\), where \\([x]\\) is integral part of \\(x\\). Then, \\(\\int_{-1}^{1} f(x) dx\\) is",
+	q: "If the set of all solutions of \\(\\left|x^2 + x - 9\\right| = \\left|x\\right| + \\left|x^2 - 9\\right|\\) is \\([\\alpha, \\beta] \\cup [\\gamma, \\infty)\\), then \\((\\alpha^2 + \\beta^2 + \\gamma^2)\\) is equal to:",
 	options: [
-	"(A). \\(1\\)",
-	"(B). \\(2\\)",
-	"(C). \\(0\\)",
-	"(D). \\(\\frac{1}{2}\\)"
+	"(A). \\(9\\)",
+	"(B). \\(18\\)",
+	"(C). \\(36\\)",
+	"(D). \\(72\\)"
 	],
-	correct: "(A)"
+	correct: "(B)"
 	},
 	// Q34
 	{
-	q: "If \\(I_1 = \\int_{e}^{e^2} \\frac{dx}{\\log x}\\) and \\(I_2 = \\int_{1}^{2} \\frac{e^x}{x} dx\\), then",
+	q: "The number of functions \\(f : \\{1,2,3,4\\} \\to \\{a,b,c\\}\\), which are not onto, is:",
 	options: [
-	"(A). \\(I_1 = I_2\\)",
-	"(B). \\(2I_1 = I_2\\)",
-	"(C). \\(I_1 = 2I_2\\)",
-	"(D). None of these"
+	"(A). \\(48\\)",
+	"(B). \\(45\\)",
+	"(C). \\(51\\)",
+	"(D). \\(35\\)"
 	],
-	correct: "(A)"
+	correct: "(B)"
 	},
 	// Q35
 	{
-	q: `6 + <span style='font-size:13px'> \\(\\log_{\\frac{1}{4}} \\frac{1}{\\sqrt{2}} \\left[ \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\cdots}}} \\right]\\) </span> =`,
+	q: "The value of \\(\\lim_{x \\to 0} \\left( \\frac{x^2 \\sin^2 x}{x^2 - \\sin^2 x} \\right)\\) is:",
 	options: [
-	"(A). \\(6\\)",
-	"(B). \\(\\frac{13}{2}\\)",
+	"(A). \\(2\\)",
+	"(B). \\(3\\)",
 	"(C). \\(4\\)",
-	"(D). \\(\\frac{25}{4}\\)"
+	"(D). \\(6\\)"
 	],
 	correct: "(B)"
 	},
 	// Q36
 	{
-	q: "The function \\(f(x) = \\log (x + \\sqrt{x^2 + 1})\\) is",
+	q: "Let \\([\\ ]\\) denote the greatest integer function. If the domain of the function \\(f(x)=\\cos^{-1}\\left(\\frac{4x+2[x]}{3}\\right)\\) is \\([\\alpha,\\beta]\\), then \\(12(\\alpha+\\beta)\\) is equal to:",
 	options: [
-	"(A). an even function",
-	"(B). an odd function",
-	"(C). a periodic function",
-	"(D). Neither an even nor an odd function"
-	],
-	correct: "(B)"
-	},
-	// Q37
-	{
-	q: "If \\(^{n}C_4, \\, ^{n}C_5, \\, ^{n}C_6\\) are in AP, then \\(n\\) is equal to",
-	options: [
-	"(A). \\(12\\)",
-	"(B). \\(11\\)",
-	"(C). \\(7\\)",
-	"(D). \\(8\\)"
-	],
-	correct: "(C)"
-	},
-	// Q38
-	{
-	q: "If \\(A\\) is a square matrix of order \\(n \\times n\\), then \\(\\text{adj} (\\text{adj } A)\\) is equal to",
-	options: [
-	"(A). \\(|A|^n A\\)",
-	"(B). \\(|A|^{n-1} A\\)",
-	"(C). \\(|A|^{n-2} A\\)",
-	"(D). \\(|A|^{n-3} A\\)"
-	],
-	correct: "(C)"
-	},
-	// Q39
-	{
-	q: "If \\(X = \\begin{bmatrix} 3n & -4 \\\\ 1 & -1 \\end{bmatrix}\\), then the value of \\(X^n\\) is",
-	options: [
-	"(A). \\(\\begin{bmatrix} 3n - 4n \\\\ n - n \\end{bmatrix}\\)",
-	"(B). \\(\\begin{bmatrix} 2 + n & 5 - n \\\\ n & -n \\end{bmatrix}\\)",
-	"(C). \\(\\begin{bmatrix} 3^n & (-4)^n \\\\ 1^n & (-1)^n \\end{bmatrix}\\)",
-	"(D). None of these"
-	],
-	correct: "(D)"
-	},
-	// Q40
-	{
-	q: "If \\(\\omega\\) be one of the roots of unity, then \\(\\begin{vmatrix} 1 & \\omega & \\omega^2 \\\\ \\omega & 1 & \\omega^2 \\\\ \\omega^2 & \\omega & 1 \\end{vmatrix}\\) is equal to",
-	options: [
-	"(A). \\(\\omega\\)",
-	"(B). \\(\\omega^2\\)",
-	"(C). \\(0\\)",
-	"(D). \\(1\\)"
-	],
-	correct: "(C)"
-	},
-	// Q41
-	{
-	q: "If \\(0 < \\theta < \\frac{\\pi}{2}\\) and <span style='font-size:13px'>\\(\\begin{vmatrix} 1 + \\sin^2 \\theta & \\cos^2 \\theta & 4 \\sin 4\\theta \\\\ \\sin^2 \\theta & 1 + \\cos^2 \\theta & 4 \\sin 4\\theta \\\\ \\sin^2 \\theta & \\cos^2 \\theta & 1 + 4 \\sin 4\\theta \\end{vmatrix}\\) <span style='font-size:13px'> \\( = 0\\), then \\(\\theta\\) is equal to",
-	options: [
-	"(A). \\(\\frac{\\pi}{24}, \\frac{5\\pi}{24}\\)",
-	"(B). \\(\\frac{5\\pi}{24}, \\frac{7\\pi}{24}\\)",
-	"(C). \\(\\frac{7\\pi}{24}, \\frac{11\\pi}{24}\\)",
-	"(D). None of these"
-	],
-	correct: "(C)"
-	},
-	// Q42
-	{
-	q: "If \\(A\\) and \\(B\\) are two matrices such that \\(AB = B\\) and \\(BA = A\\), then \\(A^2 + B^2\\) is equal to",
-	options: [
-	"(A). \\(2AB\\)",
-	"(B). \\(2BA\\)",
-	"(C). \\(A + B\\)",
-	"(D). \\(AB\\)"
-	],
-	correct: "(C)"
-	},
-	// Q43
-	{
-	q: "The relation \\(R = \\{(1,1), (2,2), (3,3), (1,2), (2,3),\\)\\( (1,3)\\}\\) on set \\(A = \\{1,2,3\\}\\), is",
-	options: [
-	"(A). reflexive but not symmetric",
-	"(B). reflexive but not transitive",
-	"(C). symmetric and transitive",
-	"(D). neither symmetric nor transitive"
+	"(A). \\(6\\)",
+	"(B). \\(8\\)",
+	"(C). \\(9\\)",
+	"(D). \\(4\\)"
 	],
 	correct: "(A)"
 	},
+	// Q37
+	{
+	q: "Let \\(S=\\{\\theta\\in(-2\\pi,2\\pi):\\cos\\theta+1=\\sqrt{3}\\sin\\theta\\}\\). Then \\(\\sum_{\\theta\\in S}\\theta\\) is equal to:",
+	options: [
+	"(A). \\(-\\frac{2\\pi}{3}\\)",
+	"(B). \\(-\\frac{4\\pi}{3}\\)",
+	"(C). \\(\\frac{2\\pi}{3}\\)",
+	"(D). \\(\\frac{4\\pi}{3}\\)"
+	],
+	correct: "(B)"
+	},
+	// Q38
+	{
+	q: "If the eccentricity \\(e\\) of the hyperbola \\(\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\), passing through \\((6,4\\sqrt{3})\\), satisfies \\(15(e^2+1)=34e\\), then the length of the latus rectum of the hyperbola \\(\\frac{x^2}{b^2}-\\frac{y^2}{2(a^2+1)}=1\\) is:",
+	options: [
+	"(A). \\(10\\)",
+	"(B). \\(20\\)",
+	"(C). \\(25\\)",
+	"(D). \\(30\\)"
+	],
+	correct: "(A)"
+	},
+	// Q39
+	{
+	q: "Let \\(0 < \\alpha < 1\\), \\(\\beta = \\frac{1}{3\\alpha}\\) and \\(\\tan^{-1}(1-\\alpha) + \\tan^{-1}(1-\\beta) = \\frac{\\pi}{4}\\). Then \\(6(\\alpha + \\beta)\\) is equal to:",
+	options: [
+	"(A). \\(6\\)",
+	"(B). \\(7\\)",
+	"(C). \\(8\\)",
+	"(D). \\(9\\)"
+	],
+	correct: "(B)"
+	},
+	// Q40
+	{
+	q: "If the coefficients of the middle terms in the binomial expansions of \\((1+\\alpha x)^{26}\\) and \\((1-\\alpha x)^{28}\\), \\(\\alpha \\neq 0\\), are equal, then the value of \\(\\alpha\\) is:",
+	options: [
+	"(A). \\(1\\)",
+	"(B). \\(\\frac{14}{13}\\)",
+	"(C). \\(\\frac{27}{7}\\)",
+	"(D). \\(\\frac{7}{27}\\)"
+	],
+	correct: "(D)"
+	},
+	// Q41
+	{
+	q: "The value of \\(1^3 - 2^3 + 3^3 - \\cdots + 15^3\\) is:",
+	options: [
+	"(A). \\(1706\\)",
+	"(B). \\(1856\\)",
+	"(C). \\(1982\\)",
+	"(D). \\(2403\\)"
+	],
+	correct: "(B)"
+	},
+	// Q42
+	{
+	q: "The number of \\(4\\)-letter words, with or without meaning, each consisting of two vowels and two consonants that can be formed from the letters of the word INCONSEQUENTIAL, without repeating any letter, is:",
+	options: [
+	"(A). \\(2670\\)",
+	"(B). \\(2840\\)",
+	"(C). \\(2920\\)",
+	"(D). \\(3600\\)"
+	],
+	correct: "(D)"
+	},
+	// Q43
+	{
+	q: "Let one root of the quadratic equation in \\(x\\): \\((k^2 - 15k + 27)x^2 + 9(k - 1)x + 18 = 0\\) be twice the other. Then the length of the latus rectum of the parabola \\(y^2 = 6kx\\) is equal to:",
+	options: [
+	"(A). \\(4\\)",
+	"(B). \\(6\\)",
+	"(C). \\(8\\)",
+	"(D). \\(12\\)"
+	],
+	correct: "(D)"
+	},
 	// Q44
 	{
-	q: "If \\(R\\) is a relation on a finite set having \\(n\\) elements, then the numbers of relations on \\(A\\) is",
+	q: "Let \\(f(x)\\) and \\(g(x)\\) be twice differentiable functions satisfying \\(f''(x) = g''(x)\\) for all \\(x \\in R\\), \\(f'(1) = 2g'(1) = 4\\) and \\(g(2) = 3f(2) = 9\\). Then \\(f(25) - g(25)\\) is equal to:",
 	options: [
-	"(A). \\(2^n\\)",
-	"(B). \\(2^{n^2}\\)",
-	"(C). \\(n^2\\)",
-	"(D). \\(n^n\\)"
+	"(A). \\(20\\)",
+	"(B). \\(40\\)",
+	"(C). \\(-20\\)",
+	"(D). \\(-40\\)"
 	],
 	correct: "(B)"
 	},
 	// Q45
 	{
-	q: "Let \\(R\\) be a reflexive relation on a finite set \\(A\\) having \\(n\\) elements and let there be \\(m\\) ordered pairs in \\(R\\). Then,",
+	q: "Let \\([\\cdot]\\) denote the greatest integer function. If the domain of the function \\(f(x)=\\sin^{-1}\\left(\\frac{x+[x]}{3}\\right)\\) is \\([\\alpha,\\beta)\\), then \\(\\alpha^2+\\beta^2\\) is equal to:",
 	options: [
-	"(A). \\(m \\geq n\\)",
-	"(B). \\(m \\leq n\\)",
-	"(C). \\(m = n\\)",
-	"(D). None of the above"
-	],
-	correct: "(A)"
-	},
-	// Q46
-	{
-	q: "If \\(g(f(x)) = [\\sin x]\\) and \\(f(g(x)) = (\\sin \\sqrt{x})^2\\), then",
-	options: [
-	"(A). \\(f(x) = \\sin^2 x,\\ g(x) = \\sqrt{x}\\)",
-	"(B). \\(f(x) = \\sin x,\\ g(x) = |x|\\)",
-	"(C). \\(f(x) = x^2,\\ g(x) = \\sin \\sqrt{x}\\)",
-	"(D). f and g cannot be determined"
-	],
-	correct: "(A)"
-	},
-	// Q47
-	{
-	q: "The sum of \\(n\\) terms of the series \\(\\frac{1}{2} + \\frac{3}{4} + \\frac{7}{8} + \\frac{15}{16} + \\ldots\\) is",
-	options: [
-	"(A). \\(2^n - n - 1\\)",
-	"(B). \\(1 - 2^{-n}\\)",
-	"(C). \\(n + 2^{-n} - 1\\)",
-	"(D). \\(2^n - 1\\)"
-	],
-	correct: "(C)"
-	},
-	// Q48
-	{
-	q: "The set of points, where \\(f(x) = \\frac{x}{1 + |x|}\\) is differentiable is",
-	options: [
-	"(A). \\((-\\infty,-1) \\cup (-1,\\infty)\\)",
-	"(B). \\((-\\infty,\\infty)\\)",
-	"(C). \\((0,\\infty)\\)",
-	"(D). \\((-\\infty,0) \\cup (0,\\infty)\\)"
+	"(A). \\(2\\)",
+	"(B). \\(5\\)",
+	"(C). \\(10\\)",
+	"(D). \\(13\\)"
 	],
 	correct: "(B)"
 	},
-	// Q49
+	// Q46
 	{
-	q: "\\(\\int_0^\\pi x f(\\sin x)\\,dx\\) is equal to",
+	q: "Let the eccentricity \\(e\\) of a hyperbola satisfy the equation \\(6e^2-11e+3=0\\). If the foci of the hyperbola are \\((3,5)\\) and \\((3,-4)\\), then the length of its latus rectum is:",
 	options: [
-	"(A). \\(\\pi \\int_0^\\pi f(\\sin x)\\,dx\\)",
-	"(B). \\(\\frac{\\pi}{2} \\int_0^\\pi f(\\sin x)\\,dx\\)",
-	"(C). \\(\\pi \\int_0^{\\pi/2} f(\\cos x)\\,dx\\)",
-	"(D). \\(\\pi \\int_0^\\pi f(\\cos x)\\,dx\\)"
+	"(A). \\(\\frac{11}{3}\\)",
+	"(B). \\(\\frac{17}{3}\\)",
+	"(C). \\(\\frac{15}{2}\\)",
+	"(D). \\(\\frac{17}{2}\\)"
 	],
 	correct: "(C)"
 	},
-	// Q50
+	// Q47
 	{
-	q: "Let \\(f: R \\to R\\) be defined by \\(f(x) = \\begin{cases} x + 2, & \\text{if } x < 0 \\\\ |x - 2|, & \\text{if } x \\geq 0 \\end{cases}\\). Find \\(\\int_{-2}^{3} f(x)\\,dx\\).",
+	q: "Let the point \\(P\\) be the vertex of the parabola \\(y=x^2-6x+12\\). If a line passing through the point \\(P\\) intersects the circle \\(x^2+y^2-2x-4y+3=0\\) at the points \\(R\\) and \\(S\\), then the maximum value of \\((PR+PS)^2\\) is:",
 	options: [
-	"(A). \\(0.5\\)",
-	"(B). \\(2.5\\)",
-	"(C). \\(4.5\\)",
-	"(D). \\(6.5\\)"
+	"(A). \\(10\\)",
+	"(B). \\(20\\)",
+	"(C). \\(25\\)",
+	"(D). \\(5\\)"
+	],
+	correct: "(B)"
+	},
+	// Q48
+	{
+	q: "Let \\(f(x) = \\lim_{y \\to 0} \\frac{(1-\\cos(xy))\\tan(xy)}{y^3}\\). Then the number of solutions of the equation \\(f(x)=\\sin x\\), \\(x \\in \\mathbb{R}\\) is:",
+	options: [
+	"(A). \\(0\\)",
+	"(B). \\(2\\)",
+	"(C). \\(3\\)",
+	"(D). \\(1\\)"
 	],
 	correct: "(C)"
+	},
+	// Q49
+	{
+	q: "The probabilities that players \\(A\\) and \\(B\\) of a team are selected for the captaincy for a tournament are \\(0.6\\) and \\(0.4\\), respectively. If \\(A\\) is selected the captain, the probability that the team wins the tournament is \\(0.8\\) and if \\(B\\) is selected the captain, the probability that the team wins the tournament is \\(0.7\\). Then the probability, that the team wins the tournament, is:",
+	options: [
+	"(A). \\(0.74\\)",
+	"(B). \\(0.76\\)",
+	"(C). \\(0.72\\)",
+	"(D). \\(0.78\\)"
+	],
+	correct: "(B)"
+	},
+	// Q50
+	{
+	q: "A box contains \\(5\\) blue, \\(6\\) yellow and \\(4\\) red balls. The number of ways, of drawing \\(8\\) balls containing at least two balls of each colour, is:",
+	options: [
+	"(A). \\(4100\\)",
+	"(B). \\(4140\\)",
+	"(C). \\(4230\\)",
+	"(D). \\(4290\\)"
+	],
+	correct: "(A)"
 	}
  ]
 };
