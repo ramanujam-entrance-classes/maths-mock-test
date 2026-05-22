@@ -96,7 +96,7 @@ window.SET_DATA = {
 	},
 	// Q8
 	{
-	q: "For the function \\(f:[1,\\infty) \\to [1,\\infty)\\) defined by \\(f(x)=(x-1)^4+1\\), among the two statements: (I) The set \\(S=\\{x\\in[1,\\infty): f(x)=f^{-1}(x)\\}\\) contains exactly two elements, and (II) The set \\(S=\\{x\\in[1,\\infty): f(x)=f^{-1}(x+1)\\}\\) is an empty set,",
+	q: `For the function \\(f:[1,\\infty) \\to [1,\\infty)\\) defined by \\(f(x)=(x-1)^4+1\\), among the two statements: <br>(I) The set \\(S=\\{x\\in[1,\\infty): f(x)=f^{-1}(x)\\}\\) contains exactly two elements, and <br>(II) The set \\(S=\\{x\\in[1,\\infty): f(x)=f^{-1}(x+1)\\}\\) is an empty set,`,
 	options: [
 	"(A). only (I) is TRUE",
 	"(B). only (II) is TRUE",
@@ -184,7 +184,28 @@ window.SET_DATA = {
 	},
 	// Q16
 	{
-	q: "The mean deviation about the mean for the data\n\\(x_i\\): \\(5,7,9,10,12,15\\)\n\\(f_i\\): \\(8,6,2,2,2,6\\)\nis equal to:",
+	q: `The mean deviation about the mean for the data <br>
+	<table style="text-align:center;width:100%;border:1px solid black;border-collapse:collapse;">
+	<tr> 
+	<td style="text-align:center;border:1px solid black"> \\(X_i\\) </td>
+	<td style="text-align:center;border:1px solid black"> \\(5\\) </td>
+	<td style="text-align:center;border:1px solid black"> \\(7\\) </td>
+	<td style="text-align:center;border:1px solid black"> \\(9\\) </td>
+	<td style="text-align:center;border:1px solid black"> \\(10\\) </td>
+	<td style="text-align:center;border:1px solid black"> \\(12\\) </td>
+	<td style="text-align:center;border:1px solid black"> \\(15\\) </td>
+	</tr>
+	<tr>	
+	<td style="text-align:center;border:1px solid black"> \\(f_i\\) </td>
+	<td style="text-align:center;border:1px solid black"> \\(8\\) </td>
+	<td style="text-align:center;border:1px solid black"> \\(6\\) </td>
+	<td style="text-align:center;border:1px solid black"> \\(2\\) </td>
+	<td style="text-align:center;border:1px solid black"> \\(2\\) </td>
+	<td style="text-align:center;border:1px solid black"> \\(2\\) </td>
+	<td style="text-align:center;border:1px solid black"> \\(6\\) </td>
+	</tr>
+	</table>
+	is equal to:`,
 	options: [
 	"(A). \\(\\frac{40}{13}\\)",
 	"(B). \\(\\frac{42}{13}\\)",
@@ -239,16 +260,16 @@ window.SET_DATA = {
 	},
 	// Q21
 	{
-	q: `Consider the system of linear equations in \\(x, y, z\\):
+	q: `Consider the system of linear equations in \\(x, y, z\\):<br>
 	\\(
 	x + 2y + tz = 0,
-	\\) 
+	\\) <br>
 	\\(
 	6x + y + 5tz = 0,
-	\\) 
+	\\) <br>
 	\\(
 	3x + t^2 y + f(t)z = 0,
-	\\) 
+	\\) <br>
 	Where \\(f : R \\to R\\) is a differentiable function. If this system has infinitely many solutions for all \\(t \\in R\\), then \\(f\\)`,
 	options: [
 	"(A). is a constant function",
@@ -378,7 +399,7 @@ window.SET_DATA = {
 	},
 	// Q32
 	{
-	q: "If for \\(3 \\leq r \\leq 30\\), \\(\\binom{30}{30-r} + 3\\binom{30}{31-r} + 3\\binom{30}{32-r} + \\binom{30}{33-r}\\)\\( = \\binom{m}{r}\\), then \\(m\\) equals:",
+	q: "If for \\(3 \\leq r \\leq 30\\), \\(({}^{30}C_{30-r}) + 3({}^{30}C_{31-r}) + 3({}^{30}C_{32-r}) + ({}^{30}C_{33-r})\\)\\( = {}^{m}C_{r}\\), then \\(m\\) equals:",
 	options: [
 	"(A). \\(31\\)",
 	"(B). \\(32\\)",
@@ -499,7 +520,7 @@ window.SET_DATA = {
 	},
 	// Q43
 	{
-	q: "Let an ellipse \\(\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1\\), \\(a<b\\), pass through the point \\((4,3)\\) and have eccentricity \\(\\dfrac{\\sqrt{5}}{3}\\). Then the length of its latus rectum is:",
+	q: "Let an ellipse \\(\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1\\), \\( a \\lt b \\), pass through the point \\((4,3)\\) and have eccentricity \\(\\dfrac{\\sqrt{5}}{3}\\). Then the length of its latus rectum is:",
 	options: [
 	"(A). \\(\\dfrac{4\\sqrt{5}}{3}\\)",
 	"(B). \\(2\\sqrt{5}\\)",
@@ -586,7 +607,30 @@ window.SET_DATA = {
 	},
 	// Q50
 	{
-	q: "If the mean of the data is \\(21\\), then \\(k\\) is one of the roots of the equation :",
+	q: `If the mean of the data<br>
+		<span style='font-size:13px'>
+		<table style="text-align:center;width:100%;border:1px solid black;border-collapse:collapse;">
+		<tr>
+		<td style="text-align:center;border:1px solid black"> \\(Class\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(5-10\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(10-15\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(15-20\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(20-25\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(25-30\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(30-35\\) </td>
+		</tr>
+		<tr>
+		<td style="text-align:center;border:1px solid black"> \\(Freq.\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(2\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(k\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(28\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(54\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(k+1\\) </td>
+		<td style="text-align:center;border:1px solid black"> \\(5\\) </td>
+		</tr>
+		</table>
+		</span>
+		is \\(21\\), then \\(k\\) is one of the roots of the equation :`,
 	options: [
 	"(A). \\(2x^2 - 23x - 10 = 0\\)",
 	"(B). \\(4x^2 - 35x + 24 = 0\\)",
