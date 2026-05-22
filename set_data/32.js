@@ -80,7 +80,7 @@ window.SET_DATA = {
 	},
 	// Q8
 	{
-	q: "If \\((1 + \\tan 1^\\circ)(1 + \\tan 2^\\circ) \\cdots (1 + \\tan 45^\\circ) = 2^n\\), then the value of \\(n\\) is",
+	q: "If \\((1 + \\tan 1^\\circ)(1 + \\tan 2^\\circ) \\cdots\\)\\( (1 + \\tan 45^\\circ) = 2^n\\), then the value of \\(n\\) is",
 	options: [
 	"(A). \\(21\\)",
 	"(B). \\(22\\)",
@@ -234,7 +234,7 @@ window.SET_DATA = {
 	},
 	// Q22
 	{
-	q: "If \\(\\sin(\\tan^{-1}(x\\sqrt{2})) = \\cot(\\sin^{-1}(\\sqrt{1-x^2}))\\), \\(x \\in (0,1)\\), then the value of \\(x\\) is",
+	q: "If \\(\\sin(\\tan^{-1}(x\\sqrt{2})) =\\)\\( \\cot(\\sin^{-1}(\\sqrt{1-x^2}))\\), \\(x \\in (0,1)\\), then the value of \\(x\\) is",
 	options: [
 	"(A). \\(\\frac{1}{2}\\)",
 	"(B). \\(\\frac{1}{3}\\)",
@@ -245,7 +245,7 @@ window.SET_DATA = {
 	},
 	// Q23
 	{
-	q: "The sum \\(1 + \\frac{1}{2}(1^2 + 2^2) + \\frac{1}{3}(1^2 + 2^2 + 3^2) + \\ldots\\) upto \\(10\\) terms is equal to :",
+	q: "The sum \\(1 + \\frac{1}{2}(1^2 + 2^2) + \\frac{1}{3}(1^2 + 2^2 + 3^2) +\\)\\( \\ldots\\) upto \\(10\\) terms is equal to :",
 	options: [
 	"(A). \\(130\\)",
 	"(B). \\(155\\)",
@@ -330,7 +330,7 @@ window.SET_DATA = {
 	},
 	// Q30
 	{
-	q: "If \\(y = \\tan^{-1}\\left(\\frac{3\\cos x - 4\\sin x}{4\\cos x + 3\\sin x}\\right) + 2\\tan^{-1}\\left(\\frac{x}{1+\\sqrt{1-x^2}}\\right)\\), then \\(\\frac{dy}{dx}\\) at \\(x = \\frac{\\sqrt{3}}{2}\\) is equal to:",
+	q: "If \\(y = \\tan^{-1}\\left(\\frac{3\\cos x - 4\\sin x}{4\\cos x + 3\\sin x}\\right) +\\)\\( 2\\tan^{-1}\\left(\\frac{x}{1+\\sqrt{1-x^2}}\\right)\\), then \\(\\frac{dy}{dx}\\) at \\(x = \\frac{\\sqrt{3}}{2}\\) is equal to:",
 	options: [
 	"(A). \\(3\\)",
 	"(B). \\(-1\\)",
@@ -407,7 +407,7 @@ window.SET_DATA = {
 	},
 	// Q37
 	{
-	q: "Let \\(S=\\{\\theta\\in(-2\\pi,2\\pi):\\cos\\theta+1=\\sqrt{3}\\sin\\theta\\}\\). Then \\(\\sum_{\\theta\\in S}\\theta\\) is equal to:",
+	q: "Let \\(S=\\)\\(\\{\\theta\\in(-2\\pi,2\\pi):\\cos\\theta+1=\\sqrt{3}\\sin\\theta\\}\\). Then \\(\\sum_{\\theta\\in S}\\theta\\) is equal to:",
 	options: [
 	"(A). \\(-\\frac{2\\pi}{3}\\)",
 	"(B). \\(-\\frac{4\\pi}{3}\\)",
@@ -473,7 +473,7 @@ window.SET_DATA = {
 	},
 	// Q43
 	{
-	q: "Let one root of the quadratic equation in \\(x\\): \\((k^2 - 15k + 27)x^2 + 9(k - 1)x + 18 = 0\\) be twice the other. Then the length of the latus rectum of the parabola \\(y^2 = 6kx\\) is equal to:",
+	q: "Let one root of the quadratic equation in \\(x\\): \\((k^2 - 15k + 27)x^2 + 9(k - 1)x + 18 \\)\\(= 0\\) be twice the other. Then the length of the latus rectum of the parabola \\(y^2 = 6kx\\) is equal to:",
 	options: [
 	"(A). \\(4\\)",
 	"(B). \\(6\\)",
