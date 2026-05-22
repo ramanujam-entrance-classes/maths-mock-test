@@ -15,6 +15,7 @@ window.SET_DATA = {
 	// Q2
 	{
 	q: `If \\(f : \\mathbb{N} \\to \\mathbb{Z}\\) is defined by
+	<span style='font-size:13px'>
 	$$
 	f(n)=
 	\\begin{vmatrix}
@@ -23,11 +24,12 @@ window.SET_DATA = {
 	-3n^3 & 3k(2k+1) & 3k(k+2)+1
 	\\end{vmatrix},
 	\\quad k \\in \\mathbb{N},
-	$$
+	$$ </span>
 	and
+	<span style='font-size:13px'>
 	$$
 	\\sum_{n=1}^{k} f(n)=98,
-	$$
+	$$ </span>
 	then \\(k\\) is equal to:`,
 	options: [
 	"(A). \\(3\\)",
@@ -83,7 +85,7 @@ window.SET_DATA = {
 	},
 	// Q7
 	{
-	q: "Let \\(A = \\{(a,b,c): a,b,c\\text{ are non-negative integers and } a+b+2c=22\\}\\). The \\(n(A)\\) is equal to:",
+	q: "Let \\(A = \\){\\((a,b,c): a,b,c\\) are non-negative integers and \\(a+b+2c=22\\)}. The \\(n(A)\\) is equal to:",
 	options: [
 	"(A). \\(121\\)",
 	"(B). \\(124\\)",
@@ -138,7 +140,7 @@ window.SET_DATA = {
 	},
 	// Q12
 	{
-	q: "Let \\(\\alpha, \\alpha + 2, \\alpha \\in \\mathbb{Z}\\), be the roots of the quadratic equation \\(x(x + 2) + (x + 1)(x + 3) + (x + 2)(x + 4) + \\ldots + (x + n - 1)(x + n + 1) = 4n\\) for some \\(n \\in \\mathbb{N}\\). Then \\((n + \\alpha)\\) is equal to:",
+	q: "Let \\(\\alpha, \\alpha + 2, \\alpha \\in \\mathbb{Z}\\), be the roots of the quadratic equation \\(x(x + 2) + (x + 1)(x + 3) + (x + 2)\\)\\((x + 4) + \\ldots + (x + n - 1)(x + n + 1)\\)\\( = 4n\\) for some \\(n \\in \\mathbb{N}\\). Then \\((n + \\alpha)\\) is equal to:",
 	options: [
 	"(A). \\(0\\)",
 	"(B). \\(1\\)",
@@ -280,7 +282,7 @@ window.SET_DATA = {
 	},
 	// Q24
 	{
-	q: "Let \\(P = \\{\\theta \\in [0, 4\\pi] : \\tan^2\\theta \\ne 1\\}\\) and \\(S = \\{a \\in \\mathbb{Z} : 2(\\cos^8\\theta - \\sin^8\\theta)\\sec 2\\theta = a^2,\\ \\theta \\in P\\}\\). Then \\(n(S)\\) is :",
+	q: "Let \\(P = \\{\\theta \\in [0, 4\\pi] : \\tan^2\\theta \\ne 1\\}\\) and \\(S = \\){\\(a \\in \\mathbb{Z} : 2(\\cos^8\\theta - \\sin^8\\theta)\\sec 2\\theta\\)\\( = a^2,\\ \\theta \\in P\\)}. Then \\(n(S)\\) is :",
 	options: [
 	"(A). \\(0\\)",
 	"(B). \\(1\\)",
@@ -376,7 +378,7 @@ window.SET_DATA = {
 	},
 	// Q32
 	{
-	q: "If for \\(3 \\leq r \\leq 30\\), \\(\\binom{30}{30-r} + 3\\binom{30}{31-r} + 3\\binom{30}{32-r} + \\binom{30}{33-r} = \\binom{m}{r}\\), then \\(m\\) equals:",
+	q: "If for \\(3 \\leq r \\leq 30\\), \\(\\binom{30}{30-r} + 3\\binom{30}{31-r} + 3\\binom{30}{32-r} + \\binom{30}{33-r}\\)\\( = \\binom{m}{r}\\), then \\(m\\) equals:",
 	options: [
 	"(A). \\(31\\)",
 	"(B). \\(32\\)",
@@ -519,7 +521,7 @@ window.SET_DATA = {
 	},
 	// Q45
 	{
-	q: "Let \\(S=\\{x\\in[-\\pi,\\pi]:\\sin x(\\sin x+\\cos x)=a,\\ a\\in\\mathbb{Z}\\}\\). Then \\(n(S)\\) is equal to:",
+	q: "Let \\(S=\\){\\(x\\in[-\\pi,\\pi]:\\sin x(\\sin x+\\cos x)\\)\\(=a,\\ a\\in\\mathbb{Z}\\)}. Then \\(n(S)\\) is equal to:",
 	options: [
 	"(A). \\(3\\)",
 	"(B). \\(6\\)",
@@ -573,7 +575,7 @@ window.SET_DATA = {
 	},
 	// Q49
 	{
-	q: "The number of elements in the set \\(S = \\{(r, k) : k \\in \\mathbb{Z} \\text{ and } {}^{36}C_{r+1} = \\frac{6({}^{35}C_r)}{(k^2 - 3)}\\}\\), is",
+	q: "The number of elements in the set \\(S = \\){\\((r, k) : k \\in \\mathbb{Z} \\text{ and } {}^{36}C_{r+1} =\\)\\( \\frac{6({}^{35}C_r)}{(k^2 - 3)}\\)}, is",
 	options: [
 	"(A). \\(2\\)",
 	"(B). \\(4\\)",
