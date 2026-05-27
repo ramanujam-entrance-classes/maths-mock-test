@@ -54,7 +54,7 @@ window.SET_DATA = {
 	"(C). the cache hit ratio is degraded if two or more blocks used alternatively map onto the same block frame in the cache.",
 	"(D). the number of blocks required for the cache increases linearly with the size of the main memory."
 	],
-	correct: "(D)"
+	correct: "(C)"
 	},
 	// Q6
 	{
