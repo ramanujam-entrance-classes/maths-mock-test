@@ -364,8 +364,8 @@ function loadLeaderboard() {
                 const topic = params.get("topic");
                 const setNo = params.get("set");
                 const testId = `${category}:${topic || "na"}:${setNo}`;
-                const testNameMatch = (r[2] || "").toString().trim() === testId;
-                const todayMatch = isToday(r[4]);
+                const testNameMatch = (r[3] || "").toString().trim() === testId;
+                const todayMatch = isToday(r[5]);
                 return testNameMatch && todayMatch;
             });
             renderLeaderboard();
@@ -373,7 +373,7 @@ function loadLeaderboard() {
 }
 
 function renderLeaderboard() {
-  const TOTAL_MARKS = 600;
+  //const TOTAL_MARKS = 600;
   const sorted = [...leaderboardData].sort((a, b) =>
     Number(b[1] || 0) - Number(a[1] || 0)
   );
@@ -401,8 +401,8 @@ function renderLeaderboard() {
     </div>
 
     <div class="col score-block">
-      <div class="score">${row[1]}/${TOTAL_MARKS}</div>
-      <div class="timestamp"> ⏱️ ${formatTimeShort(row[3])} <br> ${formatDate(row[4])}</div>
+      <div class="score">${row[1]}/${row[2]}</div>
+      <div class="timestamp"> ⏱️ ${formatTimeShort(row[4])} <br> ${formatDate(row[5])}</div>
     </div>
 
   </div>
