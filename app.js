@@ -750,6 +750,7 @@ function submitQuiz() {
         sendToLeaderboard(
           	studentName,
           	scoredMarks,
+            totalMarks,
           	testId,
           	`T-${timeTakenMinutes}:${timeTakenSecs.toString().padStart(2,'0')}`
         	);
@@ -759,13 +760,14 @@ function submitQuiz() {
     }, 100);
 }
 
-function sendToLeaderboard(name, score, testName, timeTaken) {
+function sendToLeaderboard(name, score, total, testName, timeTaken) {
 
   const url = "https://script.google.com/macros/s/AKfycbybHrxfFGve-yIBXsIwZkoiEUZ1UdhMOwhwRusd7UGjBuGrnTNuiBhQr2QasPyHY1Hz/exec";
 
   const payload = {
     name: name,
     score: score,
+    total: total,
     test: testName,
     time: timeTaken
   };
