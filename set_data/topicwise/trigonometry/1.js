@@ -1,9 +1,9 @@
 window.SET_DATA = {
-  title: "Trigonometry Ratios and Identity Test 1",
+  title: "Trigonometry Ratios and Identity Mock Test 1",
   questions: [
 	// Q1
 	{
-	q: "\\(\\cos\\left(\\frac{\\pi}{4}-x\\right)\\cos\\left(\\frac{\\pi}{4}-y\\right)-\\sin\\left(\\frac{\\pi}{4}-x\\right)\\sin\\left(\\frac{\\pi}{4}-y\\right)\\) is equal to",
+	q: "\\(\\cos\\left(\\frac{\\pi}{4}-x\\right)\\cos\\left(\\frac{\\pi}{4}-y\\right)-\\sin\\left(\\frac{\\pi}{4}-x\\right)\\)\\(\\sin\\left(\\frac{\\pi}{4}-y\\right)\\) is equal to",
 	options: [
 	"(A). \\(\\sin(x-y)\\)",
 	"(B). \\(\\sin(x+y)\\)",
@@ -36,7 +36,7 @@ window.SET_DATA = {
 	},
 	// Q4
 	{
-	q: "If \\(\\dfrac{x}{\\cos\\theta}=\\dfrac{y}{\\cos\\left(\\theta-\\dfrac{2\\pi}{3}\\right)}=\\dfrac{z}{\\cos\\left(\\theta+\\dfrac{2\\pi}{3}\\right)}\\), then \\(x+y+z\\) is equal to",
+	q: "If \\(\\dfrac{x}{\\cos\\theta}=\\dfrac{y}{\\cos\\left(\\theta-\\dfrac{2\\pi}{3}\\right)}=\\)\\(\\dfrac{z}{\\cos\\left(\\theta+\\dfrac{2\\pi}{3}\\right)}\\), then \\(x+y+z\\) is equal to",
 	options: [
 	"(A). \\(1\\)",
 	"(B). \\(0\\)",
@@ -93,9 +93,9 @@ window.SET_DATA = {
 	{
 	q: "If \\(\\alpha+\\beta+\\gamma=2\\pi\\), then",
 	options: [
-	"(A). \\(\\tan\\dfrac{\\alpha}{2}+\\tan\\dfrac{\\beta}{2}+\\tan\\dfrac{\\gamma}{2}=\\tan\\dfrac{\\alpha}{2}\\tan\\dfrac{\\beta}{2}\\tan\\dfrac{\\gamma}{2}\\)",
-	"(B). \\(\\tan\\dfrac{\\alpha}{2}\\tan\\dfrac{\\beta}{2}+\\tan\\dfrac{\\beta}{2}\\tan\\dfrac{\\gamma}{2}+\\tan\\dfrac{\\gamma}{2}\\tan\\dfrac{\\alpha}{2}=1\\)",
-	"(C). \\(\\tan\\dfrac{\\alpha}{2}+\\tan\\dfrac{\\beta}{2}+\\tan\\dfrac{\\gamma}{2}=-\\tan\\dfrac{\\alpha}{2}\\tan\\dfrac{\\beta}{2}\\tan\\dfrac{\\gamma}{2}\\)",
+	"(A). \\(\\tan\\dfrac{\\alpha}{2}+\\tan\\dfrac{\\beta}{2}+\\tan\\dfrac{\\gamma}{2}=\\)\\(\\tan\\dfrac{\\alpha}{2}\\tan\\dfrac{\\beta}{2}\\tan\\dfrac{\\gamma}{2}\\)",
+	"(B). \\(\\tan\\dfrac{\\alpha}{2}\\tan\\dfrac{\\beta}{2}+\\tan\\dfrac{\\beta}{2}\\tan\\dfrac{\\gamma}{2}+\\)\\(\\tan\\dfrac{\\gamma}{2}\\tan\\dfrac{\\alpha}{2}=1\\)",
+	"(C). \\(\\tan\\dfrac{\\alpha}{2}+\\tan\\dfrac{\\beta}{2}+\\tan\\dfrac{\\gamma}{2}=\\)\\(-\\tan\\dfrac{\\alpha}{2}\\tan\\dfrac{\\beta}{2}\\tan\\dfrac{\\gamma}{2}\\)",
 	"(D). None of these"
 	],
 	correct: "(A)"
@@ -146,7 +146,7 @@ window.SET_DATA = {
   },
   // Q14
   {
-	q: "A quadratic equation whose roots are \\(\\csc^2 \\theta\\) and \\(\\sec^2 \\theta\\), can be",
+	q: "A quadratic equation whose roots are \\(cosec^2 \\theta\\) and \\(\\sec^2 \\theta\\), can be",
 	options: [
 	  "(A). \\(x^2 - 2x + 2 = 0\\)",
 	  "(B). \\(x^2 - 3x + 3 = 0\\)",
@@ -157,14 +157,14 @@ window.SET_DATA = {
   },
   // Q15
   {
-	q: "x^2 \\cos^2 \\frac{3\\pi}{5} + \\cos^2 \\frac{4\\pi}{5}\\) is equal to",
+	q: "\\(x^2 \\cos^2 \\frac{3\\pi}{5} + \\cos^2 \\frac{4\\pi}{5}\\) is equal to",
 	options: [
 	  "(A). \\(\\frac{4}{5}\\)",
 	  "(B). \\(\\frac{5}{2}\\)",
 	  "(C). \\(\\frac{5}{4}\\)",
 	  "(D). \\(\\frac{3}{4}\\)"
 	],
-	correct: "(C)"
+	correct: "(D)"
   },
   // Q16
   {
@@ -173,7 +173,7 @@ window.SET_DATA = {
 	  "(A). \\(-1\\)",
 	  "(B). \\(1\\)",
 	  "(C). \\(\\frac{1}{2}\\)",
-	  "(D). \\(-\\frac{3}{2}\\)"
+	  "(D). \\(\\frac{3}{2}\\)"
 	],
 	correct: "(A)"
   },
@@ -206,13 +206,13 @@ window.SET_DATA = {
 	  "(A). \\(\\left(0, \\frac{\\pi}{4}\\right) \\cup \\left(\\frac{3\\pi}{4}, \\pi\\right)\\)",
 	  "(B). \\(\\left[\\frac{\\pi}{2}, \\frac{3\\pi}{4}\\right]\\)",
 	  "(C). \\(\\left(\\frac{\\pi}{4}, \\frac{\\pi}{2}\\right)\\)",
-	  "(D). \\(\\left(\\pi, \\frac{5\\pi}{4}\\right)\\)"
+	  "(D). \\(\\left(\\pi, \\frac{5\\pi}{4}\\right]\\)"
 	],
 	correct: "(A)"
   },
   // Q20
   {
-	q: "The numerical value of \\(\\sqrt{3} \\csc 20^\\circ - \\sec 20^\\circ\\) is",
+	q: "The numerical value of \\(\\sqrt{3} cosec 20^\\circ - \\sec 20^\\circ\\) is",
 	options: [
 	  "(A). \\(2\\)",
 	  "(B). \\(4\\)",
@@ -237,7 +237,7 @@ window.SET_DATA = {
 	q: "The value of \\(\\cos \\frac{\\pi}{7} \\cos \\frac{4\\pi}{7} \\cos \\frac{5\\pi}{7}\\) is",
 	options: [
 	  "(A). \\(\\frac{1}{2}\\)",
-	  "(B). \\(-\\frac{1}{4}\\)",
+	  "(B). \\(\\frac{1}{4}\\)",
 	  "(C). \\(-\\frac{1}{8}\\)",
 	  "(D). \\(\\frac{1}{8}\\)"
 	],
