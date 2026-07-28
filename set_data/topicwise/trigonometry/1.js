@@ -1,5 +1,5 @@
 window.SET_DATA = {
-  title: "Computer Mock Test 10",
+  title: "Trigonometry Ratios and Identity Test 1",
   questions: [
 	// Q1
 	{
