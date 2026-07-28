@@ -567,17 +567,17 @@ body {
 			    <select id="category-dropdown">
 			        <option value="">Select Category</option>
 			
-			        <option value="maths">
+			        <!--<option value="maths">
 			            Mathematics
 			        </option>
 			
 			        <option value="computer">
 			            Computer
-			        </option>
-			
-			        <!--<option value="topicwise">
-			            Mathematics Topic
 			        </option>-->
+			
+			        <option value="topicwise">
+			            Mathematics Topic
+			        </option>
 			    </select>
 			</div>
 			<div class="custom-select hidden"
@@ -660,12 +660,11 @@ body {
         durationMinutes: 70,
 
         availableSets: [
-             1,2,3,4,5,6,7,8,9,10,11,12,13,
-   			 14,15,16,17,18,19,20,21,22,23,
-			 24,25,26,27,28,29,30,31,32
         ],
 
-        notAllowed: []
+        notAllowed: [ 1,2,3,4,5,6,7,8,9,10,11,12,13,
+   			 14,15,16,17,18,19,20,21,22,23,
+			 24,25,26,27,28,29,30,31,32]
     },
 
     computer: {
@@ -681,10 +680,9 @@ body {
         durationMinutes: 20,
 
         availableSets: [
-            1,2,3,4,5,6,7,8,9,10
         ],
 
-        notAllowed: []
+        notAllowed: [1,2,3,4,5,6,7,8,9,10]
     },
     
 	topicwise: {
@@ -700,13 +698,14 @@ body {
         durationMinutes: 70,
         topics: {
 
-            algebra: {
+            trigonometry: {
 
-                title: "Algebra",
+                title: "Trigonometry Ratios and Identity",
 
-                availableSets: [1,2,3],
+                availableSets: [1],
 				notAllowed: []
-            },
+            }
+			/*,
 
             calculus: {
 
@@ -722,7 +721,7 @@ body {
 
                 availableSets: [1,2],
 				notAllowed: []
-            }
+            }*/
         }
     }
 };
