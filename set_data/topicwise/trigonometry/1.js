@@ -278,7 +278,7 @@ window.SET_DATA = {
   },
   // Q26
   {
-	q: "\\(\\log (\\sin 1^\\circ) \\log (\\sin 2^\\circ) \\log (\\sin 3^\\circ) \\dots \\log (\\sin 179^\\circ)\\) is equal to",
+	q: "\\(\\log (\\sin 1^\\circ) \\log (\\sin 2^\\circ) \\log (\\sin 3^\\circ) \\dots \\)\\( \\log (\\sin 179^\\circ)\\) is equal to",
 	options: [
 	  "(A). \\(1\\)",
 	  "(B). \\(0\\)",
@@ -388,7 +388,7 @@ window.SET_DATA = {
   },
   // Q36
   {
-    q: "In \\(\\Delta ABC\\), the value of the expression \\(\\cosec A(\\sin B \\cos C + \\cos B \\sin C)\\) is",
+    q: "In \\(\\Delta ABC\\), the value of the expression \\(cosec A(\\sin B \\cos C + \\cos B \\sin C)\\) is",
     options: [
       "(A). \\(1\\)",
       "(B). \\(\\frac{c}{a}\\)",
@@ -410,7 +410,7 @@ window.SET_DATA = {
   },
   // Q38
   {
-    q: "\\(f(\\theta) = \\sin^2 \\theta + \\sin^2\\left(\\theta + \\frac{2\\pi}{3}\\right) + \\sin^2\\left(\\theta + \\frac{4\\pi}{3}\\right)\\), then \\(f\\left(\\frac{\\pi}{15}\\right)\\) is equal to",
+    q: "\\(f(\\theta) = \\sin^2 \\theta + \\sin^2\\left(\\theta + \\frac{2\\pi}{3}\\right) +\\)\\( \\sin^2\\left(\\theta + \\frac{4\\pi}{3}\\right)\\), then \\(f\\left(\\frac{\\pi}{15}\\right)\\) is equal to",
     options: [
       "(A). \\(\\frac{2}{3}\\)",
       "(B). \\(\\frac{3}{2}\\)",
