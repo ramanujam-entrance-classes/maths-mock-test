@@ -157,7 +157,7 @@ window.SET_DATA = {
   },
   // Q15
   {
-	q: "\\(x^2 \\cos^2 \\frac{3\\pi}{5} + \\cos^2 \\frac{4\\pi}{5}\\) is equal to",
+	q: "\\(\\cos^2 \\frac{3\\pi}{5} + \\cos^2 \\frac{4\\pi}{5}\\) is equal to",
 	options: [
 	  "(A). \\(\\frac{4}{5}\\)",
 	  "(B). \\(\\frac{5}{2}\\)",
@@ -245,7 +245,7 @@ window.SET_DATA = {
   },
   // Q23
   {
-	q: "The value of \\(6(\\sin^6 \\theta + \\cos^6 \\theta) - 9(\\sin^4 \\theta + \\cos^4 \\theta) + 4\\) is",
+	q: "The value of \\(6(\\sin^6 \\theta + \\cos^6 \\theta) - 9(\\sin^4 \\theta + \\cos^4 \\theta)\\)\\( + 4\\) is",
 	options: [
 	  "(A). \\(-3\\)",
 	  "(B). \\(0\\)",
@@ -278,7 +278,7 @@ window.SET_DATA = {
   },
   // Q26
   {
-	q: "x^2 \\log (\\sin 1^\\circ) \\log (\\sin 2^\\circ) \\log (\\sin 3^\\circ) \\dots \\log (\\sin 179^\\circ)\\) is equal to",
+	q: "\\(\\log (\\sin 1^\\circ) \\log (\\sin 2^\\circ) \\log (\\sin 3^\\circ) \\dots \\log (\\sin 179^\\circ)\\) is equal to",
 	options: [
 	  "(A). \\(1\\)",
 	  "(B). \\(0\\)",
@@ -289,7 +289,7 @@ window.SET_DATA = {
   },
   // Q27
   {
-	q: "The value of \\(3\\left[\\sin^4\\left(\\frac{3\\pi}{2} - \\alpha\\right) + \\sin^4(3\\pi + \\alpha)\\right] - 2\\left[\\sin^6\\left(\\frac{\\pi}{2} + \\alpha\\right) + \\sin^6(5\\pi - \\alpha)\\right]\\) is",
+	q: "The value of \\(3\\left[\\sin^4\\left(\\frac{3\\pi}{2} - \\alpha\\right) + \\sin^4(3\\pi + \\alpha)\\right]\\)\\( - 2\\left[\\sin^6\\left(\\frac{\\pi}{2} + \\alpha\\right) + \\sin^6(5\\pi - \\alpha)\\right]\\) is",
 	options: [
 	  "(A). \\(0\\)",
 	  "(B). \\(1\\)",
@@ -355,7 +355,7 @@ window.SET_DATA = {
   },
   // Q33
   {
-    q: "The value of \\(\\cos y \\cos\\left(\\frac{\\pi}{2} - x\\right) - \\cos\\left(\\frac{\\pi}{2} - y\\right) \\cos x + \\sin y \\cos\\left(\\frac{\\pi}{2} - x\\right) + \\cos x \\sin\\left(\\frac{\\pi}{2} - y\\right)\\) is zero, if",
+    q: "The value of \\(\\cos y \\cos\\left(\\frac{\\pi}{2} - x\\right) - \\cos\\left(\\frac{\\pi}{2} - y\\right) \\cos x\\)\\( + \\sin y \\cos\\left(\\frac{\\pi}{2} - x\\right) + \\cos x \\sin\\left(\\frac{\\pi}{2} - y\\right)\\) is zero, if",
     options: [
       "(A). \\(x = 0\\)",
       "(B). \\(y = 0\\)",
@@ -388,7 +388,7 @@ window.SET_DATA = {
   },
   // Q36
   {
-    q: "In \\(\\Delta ABC\\), the value of the expression \\(\\csc A(\\sin B \\cos C + \\cos B \\sin C)\\) is",
+    q: "In \\(\\Delta ABC\\), the value of the expression \\(\\cosec A(\\sin B \\cos C + \\cos B \\sin C)\\) is",
     options: [
       "(A). \\(1\\)",
       "(B). \\(\\frac{c}{a}\\)",
@@ -410,7 +410,7 @@ window.SET_DATA = {
   },
   // Q38
   {
-    q: "f(\\theta) = \\sin^2 \\theta + \\sin^2\\left(\\theta + \\frac{2\\pi}{3}\\right) + \\sin^2\\left(\\theta + \\frac{4\\pi}{3}\\right)\\), then \\(f\\left(\\frac{\\pi}{15}\\right)\\) is equal to",
+    q: "\\(f(\\theta) = \\sin^2 \\theta + \\sin^2\\left(\\theta + \\frac{2\\pi}{3}\\right) + \\sin^2\\left(\\theta + \\frac{4\\pi}{3}\\right)\\), then \\(f\\left(\\frac{\\pi}{15}\\right)\\) is equal to",
     options: [
       "(A). \\(\\frac{2}{3}\\)",
       "(B). \\(\\frac{3}{2}\\)",
