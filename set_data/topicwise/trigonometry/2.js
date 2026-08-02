@@ -311,7 +311,7 @@ window.SET_DATA = {
   },
   // Q29
   {
-    q: "The expression \\(3 \\left\\{ \\sin^4 \\left(\\frac{3\\pi}{2} -\\)\\( \\alpha\\right) + \\sin^4 (3\\pi - \\alpha) \\right\\} - 2 \\left\\{ \\sin^6 \\left(\\frac{\\pi}{2} + \\alpha\\right) + \\sin^6 (5\\pi - \\alpha) \\right\\}\\) is equal to",
+    q: "The expression \\(3 \\left\\{ \\sin^4 \\left(\\frac{3\\pi}{2} - \\alpha\\right) + \\sin^4 (3\\pi - \\alpha) \\right\\} -\\)\\( 2 \\left\\{ \\sin^6 \\left(\\frac{\\pi}{2} + \\alpha\\right) + \\sin^6 (5\\pi - \\alpha) \\right\\}\\) is equal to",
     options: [
       "(A). \\(0\\)",
       "(B). \\(1\\)",
