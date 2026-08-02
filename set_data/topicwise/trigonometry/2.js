@@ -25,7 +25,7 @@ window.SET_DATA = {
   },
   // Q3
   {
-    q: "If \\(\\tan\\theta\\tan\\left(\\frac{\\pi}{3}+\\theta\\right)\\tan\\left(-\\frac{\\pi}{3}+\\theta\\right)=k\\tan3\\theta\\), then the value of \\(k\\) is",
+    q: "If \\(\\tan\\theta\\tan\\left(\\frac{\\pi}{3}+\\theta\\right)\\tan\\left(-\\frac{\\pi}{3}+\\theta\\right)=\\)\\(k\\tan3\\theta\\), then the value of \\(k\\) is",
     options: [
       "(A). \\(1\\)",
       "(B). \\(\\frac{1}{3}\\)",
@@ -62,7 +62,7 @@ window.SET_DATA = {
     options: [
       "(A). \\(6\\le n\\le8\\)",
       "(B). \\(4\\le n\\le8\\)",
-      "(C). \\(4<n\\le8\\)",
+      "(C). \\(4\\)<\\(n\\le8\\)",
       "(D). \\(4\\le n<8\\)"
     ],
     correct: "(B)"
@@ -157,7 +157,7 @@ window.SET_DATA = {
   },
   // Q15
   {
-    q: "If \\(1 + \\cos 56^\\circ + \\cos 58^\\circ - \\cos 66^\\circ = \\lambda \\cos 28^\\circ \\cos 29^\\circ \\sin 33^\\circ\\), then \\(\\lambda =\\)",
+    q: "If \\(1 + \\cos 56^\\circ + \\cos 58^\\circ - \\cos 66^\\circ =\\)\\( \\lambda \\cos 28^\\circ \\cos 29^\\circ \\sin 33^\\circ\\), then \\(\\lambda =\\)",
     options: [
       "(A). \\(2\\)",
       "(B). \\(3\\)",
@@ -170,16 +170,16 @@ window.SET_DATA = {
   {
     q: "If \\(\\alpha\\) and \\(\\beta\\) are acute angles \\(\\cos 2\\alpha = \\frac{3 \\cos 2\\beta - 1}{3 - \\cos 2\\beta}\\), then \\(\\tan \\alpha \\cot \\beta =\\)",
     options: [
-      "(A). \\(\\sqrt{2}\\)",
-      "(B). \\(1/\\sqrt{2}\\)",
-      "(C). \\(\\sqrt{3}\\)",
-      "(D). \\(1/\\sqrt{3}\\)"
+      "(A). \\(\\sqrt{3}\\)",
+      "(B). \\(\\sqrt{2}\\)",
+      "(C). \\(1\\)",
+      "(D). none of these"
     ],
-    correct: "(A)"
+    correct: "(B)"
   },
   // Q17
   {
-    q: "If \\(\\csc \\theta = \\frac{p + q}{p - q}\\), then \\(\\cot (\\pi/4 + \\theta/2) =\\)",
+    q: "If \\(cosec \\theta = \\frac{p + q}{p - q}\\), then \\(\\cot (\\pi/4 + \\theta/2) =\\)",
     options: [
       "(A). \\(\\sqrt{\\frac{p}{q}}\\)",
       "(B). \\(\\sqrt{\\frac{q}{p}}\\)",
@@ -311,7 +311,7 @@ window.SET_DATA = {
   },
   // Q29
   {
-    q: "The expression \\(3 \\left\\{ \\sin^4 \\left(\\frac{3\\pi}{2} - \\alpha\\right) + \\sin^4 (3\\pi - \\alpha) \\right\\} - 2 \\left\\{ \\sin^6 \\left(\\frac{\\pi}{2} + \\alpha\\right) + \\sin^6 (5\\pi - \\alpha) \\right\\}\\) is equal to",
+    q: "The expression \\(3 \\left\\{ \\sin^4 \\left(\\frac{3\\pi}{2} -\\)\\( \\alpha\\right) + \\sin^4 (3\\pi - \\alpha) \\right\\} - 2 \\left\\{ \\sin^6 \\left(\\frac{\\pi}{2} + \\alpha\\right) + \\sin^6 (5\\pi - \\alpha) \\right\\}\\) is equal to",
     options: [
       "(A). \\(0\\)",
       "(B). \\(1\\)",
@@ -344,7 +344,7 @@ window.SET_DATA = {
   },
   // Q32
   {
-    q: "If \\(\\cos (\\alpha + \\beta) \\sin (\\gamma + \\delta) = \\cos (\\alpha - \\beta) \\sin (\\gamma - \\delta)\\), then the value of \\(\\text{cot } \\alpha \\text{ cot } \\beta \\text{ cot } \\gamma\\) is",
+    q: "If \\(\\cos (\\alpha + \\beta) \\sin (\\gamma + \\delta) =\\)\\( \\cos (\\alpha - \\beta) \\sin (\\gamma - \\delta)\\), then the value of \\(\\text{cot } \\alpha \\text{ cot } \\beta \\text{ cot } \\gamma\\) is",
     options: [
       "(A). \\(\\text{cot } \\alpha\\)",
       "(B). \\(\\text{cot } \\beta\\)",
@@ -421,7 +421,7 @@ window.SET_DATA = {
   },
   // Q39
   {
-    q: "If \\(3 \\text{ tan } (\\theta - 15^\\circ) = \\text{tan } (\\theta + 15^\\circ), 0 < \\theta < \\pi\\), then \\(\\theta =\\)",
+    q: "If \\(3 \\text{ tan } (\\theta - 15^\\circ) = \\text{tan } (\\theta + 15^\\circ),\\)\\( 0 < \\theta < \\pi\\), then \\(\\theta =\\)",
     options: [
       "(A). \\(\\frac{\\pi}{2}\\)",
       "(B). \\(\\frac{\\pi}{4}\\)",
@@ -443,7 +443,7 @@ window.SET_DATA = {
   },
   // Q41
   {
-    q: "If \\(a = \\text{tan } 27^\\circ - \\text{tan } \\theta\\) and \\(b = \\frac{\\sin \\theta}{\\cos 3\\theta} + \\frac{\\sin 3\\theta}{\\cos 9\\theta} + \\frac{\\sin 9\\theta}{\\cos 27\\theta}\\), then",
+    q: "If \\(a = \\text{tan } 27^\\circ \\theta - \\text{tan } \\theta\\) and \\(b = \\frac{\\sin \\theta}{\\cos 3\\theta} + \\frac{\\sin 3\\theta}{\\cos 9\\theta} + \\frac{\\sin 9\\theta}{\\cos 27\\theta}\\), then",
     options: [
       "(A). \\(a = b\\)",
       "(B). \\(a = 2b\\)",
