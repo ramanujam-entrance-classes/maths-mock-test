@@ -1056,7 +1056,7 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
             const setCount = sets.length;
             const baseSet = Math.floor(questionsForTopic / setCount);
             const remSet = questionsForTopic % setCount;
-            const mixedSeed7 = (numericSeed * 9301 + set * 49297) % 233280;
+            const mixedSeed7 = (numericSeed * 9301 + topicIndex * 49297) % 233280;
             
             const shuffledSets = shuffleWithSeed([...sets], mixedSeed7 + topicIndex);
             shuffledSets.forEach((setObj, setIndex) => {
