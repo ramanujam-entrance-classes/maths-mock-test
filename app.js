@@ -1085,9 +1085,14 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
         title: `🎯 Mathematics Mock Test 🎯<br>(${seedStr})`,
         questions: finalQuestions
     });*/
-              
+    
+    let testTitle = configure.title;
+    // If a topic is selected, use its title instead
+    if (configure.topics && getTopic()) {
+        testTitle = `${configure.topics[getTopic()].title} Mock Test`;
+    }          
     initApp({
-        title: `🎯 ${configure.title} 🎯<br>(${seedStr})`,
+        title: `🎯 ${testTitle} 🎯<br>(${seedStr})`,
         questions: finalQuestions
     });
 }
