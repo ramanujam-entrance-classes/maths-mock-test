@@ -797,8 +797,8 @@ const dropdown =
     // ======================
 	
     //if (category === "topicwise") {
-	const isTopicwise = TEST_CATEGORIES[category].topics;
-	if(isTopicwise){
+	const isTopicwise = TEST_CATEGORIES[category];
+	if(isTopicwise.topics){
         if (!topic) return;
 
         /*sets =
@@ -855,8 +855,8 @@ const dropdown =
         // ======================
 
         //if (category === "topicwise") {
-		const isTopicwise = TEST_CATEGORIES[category].topics;
-		if(isTopicwise){
+		const isTopicwise = TEST_CATEGORIES[category];
+		if(isTopicwise.topics){
             topicWrapper.classList.remove("hidden");
 
             const topics = isTopicwise.topics;
@@ -939,8 +939,8 @@ topicDropdown.addEventListener(
 		    category === "topicwise"
 		    && topic
 		) {*/
-	    const isTopicwise = TEST_CATEGORIES[category].topics;
-		if(isTopicwise && topic){
+	    const isTopicwise = TEST_CATEGORIES[category];
+		if(isTopicwise.topics && topic){
 		    url += `&topic=${topic}`;
 		}
 		
@@ -1107,8 +1107,8 @@ randomBtn.addEventListener("click", () => {
 	    category === "topicwise"
 	    && topic
 	) {*/
-	const isTopicwise = TEST_CATEGORIES[category].topics;
-	if(isTopicwise && topic){
+	const isTopicwise = TEST_CATEGORIES[category];
+	if(isTopicwise.topics && topic){
 	    url += `&topic=${topic}`;
 	}
 	
@@ -1243,8 +1243,8 @@ randomBtn.addEventListener("click", () => {
 	        category === "topicwise"
 	        && topic
 	    ) {*/
-		const isTopicwise = TEST_CATEGORIES[category].topics;
-		if(isTopicwise && topic){
+		const isTopicwise = TEST_CATEGORIES[category];
+		if(isTopicwise.topics && topic){
 	        leaderboardUrl += `&topic=${topic}`;
 	    }
 	
