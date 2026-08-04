@@ -914,33 +914,41 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
     if (note) note.classList.remove("hidden");
 
     // ✅ Load all sets
-    const config =
-        TEST_CATEGORIES[categoryName];
-    
+    const config = TEST_CATEGORIES[categoryName];
+    const selectedTopic = getTopic();
     let availableSets = [];
     
     //if (categoryName === "topicwise") {
     if(config.topics) {
-        availableSets = [];
-        Object.entries(config.topics).forEach(([topicKey, topicObj]) => {
-            topicObj.availableSets.forEach(setNo => {
-    
+        if (selectedTopic) {
+            // Only selected topic
+            config.topics[selectedTopic].availableSets.forEach(setNo => {
                 availableSets.push({
-                    topic: topicKey,
+                    topic: selectedTopic,
                     set: setNo
                 });
-    
             });
-        });
+    
+        } else {
+            // Load every topic
+            availableSets = [];
+            Object.entries(config.topics).forEach(([topicKey, topicObj]) => {
+                topicObj.availableSets.forEach(setNo => {
+        
+                    availableSets.push({
+                        topic: topicKey,
+                        set: setNo
+                    });
+                });
+            });
+        }
     }
     else {
     
-        availableSets =
-            config.availableSets;
+        availableSets = config.availableSets;
     }
     
-    const promises =
-        availableSets.map(item => {
+    const promises = availableSets.map(item => {
     
             //if (categoryName === "topicwise") {
             if(config.topics) {    
@@ -968,66 +976,107 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
         }))
         .filter(d => d.questions.length > 0);
 
-    const totalSets = validSets.length;
-
     let finalQuestions = [];
-
-    // ================================
-    // ✅ CASE A: sets >= 50
-    // ================================
-    if (totalSets >= TOTAL_QUESTIONS) {
-
-        const mixedSeed1 = (numericSeed * 9301) % 233280;
-        const shuffledSets = shuffleWithSeed([...validSets], mixedSeed1);
-
-        const selectedSets = shuffledSets.slice(0, TOTAL_QUESTIONS);
-
-        selectedSets.forEach(({ set, topic, questions }) => {
-            const mixedSeed2 = (numericSeed * 9301 + set * 49297) % 233280;
-const shuffledQ = shuffleWithSeed([...questions], mixedSeed2);
-            //finalQuestions.push(shuffledQ[0]);
-finalQuestions.push({
-    ...shuffledQ[0],
-    _set: set,
-    _topic: setObj.topic || null
-});
-        });
+    //======================================================
+    // NORMAL CATEGORY
+    //======================================================
+    
+    if (!config.topics || selectedTopic) {
+    
+        const totalSets = validSets.length;
+        // ================================
+        // ✅ CASE A: sets >= 50
+        // ================================
+        if (totalSets >= TOTAL_QUESTIONS) {
+    
+            const mixedSeed1 = (numericSeed * 9301) % 233280;
+            const shuffledSets = shuffleWithSeed([...validSets], mixedSeed1);
+    
+            const selectedSets = shuffledSets.slice(0, TOTAL_QUESTIONS);
+    
+            selectedSets.forEach(({ set, topic, questions }) => {
+                const mixedSeed2 = (numericSeed * 9301 + set * 49297) % 233280;
+                const shuffledQ = shuffleWithSeed([...questions], mixedSeed2);
+                            //finalQuestions.push(shuffledQ[0]);
+                finalQuestions.push({
+                    ...shuffledQ[0],
+                    _set: set,
+                    _topic: setObj.topic || null
+                });
+            });
+        }
+        // ================================
+        // ✅ CASE B: sets < 50
+        // ================================
+        else {
+    
+            const baseCount = Math.floor(TOTAL_QUESTIONS / totalSets);
+            const remainder = TOTAL_QUESTIONS % totalSets;
+    
+            // Shuffle sets for fair remainder distribution
+            const mixedSeed3 = (numericSeed * 9301) % 233280;
+            const shuffledSets = shuffleWithSeed([...validSets], mixedSeed3);
+    
+            shuffledSets.forEach((setObj, index) => {
+                const { set, topic, questions } = setObj;
+                const count = baseCount + (index < remainder ? 1 : 0);
+                const mixedSeed4 = (numericSeed * 9301 + set * 49297) % 233280;
+                const shuffledQ = shuffleWithSeed([...questions], mixedSeed4);
+                //finalQuestions.push(...shuffledQ.slice(0, count));
+                finalQuestions.push(
+                    ...shuffledQ.slice(0, count).map(q => ({
+                        ...q,
+                        _set: set,
+                        _topic: topic || null
+                    }))
+                );
+            });
+        }
     }
-
-    // ================================
-    // ✅ CASE B: sets < 50
-    // ================================
+    //======================================================
+    // TOPICWISE + NO TOPIC SELECTED
+    //======================================================
     else {
-
-        const baseCount = Math.floor(TOTAL_QUESTIONS / totalSets);
-        const remainder = TOTAL_QUESTIONS % totalSets;
-
-        // Shuffle sets for fair remainder distribution
-        const mixedSeed3 = (numericSeed * 9301) % 233280;
-const shuffledSets = shuffleWithSeed([...validSets], mixedSeed3);
-
-        shuffledSets.forEach((setObj, index) => {
-            const { set, topic, questions } = setObj;
-
-            const count = baseCount + (index < remainder ? 1 : 0);
-
-            const mixedSeed4 = (numericSeed * 9301 + set * 49297) % 233280;
-const shuffledQ = shuffleWithSeed([...questions], mixedSeed4);
-
-            //finalQuestions.push(...shuffledQ.slice(0, count));
-finalQuestions.push(
-    ...shuffledQ.slice(0, count).map(q => ({
-        ...q,
-        _set: set,
-        _topic: topic || null
-    }))
-);
+        const topicMap = {};
+        validSets.forEach(v => {
+            if (!topicMap[v.topic])
+                topicMap[v.topic] = [];
+            topicMap[v.topic].push(v);
+        });
+        const topicNames = Object.keys(topicMap);
+        const topicCount = topicNames.length;
+        const baseTopic =  Math.floor(TOTAL_QUESTIONS / topicCount);
+        const remTopic = TOTAL_QUESTIONS % topicCount;
+        const mixedSeed6 = (numericSeed * 9301) % 233280;
+        const shuffledTopics = shuffleWithSeed([...topicNames], mixedSeed6);
+    
+        shuffledTopics.forEach((topicName, topicIndex) => {
+            const questionsForTopic = baseTopic + (topicIndex < remTopic ? 1 : 0);
+            const sets = topicMap[topicName];
+            const setCount = sets.length;
+            const baseSet = Math.floor(questionsForTopic / setCount);
+            const remSet = questionsForTopic % setCount;
+            const mixedSeed7 = (numericSeed * 9301 + set * 49297) % 233280;
+            
+            const shuffledSets = shuffleWithSeed([...sets], mixedSeed7 + topicIndex);
+            shuffledSets.forEach((setObj, setIndex) => {
+                const take = baseSet + (setIndex < remSet ? 1 : 0);
+                const shuffledQuestions = shuffleWithSeed([...setObj.questions], mixedSeed7 + setObj.set);
+                finalQuestions.push(
+                    ...shuffledQuestions
+                        .slice(0, take)
+                        .map(q => ({
+                            ...q,
+                            _set: setObj.set,
+                            _topic: topicName
+                        }))
+                );
+            });
         });
     }
-
     // ✅ Final shuffle (very important)
     const mixedSeed5 = (numericSeed * 9301 + 9999 * 49297) % 233280;
-finalQuestions = shuffleWithSeed(finalQuestions, mixedSeed5);
+    finalQuestions = shuffleWithSeed(finalQuestions, mixedSeed5);
 
     // ✅ Trim safety (edge-case protection)
     finalQuestions = finalQuestions.slice(0, TOTAL_QUESTIONS);
