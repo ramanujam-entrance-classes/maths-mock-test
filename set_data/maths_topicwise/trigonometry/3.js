@@ -3,7 +3,7 @@ window.SET_DATA = {
   questions: [
   // Q1
   {
-    q: "If \\(a \\sin x + b \\cos (x + \\theta) + b \\cos (x - \\theta) = d\\), then the minimum value of \\(|\\cos \\theta|\\) is",
+    q: "If \\(a \\sin x + b \\cos (x + \\theta) + b \\cos (x - \\theta) \\)\\(= d\\), then the minimum value of \\(|\\cos \\theta|\\) is",
     options: [
       "(A). \\(\\frac{1}{2|b|} \\sqrt{d^2 - a^2}\\)",
       "(B). \\(\\frac{1}{2|a|} \\sqrt{d^2 - a^2}\\)",
@@ -49,10 +49,10 @@ window.SET_DATA = {
   {
     q: "If \\(\\sin \\theta = x + \\frac{a}{x}, \\forall x \\in \\mathbb{R} \\sim \\{0\\}\\), then",
     options: [
-      "(A). \\(a \\ge -\\frac{1}{4}\\)",
-      "(B). \\(a \\ge -\\frac{1}{2}\\)",
-      "(C). \\(a \\le -\\frac{1}{4}\\)",
-      "(D). \\(a \\le -\\frac{1}{2}\\)"
+      "(A). \\(a \\ge \\frac{1}{4}\\)",
+      "(B). \\(a \\ge \\frac{1}{2}\\)",
+      "(C). \\(a \\le \\frac{1}{4}\\)",
+      "(D). \\(a \\le \\frac{1}{2}\\)"
     ],
     correct: "(C)"
   },
@@ -146,7 +146,7 @@ window.SET_DATA = {
   },
   // Q14
   {
-    q: "Total number of solutions of \\(\\tan x + \\cot x = 2 \\csc x\\) in \\([-2\\pi, 2\\pi]\\) is",
+    q: "Total number of solutions of \\(\\tan x + \\cot x = 2 co\\sec x\\) in \\([-2\\pi, 2\\pi]\\) is",
     options: [
       "(A). \\(2\\)",
       "(B). \\(4\\)",
@@ -212,7 +212,7 @@ window.SET_DATA = {
   },
   // Q20
   {
-    q: "If \\(f(\\theta) = (\\sin \\theta + \\csc \\theta)^2 + (\\cos \\theta + \\sec \\theta)^2\\), then minimum value of \\(f(\\theta)\\) is",
+    q: "If \\(f(\\theta) =\\)\\( (\\sin \\theta + cosec \\theta)^2 + (\\cos \\theta + \\sec \\theta)^2\\), then minimum value of \\(f(\\theta)\\) is",
     options: [
       "(A). \\(7\\)",
       "(B). \\(8\\)",
@@ -282,7 +282,7 @@ window.SET_DATA = {
     options: [
       "(A). \\(\\left(-\\infty, -\\frac{1}{5}\\right] \\cup [1, \\infty)\\)",
       "(B). \\(\\left[-1, \\frac{1}{5}\\right]\\)",
-      "(C). \\((-\\infty, -1] \\cup \\left[\\frac{1}{5}, \\infty\\right)\\)",
+      "(C). \\((-\\infty, -1] \\cup \\left(\\frac{1}{5}, \\infty\\right]\\)",
       "(D). None of these"
     ],
     correct: "(C)"
@@ -432,7 +432,7 @@ window.SET_DATA = {
   },
   // Q40
   {
-    q: "If \\(\\alpha \\cos^2 3\\theta + \\beta \\cos^4 \\theta = 16\\cos^6 \\theta + 9\\cos^2 \\theta\\) is an identity, then",
+    q: "If \\(\\alpha \\cos^2 3\\theta + \\beta \\cos^4 \\theta =\\)\\( 16\\cos^6 \\theta + 9\\cos^2 \\theta\\) is an identity, then",
     options: [
       "(A). \\(\\alpha = 1, \\beta = 18\\)",
       "(B). \\(\\alpha = 1, \\beta = 24\\)",
@@ -498,7 +498,7 @@ window.SET_DATA = {
   },
   // Q46
   {
-    q: "The expression \\(\\cos^2 \\phi + \\cos^2 (a + \\phi) - 2 \\cos a \\cos \\phi \\cos (a + \\phi)\\) is independent of",
+    q: "The expression \\(\\cos^2 \\phi + \\cos^2 (a + \\phi) -\\)\\( 2 \\cos a \\cos \\phi \\cos (a + \\phi)\\) is independent of",
     options: [
       "(A). \\(\\phi\\)",
       "(B). \\(a\\)",
