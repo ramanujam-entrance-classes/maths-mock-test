@@ -3,7 +3,7 @@ window.SET_DATA = {
   questions: [
   // Q1
   {
-    q: "If \\(y = \\sin^2 \\theta + \\csc^2 \\theta, \\theta \\neq 0\\), then",
+    q: "If \\(y = \\sin^2 \\theta + cosec^2 \\theta, \\theta \\neq 0\\), then",
     options: [
       "(A). \\(y = 0\\)",
       "(B). \\(y \\le 2\\)",
@@ -69,7 +69,7 @@ window.SET_DATA = {
   },
   // Q7
   {
-    q: "If \\(\\tan x = -\\frac{3}{4}, \\pi < x < \\frac{3\\pi}{2}\\), then the value of \\(\\cos \\frac{x}{2}\\) is",
+    q: "If \\(\\tan x = \\frac{3}{4}, \\pi < x < \\frac{3\\pi}{2}\\), then the value of \\(\\cos \\frac{x}{2}\\) is",
     options: [
       "(A). \\(-\\frac{1}{\\sqrt{10}}\\)",
       "(B). \\(\\frac{3}{\\sqrt{10}}\\)",
@@ -300,7 +300,7 @@ window.SET_DATA = {
   },
   // Q28
   {
-    q: "If \\(\\sin^2 (\\theta - \\alpha) \\cos \\alpha = \\cos^2 (\\theta - \\alpha) \\sin \\alpha = m \\sin \\alpha \\cos \\alpha\\), then",
+    q: "If \\(\\sin^2 (\\theta - \\alpha) \\cos \\alpha = \\cos^2 (\\theta - \\alpha) \\sin \\alpha =\\)\\( m \\sin \\alpha \\cos \\alpha\\), then",
     options: [
       "(A). \\(|m| \\le \\frac{1}{\\sqrt{2}}\\)",
       "(B). \\(|m| \\ge \\frac{1}{\\sqrt{2}}\\)",
@@ -322,7 +322,7 @@ window.SET_DATA = {
   },
   // Q30
   {
-    q: "If the expression \\(n \\sin^2 \\theta + 2n \\cos (\\theta + \\alpha) \\sin \\alpha \\sin \\theta + \\cos 2(\\theta + \\alpha)\\) is independent of \\(\\theta\\), then the value of \\(n\\) is",
+    q: "If the expression \\(n \\sin^2 \\theta + 2n \\cos (\\theta + \\alpha) \\sin \\alpha \\sin \\theta + \\cos 2(\\alpha + \\theta)\\) is independent of \\(\\theta\\), then the value of \\(n\\) is",
     options: [
       "(A). \\(1\\)",
       "(B). \\(2\\)",
@@ -351,7 +351,7 @@ window.SET_DATA = {
       "(C). no real solution",
       "(D). None of the above"
     ],
-    correct: "(B)"
+    correct: "(C)"
   },
   // Q33
   {
@@ -399,7 +399,7 @@ window.SET_DATA = {
   },
   // Q37
   {
-	q: "Let \\(f_k(x)=\\frac{1}{k}(\\sin^{-1}x+\\cos^k x)\\), where, \\(x\\in R\\) and \\(k\\ge1\\). Then, \\(f_4(x)-f_6(x)\\) equals",
+	q: "Let \\(f_k(x)=\\frac{1}{k}(\\sin^{k}x+\\cos^k x)\\), where, \\(x\\in R\\) and \\(k\\ge1\\). Then, \\(f_4(x)-f_6(x)\\) equals",
 	options: [
 	"(A). \\(\\frac{1}{6}\\)",
 	"(B). \\(\\frac{1}{3}\\)",
@@ -413,9 +413,9 @@ window.SET_DATA = {
 	q: "The expression \\(\\frac{\\tan A}{1-\\cot A}+\\frac{\\cot A}{1-\\tan A}\\) can be written as",
 	options: [
 	"(A). \\(\\sin A\\cos A+1\\)",
-	"(B). \\(\\sec A\\cosec A+1\\)",
+	"(B). \\(\\sec A cosec A+1\\)",
 	"(C). \\(\\tan A+\\cot A\\)",
-	"(D). \\(\\sec A+\\cosec A\\)"
+	"(D). \\(\\sec A+ cosec A\\)"
 	],
 	correct: "(B)"
 	},
@@ -443,7 +443,7 @@ window.SET_DATA = {
 	},
 	// Q41
 	{
-	q: "The possible values of \\(\\theta\\in(0,\\pi)\\) such that \\(\\sin6\\theta+\\sin4\\theta+\\sin7\\theta=0\\) are",
+	q: "The possible values of \\(\\theta\\in(0,\\pi)\\) such that \\(\\sin\\theta+\\sin4\\theta+\\sin7\\theta=0\\) are",
 	options: [
 	"(A). \\(\\frac{2\\pi}{9},\\ \\frac{\\pi}{4},\\ \\frac{4\\pi}{9},\\ \\frac{\\pi}{2},\\ \\frac{3\\pi}{4},\\ \\frac{8\\pi}{9}\\)",
 	"(B). \\(\\frac{\\pi}{4},\\ \\frac{5\\pi}{12},\\ \\frac{\\pi}{2},\\ \\frac{2\\pi}{3},\\ \\frac{3\\pi}{4},\\ \\frac{8\\pi}{9}\\)",
@@ -465,7 +465,7 @@ window.SET_DATA = {
 	},
 	// Q43
 	{
-	q: "Let \\(A\\) and \\(B\\) denote the statements:\n\n\\(A:\\ \\cos\\alpha+\\cos\\beta+\\cos\\gamma=0\\)\n\n\\(B:\\ \\sin\\alpha+\\sin\\beta+\\sin\\gamma=0\\)\n\nIf \\(\\cos(\\beta-\\gamma)+\\cos(\\gamma-\\alpha)+\\cos(\\alpha-\\beta)=-\\frac{3}{2}\\), then",
+	q: "Let \\(A\\) and \\(B\\) denote the statements:\n\n\\(A:\\ \\cos\\alpha+\\cos\\beta+\\cos\\gamma=0\\)\n\n\\(B:\\ \\sin\\alpha+\\sin\\beta+\\sin\\gamma=0\\) \\ If \\(\\cos(\\beta-\\gamma)+\\cos(\\gamma-\\alpha)+\\cos(\\alpha-\\beta)=\\)\\(-\\frac{3}{2}\\), then",
 	options: [
 	"(A). A is true and B is false",
 	"(B). A is false and B is true",
@@ -498,7 +498,7 @@ window.SET_DATA = {
 	},
 	// Q46
 	{
-	q: "If \\(0<x<\\pi\\) and \\(\\cos x+\\sin x=\\frac{1}{2}\\), then \\(\\tan x\\) is equal to",
+	q: "If \\(0\\)<\\(x\\)<\\(\\pi\\) and \\(\\cos x+\\sin x=\\frac{1}{2}\\), then \\(\\tan x\\) is equal to",
 	options: [
 	"(A). \\(\\frac{4-\\sqrt7}{3}\\)",
 	"(B). \\(-\\frac{4+\\sqrt7}{3}\\)",
@@ -538,7 +538,7 @@ window.SET_DATA = {
 	"(C). \\(x+y\\ne0\\)",
 	"(D). \\(x\\ne0,\\ y\\ne0\\)"
 	],
-	correct: "(D)"
+	correct: "(C)"
 	},
 	// Q50
 	{
