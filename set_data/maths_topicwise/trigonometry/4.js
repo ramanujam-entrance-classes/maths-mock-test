@@ -322,7 +322,7 @@ window.SET_DATA = {
   },
   // Q30
   {
-    q: "If the expression \\(n \\sin^2 \\theta + 2n \\cos (\\theta + \\alpha) \\sin \\alpha \\sin \\theta + \\cos 2(\\alpha + \\theta)\\) is independent of \\(\\theta\\), then the value of \\(n\\) is",
+    q: "If the expression \\(n \\sin^2 \\theta + 2n \\cos (\\theta + \\alpha) \\sin \\alpha \\sin \\theta +\\)\\( \\cos 2(\\alpha + \\theta)\\) is independent of \\(\\theta\\), then the value of \\(n\\) is",
     options: [
       "(A). \\(1\\)",
       "(B). \\(2\\)",
@@ -465,7 +465,7 @@ window.SET_DATA = {
 	},
 	// Q43
 	{
-	q: "Let \\(A\\) and \\(B\\) denote the statements:\n\n\\(A:\\ \\cos\\alpha+\\cos\\beta+\\cos\\gamma=0\\)\n\n\\(B:\\ \\sin\\alpha+\\sin\\beta+\\sin\\gamma=0\\) \\ If \\(\\cos(\\beta-\\gamma)+\\cos(\\gamma-\\alpha)+\\cos(\\alpha-\\beta)=\\)\\(-\\frac{3}{2}\\), then",
+	q: "Let \\(A\\) and \\(B\\) denote the statements:\n\n\\(A:\\ \\cos\\alpha+\\cos\\beta+\\cos\\gamma=0\\)\n\n\\(B:\\ \\sin\\alpha+\\sin\\beta+\\sin\\gamma=0\\) \n\n If \\(\\cos(\\beta-\\gamma)+\\cos(\\gamma-\\alpha)+\\cos(\\alpha-\\beta)=\\)\\(-\\frac{3}{2}\\), then",
 	options: [
 	"(A). A is true and B is false",
 	"(B). A is false and B is true",
