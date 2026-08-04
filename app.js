@@ -827,7 +827,8 @@ function loadSetFile(setNumber, customTopic = null) {
         // TOPICWISE
         // =========================
 
-        if (categoryName === "topicwise") {
+        //if (categoryName === "topicwise") {
+        if(config.topics) {
             const activeTopic = customTopic || topicName;
             path = `${config.folder}/${activeTopic}/${setNumber}.js`;
         }
@@ -916,7 +917,8 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
     
     let availableSets = [];
     
-    if (categoryName === "topicwise") {
+    //if (categoryName === "topicwise") {
+    if(config.topics) {
         availableSets = [];
         Object.entries(config.topics).forEach(([topicKey, topicObj]) => {
             topicObj.availableSets.forEach(setNo => {
@@ -938,8 +940,8 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
     const promises =
         availableSets.map(item => {
     
-            if (categoryName === "topicwise") {
-    
+            //if (categoryName === "topicwise") {
+            if(config.topics) {    
                 return loadSetFile(
                     item.set,
                     item.topic
@@ -952,11 +954,11 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
 
     const validSets = results
         .map((data, i) => ({
-            set: categoryName === "topicwise"
+            set: config.topics //categoryName === "topicwise"
                 ? availableSets[i].set
                 : availableSets[i],
         
-            topic: categoryName === "topicwise"
+            topic: config.topics //categoryName === "topicwise"
                 ? availableSets[i].topic
                 : null,
         
@@ -974,7 +976,7 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
     if (totalSets >= TOTAL_QUESTIONS) {
 
         const mixedSeed1 = (numericSeed * 9301) % 233280;
-const shuffledSets = shuffleWithSeed([...validSets], mixedSeed1);
+        const shuffledSets = shuffleWithSeed([...validSets], mixedSeed1);
 
         const selectedSets = shuffledSets.slice(0, TOTAL_QUESTIONS);
 
