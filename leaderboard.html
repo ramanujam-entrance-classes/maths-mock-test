@@ -254,6 +254,19 @@ function getTestTitle(category) {
 
     return titles[category] || "Unknown Test";
 }
+
+const TOPIC_TITLES = {
+    // maths topicwise
+    trigonometry = "Trigonometry Ratios and Identity",
+
+    // computer topicwise
+    binarynumbersystem: "Binary Number System",
+    computerfundamental: "Computer Fundamentals",
+    
+    // reasoning topicwise
+    blood_relation: "Blood Relation",
+    coding_decoding: "Coding Decoding",
+};
   
 function getTestTitle(category, topic) {
     const titles = {
@@ -261,14 +274,13 @@ function getTestTitle(category, topic) {
         computer: "Computer Mock Test",
         reasoning: "Reasoning Mock Test",
 
-        maths_topicwise: "Mathematics Topic Test",
-        computer_topicwise: "Computer Topic Test",
-        reasoning_topicwise: "Reasoning Topic Test"
+        maths_topicwise: "Mathematics Topic Mock Test",
+        computer_topicwise: "Computer Topic Mock Test",
+        reasoning_topicwise: "Reasoning Topic Mock Test"
     };
 
     if (topic) {
-        return topic.replace(/_/g, " ")
-                    .replace(/\b\w/g, c => c.toUpperCase());
+        return (TOPIC_TITLES[topic] || topic) + " Mock Test";
     }
 
     return titles[category] || "Unknown Test";
