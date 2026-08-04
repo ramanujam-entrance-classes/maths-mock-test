@@ -146,7 +146,7 @@ window.SET_DATA = {
   },
   // Q14
   {
-    q: "Total number of solutions of \\(\\tan x + \\cot x = 2 co\\sec x\\) in \\([-2\\pi, 2\\pi]\\) is",
+    q: "Total number of solutions of \\(\\tan x + \\cot x = 2 cosec x\\) in \\([-2\\pi, 2\\pi]\\) is",
     options: [
       "(A). \\(2\\)",
       "(B). \\(4\\)",
