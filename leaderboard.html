@@ -256,12 +256,22 @@ function getTestTitle(category) {
 }
   
 function getTestTitle(category, topic) {
-    const config = TEST_CATEGORIES[category];
-    if(config.topics){
-        return config.topics[topic].title;
+    const titles = {
+        maths: "Mathematics Mock Test",
+        computer: "Computer Mock Test",
+        reasoning: "Reasoning Mock Test",
+
+        maths_topicwise: "Mathematics Topic Test",
+        computer_topicwise: "Computer Topic Test",
+        reasoning_topicwise: "Reasoning Topic Test"
+    };
+
+    if (topic) {
+        return topic.replace(/_/g, " ")
+                    .replace(/\b\w/g, c => c.toUpperCase());
     }
 
-    return config.title;
+    return titles[category] || "Unknown Test";
   
     /*if (category === "topicwise") {
      if(config.topics){
