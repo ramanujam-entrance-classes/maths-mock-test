@@ -246,8 +246,15 @@ function getTestTitle(category) {
 }
   
 function getTestTitle(category, topic) {
+    const config = TEST_CATEGORIES[category];
+    if(config.topics){
+        return config.topics[topic].title;
+    }
 
-    if (category === "topicwise") {
+    return config.title;
+  
+    /*if (category === "topicwise") {
+     if(config.topics){
         return topic
             ? topic.charAt(0).toUpperCase() + topic.slice(1) + " Mock Test"
             : "Topic Test";
@@ -258,7 +265,7 @@ function getTestTitle(category, topic) {
         computer: "Computer Mock Test"
     };
 
-    return titles[category] || "Unknown Test";
+    return titles[category] || "Unknown Test";*/
 }
 
 const currentTestName =
