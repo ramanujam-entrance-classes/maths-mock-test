@@ -111,7 +111,7 @@ function initApp(data) {
         
         if (setName === "random") {
             //if (category === 'topicwise')
-            if(config.topics)
+            if(config.topics != null)
             {
                 leaderboardUrl =
                     `leaderboard.html?category=${category}&topic=${topic}&set=${window.TEST_SEED_DATE}`;
