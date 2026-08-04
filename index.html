@@ -566,18 +566,12 @@ body {
 			<div class="custom-select" style="margin-bottom:12px;">
 			    <select id="category-dropdown">
 			        <option value="">Select Category</option>
-			
-			        <!--<option value="maths">
-			            Mathematics
-			        </option>
-			
-			        <option value="computer">
-			            Computer
-			        </option>
-			
-			        <option value="topicwise">
-			            Mathematics Topicwise
-			        </option>-->
+			        <option value="maths"> Mathematics </option>
+					<option value="maths_topicwise"> Mathematics Topicwise </option>
+					<option value="reasoning"> Reasoning </option>
+					<option value="reasoning_topicwise"> Reasoning Topicwise </option>
+			        <option value="computer"> Computer </option>
+					<option value="computer_topicwise"> Computer Topicwise </option>
 			    </select>
 			</div>
 			<div class="custom-select hidden"
@@ -648,80 +642,87 @@ body {
 	const TEST_CATEGORIES = {
 
     maths: {
-
         title: "Mathematics Mock Test",
-
         folder: "set_data/maths",
-		marks: {
-            correct: 12,
-            wrong: -3
-        },
+		marks: { correct: 12, wrong: -3 },
 		totalQuestions: 50,
         durationMinutes: 70,
-
-        availableSets: [
-        ],
-
-        notAllowed: [ 1,2,3,4,5,6,7,8,9,10,11,12,13,
-   			 14,15,16,17,18,19,20,21,22,23,
-			 24,25,26,27,28,29,30,31,32]
-    },
-
-    computer: {
-
-        title: "Computer Mock Test",
-
-        folder: "set_data/computer",
-		marks: {
-            correct: 6,
-            wrong: -1.5
-        },
-		totalQuestions: 20,
-        durationMinutes: 20,
-
-        availableSets: [
-        ],
-
-        notAllowed: [1,2,3,4,5,6,7,8,9,10]
-    },
-    
-	topicwise: {
-
+        availableSets: [],
+        notAllowed: [ 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32]
+    },    
+	maths_topicwise: {
         title: "Mathematics Topic Mock Test",
-
         folder: "set_data/topicwise",
-		marks: {
-            correct: 12,
-            wrong: -3
-        },
+		marks: { correct: 12, wrong: -3 },
 		totalQuestions: 50,
         durationMinutes: 70,
         topics: {
-
             trigonometry: {
-
                 title: "Trigonometry Ratios and Identity",
-
                 availableSets: [],
 				notAllowed: [1]
-            }
-			/*,
+			}
+        }
+    },
 
-            calculus: {
-
-                title: "Calculus",
-
-                availableSets: [1],
-				notAllowed: [],
-            },
-
-            coordinate: {
-
-                title: "Coordinate Geometry",
-
-                availableSets: [1,2],
+	reasoning:{
+        title:"Reasoning Mock Test",
+        folder:"set_data/reasoning",
+        marks:{ correct:6, wrong:-1.5 },
+        totalQuestions:40,
+        durationMinutes:40,
+        availableSets:[],
+        notAllowed:[]
+    },
+    reasoning_topicwise:{
+        title:"Reasoning Topic Mock Test",
+        folder:"set_data/reasoning_topicwise",
+        marks:{ correct:6, wrong:-1.5 },
+        totalQuestions:40,
+        durationMinutes:40,
+        topics:{
+            coding_decoding:{
+                title:"Coding Decoding",
+                availableSets:[],
 				notAllowed: []
-            }*/
+            },
+            blood_relation:{
+                title:"Blood Relation",
+                availableSets:[],
+				notAllowed: [
+            }
+        }
+    },
+		
+	computer: {
+        title: "Computer Mock Test",
+        folder: "set_data/computer",
+		marks: { correct: 6, wrong: -1.5 },
+		totalQuestions: 20,
+        durationMinutes: 20,
+        availableSets: [],
+        notAllowed: [1,2,3,4,5,6,7,8,9,10]
+    },
+	computer_topicwise:{
+        title:"Computer Topic Mock Test",
+        folder:"set_data/computer_topicwise",
+        marks:{
+            correct:6,
+            wrong:-1.5
+        },
+        totalQuestions:20,
+        durationMinutes:20,
+        topics:{
+            coding_decoding:{
+                title:"Binary Number System",
+                availableSets:[],
+				notAllowed: [
+            },
+            blood_relation:{
+                title:"Computer Fundamental",
+                availableSets:[],
+				notAllowed: [
+            }
         }
     }
 };
@@ -794,16 +795,18 @@ const dropdown =
     // ======================
     // TOPICWISE
     // ======================
-
-    if (category === "topicwise") {
-
+	
+    //if (category === "topicwise") {
+	const isTopicwise = TEST_CATEGORIES[category].topics;
+	if(isTopicwise){
         if (!topic) return;
 
-        sets =
+        /*sets =
             TEST_CATEGORIES
             .topicwise
             .topics[topic]
-            .availableSets;
+            .availableSets;*/
+		sets = isTopicwise.topics[topic].availableSets;
     }
 
     // ======================
@@ -812,9 +815,10 @@ const dropdown =
 
     else {
 
-        sets =
+        /*sets =
             TEST_CATEGORIES[category]
-            .availableSets;
+            .availableSets;*/
+		sets = isTopicwise.availableSets;
     }
 
     sets.forEach(set => {
@@ -850,16 +854,15 @@ const dropdown =
         // TOPICWISE
         // ======================
 
-        if (category === "topicwise") {
+        //if (category === "topicwise") {
+		const isTopicwise = TEST_CATEGORIES[category].topics;
+		if(isTopicwise){
+            topicWrapper.classList.remove("hidden");
 
-            topicWrapper.classList.remove(
-                "hidden"
-            );
-
-            const topics =
-                TEST_CATEGORIES
+            const topics = isTopicwise.topics;
+               /* TEST_CATEGORIES
                 .topicwise
-                .topics;
+                .topics;*/
 
             Object.keys(topics)
             .forEach(key => {
@@ -932,10 +935,12 @@ topicDropdown.addEventListener(
 		let url =
 		    `?category=${category}&set=${setNumber}`;
 		
-		if (
+		/*if (
 		    category === "topicwise"
 		    && topic
-		) {
+		) {*/
+	    const isTopicwise = TEST_CATEGORIES[category].topics;
+		if(isTopicwise && topic){
 		    url += `&topic=${topic}`;
 		}
 		
@@ -1098,10 +1103,12 @@ randomBtn.addEventListener("click", () => {
 	let url =
 	`?category=${category}&set=random&seed=${seed}`;
 	
-	if (
+	/*if (
 	    category === "topicwise"
 	    && topic
-	) {
+	) {*/
+	const isTopicwise = TEST_CATEGORIES[category].topics;
+	if(isTopicwise && topic){
 	    url += `&topic=${topic}`;
 	}
 	
@@ -1161,15 +1168,13 @@ randomBtn.addEventListener("click", () => {
 	const config = TEST_CATEGORIES[categoryName];
 	let path = "";
 	
-	if (categoryName === "topicwise") {
-	
-	    path =
-	`${config.folder}/${topicName}/${setName}.js`;
+	//if (categoryName === "topicwise") {
+	//const isTopicwise = TEST_CATEGORIES[category].topics;
+	if(config.topics){
+	    path = `${config.folder}/${topicName}/${setName}.js`;
 	}
 	else {
-	
-	    path =
-	`${config.folder}/${setName}.js`;
+	    path = `${config.folder}/${setName}.js`;
 	}
 	
 	script.src = path;
@@ -1234,11 +1239,12 @@ randomBtn.addEventListener("click", () => {
 	            `leaderboard.html?category=${category}&set=${setName}`;
 	    }
 	
-	    if (
+	    /*if (
 	        category === "topicwise"
 	        && topic
-	    ) {
-	
+	    ) {*/
+		const isTopicwise = TEST_CATEGORIES[category].topics;
+		if(isTopicwise && topic){
 	        leaderboardUrl += `&topic=${topic}`;
 	    }
 	
@@ -1280,8 +1286,10 @@ randomBtn.addEventListener("click", () => {
 	    // ======================
 	    // TOPICWISE
 	    // ======================
-	    if (category === "topicwise") {
-		
+	    //if (category === "topicwise") {
+		//const isTopicwise = TEST_CATEGORIES[category].topics;
+		if(configure.topics){
+			
 		    if (!topic) return false;
 		
 		    const topicConfig = configure.topics[topic];
