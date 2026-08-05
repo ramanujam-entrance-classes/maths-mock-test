@@ -414,7 +414,7 @@ window.SET_DATA = {
     options: [
       "(A). \\(cosec^2 A = 2cosec^2 \\frac{B}{2}\\)",
       "(B). \\(2\\sec^2 A = \\sec^2 \\frac{B}{2}\\)",
-      "(C). \\(2cosec^2 A = \\cosec^2 \\frac{B}{2}\\)",
+      "(C). \\(2cosec^2 A = cosec^2 \\frac{B}{2}\\)",
       "(D). \\(2\\sec^2 B = \\sec^2 \\frac{A}{2}\\)"
     ],
     correct: "(B)"
