@@ -47,14 +47,14 @@ window.SET_DATA = {
   },
   // Q5
   {
-    q: "The solution of trigonometric equation \\(\\cos^4 x + \\sin^4 x = 2\\cos (2x + \\pi)\\cos (2x - \\pi)\\) is",
+    q: "The solution of trigonometric equation \\(\\cos^4 x + \\sin^4 x = 2\\cos (2x + \\pi)\\)\\(\\cos (2x - \\pi)\\) is",
     options: [
       "(A). \\(x = \\frac{n\\pi}{2} \\pm \\sin^{-1}\\left(\\frac{1}{5}\\right)\\)",
       "(B). \\(x = \\frac{n\\pi}{4} + \\frac{(-1)^n}{4}\\sin^{-1}\\left(\\pm \\frac{2\\sqrt{2}}{3}\\right)\\)",
       "(C). \\(x = \\frac{n\\pi}{2} \\pm \\cos^{-1}\\frac{1}{5}\\)",
       "(D). \\(x = \\frac{n\\pi}{4} - \\frac{(-1)^n}{4}\\cos^{-1}\\left(\\frac{1}{5}\\right)\\)"
     ],
-    correct: ""
+    correct: "(B)"
   },
   // Q6
   {
@@ -124,14 +124,14 @@ window.SET_DATA = {
   },
   // Q12
   {
-    q: "If \\(\\tan \\alpha = \\frac{b}{a}\\), \\(a > b > 0\\) and \\(0 < \\alpha < \\frac{\\pi}{4}\\), then \\(\\sqrt{\\frac{a + b}{a - b}} + \\sqrt{\\frac{a - b}{a + b}}\\) is equal to",
+    q: "If \\(\\tan \\alpha = \\frac{b}{a}\\), \\(a > b > 0\\) and \\(0 < \\alpha < \\frac{\\pi}{4}\\), then \\(\\sqrt{\\frac{a + b}{a - b}} - \\sqrt{\\frac{a - b}{a + b}}\\) is equal to",
     options: [
       "(A). \\(\\frac{2\\sin \\alpha}{\\sqrt{\\cos 2\\alpha}}\\)",
       "(B). \\(\\frac{2\\cos \\alpha}{\\sqrt{\\cos 2\\alpha}}\\)",
       "(C). \\(\\frac{2\\sin \\alpha}{\\sqrt{\\sin 2\\alpha}}\\)",
       "(D). \\(\\frac{2\\cos \\alpha}{\\sqrt{\\sin 2\\alpha}}\\)"
     ],
-    correct: "(B)"
+    correct: "(A)"
   },
   // Q13
   {
@@ -161,7 +161,7 @@ window.SET_DATA = {
     options: [
       "(A). \\(\\frac{\\pi}{6}\\)",
       "(B). \\(\\frac{\\pi}{3}\\)",
-      "(C). \\(\\frac{\\pi}{8}\\)",
+      "(C). \\(\\frac{\\pi}{12}\\)",
       "(D). \\(\\frac{\\pi}{4}\\)"
     ],
     correct: "(C)"
@@ -195,7 +195,7 @@ window.SET_DATA = {
       "(A). \\(5\\sqrt{13}\\)",
       "(B). \\(5 / \\sqrt{26}\\)",
       "(C). \\(5 / 13\\)",
-      "(D). \\(-\\frac{1}{\\sqrt{26}}\\)"
+      "(D). \\(\\sqrt{\\frac{1}{26}}\\)"
     ],
     correct: "(D)"
   },
@@ -256,7 +256,7 @@ window.SET_DATA = {
   },
   // Q24
   {
-    q: "The number of solutions of the equation \\((1 - \\cos 2x) (\\cos 2x + \\cos^2 x) = 0, 0 \\le x \\le 2\\pi\\) is",
+    q: "The number of solutions of the equation \\((1 - \\cos 2x) (\\cos 2x + \\cos^2 x) = 0,\\)\\( 0 \\le x \\le 2\\pi\\) is",
     options: [
       "(A). \\(3\\)",
       "(B). \\(2\\)",
@@ -289,7 +289,7 @@ window.SET_DATA = {
   },
   // Q27
   {
-    q: "The general solution of \\(\\sin 3x + \\sin x - 3\\sin 2x = \\cos 3x + \\cos x - 3\\cos 2x\\) is",
+    q: "The general solution of \\(\\sin 3x + \\sin x - 3\\sin 2x = \\cos 3x +\\)\\( \\cos x - 3\\cos 2x\\) is",
     options: [
       "(A). \\(\\frac{n\\pi}{2} + \\frac{\\pi}{8}\\) for \\(n\\) integer",
       "(B). \\(\\frac{n\\pi}{2} - \\frac{\\pi}{8}\\) for \\(n\\) integer",
@@ -300,7 +300,7 @@ window.SET_DATA = {
   },
   // Q28
   {
-    q: "If \\(\\frac{\\sin A + \\sin B + \\sin C}{\\cos A + \\cos B + \\cos C} = 3\\), then \\(\\cos A + \\cos B + \\cos C\\) is equal to",
+    q: "If \\(\\sin A + \\sin B + \\sin C = 3\\), then \\(\\cos A + \\cos B + \\cos C\\) is equal to",
     options: [
       "(A). \\(3\\)",
       "(B). \\(2\\)",
@@ -412,12 +412,12 @@ window.SET_DATA = {
   {
     q: "If \\(A, B\\) and \\(C\\) are the angles of a triangle such that \\(\\sec (A - B), \\sec A\\) and \\(\\sec (A + B)\\) are in AP, then",
     options: [
-      "(A). \\(\\csc^2 A = 2\\csc^2 \\frac{B}{2}\\)",
+      "(A). \\(cosec^2 A = 2cosec^2 \\frac{B}{2}\\)",
       "(B). \\(2\\sec^2 A = \\sec^2 \\frac{B}{2}\\)",
-      "(C). \\(2\\csc^2 A = \\csc^2 \\frac{B}{2}\\)",
+      "(C). \\(2cosec^2 A = \\cosec^2 \\frac{B}{2}\\)",
       "(D). \\(2\\sec^2 B = \\sec^2 \\frac{A}{2}\\)"
     ],
-    correct: "(C)"
+    correct: "(B)"
   },
   // Q39
   {
@@ -432,7 +432,7 @@ window.SET_DATA = {
   },
   // Q40
   {
-    q: "If \\((1 + \\tan 1^\\circ) (1 + \\tan 2^\\circ) \\dots (1 + \\tan 45^\\circ) = 2^n\\), then the value of \\(n\\) is",
+    q: "If \\((1 + \\tan 1^\\circ) (1 + \\tan 2^\\circ) \\dots\\)\\( (1 + \\tan 45^\\circ) = 2^n\\), then the value of \\(n\\) is",
     options: [
       "(A). \\(21\\)",
       "(B). \\(22\\)",
@@ -501,8 +501,8 @@ window.SET_DATA = {
     q: "The sum of the series \\(\\sum_{n=1}^{\\infty} \\sin \\left(\\frac{n!\\pi}{720}\\right)\\) is",
     options: [
       "(A). \\(\\sin \\left(\\frac{\\pi}{180}\\right) + \\sin \\left(\\frac{\\pi}{360}\\right) + \\sin \\left(\\frac{\\pi}{540}\\right)\\)",
-      "(B). \\(\\sin \\left(\\frac{\\pi}{6}\\right) + \\sin \\left(\\frac{\\pi}{30}\\right) + \\sin \\left(\\frac{\\pi}{120}\\right) + \\sin \\left(\\frac{\\pi}{360}\\right)\\)",
-      "(C). \\(\\sin \\left(\\frac{\\pi}{6}\\right) + \\sin \\left(\\frac{\\pi}{30}\\right) + \\sin \\left(\\frac{\\pi}{120}\\right) + \\sin \\left(\\frac{\\pi}{360}\\right) + \\sin \\left(\\frac{\\pi}{720}\\right)\\)",
+      "(B). \\(\\sin \\left(\\frac{\\pi}{6}\\right) + \\sin \\left(\\frac{\\pi}{30}\\right) + \\sin \\left(\\frac{\\pi}{120}\\right) + \\)\\(\\sin \\left(\\frac{\\pi}{360}\\right)\\)",
+      "(C). \\(\\sin \\left(\\frac{\\pi}{6}\\right) + \\sin \\left(\\frac{\\pi}{30}\\right) + \\sin \\left(\\frac{\\pi}{120}\\right) +\\)\\( \\sin \\left(\\frac{\\pi}{360}\\right) + \\sin \\left(\\frac{\\pi}{720}\\right)\\)",
       "(D). \\(\\sin \\left(\\frac{\\pi}{180}\\right) + \\sin \\left(\\frac{\\pi}{360}\\right)\\)"
     ],
     correct: "(C)"
@@ -520,7 +520,7 @@ window.SET_DATA = {
   },
   // Q48
   {
-    q: "The value of \\(2\\cot^2 (\\pi / 6) + 4\\tan^2 (\\pi / 6) - 3\\csc (\\pi / 6)\\) is",
+    q: "The value of \\(2\\cot^2 (\\pi / 6) + 4\\tan^2 (\\pi / 6) - 3cosec (\\pi / 6)\\) is",
     options: [
       "(A). \\(2\\)",
       "(B). \\(4\\)",
