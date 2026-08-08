@@ -58,7 +58,7 @@ window.SET_DATA = {
   },
   // Q6
   {
-    q: "Suman is fond of driving. One day, she left her home early and drove towards East for \\(8\\) km and then turned \\(90^\\circ\\) anti-clockwise and drove for \\(15\\) km to reach a lake. What is the shortest distance of the lake from her home? « UPSSSC VDO 2018",
+    q: "Suman is fond of driving. One day, she left her home early and drove towards East for \\(8\\) km and then turned \\(90^\\circ\\) anti-clockwise and drove for \\(15\\) km to reach a lake. What is the shortest distance of the lake from her home?",
     options: [
       "(A). \\(15\\) km",
       "(B). \\(16\\) km",
@@ -69,7 +69,7 @@ window.SET_DATA = {
   },
   // Q7
   {
-    q: "A and B start walking from the same point A goes North and covers \\(3\\) km, then turns right and covers \\(4\\) km. B goes West and covers \\(5\\) km, then turns right and covers \\(3\\) km. How far apart are they from each other? « SSC CPO 2012",
+    q: "A and B start walking from the same point A goes North and covers \\(3\\) km, then turns right and covers \\(4\\) km. B goes West and covers \\(5\\) km, then turns right and covers \\(3\\) km. How far apart are they from each other?",
     options: [
       "(A). \\(10\\) km",
       "(B). \\(9\\) km",
@@ -80,7 +80,7 @@ window.SET_DATA = {
   },
   // Q8
   {
-    q: "Molly travelled from point A to point B which is \\(5\\) ft. He, then travelled \\(6\\) ft to his right and then turned to left and went \\(4\\) ft. Finally, he again went \\(6\\) ft to his left. How far is he from the point B now? « SSC CGL 2012",
+    q: "Molly travelled from point A to point B which is \\(5\\) ft. He, then travelled \\(6\\) ft to his right and then turned to left and went \\(4\\) ft. Finally, he again went \\(6\\) ft to his left. How far is he from the point B now?",
     options: [
       "(A). \\(10\\) ft",
       "(B). \\(6\\) ft",
@@ -91,7 +91,7 @@ window.SET_DATA = {
   },
   // Q9
   {
-    q: "W walked \\(40\\) m towards West, took a left turn and walked \\(30\\) m. He, then took a right turn and walked \\(20\\) m. He again took a right turn and walked \\(30\\) m. How far was he from the starting point? « Allahabad Bank PO 2010",
+    q: "W walked \\(40\\) m towards West, took a left turn and walked \\(30\\) m. He, then took a right turn and walked \\(20\\) m. He again took a right turn and walked \\(30\\) m. How far was he from the starting point?",
     options: [
       "(A). \\(70\\) m",
       "(B). \\(60\\) m",
@@ -102,7 +102,7 @@ window.SET_DATA = {
   },
   // Q10
   {
-    q: "Sheela walks \\(2\\) km from A to B. She turns right at \\(90^\\circ\\) and goes \\(3\\) km upto C. She, then again turns right at \\(90^\\circ\\) and goes \\(8\\) km upto D. Again she takes right turn at \\(90^\\circ\\) and goes \\(3\\) km upto K. From K she takes right turn at \\(90^\\circ\\) again and reaches at F after covering \\(4\\) km. Find the distance between A and F. « MAT 2011",
+    q: "Sheela walks \\(2\\) km from A to B. She turns right at \\(90^\\circ\\) and goes \\(3\\) km upto C. She, then again turns right at \\(90^\\circ\\) and goes \\(8\\) km upto D. Again she takes right turn at \\(90^\\circ\\) and goes \\(3\\) km upto K. From K she takes right turn at \\(90^\\circ\\) again and reaches at F after covering \\(4\\) km. Find the distance between A and F.",
     options: [
       "(A). \\(2\\) km",
       "(B). \\(4\\) km",
@@ -113,7 +113,7 @@ window.SET_DATA = {
   },
   // Q11
   {
-    q: "A man goes \\(5\\) km East from his office. He then takes left turn and walks \\(3\\) km. He again takes left turn and walks \\(5\\) km. How far is he from starting point? « RRB TC/CC 2010",
+    q: "A man goes \\(5\\) km East from his office. He then takes left turn and walks \\(3\\) km. He again takes left turn and walks \\(5\\) km. How far is he from starting point?",
     options: [
       "(A). \\(3\\) km",
       "(B). \\(4\\) km",
@@ -124,7 +124,7 @@ window.SET_DATA = {
   },
   // Q12
   {
-    q: "Rohit drives a car from Bengaluru to Mysore. After \\(80\\) km he turns right and goes \\(50\\) km. After that he again turns to his right and moves on \\(70\\) km. Finally, he turns to his right and stops after moving a distance of \\(50\\) km. At what distance is Rohit now from Bengaluru? « MAT 2014",
+    q: "Rohit drives a car from Bengaluru to Mysore. After \\(80\\) km he turns right and goes \\(50\\) km. After that he again turns to his right and moves on \\(70\\) km. Finally, he turns to his right and stops after moving a distance of \\(50\\) km. At what distance is Rohit now from Bengaluru?",
     options: [
       "(A). \\(10\\) km",
       "(B). \\(40\\) km",
@@ -135,7 +135,7 @@ window.SET_DATA = {
   },
   // Q13
   {
-    q: "A man starts from his home and walks \\(10\\) km towards South. Then, he turns right and walks \\(6\\) km, again he turns right and goes \\(10\\) km. Finally, he turns right and walks \\(5\\) km. At what distance is he from his straight point? « UPPSC 2012",
+    q: "A man starts from his home and walks \\(10\\) km towards South. Then, he turns right and walks \\(6\\) km, again he turns right and goes \\(10\\) km. Finally, he turns right and walks \\(5\\) km. At what distance is he from his straight point?",
     options: [
       "(A). \\(3\\) km",
       "(B). \\(2\\) km",
@@ -256,7 +256,7 @@ window.SET_DATA = {
   },
   // Q24
   {
-    q: "Sangitha was facing North-West direction. If she was playing carom with Sudha in the Standard seating pattern, in which direction was Sudha facing « RRB Group D 2018",
+    q: "Sangitha was facing North-West direction. If she was playing carom with Sudha in the Standard seating pattern, in which direction was Sudha facing",
     options: [
       "(A). North-West",
       "(B). North-East",
@@ -333,7 +333,7 @@ window.SET_DATA = {
   },
   // Q31
   {
-    q: "Sandhya and Ramani were facing East direction. Sandhya turns \\(45^\\circ\\) anti-clockwise and then \\(135^\\circ\\) clockwise direction. How much turns Ramani would have to take to face opposite to Sandhya? « RRB Group D 2018",
+    q: "Sandhya and Ramani were facing East direction. Sandhya turns \\(45^\\circ\\) anti-clockwise and then \\(135^\\circ\\) clockwise direction. How much turns Ramani would have to take to face opposite to Sandhya?",
     options: [
       "(A). \\(180^\\circ\\) anti-clockwise",
       "(B). \\(90^\\circ\\) anti-clockwise",
@@ -344,7 +344,7 @@ window.SET_DATA = {
   },
   // Q32
   {
-    q: "Manika moves around the boundary of her rectangular field with same speed. She started moving towards West and then turns \\(45^\\circ\\) towards her right and then moves \\(500\\)m. Which direction is she facing now? « RRB Group D 2018",
+    q: "Manika moves around the boundary of her rectangular field with same speed. She started moving towards West and then turns \\(45^\\circ\\) towards her right and then moves \\(500\\)m. Which direction is she facing now?",
     options: [
       "(A). North-West",
       "(B). North-East",
@@ -355,7 +355,7 @@ window.SET_DATA = {
   },
   // Q33
   {
-    q: "A watch reads \\(4:30\\). If the minute hand points East, in what direction will the hour hand point? « UKPSC Asst. Conservator of Forest 2019",
+    q: "A watch reads \\(4:30\\). If the minute hand points East, in what direction will the hour hand point?. Conservator of Forest 2019",
     options: [
       "(A). South-East",
       "(B). North-East",
@@ -366,7 +366,7 @@ window.SET_DATA = {
   },
   // Q34
   {
-    q: "The time in a clock is quarter past twelve. If the hour hand points to the East, which is the direction opposite to the minute hand? « UP PSC 2013",
+    q: "The time in a clock is quarter past twelve. If the hour hand points to the East, which is the direction opposite to the minute hand?",
     options: [
       "(A). South-West",
       "(B). South",
@@ -377,7 +377,7 @@ window.SET_DATA = {
   },
   // Q35
   {
-    q: "One morning at \\(7\\) O'clock, Naresh started walking with his back towards the Sun. Then, he turned towards left, walked straight and then turned towards right and walked straight. Then, he again turned towards left. Now, in which direction is he facing? « SSC 10+2 2013",
+    q: "One morning at \\(7\\) O'clock, Naresh started walking with his back towards the Sun. Then, he turned towards left, walked straight and then turned towards right and walked straight. Then, he again turned towards left. Now, in which direction is he facing?",
     options: [
       "(A). North",
       "(B). East",
@@ -388,7 +388,7 @@ window.SET_DATA = {
   },
   // Q36
   {
-    q: "Ramraj is wearing a watch. At \\(6:00\\) for instance, if the hour needle points towards West, then in which direction minutes hand was pointing out? « RRB NTPC 2016",
+    q: "Ramraj is wearing a watch. At \\(6:00\\) for instance, if the hour needle points towards West, then in which direction minutes hand was pointing out?",
     options: [
       "(A). South",
       "(B). West",
@@ -399,7 +399,7 @@ window.SET_DATA = {
   },
   // Q37
   {
-    q: "City C is to the South of City B and City A is to the North of City C. In which direction City A is located with respect to City B? « Canara Bank PO 2010",
+    q: "City C is to the South of City B and City A is to the North of City C. In which direction City A is located with respect to City B?",
     options: [
       "(A). North",
       "(B). South",
@@ -421,7 +421,7 @@ window.SET_DATA = {
   },
   // Q39
   {
-    q: "Y is in the East of X which is in the North of Z. If P is in the South of Z, then in which direction of Y, is P? « Delhi Police MTS 2018",
+    q: "Y is in the East of X which is in the North of Z. If P is in the South of Z, then in which direction of Y, is P?",
     options: [
       "(A). North",
       "(B). South",
