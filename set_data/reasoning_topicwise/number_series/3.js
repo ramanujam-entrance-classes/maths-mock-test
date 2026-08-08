@@ -366,7 +366,7 @@ window.SET_DATA = {
   },
   // Q34
   {
-    q: "Study the following arrangement carefully and answer the question given below: \\( \\ \\)W 1 R % 4 J E # 7 M T 2 I 9 B H 3 A $ 9 F Q 5 D G 6 U S P \\( \\ \\)Three of the following are alike in a certain way on the basis of above arrangement and hence form a group. Which one does not belong to that group?",
+    q: `Study the following arrangement carefully and answer the question given below: <br>W 1 R % 4 J E # 7 M T 2 I 9 B H 3 A $ 9 F Q 5 D G 6 U S P <br>Three of the following are alike in a certain way on the basis of above arrangement and hence form a group. Which one does not belong to that group?",
     options: [
       "(A). R W 4",
       "(B). 9 Q A",
