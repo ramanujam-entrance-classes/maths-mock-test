@@ -3,7 +3,7 @@ window.SET_DATA = {
   questions: [
   // Q1
   {
-    q: "The value of \\(y = 0.36^{\\log_{0.25}\\left(\\frac{1}{3} + \\frac{1}{3^2} + \\ldots\\right)}\\) is",
+    q: "The value of \\(y = 0.36 \\log_{0.25}\\left(\\frac{1}{3} + \\frac{1}{3^2} + \\ldots\\right)\\) is",
     options: [
       "(A). \\(0.9\\)",
       "(B). \\(0.18\\)",
@@ -47,7 +47,7 @@ window.SET_DATA = {
   },
   // Q5
   {
-    q: "Solution set of the inequality \\(\\log_3 (x+2)(x+4) + \\log_{1/3} (x+2) < \\frac{1}{2} \\log_{\\sqrt{3}} 7\\) is",
+    q: "Solution set of the inequality \\(\\log_3 (x+2)(x+4) + \\log_{1/3} (x+2) < \\)\\( \\frac{1}{2} \\log_{\\sqrt{3}} 7\\) is",
     options: [
       "(A). \\((-2, -1)\\)",
       "(B). \\((-2, 3)\\)",
@@ -102,7 +102,7 @@ window.SET_DATA = {
   },
   // Q10
   {
-    q: "If \\((x_0, y_0)\\) is the solution of the following equations. \\((2x)^{\\ln 2} = (3y)^{\\ln 3}\\), \\(3^{\\ln x} = 2^{\\ln y}\\). Then, \\(x_0\\) is",
+    q: "If \\((x_0, y_0)\\) is the solution of the following equations. \\((2x)^{\\ln 2} = 3y^{\\ln 3}\\), \\(3^{\\ln x} = 2^{\\ln y}\\). Then, \\(x_0\\) is",
     options: [
       "(A). \\(1/6\\)",
       "(B). \\(1/3\\)",
@@ -223,7 +223,7 @@ window.SET_DATA = {
   },
   // Q21
   {
-    q: "If \\(\\log_4 2 + \\log_4 4 + \\log_4 16 + \\log_4 x = 6\\), then \\(x =\\) [EAMCET 2006]",
+    q: "If \\(\\log_4 2 + \\log_4 4 + \\log_4 16 + \\log_4 x = 6\\), then \\(x =\\)",
     options: [
       "(A). \\(4\\)",
       "(B). \\(64\\)",
@@ -289,7 +289,7 @@ window.SET_DATA = {
   },
   // Q27
   {
-    q: "The value of \\(\\sqrt{\\log_{0.5}^2 4}\\), is [CEE (Delhi) 2002]",
+    q: "The value of \\(\\sqrt{\\log_{0.5}^2 4}\\), is",
     options: [
       "(A). \\(-2\\)",
       "(B). \\(\\sqrt{-4}\\)",
@@ -355,7 +355,10 @@ window.SET_DATA = {
   },
   // Q33
   {
-    q: "\\(6 + \\log_{1/4} \\frac{1}{\\sqrt{2}} \\left[ \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\dots}}} \\right]\\) is equal to",
+    q: `<span style='font-size:13px'> 
+        \\(6 + \\log_{1/4} \\frac{1}{\\sqrt{2}} \\left[ \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\sqrt{1 - \\frac{1}{\\sqrt{2}} \\dots}}} \\right]\\) 
+        </span>
+        is equal to`,
     options: [
       "(A). \\(6\\)",
       "(B). \\(13/2\\)",
@@ -509,7 +512,7 @@ window.SET_DATA = {
   },
   // Q47
   {
-    q: "The number of solutions of \\(\\log_2 (x - 1) = 2 \\log_2 (x - 3)\\) is [JEE (WB) 2007]",
+    q: "The number of solutions of \\(\\log_2 (x - 1) = 2 \\log_2 (x - 3)\\) is",
     options: [
       "(A). \\(2\\)",
       "(B). \\(1\\)",
@@ -542,7 +545,7 @@ window.SET_DATA = {
   },
   // Q50
   {
-    q: "If \\(\\log_2 \\sin x - \\log_2 \\cos x - \\log_2 (1 - \\tan^2 x) = -1\\), then \\(x =\\)",
+    q: "If \\(\\log_2 \\sin x - \\log_2 \\cos x -\\)\\( \\log_2 (1 - \\tan^2 x) = -1\\), then \\(x =\\)",
     options: [
       "(A). \\(\\frac{n\\pi}{2} + \\frac{\\pi}{8}, n \\in Z\\)",
       "(B). \\(n\\pi - \\frac{\\pi}{8}, n \\in Z\\)",
