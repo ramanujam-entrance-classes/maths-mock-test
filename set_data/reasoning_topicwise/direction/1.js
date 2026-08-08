@@ -355,7 +355,7 @@ window.SET_DATA = {
   },
   // Q33
   {
-    q: "A watch reads \\(4:30\\). If the minute hand points East, in what direction will the hour hand point?. Conservator of Forest 2019",
+    q: "A watch reads \\(4:30\\). If the minute hand points East, in what direction will the hour hand point?",
     options: [
       "(A). South-East",
       "(B). North-East",
