@@ -124,7 +124,7 @@ window.SET_DATA = {
   },
   // Q12
   {
-    q: `Find the missing number in the series: <br>\\(4, 7, 25, 10,...., 20, 16, 19\\)",
+    q: `Find the missing number in the series: <br>\\(4, 7, 25, 10,...., 20, 16, 19\\)`,
     options: [
       "(A). \\(13\\)",
       "(B). \\(15\\)",
