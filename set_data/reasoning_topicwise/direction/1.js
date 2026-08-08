@@ -25,7 +25,7 @@ window.SET_DATA = {
   },
   // Q3
   {
-    q: "I walk \\(12\\) km to the North, then \\(10\\) km East and then \\(12\\) km South. How far am I from the starting point? « SSC CPO 2016",
+    q: "I walk \\(12\\) km to the North, then \\(10\\) km East and then \\(12\\) km South. How far am I from the starting point?",
     options: [
       "(A). \\(34\\) km",
       "(B). \\(22\\) km",
@@ -36,7 +36,7 @@ window.SET_DATA = {
   },
   // Q4
   {
-    q: "From her house, Rani first walks \\(15\\) m straight in front and then \\(15\\) m to the right. Then, every time turning to her left, she walks \\(10\\) m, \\(25\\) and \\(25\\) m respectively. How far is she now from her house? « UPSSSC Junior Assist. 2017",
+    q: "From her house, Rani first walks \\(15\\) m straight in front and then \\(15\\) m to the right. Then, every time turning to her left, she walks \\(10\\) m, \\(25\\) and \\(25\\) m respectively. How far is she now from her house?",
     options: [
       "(A). \\(25\\) m",
       "(B). \\(20\\) m",
@@ -47,7 +47,7 @@ window.SET_DATA = {
   },
   // Q5
   {
-    q: "Anita started from a place A and walked \\(2\\) m towards West. She then took a right turn and walked \\(3\\) m before turning to left and walked \\(5\\) m. Now, she took a left turn and walked again \\(3\\) m to stop at place B. How far is the place A from B? « UKPSC Asst. Conservator of Forest 2019",
+    q: "Anita started from a place A and walked \\(2\\) m towards West. She then took a right turn and walked \\(3\\) m before turning to left and walked \\(5\\) m. Now, she took a left turn and walked again \\(3\\) m to stop at place B. How far is the place A from B?",
     options: [
       "(A). \\(2\\) m",
       "(B). \\(6\\) m",
