@@ -14,430 +14,430 @@ window.SET_DATA = {
   },
   // Q2
   {
-    q: "2, 15, 41, 80, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q2.png" alt="Question 2 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(111\\)",
-      "(B). \\(120\\)",
-      "(C). \\(121\\)",
-      "(D). \\(132\\)"
+      "(A). \\(13\\)",
+      "(B). \\(15\\)",
+      "(C). \\(17\\)",
+      "(D). \\(19\\)"
     ],
-    correct: "(D)"
+    correct: "(B)"
   },
   // Q3
   {
-    q: "6, 17, 39, 72, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q3.png" alt="Question 3 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(83\\)",
-      "(B). \\(94\\)",
-      "(C). \\(116\\)",
-      "(D). \\(127\\)"
+      "(A). \\(26\\)",
+      "(B). \\(32\\)",
+      "(C). \\(36\\)",
+      "(D). \\(117\\)"
     ],
-    correct: "(C)"
+    correct: "(B)"
   },
   // Q4
   {
-    q: "325, 259, 204, 160, 127, 105, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q4.png" alt="Question 4 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(94\\)",
-      "(B). \\(96\\)",
-      "(C). \\(98\\)",
-      "(D). \\(100\\)"
+      "(A). \\(-30\\)",
+      "(B). \\(13\\)",
+      "(C). \\(18\\)",
+      "(D). \\(30\\)"
     ],
-    correct: "(A)"
+    correct: "(D)"
   },
   // Q5
   {
-    q: "1, 4, 10, 22, 46, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q5.png" alt="Question 5 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(64\\)",
-      "(B). \\(86\\)",
-      "(C). \\(94\\)",
-      "(D). \\(122\\)"
-    ],
-    correct: "(C)"
-  },
-  // Q6
-  {
-    q: "0.5, 0.55, 0.65, 0.8, ?",
-    options: [
-      "(A). \\(0.9\\)",
-      "(B). \\(0.82\\)",
-      "(C). \\(1\\)",
-      "(D). \\(0.95\\)"
-    ],
-    correct: "(C)"
-  },
-  // Q7
-  {
-    q: "5, 6, 9, 15, ?, 40",
-    options: [
-      "(A). \\(21\\)",
-      "(B). \\(25\\)",
-      "(C). \\(27\\)",
-      "(D). \\(33\\)"
-    ],
-    correct: "(B)"
-  },
-  // Q8
-  {
-    q: "2, 3, 5, 7, 11, ?, 17",
-    options: [
-      "(A). \\(12\\)",
-      "(B). \\(13\\)",
-      "(C). \\(14\\)",
-      "(D). \\(15\\)"
-    ],
-    correct: "(B)"
-  },
-  // Q9
-  {
-    q: "4, 9, 25, ?, 121, 169, 289, 361",
-    options: [
-      "(A). \\(49\\)",
-      "(B). \\(64\\)",
-      "(C). \\(81\\)",
-      "(D). \\(87\\)"
+      "(A). \\(16\\)",
+      "(B). \\(21\\)",
+      "(C). \\(61\\)",
+      "(D). \\(81\\)"
     ],
     correct: "(A)"
   },
+  // Q6
+  {
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q6.png" alt="Question 6 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
+    options: [
+      "(A). \\(196\\)",
+      "(B). \\(246\\)",
+      "(C). \\(250\\)",
+      "(D). \\(256\\)"
+    ],
+    correct: "(D)"
+  },
+  // Q7
+  {
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q7.png" alt="Question 7 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
+    options: [
+      "(A). \\(42\\)",
+      "(B). \\(44\\)",
+      "(C). \\(46\\)",
+      "(D). \\(48\\)"
+    ],
+    correct: "(D)"
+  },
+  // Q8
+  {
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q8.png" alt="Question 8 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
+    options: [
+      "(A). \\(19\\)",
+      "(B). \\(23\\)",
+      "(C). \\(25\\)",
+      "(D). \\(31\\)"
+    ],
+    correct: "(D)"
+  },
+  // Q9
+  {
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q9.png" alt="Question 9 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
+    options: [
+      "(A). \\(2\\)",
+      "(B). \\(3\\)",
+      "(C). \\(4\\)",
+      "(D). \\(5\\)"
+    ],
+    correct: "(B)"
+  },
   // Q10
   {
-    q: "1, 9, 25, 49, 81, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q10.png" alt="Question 10 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(100\\)",
-      "(B). \\(112\\)",
-      "(C). \\(121\\)",
-      "(D). \\(144\\)"
+      "(A). \\(260\\)",
+      "(B). \\(269\\)",
+      "(C). \\(324\\)",
+      "(D). \\(429\\)"
     ],
     correct: "(C)"
   },
   // Q11
   {
-    q: "1, 1, 4, 8, 9, 27, 16, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q11.png" alt="Question 11 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(32\\)",
-      "(B). \\(64\\)",
-      "(C). \\(81\\)",
-      "(D). \\(256\\)"
+      "(A). \\(18\\)",
+      "(B). \\(33\\)",
+      "(C). \\(135\\)",
+      "(D). \\(145\\)"
     ],
-    correct: "(B)"
+    correct: "(C)"
   },
   // Q12
   {
-    q: "4, 12, 36, 108, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q12.png" alt="Question 12 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(144\\)",
-      "(B). \\(216\\)",
-      "(C). \\(304\\)",
-      "(D). \\(324\\)"
+      "(A). \\(10\\)",
+      "(B). \\(11\\)",
+      "(C). \\(12\\)",
+      "(D). \\(13\\)"
     ],
-    correct: "(D)"
+    correct: "(C)"
   },
   // Q13
   {
-    q: "1, 1, 2, 6, 24, ?, 720",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q13.png" alt="Question 13 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(100\\)",
-      "(B). \\(104\\)",
-      "(C). \\(108\\)",
-      "(D). \\(120\\)"
+      "(A). \\(13\\)",
+      "(B). \\(14\\)",
+      "(C). \\(20\\)",
+      "(D). \\(21\\)"
     ],
-    correct: "(D)"
+    correct: "(B)"
   },
   // Q14
   {
-    q: "240, ?, 120, 40, 10, 2",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q14.png" alt="Question 14 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(180\\)",
-      "(B). \\(240\\)",
-      "(C). \\(420\\)",
-      "(D). \\(480\\)"
+      "(A). \\(5\\)",
+      "(B). \\(9\\)",
+      "(C). \\(11\\)",
+      "(D). \\(13\\)"
     ],
     correct: "(B)"
   },
   // Q15
   {
-    q: "4, 6, 9, 13\\frac{1}{2}, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q15.png" alt="Question 15 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(17\\frac{1}{2}\\)",
-      "(B). \\(19\\)",
-      "(C). \\(20\\frac{1}{4}\\)",
-      "(D). \\(22\\frac{3}{4}\\)"
+      "(A). \\(21\\)",
+      "(B). \\(25\\)",
+      "(C). \\(35\\)",
+      "(D). \\(45\\)"
     ],
-    correct: "(C)"
+    correct: "(B)"
   },
   // Q16
   {
-    q: "5760, 960, ?, 48, 16, 8",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q16.png" alt="Question 16 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(120\\)",
-      "(B). \\(160\\)",
-      "(C). \\(192\\)",
-      "(D). \\(240\\)"
+      "(A). \\(49\\)",
+      "(B). \\(76\\)",
+      "(C). \\(89\\)",
+      "(D). \\(94\\)"
     ],
-    correct: "(C)"
+    correct: "(A)"
   },
   // Q17
   {
-    q: "1, 2, 6, 7, 21, 22, 66, 67, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q17.png" alt="Question 17 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(70\\)",
-      "(B). \\(134\\)",
-      "(C). \\(201\\)",
-      "(D). \\(301\\)"
+      "(A). \\(12\\)",
+      "(B). \\(21\\)",
+      "(C). \\(24\\)",
+      "(D). \\(35\\)"
     ],
-    correct: "(C)"
+    correct: "(B)"
   },
   // Q18
   {
-    q: "48, 24, 96, 48, 192, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q18.png" alt="Question 18 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(76\\)",
-      "(B). \\(90\\)",
-      "(C). \\(96\\)",
-      "(D). \\(98\\)"
+      "(A). \\(20\\)",
+      "(B). \\(25\\)",
+      "(C). \\(50\\)",
+      "(D). \\(75\\)"
     ],
     correct: "(C)"
   },
   // Q19
   {
-    q: "1, 2, 3, 6, 9, 18, ?, 54",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q19.png" alt="Question 19 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(18\\)",
-      "(B). \\(27\\)",
-      "(C). \\(36\\)",
-      "(D). \\(81\\)"
+      "(A). \\(1216\\)",
+      "(B). \\(2250\\)",
+      "(C). \\(8100\\)",
+      "(D). \\(11036\\)"
     ],
-    correct: "(B)"
+    correct: "(C)"
   },
   // Q20
   {
-    q: "165, 195, 255, 285, 345, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q20.png" alt="Question 20 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(375\\)",
-      "(B). \\(390\\)",
-      "(C). \\(420\\)",
-      "(D). \\(435\\)"
+      "(A). \\(184\\)",
+      "(B). \\(210\\)",
+      "(C). \\(241\\)",
+      "(D). \\(425\\)"
     ],
-    correct: "(D)"
+    correct: "(A)"
   },
   // Q21
   {
-    q: "9, 27, 31, 155, 161, 1127, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q21.png" alt="Question 21 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(316\\)",
-      "(B). \\(1135\\)",
-      "(C). \\(1288\\)",
-      "(D). \\(2254\\)"
+      "(A). \\(6\\)",
+      "(B). \\(9\\)",
+      "(C). \\(12\\)",
+      "(D). \\(18\\)"
     ],
     correct: "(B)"
   },
   // Q22
   {
-    q: "2, 3, 3, 5, 10, 13, ?, 43, 172, 177",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q22.png" alt="Question 22 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(23\\)",
-      "(B). \\(38\\)",
-      "(C). \\(39\\)",
-      "(D). \\(40\\)"
-    ],
-    correct: "(C)"
-  },
-  // Q23
-  {
-    q: "3, 15, ?, 63, 99, 143",
-    options: [
-      "(A). \\(27\\)",
-      "(B). \\(35\\)",
-      "(C). \\(45\\)",
-      "(D). \\(56\\)"
-    ],
-    correct: "(B)"
-  },
-  // Q24
-  {
-    q: "7, 26, 63, 124, 215, 342, ?",
-    options: [
-      "(A). \\(391\\)",
-      "(B). \\(421\\)",
-      "(C). \\(481\\)",
-      "(D). \\(511\\)"
+      "(A). \\(5\\)",
+      "(B). \\(6\\)",
+      "(C). \\(8\\)",
+      "(D). \\(9\\)"
     ],
     correct: "(D)"
   },
+  // Q23
+  {
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q23.png" alt="Question 23 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
+    options: [
+      "(A). \\(25\\)",
+      "(B). \\(37\\)",
+      "(C). \\(41\\)",
+      "(D). \\(47\\)"
+    ],
+    correct: "(C)"
+  },
+  // Q24
+  {
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q24.png" alt="Question 24 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
+    options: [
+      "(A). \\(2\\)",
+      "(B). \\(6\\)",
+      "(C). \\(8\\)",
+      "(D). \\(64\\)"
+    ],
+    correct: "(C)"
+  },
   // Q25
   {
-    q: "3, 7, 15, ?, 63, 127",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q25.png" alt="Question 25 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(30\\)",
-      "(B). \\(31\\)",
-      "(C). \\(47\\)",
-      "(D). \\(52\\)"
+      "(A). \\(27\\)",
+      "(B). \\(35\\)",
+      "(C). \\(54\\)",
+      "(D). \\(64\\)"
     ],
     correct: "(B)"
   },
   // Q26
   {
-    q: "4, 10, ?, 82, 244, 730",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q26.png" alt="Question 26 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(24\\)",
-      "(B). \\(28\\)",
-      "(C). \\(77\\)",
-      "(D). \\(218\\)"
+      "(A). \\(11\\)",
+      "(B). \\(12\\)",
+      "(C). \\(22\\)",
+      "(D). \\(33\\)"
     ],
-    correct: "(B)"
+    correct: "(C)"
   },
   // Q27
   {
-    q: "6, 13, 25, 51, 101, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q27.png" alt="Question 27 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(201\\)",
-      "(B). \\(202\\)",
-      "(C). \\(203\\)",
-      "(D). \\(205\\)"
+      "(A). \\(10\\)",
+      "(B). \\(12\\)",
+      "(C). \\(13\\)",
+      "(D). \\(15\\)"
     ],
     correct: "(C)"
   },
   // Q28
   {
-    q: "8, 28, 116, 584, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q28.png" alt="Question 28 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(1752\\)",
-      "(B). \\(3502\\)",
-      "(C). \\(3504\\)",
-      "(D). \\(3508\\)"
-    ],
-    correct: "(D)"
-  },
-  // Q29
-  {
-    q: "6, 13, 28, 59, ?",
-    options: [
-      "(A). \\(111\\)",
-      "(B). \\(113\\)",
-      "(C). \\(114\\)",
-      "(D). \\(122\\)"
-    ],
-    correct: "(D)"
-  },
-  // Q30
-  {
-    q: "3, 7, 23, 95, ?",
-    options: [
-      "(A). \\(62\\)",
-      "(B). \\(128\\)",
-      "(C). \\(479\\)",
-      "(D). \\(575\\)"
+      "(A). \\(4\)",
+      "(B). \\(305\\)",
+      "(C). \\(343\\)",
+      "(D). \\(729\\)"
     ],
     correct: "(C)"
   },
+  // Q29
+  {
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q29.png" alt="Question 29 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
+    options: [
+      "(A). \\(10\\)",
+      "(B). \\(11\\)",
+      "(C). \\(12\\)",
+      "(D). \\(13\\)"
+    ],
+    correct: "(B)"
+  },
+  // Q30
+  {
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q30.png" alt="Question 30 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
+    options: [
+      "(A). \\(1\\)",
+      "(B). \\(2\\)",
+      "(C). \\(3\\)",
+      "(D). \\(4\\)"
+    ],
+    correct: "(A)"
+  },
   // Q31
   {
-    q: "2, 3, 8, 27, 112, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q31.png" alt="Question 31 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(226\\)",
-      "(B). \\(339\\)",
-      "(C). \\(452\\)",
-      "(D). \\(565\\)"
+      "(A). \\(327\\)",
+      "(B). \\(386\\)",
+      "(C). \\(438\\)",
+      "(D). \\(469\\)"
     ],
     correct: "(D)"
   },
   // Q32
   {
-    q: "1, 5, 14, 30, 55, 91, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q32.png" alt="Question 32 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(130\\)",
-      "(B). \\(140\\)",
-      "(C). \\(150\\)",
-      "(D). \\(160\\)"
-    ],
-    correct: "(B)"
-  },
-  // Q33
-  {
-    q: "198, 194, 185, 169, ?",
-    options: [
-      "(A). \\(92\\)",
-      "(B). \\(112\\)",
-      "(C). \\(136\\)",
-      "(D). \\(144\\)"
+      "(A). \\(148\\)",
+      "(B). \\(208\\)",
+      "(C). \\(213\\)",
+      "(D). \\(233\\)"
     ],
     correct: "(D)"
   },
+  // Q33
+  {
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q33.png" alt="Question 33 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
+    options: [
+      "(A). \\(38\\)",
+      "(B). \\(39\\)",
+      "(C). \\(40\\)",
+      "(D). \\(44\\)"
+    ],
+    correct: "(A)"
+  },
   // Q34
   {
-    q: "2, 2, 5, 13, 28, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q34.png" alt="Question 34 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(49\\)",
+      "(A). \\(45\\)",
       "(B). \\(50\\)",
-      "(C). \\(51\\)",
-      "(D). \\(52\\)"
+      "(C). \\(60\\)",
+      "(D). \\(63\\)"
     ],
     correct: "(D)"
   },
   // Q35
   {
-    q: "2, 7, 27, 107, 427, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q35.png" alt="Question 35 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(1262\\)",
-      "(B). \\(1707\\)",
-      "(C). \\(4027\\)",
-      "(D). \\(4207\\)"
+      "(A). \\(1\\)",
+      "(B). \\(26\\)",
+      "(C). \\(39\\)",
+      "(D). \\(45\\)"
     ],
-    correct: "(B)"
+    correct: "(C)"
   },
   // Q36
   {
-    q: "24, 60, 120, 210, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q36.png" alt="Question 36 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(300\\)",
-      "(B). \\(336\\)",
-      "(C). \\(420\\)",
-      "(D). \\(525\\)"
+      "(A). \\(5\\)",
+      "(B). \\(12\\)",
+      "(C). \\(13\\)",
+      "(D). \\(26\\)"
     ],
-    correct: "(B)"
+    correct: "(A)"
   },
   // Q37
   {
-    q: "3, 12, 27, 48, 75, 108, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q37.png" alt="Question 37 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(147\\)",
-      "(B). \\(162\\)",
-      "(C). \\(183\\)",
-      "(D). \\(192\\)"
+      "(A). \\(19\\)",
+      "(B). \\(22\\)",
+      "(C). \\(32\\)",
+      "(D). \\(35\\)"
     ],
     correct: "(A)"
   },
   // Q38
   {
-    q: "563, 647, 479, 815, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q38.png" alt="Question 38 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(672\\)",
-      "(B). \\(386\\)",
-      "(C). \\(279\\)",
-      "(D). \\(143\\)"
+      "(A). \\(1\\)",
+      "(B). \\(731\\)",
+      "(C). \\(1625\\)",
+      "(D). \\(2031\\)"
     ],
     correct: "(D)"
   },
   // Q39
   {
-    q: "5, 2, 7, 9, 16, 25, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q39.png" alt="Question 39 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(41\\)",
-      "(B). \\(45\\)",
-      "(C). \\(48\\)",
-      "(D). \\(52\\)"
+      "(A). \\(25\\)",
+      "(B). \\(125\\)",
+      "(C). \\(156\\)",
+      "(D). \\(625\\)"
     ],
-    correct: "(A)"
+    correct: "(D)"
   },
   // Q40
   {
-    q: "10, 14, 26, 42, 70, ?",
+    q: `<img src="images/reasoning_topicwise_number_series_2/reasoning_topicwise_number_series_2_q40.png" alt="Question 40 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">`,
     options: [
-      "(A). \\(100\\)",
-      "(B). \\(102\\)",
-      "(C). \\(106\\)",
-      "(D). \\(114\\)"
+      "(A). \\(0\\)",
+      "(B). \\(8\\)",
+      "(C). \\(125\\)",
+      "(D). \\(216\\)"
     ],
     correct: "(D)"
   }
