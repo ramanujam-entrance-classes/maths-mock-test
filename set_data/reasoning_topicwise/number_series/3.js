@@ -3,7 +3,7 @@ window.SET_DATA = {
   questions: [
   // Q1
   {
-    q: "In the below series, you will be looking at the letter pattern, diagram pattern or number pattern. Fill in the blank in the end of the series.\nJAK, KBL, LCM, MDN, ...........",
+    q: `In the below series, you will be looking at the letter pattern, diagram pattern or number pattern. Fill in the blank in the end of the series.<br>JAK, KBL, LCM, MDN, ...........`,
     options: [
       "(A). OEP",
       "(B). NEO",
@@ -14,7 +14,7 @@ window.SET_DATA = {
   },
   // Q2
   {
-    q: "The following series is obtained by considering representations of decimal \\(99\\) in different number system. The next two numbers in the sequence are\n\\(99, 90, 83, 78\\), ...........",
+    q: `The following series is obtained by considering representations of decimal \\(99\\) in different number system. The next two numbers in the sequence are <br>\\(99, 90, 83, 78\\), ...........`,
     options: [
       "(A). \\(71, 69\\)",
       "(B). \\(69, 67\\)",
@@ -36,7 +36,7 @@ window.SET_DATA = {
   },
   // Q4
   {
-    q: "Find the missing term of the following series\nDCXW, HGTS, ......., POLK, TSRG",
+    q: `Find the missing term of the following series <br>DCXW, HGTS, ......., POLK, TSRG`,
     options: [
       "(A). KLOP",
       "(B). LKOP",
@@ -91,9 +91,9 @@ window.SET_DATA = {
   },
   // Q9
   {
-    q: "What is missing number in the series,\n\\(7, 12, 17, 28, 27, ?, 123, 1998\\)",
+    q: "What is missing number in the series: \\(4, 7, 11, 18, 29, 47, ?, 123, 199\\)?",
     options: [
-      "(A). \\(73\\)",
+      "(A). \\(76\\)",
       "(B). \\(77\\)",
       "(C). \\(86\\)",
       "(D). \\(87\\)"
@@ -102,7 +102,7 @@ window.SET_DATA = {
   },
   // Q10
   {
-    q: "Which of the following come next in the series\n\\(6, 8, 9, 23, 87, \\ldots\\ldots\\ldots\\)?",
+    q: "Which of the following come next in the series: \\(8, 6, 9, 23, 87, \\ldots\\ldots\\ldots\\)?",
     options: [
       "(A). \\(229\\)",
       "(B). \\(226\\)",
@@ -124,7 +124,7 @@ window.SET_DATA = {
   },
   // Q12
   {
-    q: "Find the missing number in the series\n\\(4, 7, 25, 13, 20, 26, 16, 19\\)",
+    q: `Find the missing number in the series: <br>\\(4, 7, 25, 10,...., 20, 16, 19\\)",
     options: [
       "(A). \\(13\\)",
       "(B). \\(15\\)",
@@ -135,12 +135,12 @@ window.SET_DATA = {
   },
   // Q13
   {
-    q: "Which of the following two patterns will fit in the blanks of the series,\n\\(Z_4, X_6, P_8, XC_{10}, W_{12}, \\ldots\\ldots\\ldots\\)?",
+    q: "Which of the following two patterns will fit in the blanks of the series,\n\\(ZA_5, Y_4B, XC_{6}, W_{3}D, \\ldots\\ldots\\ldots\\)?",
     options: [
-      "(A). \\(VF_{14}\\) and \\(U_{16}\\)",
-      "(B). \\(V_{14}E\\) and \\(U_{16}F\\)",
-      "(C). \\(VF_{14}\\) and \\(U_{16}F\\)",
-      "(D). \\(V_{14}E\\) and \\(U_{16}E\\)"
+      "(A). \\(VE_{7}\\) and \\(U_{2}E\\)",
+      "(B). \\(V_{2}E\\) and \\(U_{7}F\\)",
+      "(C). \\(VE_{7}\\) and \\(U_{2}F\\)",
+      "(D). \\(VF_7\\) and \\(U_{2}E\\)"
     ],
     correct: "(C)"
   },
@@ -267,7 +267,7 @@ window.SET_DATA = {
   },
   // Q25
   {
-    q: "Fill in the blank in the series:\nELFA, GLHA, ILJA, _____, MLNA:",
+    q: "Fill in the blank in the series: \\( \\ \\)ELFA, GLHA, ILJA, _____, MLNA:",
     options: [
       "(A). OLPA",
       "(B). KLMA",
