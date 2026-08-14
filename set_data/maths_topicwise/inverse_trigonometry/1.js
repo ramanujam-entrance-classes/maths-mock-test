@@ -3,7 +3,7 @@ window.SET_DATA = {
   questions: [
 	// Q1
 	{
-    q: "The value of \\(\\cot^{-1} 3 + \\csc^{-1} \\sqrt{5}\\) is",
+    q: "The value of \\(\\cot^{-1} 3 + cosec^{-1} \\sqrt{5}\\) is",
     options: [
       "(A). \\(\\frac{\\pi}{3}\\)",
       "(B). \\(\\frac{\\pi}{2}\\)",
@@ -25,7 +25,7 @@ window.SET_DATA = {
   },
   // Q3
   {
-    q: "The value of \\(\\tan^{-1} \\frac{1}{3} + \\tan^{-1} \\frac{1}{5} + \\tan^{-1} \\frac{1}{7} + \\tan^{-1} \\frac{1}{8}\\) is",
+    q: "The value of \\(\\tan^{-1} \\frac{1}{3} + \\tan^{-1} \\frac{1}{5} + \\tan^{-1} \\frac{1}{7} +\\)\\( \\tan^{-1} \\frac{1}{8}\\) is",
     options: [
       "(A). \\(\\pi\\)",
       "(B). \\(\\frac{\\pi}{4}\\)",
@@ -36,7 +36,7 @@ window.SET_DATA = {
   },
   // Q4
   {
-    q: "The value of \\(\\tan^2 (\\sec^{-1} 2) + \\cot^2 (\\csc^{-1} 3)\\) is",
+    q: "The value of \\(\\tan^2 (\\sec^{-1} 2) + \\cot^2 (cosec^{-1} 3)\\) is",
     options: [
       "(A). \\(13\\)",
       "(B). \\(15\\)",
@@ -47,7 +47,7 @@ window.SET_DATA = {
   },
   // Q5
   {
-    q: "\\(\\tan \\left( \\frac{\\pi}{4} + \\frac{1}{2} \\cos^{-1} x \\right) + \\tan \\left( \\frac{\\pi}{4} - \\frac{1}{2} \\cos^{-1} x \\right)\\), \\(x \\neq 0\\), is equal to",
+    q: "\\(\\tan \\left( \\frac{\\pi}{4} + \\frac{1}{2} \\cos^{-1} x \\right) +\\)\\( \\tan \\left( \\frac{\\pi}{4} - \\frac{1}{2} \\cos^{-1} x \\right)\\), \\(x \\neq 0\\), is equal to",
     options: [
       "(A). \\(x\\)",
       "(B). \\(2x\\)",
@@ -69,7 +69,7 @@ window.SET_DATA = {
   },
   // Q7
   {
-    q: "The number of real solutions of \\(\\tan^{-1} \\sqrt{x(x + 1)} + \\sin^{-1} \\sqrt{x^2 + x + 1} = \\frac{\\pi}{2}\\) is",
+    q: "The number of real solutions of \\(\\tan^{-1} \\sqrt{x(x + 1)} + \\sin^{-1} \\sqrt{x^2 + x + 1} \\)\\(= \\frac{\\pi}{2}\\) is",
     options: [
       "(A). zero",
       "(B). one",
@@ -168,7 +168,7 @@ window.SET_DATA = {
   },
   // Q16
   {
-    q: "\\(\\cos^{-1} \\left\\{ \\frac{1}{2} x^2 + \\sqrt{1 - x^2} \\cdot \\sqrt{1 - \\frac{x^2}{4}} \\right\\} = \\cos^{-1} \\frac{x}{2} - \\cos^{-1} x\\) holds for",
+    q: "\\(\\cos^{-1} \\left\\{ \\frac{1}{2} x^2 + \\sqrt{1 - x^2} \\cdot \\sqrt{1 - \\frac{x^2}{4}} \\right\\} =\\)\\( \\cos^{-1} \\frac{x}{2} - \\cos^{-1} x\\) holds for",
     options: [
       "(A). \\(|x| \\le 1\\)",
       "(B). \\(x \\in R\\)",
@@ -234,7 +234,7 @@ window.SET_DATA = {
   },
   // Q22
   {
-    q: "If \\(\\sin^{-1} \\left( \\frac{2x}{1 + x^2} \\right) + \\cos^{-1} \\left( \\frac{1 - x^2}{1 + x^2} \\right) = 4 \\tan^{-1} x\\), then",
+    q: "If \\(\\sin^{-1} \\left( \\frac{2x}{1 + x^2} \\right) + \\cos^{-1} \\left( \\frac{1 - x^2}{1 + x^2} \\right) =\\)\\( 4 \\tan^{-1} x\\), then",
     options: [
       "(A). \\(x \\in (-\\infty, -1)\\)",
       "(B). \\(x \\in (1, \\infty)\\)",
@@ -247,7 +247,7 @@ window.SET_DATA = {
   {
     q: "If \\(2 \\tan^{-1} x + \\sin^{-1} \\left( \\frac{2x}{1 + x^2} \\right)\\) is independent of \\(x\\), then",
     options: [
-      "(A). \\(x \\in [1, \\infty)\\)",
+      "(A). \\(x \\in [1, \\infty) \\in (-\\infty, -1)\\)",
       "(B). \\(x \\in [-1, 1]\\)",
       "(C). \\(x \\in (-\\infty, 1]\\)",
       "(D). none of these"
@@ -278,7 +278,7 @@ window.SET_DATA = {
   },
   // Q26
   {
-    q: "If \\(\\sec^{-1} x = \\csc^{-1} y\\), then \\(\\cos^{-1} \\frac{1}{x} + \\cos^{-1} \\frac{1}{y} =\\)",
+    q: "If \\(\\sec^{-1} x = cosec^{-1} y\\), then \\(\\cos^{-1} \\frac{1}{x} + \\cos^{-1} \\frac{1}{y} =\\)",
     options: [
       "(A). \\(\\pi\\)",
       "(B). \\(\\frac{\\pi}{4}\\)",
@@ -371,7 +371,7 @@ window.SET_DATA = {
       "(A). \\(x \\in R\\)",
       "(B). \\(|x| \\le 1\\)",
       "(C). \\(x \\in (-1, 1]\\)",
-      "(D). \\(x \\in [0, +\\infty)\\)"
+      "(D). \\(x \\in [1, +\\infty)\\)"
     ],
     correct: "(D)"
   },
@@ -487,7 +487,7 @@ window.SET_DATA = {
   },
   // Q45
   {
-    q: "\\(\\csc^{-1} (\\cos x)\\) is real if",
+    q: "\\(cosec^{-1} (\\cos x)\\) is real if",
     options: [
       "(A). \\(x \\in [-1, 1]\\)",
       "(B). \\(x \\in R\\)",
