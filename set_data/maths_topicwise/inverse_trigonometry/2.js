@@ -58,7 +58,7 @@ window.SET_DATA = {
   },
   // Q6
   {
-    q: "If \\(\\sin^{-1} \\frac{x}{5} + \\csc^{-1} \\left( \\frac{5}{4} \\right) = \\frac{\\pi}{2}\\), then \\(x =\\)",
+    q: "If \\(\\sin^{-1} \\frac{x}{5} + cosec^{-1} \\left( \\frac{5}{4} \\right) = \\frac{\\pi}{2}\\), then \\(x =\\)",
     options: [
       "(A). \\(4\\)",
       "(B). \\(5\\)",
@@ -124,7 +124,7 @@ window.SET_DATA = {
   },
   // Q12
   {
-    q: "If \\(x^2 + y^2 + z^2 = r^2\\), then \\(\\tan^{-1} \\left( \\frac{xy}{zr} \\right) + \\tan^{-1} \\left( \\frac{yz}{xr} \\right) + \\tan^{-1} \\left( \\frac{xz}{yr} \\right) =\\)",
+    q: "If \\(x^2 + y^2 + z^2 = r^2\\), then \\(\\tan^{-1} \\left( \\frac{xy}{zr} \\right) + \\tan^{-1} \\left( \\frac{yz}{xr} \\right) +\\)\\( \\tan^{-1} \\left( \\frac{xz}{yr} \\right) =\\)",
     options: [
       "(A). \\(\\pi\\)",
       "(B). \\(\\frac{\\pi}{2}\\)",
@@ -157,7 +157,7 @@ window.SET_DATA = {
   },
   // Q15
   {
-    q: "If \\(x_1, x_2, x_3, x_4\\) are roots of the equation \\(x^4 - x^3 \\sin 2\\beta + x^2 \\cos 2\\beta - x \\cos \\beta - \\sin \\beta = 0\\), then \\(\\tan^{-1} x_1 + \\tan^{-1} x_2 + \\tan^{-1} x_3 + \\tan^{-1} x_4 =\\)",
+    q: "If \\(x_1, x_2, x_3, x_4\\) are roots of the equation \\(x^4 - x^3 \\sin 2\\beta + x^2 \\cos 2\\beta - x \\cos \\beta -\\)\\( \\sin \\beta = 0\\), then \\(\\tan^{-1} x_1 + \\tan^{-1} x_2 + \\tan^{-1} x_3 +\\)\\( \\tan^{-1} x_4 =\\)",
     options: [
       "(A). \\(\\beta\\)",
       "(B). \\(\\pi/2 - \\beta\\)",
@@ -212,7 +212,7 @@ window.SET_DATA = {
   },
   // Q20
   {
-    q: "If \\(\\sin^{-1} \\left( \\frac{2a}{1 + a^2} \\right) + \\sin^{-1} \\left( \\frac{2b}{1 + b^2} \\right) = 2 \\tan^{-1} x\\), then \\(x\\), is equal to",
+    q: "If \\(\\sin^{-1} \\left( \\frac{2a}{1 + a^2} \\right) + \\sin^{-1} \\left( \\frac{2b}{1 + b^2} \\right) =\\)\\( 2 \\tan^{-1} x\\), then \\(x\\), is equal to",
     options: [
       "(A). \\(\\frac{a - b}{1 + ab}\\)",
       "(B). \\(\\frac{b}{1 + ab}\\)",
@@ -241,7 +241,7 @@ window.SET_DATA = {
       "(C). \\(\\frac{x}{\\sqrt{x^2 + 2}}\\)",
       "(D). \\(\\frac{1}{\\sqrt{x^2 + 2}}\\)"
     ],
-    correct: "(D)"
+    correct: "(B)"
   },
   // Q23
   {
@@ -256,7 +256,7 @@ window.SET_DATA = {
   },
   // Q24
   {
-    q: "The value of \\(a\\) for which \\(ax^2 + \\sin^{-1} (x^2 - 2x + 2) + \\cos^{-1} (x^2 - 2x + 2) = 0\\) has a real solution, is",
+    q: "The value of \\(a\\) for which \\(ax^2 + \\sin^{-1} (x^2 - 2x + 2) +\\)\\( \\cos^{-1} (x^2 - 2x + 2) = 0\\) has a real solution, is",
     options: [
       "(A). \\(\\frac{\\pi}{2}\\)",
       "(B). \\(-\\frac{\\pi}{2}\\)",
