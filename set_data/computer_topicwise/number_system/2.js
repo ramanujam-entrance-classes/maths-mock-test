@@ -3,7 +3,7 @@ window.SET_DATA = {
   questions: [
   // Q1
   {
-    q: "\"Convert decimal value \\(0.8125_{10}\\) into base \\(5\\).\"",
+    q: "Convert decimal value \\(0.8125_{10}\\) into base \\(5\\).",
     options: [
       "(A). \\(0.4012..._5\\)",
       "(B). \\(0.41_5\\)",
@@ -14,7 +14,7 @@ window.SET_DATA = {
   },
   // Q2
   {
-    q: "\"Convert hexadecimal fraction \\(0.C8_{16}\\) into decimal.\"",
+    q: "Convert hexadecimal fraction \\(0.C8_{16}\\) into decimal.",
     options: [
       "(A). \\(0.8_{10}\\)",
       "(B). \\(0.75_{10}\\)",
@@ -25,7 +25,7 @@ window.SET_DATA = {
   },
   // Q3
   {
-    q: "\"Convert binary \\(11011.01101_2\\) into decimal.\"",
+    q: "Convert binary \\(11011.01101_2\\) into decimal.",
     options: [
       "(A). \\(27.375_{10}\\)",
       "(B). \\(27.40625_{10}\\)",
@@ -36,7 +36,7 @@ window.SET_DATA = {
   },
   // Q4
   {
-    q: "\"Convert base-\\(9\\) number \\(81.4_9\\) into base \\(3\\).\"",
+    q: "Convert base-\\(9\\) number \\(81.4_9\\) into base \\(3\\).",
     options: [
       "(A). \\(2201.2_3\\)",
       "(B). \\(2201.1_3\\)",
@@ -47,7 +47,7 @@ window.SET_DATA = {
   },
   // Q5
   {
-    q: "\"Convert hexadecimal \\(1F.4C_{16}\\) into octal.\"",
+    q: "Convert hexadecimal \\(1F.4C_{16}\\) into octal.",
     options: [
       "(A). \\(37.46_8\\)",
       "(B). \\(37.23_8\\)",
@@ -58,7 +58,7 @@ window.SET_DATA = {
   },
   // Q6
   {
-    q: "\"Convert base-\\(5\\) number \\(41.23_5\\) into decimal.\"",
+    q: "Convert base-\\(5\\) number \\(41.23_5\\) into decimal.",
     options: [
       "(A). \\(21.52_{10}\\)",
       "(B). \\(21.43_{10}\\)",
@@ -69,7 +69,7 @@ window.SET_DATA = {
   },
   // Q7
   {
-    q: "\"Convert hexadecimal \\(2B.A_{16}\\) directly into base \\(4\\).\"",
+    q: "Convert hexadecimal \\(2B.A_{16}\\) directly into base \\(4\\).",
     options: [
       "(A). \\(1023.2_4\\)",
       "(B). \\(223.2_4\\)",
@@ -80,7 +80,7 @@ window.SET_DATA = {
   },
   // Q8
   {
-    q: "\"Convert decimal fraction \\(156.4375_{10}\\) into octal.\"",
+    q: "Convert decimal fraction \\(156.4375_{10}\\) into octal.",
     options: [
       "(A). \\(234.43_8\\)",
       "(B). \\(234.35_8\\)",
@@ -91,7 +91,7 @@ window.SET_DATA = {
   },
   // Q9
   {
-    q: "\"Convert base-\\(3\\) number \\(210.12_3\\) into decimal.\"",
+    q: "Convert base-\\(3\\) number \\(210.12_3\\) into decimal.",
     options: [
       "(A). \\(21.666..._{10}\\)",
       "(B). \\(21.333..._{10}\\)",
@@ -102,7 +102,7 @@ window.SET_DATA = {
   },
   // Q10
   {
-    q: "\"Convert binary fraction \\(10101010.1011_2\\) into hexadecimal.\"",
+    q: "Convert binary fraction \\(10101010.1011_2\\) into hexadecimal.",
     options: [
       "(A). \\(AA.B_{16}\\)",
       "(B). \\(AA.11_{16}\\)",
@@ -113,7 +113,7 @@ window.SET_DATA = {
   },
   // Q11
   {
-    q: "\"Convert binary \\(101101.101_2\\) directly to base \\(8\\).\"",
+    q: "Convert binary \\(101101.101_2\\) directly to base \\(8\\).",
     options: [
       "(A). \\(65.5_8\\)",
       "(B). \\(55.25_8\\)",
@@ -124,7 +124,7 @@ window.SET_DATA = {
   },
   // Q12
   {
-    q: "\"Convert decimal value \\(255.8125_{10}\\) to hexadecimal.\"",
+    q: "Convert decimal value \\(255.8125_{10}\\) to hexadecimal.",
     options: [
       "(A). \\(FF.8125_{16}\\)",
       "(B). \\(FF.D_{16}\\)",
@@ -135,7 +135,7 @@ window.SET_DATA = {
   },
   // Q13
   {
-    q: "\"Change hexadecimal \\(3A.8_{16}\\) to octal.\"",
+    q: "Change hexadecimal \\(3A.8_{16}\\) to octal.",
     options: [
       "(A). \\(142.4_8\\)",
       "(B). \\(310.4_8\\)",
@@ -146,7 +146,7 @@ window.SET_DATA = {
   },
   // Q14
   {
-    q: "\"Convert base-\\(3\\) number \\(2102.1_3\\) into base \\(5\\).\"",
+    q: "Convert base-\\(3\\) number \\(2102.1_3\\) into base \\(5\\).",
     options: [
       "(A). \\(230.132..._5\\)",
       "(B). \\(230.1..._5\\)",
@@ -157,7 +157,7 @@ window.SET_DATA = {
   },
   // Q15
   {
-    q: "\"Convert base-\\(4\\) number \\(3210.2_4\\) into octal.\"",
+    q: "Convert base-\\(4\\) number \\(3210.2_4\\) into octal.",
     options: [
       "(A). \\(340.4_8\\)",
       "(B). \\(344.4_8\\)",
@@ -168,7 +168,7 @@ window.SET_DATA = {
   },
   // Q16
   {
-    q: "\"Convert decimal fraction \\(0.2_{10}\\) into binary.\"",
+    q: "Convert decimal fraction \\(0.2_{10}\\) into binary.",
     options: [
       "(A). \\(0.011_2\\)",
       "(B). \\(0.010101..._2\\)",
@@ -179,7 +179,7 @@ window.SET_DATA = {
   },
   // Q17
   {
-    q: "\"Convert base-\\(7\\) number \\(564.3_7\\) into base \\(9\\).\"",
+    q: "Convert base-\\(7\\) number \\(564.3_7\\) into base \\(9\\).",
     options: [
       "(A). \\(353.372..._9\\)",
       "(B). \\(353.3_9\\)",
@@ -190,7 +190,7 @@ window.SET_DATA = {
   },
   // Q18
   {
-    q: "\"What is octal fraction \\(7352.4_8\\) expressed in hexadecimal?\"",
+    q: "What is octal fraction \\(7352.4_8\\) expressed in hexadecimal?",
     options: [
       "(A). \\(EEA.4_{16}\\)",
       "(B). \\(F3A.4_{16}\\)",
@@ -201,7 +201,7 @@ window.SET_DATA = {
   },
   // Q19
   {
-    q: "\"Convert base-\\(6\\) number \\(5432.15_6\\) into octal.\"",
+    q: "Convert base-\\(6\\) number \\(5432.15_6\\) into octal.",
     options: [
       "(A). \\(1742.3_8\\)",
       "(B). \\(2334.24_8\\)",
@@ -212,7 +212,7 @@ window.SET_DATA = {
   },
   // Q20
   {
-    q: "\"Convert base-\\(12\\) (duodecimal) number \\(2A.6_{12}\\) into binary.\"",
+    q: "Convert base-\\(12\\) (duodecimal) number \\(2A.6_{12}\\) into binary.",
     options: [
       "(A). \\(100010.1_2\\)",
       "(B). \\(101100.01_2\\)",
