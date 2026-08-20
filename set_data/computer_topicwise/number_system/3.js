@@ -3,7 +3,7 @@ window.SET_DATA = {
   questions: [
   // Q1
   {
-    q: "\"If \\((220)_x \\div (20)_x = (11)_x\\), what is the minimum valid integer base \\(x\\)?\"",
+    q: "If \\((220)_x \\div (20)_x = (11)_x\\), what is the minimum valid integer base \\(x\\)?",
     options: [
       "(A). \\(x = 2\\)",
       "(B). \\(x = 3\\)",
@@ -14,7 +14,7 @@ window.SET_DATA = {
   },
   // Q2
   {
-    q: "\"Multiply duodecimal (base 12) numbers \\((1A)_{12} \\times (3)_{12}\\).\"",
+    q: "Multiply duodecimal (base 12) numbers \\((1A)_{12} \\times (3)_{12}\\).",
     options: [
       "(A). \\(46_{12}\\)",
       "(B). \\(56_{12}\\)",
@@ -25,7 +25,7 @@ window.SET_DATA = {
   },
   // Q3
   {
-    q: "\"Convert base-\\(5\\) number \\(32.14_5\\) to decimal.\"",
+    q: "Convert base-\\(5\\) number \\(32.14_5\\) to decimal.",
     options: [
       "(A). \\(17.36_{10}\\)",
       "(B). \\(17.28_{10}\\)",
@@ -36,7 +36,7 @@ window.SET_DATA = {
   },
   // Q4
   {
-    q: "\"Solve for base \\(x\\) in the equation \\((15)_x + (23)_x \\times (2)_x = (63)_x\\).\"",
+    q: "Solve for base \\(x\\) in the equation \\((15)_x + (23)_x \\times (2)_x = (63)_x\\).",
     options: [
       "(A). \\(x = 6\\)",
       "(B). \\(x = 7\\)",
@@ -47,7 +47,7 @@ window.SET_DATA = {
   },
   // Q5
   {
-    q: "\"Divide hexadecimal numbers \\(1F4_{16} \\div 14_{16}\\). What is the hexadecimal quotient?\"",
+    q: "Divide hexadecimal numbers \\(1F4_{16} \\div 14_{16}\\). What is the hexadecimal quotient?",
     options: [
       "(A). \\(18_{16}\\)",
       "(B). \\(19_{16}\\)",
@@ -58,7 +58,7 @@ window.SET_DATA = {
   },
   // Q6
   {
-    q: "\"Convert base-\\(3\\) fraction \\(102.21_3\\) to decimal.\"",
+    q: "Convert base-\\(3\\) fraction \\(102.21_3\\) to decimal.",
     options: [
       "(A). \\(11.777..._{10}\\)",
       "(B). \\(11.666..._{10}\\)",
@@ -69,7 +69,7 @@ window.SET_DATA = {
   },
   // Q7
   {
-    q: "\"Convert binary fraction \\(11010111.01101_2\\) to hexadecimal.\"",
+    q: "Convert binary fraction \\(11010111.01101_2\\) to hexadecimal.",
     options: [
       "(A). \\(D7.D8_{16}\\)",
       "(B). \\(D7.D0_{16}\\)",
@@ -80,7 +80,7 @@ window.SET_DATA = {
   },
   // Q8
   {
-    q: "\"How many digits are required to represent \\(1000_{10}\\) in base \\(5\\)?\"",
+    q: "How many digits are required to represent \\(1000_{10}\\) in base \\(5\\)?",
     options: [
       "(A). \\(4\\)",
       "(B). \\(5\\)",
@@ -91,7 +91,7 @@ window.SET_DATA = {
   },
   // Q9
   {
-    q: "\"Multiply \\((32)_4 \\times (13)_4\\) in base \\(4\\).\"",
+    q: "Multiply \\((32)_4 \\times (13)_4\\) in base \\(4\\).",
     options: [
       "(A). \\(1122_4\\)",
       "(B). \\(1202_4\\)",
@@ -102,7 +102,7 @@ window.SET_DATA = {
   },
   // Q10
   {
-    q: "\"Perform binary division \\((1.1)_2 \\div (0.11)_2\\). What is the binary result?\"",
+    q: "Perform binary division \\((1.1)_2 \\div (0.11)_2\\). What is the binary result?",
     options: [
       "(A). \\(0.1_2\\)",
       "(B). \\(1.0_2\\)",
@@ -113,7 +113,7 @@ window.SET_DATA = {
   },
   // Q11
   {
-    q: "\"Convert base-\\(7\\) integer \\(654_7\\) to base \\(9\\).\"",
+    q: "Convert base-\\(7\\) integer \\(654_7\\) to base \\(9\\).",
     options: [
       "(A). \\(410_9\\)",
       "(B). \\(353_9\\)",
@@ -124,7 +124,7 @@ window.SET_DATA = {
   },
   // Q12
   {
-    q: "\"If \\((121)_x = (100)_4\\), solve for base \\(x\\).\"",
+    q: "If \\((121)_x = (100)_4\\), solve for base \\(x\\).",
     options: [
       "(A). \\(x = 2\\)",
       "(B). \\(x = 3\\)",
@@ -135,7 +135,7 @@ window.SET_DATA = {
   },
   // Q13
   {
-    q: "\"Convert decimal fraction \\(0.3125_{10}\\) to hexadecimal.\"",
+    q: "Convert decimal fraction \\(0.3125_{10}\\) to hexadecimal.",
     options: [
       "(A). \\(0.4_{16}\\)",
       "(B). \\(0.5_{16}\\)",
@@ -146,7 +146,7 @@ window.SET_DATA = {
   },
   // Q14
   {
-    q: "\"Multiply base-\\(6\\) numbers \\((45)_6 \\times (23)_6\\).\"",
+    q: "Multiply base-\\(6\\) numbers \\((45)_6 \\times (23)_6\\).",
     options: [
       "(A). \\(2003_6\\)",
       "(B). \\(1543_6\\)",
@@ -157,7 +157,7 @@ window.SET_DATA = {
   },
   // Q15
   {
-    q: "\"Convert hexadecimal fraction \\(A3.C_{16}\\) directly into octal.\"",
+    q: "Convert hexadecimal fraction \\(A3.C_{16}\\) directly into octal.",
     options: [
       "(A). \\(163.6_8\\)",
       "(B). \\(503.6_8\\)",
@@ -168,7 +168,7 @@ window.SET_DATA = {
   },
   // Q16
   {
-    q: "\"If \\((300)_x \\div (12)_x = (20)_x\\), what is the base \\(x\\)?\"",
+    q: "If \\((300)_x \\div (12)_x = (20)_x\\), what is the base \\(x\\)?",
     options: [
       "(A). \\(x = 4\\)",
       "(B). \\(x = 5\\)",
@@ -179,7 +179,7 @@ window.SET_DATA = {
   },
   // Q17
   {
-    q: "\"If \\((12)_x \\times (14)_x = (201)_x\\), what is the value of base \\(x\\)?\"",
+    q: "If \\((12)_x \\times (14)_x = (201)_x\\), what is the value of base \\(x\\)?",
     options: [
       "(A). \\(x = 5\\)",
       "(B). \\(x = 6\\)",
@@ -190,7 +190,7 @@ window.SET_DATA = {
   },
   // Q18
   {
-    q: "\"What is the result of binary division \\((101010)_2 \\div (110)_2\\) expressed in binary?\"",
+    q: "What is the result of binary division \\((101010)_2 \\div (110)_2\\) expressed in binary?",
     options: [
       "(A). \\(101_2\\)",
       "(B). \\(110_2\\)",
@@ -201,7 +201,7 @@ window.SET_DATA = {
   },
   // Q19
   {
-    q: "\"Multiply base-\\(5\\) fractions \\((0.4)_5 \\times (0.3)_5\\). What is the product in base \\(5\\)?\"",
+    q: "Multiply base-\\(5\\) fractions \\((0.4)_5 \\times (0.3)_5\\). What is the product in base \\(5\\)?",
     options: [
       "(A). \\(0.12_5\\)",
       "(B). \\(0.22_5\\)",
@@ -212,7 +212,7 @@ window.SET_DATA = {
   },
   // Q20
   {
-    q: "\"Divide octal number \\((234)_8\\) by \\((14)_8\\) directly in base \\(8\\). What is the quotient?\"",
+    q: "Divide octal number \\((234)_8\\) by \\((14)_8\\) directly in base \\(8\\). What is the quotient?",
     options: [
       "(A). \\(13_8\\)",
       "(B). \\(14_8\\)",
