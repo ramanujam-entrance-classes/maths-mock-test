@@ -69,7 +69,7 @@ window.SET_DATA = {
   },
   // Q7
   {
-    q: "If \\([\\cdot]\\) denotes the greatest integer function, then the value of natural number \\(n\\) satisfying the equation \\([\\log_2 1] + [\\log_2 2] + [\\log_2 3] + ... + [\\log_2 n] = 1538\\), is",
+    q: "If \\([\\cdot]\\) denotes the greatest integer function, then the value of natural number \\(n\\) satisfying the equation \\([\\log_2 1] + [\\log_2 2] + [\\log_2 3] + ... \\)\\(+ [\\log_2 n] = 1538\\), is",
     options: [
       "(A). \\(255\\)",
       "(B). \\(256\\)",
@@ -146,7 +146,7 @@ window.SET_DATA = {
   },
   // Q14
   {
-    q: "If \\(\\log a : \\log b : \\log c = (b - c) : (c - a) : (a - b)\\), then",
+    q: "If \\(\\log a : \\log b : \\log c = (b - c) : (c - a) :\\)\\( (a - b)\\), then",
     options: [
       "(A). \\(a^a b^b c^c = 1\\)",
       "(B). \\(a^a b^b c^c = 1\\)",
@@ -223,7 +223,7 @@ window.SET_DATA = {
   },
   // Q21
   {
-    q: "The solution of \\(5^{\\log_a x} + 5^{x^{\\log_a 5}} = 3\\) \\((a > 0)\\), is",
+    q: "The solution of \\(5^{\\log_a x} + 5x^{\\log_a 5} = 3\\) \\((a > 0)\\), is",
     options: [
       "(A). \\(2^{\\log_a 5}\\)",
       "(B). \\(2^{-\\log_a 5}\\)",
@@ -355,7 +355,7 @@ window.SET_DATA = {
   },
   // Q33
   {
-    q: "If \\(n\\) is a natural number such that \\(n = p_1^{a_1} \\cdot p_2^{a_2} ... p_k^{a_k}\\) and \\(p_1, p_2, p_3, ..., p_k\\) are distinct primes, then \\(\\log n \\ge\\)",
+    q: "If \\(n\\) is a natural number such that \\(n = p_1^{a_1} \\cdot p_2^{a_2} ... p_k^{a_k}\\) and \\(p_1, p_2, p_3, ..., p_k\\) are distinct primers, then \\(\\log_e n \\ge\\)",
     options: [
       "(A). \\(k \\log 2\\)",
       "(B). \\(k \\log 3\\)",
@@ -520,7 +520,7 @@ window.SET_DATA = {
   },
   // Q48
   {
-    q: "If \\(\\frac{1}{\\log_2 a} + \\frac{1}{\\log_4 a} + \\frac{1}{\\log_8 a} + \\frac{1}{\\log_{16} a} + ... + \\frac{1}{\\log_{2^n} a} = \\frac{n(n + 1)}{\\lambda}\\), then \\(\\lambda\\) equals",
+    q: "If \\(\\frac{1}{\\log_2 a} + \\frac{1}{\\log_4 a} + \\frac{1}{\\log_8 a} + \\frac{1}{\\log_{16} a} + ... + \\)\\(\\frac{1}{\\log_{2^n} a} = \\frac{n(n + 1)}{\\lambda}\\), then \\(\\lambda\\) equals",
     options: [
       "(A). \\(\\log_2 a\\)",
       "(B). \\(\\log_a 4\\)",
