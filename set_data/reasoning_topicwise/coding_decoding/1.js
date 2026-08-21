@@ -114,7 +114,7 @@ window.SET_DATA = {
     q: `Substitute digits for the letters to make the following relation true.
 
 		$$\\begin{array}{r@{\\quad}l}
-		& \\text{  S T I L L} \\\\
+		& \\text{ \ \ S T I L L} \\\\
 		+ & \\text{W I T H I N} \\\\
 		\\hline
 		& \\text{L I M I T S}
