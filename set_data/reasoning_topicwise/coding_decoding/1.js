@@ -81,14 +81,15 @@ window.SET_DATA = {
   // Q8
   {
     q: `What are \\(X\\) and \\(Y\\)?
-
+		<span style='font-size:13px'> 
 		\\begin{array}{|c|c|c|c|c|c|c|c|c|c|}
 		\\hline
 		S & 8 & W & 16 & A & 5 & C & X & A & 4 \\\\
 		\\hline
 		20 & J & 25 & T & 4 & K & 7 & L & Y & N \\\\
 		\\hline
-		\\end{array}`,
+		\\end{array}
+		</span>`,
     options: [
       "(A). \\(X\\) is \\(6\\), \\(Y\\) is \\(7\\)",
       "(B). \\(X\\) is \\(5\\), \\(Y\\) is \\(5\\)",
@@ -113,7 +114,7 @@ window.SET_DATA = {
     q: `Substitute digits for the letters to make the following relation true.
 
 		$$\\begin{array}{r@{\\quad}l}
-		& \\text{S T I L L} \\\\
+		& \\text{  S T I L L} \\\\
 		+ & \\text{W I T H I N} \\\\
 		\\hline
 		& \\text{L I M I T S}
@@ -417,7 +418,18 @@ window.SET_DATA = {
   },
   // Q37
   {
-    q: "In the following questions, the symbols $, #, @, % and * illustrate the following meanings.\nP$Q - P is not smaller than Q\nP#Q - P is neither greater than nor equal to Q.\nP@Q - P is neither smaller than nor equal to Q.\nP%Q - P not greater than Q\nP*Q - P is neither greater than nor smaller than Q\nStatements:\nK # L, L % M, M * N, N # O\nConclusions:\nI. K # M\nII. K * M\nIII. L % O",
+    q: `In the following questions, the symbols $, #, @, % and * illustrate the following meanings.<br>
+		P$Q - P is not smaller than Q <br>
+		P#Q - P is neither greater than nor equal to Q. <br>
+		P@Q - P is neither smaller than nor equal to Q.<br>
+		P%Q - P not greater than Q <br>
+		P*Q - P is neither greater than nor smaller than Q <br>
+		Statements: <br>
+		K # L, L % M, M * N, N # O <br>
+		Conclusions:<br>
+		I. K # M <br>
+		II. K * M <br>
+		III. L % O`,
     options: [
       "(A). I only",
       "(B). Either I or II only",
