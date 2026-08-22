@@ -112,14 +112,7 @@ window.SET_DATA = {
   // Q10
   {
     q: `Substitute digits for the letters to make the following relation true.
-
-		$$\\begin{array}{r@{\\quad}l}
-		& \\text{ \ \ S T I L L} \\\\
-		+ & \\text{W I T H I N} \\\\
-		\\hline
-		& \\text{L I M I T S}
-		\\end{array}$$
-
+		<br> <img src="images/reasoning_topicwise_coding_decoding_1_q10.png" alt="Question 10 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;">
 		Note:
 		The leftmost letter can't be zero in any word. Also, there must be a one-to-one mapping between digits and letters. e.g., if you substitute 3 for the letters \\(S\\), no other letter can be 3 and all other \\(S\\) in the puzzle must be 3.`,
     options: [
