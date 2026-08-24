@@ -182,20 +182,20 @@ window.SET_DATA = {
     q: "\\(6^{n+2} + 7^{2n+1}\\) is divisible by \\(43\\) for all:",
     options: [
       "(A). \\(n \\in \\mathbb{N}\\)",
-      "(B). \\text{Even } n\\)",
-      "(C). \\text{Odd } n\\)",
+      "(B). Even \\(n\\)",
+      "(C). Odd \\(n\\)",
       "(D). \\(n > 3\\)"
     ],
     correct: "(A)"
   },
   // Q18
   {
-	q: "If \\\\(A = \\\\begin{bmatrix} 1 & 1 \\\\\\\\ 0 & 1 \\\\end{bmatrix}\\\\), then \\\\(A^n\\\\) for \\\\(n \\\\in \\\\mathbb{N}\\\\) is:",
+	q: "If \\(A = \\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix}\\), then \\(A^n\\) for \\(n \\in \\mathbb{N}\\) is:",
 	options: [
-		"(A). \\\\(\\\\begin{bmatrix} 1 & n \\\\\\\\ 0 & 1 \\\\end{bmatrix}\\\\)",
-		"(B). \\\\(\\\\begin{bmatrix} 1 & 1 \\\\\\\\ 0 & n \\\\end{bmatrix}\\\\)",
-		"(C). \\\\(\\\\begin{bmatrix} n & n \\\\\\\\ 0 & n \\\\end{bmatrix}\\\\)",
-		"(D). \\\\(\\\\begin{bmatrix} 1 & 2^n \\\\\\\\ 0 & 1 \\\\end{bmatrix}\\\\)"
+		"(A). \\(\\begin{bmatrix} 1 & n \\\\ 0 & 1 \\end{bmatrix}\\)",
+		"(B). \\(\\begin{bmatrix} 1 & 1 \\\\ 0 & n \\end{bmatrix}\\)",
+		"(C). \\(\\begin{bmatrix} n & n \\\\ 0 & n \\end{bmatrix}\\)",
+		"(D). \\(\\begin{bmatrix} 1 & 2^n \\\\ 0 & 1 \\end{bmatrix}\\)"
 	],
 	correct: "(A)"
   },
@@ -212,12 +212,12 @@ window.SET_DATA = {
   },
   // Q20
   {
-	q: "If \\\\(A = \\\\begin{bmatrix} \\\\cos \\\\theta & \\\\sin \\\\theta \\\\\\\\ -\\\\sin \\\\theta & \\\\cos \\\\theta \\\\end{bmatrix}\\\\), then \\\\(A^n\\\\) is:",
+	q: "If \\(A = \\begin{bmatrix} \\cos \\theta & \\sin \\theta \\\\ -\\sin \\theta & \\cos \\theta \\end{bmatrix}\\), then \\(A^n\\) is:",
 	options: [
-		"(A). \\\\(\\\\begin{bmatrix} \\\\cos n\\\\theta & \\\\sin n\\\\theta \\\\\\\\ -\\\\sin n\\\\theta & \\\\cos n\\\\theta \\\\end{bmatrix}\\\\)",
-		"(B). \\\\(\\\\begin{bmatrix} \\\\cos^n \\\\theta & \\\\sin^n \\\\theta \\\\\\\\ -\\\\sin^n \\\\theta & \\\\cos^n \\\\theta \\\\end{bmatrix}\\\\)",
-		"(C). \\\\(\\\\begin{bmatrix} n \\\\cos \\\\theta & n \\\\sin \\\\theta \\\\\\\\ -n \\\\sin \\\\theta & n \\\\cos \\\\theta \\\\end{bmatrix}\\\\)",
-		"(D). \\\\(\\\\begin{bmatrix} \\\\cos n\\\\theta & -\\\\sin n\\\\theta \\\\\\\\ \\\\sin n\\\\theta & \\\\cos n\\\\theta \\\\end{bmatrix}\\\\)"
+		"(A). \\(\\begin{bmatrix} \\cos n\\theta & \\sin n\\theta \\\\ -\\sin n\\theta & \\cos n\\theta \\end{bmatrix}\\)",
+		"(B). \\(\\begin{bmatrix} \\cos^n \\theta & \\sin^n \\theta \\\\ -\\sin^n \\theta & \\cos^n \\theta \\end{bmatrix}\\)",
+		"(C). \\(\\begin{bmatrix} n \\cos \\theta & n \\sin \\theta \\\\ -n \\sin \\theta & n \\cos \\theta \\end{bmatrix}\\)",
+		"(D). \\(\\begin{bmatrix} \\cos n\\theta & -\\sin n\\theta \\\\ \\sin n\\theta & \\cos n\\theta \\end{bmatrix}\\)"
 	],
 	correct: "(A)"
   },
@@ -325,8 +325,8 @@ window.SET_DATA = {
     q: "\\(2^{3n} - 1\\) is divisible by \\(7\\) for all:",
     options: [
       "(A). \\(n \\in \\mathbb{N}\\)",
-      "(B). \\text{Even } n \\text{ only}\\)",
-      "(C). \\text{Prime } n \\text{ only}\\)",
+      "(B). \\(\\text{Even } n \\text{ only}\\)",
+      "(C). \\(\\text{Prime } n \\text{ only}\\)",
       "(D). \\(n > 5\\)"
     ],
     correct: "(A)"
@@ -348,8 +348,8 @@ window.SET_DATA = {
     options: [
       "(A). \\(n = 5 \\text{ only}\\)",
       "(B). \\(n \\text{ being odd only}\\)",
-      "(C). \\text{Every } n \\in \\mathbb{N}\\)",
-      "(D). \\text{No value of } n\\)"
+      "(C). \\(\\text{Every } n \\in \\mathbb{N}\\)",
+      "(D). \\(\\text{No value of } n\\)"
     ],
     correct: "(C)"
   },
