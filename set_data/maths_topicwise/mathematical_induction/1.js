@@ -14,7 +14,7 @@ window.SET_DATA = {
   },
   // Q2
   {
-    q: "The sum of the infinite series\n$$\\frac{1}{1 \\cdot 4} + \\frac{1}{4 \\cdot 7} + \\frac{1}{7 \\cdot 10} + \\dots \\infty \n \\text{ is equal to :}$$",
+    q: "The sum of the infinite series\n$$\\frac{1}{1 \\cdot 4} + \\frac{1}{4 \\cdot 7} + \\frac{1}{7 \\cdot 10} + \\dots \\infty \n$$ is equal to:",
     options: [
       "(A). \\(\\frac{1}{3}\\)",
       "(B). \\(\\frac{1}{4}\\)",
@@ -362,13 +362,13 @@ window.SET_DATA = {
   {
     q: `The sum of \\(n\\) terms of the series\n
         <span style='font-size:13px'>
-        $$1 + (1 + a) + (1 + a + a^2) + (1 + a + a^2 + a^3) + \\dots, \\text{is}$$
+        $$1 + (1 + a) + (1 + a + a^2) + (1 + a + a^2 + a^3) + \\dots,$$ is
         </span>`,
     options: [
       "(A). \\(\\frac{n}{1 - a} - \\frac{a(1 - a^n)}{(1 - a)^2}\\)",
       "(B). \\(\\frac{n}{1 - a} + \\frac{a(1 - a^n)}{(1 - a)^2}\\)",
       "(C). \\(\\frac{n}{1 - a} + \\frac{a(1 + a^n)}{(1 - a)^2}\\)",
-      "(D). -\\frac{n}{1 - a} + \\frac{a(1 - a^n)}{(1 - a)^2}\\)"
+      "(D). -\\(\\frac{n}{1 - a} + \\frac{a(1 - a^n)}{(1 - a)^2}\\)"
     ],
     correct: "(A)"
   },
@@ -561,7 +561,7 @@ window.SET_DATA = {
   },
   // Q50
   {
-    q: "The sum to \\(n\\) terms of the series\n$$\\frac{1}{\\sqrt{1} + \\sqrt{3}} + \\frac{1}{\\sqrt{3} + \\sqrt{5}} + \\frac{1}{\\sqrt{5} + \\sqrt{7}} + \\dots,$$ is",
+    q: "The sum to \\(n\\) terms of the series\n$$\\frac{1}{\\sqrt{1} + \\sqrt{3}} + \\frac{1}{\\sqrt{3} + \\sqrt{5}} + \\frac{1}{\\sqrt{5} + \\sqrt{7}} +$$ \\dots, is",
     options: [
       "(A). \\(\\sqrt{2n + 1}\\)",
       "(B). \\(\\frac{1}{2}\\sqrt{2n + 1}\\)",
