@@ -190,7 +190,7 @@ window.SET_DATA = {
   },
   // Q18
   {
-	q: "If \\\\(A = \\\\begin{bmatrix} 1 & 1 \\\\\\\\ 0 & 1 \\\\end{bmatrix}\\\\), then \\\\(A^n\\\\) for \\\\(n \\\\in \\\\mathbb{N}\\\\)" is:",
+	q: "If \\\\(A = \\\\begin{bmatrix} 1 & 1 \\\\\\\\ 0 & 1 \\\\end{bmatrix}\\\\), then \\\\(A^n\\\\) for \\\\(n \\\\in \\\\mathbb{N}\\\\) is:",
 	options: [
 		"(A). \\\\(\\\\begin{bmatrix} 1 & n \\\\\\\\ 0 & 1 \\\\end{bmatrix}\\\\)",
 		"(B). \\\\(\\\\begin{bmatrix} 1 & 1 \\\\\\\\ 0 & n \\\\end{bmatrix}\\\\)",
