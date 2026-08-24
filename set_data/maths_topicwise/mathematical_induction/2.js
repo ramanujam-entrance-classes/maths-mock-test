@@ -204,8 +204,8 @@ window.SET_DATA = {
     q: "\\(n^3 + 5n\\) is divisible by \\(6\\) for all:",
     options: [
       "(A). \\(n \\in \\mathbb{N}\\)",
-      "(B). \\text{Even } n\\)",
-      "(C). \\text{Odd } n\\)",
+      "(B). \\(\\text{Even } n\\)",
+      "(C). \\(\\text{Odd } n\\)",
       "(D). \\(n > 10\\)"
     ],
     correct: "(A)"
@@ -248,8 +248,8 @@ window.SET_DATA = {
     q: "\\(5^{2n} - 3^{2n}\\) is divisible by \\(16\\) for all:",
     options: [
       "(A). \\(n \\in \\mathbb{N}\\)",
-      "(B). \\text{Even } n\\)",
-      "(C). \\text{Odd } n\\)",
+      "(B). \\(\\text{Even } n\\)",
+      "(C). \\(\\text{Odd } n\\)",
       "(D). \\(n > 2\\)"
     ],
     correct: "(A)"
