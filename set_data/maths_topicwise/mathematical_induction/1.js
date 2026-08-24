@@ -3,7 +3,7 @@ window.SET_DATA = {
   questions: [
   // Q1
   {
-    q: "The sum of the series\n$$\\frac{5}{13} + \\frac{55}{(13)^2} + \\frac{555}{(13)^3} + \\frac{5555}{(13)^4} + \\dots \\infty :$$",
+    q: "The sum of the series\n$$\\frac{5}{13} + \\frac{55}{(13)^2} + \\frac{555}{(13)^3} + \\frac{5555}{(13)^4} + \\dots \\infty$$",
     options: [
       "(A). \\(\\frac{55}{39}\\)",
       "(B). \\(\\frac{65}{39}\\)",
@@ -14,7 +14,7 @@ window.SET_DATA = {
   },
   // Q2
   {
-    q: "The sum of the infinite series\n$$\\frac{1}{1 \\cdot 4} + \\frac{1}{4 \\cdot 7} + \\frac{1}{7 \\cdot 10} + \\dots \\infty \\text{ is equal to :}$$",
+    q: "The sum of the infinite series\n$$\\frac{1}{1 \\cdot 4} + \\frac{1}{4 \\cdot 7} + \\frac{1}{7 \\cdot 10} + \\dots \\infty \n \\text{ is equal to :}$$",
     options: [
       "(A). \\(\\frac{1}{3}\\)",
       "(B). \\(\\frac{1}{4}\\)",
@@ -25,7 +25,9 @@ window.SET_DATA = {
   },
   // Q3
   {
-    q: "The odd positive integers are arranged in a triangle as follows :\n1\n3 5\n7 9 11\n13 15 17 19\n21 23 25 27 29\n\\dots \\dots \\dots \\dots \\dots\n\\dots \\dots \\dots \\dots \\dots\nFind the sum of the numbers in the \\(n\\text{th}\\) row of this arrangement :",
+    q: `The odd positive integers are arranged in a triangle as follows :
+        <br> <img src="images/maths_topicwise_mathematical_induction_1/maths_topicwise_mathematical_induction_1_q3.png" alt="Question 3 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;"> <br>
+        Find the sum of the numbers in the \\(n\\text{th}\\) row of this arrangement :`,
     options: [
       "(A). \\(n^2 + n\\)",
       "(B). \\(2n^2 - 2 + n\\)",
@@ -80,7 +82,8 @@ window.SET_DATA = {
   },
   // Q8
   {
-    q: "Sum of \\(n\\) terms of the series\n$$\\log a + \\log\\left(\\frac{a^2}{b}\\right) + \\log\\left(\\frac{a^3}{b^2}\\right) + \\log\\left(\\frac{a^4}{b^3}\\right) + \\dots \\text{ is :}$$",
+    q: `Sum of \\(n\\) terms of the series \n
+        <span style='font-size:13px'>$$\\log a + \\log\\left(\\frac{a^2}{b}\\right) + \\log\\left(\\frac{a^3}{b^2}\\right) + \\log\\left(\\frac{a^4}{b^3}\\right) + \\dots \\text{ is :}$$ </span>`,
     options: [
       "(A). \\(\\log \\left[ \\frac{a^n}{b^{n-1}} \\right]^{n/2}\\)",
       "(B). \\(\\log \\left[ \\frac{a^{n+1}}{b^{n-1}} \\right]^{n/2}\\)",
@@ -102,7 +105,10 @@ window.SET_DATA = {
   },
   // Q10
   {
-    q: "Find the sum to \\(n\\) terms of the series\n$$1 + (1 + 2) + (1 + 2 + 3) + (1 + 2 + 3 + 4) + \\dots :$$",
+    q: `Find the sum to \\(n\\) terms of the series\n
+        <span style='font-size:13px'>
+          $$1 + (1 + 2) + (1 + 2 + 3) + (1 + 2 + 3 + 4) + \\dots :$$
+        </span>`,
     options: [
       "(A). \\(\\frac{n(n + 1)(2n + 1)}{6}\\)",
       "(B). \\(\\frac{n(n + 1)(n + 2)}{6}\\)",
@@ -124,7 +130,9 @@ window.SET_DATA = {
   },
   // Q12
   {
-    q: "The natural numbers are written as follows :\n1\n2 3\n4 5 6\n7 8 9 10\n\\dots \\dots \\dots\n\\dots \\dots \\dots\nThe sum of numbers in the \\(n\\text{th}\\) row is :",
+    q: `The natural numbers are written as follows :
+        <br> <img src="images/maths_topicwise_mathematical_induction_1/maths_topicwise_mathematical_induction_1_q12.png" alt="Question 12 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;"> <br>
+        The sum of numbers in the \\(n\\text{th}\\) row is :`,
     options: [
       "(A). \\(\\frac{n(n + 1)}{2}\\)",
       "(B). \\(\\frac{n^2 + 1}{2}\\)",
@@ -135,7 +143,10 @@ window.SET_DATA = {
   },
   // Q13
   {
-    q: "The sum to \\(n\\) terms of the series\n$$\\frac{1}{\\sqrt{1} + \\sqrt{3}} + \\frac{1}{\\sqrt{3} + \\sqrt{5}} + \\frac{1}{\\sqrt{5} + \\sqrt{7}} + \\dots \\text{ is :}$$",
+    q: `The sum to \\(n\\) terms of the series 
+        <span style='font-size:13px'>
+        \n$$\\frac{1}{\\sqrt{1} + \\sqrt{3}} + \\frac{1}{\\sqrt{3} + \\sqrt{5}} + \\frac{1}{\\sqrt{5} + \\sqrt{7}} + \\dots \\text{ is :}$$
+        </span>`,
     options: [
       "(A). \\(\\sqrt{2n + 1}\\)",
       "(B). \\(\\frac{1}{2} \\sqrt{2n + 1}\\)",
@@ -157,7 +168,7 @@ window.SET_DATA = {
   },
   // Q15
   {
-    q: "(\\underbrace{666 \\dots 6}_{n\\text{-digits}}) + (\\underbrace{888 \\dots 8}_{n\\text{-digits}}) \\text{ is equal to :}",
+    q: "\\(\\underbrace{666 \\dots 6}_{n\\text{-digits}}\\) + \\(\\underbrace{888 \\dots 8}_{n\\text{-digits}}\\) is equal to :",
     options: [
       "(A). \\(14(n^2 - 1)\\)",
       "(B). \\(\\frac{48}{9} (10^{2n} - 1)\\)",
@@ -289,7 +300,10 @@ window.SET_DATA = {
   },
   // Q27
   {
-    q: "Find the sum to first \\(n\\) groups of\n$$(1) + (1 + 3) + (1 + 3 + 9) + (1 + 3 + 9 + 27) + \\dots$$",
+    q: `Find the sum to first \\(n\\) groups of\n
+        <span style='font-size:13px'>
+        $$(1) + (1 + 3) + (1 + 3 + 9) + (1 + 3 + 9 + 27) + \\dots$$
+        </span>`,
     options: [
       "(A). \\(\\frac{1}{2}(3^n - 1)\\)",
       "(B). \\(\\frac{3}{4}(3^n - 1) - \\frac{n}{2}\\)",
@@ -311,7 +325,9 @@ window.SET_DATA = {
   },
   // Q29
   {
-    q: "The series of natural numbers is written as follows :\n1\n2 3 4\n5 6 7 8 9\n\\dots \\dots \\dots\n\\dots \\dots \\dots\nFind the sum of the numbers in the \\(n\\text{th}\\) row :",
+    q: `The series of natural numbers is written as follows :
+        <br> <img src="images/maths_topicwise_mathematical_induction_1/maths_topicwise_mathematical_induction_1_q29.png" alt="Question 29 Diagram" style="max-width:100%; height:auto; display:block; margin:auto;"> <br>
+        Find the sum of the numbers in the \\(n\\text{th}\\) row :`,
     options: [
       "(A). \\(n^3 + 1\\)",
       "(B). \\((2n)^2 - 1\\)",
@@ -344,7 +360,10 @@ window.SET_DATA = {
   },
   // Q32
   {
-    q: "The sum of \\(n\\) terms of the series\n$$1 + (1 + a) + (1 + a + a^2) + (1 + a + a^2 + a^3) + \\dots, \\text{is}$$",
+    q: `The sum of \\(n\\) terms of the series\n
+        <span style='font-size:13px'>
+        $$1 + (1 + a) + (1 + a + a^2) + (1 + a + a^2 + a^3) + \\dots, \\text{is}$$
+        </span>`,
     options: [
       "(A). \\(\\frac{n}{1 - a} - \\frac{a(1 - a^n)}{(1 - a)^2}\\)",
       "(B). \\(\\frac{n}{1 - a} + \\frac{a(1 - a^n)}{(1 - a)^2}\\)",
@@ -355,7 +374,7 @@ window.SET_DATA = {
   },
   // Q33
   {
-    q: "If \\(3 + 5 + 9 + 17 + 33 + \\dots \\text{ to } n \\text{ terms} = 2^{n+1} + n - 2\\), then \\(n\\text{th}\\) term of LHS is",
+    q: "If \\(3 + 5 + 9 + 17 + 33 + \\dots \\text{ to } n \\)\\(\\text{ terms} = 2^{n+1} + n - 2\\), then \\(n\\text{th}\\) term of LHS is",
     options: [
       "(A). \\(3^n - 1\\)",
       "(B). \\(2n + 1\\)",
@@ -445,9 +464,9 @@ window.SET_DATA = {
   {
     q: "For all \\(n \\in N\\), \\(\\sum n\\)",
     options: [
-      "(A). < \\frac{(2n + 1)^2}{8}\\)",
-      "(B). > \\frac{(2n + 1)^2}{8}\\)",
-      "(C). = \\frac{(2n + 1)^2}{8}\\)",
+      "(A). < \\(\\frac{(2n + 1)^2}{8}\\)",
+      "(B). > \\(\\frac{(2n + 1)^2}{8}\\)",
+      "(C). = \\(\\frac{(2n + 1)^2}{8}\\)",
       "(D). none of these"
     ],
     correct: "(A)"
@@ -465,7 +484,7 @@ window.SET_DATA = {
   },
   // Q43
   {
-    q: "\\(\\frac{1^2}{1^3} + \\frac{1^2 + 2^2}{1^3 + 2^3} + \\frac{1^2 + 2^2 + 3^2}{1^3 + 2^3 + 3^3} + \\dots \\text{up to } n \\text{ terms} =\\)",
+    q: "\\(\\frac{\\frac{1}{2}\\cdot\\frac{2}{2}}{1^3} + \\frac{\\frac{2}{2}\\cdot\\frac{3}{2}}{1^3 + 2^3} + \\frac{\\frac{3}{2}\\cdot\\frac{4}{2}}{1^3 + 2^3 + 3^3} + \\dots \\text{up to } n\\)\\( \\text{ terms} =\\)",
     options: [
       "(A). \\(\\frac{n - 1}{n}\\)",
       "(B). \\(\\frac{n}{n + 1}\\)",
@@ -520,7 +539,7 @@ window.SET_DATA = {
   },
   // Q48
   {
-    q: "The sum to \\(n\\) terms of the series\n$$1 + 2\\left(1 + \\frac{1}{n}\\right) + 3\\left(1 + \\frac{1}{n}\\right)^2 + \\dots \\text{is given by}$$",
+    q: "The sum to \\(n\\) terms of the series\n$$1 + 2\\left(1 + \\frac{1}{n}\\right) + 3\\left(1 + \\frac{1}{n}\\right)^2 + \\dots$$ is given by",
     options: [
       "(A). \\(n^2\\)",
       "(B). \\(n(n + 1)\\)",
@@ -542,7 +561,7 @@ window.SET_DATA = {
   },
   // Q50
   {
-    q: "The sum to \\(n\\) terms of the series\n$$\\frac{1}{\\sqrt{1} + \\sqrt{3}} + \\frac{1}{\\sqrt{3} + \\sqrt{5}} + \\frac{1}{\\sqrt{5} + \\sqrt{7}} + \\dots, \\text{is}$$",
+    q: "The sum to \\(n\\) terms of the series\n$$\\frac{1}{\\sqrt{1} + \\sqrt{3}} + \\frac{1}{\\sqrt{3} + \\sqrt{5}} + \\frac{1}{\\sqrt{5} + \\sqrt{7}} + \\dots,$$ is",
     options: [
       "(A). \\(\\sqrt{2n + 1}\\)",
       "(B). \\(\\frac{1}{2}\\sqrt{2n + 1}\\)",
