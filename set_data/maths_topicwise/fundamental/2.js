@@ -212,7 +212,7 @@ window.SET_DATA = {
   },
   // Q20
   {
-    q: "`How many trailing zeros are there in\nN = \\frac{1000!}{(500!)^2}?`",
+    q: "How many trailing zeros are there in \\(N = \\frac{1000!}{(500!)^2}\\)?",
     options: [
       "(A). \\(0\\)",
       "(B). \\(12\\)",
