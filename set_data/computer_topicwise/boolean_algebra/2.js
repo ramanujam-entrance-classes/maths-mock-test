@@ -138,7 +138,7 @@ window.SET_DATA = {
     q: "Number of neutral (balanced) Boolean functions for \\(n\\) variables where output has equal \\(0\\)s and \\(1\\)s is:",
     options: [
       "(A). \\(2^{2^{n}-1}\\)",
-      "(B). \\(\\binom{2^n}{2^{n-1}}\\)",
+      "(B). \\(\\left(\\frac{2^n}{2^{n-1}}\\right)\\)",
       "(C). \\(2^{n-1}\\)",
       "(D). \\(2^{2^n}\\)"
     ],
