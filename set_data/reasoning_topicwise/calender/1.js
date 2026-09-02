@@ -330,6 +330,116 @@ window.SET_DATA = {
       "(D). \\(2031\\)"
     ],
     correct: "(C)"
-  }  
+  },
+    // Q31
+  {
+    q: "What was the day of the week on 15th August 1947?",
+    options: [
+      "(A) Thursday",
+      "(B) Friday",
+      "(C) Saturday",
+      "(D) Sunday"
+    ],
+    correct: "(B)"
+  },
+    // Q32
+  {
+    q: "How many odd days are present in 400 years?",
+    options: [
+      "(A) 0",
+      "(B) 1",
+      "(C) 3",
+      "(D) 5"
+    ],
+    correct: "(A)"
+  },
+    // Q33
+  {
+    q: "If 5th January 2007 was a Friday, what day of the week was 5th January 2010?",
+    options: [
+      "(A) Monday",
+      "(B) Tuesday",
+      "(C) Wednesday",
+      "(D) Sunday"
+    ],
+    correct: "(B)"
+  },
+    // Q34
+  {
+    q: "The calendar for the year 2021 will repeat itself in which year?",
+    options: [
+      "(A) 2026",
+      "(B) 2027",
+      "(C) 2032",
+      "(D) 2033"
+    ],
+    correct: "(B)"
+  },
+    // Q35
+  {
+    q: "Which of the following is NOT a leap year?",
+    options: [
+      "(A) 1600",
+      "(B) 2000",
+      "(C) 2100",
+      "(D) 2400"
+    ],
+    correct: "(C)"
+  },
+    // Q36
+  {
+    q: "If today is Tuesday, what day will it be after 100 days?",
+    options: [
+      "(A) Wednesday",
+      "(B) Thursday",
+      "(C) Friday",
+      "(D) Saturday"
+    ],
+    correct: "(B)"
+  },
+    // Q37
+  {
+    q: "On what dates of May 2004 did Sunday fall?",
+    options: [
+      "(A) 1st, 8th, 15th, 22nd, 29th",
+      "(B) 2nd, 9th, 16th, 23rd, 30th",
+      "(C) 3rd, 10th, 17th, 24th, 31st",
+      "(D) 4th, 11th, 18th, 25th"
+    ],
+    correct: "(B)"
+  },
+    // Q38
+  {
+    q: "In a month of 30 days, the 2nd Tuesday falls on the 10th. What day is the last day of the month?",
+    options: [
+      "(A) Tuesday",
+      "(B) Wednesday",
+      "(C) Thursday",
+      "(D) Friday"
+    ],
+    correct: "(B)"
+  },
+    // Q39
+  {
+    q: "If the 5th of a month falls on a Wednesday, which day will fall on the 4th day after the 20th of that month?",
+    options: [
+      "(A) Sunday",
+      "(B) Monday",
+      "(C) Tuesday",
+      "(D) Wednesday"
+    ],
+    correct: "(D)"
+  },
+    // Q40
+  {
+    q: "How many leap years are there in 400 consecutive years?",
+    options: [
+      "(A) 100",
+      "(B) 96",
+      "(C) 97",
+      "(D) 98"
+    ],
+    correct: "(C)"
+  }
  ]
 };
