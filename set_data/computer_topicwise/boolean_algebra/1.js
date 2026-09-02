@@ -3,7 +3,7 @@ window.SET_DATA = {
   questions: [
   // Q1
   {
-    q: "Simplified Boolean Expression: \\(F(A, B, C) = A \\cdot \\bar{B} \\cdot C + A \\cdot B \\cdot C + A \\cdot \\bar{B} \\cdot \\bar{C}\\)",
+    q: "Simplified Boolean Expression: \\(F(A, B, C) = A \\cdot \\bar{B} \\cdot C + A \\cdot B \\cdot C +\\)\\( A \\cdot \\bar{B} \\cdot \\bar{C}\\)",
     options: [
       "(A). \\(A \\cdot (C + \\bar{B})\\)",
       "(B). \\(A \\cdot B\\)",
@@ -102,7 +102,7 @@ window.SET_DATA = {
   },
   // Q10
   {
-    q: "Simplify the Boolean logic \\(Y = A(A + B + C)(\\bar{A} + B + C)(A + \\bar{B} + C)\\):",
+    q: "Simplify the Boolean logic \\(Y = A(A + B + C)(\\bar{A} + B + C)\\)\\((A + \\bar{B} + C)\\):",
     options: [
       "(A). \\(A + B\\)",
       "(B). \\(AC\\)",
