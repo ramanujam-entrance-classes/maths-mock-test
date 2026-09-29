@@ -47,7 +47,7 @@ window.SET_DATA = {
     },
     // Q5
     {
-      q: "Let \\(C\\) denote the set of all complex numbers. The function \\(f: C \\to C\\) defined by \\(f(x) = \\dfrac{ax+b}{cx+d}\\) for \\(x \\in C\\), where \\(bd \\neq 0\\) reduces to a constant function if: [EAMCET 2005]",
+      q: "Let \\(C\\) denote the set of all complex numbers. The function \\(f: C \\to C\\) defined by \\(f(x) = \\dfrac{ax+b}{cx+d}\\) for \\(x \\in C\\), where \\(bd \\neq 0\\) reduces to a constant function if:",
       options: [
         "(A). \\(a = c\\)",
         "(B). \\(b = d\\)",
@@ -102,7 +102,7 @@ window.SET_DATA = {
     },
     // Q10
     {
-      q: "The function \\(f(x) = \\log_{10}\\!\\left(x + \\sqrt{x^2+1}\\right)\\) is [AIEEE 2003]",
+      q: "The function \\(f(x) = \\log_{10}\\!\\left(x + \\sqrt{x^2+1}\\right)\\) is",
       options: [
         "(A). an even function",
         "(B). an odd function",
@@ -300,7 +300,7 @@ window.SET_DATA = {
     },
     // Q28
     {
-      q: "The range of the function \\(f(x) = {}^{7-x}P_{x-3}\\) is [AIEEE 2004, JEE (WB) 2007]",
+      q: "The range of the function \\(f(x) = {}^{7-x}P_{x-3}\\) is",
       options: [
         "(A). \\(\\{1, 2, 3\\}\\)",
         "(B). \\(\\{1, 2, 3, 4, 5, 6\\}\\)",
@@ -355,7 +355,7 @@ window.SET_DATA = {
     },
     // Q33
     {
-      q: "The function \\(f(x) = \\dfrac{\\sec^4 x + \\cosec^4 x}{x^3 + x^4 \\cot x}\\) is",
+      q: "The function \\(f(x) = \\dfrac{\\sec^4 x + cosec^4 x}{x^3 + x^4 \\cot x}\\) is",
       options: [
         "(A). even",
         "(B). odd",
@@ -388,7 +388,7 @@ window.SET_DATA = {
     },
     // Q36
     {
-      q: "The function \\(f(x) = \\log_{10}\\!\\left(\\dfrac{1+x}{1-x}\\right)\\) satisfies the equation [JEE (WB) 2008]",
+      q: "The function \\(f(x) = \\log_{10}\\!\\left(\\dfrac{1+x}{1-x}\\right)\\) satisfies the equation",
       options: [
         "(A). \\(f(x+2) - 2f(x+1) + f(x) = 0\\)",
         "(B). \\(f(x+1) + f(x) = f(x(x+1))\\)",
