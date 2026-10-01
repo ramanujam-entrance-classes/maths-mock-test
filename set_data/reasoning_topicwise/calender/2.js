@@ -2,9 +2,9 @@ window.SET_DATA = {
   title: "Calender Mock Test 2",
   questions: [
     // Q1
-    { q: "Ashu was born on August 19, 1992 what day of the week was the born?", options: ["(A). Sunday", "(B). Monday", "(C). Tuesday", "(D). Wednesday"], correct: "" },
+    { q: "Ashu was born on August 19, 1992 what day of the week was the born?", options: ["(A). Sunday", "(B). Monday", "(C). Tuesday", "(D). Wednesday"], correct: "(D)" },
     // Q2
-    { q: "What was the day on 1st January, 1901?", options: ["(A). Monday", "(B). Wednesday", "(C). Sunday", "(D). Tuesday"], correct: "" },
+    { q: "What was the day on 1st January, 1901?", options: ["(A). Monday", "(B). Wednesday", "(C). Sunday", "(D). Tuesday"], correct: "(D)" },
     // Q3
     { q: "On what dates of December, 1984 did Sunday fall?", options: ["(A). 6th, 13th, 20th and 27th", "(B). 7th, 14th, 21st and 28th", "(C). 2nd, 9th, 16th, 23rd and 30th", "(D). 1st, 8th, 15th and 22nd"], correct: "(C)" },
     // Q4
@@ -12,13 +12,13 @@ window.SET_DATA = {
     // Q5
     { q: "The day on 18.09.1977 was Sunday. A couple was married on this date. How many marriage anniversaries would fall on Sunday in the next 15 yr?", options: ["(A). 1", "(B). 2", "(C). 5", "(D). 9"], correct: "(B)" },
     // Q6
-    { q: "Which of the following is a leap year?", options: ["(A). 2800", "(B). 1800", "(C). 2600", "(D). 3000", "(E). All of these"], correct: "(A)" },
+    { q: "Which of the following is a leap year?", options: ["(A). 2800", "(B). 1800", "(C). 2600", "(D). 3000"], correct: "(A)" },
     // Q7
     { q: "If day before yesterday was Saturday, then what day of the week will it be on day after tomorrow?", options: ["(A). Friday", "(B). Thursday", "(C). Wednesday", "(D). Tuesday"], correct: "(C)" },
     // Q8
-    { q: "If Monday falls on the first of October which day will fall three days after the 20th in that month?", options: ["(A). Monday", "(B). Tuesday", "(C). Wednesday", "(D). Sunday"], correct: "(C)" },
+    { q: "If Monday falls on the first of October which day will fall three days after the 20th in that month?", options: ["(A). Monday", "(B). Tuesday", "(C). Wednesday", "(D). Sunday"], correct: "(B)" },
     // Q9
-    { q: "The last day of a century cannot be either.", options: ["(A). Monday", "(B). Wednesday", "(C). Tuesday", "(D). Friday"], correct: "" },
+    { q: "The last day of a century cannot be either.", options: ["(A). Monday", "(B). Wednesday", "(C). Tuesday", "(D). Friday"], correct: "(C)" },
     // Q10
     { q: "Today is Monday, it will be ...... after 61 days.", options: ["(A). Wednesday", "(B). Saturday", "(C). Tuesday", "(D). Thursday"], correct: "(B)" },
     // Q11
@@ -26,25 +26,25 @@ window.SET_DATA = {
     // Q12
     { q: "If there was Thursday on 25th September in a year, then what day was on 25th October in the same year?", options: ["(A). Sunday", "(B). Monday", "(C). Friday", "(D). Saturday"], correct: "(D)" },
     // Q13
-    { q: "How many Monday's are there in a particular month of a particular year, if the month ends on Wednesday?", options: ["(A). 4", "(B). 5", "(C). 3", "(D). Cannot be specified"], correct: "(B)" },
+    { q: "How many Monday's are there in a particular month of a particular year, if the month ends on Wednesday?", options: ["(A). 4", "(B). 5", "(C). 3", "(D). Cannot be specified"], correct: "(D)" },
     // Q14
     { q: "The year next to 1990 which have the same calendar as that of the year 1990 is", options: ["(A). 1995", "(B). 1997", "(C). 1996", "(D). 1992"], correct: "(C)" },
     // Q15
     { q: "A girl was born on September 6, 1970 which happened to be a Sunday. Her birthday would have fallen again on Sunday in", options: ["(A). 1975", "(B). 1977", "(C). 1981", "(D). 1982"], correct: "(C)" },
     // Q16
-    { q: "In a month of 31 days, third Thursday falls on 16th, then what will be the last day of the month?", options: ["(A). 5th Friday", "(B). 4th Saturday", "(C). 5th Wednesday", "(D). 5th Thursday", "(E). None of these"], correct: "(A)" },
+    { q: "In a month of 31 days, third Thursday falls on 16th, then what will be the last day of the month?", options: ["(A). 5th Friday", "(B). 4th Saturday", "(C). 5th Wednesday", "(D). 5th Thursday"], correct: "(A)" },
     // Q17
     { q: "If there was Thursday on 11 January 2018, then what will be the day on 11 June 2019?", options: ["(A). Sunday", "(B). Wednesday", "(C). Tuesday", "(D). Monday"], correct: "(C)" },
     // Q18
-    { q: "If there was Monday on 5 January 2012, then what will be the day on 31st March 2013?", options: ["(A). Sunday", "(B). Monday", "(C). Tuesday", "(D). None of these"], correct: "" },
+    { q: "If there was Monday on 5 January 2012, then what will be the day on 31st March 2013?", options: ["(A). Sunday", "(B). Monday", "(C). Tuesday", "(D). None of these"], correct: "(D)" },
     // Q19
     { q: "What was the day on 1st January, 1901?", options: ["(A). Monday", "(B). Wednesday", "(C). Sunday", "(D). Tuesday"], correct: "(D)" },
     // Q20
-    { q: "What was the day on 31st October, 1984?", options: ["(A). Friday", "(B). Sunday", "(C). Wednesday", "(D). Monday"], correct: "" },
+    { q: "What was the day on 31st October, 1984?", options: ["(A). Friday", "(B). Sunday", "(C). Wednesday", "(D). Monday"], correct: "(C)" },
     // Q21
-    { q: "What was the day on 14th March, 1993?", options: ["(A). Friday", "(B). Thursday", "(C). Sunday", "(D). Saturday"], correct: "" },
+    { q: "What was the day on 14th March, 1993?", options: ["(A). Friday", "(B). Thursday", "(C). Sunday", "(D). Saturday"], correct: "(C)" },
     // Q22
-    { q: "What was the day of the week on 2nd July, 1984?", options: ["(A). Wednesday", "(B). Tuesday", "(C). Monday", "(D). Thursday"], correct: "" },
+    { q: "What was the day of the week on 2nd July, 1984?", options: ["(A). Wednesday", "(B). Tuesday", "(C). Monday", "(D). Thursday"], correct: "(C)" },
     // Q23
     { q: "On what dates of August, 1980 did Monday fall?", options: ["(A). 4th, 11th, 18th and 25th", "(B). 3rd, 10th, 17th and 24th", "(C). 6th, 13th, 20th, and 27th", "(D). 9th, 16th, 23rd and 30th"], correct: "(A)" },
     // Q24
