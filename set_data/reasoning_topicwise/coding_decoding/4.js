@@ -8,8 +8,7 @@ window.SET_DATA = {
         "(A). sa",
         "(B). ha",
         "(C). yo",
-        "(D). na",
-        "(E). None of these"
+        "(D). na"
       ],
       correct: "(C)"
     },
@@ -20,8 +19,7 @@ window.SET_DATA = {
         "(A). ra",
         "(B). ha",
         "(C). la",
-        "(D). either (a) or (c)",
-        "(E). None of these"
+        "(D). either (a) or (c)"
       ],
       correct: "(D)"
     },
@@ -32,8 +30,7 @@ window.SET_DATA = {
         "(A). sa",
         "(B). yo",
         "(C). la",
-        "(D). ha",
-        "(E). Can not be determined"
+        "(D). ha"
       ],
       correct: "(A)"
     },
@@ -44,8 +41,7 @@ window.SET_DATA = {
         "(A). behind",
         "(B). below",
         "(C). ahead",
-        "(D). above",
-        "(E). None of these"
+        "(D). above"
       ],
       correct: "(D)"
     },
@@ -56,10 +52,9 @@ window.SET_DATA = {
         "(A). la",
         "(B). yo",
         "(C). sa",
-        "(D). ha",
-        "(E). Can not be determined"
+        "(D). Can not be determined"
       ],
-      correct: "(E)"
+      correct: "(D)"
     },
     // Q6
     {
@@ -68,8 +63,7 @@ window.SET_DATA = {
         "(A). this",
         "(B). formal",
         "(C). dress",
-        "(D). black",
-        "(E). None of these"
+        "(D). black"
       ],
       correct: "(B)"
     },
@@ -80,8 +74,7 @@ window.SET_DATA = {
         "(A). jn",
         "(B). ro",
         "(C). ld",
-        "(D). pd",
-        "(E). None of these"
+        "(D). pd"
       ],
       correct: "(D)"
     },
@@ -92,8 +85,7 @@ window.SET_DATA = {
         "(A). meeting",
         "(B). weekend",
         "(C). formal",
-        "(D). Other than those given as options",
-        "(E). None of the above"
+        "(D). Other than those given as options"
       ],
       correct: "(D)"
     },
@@ -104,8 +96,7 @@ window.SET_DATA = {
         "(A). ux vr",
         "(B). vr tc",
         "(C). pd ux",
-        "(D). jn ux",
-        "(E). None of these"
+        "(D). jn ux"
       ],
       correct: "(D)"
     },
@@ -116,8 +107,7 @@ window.SET_DATA = {
         "(A). Either yi or vr",
         "(B). le",
         "(C). te",
-        "(D). jn",
-        "(E). ld"
+        "(D). jn"
       ],
       correct: "(A)"
     },
@@ -128,10 +118,9 @@ window.SET_DATA = {
         "(A). ga",
         "(B). mo",
         "(C). pa",
-        "(D). ta",
-        "(E). la"
+        "(D). la"
       ],
-      correct: "(E)"
+      correct: "(D)"
     },
     // Q12
     {
@@ -140,10 +129,9 @@ window.SET_DATA = {
         "(A). Only ta",
         "(B). Only mo",
         "(C). Either pa or mo",
-        "(D). Only pa",
-        "(E). Either mo or ta"
+        "(D). Either mo or ta"
       ],
-      correct: "(E)"
+      correct: "(D)"
     },
     // Q13
     {
@@ -152,8 +140,7 @@ window.SET_DATA = {
         "(A). xi ne mo",
         "(B). mo zi ne",
         "(C). ki ne mo",
-        "(D). mo zi ki",
-        "(E). xi ka ta"
+        "(D). mo zi ki"
       ],
       correct: "(A)"
     },
@@ -164,8 +151,7 @@ window.SET_DATA = {
         "(A). pa ga la",
         "(B). pa la lu",
         "(C). mo la pa",
-        "(D). tu la ga",
-        "(E). pa la ne"
+        "(D). tu la ga"
       ],
       correct: "(B)"
     },
@@ -176,8 +162,7 @@ window.SET_DATA = {
         "(A). mo",
         "(B). pa",
         "(C). ne",
-        "(D). zi",
-        "(E). ho"
+        "(D). zi"
       ],
       correct: "(D)"
     },
@@ -188,8 +173,7 @@ window.SET_DATA = {
         "(A). Xa3 Mas4 None5 Farnin7",
         "(B). None5 Xa3 Mas4 Darnin7",
         "(C). None5 Mas4 Farnin7 Xa3",
-        "(D). Mas4 one5 Farnin7 Xa3",
-        "(E). None of the above"
+        "(D). Mas4 one5 Farnin7 Xa3"
       ],
       correct: "(C)"
     },
@@ -200,8 +184,7 @@ window.SET_DATA = {
         "(A). Qeopl6 Hoo4 Blway6",
         "(B). Hoo4 Qerfec7 Blway6 Qeopl6",
         "(C). Qeopl6 Hoo4 Qerfec7 Blway6",
-        "(D). Qerfec7 Blway6 Qeopl5 Hoo5",
-        "(E). None of the above"
+        "(D). Qerfec7 Blway6 Qeopl5 Hoo5"
       ],
       correct: "(B)"
     },
@@ -223,8 +206,7 @@ window.SET_DATA = {
         "(A). who",
         "(B). are",
         "(C). 'who' or 'are'",
-        "(D). Data inadequate",
-        "(E). None of these"
+        "(D). Data inadequate"
       ],
       correct: "(C)"
     },
@@ -235,8 +217,7 @@ window.SET_DATA = {
         "(A). ja",
         "(B). na",
         "(C). pa",
-        "(D). Data inadequate",
-        "(E). None of these"
+        "(D). Data inadequate"
       ],
       correct: "(B)"
     },
@@ -247,8 +228,7 @@ window.SET_DATA = {
         "(A). la",
         "(B). ta",
         "(C). sa",
-        "(D). pil",
-        "(E). None of the above"
+        "(D). pil"
       ],
       correct: "(B)"
     },
@@ -270,8 +250,7 @@ window.SET_DATA = {
         "(A). ko",
         "(B). ha",
         "(C). 'ko' or 'ha'",
-        "(D). Data inadequate",
-        "(E). None of these"
+        "(D). Data inadequate"
       ],
       correct: "(C)"
     },
@@ -282,8 +261,7 @@ window.SET_DATA = {
         "(A). sa",
         "(B). ka",
         "(C). sa or pa",
-        "(D). Data inadequate",
-        "(E). None of the above"
+        "(D). Data inadequate"
       ],
       correct: "(C)"
     },
@@ -294,8 +272,7 @@ window.SET_DATA = {
         "(A). nik",
         "(B). ma",
         "(C). de",
-        "(D). cannot be determined",
-        "(E). None of these"
+        "(D). cannot be determined"
       ],
       correct: "(A)"
     },
@@ -306,8 +283,7 @@ window.SET_DATA = {
         "(A). sa",
         "(B). pa",
         "(C). 'sa' or 'pa'",
-        "(D). Data inadequate",
-        "(E). None of these"
+        "(D). Data inadequate"
       ],
       correct: "(C)"
     },
@@ -318,8 +294,7 @@ window.SET_DATA = {
         "(A). xo",
         "(B). pe",
         "(C). tu",
-        "(D). cm",
-        "(E). None of these"
+        "(D). cm"
       ],
       correct: "(B)"
     },
@@ -330,8 +305,7 @@ window.SET_DATA = {
         "(A). Law",
         "(B). Good",
         "(C). Found",
-        "(D). Either 'a' or 'c'",
-        "(E). None of the above"
+        "(D). Either 'a' or 'c'"
       ],
       correct: "(D)"
     },
@@ -342,8 +316,7 @@ window.SET_DATA = {
         "(A). mk gs",
         "(B). gs li",
         "(C). pt da",
-        "(D). da mk",
-        "(E). Other than those given as options"
+        "(D). da mk"
       ],
       correct: "(A)"
     },
@@ -354,8 +327,7 @@ window.SET_DATA = {
         "(A). is",
         "(B). ce",
         "(C). da",
-        "(D). pt",
-        "(E). Other than those given as options"
+        "(D). pt"
       ],
       correct: "(B)"
     },
@@ -366,8 +338,7 @@ window.SET_DATA = {
         "(A). farming",
         "(B). techniques",
         "(C). Either 'of' or 'disposal'",
-        "(D). waste",
-        "(E). Either 'into' or 'few'"
+        "(D). waste"
       ],
       correct: "(C)"
     },
@@ -378,8 +349,7 @@ window.SET_DATA = {
         "(A). ax nb cr",
         "(B). li ax pt",
         "(C). nb li ax",
-        "(D). gs li nb",
-        "(E). Other than those given as option"
+        "(D). gs li nb"
       ],
       correct: "(C)"
     },
@@ -390,8 +360,7 @@ window.SET_DATA = {
         "(A). Either 'pz' or 'fo'",
         "(B). Either 'nb' or 'mk'",
         "(C). li",
-        "(D). hu",
-        "(E). Other than those given as options"
+        "(D). hu"
       ],
       correct: "(A)"
     },
@@ -402,8 +371,7 @@ window.SET_DATA = {
         "(A). Blway6 Iance5 Xron5 Ienc5",
         "(B). Ianc5 Xron5 Blway5 Ienc5",
         "(C). Ianc5 Xron5 Blway5 Ienc5",
-        "(D). Blway6 Ienc5 Ianc5 Xron5",
-        "(E). Ianc6 Xron6 Blway5 Ienc5"
+        "(D). Blway6 Ienc5 Ianc5 Xron5"
       ],
       correct: "(D)"
     },
@@ -414,8 +382,7 @@ window.SET_DATA = {
         "(A). Garmin7",
         "(B). Gramin8",
         "(C). Garing8",
-        "(D). Earnin7",
-        "(E). Earnin8"
+        "(D). Earnin7"
       ],
       correct: "(A)"
     },
@@ -426,8 +393,7 @@ window.SET_DATA = {
         "(A). @E8",
         "(B). @E9",
         "(C). #E8",
-        "(D). #T8",
-        "(E). #T9"
+        "(D). #T8"
       ],
       correct: "(B)"
     },
@@ -438,8 +404,7 @@ window.SET_DATA = {
         "(A). Point",
         "(B). Turn",
         "(C). Sick",
-        "(D). Good",
-        "(E). None of these"
+        "(D). Good"
       ],
       correct: "(D)"
     },
@@ -450,8 +415,7 @@ window.SET_DATA = {
         "(A). !r7",
         "(B). @c6",
         "(C). #a5",
-        "(D). %r6",
-        "(E). Cannot be determined"
+        "(D). %r6"
       ],
       correct: "(A)"
     },
@@ -462,8 +426,7 @@ window.SET_DATA = {
         "(A). @c6 !m6 %s5",
         "(B). #a3 !i8 @c6",
         "(C). @f4 !m7 #a3",
-        "(D). !C7 @a4 #m3",
-        "(E). Cannot be determined"
+        "(D). !C7 @a4 #m3"
       ],
       correct: "(C)"
     },
@@ -474,8 +437,7 @@ window.SET_DATA = {
         "(A). Ignoring cuddle forest",
         "(B). Sight morning arm",
         "(C). Making strike sight",
-        "(D). Strike raising fire",
-        "(E). Cannot be determined"
+        "(D). Strike raising fire"
       ],
       correct: "(C)"
     }
