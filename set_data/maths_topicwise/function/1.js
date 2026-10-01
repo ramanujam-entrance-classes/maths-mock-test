@@ -5,7 +5,7 @@ window.SET_DATA = {
     {
       q: "Which of the following functions has period \\(2\\pi\\)?",
       options: [
-        "(A). \\(f(x) = \\sin\\left(2\\pi x + \\dfrac{\\pi}{3}\\right) + 2\\sin\\left(3\\pi x + \\dfrac{\\pi}{4}\\right) + 3\\sin 5\\pi x\\)",
+        "(A). \\(f(x) = \\sin\\left(2\\pi x + \\dfrac{\\pi}{3}\\right) +\\)\\( 2\\sin\\left(3\\pi x + \\dfrac{\\pi}{4}\\right) + 3\\sin 5\\pi x\\)",
         "(B). \\(f(x) = \\sin\\dfrac{\\pi x}{3} + \\sin\\dfrac{\\pi x}{4}\\)",
         "(C). \\(f(x) = \\sin x + \\cos 2x\\)",
         "(D). none of these"
@@ -16,10 +16,10 @@ window.SET_DATA = {
     {
       q: "If \\(f(x) = a^x\\), which of the following equalities hold?",
       options: [
-        "(A). \\(f(x+2) - 2f(x+1) + f(x) = (a-1)^2 f(x)\\)",
+        "(A). \\(f(x+2) - 2f(x+1) + f(x) = \\)\\((a-1)^2 f(x)\\)",
         "(B). \\(f(-x)f(x) + 1 = 0\\)",
         "(C). \\(f(x+y) = f(x) + f(y)\\)",
-        "(D). \\(f(x+3) - 2f(x+2) + f(x+1) = (a-2)^2 f(x+1)\\)"
+        "(D). \\(f(x+3) - 2f(x+2) + \\)\\(f(x+1) = (a-2)^2 f(x+1)\\)"
       ],
       correct: "(A)"
     },
@@ -69,7 +69,7 @@ window.SET_DATA = {
     },
     // Q7
     {
-      q: "The domain of definition of the function \\(f(x) = x \\cdot \\dfrac{1 + 2(x+4)^{-0.5}}{2-(x+4)^{0.5}} + (x+4)^{0.5} + 4(x+4)^{0.5}\\) is",
+      q: "The domain of definition of the function \\(f(x) = x \\cdot \\dfrac{1 + 2(x+4)^{-0.5}}{2-(x+4)^{0.5}} +\\)\\( (x+4)^{0.5} + 4(x+4)^{0.5}\\) is",
       options: [
         "(A). \\(R\\)",
         "(B). \\((-4, 4)\\)",
@@ -96,7 +96,7 @@ window.SET_DATA = {
         "(A). \\(D = R,\\ E = [-1, 1]\\)",
         "(B). \\(D = I\\) (the set of integers), \\(E = [-1, 1]\\)",
         "(C). \\(D = R,\\ E = \\{-1, 1\\}\\)",
-        `(D). \\(D = I,\\ E = \\begin{cases} +1 & \\text{when } x = 0 \\text{ or even} \\\\ -1, & \\text{when } x \\text{ is odd} \\end{cases}\\)`
+        `(D). \\(D = I,\\)\\( E = \\begin{cases} +1 & \\text{when } x = 0 \\text{ or even} \\\\ -1, & \\text{when } x \\text{ is odd} \\end{cases}\\)`
       ],
       correct: "(D)"
     },
@@ -278,11 +278,11 @@ window.SET_DATA = {
     },
     // Q26
     {
-      q: "Let the function \\(f(x) = x^2 + x + \\sin x - \\cos x + \\log(1+|x|)\\) be defined on the interval \\([0, 1]\\). The odd extension of \\(f(x)\\) to the interval \\([-1, 1]\\) is",
+      q: "Let the function \\(f(x) = x^2 + x + \\sin x - \\cos x + \\)\\(\\log(1+|x|)\\) be defined on the interval \\([0, 1]\\). The odd extension of \\(f(x)\\) to the interval \\([-1, 1]\\) is",
       options: [
-        "(A). \\(x^2 + x + \\sin x + \\cos x - \\log(1+|x|)\\)",
-        "(B). \\(-x^2 + x + \\sin x + \\cos x - \\log(1+|x|)\\)",
-        "(C). \\(-x^2 + x + \\sin x - \\cos x + \\log(1+|x|)\\)",
+        "(A). \\(x^2 + x + \\sin x + \\cos x -\\)\\( \\log(1+|x|)\\)",
+        "(B). \\(-x^2 + x + \\sin x + \\cos x -\\)\\( \\log(1+|x|)\\)",
+        "(C). \\(-x^2 + x + \\sin x - \\cos x +\\)\\( \\log(1+|x|)\\)",
         "(D). none of these"
       ],
       correct: "(B)"
@@ -311,7 +311,7 @@ window.SET_DATA = {
     },
     // Q29
     {
-      q: "If \\(f(x) = \\cos^{-1}\\!\\left(\\dfrac{2-|x|}{4}\\right) + \\left[\\log_{10}(3-x)\\right]^{-1}\\), then its domain is",
+      q: "If \\(f(x) = \\cos^{-1}\\!\\left(\\dfrac{2-|x|}{4}\\right) + \\)\\(\\left[\\log_{10}(3-x)\\right]^{-1}\\), then its domain is",
       options: [
         "(A). \\([-2, 6]\\)",
         "(B). \\([-6, 2) \\cup (2, 3)\\)",
@@ -509,7 +509,7 @@ window.SET_DATA = {
     },
     // Q47
     {
-      q: "The range of the function \\(f(x) = \\dfrac{1}{2-\\cos 3x}\\) is [EAMCET 2007]",
+      q: "The range of the function \\(f(x) = \\dfrac{1}{2-\\cos 3x}\\) is",
       options: [
         "(A). \\(\\left[-\\dfrac{1}{3}, 0\\right]\\)",
         "(B). \\(R\\)",
