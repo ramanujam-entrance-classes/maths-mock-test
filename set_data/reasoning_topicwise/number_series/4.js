@@ -184,10 +184,9 @@ window.SET_DATA = {
         "(A). \\(37\\)",
         "(B). \\(44\\)",
         "(C). \\(48\\)",
-        "(D). \\(55\\)",
-        "(E). None of these"
+        "(D). None of these"
       ],
-      correct: "(B)"
+      correct: "(D)"
     },
     // Q18
     {
@@ -364,7 +363,7 @@ window.SET_DATA = {
         "(C). \\(41\\)",
         "(D). \\(36\\)"
       ],
-      correct: "(C)"
+      correct: "(A)"
     },
     // Q34
     {
