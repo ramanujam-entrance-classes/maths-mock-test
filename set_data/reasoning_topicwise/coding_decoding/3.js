@@ -10,7 +10,7 @@ window.SET_DATA = {
         "(C). 385",
         "(D). 272"
       ],
-      correct: ""
+      correct: "(D)"
     },
     // Q2
     {
@@ -142,7 +142,7 @@ window.SET_DATA = {
         "(C). 56149512965",
         "(D). 12250623034"
       ],
-      correct: ""
+      correct: "(C)"
     },
     // Q14
     {
@@ -173,8 +173,7 @@ window.SET_DATA = {
         "(A). EOADM",
         "(B). MEDOA",
         "(C). EMDAO",
-        "(D). EDAMO",
-        "(E). None of these"
+        "(D). EDAMO"
       ],
       correct: "(D)"
     },
@@ -198,7 +197,7 @@ window.SET_DATA = {
         "(C). 18-8-24-20-21-5",
         "(D). 20-21-24-5-8-18"
       ],
-      correct: "(D)"
+      correct: "(A)"
     },
     // Q19
     {
@@ -438,8 +437,7 @@ window.SET_DATA = {
         "(A). 11-7-20-16-11-24",
         "(B). 13-7-20-9-11-25",
         "(C). 10-7-20-13-11-24",
-        "(D). 13-7-20-10-11-25",
-        "(E). None of the above"
+        "(D). 13-7-20-10-11-25"
       ],
       correct: "(C)"
     },
