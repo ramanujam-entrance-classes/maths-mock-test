@@ -440,17 +440,6 @@ window.SET_DATA = {
         "(D). 13-7-20-10-11-25"
       ],
       correct: "(C)"
-    },
-    // Q41
-    {
-      q: "If 'FLARE' is coded as 21, 15, 26, 9, 22, then how would 'BREIF' be coded in the same language?",
-      options: [
-        "(A). 25, 9, 22, 21, 18",
-        "(B). 5, 37, 11, 19, 13",
-        "(C). 13, 19, 11, 37, 5",
-        "(D). 25, 9, 22, 18, 21"
-      ],
-      correct: "(D)"
     }
   ]
 };
