@@ -442,7 +442,7 @@ window.SET_DATA = {
         "(C). \\((1, \\infty)\\)",
         "(D). \\((4, \\infty)\\)"
       ],
-      correct: "(C)"
+      correct: "(D)"
     },
 
     // Q38
@@ -599,42 +599,6 @@ window.SET_DATA = {
         "(D). zero"
       ],
       correct: "(B)"
-    },
-
-    // Q51
-    {
-      q: "If \\(b > a\\), then the equation \\((x - a)(x - b) - 1 = 0\\) has",
-      options: [
-        "(A). both roots in \\((a, b)\\)",
-        "(B). both roots in \\((-\\infty, a)\\)",
-        "(C). both roots in \\((b, +\\infty)\\)",
-        "(D). one root in \\((-\\infty, a)\\) and the other in \\((b, \\infty)\\)"
-      ],
-      correct: "(D)"
-    },
-
-    // Q52
-    {
-      q: "If \\(a\\), \\(b\\) and \\(c\\) are the sides of a triangle, then \\(\\frac{a}{b+c-a} + \\frac{b}{c+a-b} + \\frac{c}{a+b-c}\\)",
-      options: [
-        "(A). \\(\\leq 3\\)",
-        "(B). \\(\\geq 3\\)",
-        "(C). \\(\\geq 2\\)",
-        "(D). \\(\\leq 2\\)"
-      ],
-      correct: "(B)"
-    },
-
-    // Q53
-    {
-      q: "If \\(a + b + c = 6\\), then \\(\\sqrt{4a+1} + \\sqrt{4b+1} + \\sqrt{4c+1}\\)",
-      options: [
-        "(A). \\(\\leq 9\\)",
-        "(B). \\(\\geq 9\\)",
-        "(C). \\(> 9\\)",
-        "(D). \\(< 9\\)"
-      ],
-      correct: "(A)"
     }
   ]
 };
