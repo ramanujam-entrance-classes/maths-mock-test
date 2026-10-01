@@ -12,7 +12,7 @@ window.SET_DATA = {
     // Q5
     { q: "If 1st day of a year which is not a leap year is Friday, then find the last day of that year.", options: ["(A). Sunday", "(B). Friday", "(C). Monday", "(D). Wednesday"], correct: "(B)" },
     // Q6
-    { q: "If there was Monday on 17 April in a year, then what was on 17 May in the same year?", options: ["(A). Sunday", "(B). Monday", "(C). Friday", "(D). Wednesday"], correct: "(B)" },
+    { q: "If there was Monday on 17 April in a year, then what was on 17 May in the same year?", options: ["(A). Sunday", "(B). Monday", "(C). Friday", "(D). Wednesday"], correct: "(D)" },
     // Q7
     { q: "If 1st January, 2007 was Monday, then what day of the week lies on 1st January, 2008?", options: ["(A). Monday", "(B). Tuesday", "(C). Wednesday", "(D). Sunday"], correct: "(B)" },
     // Q8
@@ -68,7 +68,7 @@ window.SET_DATA = {
     // Q33
     { q: "If it was Saturday on 17th December, 1899, then what will be the day on 22nd December, 1901?", options: ["(A). Friday", "(B). Saturday", "(C). Sunday", "(D). Monday"], correct: "(B)" },
     // Q34
-    { q: "If 27 March, 1995 was a Monday, then what day of the week was 1 November, 1994?", options: ["(A). Sunday", "(B). Monday", "(C). Tuesday", "(D). Wednesday"], correct: "" },
+    { q: "If 27 March, 1995 was a Monday, then what day of the week was 1 November, 1994?", options: ["(A). Sunday", "(B). Monday", "(C). Tuesday", "(D). Wednesday"], correct: "(C)" },
     // Q35
     { q: "Aayush's birthday is on Monday 22nd May. On what day of the week will be Neerav's birthday in the same year if Neerav was born on 30th October?", options: ["(A). Monday", "(B). Wednesday", "(C). Friday", "(D). Thursday"], correct: "(A)" },
     // Q36
