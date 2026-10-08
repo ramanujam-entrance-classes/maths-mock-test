@@ -3,12 +3,12 @@ window.SET_DATA = {
   questions: [
     // Q1
     {
-      q: "The graph of a real-valued function \\(f(x)\\) is the following. (The graph shows \\(y = 0\\) for \\(x \\leq 0\\) and \\(y = 2x\\) for \\(x > 0\\).) The function is",
+      q: "For positive numbers \\(a\\), \\(b\\) and \\(c\\), the least value of \\((a^2 + b^2 + c^2)\\!\\left(\\dfrac{1}{a^2} + \\dfrac{1}{b^2} + \\dfrac{1}{c^2}\\right)\\) is",
       options: [
-        "(A). \\(f(x) = x - |x|\\)",
-        "(B). \\(f(x) = x + |x|\\)",
-        "(C). \\(f(x) = 2x\\)",
-        "(D). none of these"
+        "(A). \\(3\\)",
+        "(B). \\(9\\)",
+        "(C). \\(\\dfrac{27}{4}\\)",
+        "(D). None of the above"
       ],
       correct: "(B)"
     },
@@ -39,14 +39,14 @@ window.SET_DATA = {
 
     // Q4
     {
-      q: "Let \\(f(x) = \\begin{cases} x^2, & 0 < x < 2 \\\\ 2x - 3, & 2 \\leq x < 3 \\\\ x + 2, & x \\geq 3 \\end{cases}\\). Then (one or more options may be correct)",
+      q: "If \\(y = 3^{x-1} + 3^{-x-1}\\), then the least value of \\(y\\) is",
       options: [
-        "(A). \\(f\\{f(f(3/2))\\} = f(3/2)\\)",
-        "(B). \\(1 + f\\{f(f(5/2))\\} = f(5/2)\\)",
-        "(C). \\(f\\{f(5/2)\\} = f(f(3/2))\\)",
-        "(D). None of these"
+        "(A). \\(2\\)",
+        "(B). \\(6\\)",
+        "(C). \\(\\dfrac{2}{3}\\)",
+        "(D). \\(\\dfrac{3}{2}\\)"
       ],
-      correct: "(A)"
+      correct: "(C)"
     },
 
     // Q5
@@ -63,7 +63,7 @@ window.SET_DATA = {
 
     // Q6
     {
-      q: "If \\(f(x) = \\sin^2 x + \\sin^2\\!\\left(x + \\dfrac{\\pi}{3}\\right) + \\cos x \\cdot \\cos\\!\\left(x + \\dfrac{\\pi}{3}\\right)\\) and \\(g\\!\\left(\\dfrac{5}{4}\\right) = 1\\) then \\((g \\circ f)(x)\\) is",
+      q: "If \\(f(x) = \\sin^2 x + \\sin^2\\!\\left(x + \\dfrac{\\pi}{3}\\right) +\\)\\( \\cos x \\cdot \\cos\\!\\left(x + \\dfrac{\\pi}{3}\\right)\\) and \\(g\\!\\left(\\dfrac{5}{4}\\right) = 1\\) then \\((g \\circ f)(x)\\) is",
       options: [
         "(A). a polynomial of the first degree in \\(\\sin x\\), \\(\\cos x\\)",
         "(B). a constant function",
@@ -123,16 +123,16 @@ window.SET_DATA = {
 
     // Q11
     {
-      q: "Let \\(f(x)\\) be a function whose domain is \\([-5, 7]\\). Let \\(g(x) = |2x + 5|\\). Then the domain of \\((f \\circ g)(x)\\) is",
+      q: "Minimum value of \\(\\dfrac{b + c}{a} + \\dfrac{c + a}{b} + \\dfrac{a + b}{c}\\) (for real positive numbers \\(a, b, c\\)) is",
       options: [
-        "(A). \\([-5, 1]\\)",
-        "(B). \\([-4, 0]\\)",
-        "(C). \\([-6, 1]\\)",
-        "(D). none of these"
+        "(A). \\(1\\)",
+        "(B). \\(2\\)",
+        "(C). \\(4\\)",
+        "(D). \\(6\\)"
       ],
-      correct: "(C)"
+      correct: "(D)"
     },
-
+    
     // Q12
     {
       q: "Let \\(f: (-\\infty, 1] \\to (-\\infty, 1]\\) such that \\(f(x) = x(2 - x)\\). Then \\(f^{-1}(x)\\) is",
@@ -411,16 +411,16 @@ window.SET_DATA = {
 
     // Q35
     {
-      q: "Let \\(f(x) = nx + n - [nx + n] + \\tan\\dfrac{\\pi x}{2}\\), where \\([x]\\) is the greatest integer \\(\\leq x\\) and \\(n \\in N\\). It is",
+      q: "If \\(a\\), \\(b\\) and \\(c\\) are different positive real numbers such that \\(b + c - a\\), \\(c + a - b\\) and \\(a + b - c\\) are positive, then \\((b + c - a)(c + a - b)(a + b - c) - abc\\) is",
       options: [
-        "(A). a periodic function of period \\(1\\)",
-        "(B). a periodic function of period \\(4\\)",
-        "(C). not periodic",
-        "(D). a periodic function of period \\(2\\)"
+        "(A). positive",
+        "(B). negative",
+        "(C). non-positive",
+        "(D). non-negative"
       ],
-      correct: "(D)"
+      correct: "(B)"
     },
-
+    
     // Q36
     {
       q: "The product of all the solutions of the equation \\(|(x - 2)|^2 - 3|x - 2| + 2 = 0\\) is",
@@ -543,7 +543,7 @@ window.SET_DATA = {
 
     // Q46
     {
-      q: "If \\(\\log x \\cdot \\log y \\cdot \\log z = (y - z)(z - x)(x - y)\\), then",
+      q: "If \\(\\log x \\cdot \\log y \\cdot \\log z =\\)\\( (y - z)(z - x)(x - y)\\), then",
       options: [
         "(A). \\(x^y \\cdot y^z \\cdot z^x = 1\\)",
         "(B). \\(x^x \\cdot y^y \\cdot z^z = 1\\)",
@@ -579,66 +579,6 @@ window.SET_DATA = {
 
     // Q49
     {
-      q: "If \\(x_n > x_{n-1} > \\cdots > x_2 > x_1 > 1\\), then the value of \\(\\log_{x_1} \\log_{x_2} \\log_{x_3} \\cdots \\log_{x_n} x_n^{x_{n-1}}\\) is",
-      options: [
-        "(A). \\(0\\)",
-        "(B). \\(1\\)",
-        "(C). \\(2\\)",
-        "(D). None of these"
-      ],
-      correct: "(B)"
-    },
-
-    // Q50
-    {
-      q: "\\(4^{\\sin^2 x} + 4^{\\cos^2 x}\\) is equal to",
-      options: [
-        "(A). \\(\\leq 4\\)",
-        "(B). \\(\\geq 4\\)",
-        "(C). \\(\\leq 2\\)",
-        "(D). \\(\\geq 2\\)"
-      ],
-      correct: "(B)"
-    },
-
-    // Q51
-    {
-      q: "If \\(y = 3^{x-1} + 3^{-x-1}\\), then the least value of \\(y\\) is",
-      options: [
-        "(A). \\(2\\)",
-        "(B). \\(6\\)",
-        "(C). \\(\\dfrac{2}{3}\\)",
-        "(D). \\(\\dfrac{3}{2}\\)"
-      ],
-      correct: "(C)"
-    },
-
-    // Q52
-    {
-      q: "Minimum value of \\(\\dfrac{b + c}{a} + \\dfrac{c + a}{b} + \\dfrac{a + b}{c}\\) (for real positive numbers \\(a, b, c\\)) is",
-      options: [
-        "(A). \\(1\\)",
-        "(B). \\(2\\)",
-        "(C). \\(4\\)",
-        "(D). \\(6\\)"
-      ],
-      correct: "(D)"
-    },
-
-    // Q53
-    {
-      q: "If \\(a\\), \\(b\\) and \\(c\\) are different positive real numbers such that \\(b + c - a\\), \\(c + a - b\\) and \\(a + b - c\\) are positive, then \\((b + c - a)(c + a - b)(a + b - c) - abc\\) is",
-      options: [
-        "(A). positive",
-        "(B). negative",
-        "(C). non-positive",
-        "(D). non-negative"
-      ],
-      correct: "(B)"
-    },
-
-    // Q54
-    {
       q: "If the product of \\(n\\) positive numbers is unity, then their sum is",
       options: [
         "(A). a negative integer",
@@ -648,15 +588,15 @@ window.SET_DATA = {
       ],
       correct: "(C)"
     },
-
-    // Q55
+   
+    // Q50
     {
-      q: "For positive numbers \\(a\\), \\(b\\) and \\(c\\), the least value of \\((a^2 + b^2 + c^2)\\!\\left(\\dfrac{1}{a^2} + \\dfrac{1}{b^2} + \\dfrac{1}{c^2}\\right)\\) is",
+      q: "\\(4^{\\sin^2 x} + 4^{\\cos^2 x}\\) is equal to",
       options: [
-        "(A). \\(3\\)",
-        "(B). \\(9\\)",
-        "(C). \\(\\dfrac{27}{4}\\)",
-        "(D). None of the above"
+        "(A). \\(\\leq 4\\)",
+        "(B). \\(\\geq 4\\)",
+        "(C). \\(\\leq 2\\)",
+        "(D). \\(\\geq 2\\)"
       ],
       correct: "(B)"
     }
