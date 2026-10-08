@@ -17,9 +17,9 @@ window.SET_DATA = {
     {
       q: "If \\(f(x) = \\begin{cases} |x|, & x \\leq 1 \\\\ 2-x, & x > 1 \\end{cases}\\), then \\(fof(x)\\) is equal to",
       options: [
-        "(A). \\(\\begin{cases} |2-|x||, & x < -1 \\\\ |x|, & -1 \\leq x \\leq 1 \\\\ |2-x|, & x > 1 \\end{cases}\\)",
-        "(B). \\(\\begin{cases} |x|, & x < -1 \\\\ |2-|x||, & -1 \\leq x \\leq 1 \\\\ |2-x|, & x > 1 \\end{cases}\\)",
-        "(C). \\(\\begin{cases} |2-x|, & x < -1 \\\\ |x|, & -1 \\leq x \\leq 1 \\\\ |2-|x||, & x > 1 \\end{cases}\\)",
+        "(A). \\(\\begin{cases} 2-|x|, & x < -1 \\\\ |x|, & -1 \\leq x \\leq 1 \\\\ |2-x|, & x > 1 \\end{cases}\\)",
+        "(B). \\(\\begin{cases} |x|, & x < -1 \\\\ 2-|x|, & -1 \\leq x \\leq 1 \\\\ |2-x|, & x > 1 \\end{cases}\\)",
+        "(C). \\(\\begin{cases} |2-x|, & x < -1 \\\\ |x|, & -1 \\leq x \\leq 1 \\\\ 2-|x|, & x > 1 \\end{cases}\\)",
         "(D). none of these"
       ],
       correct: "(A)"
@@ -106,7 +106,7 @@ window.SET_DATA = {
         "(C). \\(\\{1, 2, 3, 4\\}\\)",
         "(D). \\(\\{1, 2, 3\\}\\)"
       ],
-      correct: "(D)"
+      correct: "(B)"
     },
 
     // Q10
@@ -147,7 +147,7 @@ window.SET_DATA = {
 
     // Q13
     {
-      q: "The function \\(f: (-\\infty, -1] \\to (0, e^2]\\) defined by \\(f(x) = e^{x^2 - 3x + 2}\\) is",
+      q: "The function \\(f: (-\\infty, -1] \\to (0, e^3]\\) defined by \\(f(x) = e^{x^3 - 3x + 2}\\) is",
       options: [
         "(A). one-one and onto",
         "(B). one-one and into",
@@ -423,7 +423,7 @@ window.SET_DATA = {
 
     // Q36
     {
-      q: "If \\(f(x) + f(1-x) = 2\\), then the value of \\(f\\!\\left(\\dfrac{1}{2001}\\right) + f\\!\\left(\\dfrac{2}{2001}\\right) + \\cdots + f\\!\\left(\\dfrac{2000}{2001}\\right)\\) is",
+      q: "If \\(f(x) + f(1-x) = 2\\), then the value of \\(f\\!\\left(\\dfrac{1}{2001}\\right) + f\\!\\left(\\dfrac{2}{2001}\\right) + \\cdots +\\)\\( f\\!\\left(\\dfrac{2000}{2001}\\right)\\) is",
       options: [
         "(A). \\(2000\\)",
         "(B). \\(2001\\)",
@@ -597,30 +597,6 @@ window.SET_DATA = {
         "(B). \\(y\\)-axis",
         "(C). origin",
         "(D). \\(y = x\\)"
-      ],
-      correct: "(C)"
-    },
-
-    // Q51
-    {
-      q: "Let \\(R\\) be reflexive relation on the finite set \\(A\\) having \\(10\\) elements and if \\(m\\) is the number of ordered pair in \\(R\\), then",
-      options: [
-        "(A). \\(m \\geq 10\\)",
-        "(B). \\(m = 100\\)",
-        "(C). \\(m = 10\\)",
-        "(D). \\(m \\leq 10\\)"
-      ],
-      correct: "(A)"
-    },
-
-    // Q52
-    {
-      q: "A real valued function \\(f\\) is defined as \\(f(x) = \\begin{cases} -1, & -2 \\leq x \\leq 0 \\\\ x-1, & 0 \\leq x \\leq 2 \\end{cases}\\). Which of the following statement is FALSE?",
-      options: [
-        "(A). \\(f(|x|) = |x| - 1\\), if \\(0 \\leq x \\leq 1\\)",
-        "(B). \\(|f(x)| = x - 1\\), if \\(1 \\leq x \\leq 2\\)",
-        "(C). \\(f(|x|) + |f(x)| = 1\\), if \\(0 \\leq x \\leq 1\\)",
-        "(D). \\(f(|x|) - |f(x)| = 0\\), if \\(1 \\leq x \\leq 2\\)"
       ],
       correct: "(C)"
     }
