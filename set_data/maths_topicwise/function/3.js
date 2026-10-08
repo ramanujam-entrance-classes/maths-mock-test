@@ -15,11 +15,11 @@ window.SET_DATA = {
 
     // Q2
     {
-      q: "Which of the following functions is symmetric about the \\(y\\)-axis?",
+      q: "A function whose graph is symmetrical about the \\(y\\)-axis is given by",
       options: [
-        "(A). \\(f(x) = x\\)",
-        "(B). \\(f(x) = e^x\\)",
-        "(C). \\(f(x) = x^2 + \\sin x\\)",
+        "(A). \\(f(x) = \\log_{e}(x + \\sqrt{x^2 + 1})\\)",
+        "(B). \\(f(x+y) = f(x)+f(y)\\) for all \\(x,y \\in R\\)",
+        "(C). \\(f(x) = \\cos x + \\sin x\\)",
         "(D). None of these"
       ],
       correct: "(D)"
@@ -27,12 +27,12 @@ window.SET_DATA = {
 
     // Q3
     {
-      q: "Which of the following functions is symmetric about the origin?",
+      q: "A function whose graph is symmetrical about the origin is given by",
       options: [
-        "(A). \\(f(x) = x + x^2\\)",
-        "(B). \\(f(x) = e^x - e^{-x}\\)",
+        "(A). \\(f(x) = e^x + e^{-x}\\)",
+        "(B). \\(f(x) = log_e x\\)",
         "(C). \\(f(x + y) = f(x) + f(y)\\)",
-        "(D). \\(f(x) = k\\) (constant)"
+        "(D). None of these"
       ],
       correct: "(C)"
     },
@@ -54,8 +54,8 @@ window.SET_DATA = {
       q: "The range of \\(\\cos^{-1}\\!\\left(\\dfrac{x^2}{1 + x^2}\\right)\\) is",
       options: [
         "(A). \\(\\left[0, \\dfrac{\\pi}{2}\\right]\\)",
-        "(B). \\(\\left(0, \\dfrac{\\pi}{2}\\right)\\)",
-        "(C). \\(\\left[0, \\dfrac{\\pi}{2}\\right)\\)",
+        "(B). \\(\\left[-\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2}\\right]\\)",
+        "(C). \\(\\left[-\\dfrac{\\pi}{2}, 0\\right)\\)",
         "(D). None of these"
       ],
       correct: "(D)"
@@ -63,7 +63,7 @@ window.SET_DATA = {
 
     // Q6
     {
-      q: "The range of \\(f(x) = \\sqrt{9 - x^2}\\) is",
+      q: "The range of the real-valued function \\(f(x) = \\sqrt{9 - x^2}\\) is",
       options: [
         "(A). \\([0, 3]\\)",
         "(B). \\([-3, 3]\\)",
@@ -99,7 +99,7 @@ window.SET_DATA = {
 
     // Q9
     {
-      q: "Let \\(f: \\{x, y, z\\} \\to \\{a, b, c\\}\\) be a one-one function. It is known that only one of the following statements is true: (i) \\(f(x) \\neq b\\), (ii) \\(f(y) = b\\), (iii) \\(f(z) \\neq a\\). Then the function \\(f\\) is",
+      q: "Let \\(f: \\{x, y, z\\} \\to \\{a, b, c\\}\\) be a one-one function. It is known that only one of the following statements is true: (i) \\(f(x) \\neq b\\), (ii) \\(f(y) = b\\), (iii) \\(f(z) \\neq a\\). Then the function \\(f\\) is given by the set",
       options: [
         "(A). \\(\\{(x, a), (y, b), (z, c)\\}\\)",
         "(B). \\(\\{(x, a), (y, c), (z, b)\\}\\)",
@@ -142,12 +142,12 @@ window.SET_DATA = {
         "(C). one-one and into",
         "(D). many-one and into"
       ],
-      correct: "(D)"
+      correct: "(C)"
     },
 
     // Q13
     {
-      q: "If \\(f: R \\to R\\) is defined by \\(f(x) = px + \\sin x\\) and is bijective, then the values of \\(p\\) are",
+      q: "If the real-valued function \\(f(x) = px + \\sin x\\) is a bijective function then the set of possible values of \\(p \\in R\\) is",
       options: [
         "(A). \\(R - \\{0\\}\\)",
         "(B). \\(R - \\{-1\\}\\)",
@@ -159,7 +159,7 @@ window.SET_DATA = {
 
     // Q14
     {
-      q: "The function \\(f: R \\to R\\) defined by \\(f(x) = 2x + |\\cos x|\\) is",
+      q: "Let \\(f(x) = 2x + |\\cos x|\\). Then \\(f\\) is",
       options: [
         "(A). one-one and into",
         "(B). one-one and onto",
@@ -183,7 +183,7 @@ window.SET_DATA = {
 
     // Q16
     {
-      q: "If \\(f: R \\to \\left[-\\dfrac{\\pi}{4}, \\dfrac{\\pi}{2}\\right)\\) is defined by \\(f(x) = \\tan^{-1}(x^2 + x + k)\\) is onto, then the value of \\(k\\) is",
+      q: "If \\(f: R \\to A = \\left{y | 0 \\le y \\lt \\dfrac{\\pi}{2}\\right}\\) be a function such that \\(f(x) = \\tan^{-1}(x^2 + x + k)\\), where \\(k\\) is a constant. The value if \\(k\\) for which \\f\\) is an onto function, is",
       options: [
         "(A). \\(0\\)",
         "(B). \\(\\dfrac{1}{2}\\)",
@@ -195,11 +195,11 @@ window.SET_DATA = {
 
     // Q17
     {
-      q: "The function \\(f: R \\to R\\) defined by \\(f(x) = x + \\sqrt{x^2}\\) is",
+      q: "\\(f(x) = x + \\sqrt{x^2}\\) is a function from \\(R \\to R\\). Then \\(f(x)\\) is",
       options: [
-        "(A). an odd function",
-        "(B). an even function",
-        "(C). a bijection",
+        "(A). injective",
+        "(B). surjective",
+        "(C). bijective",
         "(D). None of these"
       ],
       correct: "(D)"
@@ -207,11 +207,11 @@ window.SET_DATA = {
 
     // Q18
     {
-      q: "Which of the following is an even function?",
+      q: "Which of the following is an even function? Here [.] denotes the greatest integer function ans \\(f\\) is any function.",
       options: [
-        "(A). \\(f(x) = x \\cdot e^x\\)",
-        "(B). \\(f(x) = \\sin x + \\cos x\\)",
-        "(C). \\(f(x) = x^3 + x\\)",
+        "(A). \\([x]-x\\)",
+        "(B). \\(f(x) - f(-x)\\)",
+        "(C). \\(e^{3-2x} \\dot tan^2x\\)",
         "(D). \\(f(x) + f(-x)\\)"
       ],
       correct: "(D)"
@@ -327,7 +327,7 @@ window.SET_DATA = {
 
     // Q28
     {
-      q: "The domain of \\(y = \\underbrace{\\log_{10}\\log_{10}\\cdots\\log_{10}}_{n} x\\) (log applied \\(n\\) times) is",
+      q: "The domain of \\(y = \\underbrace{\\log_{10}\\log_{10}\\cdots\\log_{10}}_{n} x\\) (\\(n\\) times) is",
       options: [
         "(A). \\((10^{n-1}, +\\infty)\\)",
         "(B). \\((10^n, +\\infty)\\)",
@@ -339,7 +339,7 @@ window.SET_DATA = {
 
     // Q29
     {
-      q: "The largest real value of \\(x\\) such that \\(\\sqrt{(x+2)(5-x)} - \\dfrac{1}{\\sqrt{x^2-4}}\\) is real, is",
+      q: "The largest set of real values of \\(x\\) for which \\(f(x)=\\sqrt{(x+2)(5-x)} - \\dfrac{1}{\\sqrt{x^2-4}}\\) is a real function is",
       options: [
         "(A). \\([2, 5]\\)",
         "(B). \\((2, 5]\\)",
@@ -351,7 +351,7 @@ window.SET_DATA = {
 
     // Q30
     {
-      q: "The domain of \\(\\left(x^{12} - x^9 + x^4 - x + 1\\right)^{-1/2}\\) is",
+      q: "The domain of \\(f(x)=\\left(x^{12} - x^9 + x^4 - x + 1\\right)^{-1/2}\\) is",
       options: [
         "(A). \\((0, +\\infty)\\)",
         "(B). \\((-\\infty, 0)\\)",
@@ -370,7 +370,7 @@ window.SET_DATA = {
         "(C). \\(\\left[-\\dfrac{1}{\\sqrt{2}}, \\dfrac{1}{\\sqrt{2}}\\right]\\)",
         "(D). \\(\\left[\\dfrac{1}{\\sqrt{2}}, 1\\right]\\)"
       ],
-      correct: "(A)"
+      correct: "(D)"
     },
 
     // Q32
@@ -399,26 +399,26 @@ window.SET_DATA = {
 
     // Q34
     {
-      q: "The domain of \\(f(x) = \\sqrt{x^2 - [x]^2}\\) is",
+      q: "The domain of \\(f(x) = \\sqrt{x^2 - [x]^2}\\), where \\([x]=\\) the greatest integer less than or equal to \\(x\\), is",
       options: [
         "(A). \\(R\\)",
-        "(B). \\(Z\\)",
-        "(C). \\(R - Z\\)",
-        "(D). \\((0, +\\infty)\\)"
+        "(B). \\([0,+\\infty)\\)",
+        "(C). \\((-\\infty, 0]\\)",
+        "(D). none of these"
       ],
-      correct: "(A)"
+      correct: "(D)"
     },
 
     // Q35
     {
-      q: "The domain of \\(f(x) = \\dfrac{1}{\\sqrt{|\\cos x|} + \\cos x}\\) is",
+      q: "The domain of \\(f(x) = \\dfrac{1}{\\sqrt{|\\cos x| + \\cos x}}\\) is",
       options: [
         "(A). \\((2n\\pi - \\pi, 2n\\pi),\\ n \\in Z\\)",
         "(B). \\((2n\\pi, (2n+1)\\pi),\\ n \\in Z\\)",
         "(C). \\(\\left(n\\pi, (2n+1)\\dfrac{\\pi}{2}\\right),\\ n \\in Z\\)",
-        "(D). \\(R - \\{n\\pi\\}\\)"
+        "(D). \\(\\left(\\dfrac{(4n-1)\\pi}{2},\\dfrac{(4n+1)\\pi}{2}\\)"
       ],
-      correct: "(B)"
+      correct: "(D)"
     },
 
     // Q36
@@ -483,7 +483,7 @@ window.SET_DATA = {
 
     // Q41
     {
-      q: "Let \\(f: R \\to R\\) be a function defined as \\(f(x) = x^2 + \\lambda x + \\mu\\). If \\(f\\) is an integral function (i.e., takes integer values at integers), then",
+      q: "If \\(f(x) = x^2 + \\lambda x + \\mu\\) be an integral function of the integral variable \\(x\\) then",
       options: [
         "(A). \\(\\lambda\\) is an integer but \\(\\mu\\) need not be",
         "(B). \\(\\lambda\\) and \\(\\mu\\) are both integers",
@@ -495,23 +495,23 @@ window.SET_DATA = {
 
     // Q42
     {
-      q: "Let \\(f(x) = ax^2 + bx + c\\) where \\(a, b, c\\) are rational numbers. If \\(f: Z \\to Z\\) (i.e., \\(f\\) maps integers to integers), then",
+      q: "Let \\(f(x) = ax^2 + bx + c\\) where \\(a, b, c\\) are rational, and \\(f: Z \\to Z\\), where \\(Z\\) is the set of integers. Then \\(a+b\\) is",
       options: [
-        "(A). \\(a + b\\) is an integer and \\(c\\) is an integer",
-        "(B). \\(a + b\\) is an integer",
-        "(C). \\(c\\) is an integer",
-        "(D). \\(a, b, c\\) are all integers"
+        "(A). a negative integer",
+        "(B). an integer",
+        "(C). non integral rational number",
+        "(D). none of these"
       ],
       correct: "(B)"
     },
 
     // Q43
     {
-      q: "If \\(f(x) = \\cos[\\pi^2]x + \\cos[-\\pi^2]x\\), then \\(f\\!\\left(\\dfrac{\\pi}{2}\\right) =\\)",
+      q: "If \\(f(x) = \\cos[\\pi]x + \\cos[\\pix]\\), then \\(f\\!\\left(\\dfrac{\\pi}{2}\\right) =\\)",
       options: [
-        "(A). \\(\\cos 4\\)",
+        "(A). \\(\\cos 3\\)",
         "(B). \\(0\\)",
-        "(C). \\(\\cos 4 + \\cos 5\\)",
+        "(C). \\(\\cos 4\\)",
         "(D). \\(\\cos 4 - \\cos 5\\)"
       ],
       correct: "(C)"
@@ -543,7 +543,7 @@ window.SET_DATA = {
 
     // Q46
     {
-      q: "If \\(f(1) = 1\\) and \\(f(n) = 2\\displaystyle\\sum_{r=1}^{n-1} f(r)\\) for \\(n \\geq 2\\), then \\(\\displaystyle\\sum_{n=1}^{m} f(n) =\\)",
+      q: "If \\(f(1) = 1\\) and \\(f(n) = 2\\displaystyle\\sum_{r=1}^{n-1} f(r)\\). Then \\(\\displaystyle\\sum_{n=1}^{m} f(n) =\\)",
       options: [
         "(A). \\(\\dfrac{3^m - 1}{2}\\)",
         "(B). \\(3^m\\)",
