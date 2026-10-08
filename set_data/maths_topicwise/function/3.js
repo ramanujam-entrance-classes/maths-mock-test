@@ -183,7 +183,7 @@ window.SET_DATA = {
 
     // Q16
     {
-      q: "If \\(f: R \\to A = \\left{y | 0 \\le y \\lt \\dfrac{\\pi}{2}\\right}\\) be a function such that \\(f(x) = \\tan^{-1}(x^2 + x + k)\\), where \\(k\\) is a constant. The value if \\(k\\) for which \\f\\) is an onto function, is",
+      q: "If \\(f: R \\to A\\)\\( = \\left{y ; 0 \\le y \\lt \\dfrac{\\pi}{2}\\right}\\) be a function such that \\(f(x) = \\tan^{-1}(x^2 + x + k)\\), where \\(k\\) is a constant. The value if \\(k\\) for which \\(f\\) is an onto function, is",
       options: [
         "(A). \\(0\\)",
         "(B). \\(\\dfrac{1}{2}\\)",
@@ -416,7 +416,7 @@ window.SET_DATA = {
         "(A). \\((2n\\pi - \\pi, 2n\\pi),\\ n \\in Z\\)",
         "(B). \\((2n\\pi, (2n+1)\\pi),\\ n \\in Z\\)",
         "(C). \\(\\left(n\\pi, (2n+1)\\dfrac{\\pi}{2}\\right),\\ n \\in Z\\)",
-        "(D). \\(\\left(\\dfrac{(4n-1)\\pi}{2},\\dfrac{(4n+1)\\pi}{2}\\)"
+        "(D). \\(\\left(\\dfrac{(4n-1)\\pi}{2},\\dfrac{(4n+1)\\pi}{2}\\right)\\)"
       ],
       correct: "(D)"
     },
@@ -507,7 +507,7 @@ window.SET_DATA = {
 
     // Q43
     {
-      q: "If \\(f(x) = \\cos[\\pi]x + \\cos[\\pix]\\), then \\(f\\!\\left(\\dfrac{\\pi}{2}\\right) =\\)",
+      q: "If \\(f(x) = \\cos[\\pi]x + \\cos[\\pi x]\\), then \\(f\\!\\left(\\dfrac{\\pi}{2}\\right) =\\)",
       options: [
         "(A). \\(\\cos 3\\)",
         "(B). \\(0\\)",
