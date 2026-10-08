@@ -183,7 +183,7 @@ window.SET_DATA = {
 
     // Q16
     {
-      q: "If \\(f: R \\to A\\)=\\({y ; 0 \\le y \\lt \\dfrac{\\pi}{2} }\\) be a function such that \\(f(x) = \\tan^{-1}(x^2 + x + k)\\), where \\(k\\) is a constant. The value if \\(k\\) for which \\(f\\) is an onto function, is",
+      q: "If \\(f: R \\to A\\)=\\(\\{y ; 0 \\le y \\lt \\dfrac{\\pi}{2} \\}\\) be a function such that \\(f(x) = \\tan^{-1}(x^2 + x + k)\\), where \\(k\\) is a constant. The value if \\(k\\) for which \\(f\\) is an onto function, is",
       options: [
         "(A). \\(0\\)",
         "(B). \\(\\dfrac{1}{2}\\)",
