@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | Ramanujam Entrance Classes</title>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+    <style>
+        :root {
+            --primary:   #0d2461;
+            --primary-l: #1a3a8f;
+            --accent:    #e8891a;
+            --success:   #15803d;
+            --danger:    #dc2626;
+            --bg:        #e8eef7;
+            --card:      #ffffff;
+            --border:    #d1dce8;
+            --text:      #1e2d4e;
+            --muted:     #607080;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        /* ── HEADER ── */
+        header {
+            background: linear-gradient(135deg, #0d2461 0%, #1a3a8f 55%, #1e4db7 100%);
+            border-bottom: 4px solid var(--accent);
+            padding: clamp(14px, 3vw, 22px) clamp(16px, 4vw, 40px);
+            text-align: center;
+            color: #fff;
+        }
+        header h1 {
+            font-size: clamp(16px, 3.5vw, 22px);
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 6px rgba(0,0,0,.4);
+        }
+        header h4 {
+            font-size: clamp(10px, 2vw, 12px);
+            font-weight: 400;
+            opacity: .75;
+            letter-spacing: .7px;
+            margin-top: 4px;
+        }
+        .header-label {
+            display: inline-block;
+            margin-top: 10px;
+            background: rgba(232,137,26,.25);
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 4px 14px;
+            border-radius: 20px;
+        }
+
+        /* ── WRAPPER ── */
+        .admin-wrapper {
+            max-width: 640px;
+            margin: 28px auto;
+            padding: 0 clamp(12px, 4vw, 20px) 48px;
+        }
+
+        /* ── CARD ── */
+        .panel-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: clamp(20px, 5vw, 36px);
+            box-shadow: 0 4px 20px rgba(13,36,97,.1);
+        }
+
+        /* ── FORM ELEMENTS ── */
+        .field-label {
+            display: block;
+            font-weight: 600;
+            font-size: 13px;
+            color: var(--text);
+            margin-bottom: 6px;
+            margin-top: 14px;
+            text-transform: uppercase;
+            letter-spacing: .4px;
+        }
+        .field-label:first-child { margin-top: 0; }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"] {
+            width: 100%;
+            padding: 11px 14px;
+            border: 1.5px solid var(--border);
+            border-radius: 8px;
+            font-size: 15px;
+            color: var(--text);
+            background: #f7f9ff;
+            outline: none;
+            transition: border-color .2s, box-shadow .2s;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        input[type="number"]:focus {
+            border-color: var(--primary-l);
+            box-shadow: 0 0 0 3px rgba(26,58,143,.12);
+            background: #fff;
+        }
+
+        /* ── BUTTONS ── */
+        .btn {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: opacity .2s, transform .15s;
+            margin-top: 16px;
+            letter-spacing: .3px;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-l));
+            color: #fff;
+        }
+        .btn-primary:hover { opacity: .88; transform: translateY(-1px); }
+        .btn-primary:disabled { opacity: .5; cursor: not-allowed; transform: none; }
+
+        .btn-sm {
+            width: auto;
+            padding: 6px 14px;
+            font-size: 12px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-weight: 700;
+            transition: opacity .2s;
+            letter-spacing: .2px;
+        }
+        .btn-edit   { background: #3b82f6; color: #fff; }
+        .btn-edit:hover { opacity: .85; }
+        .btn-save   { background: var(--success); color: #fff; }
+        .btn-save:hover { opacity: .85; }
+        .btn-cancel { background: var(--muted); color: #fff; }
+        .btn-cancel:hover { opacity: .85; }
+        .btn-danger { background: var(--danger); color: #fff; }
+        .btn-danger:hover { opacity: .85; }
+        .btn-reset  { background: #7c3aed; color: #fff; }
+        .btn-reset:hover { opacity: .85; }
+
+        /* ── YEAR FILTER ── */
+        .year-filter-bar {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+        .year-btn {
+            padding: 5px 14px;
+            border-radius: 20px;
+            border: 1.5px solid var(--border);
+            background: #fff;
+            color: var(--muted);
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all .15s;
+        }
+        .year-btn.active, .year-btn:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: #fff;
+        }
+
+        .btn-logout {
+            background: transparent;
+            border: 1px solid var(--danger);
+            color: var(--danger);
+            padding: 7px 18px;
+            border-radius: 7px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background .2s, color .2s;
+            margin-top: 8px;
+        }
+        .btn-logout:hover { background: var(--danger); color: #fff; }
+
+        /* ── MESSAGES ── */
+        .message {
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            margin-top: 12px;
+            display: none;
+            line-height: 1.5;
+        }
+        .msg-success { background: #dcfce7; color: #14532d; border: 1px solid #86efac; }
+        .msg-error   { background: #fee2e2; color: #7f1d1d; border: 1px solid #fca5a5; }
+
+        .hidden { display: none !important; }
+
+        /* ── ADMIN INFO BAR ── */
+        #admin-info {
+            background: #f0f4ff;
+            border: 1px solid #c8d5f0;
+            border-radius: 8px;
+            padding: 9px 14px;
+            font-size: 13px;
+            color: var(--primary);
+            margin-bottom: 22px;
+            text-align: center;
+        }
+
+        /* ── TABS ── */
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid var(--border);
+            margin-bottom: 24px;
+            gap: 2px;
+        }
+        .tab-btn {
+            padding: 10px 22px;
+            border: none;
+            background: none;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--muted);
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -2px;
+            transition: color .2s, border-color .2s;
+            letter-spacing: .2px;
+        }
+        .tab-btn.active {
+            color: var(--primary);
+            border-bottom-color: var(--accent);
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        /* ── SECTION HEADING ── */
+        .section-title {
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        /* ── CATEGORY CHECKBOXES ── */
+        .cat-group {
+            border: 1.5px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 16px;
+            background: #f7f9ff;
+            margin-top: 6px;
+        }
+        .cat-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 6px 0;
+            border-bottom: 1px solid #e8eef7;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .cat-row:last-child { border-bottom: none; padding-bottom: 0; }
+        .cat-row:first-child { padding-top: 0; }
+        .cat-row input[type="checkbox"] {
+            width: 16px; height: 16px;
+            cursor: pointer;
+            accent-color: var(--primary);
+            flex-shrink: 0;
+        }
+
+        /* ── SPECIAL USER TOGGLE ── */
+        .special-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 14px;
+            padding: 10px 14px;
+            background: #fffbf0;
+            border: 1px solid #fcd34d;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text);
+        }
+        .special-row input[type="checkbox"] {
+            width: 16px; height: 16px;
+            cursor: pointer;
+            accent-color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        /* ── DIVIDER ── */
+        hr { border: none; border-top: 1px solid var(--border); margin: 22px 0; }
+
+        /* ── STUDENT CARDS ── */
+        .student-card {
+            border: 1.5px solid var(--border);
+            border-radius: 10px;
+            padding: 14px 16px;
+            margin-bottom: 10px;
+            background: #f9fbff;
+            transition: box-shadow .15s;
+        }
+        .student-card:hover { box-shadow: 0 2px 10px rgba(13,36,97,.08); }
+        .student-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .student-name  { font-weight: 700; color: var(--text); font-size: 15px; }
+        .student-email { font-size: 12px; color: var(--muted); margin-top: 2px; }
+        .student-cats  { font-size: 12px; color: var(--primary-l); margin-top: 5px; font-weight: 600; }
+        .special-badge {
+            font-size: 12px;
+            color: var(--accent);
+            font-weight: 700;
+            margin-top: 4px;
+            letter-spacing: .3px;
+        }
+        .edit-panel {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+        .edit-actions { display: flex; gap: 8px; margin-top: 10px; }
+
+        #student-list-loading {
+            text-align: center;
+            color: var(--muted);
+            font-size: 14px;
+            padding: 28px;
+        }
+
+        @media (max-width: 480px) {
+            .tab-btn { padding: 10px 14px; font-size: 13px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>RAMANUJAM ENTRANCE CLASSES</h1>
+    <h4>NIMCET &nbsp;|&nbsp; IIT JEE (MAIN + ADVANCED) &nbsp;|&nbsp; CUET &nbsp;|&nbsp; VIT &nbsp;|&nbsp; BITS &nbsp;|&nbsp; ALL MCA ENTRANCE EXAMS</h4>
+    <div class="header-label">Admin Panel</div>
+</header>
+
+<div class="admin-wrapper">
+<div class="panel-card">
+
+    <!-- ===== LOGIN ===== -->
+    <div id="login-panel">
+        <div class="section-title" style="justify-content:center; margin-bottom:24px;">Admin Login</div>
+        <label class="field-label">Admin Email</label>
+        <input type="email" id="admin-email" placeholder="Your admin email" autocomplete="email" />
+        <label class="field-label">Password</label>
+        <input type="password" id="admin-password" placeholder="Your password" autocomplete="current-password" />
+        <div id="login-error" class="message msg-error"></div>
+        <button class="btn btn-primary" id="login-btn">Login</button>
+    </div>
+
+    <!-- ===== ADMIN PANEL ===== -->
+    <div id="admin-panel" class="hidden">
+        <div id="admin-info"></div>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('create')">Create Student</button>
+            <button class="tab-btn"        onclick="switchTab('manage')">Manage Students</button>
+        </div>
+
+        <!-- TAB: Create Student -->
+        <div id="tab-create" class="tab-content active">
+            <div class="section-title">Create Student Account</div>
+
+            <label class="field-label">Student Full Name</label>
+            <input type="text" id="student-name" placeholder="e.g. Ravi Kumar" />
+
+            <label class="field-label">Student Email</label>
+            <input type="email" id="student-email" placeholder="e.g. ravi@student.com" />
+
+            <label class="field-label">Password (share this with the student)</label>
+            <input type="password" id="student-password" placeholder="Min 6 characters" />
+
+            <label class="field-label">Joining Year</label>
+            <input type="number" id="student-joining-year" placeholder="e.g. 2026" min="2020" max="2040" />
+
+            <label class="field-label" style="margin-bottom:0;">Allowed Categories</label>
+            <div class="cat-group" id="create-cat-group">
+                <label class="cat-row"><input type="checkbox" value="maths"> Mathematics</label>
+                <label class="cat-row"><input type="checkbox" value="maths_topicwise"> Mathematics Topicwise</label>
+                <label class="cat-row"><input type="checkbox" value="reasoning"> Reasoning</label>
+                <label class="cat-row"><input type="checkbox" value="reasoning_topicwise"> Reasoning Topicwise</label>
+                <label class="cat-row"><input type="checkbox" value="computer"> Computer</label>
+                <label class="cat-row"><input type="checkbox" value="computer_topicwise"> Computer Topicwise</label>
+            </div>
+
+            <label class="special-row">
+                <input type="checkbox" id="create-special">
+                &#11088; Special User &mdash; can see all available test sets
+            </label>
+
+            <label class="special-row" style="background:#f0fff4; border-color:#86efac; margin-top:8px;">
+                <input type="checkbox" id="create-permanent">
+                &#128275; Permanent User &mdash; full home page access (default: Temporary)
+            </label>
+
+            <div id="create-success" class="message msg-success"></div>
+            <div id="create-error"   class="message msg-error"></div>
+
+            <button class="btn btn-primary" id="create-btn">Create Student Account</button>
+        </div>
+
+        <!-- TAB: Manage Students -->
+        <div id="tab-manage" class="tab-content">
+            <div class="section-title">
+                All Students
+                <button class="btn-sm btn-edit" onclick="loadStudentList()">Refresh</button>
+            </div>
+            <div id="year-filter" class="year-filter-bar"></div>
+            <div id="student-list">
+                <div id="student-list-loading">Click Refresh to load students</div>
+            </div>
+        </div>
+
+        <hr>
+        <button class="btn-logout" id="logout-btn">Logout</button>
+    </div>
+
+</div>
+</div>
+
+<script>
+    // =============================================
+    // ⚙️ SET YOUR ADMIN EMAIL HERE
+    // =============================================
+    const ADMIN_EMAIL = "admin@rec.com";
+
+    const ALL_CATEGORIES = [
+        { value: "maths",               label: "Mathematics" },
+        { value: "maths_topicwise",     label: "Mathematics Topicwise" },
+        { value: "reasoning",           label: "Reasoning" },
+        { value: "reasoning_topicwise", label: "Reasoning Topicwise" },
+        { value: "computer",            label: "Computer" },
+        { value: "computer_topicwise",  label: "Computer Topicwise" }
+    ];
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyDKMdy5-F-iC-NKNMcNBb8Dtogh9zsuOgQ",
+        authDomain: "maths-mock-test-93582.firebaseapp.com",
+        projectId: "maths-mock-test-93582",
+        storageBucket: "maths-mock-test-93582.firebasestorage.app",
+        messagingSenderId: "74677296170",
+        appId: "1:74677296170:web:500a1f0cd651f7092cb753"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const adminAuth = firebase.auth();
+    const fbDb      = firebase.firestore();
+
+    // Secondary app — creates student accounts without logging out admin
+    const secondaryApp  = firebase.initializeApp(firebaseConfig, 'secondary');
+    const studentAuth   = secondaryApp.auth();
+
+    // =============================================
+    // Auth state
+    // =============================================
+    adminAuth.onAuthStateChanged((user) => {
+        if (user && user.email.toLowerCase() === ADMIN_EMAIL.toLowerCase()) {
+            document.getElementById('login-panel').classList.add('hidden');
+            document.getElementById('admin-panel').classList.remove('hidden');
+            document.getElementById('admin-info').innerHTML = `Logged in as <b>${user.email}</b>`;
+        } else {
+            if (user) {
+                adminAuth.signOut();
+                showLoginError("Access denied. This page is for admin only.");
+            }
+            document.getElementById('login-panel').classList.remove('hidden');
+            document.getElementById('admin-panel').classList.add('hidden');
+            document.getElementById('admin-email').value = '';
+            document.getElementById('admin-password').value = '';
+            const btn = document.getElementById('login-btn');
+            btn.disabled = false; btn.textContent = 'Login';
+            document.getElementById('login-error').style.display = 'none';
+        }
+    });
+
+    // =============================================
+    // Tabs
+    // =============================================
+    function switchTab(tab) {
+        document.querySelectorAll('.tab-btn').forEach((b, i) => {
+            b.classList.toggle('active', (i === 0 && tab === 'create') || (i === 1 && tab === 'manage'));
+        });
+        document.getElementById('tab-create').classList.toggle('active', tab === 'create');
+        document.getElementById('tab-manage').classList.toggle('active', tab === 'manage');
+        if (tab === 'manage') loadStudentList();
+    }
+
+    // =============================================
+    // Admin Login
+    // =============================================
+    function doAdminLogin() {
+        const email    = document.getElementById('admin-email').value.trim();
+        const password = document.getElementById('admin-password').value;
+        const btn      = document.getElementById('login-btn');
+
+        if (!email || !password) { showLoginError("Please enter email and password."); return; }
+
+        btn.disabled = true; btn.textContent = 'Logging in...';
+
+        adminAuth.signInWithEmailAndPassword(email, password)
+            .catch((err) => {
+                btn.disabled = false; btn.textContent = 'Login';
+                showLoginError(getErrorMessage(err.code));
+            });
+    }
+
+    document.getElementById('login-btn').addEventListener('click', doAdminLogin);
+    document.getElementById('admin-email').addEventListener('keydown',    (e) => { if (e.key === 'Enter') document.getElementById('admin-password').focus(); });
+    document.getElementById('admin-password').addEventListener('keydown', (e) => { if (e.key === 'Enter') doAdminLogin(); });
+
+    // =============================================
+    // Create Student
+    // =============================================
+    document.getElementById('create-btn').addEventListener('click', () => {
+        const name     = document.getElementById('student-name').value.trim();
+        const email    = document.getElementById('student-email').value.trim();
+        const password = document.getElementById('student-password').value;
+        const joiningYear = document.getElementById('student-joining-year').value
+            ? parseInt(document.getElementById('student-joining-year').value)
+            : null;
+        const btn      = document.getElementById('create-btn');
+
+        const categories = [...document.querySelectorAll('#create-cat-group input[type="checkbox"]:checked')]
+            .map(cb => cb.value);
+
+        document.getElementById('create-success').style.display = 'none';
+        document.getElementById('create-error').style.display   = 'none';
+
+        if (!name || !email || !password) { showCreateError("Please fill in all three fields."); return; }
+        if (password.length < 6)          { showCreateError("Password must be at least 6 characters."); return; }
+        if (categories.length === 0)      { showCreateError("Please select at least one category."); return; }
+
+        btn.disabled = true; btn.textContent = 'Creating...';
+
+        let createdUid = null;
+
+        studentAuth.createUserWithEmailAndPassword(email, password)
+            .then((cred) => {
+                createdUid = cred.user.uid;
+                return cred.user.updateProfile({ displayName: name });
+            })
+            .then(() => {
+                const special = document.getElementById('create-special').checked;
+                const isPermanent = document.getElementById('create-permanent').checked;
+                return fbDb.collection('students').doc(createdUid).set({
+                    name, email, categories, special, joiningYear,
+                    userType: isPermanent ? "permanent" : "temporary",
+                    createdAt: firebase.firestore.FieldValue.serverTimestamp()
+                });
+            })
+            .then(() => studentAuth.signOut())
+            .then(() => {
+                btn.disabled = false; btn.textContent = 'Create Student Account';
+
+                const el = document.getElementById('create-success');
+                el.innerHTML = `&#10003; Account created!<br>
+                    <b>Name:</b> ${name}<br>
+                    <b>Email:</b> ${email}<br>
+                    <b>Categories:</b> ${categories.map(c => ALL_CATEGORIES.find(x => x.value === c)?.label || c).join(', ')}`;
+                el.style.display = 'block';
+
+                document.getElementById('student-name').value     = '';
+                document.getElementById('student-email').value    = '';
+                document.getElementById('student-password').value = '';
+                document.getElementById('student-joining-year').value = '';
+                document.querySelectorAll('#create-cat-group input[type="checkbox"]')
+                    .forEach(cb => cb.checked = false);
+                document.getElementById('create-special').checked = false;
+                document.getElementById('create-permanent').checked = false;
+            })
+            .catch((err) => {
+                btn.disabled = false; btn.textContent = 'Create Student Account';
+                showCreateError(getErrorMessage(err.code));
+            });
+    });
+
+    // =============================================
+    // Manage Students — Load List
+    // =============================================
+    function loadStudentList() {
+        const container = document.getElementById('student-list');
+        container.innerHTML = '<div id="student-list-loading">Loading...</div>';
+        document.getElementById('year-filter').innerHTML = '';
+
+        fbDb.collection('students').orderBy('name').get()
+            .then((snapshot) => {
+                if (snapshot.empty) {
+                    container.innerHTML = '<div id="student-list-loading">No students found.</div>';
+                    return;
+                }
+                container.innerHTML = '';
+                const allData = [];
+                snapshot.forEach((doc) => {
+                    const data = doc.data();
+                    allData.push({ id: doc.id, data });
+                    container.appendChild(buildStudentCard(doc.id, data));
+                });
+                buildYearFilter(allData);
+            })
+            .catch(() => {
+                container.innerHTML = '<div id="student-list-loading">Failed to load. Check Firestore rules.</div>';
+            });
+    }
+
+    function buildYearFilter(allData) {
+        const years = [...new Set(allData.map(s => s.data.joiningYear).filter(Boolean))].sort();
+        const bar = document.getElementById('year-filter');
+        if (!years.length) return;
+        bar.innerHTML = '';
+        const allBtn = document.createElement('button');
+        allBtn.className = 'year-btn active';
+        allBtn.textContent = 'All';
+        allBtn.onclick = () => filterByYear(null, allBtn);
+        bar.appendChild(allBtn);
+        years.forEach(yr => {
+            const btn = document.createElement('button');
+            btn.className = 'year-btn';
+            btn.textContent = yr;
+            btn.onclick = () => filterByYear(yr, btn);
+            bar.appendChild(btn);
+        });
+    }
+
+    function filterByYear(year, activeBtn) {
+        document.querySelectorAll('.year-btn').forEach(b => b.classList.remove('active'));
+        if (activeBtn) activeBtn.classList.add('active');
+        document.querySelectorAll('.student-card').forEach(card => {
+            if (!year) { card.style.display = ''; return; }
+            const yrBadge = card.querySelector('[id^="yrbadge-"]');
+            const show = yrBadge && yrBadge.textContent.includes(year);
+            card.style.display = show ? '' : 'none';
+        });
+    }
+
+    function deleteStudent(uid, name) {
+        if (!confirm(`Delete "${name}"?\n\nThis removes their data and access permanently.`)) return;
+        fbDb.collection('students').doc(uid).delete()
+            .then(() => {
+                const card = document.getElementById(`card-${uid}`);
+                if (card) card.remove();
+            })
+            .catch(() => alert('Delete failed. Please try again.'));
+    }
+
+    function sendResetLink(uid, email, name) {
+        if (!confirm(`Send password reset link to ${name} (${email})?`)) return;
+        adminAuth.sendPasswordResetEmail(email)
+            .then(() => {
+                const msgEl = document.getElementById(`edit-msg-${uid}`);
+                if (msgEl) {
+                    msgEl.innerHTML = `&#10003; Reset link sent to ${email}`;
+                    msgEl.className = 'message msg-success';
+                    msgEl.style.display = 'block';
+                    setTimeout(() => { msgEl.style.display = 'none'; }, 4000);
+                } else {
+                    alert(`✓ Reset link sent to ${email}`);
+                }
+            })
+            .catch((err) => {
+                alert('Failed to send reset link: ' + getErrorMessage(err.code));
+            });
+    }
+
+    function buildStudentCard(uid, data) {
+        const catLabels = (data.categories || [])
+            .map(c => ALL_CATEGORIES.find(x => x.value === c)?.label || c)
+            .join(', ') || 'None';
+
+        const div = document.createElement('div');
+        div.className = 'student-card';
+        div.id = `card-${uid}`;
+
+        div.innerHTML = `
+            <div class="student-card-header">
+                <div>
+                    <div class="student-name">${data.name || '&#8212;'}</div>
+                    <div class="student-email">${data.email || '&#8212;'}</div>
+                    <div class="student-cats">&#128218; ${catLabels}</div>
+                    <div class="special-badge" style="${data.special ? '' : 'display:none;'}">&#11088; Special User</div>
+                    <div class="user-type-badge" id="utbadge-${uid}" style="font-size:12px; font-weight:700; margin-top:4px; color:${data.userType === 'permanent' ? '#15803d' : '#607080'};">
+                        ${data.userType === 'permanent' ? '&#128275; Permanent' : '&#128274; Temporary'}
+                    </div>
+                    <div style="font-size:12px; color:var(--muted); margin-top:3px;" id="yrbadge-${uid}">&#128197; Joining Year: <b>${data.joiningYear || '&#8212;'}</b></div>
+                </div>
+                <div style="display:flex; gap:6px; align-items:flex-start; flex-wrap:wrap;">
+                    <button class="btn-sm btn-edit"   onclick="openEdit('${uid}')">Edit</button>
+                    <button class="btn-sm btn-danger" onclick="deleteStudent('${uid}', '${(data.name || '').replace(/'/g, "\\'")}')">Delete</button>
+                </div>
+            </div>
+            <div class="edit-panel hidden" id="edit-${uid}">
+                <div class="cat-group">
+                    ${ALL_CATEGORIES.map(cat => `
+                        <label class="cat-row">
+                            <input type="checkbox" id="ec-${uid}-${cat.value}" value="${cat.value}"
+                                ${(data.categories || []).includes(cat.value) ? 'checked' : ''}>
+                            ${cat.label}
+                        </label>
+                    `).join('')}
+                </div>
+                <label class="special-row" style="margin-top:10px;">
+                    <input type="checkbox" id="es-${uid}" ${data.special ? 'checked' : ''}>
+                    &#11088; Special User &mdash; can see all test sets
+                </label>
+                <label class="special-row" style="margin-top:8px; background:#f0fff4; border-color:#86efac;">
+                    <input type="checkbox" id="ep-${uid}" ${data.userType === 'permanent' ? 'checked' : ''}>
+                    &#128275; Permanent User &mdash; full home page access
+                </label>
+                <label class="field-label" style="margin-top:12px;">Joining Year</label>
+                <input type="number" id="ey-${uid}" value="${data.joiningYear || ''}" placeholder="e.g. 2026" min="2020" max="2040" />
+                <div id="edit-msg-${uid}" class="message"></div>
+                <div class="edit-actions">
+                    <button class="btn-sm btn-save"   onclick="saveEdit('${uid}', '${data.name}')">Save</button>
+                    <button class="btn-sm btn-cancel" onclick="closeEdit('${uid}')">Cancel</button>
+                </div>
+            </div>
+        `;
+        return div;
+    }
+
+    function openEdit(uid) {
+        document.getElementById(`edit-${uid}`).classList.remove('hidden');
+    }
+
+    function closeEdit(uid) {
+        document.getElementById(`edit-${uid}`).classList.add('hidden');
+    }
+
+    function saveEdit(uid, name) {
+        const categories = ALL_CATEGORIES
+            .filter(cat => document.getElementById(`ec-${uid}-${cat.value}`)?.checked)
+            .map(cat => cat.value);
+
+        const msgEl = document.getElementById(`edit-msg-${uid}`);
+        msgEl.className = 'message';
+        msgEl.style.display = 'none';
+
+        if (categories.length === 0) {
+            msgEl.textContent = 'Select at least one category.';
+            msgEl.className = 'message msg-error';
+            msgEl.style.display = 'block';
+            return;
+        }
+
+        const special = document.getElementById(`es-${uid}`)?.checked === true;
+        const isPermanent = document.getElementById(`ep-${uid}`)?.checked === true;
+        const userType = isPermanent ? "permanent" : "temporary";
+        const joiningYear = parseInt(document.getElementById(`ey-${uid}`)?.value) || null;
+
+        fbDb.collection('students').doc(uid).update({ categories, special, userType, joiningYear })
+            .then(() => {
+                msgEl.innerHTML = '&#10003; Saved!';
+                msgEl.className = 'message msg-success';
+                msgEl.style.display = 'block';
+
+                // Update the displayed category labels
+                const catLabels = categories
+                    .map(c => ALL_CATEGORIES.find(x => x.value === c)?.label || c)
+                    .join(', ');
+                document.querySelector(`#card-${uid} .student-cats`).textContent = `\u{1F4DA} ${catLabels}`;
+
+                // Update special badge visibility
+                const badge = document.querySelector(`#card-${uid} .special-badge`);
+                if (badge) badge.style.display = special ? '' : 'none';
+
+                // Update user type badge
+                const utBadge = document.getElementById(`utbadge-${uid}`);
+                if (utBadge) {
+                    utBadge.innerHTML = isPermanent ? '&#128275; Permanent' : '&#128274; Temporary';
+                    utBadge.style.color = isPermanent ? '#15803d' : '#607080';
+                }
+
+                // Update joining year badge
+                const yrBadge = document.getElementById(`yrbadge-${uid}`);
+                if (yrBadge) yrBadge.innerHTML = `&#128197; Joining Year: <b>${joiningYear || '&#8212;'}</b>`;
+
+                setTimeout(() => closeEdit(uid), 1200);
+            })
+            .catch(() => {
+                msgEl.textContent = 'Save failed. Please try again.';
+                msgEl.className = 'message msg-error';
+                msgEl.style.display = 'block';
+            });
+    }
+
+    // =============================================
+    // Logout
+    // =============================================
+    document.getElementById('logout-btn').addEventListener('click', () => {
+        adminAuth.signOut();
+    });
+
+    // =============================================
+    // Helpers
+    // =============================================
+    function showLoginError(msg) {
+        const el = document.getElementById('login-error');
+        el.textContent = msg; el.style.display = 'block';
+    }
+
+    function showCreateError(msg) {
+        const el = document.getElementById('create-error');
+        el.textContent = msg; el.style.display = 'block';
+    }
+
+    function getErrorMessage(code) {
+        switch (code) {
+            case 'auth/email-already-in-use': return 'This email is already registered.';
+            case 'auth/invalid-email':        return 'Invalid email address.';
+            case 'auth/weak-password':        return 'Password too weak — use at least 6 characters.';
+            case 'auth/wrong-password':
+            case 'auth/invalid-credential':   return 'Invalid email or password.';
+            case 'auth/too-many-requests':    return 'Too many attempts. Try again later.';
+            default:                          return 'Something went wrong. Please try again.';
+        }
+    }
+</script>
+
+</body>
+</html>
