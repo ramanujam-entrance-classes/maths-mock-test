@@ -81,16 +81,6 @@ function initApp(data) {
     if (nameSection) nameSection.classList.remove("hidden");
     if (note) note.classList.remove("hidden");
 
-    if (window.firebaseUser) {
-        const nameInput = document.getElementById('student-name');
-        const displayName = window.firebaseUser.displayName || window.firebaseUser.email;
-        nameInput.value = displayName;
-        nameInput.style.display = 'none';
-        const nameBoxHeading = nameSection.querySelector('h3');
-        if (nameBoxHeading) nameBoxHeading.textContent = `Welcome, ${displayName}!`;
-        document.getElementById('student-name-required').style.display = 'none';
-    }
-
     const MARKS = getMarkingScheme();
 
     note.innerHTML = `
@@ -162,25 +152,7 @@ function initApp(data) {
 }
 
 function attachEvents() {
-    startBtn.addEventListener('click', () => {
-        const modal = document.getElementById('instructions-modal');
-        if (modal) {
-            modal.classList.remove('hidden');
-        } else {
-            startQuiz();
-        }
-    });
-    document.getElementById('instr-start-btn')?.addEventListener('click', () => {
-        document.getElementById('instructions-modal').classList.add('hidden');
-        startQuiz();
-    });
-    document.getElementById('instr-cancel-btn')?.addEventListener('click', () => {
-        document.getElementById('instructions-modal').classList.add('hidden');
-    });
-    document.getElementById('instructions-modal')?.addEventListener('click', (e) => {
-        if (e.target === document.getElementById('instructions-modal'))
-            document.getElementById('instructions-modal').classList.add('hidden');
-    });
+    startBtn.addEventListener('click', startQuiz);
     submitBtn.addEventListener('click', function(e) {
         e.preventDefault();
         submitQuiz();
