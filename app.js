@@ -1,3 +1,4 @@
+let _pdfResultData = null;
 let questions = [];
 let quizTitle = "";
 const urlParams = new URLSearchParams(window.location.search);
@@ -81,6 +82,16 @@ function initApp(data) {
     if (nameSection) nameSection.classList.remove("hidden");
     if (note) note.classList.remove("hidden");
 
+    if (window.firebaseUser) {
+        const nameInput = document.getElementById('student-name');
+        const displayName = window.firebaseUser.displayName || window.firebaseUser.email;
+        nameInput.value = displayName;
+        nameInput.style.display = 'none';
+        const nameBoxHeading = nameSection.querySelector('h3');
+        if (nameBoxHeading) nameBoxHeading.textContent = `Welcome, ${displayName}!`;
+        document.getElementById('student-name-required').style.display = 'none';
+    }
+
     const MARKS = getMarkingScheme();
 
     note.innerHTML = `
@@ -152,10 +163,45 @@ function initApp(data) {
 }
 
 function attachEvents() {
-    startBtn.addEventListener('click', startQuiz);
+    startBtn.addEventListener('click', () => {
+        const modal = document.getElementById('instructions-modal');
+        if (modal) {
+            modal.classList.remove('hidden');
+            const pmCb = document.getElementById('practice-mode-cb');
+            if (pmCb) pmCb.checked = false;
+            const pNotice = document.getElementById('practice-mode-notice');
+            const pRules = document.querySelector('#instructions-modal .modal-rules');
+            if (pNotice) pNotice.classList.add('hidden');
+            if (pRules)  pRules.classList.remove('hidden');
+            const hidePM = sessionStorage.getItem('hidePracticeMode') === 'true';
+            const pmToggle = document.getElementById('practice-mode-toggle');
+            if (pmToggle) pmToggle.style.display = hidePM ? 'none' : '';
+        } else {
+            startQuiz();
+        }
+    });
+    document.getElementById('instr-start-btn')?.addEventListener('click', () => {
+        const pmCbStart = document.getElementById('practice-mode-cb');
+        isPracticeMode = pmCbStart ? pmCbStart.checked : false;
+        document.getElementById('instructions-modal').classList.add('hidden');
+        startQuiz();
+    });
+    document.getElementById('instr-cancel-btn')?.addEventListener('click', () => {
+        document.getElementById('instructions-modal').classList.add('hidden');
+    });
+    document.getElementById('instructions-modal')?.addEventListener('click', (e) => {
+        if (e.target === document.getElementById('instructions-modal'))
+            document.getElementById('instructions-modal').classList.add('hidden');
+    });
     submitBtn.addEventListener('click', function(e) {
         e.preventDefault();
         submitQuiz();
+    });
+    quizForm.addEventListener('change', (e) => {
+        if (e.target.type === 'radio') {
+            const match = e.target.name.match(/^q(\d+)$/);
+            if (match) updateQNavBtn(parseInt(match[1]));
+        }
     });
 }
 
@@ -174,6 +220,7 @@ let violationCount = 0;
 let wakeLock = null;
 let examSubmitted = false;
 let examStarted = false;
+let isPracticeMode = false;
 let violationBannerTimeout = null;
 let pageHidden = false;
 let lastViolationTime = 0;
@@ -218,6 +265,7 @@ function initQuiz() {
     questions.forEach((qObj, index) => {
         const div = document.createElement('div');
         div.className = 'question-block';
+        div.id = 'question-' + index;
 
         div.innerHTML = `
             <div class="question-text">
@@ -269,6 +317,7 @@ function initQuiz() {
 function clearSelection(qIndex) {
     const options = document.querySelectorAll(`input[name="q${qIndex}"]`);
     options.forEach(opt => (opt.checked = false));
+    updateQNavBtn(qIndex);
 }
 
 // ===============================
@@ -276,26 +325,34 @@ function clearSelection(qIndex) {
 // ===============================
 
 async function enterFullscreen() {
-
-    const elem = document.documentElement;
-
+    const el = document.documentElement;
     try {
-
-        if (elem.requestFullscreen) {
-            await elem.requestFullscreen();
-        }
-        else if (elem.webkitRequestFullscreen) {
-            await elem.webkitRequestFullscreen();
-        }
-        else if (elem.msRequestFullscreen) {
-            await elem.msRequestFullscreen();
-        }
-
+        if (el.requestFullscreen)            await el.requestFullscreen();
+        else if (el.webkitRequestFullscreen) await el.webkitRequestFullscreen();
+        else if (el.mozRequestFullScreen)    await el.mozRequestFullScreen();
+        else if (el.msRequestFullscreen)     await el.msRequestFullscreen();
+        const p = document.getElementById('fs-return-prompt');
+        if (p) p.style.display = 'none';
     } catch (err) {
-
-        console.log(err);
-
+        showFullscreenPrompt();
     }
+}
+
+function showFullscreenPrompt() {
+    let p = document.getElementById('fs-return-prompt');
+    if (!p) {
+        p = document.createElement('div');
+        p.id = 'fs-return-prompt';
+        p.style.cssText = 'position:fixed;inset:0;z-index:9999998;background:rgba(13,36,97,0.96);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px;color:#fff;text-align:center;padding:28px;';
+        p.innerHTML = `
+            <div style="font-size:28px;">&#9974;&#65039;</div>
+            <div style="font-size:20px;font-weight:800;letter-spacing:0.5px;">Fullscreen Required</div>
+            <div style="font-size:14px;opacity:0.85;max-width:320px;line-height:1.6;">You exited fullscreen mode. Please return to fullscreen to continue your test.</div>
+            <button onclick="enterFullscreen()" style="background:#e8891a;border:none;color:#fff;font-size:16px;font-weight:700;padding:14px 36px;border-radius:10px;cursor:pointer;margin-top:6px;box-shadow:0 4px 16px rgba(232,137,26,.4);">&#8679; Return to Fullscreen</button>
+        `;
+        document.body.appendChild(p);
+    }
+    p.style.display = 'flex';
 }
 
 // ===============================
@@ -376,35 +433,20 @@ function showViolationBanner(message) {
 // ===============================
 
 function registerViolation(reason) {
+    if (isPracticeMode) return;
+    if (!examStarted || examSubmitted) return;
     const now = Date.now();
-
-    // Prevent duplicate violations
-    if (now - lastViolationTime < VIOLATION_COOLDOWN) {
-        return;
-    }
+    if (now - lastViolationTime < VIOLATION_COOLDOWN) return;
     lastViolationTime = now;
-
     violationCount++;
-
-    showViolationBanner(
-        `⚠ ${reason} <br> 
-        <span style="font-size:14px; opacity:0.9">
-          (Violation ${violationCount}/3)
-       </span>`
-    );
-
+    const remaining = 3 - violationCount;
     if (violationCount > 3) {
-
-        showViolationBanner(
-            `⚠ Too many violations<br>
-            <span style="font-size:14px;">
-                Test is being submitted...
-            </span>`
-        );
-
-        setTimeout(() => {
-            submitQuiz();
-        }, 2000);
+        showViolationBanner('⚠️ Too many violations — test is being submitted…');
+        setTimeout(() => submitQuiz(), 2000);
+    } else if (remaining > 0) {
+        showViolationBanner(`⚠️ Warning (${violationCount}/3): ${reason}. ${remaining} more violation${remaining === 1 ? '' : 's'} will auto-submit your test.`);
+    } else {
+        showViolationBanner(`⚠️ Final warning (3/3): ${reason}. One more violation will auto-submit your test!`);
     }
 }
 
@@ -479,6 +521,9 @@ function startQuiz() {
 
     showLoader("Preparing your test...");
 
+    const userInfoBar = document.getElementById('user-info-bar');
+    if (userInfoBar) userInfoBar.classList.add('hidden');
+
     // 🔒 HARD LOCK before anything starts
     submitBtn.disabled = true;
     submitBtn.style.opacity = "0.5";
@@ -517,6 +562,11 @@ function startQuiz() {
 
             startBtn.classList.add('hidden');
 
+            // Show question navigator
+            buildQNav(questions.length);
+            document.getElementById('q-nav-panel').classList.remove('hidden');
+            document.getElementById('q-nav-fab').classList.remove('hidden');
+
             // =========================
             // STEP 3: SAFE ENABLE BUTTON
             // =========================
@@ -544,6 +594,11 @@ function startQuiz() {
 }
 
 function startTimer() {
+    if (isPracticeMode) {
+        timerBox.textContent = '📝 Practice Mode — No Timer';
+        timerBox.className = 'timer-green';
+        return;
+    }
     timerInterval = setInterval(() => {
         timeLeft--;
 
@@ -621,8 +676,13 @@ function submitQuiz() {
         }
         clearInterval(timerInterval);
         timerBox.classList.add('hidden');
+
+        // Hide question navigator
+        document.getElementById('q-nav-panel')?.classList.add('hidden');
+        document.getElementById('q-nav-fab')?.classList.add('hidden');
+        closeQNavSheet();
     
-        let timeTakenSeconds = totalTime - timeLeft;
+        let timeTakenSeconds = isPracticeMode ? 0 : (totalTime - timeLeft);
         let timeTakenMinutes = Math.floor(timeTakenSeconds / 60);
         let timeTakenSecs = timeTakenSeconds % 60;
     
@@ -708,7 +768,7 @@ function submitQuiz() {
             <div class="scoreBoard" style="font-size:18px; line-height:1.8; font-weight:normal">
                 👤 Student: <b>${studentName}</b><br><br>
     
-                🕒 Time Taken: ${timeTakenMinutes} min ${timeTakenSecs} sec <br><br>
+                ${isPracticeMode ? '' : ('🕒 Time Taken: ' + timeTakenMinutes + ' min ' + timeTakenSecs + ' sec <br><br>')}
     
                 ✅ Correct: ${correctCount} <br>
                 ❌ Wrong: ${wrongCount} <br>
@@ -729,6 +789,9 @@ function submitQuiz() {
         scoreDisplay.style.display = 'block';
         submitBtn.classList.add('hidden');
         restartBtn.classList.remove('hidden');
+
+        const userInfoBar = document.getElementById('user-info-bar');
+        if (userInfoBar) userInfoBar.classList.remove('hidden');
         
         restartBtn.scrollIntoView({
             behavior: "smooth",
@@ -754,10 +817,25 @@ function submitQuiz() {
           	scoredMarks,
             totalMarks,
           	testId,
-          	`T-${timeTakenMinutes}:${timeTakenSecs.toString().padStart(2,'0')}`
+          	isPracticeMode ? 'PRACTICE' : `T-${timeTakenMinutes}:${timeTakenSecs.toString().padStart(2,'0')}`
         	);
         document.getElementById("leaderboard-btn").classList.remove("hidden");
         
+        _pdfResultData = {
+            studentName,
+            correctCount,
+            wrongCount,
+            notAttemptedCount,
+            scoredMarks,
+            totalMarks,
+            timeTakenMinutes,
+            timeTakenSecs,
+            correctMarks: CORRECT_MARKS,
+            wrongMarks:   WRONG_MARKS,
+            isPracticeMode,
+            testName: currentTestName
+        };
+        document.getElementById("pdf-btn").classList.remove("hidden");
         hideLoader();
     }, 100);
 }
@@ -1098,29 +1176,30 @@ async function generateRandomTestWithSeed(seedNum, seedStr) {
 }
 
 // ===============================
+// ===============================
 // FULLSCREEN EXIT DETECTION
 // ===============================
 
-document.addEventListener(
-    "fullscreenchange",
-    () => {
-
-        // Ignore before exam starts
-        if (!examStarted) return;
-
-        // Ignore after submission
-        if (examSubmitted) return;
-        
-        if (!document.fullscreenElement) {
-
-            registerViolation(
-                "Fullscreen exited / Tab switched"
-            );
-
-            enterFullscreen();
-        }
+document.addEventListener('fullscreenchange', () => {
+    if (!examStarted || examSubmitted) return;
+    if (!document.fullscreenElement) {
+        registerViolation('Exited fullscreen');
+        setTimeout(() => { if (examStarted && !examSubmitted) enterFullscreen(); }, 800);
     }
-);
+});
+document.addEventListener('webkitfullscreenchange', () => {
+    if (!examStarted || examSubmitted) return;
+    if (!document.webkitFullscreenElement) {
+        registerViolation('Exited fullscreen');
+        setTimeout(() => { if (examStarted && !examSubmitted) enterFullscreen(); }, 800);
+    }
+});
+
+window.addEventListener('blur', () => {
+    if (!examStarted || examSubmitted || isPracticeMode) return;
+    registerViolation('Application lost focus');
+});
+
 
 // ===============================
 // REFRESH / CLOSE WARNING
@@ -1170,67 +1249,145 @@ document.addEventListener(
 );
 
 // ===============================
+// ===============================
 // TAB SWITCH DETECTION
 // ===============================
 
-document.addEventListener(
-    "visibilitychange",
-    () => {
-
-        // Ignore before exam starts
-        if (!examStarted) return;
-
-        // Ignore after submission
-        if (examSubmitted) return;
-
-        if (document.hidden) {
-
-            registerViolation(
-                "Fullscreen exited / Tab switched"
-            );
+document.addEventListener('visibilitychange', () => {
+    if (!examStarted || examSubmitted) return;
+    pageHidden = document.hidden;
+    if (document.hidden) {
+        registerViolation('Switched tab or minimised window');
+    } else {
+        if (!document.fullscreenElement) enterFullscreen();
+        const banner = document.getElementById('violation-banner');
+        if (banner && banner.style.display === 'block') {
+            clearTimeout(violationBannerTimeout);
+            violationBannerTimeout = setTimeout(() => { banner.style.display = 'none'; }, 5000);
         }
     }
-);
-// change tab visibility 
-document.addEventListener(
-    "visibilitychange",
-    () => {
+});
 
-        if (!examStarted) return;
-        if (examSubmitted) return;
+// =============================================
+// QUESTION NAVIGATOR
+// =============================================
 
-        pageHidden = document.hidden;
+function buildQNav(count) {
+    const grid      = document.getElementById('q-nav-grid');
+    const sheetGrid = document.getElementById('q-nav-sheet-grid');
+    if (grid) grid.innerHTML = '';
+    if (sheetGrid) sheetGrid.innerHTML = '';
 
-        // ONLY handle when user RETURNS
-        if (!document.hidden) {
-
-            // If fullscreen is already exited,
-            // then count violation now
-            if (!document.fullscreenElement) {
-
-                registerViolation(
-                    "Fullscreen exited / Tab switched"
-                );
-
-                enterFullscreen();
-            }
-
-            // Show existing banner again
-            const banner =
-                document.getElementById("violation-banner");
-
-            if (banner &&
-                banner.style.display === "block") {
-
-                clearTimeout(violationBannerTimeout);
-
-                violationBannerTimeout =
-                    setTimeout(() => {
-
-                        banner.style.display = "none";
-
-                    }, 5000);
-            }
-        }
+    for (let i = 0; i < count; i++) {
+        if (grid)      grid.appendChild(makeQNavBtn(i, 'qnb'));
+        if (sheetGrid) sheetGrid.appendChild(makeQNavBtn(i, 'qnbs'));
     }
-);
+    updateQNavFooter();
+}
+
+function makeQNavBtn(i, prefix) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'q-nav-btn';
+    btn.id = prefix + '-' + i;
+    btn.textContent = i + 1;
+    btn.onclick = () => scrollToQuestion(i);
+    return btn;
+}
+
+function updateQNavBtn(i) {
+    const attempted = !!document.querySelector(`input[name="q${i}"]:checked`);
+    const b1 = document.getElementById('qnb-' + i);
+    const b2 = document.getElementById('qnbs-' + i);
+    if (b1) b1.classList.toggle('attempted', attempted);
+    if (b2) b2.classList.toggle('attempted', attempted);
+    updateQNavFooter();
+}
+
+function updateQNavFooter() {
+    const total = questions.length;
+    let done = 0;
+    for (let i = 0; i < total; i++) {
+        if (document.querySelector(`input[name="q${i}"]:checked`)) done++;
+    }
+    const footer = document.getElementById('q-nav-footer');
+    const info   = document.getElementById('q-nav-sheet-info');
+    const badge  = document.getElementById('q-nav-badge');
+    if (footer) footer.textContent = `${done} / ${total} answered`;
+    if (info)   info.textContent   = `${done} / ${total} answered`;
+    if (badge)  badge.textContent  = done;
+}
+
+function scrollToQuestion(i) {
+    const el = document.getElementById('question-' + i);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    closeQNavSheet();
+}
+
+function toggleQNavSheet() {
+    const overlay = document.getElementById('q-nav-overlay');
+    const sheet   = document.getElementById('q-nav-sheet');
+    if (!overlay || !sheet) return;
+    const isOpen = sheet.classList.contains('open');
+    overlay.classList.toggle('open', !isOpen);
+    sheet.classList.toggle('open', !isOpen);
+}
+
+function closeQNavSheet() {
+    document.getElementById('q-nav-overlay')?.classList.remove('open');
+    document.getElementById('q-nav-sheet')?.classList.remove('open');
+}
+
+
+// ===============================
+// PDF DOWNLOAD
+// ===============================
+
+function downloadResultPDF() {
+    if (!_pdfResultData) { alert("Please complete the test first."); return; }
+    const d = _pdfResultData;
+
+    const today = new Date().toLocaleDateString("en-IN", {
+        day: "2-digit", month: "long", year: "numeric"
+    });
+
+    // Clone all rendered question blocks from the live DOM
+    const questionsHTML = Array.from(document.querySelectorAll(".question-block"))
+        .map(b => b.outerHTML).join("");
+
+    const timeLine = d.isPracticeMode ? "" :
+        `<div class="po-time">&#9201; Time Taken: <b>${d.timeTakenMinutes} min ${d.timeTakenSecs} sec</b></div>`;
+
+    document.getElementById("print-overlay").innerHTML = `
+        <div class="po-header">
+            <div>
+                <div class="po-institute">RAMANUJAM ENTRANCE CLASSES</div>
+                <div class="po-tagline">NIMCET &nbsp;&middot;&nbsp; IIT JEE (MAIN + ADVANCED) &nbsp;&middot;&nbsp; CUET &nbsp;&middot;&nbsp; VIT &nbsp;&middot;&nbsp; BITS &nbsp;&middot;&nbsp; ALL MCA ENTRANCE EXAMS</div>
+            </div>
+            <div class="po-header-right">
+                <div><b>${d.testName}</b></div>
+                <div>${today}</div>
+                <div>Student: <b>${d.studentName}</b></div>
+            </div>
+        </div>
+
+        <div class="po-score-box">
+            ${timeLine}
+            <div class="po-score-grid">
+                <div class="po-score-cell">&#9989; Correct &nbsp;<b>${d.correctCount}</b></div>
+                <div class="po-score-cell">&#10060; Wrong &nbsp;<b>${d.wrongCount}</b></div>
+                <div class="po-score-cell">&#11093; Not Attempted &nbsp;<b>${d.notAttemptedCount}</b></div>
+            </div>
+            <div class="po-score-final">&#127942; Score: ${d.scoredMarks} / ${d.totalMarks}</div>
+            <div class="po-score-note">Each correct: +${d.correctMarks} marks &nbsp;&middot;&nbsp; Each wrong: ${d.wrongMarks} marks</div>
+        </div>
+
+        <div class="po-questions">${questionsHTML}</div>
+    `;
+
+    // Use test name as the suggested PDF filename
+    const prev = document.title;
+    document.title = d.testName + " — " + d.studentName;
+    window.print();
+    document.title = prev;
+}
